@@ -1,0 +1,88 @@
+# Copyright (c) 2020 Felix Soubelet <felix.soubelet@cern.ch>
+
+
+# Project information
+site_name: OMC Documentation
+site_description: Documentation Pages for the OMC3 Python Package
+site_author: Felix Soubelet
+#site_url: ''
+
+
+# Repository
+repo_name: 'pylhc/omc3'
+repo_url: 'https://github.com/pylhc/omc3'
+
+
+# Copyright
+copyright: 'Copyright &copy; 2020 Felix Soubelet'
+
+
+# Configuration
+theme:
+  name: 'material'
+  
+  # Default Values
+  language: en
+  feature:
+    tabs: true
+  palette:
+    primary: 'indico'
+    accent: 'red'
+  font:
+    text: 'Roboto'
+    code: 'Fira Code'
+  #logo: 'images/OMC_logo.png' # needs an svg version, see with Josch
+
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+    
+# Site Layout
+nav:
+    - The OMC3 Package: index.md
+    - The Beta-Beat GUI:
+      - The Beta-Beat GUI: GUI/gui.md
+      - Running the GUI: GUI/running.md 
+      - The BPM Panel: GUI/bpm_panel.md
+      - The Analysis Panel: GUI/analysis_panel.md
+      - The Optics Panel: GUI/optics_panel.md
+      - The Correction Panel: GUI/correction_panel.md
+    - Other Packages:
+      - generic_parser: packages/generic_parser.md
+      - PyLHC: packages/pylhc.md
+      - SDDS: packages/sdds.md
+      - tfs-pandas: packages/tfs-pandas.md
+      - Other Packages: packages/other_packages.md
+    - About: about.md
+    - Workflow: workflow.md
+    - Getting Started: getting_started.md
+    - Contributing: contributing.md
+    - Release Notes: release_notes.md
