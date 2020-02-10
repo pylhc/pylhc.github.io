@@ -9,8 +9,8 @@ site_author: Felix Soubelet
 
 
 # Repository
-repo_name: 'pylhc/omc3'
-repo_url: 'https://github.com/pylhc/omc3'
+repo_name: 'pylhc'
+repo_url: 'https://github.com/pylhc/'
 
 
 # Copyright
@@ -67,7 +67,13 @@ markdown_extensions:
     
 # Site Layout
 nav:
-    - The OMC3 Package: index.md
+    - The OMC Team: general/index.md
+    - The OMC3 Package:
+      - The omc3 Package: omc3/omc3.md
+      - The OMC Workflow: omc3/workflow.md
+      - Getting Started: omc3/getting_started.md
+      - Contributing: omc3/contributing.md
+      - Release Notes: omc3/release_notes.md
     - The Beta-Beat GUI:
       - The Beta-Beat GUI: GUI/gui.md
       - Running the GUI: GUI/running.md 
@@ -81,8 +87,8 @@ nav:
       - SDDS: packages/sdds.md
       - tfs-pandas: packages/tfs-pandas.md
       - Other Packages: packages/other_packages.md
-    - About: about.md
-    - Workflow: workflow.md
-    - Getting Started: getting_started.md
-    - Contributing: contributing.md
-    - Release Notes: release_notes.md
+    - The Physics of OMC: general/physics.md
+    - OMC Methods: general/methods.md
+    - Working at OMC: general/miscellaneous.md
+    - Publications: general/omc_publications.md
+    - About this Website: general/about.md

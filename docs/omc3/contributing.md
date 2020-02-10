@@ -1,7 +1,6 @@
 # Contributing
 
 Want to report a bug, request a feature or contribute some code?
-
 We welcome contributions, but before you do, please read the following guidelines.
 
 ## Submission context
