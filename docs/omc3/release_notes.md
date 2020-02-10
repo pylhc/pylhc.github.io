@@ -16,7 +16,7 @@ pip show omc3
 
 ## Changelog
 
-### 0.1.0 <small> February 9, 2016</small>
+### 0.1.0 <small> Date ???</small>
 
 - Initial release.
 - `omc3` is packaged.
