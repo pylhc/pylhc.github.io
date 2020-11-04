@@ -9,8 +9,8 @@ site_author: Felix Soubelet
 
 
 # Repository
-repo_name: 'pylhc/omc3'
-repo_url: 'https://github.com/pylhc/omc3'
+repo_name: 'PyLHC'
+repo_url: 'https://github.com/pylhc'
 
 
 # Copyright
@@ -23,27 +23,45 @@ theme:
   
   # Default Values
   language: en
-  feature:
-    tabs: true
+  features:
+    - navigation.tabs
+    #- navigation.instant
   palette:
-    primary: 'indico'
-    accent: 'red'
+    scheme: preference
+    primary: indigo
+    accent: red
   font:
-    text: 'Roboto'
-    code: 'Fira Code'
-  #logo: 'images/OMC_logo.png' # needs an svg version, see with Josch
+    text: Roboto
+    code: Roboto Mono
 
 
 # Plugins
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        extensions/admonition.md: reference/admonitions.md
+        extensions/codehilite.md: reference/code-blocks.md
+        extensions/footnotes.md: reference/footnotes.md
+        extensions/metadata.md: reference/meta-tags.md
+        extensions/permalinks.md: setup/setting-up-navigation.md #permalink
+        extensions/pymdown.md: reference/admonitions.md
+        plugins/revision-date.md: setup/adding-a-git-repository.md #revision-date
+        plugins/search.md: setup/setting-up-site-search.md
+        releases/4.md: upgrading.md #upgrading-from-4x-to-5x
+        releases/5.md: upgrading.md #upgrading-from-3x-to-4x
+        releases/changelog.md: changelog.md
+        setup/adding-social-links.md: setup/setting-up-the-footer.md
+        sponsorship.md: insiders.md
   - minify:
       minify_html: true
 
 
 # Extensions
 markdown_extensions:
+  - abbr
   - admonition
+  - attr_list
   - codehilite
   - footnotes
   - toc:
@@ -54,6 +72,9 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.keys
@@ -67,7 +88,15 @@ markdown_extensions:
     
 # Site Layout
 nav:
-    - The OMC3 Package: index.md
+    - The OMC Team: index.md
+    - The omc3 Package:
+        - About omc3: omc3/omc3.md
+    - Other Packages:
+      - generic_parser: packages/generic_parser.md
+      - PyLHC: packages/pylhc.md
+      - SDDS: packages/sdds.md
+      - tfs-pandas: packages/tfs-pandas.md
+      - Other Packages: packages/other_packages.md
     - The Beta-Beat GUI:
       - The Beta-Beat GUI: GUI/gui.md
       - Running the GUI: GUI/running.md 
@@ -75,12 +104,6 @@ nav:
       - The Analysis Panel: GUI/analysis_panel.md
       - The Optics Panel: GUI/optics_panel.md
       - The Correction Panel: GUI/correction_panel.md
-    - Other Packages:
-      - generic_parser: packages/generic_parser.md
-      - PyLHC: packages/pylhc.md
-      - SDDS: packages/sdds.md
-      - tfs-pandas: packages/tfs-pandas.md
-      - Other Packages: packages/other_packages.md
     - About: about.md
     - Workflow: workflow.md
     - Getting Started: getting_started.md
