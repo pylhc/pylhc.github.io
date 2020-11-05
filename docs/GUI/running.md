@@ -43,8 +43,8 @@ If you encounter a complaint about `Java` being too old, try using `/mcr/bin/jav
 !!! failure
     ```bash
     javaws http://abwww/ap/dist/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
-    Disabling Java as it is too old and likely to be insecure. To reenable use jcontrol utility
     ```
+    **Disabling Java as it is too old and likely to be insecure. To reenable use jcontrol utility**
 
 !!! success
     ```bash
