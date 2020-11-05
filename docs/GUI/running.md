@@ -12,7 +12,6 @@ At the following links, you can also find:
 
 From there, open the `.jnlp` executable inside a browser, or call it with `javaws` from the command line.
 For convenience, there are scripts to run it directly from `afs` at the following location:
-
 ```bash
 /afs/cern.ch/eng/sl/lintrack/Beta-Beat.src/GUI
 ```
@@ -43,13 +42,13 @@ If you encounter a complaint about `Java` being too old, try using `/mcr/bin/jav
 
 !!! failure
     ```bash
-    cs-ccr-dev1.cern.ch $ javaws http://abwww/ap/dist/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
+    javaws http://abwww/ap/dist/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
+    Disabling Java as it is too old and likely to be insecure. To reenable use jcontrol utility
     ```
-    **Disabling Java as it is too old and likely to be insecure. To reenable use jcontrol utility**
 
 !!! success
     ```bash
-    $ /mcr/bin/javaws http://abwww/ap/dist/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
+    /mcr/bin/javaws http://abwww/ap/dist/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
     ```
 
 #### Unspecific Error
