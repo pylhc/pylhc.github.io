@@ -5,7 +5,7 @@ The `omc3` repository is the new version of our codes, refactored and rewritten 
 
 !!! note "Note - Documentation Type"
     This section acts as a general documentation and guide to using the `omc3` package.
-    The package's source can be found on [Github][omc3] and its API documentation can be found at the [following link](https://pylhc.github.io/omc3/).
+    The package's source can be found on [Github][omc3]{target=_blank} and its API documentation can be found at the [following link][omc3_doc]{target=_blank}.
 
 ## Quick start
 
@@ -27,35 +27,14 @@ For detailed instructions see the [getting started guide][getting_started.md].
 
 ## License
 
-This software is licensed under the GNU GPLv3 License, see [License](https://github.com/pylhc/omc3/blob/master/LICENSE).
-
-The `omc3` package, available [here](https://github.com/pylhc/omc3) on Github, is the Python3 version of our main tool software.
-
-## Implementation Progress
-
-Currently, `omc3` is still working towards a first release.
-The current working functionality are:
-
-- Main function: Hole_in_one
-- Harmonic Analysis: Harpy
-- Utils: logging, iotools, file handlers, entrypoint
-- Madx wrapper
-
-The features currently being developed are:
-
-- Optics Measurement
-- K-Modulation
-- Accuracy Tests
-- Regression Tests
-
-## Quality checks
-
-- Automated tests are ran after each commit via [Travis-CI](https://travis-ci.com/pylhc/omc3). 
-- Additional checks for code-complexity, design-rules, test-coverage, and duplication are handled by [CodeClimate](https://codeclimate.com/github/pylhc/omc3).
+This software is licensed under the GNU GPLv3 License, see [License][license]{target=_blank}.
 
 ## Authors
 
-This work is the result of combined efforts by members of the [pylhc/omc-team](https://github.com/orgs/pylhc/teams/omc-team) working group.
+This work is the result of combined efforts by members of the [pylhc/omc-team][omc_team]{target=_blank} working group.
 Contributions are welcome, but tightly controlled, see the [Contributing](contributing.md) page.
 
 [omc3]: https://github.com/pylhc/omc3
+[omc3_doc]: https://pylhc.github.io/omc3/
+[license]: https://github.com/pylhc/omc3/blob/master/LICENSE
+[omc_team]: https://github.com/orgs/pylhc/teams/omc-team

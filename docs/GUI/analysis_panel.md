@@ -1,7 +1,7 @@
 # The Beta-Beat GUI Analysis Panel
 
 The analysis panel provides graphical interface to visualize results from harmonic analysis performed on measured data.
-The results are given in the [`tfs`](https://mad.web.cern.ch/mad/madx.old/Introduction/tfs.html) format.
+The results are given in the [`tfs`](https://mad.web.cern.ch/mad/madx.old/Introduction/tfs.html){target=_blank} format.
 
 In the analysis panel one can edit the `dp/p` value in the corresponding column, and see the changes applied. 
 

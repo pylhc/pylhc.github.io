@@ -16,14 +16,14 @@ For quick questions there's no need to open an issue as you can reach us at [`py
 
 #### Found a bug?
 
-If you found a bug in the source code, you can help us by [submitting an issue](https://github.com/pylhc/omc3/issues/new) on GitHub.
+If you found a bug in the source code, you can help us by [submitting an issue][omc3_issues]{target=_blank} on GitHub.
 If you wish to contribute a solution, you can submit a Pull Request with a fix.
 However, before doing so, please read the submission guidelines bellow.
 
 
 #### Missing a feature?
 
-You can request a new feature by [submitting an issue](https://github.com/pylhc/omc3/issues/new) on GitHub.
+You can request a new feature by [submitting an issue][omc3_issues]{target=_blank} on GitHub.
 If you would like to implement a new feature, please submit an issue with a proposal first, to be sure that it is necessary and appropriate to this package.
 
 This will also allow us to better coordinate our efforts, prevent duplication of work, and help you to craft the change so that it is successfully accepted into the project.
@@ -49,7 +49,6 @@ If you do not find a related issue or PR, go ahead.
 
 2. **Build**: Before submitting changes, please make sure tests pass and that the package properly installs.
   The project comes with a Makefile to help with this, you can get an overview of the available targets with `make help`.
-  Automated tests are ran after each commit through [Travis CI](https://travis-ci.com/pylhc/omc3), and no changes can be merged without builds passing.
   This is a mandatory requirement for your PR to get accepted, as the package should at all times be installable without trouble through GitHub.
 
 3. **Pull Request**: After having worked on your changes and pushed them to Github, open a Pull Request to the master branch.
@@ -66,7 +65,7 @@ Please follow these guidelines to keep code cohesion up, and git diffs down.
 
 ### Naming Conventions
 
-Overall, please abide by [PEP8](https://www.python.org/dev/peps/pep-0008/):
+Overall, please abide by [PEP8][pep8]{target=_blank}:
 
 - Module, functions, methods, attributes and local variable names: use `snake_case`.
   Example: `segment_by_segment.py`, `get_phase.py`.
@@ -86,10 +85,16 @@ Make the code as readable as possible, both for collaborators and future you.
 - Respect the max line length of 100 characters.
 - Divide code blocks into simple functions.
 - Avoid code duplication.
-- Respect the [Zen of Python](https://www.python.org/dev/peps/pep-0020/).
+- Respect the [Zen of Python][zen_python]{target=_blank}.
 
-We use [PyCharm](https://www.jetbrains.com/pycharm/) as IDE in the team.
+We use [PyCharm][pycharm]{target=_blank} as IDE in the team.
 
 ### Docstrings Convention
 
-To be compatible with our automatic API documentation generator, please respect [Sphinx](https://www.sphinx-doc.org/en/master/#) conventions.
+To be compatible with our automatic API documentation generator, please respect [Sphinx][sphinx]{target=_blank} conventions.
+
+[omc3_issues]: https://github.com/pylhc/omc3/issues/new
+[pep8]: https://www.python.org/dev/peps/pep-0008/
+[zen_python]: https://www.python.org/dev/peps/pep-0020/
+[pycharm]: https://www.jetbrains.com/pycharm/
+[sphinx]: https://www.sphinx-doc.org/en/master/
