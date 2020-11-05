@@ -8,7 +8,6 @@ Set up a Python3.6+ environment and run:
 pip install mkdocs
 pip install mkdocs-material
 pip install mkdocs-minify-plugin
-pip install mkdocs-redirects
 ```
 Create your branch and make your changes.
 
