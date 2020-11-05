@@ -38,21 +38,6 @@ theme:
 # Plugins
 plugins:
   - search
-  - redirects:
-      redirect_maps:
-        extensions/admonition.md: reference/admonitions.md
-        extensions/codehilite.md: reference/code-blocks.md
-        extensions/footnotes.md: reference/footnotes.md
-        extensions/metadata.md: reference/meta-tags.md
-        extensions/permalinks.md: setup/setting-up-navigation.md #permalink
-        extensions/pymdown.md: reference/admonitions.md
-        plugins/revision-date.md: setup/adding-a-git-repository.md #revision-date
-        plugins/search.md: setup/setting-up-site-search.md
-        releases/4.md: upgrading.md #upgrading-from-4x-to-5x
-        releases/5.md: upgrading.md #upgrading-from-3x-to-4x
-        releases/changelog.md: changelog.md
-        setup/adding-social-links.md: setup/setting-up-the-footer.md
-        sponsorship.md: insiders.md
   - minify:
       minify_html: true
 
@@ -90,7 +75,11 @@ markdown_extensions:
 nav:
     - The OMC Team: index.md
     - The omc3 Package:
-        - About omc3: omc3/omc3.md
+        - About omc3: omc3/about.md
+        - Getting Started: omc3/getting_started.md
+        - Workflow: omc3/workflow.md
+        - Contributing: omc3/contributing.md
+        - Release Notes: omc3/release_notes.md
     - Other Packages:
       - generic_parser: packages/generic_parser.md
       - PyLHC: packages/pylhc.md
@@ -104,8 +93,3 @@ nav:
       - The Analysis Panel: GUI/analysis_panel.md
       - The Optics Panel: GUI/optics_panel.md
       - The Correction Panel: GUI/correction_panel.md
-    - About: about.md
-    - Workflow: workflow.md
-    - Getting Started: getting_started.md
-    - Contributing: contributing.md
-    - Release Notes: release_notes.md
