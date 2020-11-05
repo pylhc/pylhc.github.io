@@ -9,9 +9,10 @@ site_author: Felix Soubelet
 
 
 # Repository
-repo_name: 'PyLHC'
-repo_url: 'https://github.com/pylhc'
-
+#repo_name: 'PyLHC'
+#repo_url: 'https://github.com/pylhc'
+repo_name: 'OMC Documentation'
+repo_url: 'https://github.com/fsoubelet/doc_omc'
 
 # Copyright
 copyright: 'Copyright &copy; 2020 Felix Soubelet'
