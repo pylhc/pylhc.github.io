@@ -11,7 +11,11 @@ At the following links, you can also find:
     Please note that these site are currently available only to devices connected to the CERN network.
 
 From there, open the `.jnlp` executable inside a browser, or call it with `javaws` from the command line.
-For convenience, there are scripts to run it directly from `afs` at `/afs/cern.ch/eng/sl/lintrack/Beta-Beat.src/GUI`.
+For convenience, there are scripts to run it directly from `afs` at the following location:
+
+```bash
+/afs/cern.ch/eng/sl/lintrack/Beta-Beat.src/GUI
+```
 
 !!! info "Compatibility Issues"
     Since `javaws` (java web start) makes trouble due to intenal security mechanisms, a replacement named `jws` was developed and has to be used to run the `jlnp` file.
@@ -35,14 +39,18 @@ You may encounter the following errors:
 
 #### Problems with execution due to disabled Java
 
+If you encounter a complaint about `Java` being too old, try using `/mcr/bin/javaws`.
+
 !!! failure
+    ```bash
     cs-ccr-dev1.cern.ch $ javaws http://abwww/ap/dist/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
+    ```
     **Disabling Java as it is too old and likely to be insecure. To reenable use jcontrol utility**
 
-In this case, use `/mcr/bin/javaws`, and you should get:
-
 !!! success
+    ```bash
     $ /mcr/bin/javaws http://abwww/ap/dist/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
+    ```
 
 #### Unspecific Error
 
