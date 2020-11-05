@@ -1,6 +1,8 @@
 # OMC Docs Draft
 
-**To make changes locally**, et up a Python3.6+ environment and run:
+### To make changes locally
+
+Set up a Python3.6+ environment and run:
 
 ```bash
 pip install mkdocs mkdocs-material mkdocs-minify-plugin
@@ -10,7 +12,9 @@ Please use [git](https://git-scm.com/) as VCS and follow the [Gitflow](https://w
 
 You will see results by running `python -m mkdocs serve` from the top-level directory. The website will reload upon file changes.
 
-**To make changes online**, see the current version of the site [here](https://fsoubelet.github.io/doc_omc/) and click the page's modification link.
+### To make changes online
+
+Go to the current version of the site [here](https://fsoubelet.github.io/doc_omc/) and click the page's modification link.
 
 ---
 
