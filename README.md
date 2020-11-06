@@ -2,13 +2,12 @@
 
 ### To make changes locally
 
-Set up a Python3.6+ environment and run:
+Get a local copy of this repository, set up a Python3.6+ environment and run:
 
 ```bash
 pip install mkdocs mkdocs-material mkdocs-minify-plugin
 ```
 Create a branch, make your changes, commit and make a pull request.
-Please use [git](https://git-scm.com/) as VCS and follow the [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow.
 
 You will see results by running `python -m mkdocs serve` from the top-level directory. The website will reload upon file changes.
 
