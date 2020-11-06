@@ -84,10 +84,10 @@ nav:
         - Contributing: omc3/contributing.md
         - Release Notes: omc3/release_notes.md
     - Other Packages:
-      - generic_parser: packages/generic_parser.md
-      - PyLHC: packages/pylhc.md
-      - SDDS: packages/sdds.md
       - tfs-pandas: packages/tfs-pandas.md
+      - sdds: packages/sdds.md
+      - PyLHC: packages/pylhc.md
+      - generic_parser: packages/generic_parser.md
       - Other Packages: packages/other_packages.md
     - The Beta-Beat GUI:
       - The Beta-Beat GUI: GUI/gui.md
