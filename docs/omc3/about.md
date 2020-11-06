@@ -1,7 +1,7 @@
 # The OMC3 Software Documentation
 
 The `omc3` package is the python tool of the Optics Measurements and Corrections group at CERN.
-The `omc3` repository is the new version of our codes, refactored and rewritten for Python 3.6+.
+The `omc3` repository is the new version of our codes, refactored and rewritten for `Python 3.7+`.
 
 !!! note "Note - Documentation Type"
     This section acts as a general documentation and guide to using the `omc3` package.
