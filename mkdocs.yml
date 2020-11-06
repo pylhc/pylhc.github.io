@@ -77,12 +77,16 @@ markdown_extensions:
 # Site Layout
 nav:
     - The OMC Team: index.md
+      - Physics of OMC: general/physics.md
+      - OMC Methods: general/methods.md
+      - Miscellaneous: general/methods.md
+      - Publications: general/publications.md
     - The omc3 Package:
-        - About omc3: omc3/about.md
-        - Getting Started: omc3/getting_started.md
-        - Workflow: omc3/workflow.md
-        - Contributing: omc3/contributing.md
-        - Release Notes: omc3/release_notes.md
+      - About omc3: omc3/about.md
+      - Getting Started: omc3/getting_started.md
+      - Workflow: omc3/workflow.md
+      - Contributing: omc3/contributing.md
+      - Release Notes: omc3/release_notes.md
     - Other Packages:
       - tfs-pandas: packages/tfs-pandas.md
       - sdds: packages/sdds.md
