@@ -28,7 +28,7 @@ theme:
   language: en
   features:
     - navigation.tabs
-    #- navigation.instant
+    - navigation.instant
   palette:
     scheme: preference
     primary: indigo

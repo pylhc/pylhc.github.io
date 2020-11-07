@@ -6,7 +6,9 @@
 Make each publication a collapsible note, with title + authors + link in the headers and BibTeX in the body.
 See example below.
 
-## 2020
+## Journal Publications
+
+### 2020
 
 ??? abstract "Detection of faulty beam position monitors using unsupervised learning, `E. Fol, R. Tomás, J. Coello de Portugal, and G. Franchetti`  [Phys. Rev. Accel. Beams 23, 102805, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.102805){target=_blank}"
     ```
@@ -26,7 +28,16 @@ See example below.
     }
     ```
 
-## 2019
+### 2019
 
+### 2018
 
-## 2018
+## Strategy Reports
+
+## MD Notes
+
+### 2020
+
+### 2019
+
+### 2018
