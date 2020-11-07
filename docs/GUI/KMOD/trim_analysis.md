@@ -48,7 +48,7 @@ The results are stored in the file named `beta_star.out`.
     gui2kmod.py --circuit rq5.l4b1,rq5.r4b1 --beam b1 --BetastarAndWaist 200,-100 --instruments MONITOR,RBEND,INSTRUMENT,TKICKER --working_directory /path/to/data
     ```
     
-    Results are then saved in the working directory in a folder with the magnet names. 
+    Results are then saved in the working directory in a folder with the magnet names.
 
 !!! todo
     I think Hector took care of Kmod analysis for `omc3` so maybe the above tip section should point to the newest codes?

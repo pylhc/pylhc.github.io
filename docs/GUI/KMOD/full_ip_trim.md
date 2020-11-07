@@ -19,6 +19,14 @@ The available parameters are the following:
 !!! todo
     Include screenshot of trim parameters input
 
+## Result Panel
+
+While the Full IP Trim is executed the current and the tune values are displayed live in the result panel.
+After the modulation is done, it will show the whole trim results in the corresponding `ResultPanel` of this trimming task.
+The trim results are stored in the `save directory` of the current IP.
+
+!!! todo
+    Include screenshot of full IP trim with tune history results
 
 *[IP]: Interaction Point
 *[LSA]: LHC Software Architecture

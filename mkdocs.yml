@@ -109,7 +109,7 @@ nav:
       - Full IP Trim: GUI/KMOD/full_ip_trim.md
       - Magnet Modulation: GUI/KMOD/individual_modulation.md
       - Analyzing Trim Data: GUI/KMOD/trim_analysis.md
-      - Auto Trim: GUI/KMOD/autotrim.md
+      - Using Auto Trim: GUI/KMOD/autotrim.md
   - Multiturn GUI:
       - The Multiturn GUI: GUI/MULTITURN/gui.md
   - Physics of OMC: general/physics.md
