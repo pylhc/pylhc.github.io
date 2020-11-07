@@ -97,21 +97,22 @@ nav:
       - generic_parser: packages/generic_parser.md
       - Other Packages: packages/other_packages.md
   - Beta-Beat GUI:
-    - The Beta-Beat GUI: GUI/BETABEAT/gui.md
-    - Running the GUI: GUI/BETABEAT/running.md
-    - The BPM Panel: GUI/BETABEAT/bpm_panel.md
-    - The Analysis Panel: GUI/BETABEAT/analysis_panel.md
-    - The Optics Panel: GUI/BETABEAT/optics_panel.md
-    - The Correction Panel: GUI/BETABEAT/correction_panel.md
+    - The Beta-Beat GUI: gui/betabeat/gui.md
+    - Running the GUI: gui/betabeat/running.md
+    - The BPM Panel: gui/betabeat/bpm_panel.md
+    - The Analysis Panel: gui/betabeat/analysis_panel.md
+    - The Optics Panel: gui/betabeat/optics_panel.md
+    - The Correction Panel: gui/betabeat/correction_panel.md
   - Kmod GUI:
-      - The Kmod GUI: GUI/KMOD/gui.md
-      - Running the GUI: GUI/KMOD/running.md
-      - Full IP Trim: GUI/KMOD/full_ip_trim.md
-      - Magnet Modulation: GUI/KMOD/individual_modulation.md
-      - Analyzing Trim Data: GUI/KMOD/trim_analysis.md
-      - Using Auto Trim: GUI/KMOD/autotrim.md
+      - The Kmod GUI: gui/kmod/gui.md
+      - Running the GUI: gui/kmod/running.md
+      - Full IP Trim: gui/kmod/full_ip_trim.md
+      - Magnet Modulation: gui/kmod/individual_modulation.md
+      - Analyzing Trim Data: gui/kmod/trim_analysis.md
+      - Using Auto Trim: gui/kmod/autotrim.md
   - Multiturn GUI:
-      - The Multiturn GUI: GUI/MULTITURN/gui.md
+      - The Multiturn GUI: gui/multiturn/gui.md
+      - Running the GUI: gui/multiturn/running.md
   - Physics of OMC: general/physics.md
   - OMC Methods: general/methods.md
   - Miscellaneous: general/miscellaneous.md

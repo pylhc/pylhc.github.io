@@ -1,3 +1,7 @@
+# The OMC Team
+
+## Overview
+
 The OMC team is part of the ABP group at CERN, in the HSS section.
 We are responsible for the measurement and correction of the linear and nonlinear optics in the [LHC][lhc]{target=_blank} as well as other machines is the CERN accelerator complex.
 Our meetings can be found on our [Indico page][omc_indico]{target=_blank}.
