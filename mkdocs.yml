@@ -54,7 +54,8 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
-  - pymdownx.arithmatex
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
@@ -73,6 +74,11 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pylhc
     
 # Site Layout
 nav:
@@ -89,13 +95,22 @@ nav:
     - PyLHC: packages/pylhc.md
     - generic_parser: packages/generic_parser.md
     - Other Packages: packages/other_packages.md
-  - The Beta-Beat GUI:
-    - The Beta-Beat GUI: GUI/gui.md
-    - Running the GUI: GUI/running.md
-    - The BPM Panel: GUI/bpm_panel.md
-    - The Analysis Panel: GUI/analysis_panel.md
-    - The Optics Panel: GUI/optics_panel.md
-    - The Correction Panel: GUI/correction_panel.md
+  - Beta-Beat GUI:
+    - The Beta-Beat GUI: GUI/BETABEAT/gui.md
+    - Running the GUI: GUI/BETABEAT/running.md
+    - The BPM Panel: GUI/BETABEAT/bpm_panel.md
+    - The Analysis Panel: GUI/BETABEAT/analysis_panel.md
+    - The Optics Panel: GUI/BETABEAT/optics_panel.md
+    - The Correction Panel: GUI/BETABEAT/correction_panel.md
+  - Kmod GUI:
+      - The Kmod GUI: GUI/KMOD/gui.md
+      - Running the GUI: GUI/KMOD/running.md
+      - Full IP Trim: GUI/KMOD/full_ip_trim.md
+      - Magnet Modulation: GUI/KMOD/individual_modulation.md
+      - Analyzing Trim Data: GUI/KMOD/trim_analysis.md
+      - Auto Trim: GUI/KMOD/autotrim.md
+  - Multiturn GUI:
+      - The Multiturn GUI: GUI/MULTITURN/gui.md
   - Physics of OMC: general/physics.md
   - OMC Methods: general/methods.md
   - Miscellaneous: general/miscellaneous.md
