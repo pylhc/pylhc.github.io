@@ -13,10 +13,14 @@ You will see results by running `python -m mkdocs serve` from the top-level dire
 
 ### To make changes online
 
-Go to the current version of the site [here](https://fsoubelet.github.io/doc_omc/) and click the page's modification link.
+Go to the current version of the site [here][draft_site] and click the page's modification link.
 
 ---
 
-See the [Mkdocs](https://www.mkdocs.org/) documentation for more.
+See the [Mkdocs][mkdocs] documentation for more.
 
-See the [Material Mkdocs Theme](https://squidfunk.github.io/mkdocs-material/) documentation to understand the settings and plugins.
+See the [Material Mkdocs Theme][mkdocs-material] documentation to understand the settings and plugins.
+
+[draft_site]: https://fsoubelet.github.io/OMC_Draft_Site/
+[mkdocs]: https://www.mkdocs.org/
+[mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
