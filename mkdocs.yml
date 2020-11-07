@@ -32,7 +32,7 @@ theme:
   palette:
     scheme: preference
     primary: indigo
-    accent: red
+    accent: amber #red
   font:
     text: Roboto
     code: Roboto Mono
