@@ -95,7 +95,9 @@ nav:
       - sdds: packages/sdds.md
       - PyLHC: packages/pylhc.md
       - generic_parser: packages/generic_parser.md
-      - Other Packages: packages/other_packages.md
+      - Beta-Beat.src: packages/betabeatsrc.md
+      - MESS: packages/mess.md
+    - Python Development: packages/development.md
   - Beta-Beat GUI:
     - The Beta-Beat GUI: gui/betabeat/gui.md
     - Running the GUI: gui/betabeat/running.md
