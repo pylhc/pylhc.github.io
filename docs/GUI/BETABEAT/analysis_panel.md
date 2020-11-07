@@ -12,7 +12,7 @@ In the `Time / Space` tab one can examine the phases and amplitudes, and can cle
 If some values are obviously not inside a given bound, the 2 marker lines (see screenshot below) can be used to set the boundaries and to remove all data outside those boundaries.
 The GUI will check if the removal is inside some predefined bounds to prevent accidental removal of too much data. 
 
-??? todo
+!!! todo
     Include a screenshot of the time / space panel with relevant info highlighted (see twiki)
     
 ## The Frequency Tab
@@ -22,5 +22,5 @@ The `Frequency` tab displays the computed frequencies for every BPM.
 A `Get Optics` button can be used to start the optics calculation.
 This will call an external python script again, with the results available in the [Optics Panel](optics_panel.md).
 
-??? todo
+!!! todo
     Include a screenshot of the frequency panel.

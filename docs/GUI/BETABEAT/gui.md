@@ -1,6 +1,6 @@
 # The Beta-Beat GUI
 
-The Beta-Beat GUI provides different functionalities separated in multiple views, in the form of a simple graphical interface.
+The Beta-Beat GUI provides different functionalities separated in multiple views, in the form of a graphical interface.
 The GUI can be ran locally, provided you have access to `afs`, but most importantly directly from the CERN Control Center.
 This section provides a short overview for the main features.
 

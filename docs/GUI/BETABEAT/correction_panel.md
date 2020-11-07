@@ -20,14 +20,14 @@ At least one optic has to be selected.
 
 After providing a `Knob name`, the `Create Knob` button will create a new Knob in the LSA database.
 
-??? todo
+!!! todo
     Include a screenshot of the Knob Panel on creation tab
 
 The `View Knobs` tab displays a list of all BETA-BEATING Knobs.
 By selecting one, the user can examine or visualize the values attributed to each component.
 
-??? todo
+!!! todo
     Include a screenshot of the Knob Panel view knobs table
 
-??? todo
+!!! todo
     Include a screenshot of the Knob Panel view knobs chart

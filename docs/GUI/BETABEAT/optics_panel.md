@@ -12,14 +12,14 @@ There are in total three main tabs for the optics panel:
 By default, the user is taken to the `Optics` tab.
 A wide variety of computed physical properties can be visualized across the entire machine.
 
-??? todo
+!!! todo
     Include a screenshot with the main optics tab.
 
 ## Segment-by-Segment: Segment Tab
 
 A list of pre-defined segments of the machine can be selected to view properties across said segment.
 
-??? todo
+!!! todo
     Include a screenshot of segment selection.
 
 In the event that one wants to visualize a specific, non pre-defined segment, it is possible to create a new one.
@@ -29,7 +29,7 @@ To do so:
 - Pick the end BPM by clicking on another BPM point.
 - A pop-up appears in which the name of the new segment has to be entered.
 
-??? todo
+!!! todo
     Include a screenshot of the new segment creation dialogue.
 
 Clicking `Go` will call for another python script and take you to the `Segment-by-Segment` tab to view the results.
@@ -39,7 +39,7 @@ Clicking `Go` will call for another python script and take you to the `Segment-b
 Pre-defined lists of elements can be selected to view properties across said elements.
 The working is similar to the one for different [segments](#Segment-by-Segment: Segment).
 
-??? todo
+!!! todo
     Include a screenshot of the element tab.
 
 ## Computing Corrections

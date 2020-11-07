@@ -3,8 +3,21 @@
 The BPM panel provides a graphical interface to query and visualize information for the BPM data files.
 It can load data files for all supported beams, mostly binary SDDS files or files in the SDDS ASCII format.
 
-??? todo
+!!! todo
     Include a screenshot, possibly of settings when opening files?
+
+??? tip "Setting Your Defaults"
+    The GUI defaults to specific locations for which `Beta-Beat.src` directory to use, for input path of you data. etc.
+    It is possible to set these default values yourself by creating a file named `bbgui_user.properties` in your home folder.
+    Different key-value pairs can be set inside for the desired defaults, see an example below:
+    ```bash
+    beam = LHCB1_RUNII_2018
+    inputPath = /some/afs/location/with/your/data/
+    outputPath = /some/afs/location/with/your/results/
+    betaBeatPath = /some/afs/location/with/your/Beta-Beat.src/
+    loadData=True
+    oldFolderStructure=False
+    ```
 
 ## Opening Files and Applying SVD Cleaning
 
@@ -13,7 +26,7 @@ The content of the loaded files will be displayed in two charts:
 - One for the horizontal BPMs,
 - One for the vertical BPMs.
 
-??? todo
+!!! todo
     Include a screenshot with two BPM panels.
 
 The charts are interactive and can be used to zoom in/out, or focus on a given rectangle of the shown data.
@@ -24,7 +37,7 @@ Additional functionality is done while loading a file.
 If SVD is enabled in the settings, the external SVD cleaning python script will be called for the current file during the loading process.
 If SVD cleaning detects and removes bad BPMs, they can be reviewed inside the bad BPM pane.
 
-??? todo
+!!! todo
     Include a screenshot of the bad bpms panel.
 
 ## Removing Turns and Computing an Average
@@ -33,19 +46,19 @@ The buttons on the top left side of the pane provide useful features to handle t
 
 - `Remove Turns` can be used to cut turns from the start or the end, to focus on a specified range of the data. 
 
-??? todo
+!!! todo
     Include a screenshot of before-after comparison for `Remove Turns`.
 
 - `Create Average` allows loading several data files too visualize their average repesentations on the same graph, which helps detecting differences or reducing noise.
 
-??? todo
+!!! todo
     Include a screenshot of `Create Average` effect.
 
 - `Do Analysis` spawns the configuration dialogue for the external analysis.
   This will call an external program to perform harmonic analysis of the BPM data, in order to compute tunes and similar beam properties.
   The results from the analysis can be seen in the [Analysis Panel](analysis_panel.md).
    
-??? todo
+!!! todo
     Include of screenshot of `Do Analysis` dialogue window.
 
 !!! note
