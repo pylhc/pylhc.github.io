@@ -10,16 +10,16 @@ The `AutoTrim` provides something like a pipeline of many k-modulations and thei
 
 !!! tip "First Time AutoTrim"
 
-    If you are in the CCC and have never used the AutoTrim before, follow these steps:
+    If you are in the CCC and have never used the `AutoTrim` before, follow these steps:
     
-    - Open the `AutoTrimDialog` by clicking on the `AutoTim` button located on the left side of the main panel.
-    - Add the IPs you want to trim or analyze with the buttons on the left side.
-    - Input the trim parameter or load an existing trim for each IP tab.
-    - Select the analyzing options you want to execute.
-    - Input the needed values for the trim and all the optional tasks.
-    - Once everything is set up, right press the `Start` button and select the directory where to save the results (It will save the results depending on the trim time and IP. See wiki for more information).
-    - The `AutoTrim` will now check if the orbit feedback is on and the tune feedback is off. Make sure to put them in the desired state.
-    - The `ResultsView` will open and the `AutoTrim` gets started.
+    1. Open the `AutoTrimDialog` by clicking on the `AutoTim` button located on the left side of the main panel.
+    2. Add the IPs you want to trim or analyze with the buttons on the left side.
+    3. Input the trim parameter or load an existing trim for each IP tab.
+    4. Select the analyzing options you want to execute.
+    5. Input the needed values for the trim and all the optional tasks.
+    6. Once everything is set up, right press the `Start` button and select the directory where to save the results (It will save the results depending on the trim time and IP. See wiki for more information).
+    7. The `AutoTrim` will now check if the orbit feedback is on and the tune feedback is off. Make sure to put them in the desired state.
+    8. The `ResultsView` will open and the `AutoTrim` gets started.
 
 ## AutoTrim Panel
 
@@ -77,6 +77,8 @@ Per default, it will show the last logging entry with the corresponding time, bu
     | `Scheduled, grey`  | Task is in the queue and ready to be executed.                            |
     | `Canceled, yellow` | Task got canceled by the user (Not possible still a big TODO).            |
     | `Crashed, red`     | Task crashed because an exception is fired or a critical error occurred.  |
+    
+    \* Not used at the moment, might be useful later (non thread-safe functionality, etc.)
 
 
 ## Loading Existing Trims from Timber
