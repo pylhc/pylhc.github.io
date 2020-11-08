@@ -28,5 +28,6 @@ The trim results are stored in the `save directory` of the current IP.
 !!! todo
     Include screenshot of full IP trim with tune history results
 
+
 *[IP]: Interaction Point
 *[LSA]: LHC Software Architecture

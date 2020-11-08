@@ -36,6 +36,7 @@ The model data is used for preset values in the GUI and the orbit-offset script 
     The kmod GUI will automatically read this file and change the Beta-Beat.src directory to this new value.
     This file must contain `BetaBeatDir=[newBBdir]` (replace the placeholder correctly).
 
+
 *[LSA]: LHC Software Architecture
 *[GPN]: General Purpose Network
 

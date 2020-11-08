@@ -60,6 +60,7 @@ If so, check that you can import `numpy` from the `omc-anaconda-python`.
 If this leads to the previously raised error, then the permissions are broken.
 Either fix the permissions on `afs` or ask someone to do so for you.
 
+
 [archive]: http://abwww.cern.ch/ap/
 [prod_gui]: http://abwww.cern.ch/ap/pro/lhc/lhc-app-beta-beating/BetaBeating-Control-3t.jnlp
 [dev_gui]: http://abwww.cern.ch/ap/next/lhc/lhc-app-beta-beating/BetaBeating-Control-3t.jnlp
