@@ -88,8 +88,7 @@ nav:
       - About omc3: packages/omc3/about.md
       - Getting Started: packages/omc3/getting_started.md
       - Workflow: packages/omc3/workflow.md
-      - Contributing: packages/omc3/contributing.md
-      - Release Notes: packages/omc3/release_notes.md
+      - Know-How: packages/omc3/know_how.md
     - Other Packages:
       - tfs-pandas: packages/tfs-pandas.md
       - sdds: packages/sdds.md
