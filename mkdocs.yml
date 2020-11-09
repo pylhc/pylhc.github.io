@@ -84,6 +84,7 @@ extra:
 nav:
   - The OMC Team: index.md
   - Python Packages:
+    - The OMC Packages: packages/about.md
     - The omc3 Package:
       - About omc3: packages/omc3/about.md
       - Getting Started: packages/omc3/getting_started.md
