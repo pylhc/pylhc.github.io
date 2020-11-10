@@ -5,10 +5,6 @@ We welcome contributions, but before you do, please read the following guideline
 
 ## Submission context
 
-??? info "Our Availability"
-    Please note we are busy people and developping these packages is not our primary priority at work.
-    We may take some time to reply.
-
 #### Got a question or problem?
 
 If you have questions on some of the packages' functionality, and the available documentation does not provide answers, you can submit them as new issues on GitHub.
@@ -26,6 +22,10 @@ You can request a new feature by opening an issue on GitHub.
 If you would like to implement a new feature, please submit an issue with a proposal first, to be sure that it is necessary and appropriate to the package, and to discuss implementation details.
 
 This will also allow us to better coordinate our efforts, prevent duplication of work, and help you craft the change so that it is successfully accepted into the project.
+
+??? info "Our Availability"
+    Please note we are busy people and developping these packages is not our primary priority at work.
+    We may take some time to reply.
 
 ## Submission guidelines
 
