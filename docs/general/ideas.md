@@ -2,7 +2,7 @@
 
 ## Run 3 MDs Ideas 
 
-## optics related
+### optics related
 
   * 2 New ballistic optics flavors:
       * Telescopic for tune jitter measurements with enhanced arcs
@@ -22,7 +22,7 @@
 
    * non-90 degrees arc cell phase advance to ease correction of errors in the arcs (reduce the knob degeneracy of orbit bumps at sextupoles) 
 
-## coupling related
+### coupling related
 
    * Switching off MCS and main sextupoles in one arc to evaluate possible (systematic) vertical or H misalignment of dipoles by measuring coupling and beta-beating during the b3 decay.
     In a previous MD there was a quadratic coupling increase due to the orbit bump in the arc (maybe the one without MS, tbc).
@@ -31,7 +31,7 @@
   
    * Tilting a triplet quadrupole to check validity of the tilt measurement (with and/or without beam)
 
-## BPM related
+### BPM related
 
    * Measure bad BPMs with low and high intensities to detect possible issues with the comparator (transistor).  
    Also swap connections between good and bad BPM to identified.
@@ -46,7 +46,7 @@
 
    * 0.5 um bunch from new injector chain?? Good for optics measurements, BSRT calibration etc.
 
-## K-mod related
+### K-mod related
 
    * K-Modulation with Xing angle and OFB off for Leon's Xing angle reconstruction
 
@@ -58,7 +58,7 @@
      Michele Martino also proposes increasing in 1ppm the noise of the DCCTs in one or all dipole PCs to see impact on tune jitter.
 
 
-## nonlinear related
+### nonlinear related
 
    * Commissioning?: Measure amplitude detuning coming from CMS solenoid by having the on and off measurements
 
