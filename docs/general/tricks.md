@@ -1,0 +1,51 @@
+# Tricks
+
+## Mounting TN resources on GN machines
+To be able to run the GUI or CBNG seamlessly from computers which are not
+in the technical network, it might be useful to mount `/user` and `/nfs`
+via `sshfs` using the following recepie:
+
+- create mountpoints and symbolic links (only once)
+```
+mkdir ~/mnt
+mkdir ~/mnt/user
+ln -s ~/mnt/user /user
+mkdir ~/mnt/nfs
+ln -s ~/mnt/nfs /nfs
+```
+
+- mount network resources (upon timeouts and restarts)
+```
+sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user
+sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs
+```
+
+- if outside of GN, jump through lxplus:
+```
+sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
+sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
+```
+
+
+And in case you need to unmount these:
+```
+sudo fusermount -u ~/mnt/user
+sudo fusermount -u ~/mnt/nfs
+```
+
+## Teleworking related
+
+### Accessing CERN-internal websites
+Adapted from [here](https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw):
+
+```
+ssh -D 8090 username@lxtunnel.cern.ch
+```
+
+opens a tunnel at port 8090 which can be accessed via browser through `127.0.0.1:8090`, (e.g. 
+with the switchyomega extension 
+[Chrome](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif), 
+ [Firefox](https://addons.mozilla.org/en-US/firefox/addon/switchyomega/)
+ )
+
+### Running Graphical Software on lxplus or the TN (e.g. GUI, Eclipse)

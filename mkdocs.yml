@@ -83,6 +83,11 @@ extra:
 # Site Layout
 nav:
   - The OMC Team: index.md
+  - Ideas: general/ideas.md
+  - Physics of OMC: general/physics.md
+  - OMC Methods: general/methods.md
+  - Miscellaneous: general/miscellaneous.md
+  - Publications: general/publications.md
   - Python Packages:
     - The OMC Packages: packages/about.md
     - The omc3 Package:
@@ -100,22 +105,30 @@ nav:
     - Python Development: packages/development.md
   - Beta-Beat GUI:
     - The Beta-Beat GUI: guis/betabeat/gui.md
-    - Running the GUI: guis/betabeat/running.md
-    - The BPM Panel: guis/betabeat/bpm_panel.md
-    - The Analysis Panel: guis/betabeat/analysis_panel.md
-    - The Optics Panel: guis/betabeat/optics_panel.md
-    - The Correction Panel: guis/betabeat/correction_panel.md
+    - Running the GUI:
+      - Basics: guis/betabeat/running.md
+      - BPM Panel: guis/betabeat/bpm_panel.md
+      - Analysis Panel: guis/betabeat/analysis_panel.md
+      - Optics Panel: guis/betabeat/optics_panel.md
+      - Correction Panel: guis/betabeat/correction_panel.md
+    - Developing the GUI:
+      - Installation of an IDE: guis/development/ide_install.md
+      - Releases: guis/development/releases.md
   - Kmod GUI:
-      - The Kmod GUI: guis/kmod/gui.md
-      - Running the GUI: guis/kmod/running.md
+    - The Kmod GUI: guis/kmod/gui.md
+    - Running the GUI: 
+      - Basic: guis/kmod/running.md
       - Full IP Trim: guis/kmod/full_ip_trim.md
       - Magnet Modulation: guis/kmod/individual_modulation.md
       - Analyzing Trim Data: guis/kmod/trim_analysis.md
       - Using Auto Trim: guis/kmod/autotrim.md
+    - Developing the GUI:
+      - Installation of an IDE: guis/development/ide_install.md
+      - Releases: guis/development/releases.md
   - Multiturn GUI:
       - The Multiturn GUI: guis/multiturn/gui.md
       - Running the GUI: guis/multiturn/running.md
-  - Physics of OMC: general/physics.md
-  - OMC Methods: general/methods.md
-  - Miscellaneous: general/miscellaneous.md
-  - Publications: general/publications.md
+  - Useful:
+      - Links: general/links.md
+      - Tricks: general/tricks.md
+      - Publications: general/publications.md
