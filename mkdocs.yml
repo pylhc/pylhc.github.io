@@ -23,7 +23,8 @@ copyright: 'Copyright &copy; 2020 Felix Soubelet'
 # Configuration
 theme:
   name: 'material'
-  
+  logo: assets/logos/OMC_logo.svg
+  favicon: assets/logos/OMC_logo.svg  
   # Default Values
   language: en
   features:
@@ -117,5 +118,6 @@ nav:
       - Running the GUI: guis/multiturn/running.md
   - Physics of OMC: general/physics.md
   - OMC Methods: general/methods.md
-  - Miscellaneous: general/miscellaneous.md
+  - OMC Resources: general/resources.md
   - Publications: general/publications.md
+  - FAQ: general/faqs.md
