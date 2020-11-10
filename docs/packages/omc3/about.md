@@ -15,7 +15,7 @@ The `omc3` package serves the following purposes:
 - Providing an easily callable entrypoint to run your analytics from measurement / simulation files.
 - Providing a convenient wrapper to effortlessly run `MAD-X` jobs.
 
-For detailed instructions see the [getting started guide][getting_started.md].
+For detailed instructions see the [getting started guide](getting_started.md).
 
 ## Changelog
 
