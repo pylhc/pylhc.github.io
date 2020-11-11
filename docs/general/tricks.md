@@ -36,7 +36,7 @@ sudo fusermount -u ~/mnt/nfs
 ## Teleworking related
 
 ### Accessing CERN-internal websites
-Adapted from [here](https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw):
+Adapted from [here](codi_teleworking):
 
 ```
 ssh -D 8090 username@lxtunnel.cern.ch
@@ -44,8 +44,13 @@ ssh -D 8090 username@lxtunnel.cern.ch
 
 opens a tunnel at port 8090 which can be accessed via browser through `127.0.0.1:8090`, (e.g. 
 with the switchyomega extension 
-[Chrome](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif), 
- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/switchyomega/)
+[Chrome](plugin_chrome), 
+ [Firefox](plugin_firefox)
  )
 
 ### Running Graphical Software on lxplus or the TN (e.g. GUI, Eclipse)
+
+
+[codi_teleworking]: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
+[plugin_firefox]: https://addons.mozilla.org/en-US/firefox/addon/switchyomega/
+[plugin_chrome]: https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
