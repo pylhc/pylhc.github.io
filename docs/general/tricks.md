@@ -3,7 +3,7 @@
 ## Mounting TN resources on GN machines
 To be able to run the GUI or CBNG seamlessly from computers which are not
 in the technical network, it might be useful to mount `/user` and `/nfs`
-via `sshfs` using the following recepie:
+via `sshfs` using the following recipe:
 
 - create mountpoints and symbolic links (only once)
 ```
@@ -36,7 +36,7 @@ sudo fusermount -u ~/mnt/nfs
 ## Teleworking related
 
 ### Accessing CERN-internal websites
-Adapted from [here](codi_teleworking):
+Adapted from [here][codi_teleworking]:
 
 ```
 ssh -D 8090 username@lxtunnel.cern.ch
@@ -44,9 +44,18 @@ ssh -D 8090 username@lxtunnel.cern.ch
 
 opens a tunnel at port 8090 which can be accessed via browser through `127.0.0.1:8090`, (e.g. 
 with the switchyomega extension 
-[Chrome](plugin_chrome), 
- [Firefox](plugin_firefox)
+[Chrome][plugin_chrome], 
+ [Firefox][plugin_firefox]
  )
+
+
+### Accessing Journal Papers etc.
+Lots of journals and resources can be accessed via the CERN ezproxy by adding 
+ ```
+ https://ezproxy.cern.ch/login?url=
+ ```
+ in front of the url. See the [website][ezproxy_website] for a list.
+
 
 ### Running Graphical Software on lxplus or the TN (e.g. GUI, Eclipse)
 
@@ -54,3 +63,4 @@ with the switchyomega extension
 [codi_teleworking]: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
 [plugin_firefox]: https://addons.mozilla.org/en-US/firefox/addon/switchyomega/
 [plugin_chrome]: https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
+[ezproxy_website]: https://login.ezproxy.cern.ch/

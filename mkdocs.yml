@@ -112,7 +112,7 @@ nav:
       - Optics Panel: guis/betabeat/optics_panel.md
       - Correction Panel: guis/betabeat/correction_panel.md
     - Developing the GUI:
-      - Installation of an IDE: guis/development/ide_install.md
+      - IDE Setup: guis/development/ide_install.md
       - Releases: guis/development/releases.md
   - Kmod GUI:
     - The Kmod GUI: guis/kmod/gui.md
@@ -123,7 +123,7 @@ nav:
       - Analyzing Trim Data: guis/kmod/trim_analysis.md
       - Using Auto Trim: guis/kmod/autotrim.md
     - Developing the GUI:
-      - Installation of an IDE: guis/development/ide_install.md
+      - IDE Setup: guis/development/ide_install.md
       - Releases: guis/development/releases.md
   - Multiturn GUI:
       - The Multiturn GUI: guis/multiturn/gui.md
