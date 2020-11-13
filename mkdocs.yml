@@ -69,8 +69,11 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
-  - pymdownx.keys
+  - pymdownx.keys:
+      key_map: {"okbtn": "OK", "cancelbtn": "Cancel", "mousewheel": "Mouse Wheel"}
   - pymdownx.mark
+  - pymdownx.snippets:
+      check_paths: true
   - pymdownx.smartsymbols
   - pymdownx.superfences
   - pymdownx.tasklist:
@@ -115,9 +118,11 @@ nav:
       - Analysis Panel: guis/betabeat/analysis_panel.md
       - Optics Panel: guis/betabeat/optics_panel.md
       - Correction Panel: guis/betabeat/correction_panel.md
+    - Running the GUI (omc3):
+      - Important: guis/betabeat/omc3.md
     - Developing the GUI:
-      - IDE Setup: guis/development/ide_install.md
-      - Releases: guis/development/releases.md
+      - IDE Setup: guis/betabeat/ide_install.md
+      - Releases: guis/betabeat/releases.md
   - Kmod GUI:
     - The Kmod GUI: guis/kmod/gui.md
     - Running the GUI: 
@@ -127,12 +132,12 @@ nav:
       - Analyzing Trim Data: guis/kmod/trim_analysis.md
       - Using Auto Trim: guis/kmod/autotrim.md
     - Developing the GUI:
-      - IDE Setup: guis/development/ide_install.md
-      - Releases: guis/development/releases.md
+      - IDE Setup: guis/kmod/ide_install.md
+      - Releases: guis/kmod/releases.md
   - Multiturn GUI:
       - The Multiturn GUI: guis/multiturn/gui.md
       - Running the GUI: guis/multiturn/running.md
-  - Useful:
+  - Tips & Tricks:
       - Links: general/links.md
       - Tricks: general/tricks.md
       - Publications: general/publications.md
