@@ -37,6 +37,12 @@ sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t userna
     sudo fusermount -u ~/mnt/eos
     ```
 
+!!! hint "Hint"
+    To avoid getting asked for your password all the time, you should have your
+    ssh properly configured with kerberos.
+
+
+
 ## Teleworking related
 
 ### Accessing CERN-internal websites
@@ -63,8 +69,75 @@ Lots of journals and resources can be accessed via the CERN ezproxy by adding
 
 ### Running Graphical Software on lxplus or the TN (e.g. GUI, Eclipse)
 
+The  most intuitive way to run graphical software on computers within the CERN-Network 
+from your own PC would be connecting to them by `ssh -X` and control their GUI via the
+forwarded X-Server. While this usually works fine from within CERN itself, where 
+connection speeds are high.
+Yet, depending on the ping and bandwidth of your connection outside, this can be a
+very frustrating experience.
+
+Using RDP is a way to avoid this, as with this protocol the graphical interface is rendered locally
+and only the picture of the screen is transmitted.
+Sadly, the machine you want to work on (_dev-server_, _optics-server_) will not have this installed.
+Yet there is another way: **cernts.cern.ch** allows you to connect to a windows machine via `Remote Desktop Connection`
+from Windows or e.g. `Remmina` from Linux.
+
+Once logged in with your CERN-credentials (Add `CERN.CH\` in front of your username to specify your domain) you can run:
+!!! note ""
+    `Start` &rarr; `X-Win32 18` &rarr; `Lxplus (Default)`
+
+which opens a putty-terminal connected to `lxplus` and starts a X-Server in the background. 
+
+<figure>
+<img src="../../assets/images/tricks/putty_and_xserver_cernts.png" width=90%>
+<figcaption>Putty and XServer on cernts</figcaption>
+</figure>
+
+Executing any graphical software from this terminal will ask for connection authorization, 
+which you need to approve.
+
+<figure>
+<img src="../../assets/images/tricks/allow_xserver_connection.png" width=50%>
+<figcaption>Approve connection to XServer</figcaption>
+</figure>
+
+This way you can run any graphical application smoothly. And even if your internet connection
+fails, you should still be able to resume your current session - at least for a while.
+
+!!! note "Create Shortcut to other machine"
+    If you want to connect to another machine directly (instead of hopping through lxplus) you can create 
+    a shortcut for that:
+    
+    - open `X-Win32 18 Configuration`
+    - `Manual...` &rarr; `More...` &rarr; `command`
+    - Target: `"C:\Program Files (x86)\PuTTY_CERN\putty.exe" -ssh -X machine_at_cern.cern.ch`
+    
+    Fill out the other fields to your liking.
+
+    You can then even create a shortcut on the screen, from the right-click menu on the newly created connection.
+
+!!! note "Alternative way to create configuration"
+    - create a file with the ending `.xw32`, e.g on the desktop
+    - fill it with
+    ```xml
+    <Session>
+    <HideOnStart>false</HideOnStart>
+    <Module>command</Module>
+    <Name>name_you_want_to_give</Name>
+    <NewInstance>never</NewInstance>
+    <Settings>
+        <Target>"C:\Program Files (x86)\PuTTY_CERN\putty.exe" -ssh -X machine_at_cern.cern.ch</Target>
+    </Settings>
+    <ShowStatus>false</ShowStatus>
+    <WindowMode>multiple</WindowMode>
+    </Session>
+    ```
+    - click on file
+
 
 [codi_teleworking]: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
 [plugin_firefox]: https://addons.mozilla.org/en-US/firefox/addon/switchyomega/
 [plugin_chrome]: https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
 [ezproxy_website]: https://login.ezproxy.cern.ch/
+
+*[RDP]: Remote Desktop Protocol
