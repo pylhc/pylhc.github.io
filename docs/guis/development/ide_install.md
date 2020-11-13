@@ -65,7 +65,8 @@ The full path to `bob` is:
 The project can be imported using the git-integrations of the IDEs directly, using the gitlab 
 paths below. This should be straightforward, but you are giving up some control.
 
-In the next subsections the manual path of getting the source-code into the IDE is outlined.
+In the next subsections the manual path of getting the source-code into the IDE is outlined in the hope
+to point to some pitfalls that may occur and how to avoid them.
 
 
 ### Clone the Repository

@@ -129,6 +129,6 @@ nav:
       - The Multiturn GUI: guis/multiturn/gui.md
       - Running the GUI: guis/multiturn/running.md
   - Useful:
-      - Tricks: general/tricks.md
       - Links: general/links.md
+      - Tricks: general/tricks.md
       - Publications: general/publications.md
