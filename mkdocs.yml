@@ -23,7 +23,7 @@ copyright: 'Copyright &copy; 2020 Felix Soubelet'
 # Configuration
 theme:
   name: 'material'
-  logo: assets/logos/OMC_logo.svg
+  logo: assets/logos/OMC_logo_inverse.svg
   favicon: assets/logos/OMC_logo.svg  
   # Default Values
   language: en
@@ -38,6 +38,8 @@ theme:
     text: Roboto
     code: Roboto Mono
 
+extra_css:
+  - css/extra.css
 
 # Plugins
 plugins:
