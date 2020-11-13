@@ -1,0 +1,1 @@
+Gradually include here different pieces of useful information, possibly from questions answered in meetings or on Mattermost, which don't really fit anywhere else

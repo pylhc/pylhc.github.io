@@ -7,11 +7,8 @@ We welcome contributions, but before you do, please read the following guideline
 
 #### Got a question or problem?
 
-For quick questions there's no need to open an issue as you can reach us at [`pylhc@github.com`](mailto:pylhc@github.com).
-
-??? info "Our Availability"
-    Please note we are busy people and developping `omc3` is not our primary priority at work.
-    We may take some time to reply.
+If you have questions on some of the packages' functionality, and the available documentation does not provide answers, you can submit them as new issues on GitHub.
+If you spot missing parts in the documentation, feel free to report it in an issue and open a Pull Request that fixes it. 
 
 #### Found a bug?
 
@@ -25,6 +22,10 @@ You can request a new feature by opening an issue on GitHub.
 If you would like to implement a new feature, please submit an issue with a proposal first, to be sure that it is necessary and appropriate to the package, and to discuss implementation details.
 
 This will also allow us to better coordinate our efforts, prevent duplication of work, and help you craft the change so that it is successfully accepted into the project.
+
+??? info "Our Availability"
+    Please note we are busy people and developping these packages is not our primary priority at work.
+    We may take some time to reply.
 
 ## Submission guidelines
 
