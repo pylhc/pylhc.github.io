@@ -26,8 +26,8 @@
 
 ## Computer Setup at CERN
 
-* [Accounts at CERN][accounts_cern]{target=_blank}
-* [Services at CERN][services_cern]{target=_blank}
+* [Computing Accounts Management][accounts_cern]{target=_blank}
+* [CERN Resources Portal][services_cern]{target=_blank}
 * [AFS and Kerberos Ubuntu][afs_kerberos_ubuntu]{target=_blank}
 * [AFS and Kerberos WSL][afs_kerberos_wsl]{target=_blank}
 * [Use Kerberos for SSH][kerberos_ssh]{target=_blank}
@@ -46,11 +46,11 @@
 
 ### CERN Internal
 
-* [LHC Naming conventions][equipment_codes]{target=_blank}
+* [LHC Naming Conventions - Equipment Codes][equipment_codes]{target=_blank}
 * [LHC Optics Repository][lhc_gitlab]{target=_blank}
 * [CERN Optics Repository][cern_optics_repo_site]{target=_blank}
 * [OP Webtools Page][op_webtools]{target=_blank}
-* [Beam Performance Tracking Site][bpt_site]{target=_blank} site
+* [Beam Performance Tracking Site][bpt_site]{target=_blank}
 * [Beam-Beam and Luminosity Studies][bblumi]{target=_blank}
 <br><br>
 * [Vistars][op_vistar]{target=_blank}
