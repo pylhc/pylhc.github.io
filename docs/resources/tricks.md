@@ -46,7 +46,7 @@ The above command opens a tunnel at port `8090` which can be accessed via browse
 ### Accessing Journal Papers etc.
 
 Lots of journals and resources can be accessed via the `CERN ezproxy` by prepending the viewing url with `https://ezproxy.cern.ch/login?url=`.
-See this [website][ezproxy_website] for a list.
+See this [website][ezproxy_website]{target=_blank} for a list.
 
 ### Running Graphical Software on lxplus or the TN (e.g. GUI, Eclipse)
 
@@ -78,7 +78,7 @@ Executing any graphical software from this terminal will ask for connection auth
 This way you can run any graphical application smoothly.
 If your internet connection fails, you should still be able to resume your current session, at least for a while.
 
-??? help "Creating Shortcut to Other Machines"
+!!! help "Creating Shortcut to Other Machines"
     In order to connect to another machine directly (instead of hopping through `lxplus`) you can create a shortcut:
     
     1. open `X-Win32 18 Configuration`
@@ -88,7 +88,7 @@ If your internet connection fails, you should still be able to resume your curre
     Fill out the other fields to your liking.
     You can even create a shortcut on the screen, from the right-click menu on the newly created connection.
 
-!!! example "Alternative way to create configuration (Windows)"
+!!! example "Alternative way to create configuration"
 
     1. Create a file with the ending `.xw32`, e.g on the desktop
     2. Fill it with

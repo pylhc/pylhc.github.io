@@ -7,7 +7,7 @@ At the following links, you can also find:
 - The current [development version][dev_gui]{target=_blank}.
 - The complete [list of releases][releases]{target=_blank}.
 
-??? note
+!!! warning ""
     Please note that these site are currently available only to devices connected to the CERN network.
 
 From there, open the `.jnlp` executable inside a browser, or call it with `javaws` from the command line.
@@ -31,6 +31,20 @@ The following are required to run the `Beta-Beat` GUI:
 !!! info
     Being inside of the Technical Network is required for the KnobPanel.
     To do so, `ssh` into one of the hosts, for instance `cs-ccr-dev<number>.cern.ch`.
+
+TODO: Josch write other info on default options
+!!! tip "Setting Your Defaults"
+    The GUI defaults to specific locations for which `Beta-Beat.src` directory to use, for input path of you data. etc.
+    It is possible to set these default values yourself by creating a file named `bbgui_user.properties` in your home folder.
+    Different key-value pairs can be set inside for the desired defaults, see an example below:
+    ```bash
+    beam = LHCB1_RUNII_2018
+    inputPath = /some/afs/location/with/your/data/
+    outputPath = /some/afs/location/with/your/results/
+    betaBeatPath = /some/afs/location/with/your/Beta-Beat.src/
+    loadData=True
+    oldFolderStructure=False
+    ```
 
 ## Troubleshooting
 

@@ -90,7 +90,7 @@ extra:
 # Site Layout
 nav:
   - The OMC Team: index.md
-  - Ideas: omc_team/ideas.md
+  - Future MD Ideas: omc_team/ideas.md
   - Physics of OMC: omc_team/physics.md
   - OMC Methods: omc_team/methods.md
   - Publications: omc_team/publications.md
@@ -117,8 +117,8 @@ nav:
       - Analysis Panel: guis/betabeat/analysis_panel.md
       - Optics Panel: guis/betabeat/optics_panel.md
       - Correction Panel: guis/betabeat/correction_panel.md
-    - Running the GUI (omc3):
-      - Important: guis/betabeat/omc3.md
+    - Running the GUI with omc3:
+      - Differences: guis/betabeat/omc3.md
     - Developing the GUI:
       - IDE Setup: guis/betabeat/ide_install.md
       - Releases: guis/betabeat/releases.md
@@ -138,7 +138,7 @@ nav:
       - Running the GUI: guis/multiturn/running.md
   - Resources:
       - Todo: resources/resources.md
-      - Links: resources/links.md
+      - Useful Links: resources/links.md
       - Tricks: resources/tricks.md
       - Publications: omc_team/publications.md
       - FAQ: resources/faqs.md

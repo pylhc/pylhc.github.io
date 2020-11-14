@@ -2,13 +2,9 @@
 
 ## OMC
 
+* [OMC Mattermost][omc_mattermost]{target=_blank}
 * [Meetings][omc_indico]{target=_blank}
 * [Rogelios Website][roro_website]{target=_blank}
-
-## Source-Code Links
-
-* [Startpage on GitHub][pylhc_startpage]{target=_blank}
-* [Sourcecode on GitHub][pylhc_github]{target=_blank}
 
 ### GUI Links
 
@@ -50,24 +46,18 @@
 
 * [LHC Naming conventions][equipment_codes]{target=_blank}
 * [Beam-Beam and Luminosity Studies][bblumi]{target=_blank}
-
 <br><br>
-
 * [Vistars][op_vistar]{target=_blank}
 * [HTCondor Grafana][htcondor_grafana]{target=_blank}
 * [Accelerating Python Wiki][acc_py_wiki]{target=_blank}
 * [Room Booking][room_booking]{target=_blank}
 * [CERN OpenStack][cern_openstack]{target=_blank} (Virtual Machines in Cloud)
 * [Swan][swan]{target=_blank} (Jupyter Notebooks in Cloud)
-
 <br><br>
-
 * [INCA and LSA Applications][inca_lsa_apps]{target=_blank}
 * [CERN CBNG Manual][cbng_manual]{target=_blank}
 * [LSA Wiki][lsa_wiki]{target=_blank}
-
 <br><br>
-
 * [CDash test server dashboard][cdash_testserver]{target=_blank}
 * [LHC MD webpage][lhc_md_page]{target=_blank}
 
@@ -86,10 +76,9 @@
 * [Java Guidelines][java_guidelines]{target=_blank}
 
 
+[omc_mattermost]: https://mattermost.web.cern.ch/be-dep/channels/omc-team
 [omc_indico]: https://indico.cern.ch/category/5986/
 [roro_website]: https://rtomas.web.cern.ch/rtomas/
-[pylhc_startpage]: https://pylhc.github.com/
-[pylhc_github]: https://github.com/pylhc/
 
 [betabeat_gui_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating
 [jira_bugtracker]: https://its.cern.ch/jira/projects/BBGUI/
@@ -124,8 +113,8 @@
 [swan]: https://swan.cern.ch/
 
 [inca_lsa_apps]: https://wikis.cern.ch/pages/viewpage.action?pageId=80977620
-[cbng_manual]: https://wikis/display/DVTLS/CBNG
-[lsa_wiki]: https://wikis/display/LSA/Home
+[cbng_manual]: https://wikis.cern.ch/display/DVTLS/CBNG
+[lsa_wiki]: https://wikis.cern.ch/display/LSA/Home
 
 [cdash_testserver]: http://abp-cdash.web.cern.ch/abp-cdash/
 [lhc_md_page]: https://espace.cern.ch/lhc-md/default.aspx
@@ -136,6 +125,6 @@
 [git_configs]: http://stackoverflow.com/questions/954560/what-does-git-do-to-files-that-are-a-symbolic-link
 [python_docs]: http://docs.python.org/
 
-[python_style_guide]: http://www.voidspace.org.uk/python/articles/python_style_guide.shtml
+[python_style_guide]: https://www.python.org/dev/peps/pep-0008/
 [ssh_keys_github]: https://help.github.com/articles/generating-ssh-keys
-[java_guidelines]: https://wikis/display/DEV/Java+-+BE-CO+development+guidelines
+[java_guidelines]: https://wikis.cern.ch/display/DEV/Java+-+BE-CO+development+guidelines
