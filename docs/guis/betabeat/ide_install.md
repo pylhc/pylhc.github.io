@@ -1,11 +1,11 @@
 # IDE Setup
 
-The easiest way to develop the GUI is using the modified [Eclipse](#eclipse) versions provided by [Accsoft-Eclipse][accsoft_eclipse]{target=_blank}.
+The easiest way to develop the GUI is using the modified Eclipse versions provided by [Accsoft-Eclipse][accsoft_eclipse]{target=_blank}.
 There is also an [installation guide available][accsoft_eclipse_wiki]{target=_blank}.
 
-For people using pycharm it might make sense to use [IntelliJ IDEA](#intellij-idea), however we do not yet know how to export a JAR (see also [GUI Releases](releases.md)).
+For people using pycharm it might make sense to use IntelliJ IDEA, however we do not yet know how to export a JAR (see also [GUI Releases](releases.md)).
 
-As both IDEs require [CommonBuildNextGeneration (CBNG)][cbng_wiki]{target=_blank} to resolve dependencies and make releases, one should either run these from somewhere in the Technical Network (e.g. from the `dev-server`) or mount the required paths via `sshfs` as described [here](../../omc_team/tricks.md#mounting-tn-resources-on-gn-machines).
+As both IDEs require [CommonBuildNextGeneration (CBNG)][cbng_wiki]{target=_blank} to resolve dependencies and make releases, one should either run these from somewhere in the Technical Network (e.g. from the `dev-server`) or mount the required paths via `sshfs` as described [here](../../resources/tricks.md#mounting-tn-resources-on-gn-machines).
 
 ## Installation
 

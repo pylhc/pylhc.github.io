@@ -93,9 +93,7 @@ nav:
   - Ideas: omc_team/ideas.md
   - Physics of OMC: omc_team/physics.md
   - OMC Methods: omc_team/methods.md
-  - OMC Resources: omc_team/resources.md
   - Publications: omc_team/publications.md
-  - FAQ: omc_team/faqs.md
   - Python Packages:
     - The OMC Packages: packages/about.md
     - The omc3 Package:
@@ -138,7 +136,9 @@ nav:
   - Multiturn GUI:
       - The Multiturn GUI: guis/multiturn/gui.md
       - Running the GUI: guis/multiturn/running.md
-  - Tips & Tricks:
-      - Links: omc_team/links.md
-      - Tricks: omc_team/tricks.md
+  - Resources:
+      - Todo: resources/resources.md
+      - Links: resources/links.md
+      - Tricks: resources/tricks.md
       - Publications: omc_team/publications.md
+      - FAQ: resources/faqs.md
