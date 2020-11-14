@@ -1,4 +1,4 @@
-# Links
+# Various Links Useful for OMC Members
 
 ## OMC
 
@@ -31,6 +31,8 @@
 * [AFS and Kerberos Ubuntu][afs_kerberos_ubuntu]{target=_blank}
 * [AFS and Kerberos WSL][afs_kerberos_wsl]{target=_blank}
 * [Use Kerberos for SSH][kerberos_ssh]{target=_blank}
+* [LHC Data Sources][lhc_data_sources]{target=_blank}
+* [HTCondor Batch Docs][batch_docs]{target=_blank}
 * [Setup HTCondor for local use][htcondor_local]{target=_blank}
 * [More HTCondor hints in the Python wrapper][htcondor_python]{target=_blank}
 
@@ -42,9 +44,13 @@
 
 ## Documentation, Manuals and Tools
 
-### CERN Internal:
+### CERN Internal
 
 * [LHC Naming conventions][equipment_codes]{target=_blank}
+* [LHC Optics Repository][lhc_gitlab]{target=_blank}
+* [CERN Optics Repository][cern_optics_repo_site]{target=_blank}
+* [OP Webtools Page][op_webtools]{target=_blank}
+* [Beam Performance Tracking Site][bpt_site]{target=_blank} site
 * [Beam-Beam and Luminosity Studies][bblumi]{target=_blank}
 <br><br>
 * [Vistars][op_vistar]{target=_blank}
@@ -52,7 +58,7 @@
 * [Accelerating Python Wiki][acc_py_wiki]{target=_blank}
 * [Room Booking][room_booking]{target=_blank}
 * [CERN OpenStack][cern_openstack]{target=_blank} (Virtual Machines in Cloud)
-* [Swan][swan]{target=_blank} (Jupyter Notebooks in Cloud)
+* [SWAN][swan]{target=_blank} (Jupyter Notebooks in CERN Cloud)
 <br><br>
 * [INCA and LSA Applications][inca_lsa_apps]{target=_blank}
 * [CERN CBNG Manual][cbng_manual]{target=_blank}
@@ -95,6 +101,8 @@
 [afs_kerberos_ubuntu]: https://gist.github.com/OmeGak/9530124
 [afs_kerberos_wsl]: https://gist.github.com/JoschD/194b3f6c6fcc408684a481fd4a2ff4e5
 [kerberos_ssh]: https://twiki.cern.ch/twiki/bin/view/Main/Kerberos
+[lhc_data_sources]: https://twiki.cern.ch/twiki/bin/view/ABPComputing/LhcDataStorage
+[batch_docs]: https://batchdocs.web.cern.ch/index.html
 [htcondor_local]: https://twiki.cern.ch/twiki/bin/view/ABPComputing/LxbatchHTCondor
 [htcondor_python]: http://pylhc.github.io/Beta-Beat.src/utils/index.html#module-utils.htcondor_wrapper
 
@@ -103,6 +111,10 @@
 [remote_desktop_service]: https://remotedesktop.web.cern.ch/remotedesktop/RDweb/Desktops.aspx
 
 [equipment_codes]: https://edms5.cern.ch/cedar/plsql/codes.systems
+[lhc_gitlab]: https://gitlab.cern.ch/acc-models/acc-models-lhc
+[cern_optics_repo_site]: https://acc-models.web.cern.ch/acc-models/
+[op_webtools]: https://op-webtools.web.cern.ch/index.html
+[bpt_site]: https://bpt.web.cern.ch/
 [bblumi]: http://bblumi.web.cern.ch/
 
 [op_vistar]: https://op-webtools.web.cern.ch/vistar/vistars.php

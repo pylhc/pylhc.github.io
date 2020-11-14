@@ -1,4 +1,4 @@
-# Tricks
+# Various Tricks Useful for OMC Members
 
 ## Mounting TN resources on GN machines
 

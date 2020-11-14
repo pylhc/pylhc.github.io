@@ -137,8 +137,7 @@ nav:
       - The Multiturn GUI: guis/multiturn/gui.md
       - Running the GUI: guis/multiturn/running.md
   - Resources:
-      - Todo: resources/resources.md
       - Useful Links: resources/links.md
-      - Tricks: resources/tricks.md
+      - Setup Tricks: resources/tricks.md
       - Publications: omc_team/publications.md
       - FAQ: resources/faqs.md
