@@ -125,7 +125,7 @@ nav:
   - Kmod GUI:
     - The Kmod GUI: guis/kmod/gui.md
     - Running the GUI: 
-      - Basic: guis/kmod/running.md
+      - Basics: guis/kmod/running.md
       - Full IP Trim: guis/kmod/full_ip_trim.md
       - Magnet Modulation: guis/kmod/individual_modulation.md
       - Analyzing Trim Data: guis/kmod/trim_analysis.md
