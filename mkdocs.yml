@@ -3,7 +3,9 @@
 
 # Project information
 site_name: OMC Documentation
-site_description: Documentation Pages for the OMC3 Python Package
+site_description: >-
+  Documentation pages for the OMC Team at CERN. Content includes documentation
+  on our activities, workflows and software as well as resources for members.
 site_author: Felix Soubelet
 #site_url: ''
 
