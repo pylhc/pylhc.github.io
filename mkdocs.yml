@@ -38,8 +38,15 @@ theme:
     text: Roboto
     code: Roboto Mono
 
+# Extras to load
 extra_css:
   - css/extra.css
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 
 # Plugins
 plugins:
@@ -86,6 +93,10 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/pylhc
+      name: OMC's Organisation on Github
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:OMC-team@cern.ch
+      name: Email the OMC team
     
 # Site Layout
 nav:
