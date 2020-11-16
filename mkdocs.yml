@@ -151,6 +151,8 @@ nav:
       - Running the GUI: guis/multiturn/running.md
   - Resources:
       - Useful Links: resources/links.md
-      - Setup Tricks: resources/tricks.md
+      - How To's:
+        - Setup: resources/howto/setup.md
+        - Teleworking: resources/howto/teleworking.md
       - Publications: omc_team/publications.md
       - FAQ: resources/faqs.md

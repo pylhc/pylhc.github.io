@@ -1,40 +1,7 @@
-# Various Tricks Useful for OMC Members
 
-## Mounting TN resources on GN machines
+# Tricks to ease Teleworking
 
-To be able to run the GUI or CBNG seamlessly from computers which are not in the technical network, it might be useful to mount `/user`, `/nfs` and `/eos` via `sshfs` using the following recipe:
-
-1. Create mountpoints and symbolic links (only once)
-```bash
-mkdir -p ~/mnt/user && ln -s ~/mnt/user /user
-mkdir ~/mnt/nfs && ln -s ~/mnt/nfs /nfs
-mkdir ~/mnt/eos && ln -s ~/mnt/eos /eos
-```
-2. Mount network resources (upon timeouts and restarts)
-```bash
-sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user
-sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs
-sshfs username@lxplus.cern.ch:/eos/ ~/mnt/eos
-```
-3. If outside of GN, jump through lxplus to mount dev3-folders:
-```bash
-sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
-sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
-```
-
-??? info "In case you need to unmount these"
-    ```
-    sudo fusermount -u ~/mnt/user
-    sudo fusermount -u ~/mnt/nfs
-    sudo fusermount -u ~/mnt/eos
-    ```
-
-!!! tip
-    To avoid getting asked for your password all the time, you should have your `ssh` properly configured with kerberos.
-
-## Teleworking related
-
-### Accessing CERN-internal websites
+## Accessing CERN-internal websites
 
 Adapted from [here][codi_teleworking]:
 ```bash
@@ -43,12 +10,12 @@ ssh -D 8090 username@lxtunnel.cern.ch
 
 The above command opens a tunnel at port `8090` which can be accessed via browser through `localhost:8090`.
 
-### Accessing Journal Papers etc.
+## Accessing Journal Papers etc.
 
 Lots of journals and resources can be accessed via the `CERN ezproxy` by prepending the viewing url with `https://ezproxy.cern.ch/login?url=`.
 See this [website][ezproxy_website]{target=_blank} for a list.
 
-### Running Graphical Software on lxplus or the TN (e.g. GUI, Eclipse)
+## Running Graphical Software on lxplus or the TN (e.g. GUI, Eclipse)
 
 The  most intuitive way to run graphical software on computers within the CERN network from your own PC would be connecting to them by `ssh -X` and control their GUI via the forwarded X-Server.
 While this usually works fine from within CERN itself, where connection speeds are high, depending on the ping and bandwidth of your local connection this can be a frustrating experience.
@@ -64,14 +31,14 @@ Once logged in with your CERN-credentials (Add `CERN.CH\` in front of your usern
 which opens a putty-terminal connected to `lxplus` and starts a `X-Server` in the background. 
 
 <figure>
-  <img src="../../assets/images/tricks/putty_and_xserver_cernts.png" width=90%>
+  <img src="../../../assets/images/tricks/putty_and_xserver_cernts.png" width=90%>
   <figcaption>Putty and XServer on cernts</figcaption>
 </figure>
 
 Executing any graphical software from this terminal will ask for connection authorization, which you need to approve.
 
 <figure>
-  <img src="../../assets/images/tricks/allow_xserver_connection.png" width=60%>
+  <img src="../../../assets/images/tricks/allow_xserver_connection.png" width=60%>
   <figcaption>Approve connection to XServer</figcaption>
 </figure>
 
