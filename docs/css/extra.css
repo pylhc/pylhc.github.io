@@ -10,3 +10,13 @@
     margin-right: auto;
 }
 
+
+li.cern_login,
+a.cern_login {
+   font-style: italic; 
+}
+
+li.cern_internal,
+a.cern_internal {
+   color: green;
+}

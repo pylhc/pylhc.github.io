@@ -1,8 +1,18 @@
 # Various Links Useful for OMC Members
 
+
+???+ info "Legend"
+
+    * Normal Link
+    {: style="color:var(--md-typeset-a-color);font-size=0.7rem"}
+    * Webpage needs CERN-login
+    {: .cern_login style="color:var(--md-typeset-a-color);font-size:0.7rem"}
+    * Only accessible from CERN-Network
+    {: .cern_internal style="font-size:0.7rem"}
+
 ## OMC
 
-* [OMC Mattermost][omc_mattermost]{target=_blank}
+* [OMC Mattermost][omc_mattermost]{target=_blank .cern_login}
 * [Meetings][omc_indico]{target=_blank}
 * [Rogelios Website][roro_website]{target=_blank}
 
@@ -10,24 +20,24 @@
 
 === "Beta-Beat"
     
-    * [Beta-Beat Gitlab][betabeat_gui_gitlab]{target=_blank}
-    * [Jira Bugtracker][jira_bugtracker]{target=_blank}
-    * [Artifactory][betabeat_artifactory]{target=_blank}
+    * [Beta-Beat Gitlab][betabeat_gui_gitlab]{target=_blank .cern_login}
+    * [Jira Bugtracker][jira_bugtracker]{target=_blank .cern_login}
+    * [Artifactory][betabeat_artifactory]{target=_blank .cern_internal}
 
 === "Kmod"
     
-    * [Kmod Gitlab][kmod_gui_gitlab]{target=_blank}
-    * [Artifactory][kmod_artifactory]{target=_blank}
+    * [Kmod Gitlab][kmod_gui_gitlab]{target=_blank .cern_login}
+    * [Artifactory][kmod_artifactory]{target=_blank .cern_internal}
     
 === "Multiturn"
 
-    * [Multiturn Gitlab][multiturn_gitlab]{target=_blank}
-    * [Artifactory][multiturn_artifactory]{target=_blank}
+    * [Multiturn Gitlab][multiturn_gitlab]{target=_blank .cern_login}
+    * [Artifactory][multiturn_artifactory]{target=_blank .cern_internal}
 
 ## Computer Setup at CERN
 
-* [Computing Accounts Management][accounts_cern]{target=_blank}
-* [CERN Resources Portal][services_cern]{target=_blank}
+* [Computing Accounts Management][accounts_cern]{target=_blank .cern_login}
+* [CERN Resources Portal][services_cern]{target=_blank .cern_login}
 * [AFS and Kerberos Ubuntu][afs_kerberos_ubuntu]{target=_blank}
 * [AFS and Kerberos WSL][afs_kerberos_wsl]{target=_blank}
 * [Use Kerberos for SSH][kerberos_ssh]{target=_blank}
@@ -39,8 +49,8 @@
 ### Teleworking
 
 * [CodiMD CERN - Teleworking Tips & Tricks][codimd]{target=_blank}
-* [Cern Computing Blog - Useful tools for teleworking][cern_computing_blog]{target=_blank}
-* [Remote Desktop Service][remote_desktop_service]{target=_blank} (or with application, connect to **cernts.cern.ch**)
+* [Cern Computing Blog - Useful tools for teleworking][cern_computing_blog]{target=_blank  .cern_login}
+* [Remote Desktop Service][remote_desktop_service]{target=_blank .cern_login} (or with application, connect to **cernts.cern.ch**)
 
 ## Documentation, Manuals and Tools
 
@@ -54,15 +64,16 @@
 * [Beam-Beam and Luminosity Studies][bblumi]{target=_blank}
 <br><br>
 * [Vistars][op_vistar]{target=_blank}
-* [HTCondor Grafana][htcondor_grafana]{target=_blank}
-* [Accelerating Python Wiki][acc_py_wiki]{target=_blank}
-* [Room Booking][room_booking]{target=_blank}
-* [CERN OpenStack][cern_openstack]{target=_blank} (Virtual Machines in Cloud)
-* [SWAN][swan]{target=_blank} (Jupyter Notebooks in CERN Cloud)
+* [HTCondor Grafana][htcondor_grafana]{target=_blank .cern_login}
+* [Accelerating Python Wiki][acc_py_wiki]{target=_blank .cern_internal}
+* [Room Booking][room_booking]{target=_blank .cern_login}
+* [CERN OpenStack][cern_openstack]{target=_blank .cern_login} (Virtual Machines in Cloud)
+* [SWAN][swan]{target=_blank .cern_login} (Jupyter Notebooks in CERN Cloud)
 <br><br>
-* [INCA and LSA Applications][inca_lsa_apps]{target=_blank}
-* [CERN CBNG Manual][cbng_manual]{target=_blank}
-* [LSA Wiki][lsa_wiki]{target=_blank}
+* [Timber][timber_cern]{target=_blank .cern_internal}
+* [INCA and LSA Applications][inca_lsa_apps]{target=_blank .cern_internal}
+* [CERN CBNG Manual][cbng_manual]{target=_blank .cern_internal}
+* [LSA Wiki][lsa_wiki]{target=_blank .cern_internal}
 <br><br>
 * [CDash test server dashboard][cdash_testserver]{target=_blank}
 * [LHC MD webpage][lhc_md_page]{target=_blank}
@@ -79,7 +90,8 @@
 
 * [Python Style Guide][python_style_guide]{target=_blank}
 * [Generating SSH keys for GitHub][ssh_keys_github]{target=_blank}
-* [Java Guidelines][java_guidelines]{target=_blank}
+* [Java Guidelines][java_guidelines]{target=_blank .cern_internal}
+
 
 
 [omc_mattermost]: https://mattermost.web.cern.ch/be-dep/channels/omc-team
@@ -124,6 +136,7 @@
 [cern_openstack]: https://openstack.cern.ch/
 [swan]: https://swan.cern.ch/
 
+[timber_cern]: https://timber.cern.ch
 [inca_lsa_apps]: https://wikis.cern.ch/pages/viewpage.action?pageId=80977620
 [cbng_manual]: https://wikis.cern.ch/display/DVTLS/CBNG
 [lsa_wiki]: https://wikis.cern.ch/display/LSA/Home
@@ -139,4 +152,4 @@
 
 [python_style_guide]: https://www.python.org/dev/peps/pep-0008/
 [ssh_keys_github]: https://help.github.com/articles/generating-ssh-keys
-[java_guidelines]: https://wikis.cern.ch/display/DEV/Java+-+BE-CO+development+guidelines
+[java_guidelines]: https://wikis.cern.ch/display/DEV/Java+development+guidelines
