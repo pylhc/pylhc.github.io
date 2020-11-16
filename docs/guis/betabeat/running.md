@@ -32,11 +32,10 @@ The following are required to run the `Beta-Beat` GUI:
     Being inside of the Technical Network is required for the KnobPanel.
     To do so, `ssh` into one of the hosts, for instance `cs-ccr-dev<number>.cern.ch`.
 
-TODO: Josch write other info on default options
 !!! tip "Setting Your Defaults"
     The GUI defaults to specific locations for which `Beta-Beat.src` directory to use, for input path of you data. etc.
-    It is possible to set these default values yourself by creating a file named `bbgui_user.properties` in your home folder.
-    Different key-value pairs can be set inside for the desired defaults, see an example below:
+    Different key-value pairs can be set inside for the desired defaults, for example:
+    
     ```bash
     beam = LHCB1_RUNII_2018
     inputPath = /some/afs/location/with/your/data/
@@ -44,6 +43,15 @@ TODO: Josch write other info on default options
     betaBeatPath = /some/afs/location/with/your/Beta-Beat.src/
     loadData=True
     oldFolderStructure=False
+    ```
+    These values can be set by a file named `bbgui_user.properties` in either the current working directory, from where you run the Gui, or in your home folder. 
+    The latter is only used if there is no such file in the current working directory.
+    If you want to use any file at any place you can also give the path to this file as the first and only argument.
+    It is also possible to set these default values by passing them as arguments to the Gui call.
+    In this case the keys need to start with `--`, e.g. 
+    
+    ```
+    --beam LHCB1_RUNII_2018 --inputPath /some/afs/location/with/your/data/
     ```
 
 ## Troubleshooting
