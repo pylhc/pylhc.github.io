@@ -4,11 +4,11 @@
 ???+ info "Legend"
 
     * Normal Link
-    {: style="color:var(--md-typeset-a-color);font-size=0.7rem"}
+    {: style="color:var(--md-typeset-a-color);"}
     * Webpage needs CERN-login
-    {: .cern_login style="color:var(--md-typeset-a-color);font-size:0.7rem"}
+    {: .cern_login style="color:var(--md-typeset-a-color);"}
     * Only accessible from CERN-Network
-    {: .cern_internal style="font-size:0.7rem"}
+    {: .cern_internal}
 
 ## OMC
 
@@ -52,44 +52,46 @@
 * [Cern Computing Blog - Useful tools for teleworking][cern_computing_blog]{target=_blank  .cern_login}
 * [Remote Desktop Service][remote_desktop_service]{target=_blank .cern_login} (or with application, connect to **cernts.cern.ch**)
 
-## Documentation, Manuals and Tools
 
-### CERN Internal
+## CERN 
 
-* [LHC Naming Conventions - Equipment Codes][equipment_codes]{target=_blank}
-* [LHC Optics Repository][lhc_gitlab]{target=_blank}
-* [CERN Optics Repository][cern_optics_repo_site]{target=_blank}
-* [OP Webtools Page][op_webtools]{target=_blank}
-* [Beam Performance Tracking Site][bpt_site]{target=_blank}
-* [Beam-Beam and Luminosity Studies][bblumi]{target=_blank}
-<br><br>
+### Webtools
 * [Vistars][op_vistar]{target=_blank}
 * [HTCondor Grafana][htcondor_grafana]{target=_blank .cern_login}
-* [Accelerating Python Wiki][acc_py_wiki]{target=_blank .cern_internal}
-* [Room Booking][room_booking]{target=_blank .cern_login}
-* [CERN OpenStack][cern_openstack]{target=_blank .cern_login} (Virtual Machines in Cloud)
-* [SWAN][swan]{target=_blank .cern_login} (Jupyter Notebooks in CERN Cloud)
-<br><br>
+* [OP Webtools Page][op_webtools]{target=_blank}
 * [Timber][timber_cern]{target=_blank .cern_internal}
 * [INCA and LSA Applications][inca_lsa_apps]{target=_blank .cern_internal}
+* [LHC MD webpage][lhc_md_page]{target=_blank}
+* [Beam Performance Tracking Site][bpt_site]{target=_blank}
+* [SWAN][swan]{target=_blank .cern_login} (Jupyter Notebooks in CERN Cloud)
+* [CERN OpenStack][cern_openstack]{target=_blank .cern_login} (Virtual Machines in Cloud)
+* [Room Booking][room_booking]{target=_blank .cern_login}
+### Info
+* [LHC Naming Conventions - Equipment Codes][equipment_codes]{target=_blank}
+* [Beam-Beam and Luminosity Studies][bblumi]{target=_blank}
+* [Accelerating Python Wiki][acc_py_wiki]{target=_blank .cern_internal}
 * [CERN CBNG Manual][cbng_manual]{target=_blank .cern_internal}
 * [LSA Wiki][lsa_wiki]{target=_blank .cern_internal}
-<br><br>
-* [CDash test server dashboard][cdash_testserver]{target=_blank}
-* [LHC MD webpage][lhc_md_page]{target=_blank}
 
-### General Hints
-
-* [GitHub Flavored Markdown][github_markdown]{target=_blank}
-* [Markdown Cheatsheet][markdown_cheatsheet]{target=_blank}
-* [Jira Text Formatting Notation][jira_formatting]{target=_blank}
-* [Git - configuration for symbolic links instead of files][git_configs]{target=_blank}
-* [Python docs][python_docs]{target=_blank}
+### Repositories
+* [LHC Optics Repository][lhc_gitlab]{target=_blank}
+* [CERN Optics Repository][cern_optics_repo_site]{target=_blank}
 
 ## Development Guidelines and How-To's
 
-* [Python Style Guide][python_style_guide]{target=_blank}
+* [Markdown Cheatsheet][markdown_cheatsheet]{target=_blank}
+* [Jira Text Formatting Notation][jira_formatting]{target=_blank}
+
+### Git
 * [Generating SSH keys for GitHub][ssh_keys_github]{target=_blank}
+* [Git - configuration for symbolic links instead of files][git_configs]{target=_blank}
+* [GitHub Flavored Markdown][github_markdown]{target=_blank}
+
+### Python
+* [Python Style Guide][python_style_guide]{target=_blank}
+* [Python docs][python_docs]{target=_blank}
+
+### Java
 * [Java Guidelines][java_guidelines]{target=_blank .cern_internal}
 
 
@@ -141,7 +143,6 @@
 [cbng_manual]: https://wikis.cern.ch/display/DVTLS/CBNG
 [lsa_wiki]: https://wikis.cern.ch/display/LSA/Home
 
-[cdash_testserver]: http://abp-cdash.web.cern.ch/abp-cdash/
 [lhc_md_page]: https://espace.cern.ch/lhc-md/default.aspx
 
 [github_markdown]: https://help.github.com/articles/github-flavored-markdown
