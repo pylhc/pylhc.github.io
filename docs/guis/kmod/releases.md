@@ -1,0 +1,1 @@
+--8<-- "docs/guis/betabeat/releases.md"

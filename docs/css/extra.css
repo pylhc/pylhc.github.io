@@ -2,6 +2,30 @@
     width: 3rem;
 }
 
+
+/* Increasing page width */
+.md-grid {
+    max-width: 65rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Specific style for links to sites requiring CERN login */
+li.cern_login,
+a.cern_login {
+/*   font-style: italic; */
+   color: dodgerblue;
+}
+
+
+/* Specific style for links to sites requiring CERN network */
+li.cern_internal,
+a.cern_internal {
+   color: lightcoral;
+}
+
+
 .md-typeset .admonition.nodeco,
 .md-typeset details.nodeco {
   background-color: var(--md-primary-bg-color);
@@ -16,7 +40,7 @@
 .md-typeset .nodeco > summary {
     background-color: var(--md-primary-bg-color);
     padding: 0 0 0 0;
-    border-left: 0; 
+    border-left: 0;
     margin: 0 0 0 -0.5rem;
     font-weight: normal;
 }
