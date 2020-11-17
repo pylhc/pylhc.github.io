@@ -3,7 +3,9 @@
 
 # Project information
 site_name: OMC Documentation
-site_description: Documentation Pages for the OMC3 Python Package
+site_description: >-
+  Documentation pages for the OMC Team at CERN. Content includes documentation
+  on our activities, workflows and software as well as resources for members.
 site_author: Felix Soubelet
 #site_url: ''
 
@@ -13,7 +15,7 @@ site_author: Felix Soubelet
 #repo_url: 'https://github.com/pylhc'
 repo_name: 'FSoubelet'
 repo_url: 'https://github.com/fsoubelet/'
-edit_uri: 'doc_omc/edit/master/docs/'
+edit_uri: 'OMC_Draft_Site/edit/master/docs/'
 
 
 # Copyright
@@ -38,8 +40,15 @@ theme:
     text: Roboto
     code: Roboto Mono
 
+# Extras to load
 extra_css:
   - css/extra.css
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 
 # Plugins
 plugins:
@@ -69,10 +78,14 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
-  - pymdownx.keys
+  - pymdownx.keys:
+      key_map: {"okbtn": "OK", "cancelbtn": "Cancel", "mousewheel": "Mouse Wheel"}
   - pymdownx.mark
+  - pymdownx.snippets:
+      check_paths: true
   - pymdownx.smartsymbols
   - pymdownx.superfences
+  - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
@@ -82,10 +95,18 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/pylhc
+      name: OMC's Organisation on Github
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:OMC-team@cern.ch
+      name: Email the OMC team
     
 # Site Layout
 nav:
   - The OMC Team: index.md
+  - Future MD Ideas: omc_team/ideas.md
+  - Physics of OMC: omc_team/physics.md
+  - OMC Methods: omc_team/methods.md
+  - Publications: omc_team/publications.md
   - Python Packages:
     - The OMC Packages: packages/about.md
     - The omc3 Package:
@@ -103,23 +124,35 @@ nav:
     - Python Development: packages/development.md
   - Beta-Beat GUI:
     - The Beta-Beat GUI: guis/betabeat/gui.md
-    - Running the GUI: guis/betabeat/running.md
-    - The BPM Panel: guis/betabeat/bpm_panel.md
-    - The Analysis Panel: guis/betabeat/analysis_panel.md
-    - The Optics Panel: guis/betabeat/optics_panel.md
-    - The Correction Panel: guis/betabeat/correction_panel.md
+    - Running the GUI:
+      - Basics: guis/betabeat/running.md
+      - BPM Panel: guis/betabeat/bpm_panel.md
+      - Analysis Panel: guis/betabeat/analysis_panel.md
+      - Optics Panel: guis/betabeat/optics_panel.md
+      - Correction Panel: guis/betabeat/correction_panel.md
+    - Running the GUI with omc3:
+      - Differences: guis/betabeat/omc3.md
+    - Developing the GUI:
+      - IDE Setup: guis/betabeat/ide_install.md
+      - Releases: guis/betabeat/releases.md
   - Kmod GUI:
-      - The Kmod GUI: guis/kmod/gui.md
-      - Running the GUI: guis/kmod/running.md
+    - The Kmod GUI: guis/kmod/gui.md
+    - Running the GUI: 
+      - Basics: guis/kmod/running.md
       - Full IP Trim: guis/kmod/full_ip_trim.md
       - Magnet Modulation: guis/kmod/individual_modulation.md
       - Analyzing Trim Data: guis/kmod/trim_analysis.md
       - Using Auto Trim: guis/kmod/autotrim.md
+    - Developing the GUI:
+      - IDE Setup: guis/kmod/ide_install.md
+      - Releases: guis/kmod/releases.md
   - Multiturn GUI:
       - The Multiturn GUI: guis/multiturn/gui.md
       - Running the GUI: guis/multiturn/running.md
-  - Physics of OMC: general/physics.md
-  - OMC Methods: general/methods.md
-  - OMC Resources: general/resources.md
-  - Publications: general/publications.md
-  - FAQ: general/faqs.md
+  - Resources:
+      - Useful Links: resources/links.md
+      - How To's:
+        - Setup: resources/howto/setup.md
+        - Teleworking: resources/howto/teleworking.md
+      - Publications: omc_team/publications.md
+      - FAQ: resources/faqs.md

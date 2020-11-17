@@ -1,3 +1,26 @@
 .md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
     width: 3rem;
 }
+
+
+/* Increasing page width */
+.md-grid {
+    max-width: 65rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Specific style for links to sites requiring CERN login */
+li.cern_login,
+a.cern_login {
+/*   font-style: italic; */
+   color: dodgerblue;
+}
+
+
+/* Specific style for links to sites requiring CERN network */
+li.cern_internal,
+a.cern_internal {
+   color: lightcoral;
+}

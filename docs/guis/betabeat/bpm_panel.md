@@ -6,19 +6,6 @@ It can load data files for all supported beams, mostly binary SDDS files or file
 !!! todo
     Include a screenshot, possibly of settings when opening files?
 
-??? tip "Setting Your Defaults"
-    The GUI defaults to specific locations for which `Beta-Beat.src` directory to use, for input path of you data. etc.
-    It is possible to set these default values yourself by creating a file named `bbgui_user.properties` in your home folder.
-    Different key-value pairs can be set inside for the desired defaults, see an example below:
-    ```bash
-    beam = LHCB1_RUNII_2018
-    inputPath = /some/afs/location/with/your/data/
-    outputPath = /some/afs/location/with/your/results/
-    betaBeatPath = /some/afs/location/with/your/Beta-Beat.src/
-    loadData=True
-    oldFolderStructure=False
-    ```
-
 ## Opening Files and Applying SVD Cleaning
 
 The content of the loaded files will be displayed in two charts:

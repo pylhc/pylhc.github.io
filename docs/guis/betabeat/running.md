@@ -7,7 +7,7 @@ At the following links, you can also find:
 - The current [development version][dev_gui]{target=_blank}.
 - The complete [list of releases][releases]{target=_blank}.
 
-??? note
+!!! warning ""
     Please note that these site are currently available only to devices connected to the CERN network.
 
 From there, open the `.jnlp` executable inside a browser, or call it with `javaws` from the command line.
@@ -28,9 +28,31 @@ The following are required to run the `Beta-Beat` GUI:
 - A version of `Java>=7`.
 - The [`jws`][jws] replacement for `javaws`.
 
-!!! info
-    Being inside of the Technical Network is required for the KnobPanel.
-    To do so, `ssh` into one of the hosts, for instance `cs-ccr-dev<number>.cern.ch`.
+!!! info ""
+    Being inside of the Technical Network is required for the `KnobPanel`.
+    To do so, `ssh -X` into one of the hosts, for instance to `cs-ccr-dev<number>.cern.ch`.
+
+!!! tip "Setting Your Defaults"
+    The GUI defaults to specific locations for which `Beta-Beat.src` directory to use, the input path of you data, etc.
+    Different key-value pairs can be set inside for the desired defaults, for example:
+    
+    ```bash
+    beam = LHCB1_RUNII_2018
+    inputPath = /some/afs/location/with/your/data/
+    outputPath = /some/afs/location/with/your/results/
+    betaBeatPath = /some/afs/location/with/your/Beta-Beat.src/
+    loadData=True
+    oldFolderStructure=False
+    ```
+    These values can be set by a file named `bbgui_user.properties` (with the above syntax) in either the current working directory, from where you run the GUI, or in your home folder. 
+    The latter is only used if there is no such file in the current working directory.
+
+    If you want to use a specific file located anywhere, you can also give the path to this file as the first and only argument when starting the GUI.
+    It is also possible to set each of these default values by passing them as flag arguments to the GUI call, e.g: 
+    
+    ```
+    --beam LHCB1_RUNII_2018 --inputPath /some/afs/location/with/your/data/
+    ```
 
 ## Troubleshooting
 
