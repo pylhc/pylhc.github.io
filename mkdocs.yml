@@ -88,6 +88,7 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.tilde
 
 # Customization
@@ -99,7 +100,7 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:OMC-team@cern.ch
       name: Email the OMC team
-    
+
 # Site Layout
 nav:
   - The OMC Team: index.md
@@ -137,7 +138,7 @@ nav:
       - Releases: guis/betabeat/releases.md
   - Kmod GUI:
     - The Kmod GUI: guis/kmod/gui.md
-    - Running the GUI: 
+    - Running the GUI:
       - Basics: guis/kmod/running.md
       - Full IP Trim: guis/kmod/full_ip_trim.md
       - Magnet Modulation: guis/kmod/individual_modulation.md
@@ -149,6 +150,10 @@ nav:
   - Multiturn GUI:
       - The Multiturn GUI: guis/multiturn/gui.md
       - Running the GUI: guis/multiturn/running.md
+  - Procedures:
+      - Info: procedures/info.md
+      - Amplitude Detuning: procedures/ampdet.md
+      - Crossing Angle Scan: procedures/xing_scan.md
   - Resources:
       - Useful Links: resources/links.md
       - How To's:
