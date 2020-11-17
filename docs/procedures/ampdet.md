@@ -1,6 +1,6 @@
 # Amplitude Detuning Measurements
 
-(example only)
+!!! warning "This is only an example procedure for demonstration purposes, to be written."
 
 ## Measurement
 
@@ -16,10 +16,8 @@
       </p></details>
       
 - [ ] <details class="nodeco"><summary>Do some measurement</summary>
-      <p>Do kicks, then do some more kicks
-      and then even more kicks and when you think you  are done, 
-      better kicks some more just for good measure.
-      Let's just hope you won't be the one who has to analyse all these kicks...
+      <p>Do kicks, then do some more kicks, and then even more kicks and when you think you are done, better kick some more just for good measure.
+      Let's just hope you won't be the one who has to analyze all this data...
       </p></details>
     - [ ] <details class="nodeco"><summary>This is a subtask</summary>
         <p>I don't actually have anything to say. 
@@ -36,6 +34,6 @@
 ## Analysis
 
 - [ ] Load data
-- [ ] check data for correct tunes
-- [ ] analyse data
-- [ ] run bbq correctiona
+- [ ] Check data for correct tunes
+- [ ] Analyse data
+- [ ] Run BBQ correction
