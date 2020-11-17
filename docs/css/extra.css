@@ -1,9 +1,10 @@
+/* Taking care of the size of the OMC logo (top left) */
 .md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
     width: 3rem;
 }
 
 
-/* Increasing page width */
+/* Increasing content body width */
 .md-grid {
     max-width: 65rem;
     margin-left: auto;
@@ -14,7 +15,6 @@
 /* Specific style for links to sites requiring CERN login */
 li.cern_login,
 a.cern_login {
-/*   font-style: italic; */
    color: dodgerblue;
 }
 
@@ -25,7 +25,7 @@ a.cern_internal {
    color: lightcoral;
 }
 
-
+/* Collapsible admonitions for procedures */
 .md-typeset .admonition.nodeco,
 .md-typeset details.nodeco {
   background-color: var(--md-primary-bg-color);
@@ -60,8 +60,7 @@ a.cern_internal {
 }
 
 
-
-/* can't get it to run this way, but I'll leave it here (jdilly) */
+/* Can't get it to run this way, but I'll leave it here (jdilly) */
 [data-md-color-scheme="cern"] {
   --md-primary-fg-color:        #0033A0;
   --md-primary-fg-color--light: #9BAEDB;
