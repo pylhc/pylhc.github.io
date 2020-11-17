@@ -150,6 +150,10 @@ nav:
   - Multiturn GUI:
       - The Multiturn GUI: guis/multiturn/gui.md
       - Running the GUI: guis/multiturn/running.md
+  - Procedures:
+      - Info: procedures/info.md
+      - Amplitude Detuning: procedures/ampdet.md
+      - Crossing Angle Scan: procedures/xing_scan.md
   - Resources:
       - Useful Links: resources/links.md
       - How To's:
@@ -157,7 +161,3 @@ nav:
         - Teleworking: resources/howto/teleworking.md
       - Publications: omc_team/publications.md
       - FAQ: resources/faqs.md
-  - Procedures:
-      - Info: procedures/info.md
-      - Amplitude Detuning: procedures/ampdet.md
-      - Crossing Angle Scan: procedures/xing_scan.md
