@@ -1,20 +1,19 @@
-# Various Links Useful for OMC Members
+# Links to Various Useful Resources
 
+???+ info "Hyperlinks Legend"
 
-???+ info "Legend"
-
-    * Normal Link
+    * Publicly Accessible Page
     {: style="color:var(--md-typeset-a-color);"}
-    * Webpage needs CERN-login
-    {: .cern_login style="color:var(--md-typeset-a-color);"}
-    * Only accessible from CERN-Network
+    * Webpage needs CERN login
+    {: .cern_login}
+    * Only accessible from the CERN Network
     {: .cern_internal}
 
 ## OMC
 
 * [OMC Mattermost][omc_mattermost]{target=_blank .cern_login}
-* [Meetings][omc_indico]{target=_blank}
-* [Rogelios Website][roro_website]{target=_blank}
+* [Meetings (OMC Team Indico)][omc_indico]{target=_blank}
+* [Rogelio's Website][roro_website]{target=_blank}
 
 ### GUI Links
 
@@ -38,13 +37,9 @@
 
 * [Computing Accounts Management][accounts_cern]{target=_blank .cern_login}
 * [CERN Resources Portal][services_cern]{target=_blank .cern_login}
-* [AFS and Kerberos Ubuntu][afs_kerberos_ubuntu]{target=_blank}
-* [AFS and Kerberos WSL][afs_kerberos_wsl]{target=_blank}
-* [Use Kerberos for SSH][kerberos_ssh]{target=_blank}
-* [LHC Data Sources][lhc_data_sources]{target=_blank}
-* [HTCondor Batch Docs][batch_docs]{target=_blank}
-* [Setup HTCondor for local use][htcondor_local]{target=_blank}
-* [More HTCondor hints in the Python wrapper][htcondor_python]{target=_blank}
+* [AFS and Kerberos (for Ubuntu)][afs_kerberos_ubuntu]{target=_blank}
+* [AFS and Kerberos (for WSL)][afs_kerberos_wsl]{target=_blank}
+* [Using Kerberos for SSH][kerberos_ssh]{target=_blank}
 
 ### Teleworking
 
@@ -52,10 +47,17 @@
 * [Cern Computing Blog - Useful tools for teleworking][cern_computing_blog]{target=_blank  .cern_login}
 * [Remote Desktop Service][remote_desktop_service]{target=_blank .cern_login} (or with application, connect to **cernts.cern.ch**)
 
+### Computing setup for Members
+
+* [LHC Data Sources][lhc_data_sources]{target=_blank}
+* [HTCondor Batch Docs][batch_docs]{target=_blank}
+* [Setup HTCondor for local use][htcondor_local]{target=_blank}
+* [More HTCondor hints in the Python wrapper][htcondor_python]{target=_blank}
 
 ## CERN 
 
 ### Webtools
+
 * [Vistars][op_vistar]{target=_blank}
 * [HTCondor Grafana][htcondor_grafana]{target=_blank .cern_login}
 * [OP Webtools Page][op_webtools]{target=_blank}
@@ -66,7 +68,9 @@
 * [SWAN][swan]{target=_blank .cern_login} (Jupyter Notebooks in CERN Cloud)
 * [CERN OpenStack][cern_openstack]{target=_blank .cern_login} (Virtual Machines in Cloud)
 * [Room Booking][room_booking]{target=_blank .cern_login}
+
 ### Info
+
 * [LHC Naming Conventions - Equipment Codes][equipment_codes]{target=_blank}
 * [Beam-Beam and Luminosity Studies][bblumi]{target=_blank}
 * [Accelerating Python Wiki][acc_py_wiki]{target=_blank .cern_internal}
@@ -74,6 +78,7 @@
 * [LSA Wiki][lsa_wiki]{target=_blank .cern_internal}
 
 ### Repositories
+
 * [LHC Optics Repository][lhc_gitlab]{target=_blank}
 * [CERN Optics Repository][cern_optics_repo_site]{target=_blank}
 
@@ -83,15 +88,18 @@
 * [Jira Text Formatting Notation][jira_formatting]{target=_blank}
 
 ### Git
+
 * [Generating SSH keys for GitHub][ssh_keys_github]{target=_blank}
 * [Git - configuration for symbolic links instead of files][git_configs]{target=_blank}
 * [GitHub Flavored Markdown][github_markdown]{target=_blank}
 
 ### Python
+
 * [Python Style Guide][python_style_guide]{target=_blank}
 * [Python docs][python_docs]{target=_blank}
 
 ### Java
+
 * [Java Guidelines][java_guidelines]{target=_blank .cern_internal}
 
 

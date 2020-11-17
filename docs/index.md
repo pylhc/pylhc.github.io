@@ -11,7 +11,7 @@ Our meetings can be found on our [Indico page][omc_indico]{target=_blank}.
     An existing but poor documentation can be found on the [OMC twiki][omc_twiki]{target=_blank}.
 
 
-*[CERN]: Conseil européen pour la recherche nucléaire
+*[CERN]: Conseil Européen pour la Recherche Nucléaire
 *[ABP]: Accelerator and Beams Physics
 *[OMC]: Optics Measurements and Corrections
 *[HSS]: Hadron Synchrotron Single-Particle

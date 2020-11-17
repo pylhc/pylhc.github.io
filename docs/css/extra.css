@@ -11,12 +11,16 @@
 }
 
 
+/* Specific style for links to sites requiring CERN login */
 li.cern_login,
 a.cern_login {
-   font-style: italic; 
+/*   font-style: italic; */
+   color: dodgerblue;
 }
 
+
+/* Specific style for links to sites requiring CERN network */
 li.cern_internal,
 a.cern_internal {
-   color: green;
+   color: lightcoral;
 }

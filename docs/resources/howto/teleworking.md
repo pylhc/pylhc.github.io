@@ -1,9 +1,8 @@
-
-# Tricks to ease Teleworking
+# Resources to Ease Teleworking
 
 ## Accessing CERN-internal websites
 
-Adapted from [here][codi_teleworking]:
+Adapted from [here][codi_teleworking]{target=_blank}, you can create a web proxy:
 ```bash
 ssh -D 8090 username@lxtunnel.cern.ch
 ```
@@ -22,8 +21,9 @@ While this usually works fine from within CERN itself, where connection speeds a
 
 Using RDP is a way to avoid this, as with this protocol the graphical interface is rendered locally and only the picture of the screen is transmitted.
 Sadly, the machine you want to work on (_dev-server_, _optics-server_) will not have this installed.
-There is another way: **cernts.cern.ch** allows you to connect to a windows machine via `Remote Desktop Connection` from Windows or e.g. `Remmina` from Linux.
-Once logged in with your CERN-credentials (Add `CERN.CH\` in front of your username to specify your domain) you can run:
+
+However, **cernts.cern.ch** allows you to connect to a windows machine via `Remote Desktop Connection` from Windows, or e.g. `Remmina` from Linux.
+Once logged in with your CERN credentials (Add `CERN.CH\` in front of your username to specify your domain) you can run:
 
 !!! note ""
     `Start` &rarr; `X-Win32 18` &rarr; `Lxplus (Default)`
@@ -39,7 +39,7 @@ Executing any graphical software from this terminal will ask for connection auth
 
 <figure>
   <img src="../../../assets/images/tricks/allow_xserver_connection.png" width=60%>
-  <figcaption>Approve connection to XServer</figcaption>
+  <figcaption>Approval prompt for a connection to XServer</figcaption>
 </figure>
 
 This way you can run any graphical application smoothly.
@@ -48,17 +48,17 @@ If your internet connection fails, you should still be able to resume your curre
 !!! help "Creating Shortcut to Other Machines"
     In order to connect to another machine directly (instead of hopping through `lxplus`) you can create a shortcut:
     
-    1. open `X-Win32 18 Configuration`
-    2. `Manual...` &rarr; `More...` &rarr; `command`
-    3. Target: `"C:\Program Files (x86)\PuTTY_CERN\putty.exe" -ssh -X machine_at_cern.cern.ch`
+    1. Open `X-Win32 18 Configuration`.
+    2. `Manual...` &rarr; `More...` &rarr; `command`.
+    3. Target: `"C:\Program Files (x86)\PuTTY_CERN\putty.exe" -ssh -X machine_at_cern.cern.ch`.
     
     Fill out the other fields to your liking.
     You can even create a shortcut on the screen, from the right-click menu on the newly created connection.
 
 !!! example "Alternative way to create configuration"
 
-    1. Create a file with the ending `.xw32`, e.g on the desktop
-    2. Fill it with
+    1. Create a file with the ending `.xw32`, e.g on the desktop.
+    2. Fill it with:
     ```xml
     <Session>
     <HideOnStart>false</HideOnStart>
@@ -72,7 +72,7 @@ If your internet connection fails, you should still be able to resume your curre
     <WindowMode>multiple</WindowMode>
     </Session>
     ```
-    3. Click on file
+    3. Click on file.
 
 
 *[RDP]: Remote Desktop Protocol
