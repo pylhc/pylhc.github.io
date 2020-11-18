@@ -4,4 +4,4 @@ The Kmod GUI provides functionality to perform [K-Modulation](../../omc_team/met
 It also has the ability to extract and analyze data from previous trims.
 
 This site will guide you through the GUI's layout and functionality.
-For starters, see [here](running.md) about running the GUI.
+For starters, check out [the basics of running the GUI](basics.md).
