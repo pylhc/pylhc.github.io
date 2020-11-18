@@ -1,28 +1,21 @@
-The GUI can be started from inside eclipse (which will prompt you with the logging window) or from an [external archive site][archive]{target=_blank}.
-At the following links, you can also find:
+The GUIs can be started from your development environment or via deployed `.jnlp` from the archives:
 
 === "Beta-Beat"
 
-    Beta-Beat Gui:
-
-    - Latest [production version][prod_bbgui]{target=_blank}.
-    - Latest [development version][dev_bbgui]{target=_blank}.
+    - Latest [Beta-Beating production version][prod_bbgui]{target=_blank}.
+    - Latest [Beta-Beating development version][dev_bbgui]{target=_blank}.
     - Complete [list of releases][releases_bbgui]{target=_blank}.
     
 === "Kmod"
 
-    Kmod Gui:
-    
-    - Latest [production version][prod_kmodgui]{target=_blank}.
-    - Latest [development version][dev_kmodgui]{target=_blank}.
+    - Latest [Kmod production version][prod_kmodgui]{target=_blank}.
+    - Latest [Kmod development version][dev_kmodgui]{target=_blank}.
     - Complete [list of releases][releases_kmodgui]{target=_blank}.
     
 === "Multiturn"
 
-    Multiturn Gui:
-
-    - Latest [production version][prod_mtgui]{target=_blank}.
-    - Latest [development version][dev_mtgui]{target=_blank}.
+    - Latest [Multiturn production version][prod_mtgui]{target=_blank}.
+    - Latest [Multiturn development version][dev_mtgui]{target=_blank}.
     - Complete [list of releases][releases_mtgui]{target=_blank}.
 
 
@@ -82,7 +75,6 @@ Either fix the permissions on `afs` or ask someone to do so for you.
 *[LSA]: LHC Software Architecture
 *[GPN]: General Purpose Network
 
-[archive]: http://abwww.cern.ch/ap/
 [prod_bbgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-betabeating/PRO/BetaBeating-Control-3t.jnlp
 [dev_bbgui]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-betabeating/PRO/BetaBeating-Control-3t.jnlp
 [releases_bbgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating/
