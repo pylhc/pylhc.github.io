@@ -73,6 +73,7 @@ This decides over lumi and lives in the experiments.
 
 *[CO]: Closed Orbit
 *[BSRT]: Beam Synchrotron Radiation Telescope
+*[OFB]: Orbit Feed Back
 *[LSA]: LHC Software Architecture
 
 [kmod_app]: #
