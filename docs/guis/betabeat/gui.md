@@ -12,4 +12,4 @@ The GUI provides several panels, each for a defined use and with a set of option
 - [The Correction Panel](correction_panel.md) to display the computed necessary corrections to reach the nominal model.
 
 This site will guide you through the GUI's layout and functionality.
-For starters, see [here](running.md) about running the GUI.
+For starters, check out [the basics of running the GUI](basics.md).

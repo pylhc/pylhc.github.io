@@ -40,16 +40,6 @@ theme:
     text: Roboto
     code: Roboto Mono
 
-# Extras to load
-extra_css:
-  - css/extra.css
-
-extra_javascript:
-  - javascripts/config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
-
 # Plugins
 plugins:
   - search
@@ -101,6 +91,15 @@ extra:
       link: mailto:OMC-team@cern.ch
       name: Email the OMC team
 
+# Extras to load
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 # Site Layout
 nav:
   - The OMC Team: index.md
@@ -126,7 +125,8 @@ nav:
   - Beta-Beat GUI:
     - The Beta-Beat GUI: guis/betabeat/gui.md
     - Running the GUI:
-      - Basics: guis/betabeat/running.md
+      - Basics: guis/betabeat/basics.md
+      - Beam Selection: guis/betabeat/beam_selection.md
       - BPM Panel: guis/betabeat/bpm_panel.md
       - Analysis Panel: guis/betabeat/analysis_panel.md
       - Optics Panel: guis/betabeat/optics_panel.md
@@ -139,7 +139,7 @@ nav:
   - Kmod GUI:
     - The Kmod GUI: guis/kmod/gui.md
     - Running the GUI:
-      - Basics: guis/kmod/running.md
+      - Basics: guis/kmod/basics.md
       - Full IP Trim: guis/kmod/full_ip_trim.md
       - Magnet Modulation: guis/kmod/individual_modulation.md
       - Analyzing Trim Data: guis/kmod/trim_analysis.md
@@ -152,7 +152,7 @@ nav:
       - Running the GUI: guis/multiturn/running.md
   - Procedures:
       - Info: procedures/info.md
-      - KMod: procedures/kmod.md
+      - K Modulation: procedures/kmod.md
       - Amplitude Detuning: procedures/ampdet.md
       - Crossing Angle Scan: procedures/xing_scan.md
   - Resources:
@@ -160,5 +160,5 @@ nav:
       - How To's:
         - Setup: resources/howto/setup.md
         - Teleworking: resources/howto/teleworking.md
-      - Publications: omc_team/publications.md
+      - Publications: resources/publications.md
       - FAQ: resources/faqs.md

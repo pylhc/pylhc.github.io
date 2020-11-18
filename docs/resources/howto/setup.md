@@ -1,6 +1,6 @@
 # Useful Setup How-To's
 
-## Mounting TN resources on GN machines
+## Mounting TN resources on GPN and other machines
 
 To be able to run the GUI or CBNG seamlessly from computers which are not in the technical network, it might be useful to mount `/user`, `/nfs` and `/eos` via `sshfs` using the following recipe:
 
@@ -16,7 +16,7 @@ sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user
 sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs
 sshfs username@lxplus.cern.ch:/eos/ ~/mnt/eos
 ```
-3. If outside of GN, jump through `lxplus` to mount `dev3`-folders:
+3. If outside of the GPN, jump through `lxplus` to mount `dev3`-folders:
 ```bash
 sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
 sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
@@ -33,6 +33,27 @@ sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t userna
     ```
 
 
+## Running GUIs Locally
+
+To use the [KMod GUI][kmod_gui] or the `KnobPanel` in the [Beta-Beat GUI][bb_gui], it is required to be on the TN, as they need to connect to LSA.
+If you are in the GPN but not on the TN, you will need to tunnel through some machines.
+
+First, install the program [sshuttle][sshuttle]{target=_blank}, which should be available in your package manager.
+Then, run this command in a terminal and leave it open:
+```bash
+sshuttle -vr <username>@cs-ccr-dev2 172.18.0.0/16
+```
+
+All traffic related to the technical network will be redirected through the `cs-ccr-dev2` machine which has access to both networks. In case it isn't available, the other `cs-ccr-devX` machines can be used. 
+
+
 *[TN]: Technical Network
-*[GN]: General Network
+*[GPN]: General Purpose Network, the main CERN network
 *[CBNG]: Common Build Next Generation
+*[LSA]: LHC Software Architecture
+
+[sshuttle]: https://sshuttle.readthedocs.io/en/stable/
+
+[kmod_gui]: ../../guis/kmod/gui.md
+[bb_gui]: ../../guis/betabeat/gui.md
+
