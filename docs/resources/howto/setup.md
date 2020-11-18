@@ -16,7 +16,7 @@ sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user
 sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs
 sshfs username@lxplus.cern.ch:/eos/ ~/mnt/eos
 ```
-3. If outside of GPN, jump through `lxplus` to mount `dev3`-folders:
+3. If outside of the GPN, jump through `lxplus` to mount `dev3`-folders:
 ```bash
 sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
 sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
@@ -35,8 +35,8 @@ sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t userna
 
 ## Running GUIs Locally
 
-To use the [KMod GUI][kmod_gui] or the `KnobPanel` in the [Beta-Beat-Gui][bb_gui], it is required to be on the TN, as they need to connect to LSA.
-If you are in the GPN but not on the TN, you will need to tunnel through some machines to be able to, as it needs to connect to LSA.
+To use the [KMod GUI][kmod_gui] or the `KnobPanel` in the [Beta-Beat GUI][bb_gui], it is required to be on the TN, as they need to connect to LSA.
+If you are in the GPN but not on the TN, you will need to tunnel through some machines.
 
 First, install the program [sshuttle][sshuttle]{target=_blank}, which should be available in your package manager.
 Then, run this command in a terminal and leave it open:
@@ -52,6 +52,8 @@ All traffic related to the technical network will be redirected through the `cs-
 *[CBNG]: Common Build Next Generation
 *[LSA]: LHC Software Architecture
 
-[kmod_gui]: ../../../guis/kmod/gui/
-[bb_gui]: ../../../guis/betabeat/gui/
+[sshuttle]: https://sshuttle.readthedocs.io/en/stable/
+
+[kmod_gui]: ../../guis/kmod/gui.md
+[bb_gui]: ../../guis/betabeat/gui.md
 

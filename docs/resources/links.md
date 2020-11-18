@@ -36,7 +36,8 @@
 
 ### JWS Programs
 
-(all <span class="cern_internal"> only accessible from CERN Network </span>)
+!!! warning ""
+    All of these are <span class="cern_internal"> only accessible from CERN Network </span>.
 
 === "Beta-Beat"
 
@@ -62,7 +63,6 @@
     jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-multiturn/PRO/lhc-multiturn-lhc-multiturn.jnlp
     ```
 
-
 === "LSA-App-Suite"
     
     ```bash
@@ -79,7 +79,6 @@
     ```bash
     jws http://bewww.cern.ch/ap/deployments/applications/cern/accsoft/cals/accsoft-cals-extr-app/PRO/timber.jnlpx
     ```
-
 
 ## Computer Setup at CERN
 
@@ -149,7 +148,6 @@
 ### Java
 
 * [Java Guidelines][java_guidelines]{target=_blank .cern_internal}
-
 
 
 [omc_mattermost]: https://mattermost.web.cern.ch/be-dep/channels/omc-team

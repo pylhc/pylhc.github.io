@@ -5,7 +5,7 @@
 ## Loading a model
 
 You can load the model created from the [Beta-Beat GUI](../betabeat/gui.md) or [Multiturn GUI](../multiturn/gui.md) for each beam by pressing the `load model` button.
-Select the desired model directory in the popup dialog and confirm by pressing the `open` button.
+Select the desired model directory in the pop-up dialog and confirm by pressing the `open` button.
 If everything worked fine and the specified folder contains the needed `twiss_elements` file, the GUI will display the model's name.
 
 You can choose another model directory by pressing on the `update model` button which appears if a model is already selected.

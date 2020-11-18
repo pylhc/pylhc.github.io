@@ -26,15 +26,14 @@ Open the `.jnlp` executable inside a browser, or [call it with `jws` from the co
 
 !!! info "Compatibility Issues"
     Since `javaws` (java web start) makes trouble due to intenal security mechanisms, a replacement named `jws` was developed and has to be used to run the `jlnp` file.
-    For further information see the [jws Confluence][jws_confluence]{target=_blank} page.
-
+    For further information see the [jws Confluence][jws_confluence]{target=_blank .cern_internal} page.
 
 ## Requirements
 
 The following are required to run the GUIs:
 
 - A version of `Java>=8`.
-- The [`jws`][jws] replacement for `javaws` (in case of errors, [see below](#problems-with-execution-due-to-disabled-java)).
+- The [`jws`][jws]{target=_blank .cern_internal} replacement for `javaws` (in case of errors, [see below](#problems-with-execution-due-to-disabled-java)).
 
 !!! info ""
     Being inside of the TN is required for the `KnobPanel`.

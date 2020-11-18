@@ -26,7 +26,7 @@
     ```
 
 ??? tip "Additional Default Settings"
-    Additionally to the settings you can set in the beam selection window, there are some additional settings that can only be set via arguments.
+    Additionally, there are some settings that can only be set via arguments.
     Their keys and default values are:
     
     ```bash
@@ -38,6 +38,6 @@
     - `oldFolderStructure` refers to the folder structure, where the `models` folder is at top level and contains the machines as subdirectories.
       Setting this value to `False` assumes (and creates) the models in a `Models` folder on the same level as `Measurements` and `Results`, i.e. within the machine-folders.
     - `consoleLogging` activates additional logging into the terminal.
-      The effect is only visible, if the GUI was started from the console.
+      The effect is only visible if the GUI was started from the console.
     - `checkFreeSpace` activates a quick check of the available space upon start of the GUI.
-      The result of this check is logged in the console, and hence also only visible if the GUI is started via terminal command. 
+      The result of this check is logged in the console, and hence also only visible if the GUI is started via terminal command.
