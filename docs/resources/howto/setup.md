@@ -51,11 +51,12 @@ All traffic related to the technical network will be redirected through the `cs-
 If you are programming locally, but also want to have a copy on AFS, either because your colleges are not comfortable with gitlab or you need the code for other scripts that you are running on lxplus or similar, here is the guide for you:
 
 !!! warning "Security Risk"
-    Creating a new account is done, so you do not have to add the password of your main account to your gitlab repository, which is a security risk.
-    Admittedly, if everything is done correctly, it is a low one, but just in case something goes wrong or leaks, you can just delete this account.
-    Also, you can give this account only the necessary rights to write to AFS in the first place and do not risk that anyone can access other sensible information.
+    We will be creating a new account, so you **do not have to add the password of your main account to your gitlab repository**.
+    This would be a security risk!<br>
+    Admittedly, it is a low one if everything is done correctly, but just in case something goes wrong or leaks, you can just delete this account.<br>
+    Also, you can give this account **only the rights necessary** to write to AFS in the first place and do not risk that anyone can access other sensible information.
 
-1. ??? nodeco "Create a new service account via the [CERN account management][new_account] of length 8."   
+1. ??? nodeco "Create a new service account, via the [CERN account management][new_account]{target=_blank}, of length 8."   
     > You need at least 8 characters to mask that name in gitlab (if you want to do so), but on the other hand, there is a warning, that AFS cannot handle names longer than 8.
     > So exactly 8 seems to be the sweetspot.
     > If you do not care about masking the name (it is not as important as masking the password, see below) you can go shorter.
@@ -65,7 +66,7 @@ If you are programming locally, but also want to have a copy on AFS, either beca
     > You can go as long as you want. Better make this 15 characters long at least.
 
 
-2. [Activate the AFS service][afs_services] for the newly created account.
+2. [Activate the AFS service][afs_services]{target=_blank} for the newly created account.
 3. Create git
 4. Pull into afs
 5. give account access rights
