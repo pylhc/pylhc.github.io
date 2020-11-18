@@ -76,7 +76,7 @@ This decides over lumi and lives in the experiments.
 *[OFB]: Orbit Feed Back
 *[LSA]: LHC Software Architecture
 
-[kmod_app]: #
+[kmod_app]: ../guis/kmod/basics.md
 [get_kmod_files_python2]: https://github.com/pylhc/Beta-Beat.src/blob/master/kmod/gui2beta/get_kmod_files.py
 [kmod_python2]: https://github.com/pylhc/Beta-Beat.src/blob/master/kmod/gui2beta/gui2kmod.py
 [kmod_python3]: https://github.com/pylhc/omc3/blob/master/omc3/run_kmod.py

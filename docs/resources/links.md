@@ -33,6 +33,54 @@
     * [Multiturn Gitlab][multiturn_gitlab]{target=_blank .cern_login}
     * [Artifactory][multiturn_artifactory]{target=_blank .cern_internal}
 
+
+### JWS Programs
+
+(all <span class="cern_internal"> only accessible from CERN Network </span>)
+
+=== "Beta-Beat"
+
+    _PRO_
+    ```bash
+    jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-betabeating/PRO/BetaBeating-Control-3t.jnlp
+    ```
+
+    _DEV_
+    ```bash
+    jws https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-betabeating/PRO/BetaBeating-Control-3t.jnlp
+    ```
+
+=== "Kmod"
+
+    ```bash
+    jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-kmod/PRO/lhc-app-kmod-lhc-app-kmod.jnlp
+    ```
+
+=== "Multiturn"
+
+    ```bash
+    jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-multiturn/PRO/lhc-multiturn-lhc-multiturn.jnlp
+    ```
+
+
+=== "LSA-App-Suite"
+    
+    ```bash
+    jws http://bewww.cern.ch/ap/deployments/applications/cern/lsa/lsa-app-suite/PRO/lsa-app-suite-lhc.jnlpx
+    ```
+
+    _LHC Panel open_
+    ```bash
+    jws 'http://bewww.cern.ch/ap/deployments/applications/cern/lsa/lsa-app-suite/PRO/lsa-app-suite-lhc.jnlpx?accelerator=LHC&lsa.server=lhc&lsa.contextfamily=BP&arg0=lsa-app-settings-management'
+    ```
+
+=== "Timber"
+
+    ```bash
+    jws http://bewww.cern.ch/ap/deployments/applications/cern/accsoft/cals/accsoft-cals-extr-app/PRO/timber.jnlpx
+    ```
+
+
 ## Computer Setup at CERN
 
 * [Computing Accounts Management][accounts_cern]{target=_blank .cern_login}

@@ -14,6 +14,7 @@
 
 /* Specific style for links to sites requiring CERN login */
 li.cern_login,
+span.cern_login,
 a.cern_login {
    color: dodgerblue;
 }
@@ -21,6 +22,7 @@ a.cern_login {
 
 /* Specific style for links to sites requiring CERN network */
 li.cern_internal,
+span.cern_internal,
 a.cern_internal {
    color: lightcoral;
 }
