@@ -1,6 +1,6 @@
 # Useful Setup How-To's
 
-## Mounting TN resources on GPN and other machines
+## Mounting TN Resources on GPN and Other Machines
 
 To be able to run the GUI or CBNG seamlessly from computers which are not in the technical network, it might be useful to mount `/user`, `/nfs` and `/eos` via `sshfs` using the following recipe:
 
@@ -23,7 +23,7 @@ sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t userna
 ```
 
 !!! info ""
-    To avoid getting asked for your password all the time, you should have your `ssh` properly configured with kerberos.
+    To avoid getting asked for your password all the time, you should have your `ssh` properly configured with Kerberos.
 
 ??? tip "In case you need to unmount these"
     ```
@@ -46,49 +46,46 @@ sshuttle -vr <username>@cs-ccr-dev2 172.18.0.0/16
 All traffic related to the technical network will be redirected through the `cs-ccr-dev2` machine which has access to both networks. In case it isn't available, the other `cs-ccr-devX` machines can be used. 
 
 
-## Configure gitlab CI to automatically pull into afs
+## Configuring Gitlab CI to Automatically Pull into AFS
 
-If you are programming locally, but also want to have a copy on AFS, either because your colleges are not comfortable with gitlab or you need the code for other scripts that you are running on lxplus or similar, here is the guide for you:
+If you are programming locally, but also want to have a copy on AFS, either because your colleges are not comfortable with Gitlab or you need the code for other scripts that you are running on `lxplus` or similar, here is how:
 
 ### Create Service Account
 
-!!! warning "Security Risk!"
-    We will be creating a new account, so you **do not have to add the password of your main account to your gitlab repository**.
-    This would be a security risk!
+!!! danger "Security Risk!"
+    We will be creating a new account, so **you do not have to add the password of your main account to your Gitlab repository**: this would be a security risk!
     Admittedly, it is a low one if everything is done correctly, but just in case something goes wrong or leaks, you can just **delete this account**.
     Also, you can give this account **only the rights necessary** to write to AFS in the first place and do not risk that anyone can access other sensible information.
 
-??? nodeco "1. Create a new service account, via the [CERN account management][new_account]{target=_blank}, of length 8."   
-    You need at least 8 characters to mask that name in gitlab (if you want to do so), but on the other hand, there is a warning, that AFS cannot handle names longer than 8.
+??? nodeco "1. Create a new service account, via the [CERN account management][new_account]{target=_blank .cern_login}, of length 8."   
+    You need at least 8 characters to mask that name in Gitlab (if you want to do so), but on the other hand, there is a warning, that AFS cannot handle names longer than 8.
     So exactly 8 seems to be the sweetspot.
     If you do not care about masking the name (it is not as important as masking the password, see below) you can go shorter.
-
-
 
 ??? nodeco "2. Set a password of length &GreaterEqual; 8 containing only `[a-zA-Z0-9+/@:]`."
     We want to hide the password later in gitlab, and this is only possible if its >= 8 characters long and only contains Base64 characters as well as `@:`.
     You can go as long as you want. Better make this 15 characters long at least.
 
-3\. [Activate the AFS service][afs_services]{target=_blank} for the newly created account.
+3\. [Activate the AFS service][afs_services]{target=_blank .cern_login} for the newly created account.
 {: style="margin: 0 0 0 0.1rem"}
-
 
 ### Setup AFS folder
 
 _Steps to be done on AFS:_
 
 ??? nodeco "4. Clone your git into your AFS destination."
-    It is important here, that you use the right link to set this up, depending whether you want your repository to be private or public.
-    Go to your gitlab repository page and click onto the <span style="color=#0033A0">blue clone button</span> on the right.
+    It is important here to you use the right link to set this up, depending on whether you want your repository to be private or public.
+    Go to your Gitlab repository page and click onto the <span style="color=#0033A0">blue clone button</span> on the right.
     If it is okay for your repo to be publicly accessible you can use the `HTTPS` url.
     If you want to set it up privately you will need to clone with the `KRB5` url, so Kerberos can be later used to authenticate your service account.
-    ([See also below](#setup-git) for giving him rights on the rository.)
+    ([See also below](#setup-git) for giving it rights to the repository.)
 
 ??? nodeco "5. Run: `find . -type d -exec fs sa {} ACCOUNTNAME rlidw \;`"
     Run **within** the repository or replace `.` with the repository name!<br>
     Replace `ACCOUNTNAME` with the name of your Service Account. 
     This will give read/write access to this repository to the service account.
     Just giving these rights to the top-folder will not work, as it does not propagate to subfolders automatically.
+    
     A possible other way would be to create an empty folder and give writing rights to that one to the service account and then login to lxplus with the service account and clone the repository directly with that account.
     The latter is a good test to see if everything worked correctly anyway.
     Do not forget, if you have set up the repository with Kerberos authentification, to adapt your `.ssh/config` to delegate the credentials.
@@ -99,25 +96,22 @@ _Steps to be done on AFS:_
 
 ### Setup Git
 
-_Steps to be done on your [gitlab][cern_gitlab]{target=_blank} repository:_
+_Steps to be done on your [Gitlab][cern_gitlab]{target=_blank} repository:_
 
 ??? nodeco "6. Give your service account access rights or set the repository to public."
     The former can be done under `Members`, the latter under `Settings` &rarr; `General` &rarr; `Visibility, project features, permissions`.
     If you set it up to be a private repository, you need to have cloned the repository with the `KRB5` url ([see above](#setup-afs-folder)).
 
-
-
 ??? nodeco "7. Add `SERVICE_ACCOUNT_USERNAME` and `SERVICE_ACCOUNT_PASSWORD` variables."
     This is done in `Settings` &rarr; `CI/CD` &rarr; `Variables`.
     Obviously the values of the variables will be the username and password of your [newly created service account](#create-service-account) respectively.
     These variables will be used in the next step in the YAML.
-    For obvious reasons, we **DO NOT WRITE THE PASSWORD IN CLEAR TEXT INTO THE YAML**. 
+    For obvious reasons, **DO NOT WRITE THE PASSWORD IN CLEAR TEXT INTO THE YAML**. 
 
-    
-!!! warning "Security Risk!" 
+!!! danger "Security Risk!" 
     **MAKE SURE AT LEAST THE `SERVICE_ACCOUNT_PASSWORD ` VARIABLE IS SET TO `Masked` !!!**
 
-??? nodeco "8. Add a new stage to your `.gitlab-ci.yml` or create this file new."
+??? nodeco "8. Add a new stage to your `.gitlab-ci.yml` file, or create a new one."
     ```yaml
     stages:
     - afs_pull
@@ -146,18 +140,19 @@ _Steps to be done on your [gitlab][cern_gitlab]{target=_blank} repository:_
 
     ??? note "More Info on the YAML"
         The `.yml` was copied and adapted from the [acc-models-lhc repository][acc_models_repo]{target=_blank} with some changes.
-        In general, a docker image is loaded, `openssh` installed and a kerberos token created.
+        In general, a Docker image is loaded, `openssh` is installed and a Kerberos token is created.
         With this token it is now possible to `ssh` to lxplus as the service account, go into the desired directory and checkout the repository. 
         `git checkout master` is only performed in case someone changed the branch on AFS (which should not happen, do not touch).
 
         - **Image**: The image `gitlab-registry.cern.ch/linuxsupport/cc7-base` used is the default Cern Centos 7 docker image, provided by [Linux @ CERN][cern_linux]{target=_blank}.
-        This is used, because it has kerberos already set up and configured.
+        This is used, because it has Kerberos already set up and configured.
         The [acc-models yaml][acc_models_yml]{target=_blank} was using [their own docker image][acc_models_docker], of which the only additional functionality we need is `openssh`, hence it is installed manually instead.
         - **echo lxplus ssh-rsa** line: This line adds the public key of the lxplus server to the ssh `known_hosts` file, so it connects to lxplus without user interaction about this topic (do not touch).
         - **echo -e Host** line: Here the ssh `config` is adapted to use Kerberos as authetication method to any server (do not touch). 
         - **only master**: Only the commits to `master` trigger the CI. Omit this part if you want the repo to be pulled on every commit, or change it to limit upon which commits this happens (as is done in the [acc-models yml][acc_models_yml]{target=_blank}).  
 
 ### Done !
+
 Whenever you are pushing now any commits to the `master` branch, the CI/CD will automatically pull the latest commit into the AFS directory.
 
 
