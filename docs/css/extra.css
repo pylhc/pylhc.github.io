@@ -47,6 +47,13 @@ a.cern_internal {
     font-weight: normal;
 }
 
+<<<<<<< Updated upstream
+=======
+.md-typeset .nodeco > summary code {
+    background-color: var(--md-code-bg-color);
+}
+
+>>>>>>> Stashed changes
 .md-typeset .nodeco > p {
     background-color: var(--md-primary-bg-color);
     padding: 0 0 0 0.5rem;
