@@ -7,8 +7,11 @@ If everything worked fine and the specified folder contains the needed `twiss_el
 You can choose another model directory by pressing on the `update model` button which appears if a model is already selected.
 The model data is used for preset values in the GUI and the orbit-offset script needs the model for its calculations.
 
-!!! todo
-    Include up-to-date screenshots of model loading, see https://twiki.cern.ch/twiki/bin/view/BEABP/BasicOptions
+<figure>
+  <img src="../../../assets/images/kmod_gui/load_model.png" width="100%" />
+  <figcaption>Loading a Model</figcaption>
+</figure>
+
 
 ??? tip "Setting the Beta-Beat.src directory"
 

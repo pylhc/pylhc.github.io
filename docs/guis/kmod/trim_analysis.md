@@ -11,20 +11,29 @@ Just ignore the rest (TODO: why???)
 
 The `Select trim` button will open the trim selection panel and the `Last trim` button will just load the last trim entry from Timber.
 
-!!! todo
-    Include screenshot of trim data extraction
+<figure>
+  <img src="../../../assets/images/kmod_gui/select_trim_panel.png" width="90%" />
+  <figcaption>The "Select Trim" Panel.</figcaption>
+</figure>
 
 If you chose `Select trim`, then select the desired IP then navigate othe desired date and confirm with pressing on the green `Select trim` button.
 You can switch between different IPs and dates by using the `combo` boxes.
 
-!!! todo
-    Include screenshot of trim selection
+<figure>
+  <img src="../../../assets/images/kmod_gui/select_trim_by_date.png" width="100%" />
+  <figcaption>Select Trim by Date.</figcaption>
+</figure>
 
 ## Measurement View Dialog 
 
 The selected/loaded trim will then be displayed in the `Measurement View Dialog`, from which you can analyze the trim data with different options.
 
-To get beta star values, press the `Analyze Trim button`, then in the next dialog select the directory in which to save the trim data and the results.
+<figure>
+  <img src="../../../assets/images/kmod_gui/measurement_view.png"/>
+  <figcaption>Measurement View.</figcaption>
+</figure>
+
+To get beta-star values, press the `Analyze Trim button`, then in the next dialog select the directory in which to save the trim data and the results.
 You will need to input the *estimated* beta star in the horizontal and vertical planes as well as the waist shift for each beam.
 
 The values are loaded from the model files.
@@ -32,8 +41,11 @@ If no model is loaded, you have to input those values.
 The (old) python code of this script can be found [here][kmod_python2]{target=_blank}.
 The results are stored in the file named `beta_star.out`.
 
-!!! todo
-    Include screenshots of measurement view dialog
+<figure>
+  <img src="../../../assets/images/kmod_gui/betastar_input.png" width="85%" />
+  <figcaption>Estimated beta-star input.</figcaption>
+</figure>
+
 
 !!! tip "Special Case: Individual Magnet Modulation"
 

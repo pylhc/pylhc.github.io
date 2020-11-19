@@ -32,23 +32,37 @@ Depending on the parameters, the panel will show input panels for the specific I
 The energy value is gathered live from the LHC, but can be edited.
 Underneath is another tabbed pane for each task in the current process which needs some user input.
 
+<figure>
+  <img src="../../../assets/images/kmod_gui/autotrim_input.png" width="100%" />
+  <figcaption>The AutoTrim input panel.</figcaption>
+</figure>
+
+
 By pressing the start button, it will ask the user for the save directory and then starts the `AutoTrim` process.
 `AutoTrim` will then create a result folder for each IP, open the `ResultsView` on the main panel and start the pipeline of processes.
 The chosen save directory is the root directory.
 The `AutoTrim` will then create a subdirectory for each IP where the result files are stored.
 
-!!! todo
-    Include screenshot of Trim/Analyze InputPanel
+In principle, this will perform a full IP trim for all of the selected IPs and planes. 
+For more details, see the [full IP trim](full_ip_trim.md) section.
 
 ### The ResultsView
 
 The `ResultsView` is the main panel of an `AutoTrim` process.
 It is built as a tabbed pane which holds the content of the processes for many IPs and displays information such as process status, results, etc.
 The status panel and the result panel are the main components for each process.
+
+<figure>
+  <img src="../../../assets/images/kmod_gui/autotrim_simulation_mode.gif" width="100%" />
+  <figcaption>The ResultsView.</figcaption>
+</figure>
+
 At the top is a `thread queue` bar which displays all the active, finished and scheduled threads.
 
-!!! todo
-    Include screenshot of thread queue
+<figure>
+  <img src="../../../assets/images/kmod_gui/autotrim_thread_queue.png" width="100%" />
+  <figcaption>The thread queue of the results view.</figcaption>
+</figure>
 
 !!! tip
     By double-clicking on the IP label of the tabbed pane its possible to extract the IP panel in another frame.
@@ -64,19 +78,21 @@ This has to be done in the actual task code since the view doesn't have a refere
 The last panel is the logger text area for each task.
 Per default, it will show the last logging entry with the corresponding time, but the user can expand the list by clicking on the drop-down button.
 
-!!! todo
-    Include screenshot of status panel
+<figure>
+  <img src="../../../assets/images/kmod_gui/autotrim_status_panel.png" width="100%" />
+  <figcaption>The AutoTrim Status Panel.</figcaption>
+</figure>
 
 ??? info "Status Types Explained"
-    | Status / Color     | Description                                                               |
-    | :----------------- | :------------------------------------------------------------------------ |
-    | `Starting, green`  | Task is creating all the needed objects or loads some data from a file.*  |
-    | `Running, green`   | Main functionality of this task is currently executed.                    |
-    | `Finished, blue`   | Task finished without any problems.                                       |
-    | `Waiting, blue`    | Task is waiting for some synchronization variable.*                       |
-    | `Scheduled, grey`  | Task is in the queue and ready to be executed.                            |
-    | `Canceled, yellow` | Task got canceled by the user (Not possible still a big TODO).            |
-    | `Crashed, red`     | Task crashed because an exception is fired or a critical error occurred.  |
+    | Status                             | Description                                                               |
+    | :-------------------------------- | :------------------------------------------------------------------------ |
+    | `Starting`{: style="color:green"} | Task is creating all the needed objects or loads some data from a file.*  |
+    | `Running`{: style="color:green"}  | Main functionality of this task is currently executed.                    |
+    | `Finished`{: style="color:blue"} | Task finished without any problems.                                       |
+    | `Waiting`{: style="color:blue"}  | Task is waiting for some synchronization variable.*                       |
+    | `Scheduled`{: style="color:grey"}| Task is in the queue and ready to be executed.                            |
+    | `Canceled`{: style="background:yellow"} | Task got canceled by the user (Not possible still a big TODO).            |
+    | `Crashed`{: style="color:red"}  | Task crashed because an exception is fired or a critical error occurred.  |
     
     \* Not used at the moment, might be useful later (non thread-safe functionality, etc.)
 
@@ -91,14 +107,23 @@ The `AutoTrim` provides two ways to add existing trim data to the process queue:
 ### Load a trim directly to an AutoTrim-Tab
 
 Start by creating your IP tab by clicking on the button on the left side: tick the `Load existing trim` checkbox and it will open the trim selection panel.
+
+<figure>
+  <img src="../../../assets/images/kmod_gui/autotrim_load_existing.png" width="100%" />
+  <figcaption>AutoTrim: load existing trim.</figcaption>
+</figure>
+
 Expand the date picker and choose the day when the trim was executed.
-Left click on the trim you want to load and press the `select` button.
+Left click on the trim you want to load and press the `Select trim` button.
+
+<figure>
+  <img src="../../../assets/images/kmod_gui/autotrim_date_picker.png" width="100%" />
+  <figcaption>AutoTrim: load existing trim, date picker.</figcaption>
+</figure>
 
 The loaded trim date is then displayed on the trim panel and all the other input fields for the Full IP Trim are disabled, as input is not needed.
 To discard the loaded trim and proceed with the Full IP Trim instead, untick the `Load existing trim` checkbox.
 
-!!! todo
-    Include screenshots of trim selection in autotrim
 
 ### The Trim-Selection Panel
 
@@ -114,8 +139,10 @@ By clicking on `confirm` the tabs will be added to the `AutoTrim` panel.
 You can now set some basic options for the selected trims in the `Options` pane.
 These values are automatically set as preset values for the loaded trim tabs.
 
-!!! todo
-    Include screenshots of trim selection wizard
+<figure>
+  <img src="../../../assets/images/kmod_gui/autotrim_trim_selection_wizard.png" width="100%" />
+  <figcaption>The AutoTrim Trim Selection Wizard.</figcaption>
+</figure>
 
 ## Simulation Mode
 
@@ -129,8 +156,42 @@ This data is then displayed like a normal trim during a live measurement.
 The energy value is not automatically loaded from Timber, and uses a preset value of 6500.0 GeV.
 The `AutoTrim` won't check if the Orbit and Tune feedback is on or off. 
 
-!!! todo
-    Include gif like in the twiki
+
+## Analyzing a Trim
+
+### Input Tab
+
+This input tab is separated into two sides each for one existing beam in the LHC. 
+One side holds the input fields for all needed parameter in order to run the beta star analysis script. 
+It is also possible to provide only one estimated beta star value as input by using the round optics option. 
+This checkbox will disable the input for the beta star in the vertical plane and uses the horizontal input for both.
+
+Parameter: 
+
+- **B* X [m]**: Estimated beta-star X of measurements as double value.
+- **B* Y [m]**: Estimated beta-star Y of measurements as double value.
+- **Waist Shift [m]**: Estimated waist-shift as double value.
+
+<figure>
+  <img src="../../../assets/images/kmod_gui/analyzing_config.png" width="100%" />
+  <figcaption>The Analyzing Configuration.</figcaption>
+</figure>
+
+### Results Panel
+This analyzing task will display the results on the Analyzing Trim tab. 
+It will list the beta star values and waist shift on the horizontal and vertical plane for each beam. 
+The saved plots of the script are displayed on the right side for each beam. By clicking on the image it will expand and show the full-size plot in a new frame.
+
+<figure>
+  <img src="../../../assets/images/kmod_gui/analyzing_trim_result.png" width="100%" />
+  <figcaption>The Analyzing Trim Results.</figcaption>
+</figure>
+
+
+
+
+
+
 
 
 *[IP]: Interaction Point
