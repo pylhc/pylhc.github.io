@@ -117,19 +117,19 @@ _Steps to be done on your [Gitlab][cern_gitlab]{target=_blank} repository:_
     - afs_pull
 
     afs:
-    stage: afs_pull
-    image: gitlab-registry.cern.ch/linuxsupport/cc7-base
-    before_script:
-        - yum install -y openssh-clients
-        - mkdir -p ~/.ssh
-        - 'echo "lxplus ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTA/5AzXgbkSapknIPDoEePTM1PzIBSiyDnpZihdDXKzm8UdXxCDJLUVjBwc1JfBjnaXPEeBKZDuozDss/m98m5qQu+s2Dks000V8cUFTU+BFotzRWX0jWSBpmzse0477b40X2XCPqX0Cqfx9yHdkuMlyF0kJRxXgsGTcwzwbmvqNHJdHHYJJz93hGpBhYMREcDN5VOxXz6Ack3X7xfF29xaC91oOAqq75O11LXF5Y4kAeN9kDG8o6Zsqk4c5at5aqWqzZfnnVtGjhkgU2Mt5aKwptaFMe0Z3ys/zZM4SnsE9NfompnnWsiKk2y09UvrbzuYPWLt43Fp3+IFqRJvBX" > ~/.ssh/known_hosts'
-        - 'echo -e "Host *\n\tGSSAPIDelegateCredentials yes\n\tGSSAPITrustDNS yes\n\n" > ~/.ssh/config'
-    script:
-        - echo "${SERVICE_ACCOUNT_PASSWORD}" | kinit -f ${SERVICE_ACCOUNT_USERNAME}@CERN.CH
-        - klist
-        - ssh ${SERVICE_ACCOUNT_USERNAME}@lxplus "cd PATH_TO_YOUR_AFS && git checkout master && git pull"
-    only:
-        - master
+      stage: afs_pull
+      image: gitlab-registry.cern.ch/linuxsupport/cc7-base
+      before_script:
+          - yum install -y openssh-clients
+          - mkdir -p ~/.ssh
+          - 'echo "lxplus ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTA/5AzXgbkSapknIPDoEePTM1PzIBSiyDnpZihdDXKzm8UdXxCDJLUVjBwc1JfBjnaXPEeBKZDuozDss/m98m5qQu+s2Dks000V8cUFTU+BFotzRWX0jWSBpmzse0477b40X2XCPqX0Cqfx9yHdkuMlyF0kJRxXgsGTcwzwbmvqNHJdHHYJJz93hGpBhYMREcDN5VOxXz6Ack3X7xfF29xaC91oOAqq75O11LXF5Y4kAeN9kDG8o6Zsqk4c5at5aqWqzZfnnVtGjhkgU2Mt5aKwptaFMe0Z3ys/zZM4SnsE9NfompnnWsiKk2y09UvrbzuYPWLt43Fp3+IFqRJvBX" > ~/.ssh/known_hosts'
+          - 'echo -e "Host *\n\tGSSAPIDelegateCredentials yes\n\tGSSAPITrustDNS yes\n\n" > ~/.ssh/config'
+      script:
+          - echo "${SERVICE_ACCOUNT_PASSWORD}" | kinit -f ${SERVICE_ACCOUNT_USERNAME}@CERN.CH
+          - klist
+          - ssh ${SERVICE_ACCOUNT_USERNAME}@lxplus "cd PATH_TO_YOUR_AFS && git checkout master && git pull"
+      only:
+          - master
     ```
 
     !!! info "Info"
@@ -165,13 +165,10 @@ Whenever you are pushing now any commits to the `master` branch, the CI/CD will 
 *[CD]: Continuous Delivery
 *[lxplus]: LinuX Public Login User Service
 
-
 [sshuttle]: https://sshuttle.readthedocs.io/en/stable/
 
 [kmod_gui]: ../../guis/kmod/gui.md
 [bb_gui]: ../../guis/betabeat/gui.md
-
-
 
 [new_account]: https://account.cern.ch/account/Management/NewAccount.aspx
 [afs_services]: https://resources.web.cern.ch/resources/Manage/AFS/Default.aspx
