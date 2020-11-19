@@ -46,6 +46,11 @@ a.cern_internal {
     margin: 0 0 0 -0.5rem;
     font-weight: normal;
 }
+
+.md-typeset .nodeco > summary code {
+    background-color: var(--md-code-bg-color);
+}
+
 .md-typeset .nodeco > p {
     background-color: var(--md-primary-bg-color);
     padding: 0 0 0 0.5rem;
@@ -62,8 +67,18 @@ a.cern_internal {
 }
 
 
-/* Can't get it to run this way, but I'll leave it here (jdilly) */
-[data-md-color-scheme="cern"] {
+/* In case of dark mode: */
+[data-md-color-scheme="slate"] .md-typeset .nodeco > p,
+[data-md-color-scheme="slate"] .md-typeset .nodeco > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .nodeco > summary,
+[data-md-color-scheme="slate"] .md-typeset .admonition.nodeco,
+[data-md-color-scheme="slate"] .md-typeset details.nodeco {
+    background-color: var(--md-primary-bg-color--dark);
+}
+
+
+/* Not used but I'll leave it here in case someone wants to test it. Just put `cern` as primary in mkdocs.yml (jdilly) */
+[data-md-color-primary="cern"] {
   --md-primary-fg-color:        #0033A0;
   --md-primary-fg-color--light: #9BAEDB;
   --md-primary-fg-color--dark:  #0033A0;
