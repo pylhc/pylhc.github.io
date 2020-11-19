@@ -125,7 +125,7 @@ nav:
   - The OMC GUIs:
     - The OMC GUIs: guis/about.md
     - Beta-Beat GUI:
-      - The Beta-Beat GUI: guis/betabeat/gui.md
+      - About: guis/betabeat/gui.md
       - Beam Selection: guis/betabeat/beam_selection.md
       - BPM Panel: guis/betabeat/bpm_panel.md
       - Analysis Panel: guis/betabeat/analysis_panel.md
@@ -133,14 +133,14 @@ nav:
       - Correction Panel: guis/betabeat/correction_panel.md
       - The omc3 branch: guis/betabeat/omc3.md
     - Kmod GUI:
-      - The Kmod GUI: guis/kmod/gui.md
+      - About: guis/kmod/gui.md
       - Loading a Model: guis/kmod/load_model.md
       - Full IP Trim: guis/kmod/full_ip_trim.md
       - Magnet Modulation: guis/kmod/individual_modulation.md
       - Analyzing Trim Data: guis/kmod/trim_analysis.md
       - Using Auto Trim: guis/kmod/autotrim.md
     - Multiturn GUI:
-        - The Multiturn GUI: guis/multiturn/gui.md
+        - About: guis/multiturn/gui.md
     - Developing the GUIs:
       - IDE Setup: guis/developing/ide_install.md
       - Releases: guis/developing/releases.md
