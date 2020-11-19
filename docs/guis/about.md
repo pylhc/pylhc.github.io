@@ -1,3 +1,16 @@
+# The OMC GUIs
+
+!!! note "About this"
+    Include a foreword about the GUIs, potentially a list doing dispatch like the betabeat one does with its panels.
+
+The OMC team develops several GUIs, each for a defined use:
+
+- [The Beta-Beat GUI](betabeat/gui.md) to perform analysis of measurement files and compute corrections.
+- [The Kmod GUI](kmod/gui.md) to perform K-modulation in different ways and extract the configuration and results data.
+- [The Multiturn GUI](multiturn/gui.md) to ???.
+
+## Running the GUIs
+
 The GUIs can be started from your development environment or via deployed `.jnlp` from the archives:
 
 === "Beta-Beat"
@@ -70,6 +83,7 @@ If so, check that you can import `numpy` from the `omc-anaconda-python`.
 If this leads to the previously raised error, then the permissions are broken.
 Either fix the permissions on `afs` or ask someone to do so for you.
 
+
 *[TN]: Technical Network
 *[LSA]: LHC Software Architecture
 *[GPN]: General Purpose Network
@@ -91,7 +105,7 @@ Either fix the permissions on `afs` or ask someone to do so for you.
 [jws_confluence]: https://wikis.cern.ch/display/DVTLS/jws+-+a+replacement+for+javaws
 [jws]: https://wikis.cern.ch/display/DVTLS/jws+-+a+replacement+for+javaws
 
-[mounting_resources]: ../../../resources/howto/setup/#mounting-tn-resources-on-gn-machines
-[connect_gpn]: ../../../resources/howto/teleworking/#accessing-cern-internal-websites
-[sshuttle_method]: ../../../resources/howto/setup/#running-guis-locally
-[jws_calls]: ../../../resources/links/#jws-programs
+[mounting_resources]: ../resources/howto/setup.md/#mounting-tn-resources-on-gn-machines
+[connect_gpn]: ../resources/howto/teleworking.md/#accessing-cern-internal-websites
+[sshuttle_method]: ../resources/howto/setup.md/#running-guis-locally
+[jws_calls]: ../resources/links.md/#jws-programs

@@ -122,34 +122,28 @@ nav:
       - Beta-Beat.src: packages/betabeatsrc.md
       - MESS: packages/mess.md
     - Python Development: packages/development.md
-  - Beta-Beat GUI:
-    - The Beta-Beat GUI: guis/betabeat/gui.md
-    - Running the GUI:
-      - Basics: guis/betabeat/basics.md
+  - The OMC GUIs:
+    - The OMC GUIs: guis/about.md
+    - Beta-Beat GUI:
+      - About: guis/betabeat/gui.md
       - Beam Selection: guis/betabeat/beam_selection.md
       - BPM Panel: guis/betabeat/bpm_panel.md
       - Analysis Panel: guis/betabeat/analysis_panel.md
       - Optics Panel: guis/betabeat/optics_panel.md
       - Correction Panel: guis/betabeat/correction_panel.md
-    - Running the GUI with omc3:
-      - Differences: guis/betabeat/omc3.md
-    - Developing the GUI:
-      - IDE Setup: guis/betabeat/ide_install.md
-      - Releases: guis/betabeat/releases.md
-  - Kmod GUI:
-    - The Kmod GUI: guis/kmod/gui.md
-    - Running the GUI:
-      - Basics: guis/kmod/basics.md
+      - The omc3 branch: guis/betabeat/omc3.md
+    - Kmod GUI:
+      - About: guis/kmod/gui.md
+      - Loading a Model: guis/kmod/load_model.md
       - Full IP Trim: guis/kmod/full_ip_trim.md
       - Magnet Modulation: guis/kmod/individual_modulation.md
       - Analyzing Trim Data: guis/kmod/trim_analysis.md
       - Using Auto Trim: guis/kmod/autotrim.md
-    - Developing the GUI:
-      - IDE Setup: guis/kmod/ide_install.md
-      - Releases: guis/kmod/releases.md
-  - Multiturn GUI:
-      - The Multiturn GUI: guis/multiturn/gui.md
-      - Running the GUI: guis/multiturn/running.md
+    - Multiturn GUI:
+        - About: guis/multiturn/gui.md
+    - Developing the GUIs:
+      - IDE Setup: guis/developing/ide_install.md
+      - Releases: guis/developing/releases.md
   - Procedures:
       - Info: procedures/info.md
       - K Modulation: procedures/kmod.md

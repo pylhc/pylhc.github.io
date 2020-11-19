@@ -1,4 +1,4 @@
-# Beta-Beat Gui for OMC3
+# Beta-Beat GUI for `omc3`
 
 !!! info ""
     This page is meant for people, who know the old Gui and want to use the `omc3` functionality in the GUI now!

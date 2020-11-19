@@ -1,8 +1,4 @@
-# Running the Kmod GUI
-
---8<-- "snippets/running_guis.md"
-
-## Loading a model
+# Loading a model from into Kmod GUI
 
 You can load the model created from the [Beta-Beat GUI](../betabeat/gui.md) or [Multiturn GUI](../multiturn/gui.md) for each beam by pressing the `load model` button.
 Select the desired model directory in the pop-up dialog and confirm by pressing the `open` button.
