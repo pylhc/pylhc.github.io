@@ -1,1 +1,0 @@
---8<-- "docs/guis/betabeat/ide_install.md"
