@@ -33,7 +33,7 @@ theme:
     - navigation.tabs
     - navigation.instant
   palette:
-    scheme: default
+    scheme: slate
     primary: indigo
     accent: amber #red
   font:
