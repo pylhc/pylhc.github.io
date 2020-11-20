@@ -6,20 +6,22 @@ site_name: OMC Documentation
 site_description: >-
   Documentation pages for the OMC Team at CERN. Content includes documentation
   on our activities, workflows and software as well as resources for members.
-site_author: Felix Soubelet
+site_author: PyLHC/OMC-Team
 #site_url: ''
 
 
 # Repository
-#repo_name: 'PyLHC'
-#repo_url: 'https://github.com/pylhc'
-repo_name: 'FSoubelet'
-repo_url: 'https://github.com/fsoubelet/'
-edit_uri: 'OMC_Draft_Site/edit/master/docs/'
+repo_name: 'PyLHC'
+repo_url: 'https://github.com/pylhc'
+#repo_name: 'FSoubelet'
+#repo_url: 'https://github.com/fsoubelet/'
+#edit_uri: 'OMC_Draft_Site/edit/master/docs/'
+edit_uri: 'pylhc.github.io/edit/master/docs/'
 
 
 # Copyright
-copyright: 'Copyright &copy; 2020 Felix Soubelet'
+#copyright: 'Copyright &copy; 2020 Felix Soubelet'
+copyright: 'Copyright &copy; 2020 PyLHC/OMC-Team'
 
 
 # Configuration
