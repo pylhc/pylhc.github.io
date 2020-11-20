@@ -96,7 +96,6 @@ Per default, it will show the last logging entry with the corresponding time, bu
     
     \* Not used at the moment, might be useful later (non thread-safe functionality, etc.)
 
-
 ## Loading Existing Trims from Timber
 
 The `AutoTrim` provides two ways to add existing trim data to the process queue:
@@ -123,7 +122,6 @@ Left click on the trim you want to load and press the `Select trim` button.
 
 The loaded trim date is then displayed on the trim panel and all the other input fields for the Full IP Trim are disabled, as input is not needed.
 To discard the loaded trim and proceed with the Full IP Trim instead, untick the `Load existing trim` checkbox.
-
 
 ### The Trim-Selection Panel
 
@@ -156,20 +154,19 @@ This data is then displayed like a normal trim during a live measurement.
 The energy value is not automatically loaded from Timber, and uses a preset value of 6500.0 GeV.
 The `AutoTrim` won't check if the Orbit and Tune feedback is on or off. 
 
-
 ## Analyzing a Trim
 
 ### Input Tab
 
-This input tab is separated into two sides each for one existing beam in the LHC. 
-One side holds the input fields for all needed parameter in order to run the beta star analysis script. 
-It is also possible to provide only one estimated beta star value as input by using the round optics option. 
+This input tab is separated into two sides, one for each existing beam in the LHC. 
+One side holds the input fields for all needed parameters in order to run the beta star analysis script. 
+It is also possible to provide only one estimated beta star value as input by ticking the `Use round optics` option. 
 This checkbox will disable the input for the beta star in the vertical plane and uses the horizontal input for both.
 
-Parameter: 
+Parameters: 
 
-- **B* X [m]**: Estimated beta-star X of measurements as double value.
-- **B* Y [m]**: Estimated beta-star Y of measurements as double value.
+- **B* X [m]**: Estimated horizontal beta-star (X) of measurements as a double.
+- **B* Y [m]**: Estimated vertical beta-star (Y) of measurements as a double.
 - **Waist Shift [m]**: Estimated waist-shift as double value.
 
 <figure>
@@ -179,19 +176,14 @@ Parameter:
 
 ### Results Panel
 This analyzing task will display the results on the Analyzing Trim tab. 
-It will list the beta star values and waist shift on the horizontal and vertical plane for each beam. 
-The saved plots of the script are displayed on the right side for each beam. By clicking on the image it will expand and show the full-size plot in a new frame.
+It will list the $\beta^{*}$ values and waist shift on the horizontal and vertical plane for each beam. 
+The saved plots of the script are displayed on the right side for each beam.
+By clicking on the image it will expand and show the full-size plot in a new frame.
 
 <figure>
   <img src="../../../assets/images/kmod_gui/analyzing_trim_result.png" width="100%" />
   <figcaption>The Analyzing Trim Results.</figcaption>
 </figure>
-
-
-
-
-
-
 
 
 *[IP]: Interaction Point
