@@ -21,9 +21,11 @@ git clone https://github.com/pylhc/pylhc.github.io
 pip install mkdocs mkdocs-material mkdocs-minify-plugin
 ```
 
-Create a branch and make your changes.
+Create a branch (from master) and make your changes.
 You can run a local server by running `python -m mkdocs serve` from the top-level directory, and see the site rendered locally in your browser at `localhost:8000`.
 The rendered website will automatically reload upon changes to any file located in the `docs` directory.
+
+Commit your changes to this repository, and open a pull request to get them approved once they are ready.
 
 ---
 
