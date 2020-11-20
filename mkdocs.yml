@@ -144,6 +144,7 @@ nav:
     - Developing the GUIs:
       - IDE Setup: guis/developing/ide_install.md
       - Releases: guis/developing/releases.md
+      - KMod GUI hints: guis/developing/kmod_special.md
   - Procedures:
       - Info: procedures/info.md
       - K Modulation: procedures/kmod.md

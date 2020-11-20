@@ -17,8 +17,10 @@ The circuit corresponding to the quadrupole to be modulated has to be selected o
 As example for the naming convention, the circuit `RQ5/.R4B2/K1` corresponds to the `MQY.5R4.B2` in the LHC sequence file.
 Under `Trim Function`, select `Sine Function` before continuing.
 
-!!! todo
-    Include screenshot of circuit selection
+<figure>
+  <img src="../../../assets/images/kmod_gui/select_quadrupole.png" width="90%" />
+  <figcaption>Select circuits.</figcaption>
+</figure>
 
 ## Trim Start
 
