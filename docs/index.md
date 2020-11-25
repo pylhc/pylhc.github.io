@@ -7,8 +7,8 @@ We are responsible for the measurement and correction of the linear and non-line
 Our meetings can be found on our [Indico page][omc_indico]{target=_blank}.
 
 !!! note "Note - Documentation Status"
-    This site is currently under construction, incomplete, and subject to change.
-    An existing but poor documentation can be found on the [OMC twiki][omc_twiki]{target=_blank}.
+    This site is currently under construction, and subject to constant change.
+    A previous (but poor) documentation used to be the [OMC twiki][omc_twiki]{target=_blank}, and its relevant contents have been transfered here.
 
 ## Quick Access Links
 
