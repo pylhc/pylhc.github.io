@@ -12,13 +12,13 @@ Our meetings can be found on our [Indico page][omc_indico]{target=_blank}.
 
 ## Quick Access Links
 
-- [Beta-Beat.src](packages/betabeatsrc) (Python 2.7): [Repository][betabeatsrc]{target=_blank}, [Documentation][betabeatsrc_doc]{target=_blank}
-- [OMC3](packages/omc3/) (Python 3.7+): [Repository][omc3]{target=_blank} , [Documentation][omc3_doc]{target=_blank}
-- [PyLHC-Tools](packages/pylhc/) (Python 3.7+): [Repository][pylhc]{target=_blank}, [Documentation][pylhc_doc]{target=_blank}
+- [Beta-Beat.src](packages/betabeatsrc.md) (Python 2.7): [Repository][betabeatsrc]{target=_blank}, [Documentation][betabeatsrc_doc]{target=_blank}
+- [OMC3](packages/omc3/about.md) (Python 3.7+): [Repository][omc3]{target=_blank} , [Documentation][omc3_doc]{target=_blank}
+- [PyLHC-Tools](packages/pylhc.md) (Python 3.7+): [Repository][pylhc]{target=_blank}, [Documentation][pylhc_doc]{target=_blank}
 
-- [TFS-Pandas](packages/tfs-pandas/) (Python 3.6+): [Repository][tfspandas]{target=_blank}, [Documentation][tfspandas_doc]{target=_blank}
-- [SDDS-Reader](packages/sdds/) (Python 3.6+): [Repository][sdds]{target=_blank}, [Documentation][sdds_doc]{target=_blank}
-- [Generic-Parser](packages/generic_parser/) (Python 3.6+): [Repository][generic_parser]{target=_blank}, [Documentation][generic_parser_doc]{target=_blank}
+- [TFS-Pandas](packages/tfs-pandas.md) (Python 3.6+): [Repository][tfspandas]{target=_blank}, [Documentation][tfspandas_doc]{target=_blank}
+- [SDDS-Reader](packages/sdds.md) (Python 3.6+): [Repository][sdds]{target=_blank}, [Documentation][sdds_doc]{target=_blank}
+- [Generic-Parser](packages/generic_parser.md) (Python 3.6+): [Repository][generic_parser]{target=_blank}, [Documentation][generic_parser_doc]{target=_blank}
 
 
 *[CERN]: Conseil Européen pour la Recherche Nucléaire
