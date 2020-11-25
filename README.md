@@ -29,7 +29,7 @@ Commit your changes to this repository, and open a pull request to get them appr
 
 ---
 
-The static pages are built with `Mkdocs`, the [documentation] of which can be found [here][mkdocs].
+The static pages are built with `Mkdocs`, the documentation of which can be found [here][mkdocs].
 The site's look and functionality relies on the [Material Mkdocs Theme][mkdocs-material].
 Check its documentation to understand the looks, formatting, settings and plugins.
 
