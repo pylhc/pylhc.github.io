@@ -13,14 +13,10 @@ site_author: PyLHC/OMC-Team
 # Repository
 repo_name: 'PyLHC'
 repo_url: 'https://github.com/pylhc'
-#repo_name: 'FSoubelet'
-#repo_url: 'https://github.com/fsoubelet/'
-#edit_uri: 'OMC_Draft_Site/edit/master/docs/'
 edit_uri: 'pylhc.github.io/edit/master/docs/'
 
 
 # Copyright
-#copyright: 'Copyright &copy; 2020 Felix Soubelet'
 copyright: 'Copyright &copy; 2020 PyLHC/OMC-Team'
 
 
