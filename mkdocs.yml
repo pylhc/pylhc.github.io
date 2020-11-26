@@ -115,11 +115,11 @@ nav:
       - Workflow: packages/omc3/workflow.md
       - Know-How: packages/omc3/know_how.md
     - Other Packages:
+      - Beta-Beat.src: packages/betabeatsrc.md
+      - pylhc: packages/pylhc.md
       - tfs-pandas: packages/tfs-pandas.md
       - sdds: packages/sdds.md
-      - PyLHC: packages/pylhc.md
       - generic_parser: packages/generic_parser.md
-      - Beta-Beat.src: packages/betabeatsrc.md
       - MESS: packages/mess.md
     - Python Development: packages/development.md
   - The OMC GUIs:
