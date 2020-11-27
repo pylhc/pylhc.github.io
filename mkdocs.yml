@@ -113,7 +113,7 @@ nav:
       - Workflow: packages/omc3/workflow.md
       - Know-How: packages/omc3/know_how.md
       - ↪ On Github: https://github.com/pylhc/omc3
-    - pylhc Package: 
+    - PyLHC Package: 
       - About: packages/pylhc/about.md
       - Forced DA Analysis: packages/pylhc/forced_da.md
       - Machine Settings Info: packages/pylhc/machine_settings_info.md
