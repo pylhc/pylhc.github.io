@@ -107,18 +107,24 @@ nav:
   - Publications: omc_team/publications.md
   - Python Packages:
     - The OMC Packages: packages/about.md
-    - The omc3 Package:
+    - omc3 Package:
       - About omc3: packages/omc3/about.md
       - Getting Started: packages/omc3/getting_started.md
       - Workflow: packages/omc3/workflow.md
       - Know-How: packages/omc3/know_how.md
-    - Other Packages:
-      - Beta-Beat.src: packages/betabeatsrc.md
-      - pylhc: packages/pylhc.md
-      - tfs-pandas: packages/tfs-pandas.md
-      - sdds: packages/sdds.md
-      - generic_parser: packages/generic_parser.md
-      - MESS: packages/mess.md
+    - pylhc Package: 
+      - About: packages/pylhc/about.md
+      - Forced DA Analysis: packages/pylhc/forced_da.md
+      - Machine Settings Info: packages/pylhc/machine_settings_info.md
+      - Job Submitter: packages/pylhc/job_submitter.md
+      - BSRT Logger/Analysis: packages/pylhc/bsrt.md
+    - MAD-X Example Study Scripts:
+      - About: packages/mess/about.md
+    - Links to other Packages:
+      - ↪ Beta-Beat.src: https://github.com/pylhc/Beta-Beat.src
+      - ↪ tfs-pandas: https://github.com/pylhc/tfs
+      - ↪ sdds: https://github.com/pylhc/sdds
+      - ↪ generic_parser: https://github.com/pylhc/generic_parser
     - Python Development: packages/development.md
   - The OMC GUIs:
     - The OMC GUIs: guis/about.md
