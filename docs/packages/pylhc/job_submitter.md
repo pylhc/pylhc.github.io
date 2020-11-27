@@ -66,6 +66,29 @@ and job directory for further post processing.
 
 In this example we will do a quick submit to HTCondor and starting simulations for both beams over a range of tunes.
 
+???+ "Python Code"
+    ```python 
+    from pylhc.job_submitter import main as htcondor_submit
+    from omc3.utils import logging_tools
+    import numpy as np
+
+    LOG = logging_tools.get_logger(__name__)
+
+    if __name__ == '__main__':
+        htcondor_submit(
+            executable='madx',
+            mask='my_madx.mask',
+            replace_dict=dict(
+                BEAM=[1, 2], 
+                TUNEX=np.linspace(62.3, 62.32, 11).tolist(), 
+                TUNEY=np.linspace(60.31, 60.33, 11).tolist(),
+                ),
+            jobid_mask="b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s",
+            working_directory='/afs/cern.ch/work/u/username/study.tune_sweep',
+            ssh='lxplus.cern.ch'
+        )
+    ```
+
 ??? "my_madx.mask"
     ```
     !############################## Create Soft Links and Directories ################################################################
@@ -116,29 +139,6 @@ In this example we will do a quick submit to HTCondor and starting simulations f
     select, flag=twiss, pattern="M",   column=name,s,x,y,betx,bety,alfx,alfy,dx,dpx,mux,muy;
     select, flag=twiss, pattern="IP",  column=name,s,x,y,betx,bety,alfx,alfy,dx,dpx,mux,muy;
     twiss, chrom, file='Outputdata/b%(BEAM)s.twiss.tfs';
-    ```
-
-???+ "Python Code"
-    ```python 
-    from pylhc.job_submitter import main as htcondor_submit
-    from omc3.utils import logging_tools
-    import numpy as np
-
-    LOG = logging_tools.get_logger(__name__)
-
-    if __name__ == '__main__':
-        htcondor_submit(
-            executable='madx',
-            mask='my_madx.mask',
-            replace_dict=dict(
-                BEAM=[1, 2], 
-                TUNEX=np.linspace(62.3, 62.32, 11).tolist(), 
-                TUNEY=np.linspace(60.31, 60.33, 11).tolist(),
-                ),
-            jobid_mask="b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s",
-            working_directory='/afs/cern.ch/work/u/username/study.tune_sweep',
-            ssh='lxplus.cern.ch'
-        )
     ```
 
 After executing the python script, we can check the status of our jobs via `condor_q` (on the ssh server if not locally setup).
