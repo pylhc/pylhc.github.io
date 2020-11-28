@@ -36,7 +36,7 @@ theme:
   palette:
     scheme: preference
     primary: indigo
-    accent: deep purple #amber #red
+    accent: amber
   font:
     text: Roboto
     code: Roboto Mono
