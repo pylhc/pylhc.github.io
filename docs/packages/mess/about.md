@@ -2,6 +2,9 @@
 
 [This repository][repo] is a collection of MAD-X scripts used for various studies in the optics measurements and corrections group (OMC).
 
+!!! todo
+    Examples of are missing. Maybe just copy-paste of the `README.md` files in the repository.
+
 ### Getting Started
 
 The scripts can be browsed via github or the full repository can be obtained either via `git clone https://github.com/pylhc/MESS.git` or downloading the zipped repository.
