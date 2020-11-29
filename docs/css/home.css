@@ -10,14 +10,14 @@
 
 .tx-container {
     padding-top: .0rem;
-    background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(174,96%,87%,1) 99%, var(--md-default-bg-color) 99%)
+    /*background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(174,96%,87%,1) 99%, var(--md-default-bg-color) 99%)*/
     /* Full gradient works for dark and light mode */
-    /* background: linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-default-bg-color) 99%, var(--md-default-bg-color) 99%) */
+     background: linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-default-bg-color) 99%, var(--md-default-bg-color) 99%)
 }
 
-[data-md-color-scheme="slate"] .tx-container {
-    background: linear-gradient(to bottom, var(--md-primary-fg-color), rgba(190, 254, 247, 0.062) 99%, var(--md-default-bg-color) 99%)
-}
+/*[data-md-color-scheme="slate"] .tx-container {*/
+/*    background: linear-gradient(to bottom, var(--md-primary-fg-color), rgba(190, 254, 247, 0.062) 99%, var(--md-default-bg-color) 99%)*/
+/*}*/
 
 .tx-hero {
     margin: 32px 2.8rem;
