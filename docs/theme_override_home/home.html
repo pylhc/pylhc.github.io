@@ -16,7 +16,13 @@
 
     .tx-container {
         padding-top: .0rem;
-        background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(174,96%,87%,1) 99%,#fff 99%)
+        background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(174,96%,87%,1) 99%, var(--md-default-bg-color) 99%)
+        /* Full gradient works for dark and light mode */
+        /* background: linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-default-bg-color) 99%, var(--md-default-bg-color) 99%) */
+    }
+    
+    [data-md-color-scheme="slate"] .tx-container {
+        background: linear-gradient(to bottom, var(--md-primary-fg-color), rgba(190, 254, 247, 0.062) 99%, var(--md-default-bg-color) 99%)
     }
 
     .tx-hero {
@@ -68,6 +74,11 @@
         margin-right: 15px;
         transform: translateY(-8%);
     }
+    
+    [data-md-color-scheme="slate"] .feature-item h2 svg {
+        stroke: var(--md-default-bg-color);
+        fill: var(--md-default-fg-color);
+    }
 
     .top-hr {
         margin-top: 42px;
@@ -82,7 +93,7 @@
     }
 
     .feature-item h2 {
-        color: #333;
+        color: var(--md-default-fg-color) 66%;
         font-weight: 300;
         font-size: 25px;
         white-space: nowrap;
@@ -99,7 +110,7 @@
         line-height: 1.8em;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        color: #111;
+        color: var(--md-default-fg-color) 99%;
         margin: 0 0 10px;
         display: block;
     }
