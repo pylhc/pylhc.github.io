@@ -25,7 +25,7 @@ copyright: 'Copyright &copy; 2020 Felix Soubelet'
 # Configuration
 theme:
   name: 'material'
-  custom_dir: docs/theme_override_home/
+  custom_dir: overrides/
   logo: assets/logos/OMC_logo_inverse.svg  # top left header logo
   favicon: assets/logos/OMC_logo.svg  # browser tab logo
   # Default Values

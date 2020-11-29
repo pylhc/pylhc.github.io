@@ -10,14 +10,8 @@
 
 .tx-container {
     padding-top: .0rem;
-    /*background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(174,96%,87%,1) 99%, var(--md-default-bg-color) 99%)*/
-    /* Full gradient works for dark and light mode */
-     background: linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-default-bg-color) 99%, var(--md-default-bg-color) 99%)
+    background: linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-default-bg-color) 99%, var(--md-default-bg-color) 99%)
 }
-
-/*[data-md-color-scheme="slate"] .tx-container {*/
-/*    background: linear-gradient(to bottom, var(--md-primary-fg-color), rgba(190, 254, 247, 0.062) 99%, var(--md-default-bg-color) 99%)*/
-/*}*/
 
 .tx-hero {
     margin: 32px 2.8rem;
@@ -52,6 +46,7 @@
 .tx-hero .md-button--primary {
     background-color: var(--md-primary-bg-color);
     color: hsla(280, 37%, 48%, 1);
+    /* color: var(--md-accent-fg-color); */
     border-color: var(--md-primary-bg-color)
 }
 
@@ -87,7 +82,9 @@
 }
 
 .feature-item h2 {
-    color: var(--md-default-fg-color) 66%;
+    /* color: #333; */
+    color: var(--md-default-fg-color);
+    opacity: 80%;
     font-weight: 300;
     font-size: 25px;
     white-space: nowrap;
@@ -104,7 +101,9 @@
     line-height: 1.8em;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    color: var(--md-default-fg-color) 99%;
+    /* color: #111;  */
+    color: var(--md-default-fg-color);
+    opacity: 90%;
     margin: 0 0 10px;
     display: block;
 }
