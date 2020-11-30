@@ -10,8 +10,8 @@ since `python 3.6` and as such not recommened. The following description is a su
 of the steps presented [here][venv_module]{target=_blank} and [here][pip_venv]{target=_blank},
 specifically targetting Linux users.
 
-Note that [Anaconda Python distribution][anaconda]{target=_blank} provides the `conda` tool, which also the
-creation of python enviroments. However, due to the simplicity of the `venv` module,
+Note that [Anaconda Python distribution][anaconda]{target=_blank} provides the `conda` tool, which also
+allows the creation of python enviroments. However, due to the simplicity of the `venv` module,
 only this module will be described in the following.
 
 ## Creating a virtual enviroment
@@ -23,11 +23,11 @@ python -m venv ./testpython
 ```
 
 This creates a python enviroment in the `testpython` folder, linking to the original python installation.
-As such, all packages of the original installation are available. Any `python 3` installation,
-however, using a clean installation is recommended. 
+As such, all packages of the original installation are available.
+However, using a clean and up-to-date `python 3` installation is recommended. 
 
 !!! note "Python installations"
-    Multiple installationa are available in the GPN, such as an installation maintained
+    Multiple installations are available in the GPN, such as an installation maintained
     by the OMC-team found here `/afs/cern.ch/eng/sl/lintrack/anaconda3/bin`
     or the general python distribution, maintained by BE/CO, which can be found [here][acc-py]{target=_blank .cern_internal}.
     
@@ -37,7 +37,7 @@ To activate the created python installation, run
 source ./testpython/env/activate
 ```
 
-Now, the alias `python` should link to to installation in the `testpython` folder instead of the standard installation,
+Now, the alias `python` should link to the installation in the `testpython` folder instead of the standard installation,
 which under Linux can be checked using 
 
 ```
@@ -50,7 +50,7 @@ Note that the command
 ./testpython/bin/python
 ```
 
-also provides access.
+also provides access to the new installation and can be used to run scripts.
 To leave the python enviroment, run
 
 ```
@@ -68,7 +68,7 @@ To install packages available in PyPi, such as [tfs-pandas][tfspandas]{target=bl
 pip install tfs-pandas
 ```
 
-For packages available only from Github/Gitlab, such as [omc3][omc3]{target=blank}, run
+For packages available only on Github/Gitlab, such as [omc3][omc3]{target=blank}, run
 
 ```
 pip install git+https://github.com/pylhc/omc3.git
@@ -82,7 +82,7 @@ pip install --editable ./omc3
 ```
 
 This clones the codebase from github to the folder `omc3` and installs the `omc3` such that
-modifications are taken into account once the module is loaded.
+modifications are taken into account everytime the module is loaded.
 
 ## Example use case
 
@@ -99,7 +99,7 @@ python -m omc3.hole_in_one --harpy --files ...
 
 
 Note when installing `omc3`, required packages such as `tfs-pandas` are automatically
-fetched from PyPi. Furhtermore, additional required packages for run the unittest, such as `pytest`,
+fetched from PyPi. Furthermore, additional required packages for running the unittests, such as `pytest`,
 are also installed. To run the tests, run 
 ```
 python -m pytest ./omc3/tests
