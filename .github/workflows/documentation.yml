@@ -9,6 +9,7 @@ on:  # Runs on any push event to master
   push:
     branches:
       - 'master'
+      - 'deploy_test'
 
 jobs:
   documentation:
