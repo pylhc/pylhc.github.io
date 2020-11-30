@@ -1,4 +1,4 @@
-# Ideas
+# Future MD Ideas
 
 ## Run 3 MDs Ideas 
 

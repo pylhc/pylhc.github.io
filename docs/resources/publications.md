@@ -1,12 +1,6 @@
 
 # OMC Publications
 
-!!! note
-    Self-explanatory, see maybe ResearchGate and Roro's website for starters?
-
-Make each publication a collapsible note, with title + authors + link in the headers and BibTeX in the body.
-See example below.
-
 ## Journal Publications
 
 ### 2020
