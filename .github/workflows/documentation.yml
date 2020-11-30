@@ -8,7 +8,7 @@ defaults:
 on:  # Runs on any push event to master
   push:
     branches:
-      - 'master'
+      - master
 
 jobs:
   documentation:
