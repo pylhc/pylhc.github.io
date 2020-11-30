@@ -49,4 +49,12 @@ jobs:
           pip install mkdocs mkdocs-material mkdocs-minify-plugin
 
       - name: Build documentation
-        run: python -m mkdocs gh-deploy --force
+        run: python -m mkdocs build -d ./doc_build
+
+      - name: Upload documentation to gh-pages
+        if: ${{ success() }}
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: doc_build
