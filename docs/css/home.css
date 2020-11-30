@@ -45,8 +45,8 @@
 
 .tx-hero .md-button--primary {
     background-color: var(--md-primary-bg-color);
-    color: hsla(280, 37%, 48%, 1);
-    /* color: var(--md-accent-fg-color); */
+    /*color: hsl(33, 66%, 49%);*/
+    color: var(--md-accent-fg-color);
     border-color: var(--md-primary-bg-color)
 }
 
