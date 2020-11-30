@@ -95,6 +95,7 @@ extra:
 # Extras to load
 extra_css:
   - css/extra.css
+  - css/home.css
 
 extra_javascript:
   - javascripts/config.js
