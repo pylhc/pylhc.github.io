@@ -30,7 +30,7 @@ a.cern_internal {
 /* Collapsible admonitions for procedures */
 .md-typeset .admonition.nodeco,
 .md-typeset details.nodeco {
-  background-color: var(--md-default-bg-color);
+  background-color: var(--md-primary-bg-color);
   box-shadow: none;
   border-left: 0;
   font-size: medium;
@@ -40,7 +40,7 @@ a.cern_internal {
 
 .md-typeset .nodeco > .admonition-title,
 .md-typeset .nodeco > summary {
-    background-color: var(--md-default-bg-color);
+    background-color: var(--md-primary-bg-color);
     padding: 0 0 0 0;
     border-left: 0;
     margin: 0 0 0 -0.5rem;
@@ -52,7 +52,7 @@ a.cern_internal {
 }
 
 .md-typeset .nodeco > p {
-    background-color: var(--md-default-bg-color);
+    background-color: var(--md-primary-bg-color);
     padding: 0 0 0 0.5rem;
     margin: 0.3rem 1.5rem 0 0;
     font-weight: lighter;
@@ -67,9 +67,19 @@ a.cern_internal {
 }
 
 
+/* In case of dark mode: */
+[data-md-color-scheme="slate"] .md-typeset .nodeco > p,
+[data-md-color-scheme="slate"] .md-typeset .nodeco > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .nodeco > summary,
+[data-md-color-scheme="slate"] .md-typeset .admonition.nodeco,
+[data-md-color-scheme="slate"] .md-typeset details.nodeco {
+    background-color: var(--md-primary-bg-color--dark);
+}
+
+
 /* Not used but I'll leave it here in case someone wants to test it. Just put `cern` as primary in mkdocs.yml (jdilly) */
 [data-md-color-primary="cern"] {
-  --md-primary-fg-color: #0033a0;
+  --md-primary-fg-color:        #0033A0;
   --md-primary-fg-color--light: #9BAEDB;
   --md-primary-fg-color--dark:  #0033A0;
 }
