@@ -25,8 +25,9 @@ copyright: 'Copyright &copy; 2020 Felix Soubelet'
 # Configuration
 theme:
   name: 'material'
-  logo: assets/logos/OMC_logo_inverse.svg
-  favicon: assets/logos/OMC_logo.svg  
+  custom_dir: overrides/
+  logo: assets/logos/OMC_logo_inverse.svg  # top left header logo
+  favicon: assets/logos/OMC_logo.svg  # browser tab logo
   # Default Values
   language: en
   features:
@@ -35,7 +36,7 @@ theme:
   palette:
     scheme: preference
     primary: indigo
-    accent: amber #red
+    accent: amber
   font:
     text: Roboto
     code: Roboto Mono
@@ -102,11 +103,13 @@ extra_javascript:
 
 # Site Layout
 nav:
-  - The OMC Team: index.md
-  - Future MD Ideas: omc_team/ideas.md
-  - Physics of OMC: omc_team/physics.md
-  - OMC Methods: omc_team/methods.md
-  - Publications: omc_team/publications.md
+  - Home: index.md
+  - The OMC Team:
+    - About: omc_team/about.md
+    - Future MD Ideas: omc_team/ideas.md
+    - Physics of OMC: omc_team/physics.md
+    - OMC Methods: omc_team/methods.md
+    - Publications: omc_team/publications.md
   - Python Packages:
     - The OMC Packages: packages/about.md
     - The omc3 Package:
