@@ -135,6 +135,7 @@ nav:
       - Contributing: packages/development/contributing.md
       - How to:
         - Make a release: packages/development/howto_release.md
+        - Create a virtual enviroment: packages/development/howto_venv.md
   - The OMC GUIs:
     - The OMC GUIs: guis/about.md
     - Beta-Beat GUI:
