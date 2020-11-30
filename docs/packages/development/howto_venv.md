@@ -28,19 +28,34 @@ however, using a clean installation is recommended.
 
 !!! note "Python installations"
     Multiple installationa are available in the GPN, such as an installation maintained
-    by the OMC-team found here ```/afs/cern.ch/eng/sl/lintrack/anaconda3/bin```
+    by the OMC-team found here `/afs/cern.ch/eng/sl/lintrack/anaconda3/bin`
     or the general python distribution, maintained by BE/CO, which can be found [here][acc-py]{target=_blank .cern_internal}.
     
 To activate the created python installation, run 
-```source ./testpython/env/activate```.
+
+```
+source ./testpython/env/activate
+```
+
 Now, the alias `python` should link to to installation in the `testpython` folder instead of the standard installation,
 which under Linux can be checked using 
-```which python```.
+
+```
+which python
+```
+
 Note that the command
-```./testpython/bin/python```
+
+```
+./testpython/bin/python
+```
+
 also provides access.
 To leave the python enviroment, run
-```deactivate```.
+
+```
+deactivate
+```
 
 After the activation of the enviroment, packages can be installed using `pip install`.
 The packages installed this way will be put in the `testpython` folder structure and
@@ -48,14 +63,24 @@ will thus not affect the main installation. Packages installed here will have pr
 packages of the original distribution.
 
 To install packages available in PyPi, such as [tfs-pandas][tfspandas]{target=blank}, run
-```pip install tfs-pandas```.
+
+```
+pip install tfs-pandas
+```
+
 For packages available only from Github/Gitlab, such as [omc3][omc3]{target=blank}, run
-```pip install git+https://github.com/pylhc/omc3.git```.
+
+```
+pip install git+https://github.com/pylhc/omc3.git
+```
+
 Alternatively, to obtain the full codebase for further development, run
+
 ```
 git clone https://github.com/pylhc/omc3
 pip install --editable ./omc3
-```.
+```
+
 This clones the codebase from github to the folder `omc3` and installs the `omc3` such that
 modifications are taken into account once the module is loaded.
 
@@ -72,13 +97,15 @@ pip install --editable ./omc3[all]
 python -m omc3.hole_in_one --harpy --files ...
 ```
 
+
 Note when installing `omc3`, required packages such as `tfs-pandas` are automatically
 fetched from PyPi. Furhtermore, additional required packages for run the unittest, such as `pytest`,
 are also installed. To run the tests, run 
-```python -m pytest ./omc3/tests```.
+```
+python -m pytest ./omc3/tests
+```
 
-
-
+*[python]: if you don't know what python is, this website might not be for you
 *[GPN]: CERN General Public Network
 *[PyPi]: Default Python Package Index
 
