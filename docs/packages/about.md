@@ -13,19 +13,19 @@ The OMC team develops and maintains the following packages:
 ## Quick Access Links
 
 - **OMC3** (Python 3.7+): [:fontawesome-solid-question-circle:](omc3/about.md) [:fontawesome-brands-github:][omc3]{target=\_blank} [:fontawesome-solid-book:][omc3_doc]{target=\_blank} <br>
-  <!-- _frequency analysis, optics computation from turn-by-turn data, corrections calculations and results plotting._ -->
+  _frequency analysis, optics computation from turn-by-turn data, corrections calculations and results plotting._
 - **PyLHC-Tools** (Python 3.7+): [:fontawesome-solid-question-circle:](pylhc/about.md) [:fontawesome-brands-github:][pylhc]{target=\_blank} [:fontawesome-solid-book:][pylhc_doc]{target=\_blank} <br>
-  <!-- _useful OMC-related scripts._ -->
+  _useful OMC-related scripts._
 - **Example Study Scripts** (MAD-X): [:fontawesome-solid-question-circle:](mess/about.md) [:fontawesome-brands-github:][mess]{target=\_blank} <br>
-  <!-- _collection of example studies._ -->
+  _collection of example studies._
 - **Beta-Beat.src** (Python 2.7): [:fontawesome-brands-github:][betabeatsrc]{target=\_blank} [:fontawesome-solid-book:][betabeatsrc_doc]{target=\_blank} <br>
-  <!-- _frequency analysis, optics computation from turn-by-turn data and corrections calculations._ -->
+  _frequency analysis, optics computation from turn-by-turn data and corrections calculations._
 - **TFS-Pandas** (Python 3.6+): [:fontawesome-brands-github:][tfspandas]{target=\_blank} [:fontawesome-solid-book:][tfspandas_doc]{target=\_blank} <br>
-  <!-- _*TFS files* I/O functionality._ -->
+  _*TFS files* I/O functionality._
 - **SDDS-Reader** (Python 3.6+): [:fontawesome-brands-github:][sdds]{target=\_blank} [:fontawesome-solid-book:][sdds_doc]{target=\_blank} <br>
-  <!-- _*SDDS files* I/O functionality._ -->
+  _*SDDS files* I/O functionality._
 - **Generic-Parser** (Python 3.6+): [:fontawesome-brands-github:][generic_parser]{target=\_blank} [:fontawesome-solid-book:][generic_parser_doc]{target=\_blank} <br>
-  <!-- _entrypoint argument parser functionality._ -->
+  _entrypoint argument parser functionality._
 
 
 [pylhc_github]: https://github.com/pylhc/ 
