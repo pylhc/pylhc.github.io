@@ -49,4 +49,4 @@ jobs:
           pip install mkdocs mkdocs-material mkdocs-minify-plugin
 
       - name: Build documentation
-        run: python -m mkdocs gh-deploy
+        run: python -m mkdocs gh-deploy --force
