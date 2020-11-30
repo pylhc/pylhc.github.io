@@ -10,12 +10,16 @@ All our Python codes, including legacy repositories, can be found on the [PyLHC 
 
 The OMC team develops and maintains the following packages:
 
-- [Beta-Beat.src](betabeatsrc.md) (`Python 2.7`) for frequency analysis, optics computation from turn-by-turn data and corrections calculations.
+- [Beta-Beat.src][betabeatsrc]{target=_blank} (`Python 2.7`) for frequency analysis, optics computation from turn-by-turn data and corrections calculations.
 - [omc3](omc3/about.md) (`Python 3.7+`) for frequency analysis, optics computation from turn-by-turn data, corrections calculations and results plotting.
-- [pylhc](pylhc.md) (`Python 3.7+`)  for useful OMC-related scripts.
-- [tfs-pandas](tfs-pandas.md) (`Python 3.6+`) for **TFS files** I/O functionality.
-- [sdds](sdds.md) (`Python 3.6+`) for **SDDS files** I/O functionality.
-- [generic_parser](generic_parser.md) (`Python 3.6+`) for entrypoint argument parser functionality.
+- [pylhc](pylhc/about.md) (`Python 3.7+`)  for useful OMC-related scripts.
+- [tfs-pandas][tfspandas]{target=_blank} (`Python 3.6+`) for *TFS files* I/O functionality.
+- [sdds][sdds]{target=_blank} (`Python 3.6+`) for *SDDS files* I/O functionality.
+- [generic_parser][generic_parser]{target=_blank} (`Python 3.6+`) for entrypoint argument parser functionality.
 
 
 [pylhc_github]: https://github.com/pylhc
+[betabeatsrc]: https://github.com/pylhc/Beta-Beat.src
+[tfspandas]: https://github.com/pylhc/tfs
+[sdds]: https://github.com/pylhc/sdds
+[generic_parser]: https://github.com/pylhc/generic_parser
