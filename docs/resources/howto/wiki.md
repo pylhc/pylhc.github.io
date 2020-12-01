@@ -77,12 +77,17 @@ something code that does something
 
 These are basic markdown commands, repeated here for convenience.
 A more exhaustive list is available [here][markdownsyntax].
+To create: 
 
-- To create a **bold** text, surround the text with `**text**`.
+- **bold** text, surround the text with `**text**`.
 
-- To create an __italic__ text, surround the text with `__text__`.
+- _italic_ text, surround the text with `_text_`.
 
-- To create a [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.<br>
+- an internal [link](../howto/wiki.md#general-text-formatting), use `[link](../howto/wiki.md#general-text-formatting)`
+  > Note that all links are relative to the current document! 
+    The `#`-labels are created by headers automatically and can be omitted, in case you want to link to the page itself.
+
+- an external [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.<br>
     
     >Note that at the bottom of the file, an ID named `bestwiki` should be created, together with the hyperlink to the webpage, like so:
 
@@ -94,12 +99,12 @@ A more exhaustive list is available [here][markdownsyntax].
     In the specifier, additional information on the accessibility can be added.
     Links accessable only with a CERN login can be marked like `{target=_blank .cern_login}` or from the CERN network like `{target=_blank .cern_internal}`.
 
-- To add small hints to a difficult word, which appear on mouse over, add at the bottom of the file:
+- small hints to a difficult word, which appear on mouse over, add at the bottom of the file:
   
     ```markdown
     *[difficult word]: helpful explanation
     ```
-    
+
 ### Code listing
 
 To highlight `code` inline, surround the text to highlight with `` ` ``.
