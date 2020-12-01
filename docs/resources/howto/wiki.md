@@ -77,7 +77,7 @@ something code that does something
 
 These are basic markdown commands, repeated here for convenience.
 A more exhaustive list is available [here][markdownsyntax].
-To create: 
+To create:
 
 - **bold** text, surround the text with `**text**`.
 
@@ -88,16 +88,22 @@ To create:
     The `#`-labels are created by headers automatically and can be omitted, in case you want to link to the page itself.
 
 - an external [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.<br>
-    
+
     >Note that at the bottom of the file, an ID named `bestwiki` should be created, together with the hyperlink to the webpage, like so:
 
     >```markdown
      [bestwiki]: https://pylhc.github.io/
-     ``` 
+     ```
 
     >The specifier `{target=_blank}` is added to ensure pages open in a new tab.
     In the specifier, additional information on the accessibility can be added.
     Links accessable only with a CERN login can be marked like `{target=_blank .cern_login}` or from the CERN network like `{target=_blank .cern_internal}`.
+
+- quote such as the one just above:
+
+    ```markdown
+    > to markdown, or not to markdown
+    ```
 
 - small hints to a difficult word, which appear on mouse over, add at the bottom of the file:
   
