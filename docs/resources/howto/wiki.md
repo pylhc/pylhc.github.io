@@ -186,8 +186,7 @@ for i in range(3):
 
 === "Tabbed List"
 
-    All lists are already arranged in a tabbed list.
-    The code to create one looks like this.
+    The code to create a tabbed list, like the one we are in right now:
 
     ```markdown
     === "Entry 1"
