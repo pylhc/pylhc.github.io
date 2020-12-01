@@ -82,14 +82,24 @@ A more exhaustive list is available [here][markdownsyntax].
 
 - To create an __italic__ text, surround the text with `__text__`.
 
-- To create a [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.
-Note that at the bottom of the file, an ID named `bestwiki` should be created, together with the hyperlink to the webpage, like so `[bestwiki]: https://pylhc.github.io/`.
-The specifier `{target=_blank}` is added to ensure pages open in a new tab.
-In the specifier, additional information on the accessibility can be added.
-Links accessable only with a CERN login can be marked like `{target=_blank .cern_login}` or from the CERN network like `{target=_blank .cern_internal}`.
+- To create a [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.<br>
+    
+    >Note that at the bottom of the file, an ID named `bestwiki` should be created, together with the hyperlink to the webpage, like so:
 
-- To add small hints to a difficult word, which appear on mouse over, add `*[difficult word]: helpful explanation` at the bottom of the file.
+    >```markdown
+     [bestwiki]: https://pylhc.github.io/
+     ``` 
 
+    >The specifier `{target=_blank}` is added to ensure pages open in a new tab.
+    In the specifier, additional information on the accessibility can be added.
+    Links accessable only with a CERN login can be marked like `{target=_blank .cern_login}` or from the CERN network like `{target=_blank .cern_internal}`.
+
+- To add small hints to a difficult word, which appear on mouse over, add at the bottom of the file:
+  
+    ```markdown
+    *[difficult word]: helpful explanation
+    ```
+    
 ### Code listing
 
 To highlight `code` inline, surround the text to highlight with `` ` ``.
@@ -171,15 +181,15 @@ for i in range(3):
     ```html
     - [ ] <details class="nodeco"><summary>Task 1 Summary</summary>
         <p> Hints for task 1.
-            </p></details>
+        </p></details>
 
     - [ ] <details class="nodeco"><summary>Task 2 Summary</summary>
         <p> Hints for task 2.
-            </p></details>
+        </p></details>
 
     - [ ] <details class="nodeco"><summary>Task 3 Summary</summary>
         <p> Hints for task 3.
-            </p></details>
+        </p></details>
     ```
 
     Note that ticks set by a user are not permanent and will be reset upon reloading the page.
