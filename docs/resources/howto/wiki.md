@@ -34,11 +34,11 @@ pip install mkdocs mkdocs-material mkdocs-minify-plugin
 ```
 
 Create a branch (from master) and make your changes.
-You can run a local server by running 
+You can run a local server by running
 
 ```bash
 python -m mkdocs serve
-``` 
+```
 
 from the top-level directory, and see the site rendered locally in your browser at `localhost:8000`.
 The rendered website will automatically reload upon changes to any file located in the `docs` directory.
@@ -184,27 +184,19 @@ for i in range(3):
 
     Note that ticks set by a user are not permanent and will be reset upon reloading the page.
 
-#### Tabbed list
+=== "Tabbed List"
 
-A tabbed list looks like this.
+    All lists are already arranged in a tabbed list.
+    The code to create one looks like this.
 
-=== "Entry 1"
-    Text 1
-=== "Entry 2"
-    Text 2
-=== "Entry 3"
-    Text 3
-
-It can be created using
-
-```markdown
-=== "Entry 1"
-    Text 1
-=== "Entry 2"
-    Text 2
-=== "Entry 3"
-    Text 3
-```
+    ```markdown
+    === "Entry 1"
+        Text 1
+    === "Entry 2"
+        Text 2
+    === "Entry 3"
+        Text 3
+    ```
 
 ### Text Boxes
 
