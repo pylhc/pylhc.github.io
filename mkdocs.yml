@@ -133,8 +133,8 @@ nav:
       - ↪ generic_parser: https://github.com/pylhc/generic_parser
     - Python Development: 
       - Contributing: packages/development/contributing.md
-      - How to:
-        - Make a release: packages/development/howto_release.md
+      - Virtual Environments: packages/development/howto_venv.md
+      - Releases: packages/development/howto_release.md
   - The OMC GUIs:
     - The OMC GUIs: guis/about.md
     - Beta-Beat GUI:
