@@ -8,8 +8,14 @@ It also contains examples for useful commands and can be used as a template for 
 ### To Make Changes Online
 
 This is a method adapted to making small changes, most likely to a single page.
-Go to the current version of the site [here][site_address], navigate to a page you wish to modify and click the page's modification link (the little pen at the top right).
+Go to the current version of the site [here][site_address], navigate to a page you wish to modify and click the page's modification link :fontawesome-solid-pen:.
 You will be taken to the Github GUI to make your changes, which you can later commit.
+
+Even new pages can be added directly online on github, by navigating to the desired location and clicking  on the `Add File` button.
+See [the section about adding pages](#adding-a-page) for more info about what is required for new pages to be accessible from the menu.
+
+!!! note
+    As a lot of fancy styling is added by the [material theme][mkdocs_material] used, only the basic markdown formatting is seen in the preview.
 
 ### To Make Changes Locally
 
@@ -60,21 +66,22 @@ something code that does something
 These are basic markdown commands, repeated here for convenience.
 A more exhaustive list is available [here][markdownsyntax].
 
-To create a **bold** text, surround the text with `**text**`.
+- To create a **bold** text, surround the text with `**text**`.
 
-To create an __italic__ text, surround the text with `__text__`.
+- To create an __italic__ text, surround the text with `__text__`.
 
-To create a [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.
-Note that at the bottom of the file, an ID named `bestwiki` should be created, together with the hyperlink to the webpage.
+- To create a [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.
+Note that at the bottom of the file, an ID named `bestwiki` should be created, together with the hyperlink to the webpage, like so `[bestwiki]: https://pylhc.github.io/`.
 The specifier `{target=_blank}` is added to ensure pages open in a new tab.
-In the specifier, additional information can be added if the link is on the accessibility of the link
+In the specifier, additional information on the accessibility can be added.
 Links accessable only with a CERN login can be marked like `{target=_blank .cern_login}` or from the CERN network like `{target=_blank .cern_internal}`.
 
-To add small hints to a difficult word, which appear on mouse over, add `*[difficult word]: helpful explanation` at the bottom of the file.
+- To add small hints to a difficult word, which appear on mouse over, add `*[difficult word]: helpful explanation` at the bottom of the file.
 
 ### Code listing
 
 To highlight `code` inline, surround the text to highlight with `` ` ``.
+
 For creating a code block, surround the code with `` ``` ``.
 Please make sure that the code block is separated from the text by one blank line.
 Additionally, please specify the language.
@@ -134,6 +141,27 @@ It can be created using
 - [ ] First
 - [x] Second
 - [ ] Third
+```
+
+Below, a task list with hints, as is used in the procedures, is displayed.
+
+- [ ] <details class="nodeco"><summary>Task 1 Summary</summary>
+      <p> Hints for task 1.
+      </p></details>
+
+- [ ] <details class="nodeco"><summary>Task 2 Summary</summary>
+      <p> Hints for task 2.
+      </p></details>
+
+It can be created using the following code.
+```html
+- [ ] <details class="nodeco"><summary>Task 1 Summary</summary>
+      <p> Hints for task 1.
+          </p></details>
+
+- [ ] <details class="nodeco"><summary>Task 2 Summary</summary>
+      <p> Hints for task 2.
+          </p></details>
 ```
 
 Note that ticks set by a user are not permanent and will be reset upon reloading the page.
@@ -266,8 +294,20 @@ To paste an image, use the following code.
 ![Image](../../assets/images/tricks/placeholder.gif)
 ```
 
+To include a centered image with a caption, use the following code.
+
+```html
+<figure>
+    <img src="../../../assets/images/something/image.png" width=90%>
+  <figcaption>Figure: Something really amazing.</figcaption>
+</figure>
+```
+
 Images should be saved in `assets/images`, in an appropriately named folder.
 
+*[difficult word]: helpful explanation
+
+[mkdocs_material]: https://squidfunk.github.io/mkdocs-material/
 [site_address]: https://pylhc.github.io/
 [markdownsyntax]: https://www.markdownguide.org/basic-syntax/
 [bestwiki]: https://pylhc.github.io/
