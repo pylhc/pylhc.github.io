@@ -3,12 +3,18 @@
 This page presents an overview of the steps necessary to modify the wiki and add new pages.
 It also contains examples for useful commands and can be used as a template for new pages.
 
+More detailed information can be found here:
+
+- [markdown guide][markdownsyntax]
+- [mkdocs homepage][mkdocs]
+- [mkdocs material help][mkdocs_material]
+
 ## Setup
 
 ### To Make Changes Online
 
 This is a method adapted to making small changes, most likely to a single page.
-Go to the current version of the site [here][site_address], navigate to a page you wish to modify and click the page's modification link :fontawesome-solid-pen:.
+Go to the current version of the site [here][site_address], navigate to a page you wish to modify and click the page's modification link :fontawesome-solid-pen:{style="height:0.95em"}.
 You will be taken to the Github GUI to make your changes, which you can later commit.
 
 Even new pages can be added directly online on github, by navigating to the desired location and clicking  on the `Add File` button.
@@ -28,7 +34,13 @@ pip install mkdocs mkdocs-material mkdocs-minify-plugin
 ```
 
 Create a branch (from master) and make your changes.
-You can run a local server by running `python -m mkdocs serve` from the top-level directory, and see the site rendered locally in your browser at `localhost:8000`.
+You can run a local server by running 
+
+```bash
+python -m mkdocs serve
+``` 
+
+from the top-level directory, and see the site rendered locally in your browser at `localhost:8000`.
 The rendered website will automatically reload upon changes to any file located in the `docs` directory.
 
 Commit your changes to this repository, and open a pull request to get them approved once they are ready.
@@ -36,7 +48,7 @@ Commit your changes to this repository, and open a pull request to get them appr
 ### Adding a page
 
 In order to add a new page, a new `.md` should be created in the appropriate location in the folder structure.
-A link to the page then needs to be added in the `nav` section of the `mkdocs.yml`, together with an ID.
+A link to the page then needs to be added in the `nav` section of the `mkdocs.yml` in the root directory, together with an ID.
 
 ## Guidelines
 
@@ -95,76 +107,82 @@ for i in range(3):
 
 ### Lists
 
-#### Unordered list
+=== "Unordered list"
+    An unordered list looks like this.
 
-An unordered list looks like this.
+    - First
+    - Second
+    - Third
 
-- First
-- Second
-- Third
+    It can be created using
 
-It can be created using
+    ```markdown
+    - First
+    - Second
+    - Third
+    ```
 
-```markdown
-- First
-- Second
-- Third
-```
+=== "Ordered list"
+    An ordered list looks like this.
 
-#### Ordered list
+    1. First
+    2. Second
+    3. Third
 
-An ordered list looks like this.
+    It can be created using
 
-1. First
-2. Second
-3. Third
+    ```markdown
+    1. First
+    2. Second
+    3. Third
+    ```
 
-It can be created using
+=== "Task list"
+    A task list looks like this.
 
-```markdown
-1. First
-2. Second
-3. Third
-```
+    - [ ] First
+    - [x] Second
+    - [ ] Third
 
-#### Task list
+    It can be created using
 
-A task list looks like this.
+    ```markdown
+    - [ ] First
+    - [x] Second
+    - [ ] Third
+    ```
 
-- [ ] First
-- [x] Second
-- [ ] Third
+=== "Procedure Task List"
+    Below, a task list with hints, as is used in the procedures, is displayed.
 
-It can be created using
+    - [ ] <details class="nodeco"><summary>Task 1 Summary</summary>
+        <p> Hints for task 1.
+        </p></details>
 
-```markdown
-- [ ] First
-- [x] Second
-- [ ] Third
-```
+    - [ ] <details class="nodeco"><summary>Task 2 Summary</summary>
+        <p> Hints for task 2.
+        </p></details>
 
-Below, a task list with hints, as is used in the procedures, is displayed.
+    - [ ] <details class="nodeco"><summary>Task 3 Summary</summary>
+        <p> Hints for task 3.
+        </p></details>
 
-- [ ] <details class="nodeco"><summary>Task 1 Summary</summary>
-      <p> Hints for task 1.
-      </p></details>
+    It can be created using the following code.
+    ```html
+    - [ ] <details class="nodeco"><summary>Task 1 Summary</summary>
+        <p> Hints for task 1.
+            </p></details>
 
-- [ ] <details class="nodeco"><summary>Task 2 Summary</summary>
-      <p> Hints for task 2.
-      </p></details>
+    - [ ] <details class="nodeco"><summary>Task 2 Summary</summary>
+        <p> Hints for task 2.
+            </p></details>
 
-It can be created using the following code.
-```html
-- [ ] <details class="nodeco"><summary>Task 1 Summary</summary>
-      <p> Hints for task 1.
-          </p></details>
+    - [ ] <details class="nodeco"><summary>Task 3 Summary</summary>
+        <p> Hints for task 3.
+            </p></details>
+    ```
 
-- [ ] <details class="nodeco"><summary>Task 2 Summary</summary>
-      <p> Hints for task 2.
-          </p></details>
-```
-
-Note that ticks set by a user are not permanent and will be reset upon reloading the page.
+    Note that ticks set by a user are not permanent and will be reset upon reloading the page.
 
 #### Tabbed list
 
@@ -307,6 +325,7 @@ Images should be saved in `assets/images`, in an appropriately named folder.
 
 *[difficult word]: helpful explanation
 
+[mkdocs]: https://www.mkdocs.org/
 [mkdocs_material]: https://squidfunk.github.io/mkdocs-material/
 [site_address]: https://pylhc.github.io/
 [markdownsyntax]: https://www.markdownguide.org/basic-syntax/
