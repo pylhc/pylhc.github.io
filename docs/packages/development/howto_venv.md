@@ -1,4 +1,4 @@
-# How to Create a Python Virtual Enviroments
+# How to Create a Python Virtual Environments
 
 Both for the development of Python codes as well as running some of the existing codes, the creation of a virtual Python enviroment is recommended.
 This not only prevents conflicts when installing multiple packages with different required versions of the same package, but also allows to separate production and test scenarios. 
@@ -7,14 +7,14 @@ This not only prevents conflicts when installing multiple packages with differen
     Don't know what a **virtual environment** is or the difference between these many tools?
     Here is a good (but lengthy) [primer on virtual environments][virtual_env_primer]{target=_blank} by RealPython.
 
-Python enviroments are created using the built-in `venv` module, with the old `pyvenv` being deprecated since `Python 3.6` and as such not recommended.
+Python environments are created using the built-in `venv` module, with the old `pyvenv` being deprecated since `Python 3.6` and as such not recommended.
 The following description is a summary of the steps presented [here][venv_module]{target=_blank} and [here][pip_venv]{target=_blank}, targetting Unix users.
 
 ??? question "What About Anaconda?"
-    Note that the [Anaconda Python distribution][anaconda]{target=_blank} provides the `conda` tool as a package manager, which also allows the creation of Python virtual enviroments.
+    Note that the [Anaconda Python distribution][anaconda]{target=_blank} provides the `conda` tool as a package manager, which also allows the creation of Python virtual environments.
     However, due to the simplicity of the `venv` module, only this module will be described in the following.
 
-## Virtual Enviroments with pyvenv
+## Virtual Environments with pyvenv
 
 To create a virtual enviroment in the folder `testpython`, run the command
 ```
