@@ -1,7 +1,7 @@
 # OMC Team Website
 
 This is the source repository for the website of the optics measurements and corrections team (OMC) at CERN.
-The pages are [deployed here][site_address]. 
+The pages are [deployed here][site_address].
 
 ## Contributing to the Website
 
@@ -32,7 +32,6 @@ Commit your changes to this repository, and open a pull request to get them appr
 The static pages are built with `Mkdocs`, the documentation of which can be found [here][mkdocs].
 The site's look and functionality relies on the [Material Mkdocs Theme][mkdocs-material].
 Check its documentation to understand the looks, formatting, settings and plugins.
-
 
 [site_address]: https://pylhc.github.io/
 [mkdocs]: https://www.mkdocs.org/

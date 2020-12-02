@@ -3,6 +3,7 @@
 ## Accessing CERN-internal websites
 
 Adapted from [here][codi_teleworking]{target=_blank}, you can create a web proxy:
+
 ```bash
 ssh -D 8090 username@lxtunnel.cern.ch
 ```
@@ -47,7 +48,7 @@ If your internet connection fails, you should still be able to resume your curre
 
 !!! help "Creating Shortcut to Other Machines"
     In order to connect to another machine directly (instead of hopping through `lxplus`) you can create a shortcut:
-    
+
     1. Open `X-Win32 18 Configuration`.
     2. `Manual...` &rarr; `More...` &rarr; `command`.
     3. Target: `"C:\Program Files (x86)\PuTTY_CERN\putty.exe" -ssh -X machine_at_cern.cern.ch`.
@@ -73,7 +74,6 @@ If your internet connection fails, you should still be able to resume your curre
     </Session>
     ```
     3. Click on file.
-
 
 *[RDP]: Remote Desktop Protocol
 
