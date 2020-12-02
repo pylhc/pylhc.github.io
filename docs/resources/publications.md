@@ -26,7 +26,7 @@
 ??? abstract "Lattice and optics options for possible energy upgrades of the Large Hadron Collider, `J. Keintzel, R. Tomás, R. Bruce, M. Giovannozzi, T. Risselada, and F. Zimmermann`  [Phys. Rev. Accel. Beams 23, 101602, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.101602){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.101602,
-      title = {Lattice and optics options for possible energy upgrades of the Large Hadron Collider},
+      title = {Lattice and Optics Options for Possible Energy Upgrades of the Large Hadron Collider},
       author = {Keintzel, J. and Tom\'as, R. and Bruce, R. and Giovannozzi, M. and Risselada, T. and Zimmermann, F.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -44,7 +44,7 @@
 ??? abstract "Effect of local linear coupling on linear and nonlinear observables in circular accelerators , `M. Hofer and R. Tomás`  [Phys. Rev. Accel. Beams 23, 094001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.094001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.094001,
-      title = {Effect of local linear coupling on linear and nonlinear observables in circular accelerators},
+      title = {Effect of Local Linear Coupling on Linear and Nonlinear Observables in Circular Accelerators},
       author = {Hofer, M. and Tom\'as, R.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -62,7 +62,7 @@
 ??? abstract "Tuning the ultralow β∗ optics at the KEK Accelerator Test Facility 2 , `R. Yang, A. Pastushenko, A. Aryshev, M. Bergamaschi, V. Cilento, A. Faus-Golfe, M. Fukuda, P. Korysko, K. Kubo, S. Kuroda, T. Naito, T. Okugi, F. Plassard, N. Terunuma, and R. Tomás`  [Phys. Rev. Accel. Beams 23, 071003, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.071003){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.071003,
-      title = {Tuning the ultralow ${\ensuremath{\beta}}^{*}$ optics at the KEK Accelerator Test Facility 2},
+      title = {Tuning the Ultralow ${\ensuremath{\beta}}^{*}$ Optics at the Kek Accelerator Test Facility 2},
       author = {Yang, R. and Pastushenko, A. and Aryshev, A. and Bergamaschi, M. and Cilento, V. and Faus-Golfe, A. and Fukuda, M. and Korysko, P. and Kubo, K. and Kuroda, S. and Naito, T. and Okugi, T. and Plassard, F. and Terunuma, N. and Tom\'as, R.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -80,7 +80,7 @@
 ??? abstract "Tuning the Compact Linear Collider 380 GeV final-focus system using realistic beam-beam signals , `J. Ögren, A. Latina, R. Tomás, and D. Schulte`  [Phys. Rev. Accel. Beams 23, 051002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.051002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.051002,
-      title = {Tuning the Compact Linear Collider 380 GeV final-focus system using realistic beam-beam signals},
+      title = {Tuning the Compact Linear Collider 380 Gev Final-focus System Using Realistic Beam-beam Signals},
       author = {\"Ogren, J. and Latina, A. and Tom\'as, R. and Schulte, D.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -98,7 +98,7 @@
 ??? abstract "Local observable for linear lattice imperfections in circular accelerators , `A. Wegscheider and R. Tomás`  [Phys. Rev. Accel. Beams 23, 054002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.054002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.054002,
-      title = {Local observable for linear lattice imperfections in circular accelerators},
+      title = {Local Observable for Linear Lattice Imperfections in Circular Accelerators},
       author = {Wegscheider, A. and Tom\'as, R.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -116,7 +116,7 @@
 ??? abstract "Optics-measurement-based beam position monitor calibrations in the LHC insertion regions , `A. García-Tabarés Valdivieso and R. Tomás`  [Phys. Rev. Accel. Beams 23, 042801, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.042801){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.042801,
-      title = {Optics-measurement-based beam position monitor calibrations in the LHC insertion regions},
+      title = {Optics-measurement-based Beam Position Monitor Calibrations in the Lhc Insertion Regions},
       author = {Valdivieso, A. Garc\'{\i}a-Tabar\'es and Tom\'as, R.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -134,7 +134,7 @@
 ??? abstract "New local optics measurements and correction techniques for the LHC and its luminosity upgrade , `J. Coello de Portugal, R. Tomás, and M. Hofer`  [Phys. Rev. Accel. Beams 23, 041001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.041001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.041001,
-      title = {New local optics measurements and correction techniques for the LHC and its luminosity upgrade},
+      title = {New Local Optics Measurements and Correction Techniques for the Lhc and Its Luminosity Upgrade},
       author = {Coello de Portugal, J. and Tom\'as, R. and Hofer, M.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -152,7 +152,7 @@
 ??? abstract "Emittance growth from luminosity burn-off in future hadron colliders , `R. Tomás, J. Keintzel, and S. Papadopoulou`  [Phys. Rev. Accel. Beams 23, 031002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.031002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.031002,
-      title = {Emittance growth from luminosity burn-off in future hadron colliders},
+      title = {Emittance Growth from Luminosity Burn-off in Future Hadron Colliders},
       author = {Tom\'as, R. and Keintzel, J. and Papadopoulou, S.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -170,7 +170,7 @@
 ??? abstract "Measuring β∗ in SuperKEKB with K modulation , `P. Thrane, R. Tomás, A. Koval, K. Ohmi, Y. Ohnishi, and A. Wegscheider`  [Phys. Rev. Accel. Beams 23, 012803, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.012803){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.012803,
-      title = {Measuring ${\ensuremath{\beta}}^{*}$ in SuperKEKB with $K$ modulation},
+      title = {Measuring ${\ensuremath{\beta}}^{*}$ in Superkekb with $k$ Modulation},
       author = {Thrane, P. and Tom\'as, R. and Koval, A. and Ohmi, K. and Ohnishi, Y. and Wegscheider, A.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -188,7 +188,7 @@
 ??? abstract "Impact of flux jumps in future colliders , `J. Coello de Portugal, R. Tomás, L. Fiscarelli, D. Gamba, and M. Martino`  [Phys. Rev. Accel. Beams 23, 011001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.011001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.011001,
-      title = {Impact of flux jumps in future colliders},
+      title = {Impact of Flux Jumps in Future Colliders},
       author = {Coello de Portugal, J. and Tom\'as, R. and Fiscarelli, L. and Gamba, D. and Martino, M.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
