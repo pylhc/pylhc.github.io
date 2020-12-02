@@ -1,6 +1,20 @@
 
 # OMC Publications
 
+This page compiles various published papers, reports , and MD notes from OMC team members.
+
+For adding new entries, please use the following environment.
+
+````markdown
+??? abstract "Title, `Authors`  [Paper ID](Link to resource){target=_blank}"
+    ```
+    Bibtex entry
+    ```
+````
+
+Ideally, titles should be put in title case.
+The number of authors before resorting to `et al.` is up to the committers discretion.
+
 ## Journal Publications
 
 ### 2020
