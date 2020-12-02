@@ -1,11 +1,14 @@
 """
 Prints markdown for the Publications.md from .bib files.
 
-Usage: Call `main` with the path to the script and a list of citekeys.
+Usage: Call `main` with the path to the bibfile and a list of citekeys.
+
 If no citekeys are given, all entries in the .bib are printed.
 The boolean `add_year` can be set to "true" and prints the year with a '###' header.
 This makes only sense, if you have your citekeys sorted by year!
 (this is not done automatically, could be easily implemented though.)
+
+Requires: titlecase
 """
 from pathlib import Path
 from typing import Iterable
