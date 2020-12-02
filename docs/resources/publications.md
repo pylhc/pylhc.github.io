@@ -7,7 +7,7 @@
 
 ??? abstract "Detection of faulty beam position monitors using unsupervised learning, `E. Fol, R. Tomás, J. Coello de Portugal, and G. Franchetti`  [Phys. Rev. Accel. Beams 23, 102805, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.102805){target=_blank}"
     ```
-    @article{faulty_bpm_detection,
+    @article{PhysRevAccelBeams.23.102805,
       title = {Detection of faulty beam position monitors using unsupervised learning},
       author = {Fol, E. and Tom\'as, R. and Coello de Portugal, J. and Franchetti, G.},
       journal = {Phys. Rev. Accel. Beams},
