@@ -229,7 +229,7 @@ The number of authors before resorting to `et al.` is up to the committers discr
 
 #### 2018
 
-??? abstract "MD4944: Local linear coupling measurement at the IPs , `T. Persson et al.`  [CERN-ACC-NOTE-2020-0013](https://cds.cern.ch/record/2710101){target=_blank}"
+??? abstract "MD4944: Local Linear Coupling Measurement at the IPs , `T. Persson et al.`  [CERN-ACC-NOTE-2020-0013](https://cds.cern.ch/record/2710101){target=_blank}"
     ```
     @article{Persson:2710101,
           author        = "Persson, Tobias Hakan Bjorn and Carlier, Felix Simon and
@@ -260,7 +260,7 @@ The number of authors before resorting to `et al.` is up to the committers discr
     }
     ```
 
-??? abstract "Report and Analysis from LHC MD 3311: Amplitude detuning at end-of-squeeze , `J. Dilly et al.`  [CERN-ACC-NOTE-2019-0042](https://cds.cern.ch/record/2692810){target=_blank}"
+??? abstract "Report and Analysis from LHC MD 3311: Amplitude Detuning at End-of-Squeeze , `J. Dilly et al.`  [CERN-ACC-NOTE-2019-0042](https://cds.cern.ch/record/2692810){target=_blank}"
     ```
     @article{Dilly:2692810,
           author        = "Dilly, Joschua Werner and Albert, Markus and Argyropoulos,
@@ -276,7 +276,7 @@ The number of authors before resorting to `et al.` is up to the committers discr
     }
     ```
 
-??? abstract "MD3287: Luminosity scans with waist shifts , `J. Coello De Portugal et al.`  [CERN-ACC-NOTE-2020-0048](https://cds.cern.ch/record/2733019){target=_blank}"
+??? abstract "MD3287: Luminosity Scans with Waist Shifts , `J. Coello De Portugal et al.`  [CERN-ACC-NOTE-2020-0048](https://cds.cern.ch/record/2733019){target=_blank}"
     ```
     @article{CoelloDePortugal-MartinezVazquez:2733019,
           author        = "Coello De Portugal - Martinez Vazquez, Jaime Maria and
@@ -291,7 +291,7 @@ The number of authors before resorting to `et al.` is up to the committers discr
 
 #### 2017
 
-??? abstract "MD 2563: Optics measurement and corrections with half integer tune , `A. Wegscheider et al.`  [	CERN-ACC-NOTE-2018-0055](https://cds.cern.ch/record/2632258){target=_blank}"
+??? abstract "MD 2563: Optics Measurement and Corrections with Half Integer Tune , `A. Wegscheider et al.`  [CERN-ACC-NOTE-2018-0055](https://cds.cern.ch/record/2632258){target=_blank}"
     ```
     @article{Wegscheider:2632258,
           author        = "Wegscheider, Andreas and Coello De Portugal - Martinez
@@ -309,7 +309,7 @@ The number of authors before resorting to `et al.` is up to the committers discr
     }
     ```
 
-??? abstract "Report from LHC MD 2171: Dynamic aperture at 6.5 TeV , `E. Maclean et al.`  [CERN-ACC-NOTE-2018-0054](https://cds.cern.ch/record/2632203){target=_blank}"
+??? abstract "Report from LHC MD 2171: Dynamic Aperture at 6.5 TeV , `E. Maclean et al.`  [CERN-ACC-NOTE-2018-0054](https://cds.cern.ch/record/2632203){target=_blank}"
     ```
     @article{Maclean:2632203,
           author        = "Maclean, Ewen Hamish and Carlier, Felix Simon and
