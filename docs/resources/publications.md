@@ -130,7 +130,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 ??? abstract "Optics-measurement-based beam position monitor calibrations in the LHC insertion regions, `A. García-Tabarés Valdivieso and R. Tomás` [Phys. Rev. Accel. Beams 23, 042801, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.042801){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.042801,
-      title = {Optics-measurement-based Beam Position Monitor Calibrations in the Lhc Insertion Regions},
+      title = {Optics-measurement-based Beam Position Monitor Calibrations in the LHC Insertion Regions},
       author = {Valdivieso, A. Garc\'{\i}a-Tabar\'es and Tom\'as, R.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -148,7 +148,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 ??? abstract "New local optics measurements and correction techniques for the LHC and its luminosity upgrade, `J. Coello de Portugal, R. Tomás, and M. Hofer` [Phys. Rev. Accel. Beams 23, 041001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.041001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.041001,
-      title = {New Local Optics Measurements and Correction Techniques for the Lhc and Its Luminosity Upgrade},
+      title = {New Local Optics Measurements and Correction Techniques for the LHC and Its Luminosity Upgrade},
       author = {Coello de Portugal, J. and Tom\'as, R. and Hofer, M.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -218,7 +218,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     ```
 ### 2019
 
-??? abstract "He-Lhc: The High-Energy Large Hadron Collider, `A. Abada et al.`, [Eur. Phys. J. Spec. Top. **228**, 2019](https://doi.org/10.1140/epjst/e2019-900088-6){target=_blank}"
+??? abstract "He-LHC: The High-Energy Large Hadron Collider, `A. Abada et al.`, [Eur. Phys. J. Spec. Top. **228**, 2019](https://doi.org/10.1140/epjst/e2019-900088-6){target=_blank}"
     ```
     @article{AbadaHELHCHighEnergyLarge2019,
       title = {{{HE}}-{{LHC}}: {{The High}}-{{Energy Large Hadron Collider}}},
@@ -256,7 +256,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "New Approach To Lhc Optics Commissioning For The Nonlinear Era, `E. Maclean et al.`, [Phys. Rev. Accel. Beams **22**, 2019](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.22.061004){target=_blank}"
+??? abstract "New Approach To LHC Optics Commissioning For The Nonlinear Era, `E. Maclean et al.`, [Phys. Rev. Accel. Beams **22**, 2019](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.22.061004){target=_blank}"
     ```
     @article{PhysRevAccelBeams.22.061004,
       title = {New Approach to {{LHC}} Optics Commissioning for the Nonlinear Era},
@@ -328,7 +328,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "First Experimental Demonstration Of Forced Dynamic Aperture Measurements With Lhc Ac Dipoles, `F. Carlier, R. Tomás, E. Maclean, and T. Persson`, [Phys. Rev. Accel. Beams **22**, 2019](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.22.031002){target=_blank}"
+??? abstract "First Experimental Demonstration Of Forced Dynamic Aperture Measurements With LHC Ac Dipoles, `F. Carlier, R. Tomás, E. Maclean, and T. Persson`, [Phys. Rev. Accel. Beams **22**, 2019](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.22.031002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.22.031002,
       title = {First Experimental Demonstration of Forced Dynamic Aperture Measurements with {{LHC}} Ac Dipoles},
@@ -365,7 +365,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "High-Energy Lhc Design, `J. Abelleira et al.`, [J. Phys.: Conf. Ser. **1067**, 2018](https://iopscience.iop.org/article/10.1088/1742-6596/1067/2/022009/meta){target=_blank}"
+??? abstract "High-Energy LHC Design, `J. Abelleira et al.`, [J. Phys.: Conf. Ser. **1067**, 2018](https://iopscience.iop.org/article/10.1088/1742-6596/1067/2/022009/meta){target=_blank}"
     ```
     @article{AbelleiraHighEnergyLHCDesign2018,
       title = {High-{{Energy LHC}} Design},
@@ -402,7 +402,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Assessment Of The Performance Of High-Luminosity Lhc Operational Scenarios: Integrated Luminosity And Effective Pile-Up Density, `L. Medina, R. Tomás, G. Arduini, and M. Napsuciale`, [Canadian Journal of Physics, 2018](https://cdnsciencepub.com/doi/abs/10.1139/cjp-2018-0291){target=_blank}"
+??? abstract "Assessment Of The Performance Of High-Luminosity LHC Operational Scenarios: Integrated Luminosity And Effective Pile-Up Density, `L. Medina, R. Tomás, G. Arduini, and M. Napsuciale`, [Canadian Journal of Physics, 2018](https://cdnsciencepub.com/doi/abs/10.1139/cjp-2018-0291){target=_blank}"
     ```
     @article{cjp-2018-0291,
       title = {Assessment of the Performance of {{High}}-{{Luminosity LHC}} Operational Scenarios: Integrated Luminosity and Effective Pile-up Density},
@@ -489,7 +489,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2017
 
-??? abstract "Local Correction Of Quadrupole Errors At Lhc Interaction Regions Using Action And Phase Jump Analysis On Turn-By-Turn Beam Position Data, `J. Cardona, A. García Bonilla, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111004){target=_blank}"
+??? abstract "Local Correction Of Quadrupole Errors At LHC Interaction Regions Using Action And Phase Jump Analysis On Turn-By-Turn Beam Position Data, `J. Cardona, A. García Bonilla, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111004){target=_blank}"
     ```
     @article{PhysRevAccelBeams.20.111004,
       title = {Local Correction of Quadrupole Errors at {{LHC}} Interaction Regions Using Action and Phase Jump Analysis on Turn-by-Turn Beam Position Data},
@@ -574,7 +574,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Experimental Validation Of The Achromatic Telescopic Squeezing (Ats) Scheme At The Lhc, `S. Fartoukh et al.`, [J. Phys.: Conf. Ser. **874**, 2017](https://doi.org/10.1088\%2F1742-6596\%2F874\%2F1\%2F012010){target=_blank}"
+??? abstract "Experimental Validation Of The Achromatic Telescopic Squeezing (Ats) Scheme At The LHC, `S. Fartoukh et al.`, [J. Phys.: Conf. Ser. **874**, 2017](https://doi.org/10.1088\%2F1742-6596\%2F874\%2F1\%2F012010){target=_blank}"
     ```
     @article{FartoukhExperimentalValidationAchromatic2017,
       title = {Experimental Validation of the {{Achromatic Telescopic Squeezing}} ({{ATS}}) Scheme at the {{LHC}}},
@@ -592,7 +592,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Lhc Optics Commissioning: A Journey Towards 1\% Optics Control, `T. Persson et al.`, Physical Review Accelerators and Beams **20**, 2017"
+??? abstract "LHC Optics Commissioning: A Journey Towards 1\% Optics Control, `T. Persson et al.`, Physical Review Accelerators and Beams **20**, 2017"
     ```
     @article{PhysRevAccelBeams.20.061002,
       title = {{{LHC}} Optics Commissioning: {{A}} Journey towards 1\% Optics Control},
@@ -626,7 +626,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Accuracy And Feasibility Of The Beta* Measurement For Lhc And High Luminosity Lhc Using K Modulation, `F. Carlier, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005){target=_blank}"
+??? abstract "Accuracy And Feasibility Of The Beta* Measurement For LHC And High Luminosity LHC Using K Modulation, `F. Carlier, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005){target=_blank}"
     ```
     @article{PhysRevAccelBeams.20.011005,
       title = {Accuracy and Feasibility of the Beta* Measurement for {{LHC}} and {{High Luminosity LHC}} Using k Modulation},
@@ -645,7 +645,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2016
 
-??? abstract "High Luminosity Lhc: Challenges And Plans, `G. Arduini et al.`, [J. Inst. **11**, 2016](http://stacks.iop.org/1748-0221/11/i=12/a=C12081){target=_blank}"
+??? abstract "High Luminosity LHC: Challenges And Plans, `G. Arduini et al.`, [J. Inst. **11**, 2016](http://stacks.iop.org/1748-0221/11/i=12/a=C12081){target=_blank}"
     ```
     @article{ArduiniHighLuminosityLHC2016,
       title = {High {{Luminosity LHC}}: Challenges and Plans},
@@ -728,7 +728,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "The Magnetic Model Of The Lhc At 6.5 Tev, `E. Todesco et al.`, IEEE Transactions on Applied Superconductivity **26**, 2016"
+??? abstract "The Magnetic Model Of The LHC At 6.5 Tev, `E. Todesco et al.`, IEEE Transactions on Applied Superconductivity **26**, 2016"
     ```
     @article{TASC.2016.2549579,
       title = {The {{Magnetic Model}} of the {{LHC}} at 6.5 {{TeV}}},
@@ -1196,7 +1196,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Record Low $\Beta$ Beating In The Lhc, `R. Tomás et al.`, Physical Review Special Topics - Accelerators and Beams **15**, 2012"
+??? abstract "Record Low $\Beta$ Beating In The LHC, `R. Tomás et al.`, Physical Review Special Topics - Accelerators and Beams **15**, 2012"
     ```
     @article{PhysRevSTAB.15.091001,
       title = {Record Low {$\beta$} Beating in the {{LHC}}},
@@ -1268,7 +1268,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2010
 
-??? abstract "Lhc Optics Model, Measurements And Corrections, `R. Tomás et al.`, 2010, URL: [https://cds.cern.ch/record/1269904](https://cds.cern.ch/record/1269904){target=_blank}"
+??? abstract "LHC Optics Model, Measurements And Corrections, `R. Tomás et al.`, 2010, URL: [https://cds.cern.ch/record/1269904](https://cds.cern.ch/record/1269904){target=_blank}"
     ```
     @techreport{TomasLHCOpticsModel2010,
       title = {{{LHC Optics Model}}, {{Measurements}} and {{Corrections}}},
@@ -1361,7 +1361,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Nonlinear Correction Schemes For The Phase 1 Lhc Insertion Region Upgrade And Dynamic Aperture Studies, `R. Tomás, M. Giovannozzi, and R. de Maria`, [Phys. Rev. ST Accel. Beams **12**, 2009](https://link.aps.org/doi/10.1103/PhysRevSTAB.12.011002){target=_blank}"
+??? abstract "Nonlinear Correction Schemes For The Phase 1 LHC Insertion Region Upgrade And Dynamic Aperture Studies, `R. Tomás, M. Giovannozzi, and R. de Maria`, [Phys. Rev. ST Accel. Beams **12**, 2009](https://link.aps.org/doi/10.1103/PhysRevSTAB.12.011002){target=_blank}"
     ```
     @article{PhysRevSTAB.12.011002,
       title = {Nonlinear Correction Schemes for the Phase 1 {{LHC}} Insertion Region Upgrade and Dynamic Aperture Studies},
