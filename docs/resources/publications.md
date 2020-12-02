@@ -256,7 +256,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "New Approach To LHC Optics Commissioning For The Nonlinear Era, `E. Maclean et al.`, [Phys. Rev. Accel. Beams **22**, 2019](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.22.061004){target=_blank}"
+??? abstract "New Approach to LHC Optics Commissioning for the Nonlinear Era, `E. Maclean et al.`, [Phys. Rev. Accel. Beams **22**, 2019](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.22.061004){target=_blank}"
     ```
     @article{PhysRevAccelBeams.22.061004,
       title = {New Approach to {{LHC}} Optics Commissioning for the Nonlinear Era},
@@ -311,7 +311,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Suppression Of Amplitude Dependent Closest Tune Approach And Its Behavior Under Forced Oscillations, `T. Persson, R. Tomás, and E. Maclean`, [Phys. Rev. Accel. Beams **22**, 2019](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.22.051001){target=_blank}"
+??? abstract "Suppression of Amplitude Dependent Closest Tune Approach and Its Behavior Under Forced Oscillations, `T. Persson, R. Tomás, and E. Maclean`, [Phys. Rev. Accel. Beams **22**, 2019](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.22.051001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.22.051001,
       title = {Suppression of Amplitude Dependent Closest Tune Approach and Its Behavior under Forced Oscillations},
@@ -328,7 +328,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "First Experimental Demonstration Of Forced Dynamic Aperture Measurements With LHC AC Dipoles, `F. Carlier, R. Tomás, E. Maclean, and T. Persson`, [Phys. Rev. Accel. Beams **22**, 2019](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.22.031002){target=_blank}"
+??? abstract "First Experimental Demonstration of Forced Dynamic Aperture Measurements With LHC AC Dipoles, `F. Carlier, R. Tomás, E. Maclean, and T. Persson`, [Phys. Rev. Accel. Beams **22**, 2019](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.22.031002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.22.031002,
       title = {First Experimental Demonstration of Forced Dynamic Aperture Measurements with {{LHC}} Ac Dipoles},
@@ -384,7 +384,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Tuning Of Clic-Final Focus System 3 TeV Baseline Design Under Static And Dynamic Imperfections, `E. Marin, A. Latina, D. Schulte, R. Tomás, and J. Pfingstner`, [J. Phys.: Conf. Ser. **1067**, 2018](https://doi.org/10.1088\%2F1742-6596\%2F1067\%2F2\%2F022014){target=_blank}"
+??? abstract "Tuning of CLIC-Final Focus System 3 TeV Baseline Design Under Static and Dynamic Imperfections, `E. Marin, A. Latina, D. Schulte, R. Tomás, and J. Pfingstner`, [J. Phys.: Conf. Ser. **1067**, 2018](https://doi.org/10.1088\%2F1742-6596\%2F1067\%2F2\%2F022014){target=_blank}"
     ```
     @article{MarinTuningCLICFinalFocus2018,
       title = {Tuning of {{CLIC}}-{{Final Focus System}} 3 {{TeV Baseline Design Under Static}} and {{Dynamic Imperfections}}},
@@ -402,7 +402,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Assessment Of The Performance Of High-Luminosity LHC Operational Scenarios: Integrated Luminosity And Effective Pile-Up Density, `L. Medina, R. Tomás, G. Arduini, and M. Napsuciale`, [Can. J. Phys., 2018](https://cdnsciencepub.com/doi/abs/10.1139/cjp-2018-0291){target=_blank}"
+??? abstract "Assessment of the Performance of High-Luminosity LHC Operational Scenarios: Integrated Luminosity and Effective Pile-Up Density, `L. Medina, R. Tomás, G. Arduini, and M. Napsuciale`, [Can. J. Phys., 2018](https://cdnsciencepub.com/doi/abs/10.1139/cjp-2018-0291){target=_blank}"
     ```
     @article{cjp-2018-0291,
       title = {Assessment of the Performance of {{High}}-{{Luminosity LHC}} Operational Scenarios: Integrated Luminosity and Effective Pile-up Density},
@@ -419,7 +419,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Compensation Of Orbit Distortion Due To Quadrupole Motion Using Feed-Forward Control At KEK ATF, `D. Bett et al.`, [Nucl. Instrum. Methods. Phys. Res. B **895**, 2018](http://www.sciencedirect.com/science/article/pii/S0168900218303735){target=_blank}"
+??? abstract "Compensation of Orbit Distortion Due to Quadrupole Motion Using Feed-Forward Control at KEK ATF, `D. Bett et al.`, [Nucl. Instrum. Methods. Phys. Res. B **895**, 2018](http://www.sciencedirect.com/science/article/pii/S0168900218303735){target=_blank}"
     ```
     @article{j.nima.2018.03.037,
       title = {Compensation of Orbit Distortion Due to Quadrupole Motion Using Feed-Forward Control at {{KEK ATF}}},
@@ -437,7 +437,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Beam Offset Impact On The Polarization In The CLIC Beam Delivery System, `A. Simitcioglu, I. Tapan, R. Tomas, J. Barranco, and M. Beckmann`, [Can. J. Phys., 2018](https://cdnsciencepub.com/doi/abs/10.1139/cjp-2017-0251){target=_blank}"
+??? abstract "Beam Offset Impact on the Polarization in the CLIC Beam Delivery System, `A. Simitcioglu, I. Tapan, R. Tomas, J. Barranco, and M. Beckmann`, [Can. J. Phys., 2018](https://cdnsciencepub.com/doi/abs/10.1139/cjp-2017-0251){target=_blank}"
     ```
     @article{cjp-2017-0251,
       title = {Beam Offset Impact on the Polarization in the {{CLIC}} Beam Delivery System},
@@ -470,7 +470,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Quadrupole-Free Detector Optics Design For The Compact Linear Collider Final Focus System At 3 Tev, `F. Plassard, A. Latina, E. Marin, R. Tomás, and P. Bambade`, [Phys. Rev. Accel. Beams **21**, 2018](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.21.011002){target=_blank}"
+??? abstract "Quadrupole-Free Detector Optics Design for the Compact Linear Collider Final Focus System at 3 TeV, `F. Plassard, A. Latina, E. Marin, R. Tomás, and P. Bambade`, [Phys. Rev. Accel. Beams **21**, 2018](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.21.011002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.21.011002,
       title = {Quadrupole-Free Detector Optics Design for the {{Compact Linear Collider}} Final Focus System at 3 {{TeV}}},
@@ -489,7 +489,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2017
 
-??? abstract "Local Correction Of Quadrupole Errors At LHC Interaction Regions Using Action And Phase Jump Analysis On Turn-By-Turn Beam Position Data, `J. Cardona, A. García Bonilla, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111004){target=_blank}"
+??? abstract "Local Correction of Quadrupole Errors at LHC Interaction Regions Using Action and Phase Jump Analysis on Turn-By-Turn Beam Position Data, `J. Cardona, A. García Bonilla, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111004){target=_blank}"
     ```
     @article{PhysRevAccelBeams.20.111004,
       title = {Local Correction of Quadrupole Errors at {{LHC}} Interaction Regions Using Action and Phase Jump Analysis on Turn-by-Turn Beam Position Data},
@@ -540,7 +540,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Interaction Region Design Driven By Energy Deposition, `R. Martin et al.`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.081005){target=_blank}"
+??? abstract "Interaction Region Design Driven by Energy Deposition, `R. Martin et al.`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.081005){target=_blank}"
     ```
     @article{PhysRevAccelBeams.20.081005,
       title = {Interaction Region Design Driven by Energy Deposition},
@@ -557,7 +557,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Improving The Precision Of Linear Optics Measurements Based On Turn-By-Turn Beam Position Monitor Data After A Pulsed Excitation In Lepton Storage Rings, `L. Malina et al.`, [Phys. Rev. Accel. Beams **20**, 2017](http://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.082802){target=_blank}"
+??? abstract "Improving the Precision of Linear Optics Measurements Based on Turn-By-Turn Beam Position Monitor Data After a Pulsed Excitation in Lepton Storage Rings, `L. Malina et al.`, [Phys. Rev. Accel. Beams **20**, 2017](http://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.082802){target=_blank}"
     ```
     @article{PhysRevAccelBeams.20.082802,
       title = {Improving the Precision of Linear Optics Measurements Based on Turn-by-Turn Beam Position Monitor Data after a Pulsed Excitation in Lepton Storage Rings},
@@ -574,7 +574,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Experimental Validation Of The Achromatic Telescopic Squeezing (Ats) Scheme at The LHC, `S. Fartoukh et al.`, [J. Phys.: Conf. Ser. **874**, 2017](https://doi.org/10.1088\%2F1742-6596\%2F874\%2F1\%2F012010){target=_blank}"
+??? abstract "Experimental Validation of the Achromatic Telescopic Squeezing (ATS) Scheme at the LHC, `S. Fartoukh et al.`, [J. Phys.: Conf. Ser. **874**, 2017](https://doi.org/10.1088\%2F1742-6596\%2F874\%2F1\%2F012010){target=_blank}"
     ```
     @article{FartoukhExperimentalValidationAchromatic2017,
       title = {Experimental Validation of the {{Achromatic Telescopic Squeezing}} ({{ATS}}) Scheme at the {{LHC}}},
@@ -603,13 +603,14 @@ The number of authors before resorting to `et al.` is left up to the committers 
       volume = {20},
       issn = {2469-9888},
       doi = {10.1103/PhysRevAccelBeams.20.061002},
+      url = {https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.20.061002},
       journal = {Phys. Rev. Accel. Beams},
       language = {en},
       number = {6}
     }
     ```
 
-??? abstract "Review Of Linear Optics Measurement And Correction For Charged Particle Accelerators, `R. Tomás, M. Aiba, A. Franchi, and U. Iriso`, [Phys. Rev. Accel. Beams **20**, 2017](https://doi.org/10.1103/PhysRevAccelBeams.20.054801){target=_blank}"
+??? abstract "Review of Linear Optics Measurement and Correction for Charged Particle Accelerators, `R. Tomás, M. Aiba, A. Franchi, and U. Iriso`, [Phys. Rev. Accel. Beams **20**, 2017](https://doi.org/10.1103/PhysRevAccelBeams.20.054801){target=_blank}"
     ```
     @article{PhysRevAccelBeams.20.054801,
       title = {Review of Linear Optics Measurement and Correction for Charged Particle Accelerators},
@@ -627,7 +628,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Accuracy And Feasibility Of The Beta* Measurement For LHC And High Luminosity LHC Using K Modulation, `F. Carlier, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005){target=_blank}"
+??? abstract "Accuracy and Feasibility of the Beta* Measurement for LHC and High Luminosity LHC Using K Modulation, `F. Carlier, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005){target=_blank}"
     ```
     @article{PhysRevAccelBeams.20.011005,
       title = {Accuracy and Feasibility of the Beta* Measurement for {{LHC}} and {{High Luminosity LHC}} Using k Modulation},
@@ -646,7 +647,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2016
 
-??? abstract "High Luminosity LHC: Challenges And Plans, `G. Arduini et al.`, [J. Inst. **11**, 2016](http://stacks.iop.org/1748-0221/11/i=12/a=C12081){target=_blank}"
+??? abstract "High Luminosity LHC: Challenges and Plans, `G. Arduini et al.`, [J. Inst. **11**, 2016](http://stacks.iop.org/1748-0221/11/i=12/a=C12081){target=_blank}"
     ```
     @article{ArduiniHighLuminosityLHC2016,
       title = {High {{Luminosity LHC}}: Challenges and Plans},
@@ -664,7 +665,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Long Term Dynamics Of The High Luminosity Large Hadron Collider With Crab Cavities, `J. Barranco García et al.`, [Phys. Rev. Accel. Beams **19**, 2016](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.101003){target=_blank}"
+??? abstract "Long Term Dynamics of the High Luminosity Large Hadron Collider With Crab Cavities, `J. Barranco García et al.`, [Phys. Rev. Accel. Beams **19**, 2016](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.101003){target=_blank}"
     ```
     @article{PhysRevAccelBeams.19.101003,
       title = {Long Term Dynamics of the High Luminosity {{Large Hadron Collider}} with Crab Cavities},
@@ -680,7 +681,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Probing Half Betay* Optics In The Accelerator Test Facility 2, `M. Patecki et al.`, [Phys. Rev. Accel. Beams **19**, 2016](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.101001){target=_blank}"
+??? abstract "Probing Half Betay* Optics in the Accelerator Test Facility 2, `M. Patecki et al.`, [Phys. Rev. Accel. Beams **19**, 2016](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.101001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.19.101001,
       title = {Probing Half Betay* Optics in the {{Accelerator Test Facility}} 2},
@@ -697,7 +698,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Utilizing The N Beam Position Monitor Method For Turn-By-Turn Optics Measurements, `A. Langner et al.`, [Phys. Rev. Accel. Beams **19**, 2016](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.092803){target=_blank}"
+??? abstract "Utilizing the N Beam Position Monitor Method for Turn-By-Turn Optics Measurements, `A. Langner et al.`, [Phys. Rev. Accel. Beams **19**, 2016](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.092803){target=_blank}"
     ```
     @article{PhysRevAccelBeams.19.092803,
       title = {Utilizing the {{N}} Beam Position Monitor Method for Turn-by-Turn Optics Measurements},
@@ -729,7 +730,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "The Magnetic Model Of The LHC At 6.5 Tev, `E. Todesco et al.`, [IEEE Trans. Appl. Supercond. **26**, 2016](https://ieeexplore.ieee.org/abstract/document/7445861){target=_blank}"
+??? abstract "The Magnetic Model of the LHC at 6.5 TeV, `E. Todesco et al.`, [IEEE Trans. Appl. Supercond. **26**, 2016](https://ieeexplore.ieee.org/abstract/document/7445861){target=_blank}"
     ```
     @article{TASC.2016.2549579,
       title = {The {{Magnetic Model}} of the {{LHC}} at 6.5 {{TeV}}},
@@ -747,7 +748,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Multivariate Polynomial Multiplication On Gpu, `D. Popescu, and R. Garcia`, [Procedia Computer Science **80**, 2016](http://www.sciencedirect.com/science/article/pii/S1877050916306573){target=_blank}"
+??? abstract "Multivariate Polynomial Multiplication on GPU, `D. Popescu, and R. Garcia`, [Procedia Computer Science **80**, 2016](http://www.sciencedirect.com/science/article/pii/S1877050916306573){target=_blank}"
     ```
     @article{j.procs.2016.05.306,
       title = {Multivariate {{Polynomial Multiplication}} on {{GPU}}},
@@ -766,7 +767,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Using AC Dipoles To Localize Sources Of Beam Coupling Impedance, `N. Biancacci, and R. Tomás`, [Phys. Rev. Accel. Beams **19**, 2016](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.054001){target=_blank}"
+??? abstract "Using AC Dipoles to Localize Sources of Beam Coupling Impedance, `N. Biancacci, and R. Tomás`, [Phys. Rev. Accel. Beams **19**, 2016](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.054001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.19.054001,
       title = {Using Ac Dipoles to Localize Sources of Beam Coupling Impedance},
@@ -783,7 +784,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Beam Focusing Limitation From Synchrotron Radiation In Two Dimensions, `O. Blanco, R. Tomás, and P. Bambade`, [Phys. Rev. Accel. Beams **19**, 2016](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.021002){target=_blank}"
+??? abstract "Beam Focusing Limitation From Synchrotron Radiation in Two Dimensions, `O. Blanco, R. Tomás, and P. Bambade`, [Phys. Rev. Accel. Beams **19**, 2016](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.021002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.19.021002,
       title = {Beam Focusing Limitation from Synchrotron Radiation in Two Dimensions},
@@ -800,7 +801,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "ATF2 For Final Focus Test Beam For Future Linear Colliders, `S. Kuroda, and ATF2 Collaboration`, [Nucl. Part. Phys. Proc. **273-275**, 2016](http://www.sciencedirect.com/science/article/pii/S2405601415005192){target=_blank}"
+??? abstract "ATF2 for Final Focus Test Beam for Future Linear Colliders, `S. Kuroda, and ATF2 Collaboration`, [Nucl. Part. Phys. Proc. **273-275**, 2016](http://www.sciencedirect.com/science/article/pii/S2405601415005192){target=_blank}"
     ```
     @article{j.nuclphysbps.2015.09.030,
       title = {{{ATF2}} for {{Final Focus Test Beam}} for {{Future Linear Colliders}}},
@@ -818,27 +819,28 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "FCC Study: Parameters And Optics For Hadron And Lepton Colliders, [Nucl. Part. Phys. Proc. **273-275**, 2016](http://www.sciencedirect.com/science/article/pii/S2405601415005076){target=_blank}"
+??? abstract "FCC Study: Parameters and Optics for Hadron and Lepton Colliders, `R. Tomás et al.`, [Nucl. Part. Phys. Proc. **273-275**, 2016](http://www.sciencedirect.com/science/article/pii/S2405601415005076){target=_blank}"
     ```
     @article{j.nuclphysbps.2015.09.018,
       title = {{{FCC}} Study: Parameters and Optics for Hadron and Lepton Colliders},
       shorttitle = {{{FCC}} Study},
+      author = {Tom{\'a}s, R. and Benedikt, M. and Bogomyagkov, A. V. and Bottura, L. and Cerutti, F. and Esposito, L. S. and Ferrari, A. and Haerer, B. and Holzer, B. and Jensen, E. and Koratzinos, M. and Martin, R. and Medina, L. and Schulte, D. and Todesco, E. and Wenninger, J. and White, S. and Zimmermann, F.},
       year = {2016},
       month = apr,
       volume = {273-275},
       pages = {149--155},
-      publisher = {{North-Holland}},
       issn = {2405-6014},
       doi = {10.1016/j.nuclphysbps.2015.09.018},
       url = {http://www.sciencedirect.com/science/article/pii/S2405601415005076},
       journal = {Nucl. Part. Phys. Proc.},
-      language = {en}
+      language = {en},
+      series = {37th {{International Conference}} on {{High Energy Physics}} ({{ICHEP}})}
     }
     ```
 
 ### 2015
 
-??? abstract "First Measurement And Correction Of Nonlinear Errors In The Experimental Insertions Of The CERN Large Hadron Collider, `E. Maclean, R. Tomás, M. Giovannozzi, and T. Persson`, [Phys.Rev. ST Accel.Beams **18**, 2015](https://doi.org/10.1103/PhysRevSTAB.18.121002){target=_blank}"
+??? abstract "First Measurement and Correction of Nonlinear Errors in the Experimental Insertions of the CERN Large Hadron Collider, `E. Maclean, R. Tomás, M. Giovannozzi, and T. Persson`, [Phys.Rev. ST Accel.Beams **18**, 2015](https://doi.org/10.1103/PhysRevSTAB.18.121002){target=_blank}"
     ```
     @article{PhysRevSTAB.18.121002,
       title = {First Measurement and Correction of Nonlinear Errors in the Experimental Insertions of the {{CERN Large Hadron Collider}}},
@@ -854,7 +856,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Design Of The Large Hadron Electron Collider Interaction Region, `E. Cruz-Alaniz, D. Newton, R. Tomás, and M. Korostelev`, [Phys. Rev. ST Accel. Beams **18**, 2015](https://link.aps.org/doi/10.1103/PhysRevSTAB.18.111001){target=_blank}"
+??? abstract "Design of the Large Hadron Electron Collider Interaction Region, `E. Cruz-Alaniz, D. Newton, R. Tomás, and M. Korostelev`, [Phys. Rev. ST Accel. Beams **18**, 2015](https://link.aps.org/doi/10.1103/PhysRevSTAB.18.111001){target=_blank}"
     ```
     @article{PhysRevSTAB.18.111001,
       title = {Design of the Large Hadron Electron Collider Interaction Region},
@@ -871,7 +873,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Optics Measurement Algorithms And Error Analysis For The Proton Energy Frontier, `A. Langner, and R. Tomás`, [Phys. Rev. ST Accel. Beams **18**, 2015](https://link.aps.org/doi/10.1103/PhysRevSTAB.18.031002){target=_blank}"
+??? abstract "Optics Measurement Algorithms and Error Analysis for the Proton Energy Frontier, `A. Langner, and R. Tomás`, [Phys. Rev. ST Accel. Beams **18**, 2015](https://link.aps.org/doi/10.1103/PhysRevSTAB.18.031002){target=_blank}"
     ```
     @article{PhysRevSTAB.18.031002,
       title = {Optics Measurement Algorithms and Error Analysis for the Proton Energy Frontier},
@@ -891,7 +893,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2014
 
-??? abstract "Mitigation Of Ground Motion Effects In Linear Accelerators Via Feed-Forward Control, `J. Pfingstner et al.`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.122801){target=_blank}"
+??? abstract "Mitigation of Ground Motion Effects in Linear Accelerators via Feed-Forward Control, `J. Pfingstner et al.`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.122801){target=_blank}"
     ```
     @article{PhysRevSTAB.17.122801,
       title = {Mitigation of Ground Motion Effects in Linear Accelerators via Feed-Forward Control},
@@ -908,7 +910,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Final-Focus Systems For Multi-Tev Linear Colliders, `H. Morales, and R. Tomás García`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.101001){target=_blank}"
+??? abstract "Final-Focus Systems for Multi-TeV Linear Colliders, `H. Morales, and R. Tomás García`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.101001){target=_blank}"
     ```
     @article{PhysRevSTAB.17.101001,
       title = {Final-Focus Systems for Multi-{{TeV}} Linear Colliders},
@@ -925,7 +927,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Effects Of Quadrupole Fringe Fields In Final Focus Systems For Linear Colliders, `M. Patecki, and R. Tomás`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.101002){target=_blank}"
+??? abstract "Effects of Quadrupole Fringe Fields in Final Focus Systems for Linear Colliders, `M. Patecki, and R. Tomás`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.101002){target=_blank}"
     ```
     @article{PhysRevSTAB.17.101002,
       title = {Effects of Quadrupole Fringe Fields in Final Focus Systems for Linear Colliders},
@@ -942,7 +944,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Accurate Crab Cavity Modeling For The High Luminosity Large Hadron Collider, `D. Brett et al.`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.104001){target=_blank}"
+??? abstract "Accurate Crab Cavity Modeling for the High Luminosity Large Hadron Collider, `D. Brett et al.`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.104001){target=_blank}"
     ```
     @article{PhysRevSTAB.17.104001,
       title = {Accurate Crab Cavity Modeling for the High Luminosity {{Large Hadron Collider}}},
@@ -958,7 +960,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Measurement Of Nonlinear Observables In The Large Hadron Collider Using Kicked Beams, `E. Maclean, R. Tomás, F. Schmidt, and T. Persson`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.081002){target=_blank}"
+??? abstract "Measurement of Nonlinear Observables in the Large Hadron Collider Using Kicked Beams, `E. Maclean, R. Tomás, F. Schmidt, and T. Persson`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.081002){target=_blank}"
     ```
     @article{PhysRevSTAB.17.081002,
       title = {Measurement of Nonlinear Observables in the {{Large Hadron Collider}} Using Kicked Beams},
@@ -974,7 +976,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Improved Control Of The Betatron Coupling In The Large Hadron Collider, `T. Persson, and R. Tomás`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.051004){target=_blank}"
+??? abstract "Improved Control of the Betatron Coupling in the Large Hadron Collider, `T. Persson, and R. Tomás`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.051004){target=_blank}"
     ```
     @article{PhysRevSTAB.17.051004,
       title = {Improved Control of the Betatron Coupling in the {{Large Hadron Collider}}},
@@ -990,7 +992,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Impact Of Detector Solenoid On The Compact Linear Collider Luminosity Performance, `Y. Inntjore Levinsen, B. Dalena, R. Tomás, and D. Schulte`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.051002){target=_blank}"
+??? abstract "Impact of Detector Solenoid on the Compact Linear Collider Luminosity Performance, `Y. Inntjore Levinsen, B. Dalena, R. Tomás, and D. Schulte`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.051002){target=_blank}"
     ```
     @article{PhysRevSTAB.17.051002,
       title = {Impact of Detector Solenoid on the {{Compact Linear Collider}} Luminosity Performance},
@@ -1007,7 +1009,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Simulations Of Fast Crab Cavity Failures In The High Luminosity Large Hadron Collider, `B. Yee-Rendon et al.`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.051001){target=_blank}"
+??? abstract "Simulations of Fast Crab Cavity Failures in the High Luminosity Large Hadron Collider, `B. Yee-Rendon et al.`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.051001){target=_blank}"
     ```
     @article{PhysRevSTAB.17.051001,
       title = {Simulations of Fast Crab Cavity Failures in the High Luminosity {{Large Hadron Collider}}},
@@ -1024,7 +1026,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Linear And Second Order Optics Corrections For The KEK Accelerator Test Facility Final Focus Beam Line, `T. Okugi et al.`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.023501){target=_blank}"
+??? abstract "Linear and Second Order Optics Corrections for the KEK Accelerator Test Facility Final Focus Beam Line, `T. Okugi et al.`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.023501){target=_blank}"
     ```
     @article{PhysRevSTAB.17.023501,
       title = {Linear and Second Order Optics Corrections for the {{KEK Accelerator Test Facility}} Final Focus Beam Line},
@@ -1041,7 +1043,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Design And High Order Optimization Of The Accelerator Test Facility Lattices, `E. Marin et al.`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.021002){target=_blank}"
+??? abstract "Design and High Order Optimization of the Accelerator Test Facility Lattices, `E. Marin et al.`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.021002){target=_blank}"
     ```
     @article{PhysRevSTAB.17.021002,
       title = {Design and High Order Optimization of the {{Accelerator Test Facility}} Lattices},
@@ -1058,7 +1060,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "From Farey Sequences To Resonance Diagrams, `R. Tomás`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.014001){target=_blank}"
+??? abstract "From Farey Sequences to Resonance Diagrams, `R. Tomás`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.014001){target=_blank}"
     ```
     @article{PhysRevSTAB.17.014001,
       title = {From {{Farey}} Sequences to Resonance Diagrams},
@@ -1075,7 +1077,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Experimental Validation Of A Novel Compact Focusing Scheme For Future Energy-Frontier Linear Lepton Colliders, `G. White et al.`, [Phys. Rev. Lett. **112**, 2014](https://link.aps.org/doi/10.1103/PhysRevLett.112.034802){target=_blank}"
+??? abstract "Experimental Validation of a Novel Compact Focusing Scheme for Future Energy-Frontier Linear Lepton Colliders, `G. White et al.`, [Phys. Rev. Lett. **112**, 2014](https://link.aps.org/doi/10.1103/PhysRevLett.112.034802){target=_blank}"
     ```
     @article{PhysRevLett.112.034802,
       title = {Experimental {{Validation}} of a {{Novel Compact Focusing Scheme}} for {{Future Energy}}-{{Frontier Linear Lepton Colliders}}},
@@ -1092,7 +1094,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Experimental And Theoretical Progress Of Linear Collider Final Focus Design And ATF2 Facility, `A. Seryi et al.`, [Nucl. Instrum. Methods. Phys. Res. B **740**, 2014](http://www.sciencedirect.com/science/article/pii/S0168900213017208){target=_blank}"
+??? abstract "Experimental and Theoretical Progress of Linear Collider Final Focus Design and ATF2 Facility, `A. Seryi et al.`, [Nucl. Instrum. Methods. Phys. Res. B **740**, 2014](http://www.sciencedirect.com/science/article/pii/S0168900213017208){target=_blank}"
     ```
     @article{j.nima.2013.12.029,
       title = {Experimental and Theoretical Progress of Linear Collider Final Focus Design and {{ATF2}} Facility},
@@ -1113,7 +1115,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2013
 
-??? abstract "Application Of Independent Component Analysis To AC Dipole Based Optics Measurement And Correction At The Relativistic Heavy Ion Collider, `X. Shen et al.`, [Phys. Rev. ST Accel. Beams **16**, 2013](https://link.aps.org/doi/10.1103/PhysRevSTAB.16.111001){target=_blank}"
+??? abstract "Application of Independent Component Analysis to AC Dipole Based Optics Measurement and Correction at the Relativistic Heavy Ion Collider, `X. Shen et al.`, [Phys. Rev. ST Accel. Beams **16**, 2013](https://link.aps.org/doi/10.1103/PhysRevSTAB.16.111001){target=_blank}"
     ```
     @article{PhysRevSTAB.16.111001,
       title = {Application of Independent Component Analysis to Ac Dipole Based Optics Measurement and Correction at the {{Relativistic Heavy Ion Collider}}},
@@ -1129,7 +1131,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Chromatic Coupling Correction In The Large Hadron Collider, `T. Persson, Y. Inntjore Levinsen, R. Tomás, and E. Maclean`, [Phys. Rev. ST Accel. Beams **16**, 2013](https://doi.org/10.1103/PhysRevSTAB.16.081003){target=_blank}"
+??? abstract "Chromatic Coupling Correction in the Large Hadron Collider, `T. Persson, Y. Inntjore Levinsen, R. Tomás, and E. Maclean`, [Phys. Rev. ST Accel. Beams **16**, 2013](https://doi.org/10.1103/PhysRevSTAB.16.081003){target=_blank}"
     ```
     @article{PhysRevSTAB.16.081003,
       title = {Chromatic Coupling Correction in the {{Large Hadron Collider}}},
@@ -1162,7 +1164,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Luminosity Studies In A Traveling Waist Regime In The Compact Linear Collider, `J. Barranco García, E. Marín Lacoma, and R. Tomás García`, [Phys. Rev. ST Accel. Beams **16**, 2013](https://link.aps.org/doi/10.1103/PhysRevSTAB.16.041001){target=_blank}"
+??? abstract "Luminosity Studies in a Traveling Waist Regime in the Compact Linear Collider, `J. Barranco García, E. Marín Lacoma, and R. Tomás García`, [Phys. Rev. ST Accel. Beams **16**, 2013](https://link.aps.org/doi/10.1103/PhysRevSTAB.16.041001){target=_blank}"
     ```
     @article{PhysRevSTAB.16.041001,
       title = {Luminosity Studies in a Traveling Waist Regime in the {{Compact Linear Collider}}},
@@ -1181,7 +1183,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2012
 
-??? abstract "A Large Hadron Electron Collider At CERN Report On The Physics And Design Concepts For Machine And Detector, `J. Fernandez et al.`, [J. Phys. G: Nucl. Part. Phys. **39**, 2012](https://doi.org/10.1088\%2F0954-3899\%2F39\%2F7\%2F075001){target=_blank}"
+??? abstract "A Large Hadron Electron Collider at CERN Report on the Physics and Design Concepts for Machine and Detector, `J. Fernandez et al.`, [J. Phys. G: Nucl. Part. Phys. **39**, 2012](https://doi.org/10.1088\%2F0954-3899\%2F39\%2F7\%2F075001){target=_blank}"
     ```
     @article{FernandezLargeHadronElectron2012,
       title = {A {{Large Hadron Electron Collider}} at {{CERN Report}} on the {{Physics}} and {{Design Concepts}} for {{Machine}} and {{Detector}}},
@@ -1200,7 +1202,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Record Low Beta Beating In The LHC, `R. Tomás et al.`, [Phys. Rev. ST Accel. Beams **15**, 2012](https://doi.org/10.1103/PhysRevSTAB.15.091001){target=_blank}"
+??? abstract "Record Low Beta Beating in the LHC, `R. Tomás et al.`, [Phys. Rev. ST Accel. Beams **15**, 2012](https://doi.org/10.1103/PhysRevSTAB.15.091001){target=_blank}"
     ```
     @article{PhysRevSTAB.15.091001,
       title = {Record Low Beta Beating in the {{LHC}}},
@@ -1218,7 +1220,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Beam Delivery System Tuning And Luminosity Monitoring In The Compact Linear Collider, `B. Dalena et al.`, [Phys. Rev. ST Accel. Beams **15**, 2012](https://link.aps.org/doi/10.1103/PhysRevSTAB.15.051006){target=_blank}"
+??? abstract "Beam Delivery System Tuning and Luminosity Monitoring in the Compact Linear Collider, `B. Dalena et al.`, [Phys. Rev. ST Accel. Beams **15**, 2012](https://link.aps.org/doi/10.1103/PhysRevSTAB.15.051006){target=_blank}"
     ```
     @article{PhysRevSTAB.15.051006,
       title = {Beam Delivery System Tuning and Luminosity Monitoring in the {{Compact Linear Collider}}},
@@ -1237,7 +1239,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2011
 
-??? abstract "Response Of Colliding Beam-Beam System To Harmonic Excitation Due To Crab-Cavity Rf Phase Modulation, `K. Ohmi et al.`, [Phys. Rev. ST Accel. Beams **14**, 2011](https://link.aps.org/doi/10.1103/PhysRevSTAB.14.111003){target=_blank}"
+??? abstract "Response of Colliding Beam-Beam System to Harmonic Excitation Due to Crab-Cavity Rf Phase Modulation, `K. Ohmi et al.`, [Phys. Rev. ST Accel. Beams **14**, 2011](https://link.aps.org/doi/10.1103/PhysRevSTAB.14.111003){target=_blank}"
     ```
     @article{PhysRevSTAB.14.111003,
       title = {Response of Colliding Beam-Beam System to Harmonic Excitation Due to Crab-Cavity Rf Phase Modulation},
@@ -1254,7 +1256,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Vertical Emittance Reduction And Preservation In Electron Storage Rings Via Resonance Driving Terms Correction, `A. Franchi et al.`, [Phys. Rev. ST Accel. Beams **14**, 2011](https://link.aps.org/doi/10.1103/PhysRevSTAB.14.034002){target=_blank}"
+??? abstract "Vertical Emittance Reduction and Preservation in Electron Storage Rings via Resonance Driving Terms Correction, `A. Franchi et al.`, [Phys. Rev. ST Accel. Beams **14**, 2011](https://link.aps.org/doi/10.1103/PhysRevSTAB.14.034002){target=_blank}"
     ```
     @article{PhysRevSTAB.14.034002,
       title = {Vertical Emittance Reduction and Preservation in Electron Storage Rings via Resonance Driving Terms Correction},
@@ -1273,7 +1275,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2010
 
-??? abstract "LHC Optics Model, Measurements And Corrections, `R. Tomás et al.`, 2010, URL: [https://cds.cern.ch/record/1269904](https://cds.cern.ch/record/1269904){target=_blank}"
+??? abstract "LHC Optics Model, Measurements and Corrections, `R. Tomás et al.`, 2010, URL: [https://cds.cern.ch/record/1269904](https://cds.cern.ch/record/1269904){target=_blank}"
     ```
     @techreport{TomasLHCOpticsModel2010,
       title = {{{LHC Optics Model}}, {{Measurements}} and {{Corrections}}},
@@ -1285,7 +1287,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Present Status And First Results Of The Final Focus Beam Line At The KEK Accelerator Test Facility, `P. Bambade et al.`, [Phys. Rev. ST Accel. Beams **13**, 2010](https://link.aps.org/doi/10.1103/PhysRevSTAB.13.042801){target=_blank}"
+??? abstract "Present Status and First Results of the Final Focus Beam Line at the KEK Accelerator Test Facility, `P. Bambade et al.`, [Phys. Rev. ST Accel. Beams **13**, 2010](https://link.aps.org/doi/10.1103/PhysRevSTAB.13.042801){target=_blank}"
     ```
     @article{PhysRevSTAB.13.042801,
       title = {Present Status and First Results of the Final Focus Beam Line at the {{KEK Accelerator Test Facility}}},
@@ -1302,7 +1304,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Crab Dispersion And Its Impact On The CERN Large Hadron Collider Collimation, `Y. Sun, R. Assmann, R. Tomás, and F. Zimmermann`, [Phys. Rev. ST Accel. Beams **13**, 2010](https://link.aps.org/doi/10.1103/PhysRevSTAB.13.031001){target=_blank}"
+??? abstract "Crab Dispersion and Its Impact on the CERN Large Hadron Collider Collimation, `Y. Sun, R. Assmann, R. Tomás, and F. Zimmermann`, [Phys. Rev. ST Accel. Beams **13**, 2010](https://link.aps.org/doi/10.1103/PhysRevSTAB.13.031001){target=_blank}"
     ```
     @article{PhysRevSTAB.13.031001,
       title = {Crab Dispersion and Its Impact on the {{CERN Large Hadron Collider}} Collimation},
@@ -1319,7 +1321,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Overview Of The Compact Linear Collider, `R. Tomás`, [Phys. Rev. ST Accel. Beams **13**, 2010](https://link.aps.org/doi/10.1103/PhysRevSTAB.13.014801){target=_blank}"
+??? abstract "Overview of the Compact Linear Collider, `R. Tomás`, [Phys. Rev. ST Accel. Beams **13**, 2010](https://link.aps.org/doi/10.1103/PhysRevSTAB.13.014801){target=_blank}"
     ```
     @article{PhysRevSTAB.13.014801,
       title = {Overview of the {{Compact Linear Collider}}},
@@ -1338,7 +1340,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2009
 
-??? abstract "Beam Dynamics Aspects Of Crab Cavities In The CERN Large Hadron Collider, `Y. Sun et al.`, [Phys. Rev. ST Accel. Beams **12**, 2009](https://link.aps.org/doi/10.1103/PhysRevSTAB.12.101002){target=_blank}"
+??? abstract "Beam Dynamics Aspects of Crab Cavities in the CERN Large Hadron Collider, `Y. Sun et al.`, [Phys. Rev. ST Accel. Beams **12**, 2009](https://link.aps.org/doi/10.1103/PhysRevSTAB.12.101002){target=_blank}"
     ```
     @article{PhysRevSTAB.12.101002,
       title = {Beam Dynamics Aspects of Crab Cavities in the {{CERN Large Hadron Collider}}},
@@ -1355,7 +1357,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "First Beta-Beating Measurement And Optics Analysis For The CERN Large Hadron Collider, `M. Aiba et al.`, [Phys. Rev. ST Accel. Beams **12**, 2009](https://doi.org/10.1103/PhysRevSTAB.12.081002){target=_blank}"
+??? abstract "First Beta-Beating Measurement and Optics Analysis for the CERN Large Hadron Collider, `M. Aiba et al.`, [Phys. Rev. ST Accel. Beams **12**, 2009](https://doi.org/10.1103/PhysRevSTAB.12.081002){target=_blank}"
     ```
     @article{PhysRevSTAB.12.081002,
       title = {First Beta-Beating Measurement and Optics Analysis for the {{CERN Large Hadron Collider}}},
@@ -1370,7 +1372,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Nonlinear Correction Schemes For The Phase 1 LHC Insertion Region Upgrade And Dynamic Aperture Studies, `R. Tomás, M. Giovannozzi, and R. de Maria`, [Phys. Rev. ST Accel. Beams **12**, 2009](https://link.aps.org/doi/10.1103/PhysRevSTAB.12.011002){target=_blank}"
+??? abstract "Nonlinear Correction Schemes for the Phase 1 LHC Insertion Region Upgrade and Dynamic Aperture Studies, `R. Tomás, M. Giovannozzi, and R. de Maria`, [Phys. Rev. ST Accel. Beams **12**, 2009](https://link.aps.org/doi/10.1103/PhysRevSTAB.12.011002){target=_blank}"
     ```
     @article{PhysRevSTAB.12.011002,
       title = {Nonlinear Correction Schemes for the Phase 1 {{LHC}} Insertion Region Upgrade and Dynamic Aperture Studies},
@@ -1388,7 +1390,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2007
 
-??? abstract "Emittance Sharing And Exchange Driven By Linear Betatron Coupling In Circular Accelerators, `A. Franchi, E. Métral, and R. Tomás`, [Phys. Rev. ST Accel. Beams **10**, 2007](https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.10.064003){target=_blank}"
+??? abstract "Emittance Sharing and Exchange Driven by Linear Betatron Coupling in Circular Accelerators, `A. Franchi, E. Métral, and R. Tomás`, [Phys. Rev. ST Accel. Beams **10**, 2007](https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.10.064003){target=_blank}"
     ```
     @article{PhysRevSTAB.10.064003,
       title = {Emittance Sharing and Exchange Driven by Linear Betatron Coupling in Circular Accelerators},
@@ -1398,12 +1400,13 @@ The number of authors before resorting to `et al.` is left up to the committers 
       volume = {10},
       pages = {064003},
       doi = {10.1103/PhysRevSTAB.10.064003},
+      url = {https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.10.064003},
       journal = {Phys. Rev. ST Accel. Beams},
       number = {6}
     }
     ```
 
-??? abstract "Magnet Strength Measurement In Circular Accelerators From Beam Position Monitor Data, `A. Franchi, R. Tomás, and F. Schmidt`, [Phys. Rev. ST Accel. Beams **10**, 2007](https://link.aps.org/doi/10.1103/PhysRevSTAB.10.074001){target=_blank}"
+??? abstract "Magnet Strength Measurement in Circular Accelerators From Beam Position Monitor Data, `A. Franchi, R. Tomás, and F. Schmidt`, [Phys. Rev. ST Accel. Beams **10**, 2007](https://link.aps.org/doi/10.1103/PhysRevSTAB.10.074001){target=_blank}"
     ```
     @article{PhysRevSTAB.10.074001,
       title = {Magnet Strength Measurement in Circular Accelerators from Beam Position Monitor Data},
@@ -1421,7 +1424,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Driving Term Experiments At CERN, `M. Benedikt, F. Schmidt, R. Tomás, P. Urschütz, and A. Faus-Golfe`, [Phys. Rev. ST Accel. Beams **10**, 2007](https://link.aps.org/doi/10.1103/PhysRevSTAB.10.034002){target=_blank}"
+??? abstract "Driving Term Experiments at CERN, `M. Benedikt, F. Schmidt, R. Tomás, P. Urschütz, and A. Faus-Golfe`, [Phys. Rev. ST Accel. Beams **10**, 2007](https://link.aps.org/doi/10.1103/PhysRevSTAB.10.034002){target=_blank}"
     ```
     @article{PhysRevSTAB.10.034002,
       title = {Driving Term Experiments at {{CERN}}},
@@ -1440,7 +1443,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2006
 
-??? abstract "Nonlinear Optimization Of Beam Lines, `R. Tomás`, [Phys. Rev. ST Accel. Beams **9**, 2006](https://link.aps.org/doi/10.1103/PhysRevSTAB.9.081001){target=_blank}"
+??? abstract "Nonlinear Optimization of Beam Lines, `R. Tomás`, [Phys. Rev. ST Accel. Beams **9**, 2006](https://link.aps.org/doi/10.1103/PhysRevSTAB.9.081001){target=_blank}"
     ```
     @article{PhysRevSTAB.9.081001,
       title = {Nonlinear Optimization of Beam Lines},
@@ -1458,7 +1461,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2005
 
-??? abstract "Measurement Of Global And Local Resonance Terms, `R. Tomás et al.`, [Phys. Rev. ST Accel. Beams **8**, 2005](https://link.aps.org/doi/10.1103/PhysRevSTAB.8.024001){target=_blank}"
+??? abstract "Measurement of Global and Local Resonance Terms, `R. Tomás et al.`, [Phys. Rev. ST Accel. Beams **8**, 2005](https://link.aps.org/doi/10.1103/PhysRevSTAB.8.024001){target=_blank}"
     ```
     @article{PhysRevSTAB.8.024001,
       title = {Measurement of Global and Local Resonance Terms},
@@ -1475,7 +1478,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Adiabaticity Of The Ramping Process Of An AC Dipole, `R. Tomás`, [Phys. Rev. ST Accel. Beams **8**, 2005](https://link.aps.org/doi/10.1103/PhysRevSTAB.8.024401){target=_blank}"
+??? abstract "Adiabaticity of the Ramping Process of an AC Dipole, `R. Tomás`, [Phys. Rev. ST Accel. Beams **8**, 2005](https://link.aps.org/doi/10.1103/PhysRevSTAB.8.024401){target=_blank}"
     ```
     @article{PhysRevSTAB.8.024401,
       title = {Adiabaticity of the Ramping Process of an Ac Dipole},
@@ -1492,9 +1495,26 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
+??? abstract "Betatron Coupling: Merging Hamiltonian and Matrix Approaches, `R. Calaga, R. Tomás, and A. Franchi`, [Phys. Rev. ST Accel. Beams **8**, 2005](https://link.aps.org/doi/10.1103/PhysRevSTAB.8.034001){target=_blank}"
+    ```
+    @article{PhysRevSTAB.8.034001,
+      title = {Betatron Coupling: {{Merging Hamiltonian}} and Matrix Approaches},
+      shorttitle = {Betatron Coupling},
+      author = {Calaga, R. and Tom{\'a}s, R. and Franchi, A.},
+      year = {2005},
+      month = mar,
+      volume = {8},
+      pages = {034001},
+      doi = {10.1103/PhysRevSTAB.8.034001},
+      url = {https://link.aps.org/doi/10.1103/PhysRevSTAB.8.034001},
+      journal = {Phys. Rev. ST Accel. Beams},
+      number = {3}
+    }
+    ```
+
 ### 2004
 
-??? abstract "Decoherence Of A Longitudinally Kicked Beam With Chromaticity, `G. Rumolo, and R. Tomás`, [Nucl. Instrum. Methods Phys. Res **528**, 2004](http://www.sciencedirect.com/science/article/pii/S0168900204009830){target=_blank}"
+??? abstract "Decoherence of a Longitudinally Kicked Beam With Chromaticity, `G. Rumolo, and R. Tomás`, [Nucl. Instrum. Methods Phys. Res **528**, 2004](http://www.sciencedirect.com/science/article/pii/S0168900204009830){target=_blank}"
     ```
     @article{j.nima.2004.03.206,
       title = {Decoherence of a Longitudinally Kicked Beam with Chromaticity},
@@ -1512,7 +1532,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Statistical Analysis Of RHIC Beam Position Monitors Performance, `R. Calaga, and R. Tomás`, [Phys. Rev. ST Accel. Beams **7**, 2004](https://link.aps.org/doi/10.1103/PhysRevSTAB.7.042801){target=_blank}"
+??? abstract "Statistical Analysis of RHIC Beam Position Monitors Performance, `R. Calaga, and R. Tomás`, [Phys. Rev. ST Accel. Beams **7**, 2004](https://link.aps.org/doi/10.1103/PhysRevSTAB.7.042801){target=_blank}"
     ```
     @article{PhysRevSTAB.7.042801,
       title = {Statistical Analysis of {{RHIC}} Beam Position Monitors Performance},
@@ -1531,7 +1551,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2002
 
-??? abstract "Normal Form Of Particle Motion Under The Influence Of An AC Dipole, `R. Tomás`, [Phys. Rev. ST Accel. Beams **5**, 2002](https://link.aps.org/doi/10.1103/PhysRevSTAB.5.054001){target=_blank}"
+??? abstract "Normal Form of Particle Motion Under the Influence of an AC Dipole, `R. Tomás`, [Phys. Rev. ST Accel. Beams **5**, 2002](https://link.aps.org/doi/10.1103/PhysRevSTAB.5.054001){target=_blank}"
     ```
     @article{PhysRevSTAB.5.054001,
       title = {Normal Form of Particle Motion under the Influence of an Ac Dipole},
