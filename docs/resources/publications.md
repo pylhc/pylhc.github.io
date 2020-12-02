@@ -211,8 +211,101 @@
 
 ## MD Notes
 
-### 2020
+### Run II
 
-### 2019
+#### 2018
 
-### 2018
+??? abstract "MD4944: Local linear coupling measurement at the IPs , `T. Persson et al.`  [CERN-ACC-NOTE-2020-0013](https://cds.cern.ch/record/2710101){target=_blank}"
+    ```
+    @article{Persson:2710101,
+          author        = "Persson, Tobias Hakan Bjorn and Carlier, Felix Simon and
+                          Hofer, Michael and Maclean, Ewen Hamish and Tomas Garcia,
+                          Rogelio and Garcia-Tabares Valdivieso, Ana",
+          title         = "{MD4944: Local linear coupling measurement at the IPs}",
+          month         = "Jan",
+          year          = "2020",
+          reportNumber  = "CERN-ACC-NOTE-2020-0013",
+          url           = "https://cds.cern.ch/record/2710101",
+    }
+    ```
+
+??? abstract "MD 3603: Dynamic Aperture with uncorrected dipole b3 , `M. Hofer et al.`  [CERN-ACC-NOTE-2020-0049](https://cds.cern.ch/record/2733022){target=_blank}"
+    ```
+    @article{Hofer:2733022,
+          author        = "Hofer, Michael and Carlier, Felix Simon and Dilly, Joschua
+                          Werner and Fol, Elena and Garcia-Tabares Valdivieso, Ana
+                          and Maclean, Ewen Hamish and Malina, Lukas and Persson,
+                          Tobias Hakan Bjorn and Coello De Portugal - Martinez
+                          Vazquez, Jaime Maria and Solfaroli Camillocci, Matteo and
+                          Tomas Garcia, Rogelio and Wegscheider, Andreas",
+          title         = "{MD 3603: Dynamic Aperture with uncorrected dipole b3}",
+          month         = "Sep",
+          year          = "2020",
+          reportNumber  = "CERN-ACC-NOTE-2020-0049",
+          url           = "https://cds.cern.ch/record/2733022",
+    }
+    ```
+
+??? abstract "Report and Analysis from LHC MD 3311: Amplitude detuning at end-of-squeeze , `J. Dilly et al.`  [CERN-ACC-NOTE-2019-0042](https://cds.cern.ch/record/2692810){target=_blank}"
+    ```
+    @article{Dilly:2692810,
+          author        = "Dilly, Joschua Werner and Albert, Markus and Argyropoulos,
+                          Theodoros and Carlier, Felix Simon and Hofer, Michael and
+                          Malina, Lukas and Maclean, Ewen Hamish and Solfaroli
+                          Camillocci, Elena and Tomas Garcia, Rogelio",
+          title         = "{Report and Analysis from LHC MD 3311: Amplitude detuning
+                          at end-of-squeeze}",
+          month         = "Mar",
+          year          = "2019",
+          reportNumber  = "CERN-ACC-NOTE-2019-0042",
+          url           = "https://cds.cern.ch/record/2692810",
+    }
+    ```
+
+??? abstract "MD3287: Luminosity scans with waist shifts , `J. Coello De Portugal et al.`  [CERN-ACC-NOTE-2020-0048](https://cds.cern.ch/record/2733019){target=_blank}"
+    ```
+    @article{CoelloDePortugal-MartinezVazquez:2733019,
+          author        = "Coello De Portugal - Martinez Vazquez, Jaime Maria and
+                          Fol, Elena and Malina, Lukas and Tomas Garcia, Rogelio",
+          title         = "{MD3287: Luminosity scans with waist shifts}",
+          month         = "Jul",
+          year          = "2020",
+          reportNumber  = "CERN-ACC-NOTE-2020-0048",
+          url           = "https://cds.cern.ch/record/2733019",
+    }
+    ```
+
+#### 2017
+
+??? abstract "MD 2563: Optics measurement and corrections with half integer tune , `A. Wegscheider et al.`  [	CERN-ACC-NOTE-2018-0055](https://cds.cern.ch/record/2632258){target=_blank}"
+    ```
+    @article{Wegscheider:2632258,
+          author        = "Wegscheider, Andreas and Coello De Portugal - Martinez
+                          Vazquez, Jaime Maria and Dilly, Joschua Werner and
+                          Fartoukh, Stephane and Fol, Elena and Garcia-Tabares
+                          Valdivieso, Ana and Maclean, Ewen Hamish and Papaphilippou,
+                          Yannis and Pellegrini, Dario and Persson, Tobias Hakan
+                          Bjorn and Tomas Garcia, Rogelio",
+          title         = "{MD 2563: Optics measurement and corrections with half
+                          integer tune}",
+          month         = "Jun",
+          year          = "2018",
+          reportNumber  = "CERN-ACC-NOTE-2018-0055",
+          url           = "https://cds.cern.ch/record/2632258",
+    }
+    ```
+
+??? abstract "Report from LHC MD 2171: Dynamic aperture at 6.5 TeV , `E. Maclean et al.`  [CERN-ACC-NOTE-2018-0054](https://cds.cern.ch/record/2632203){target=_blank}"
+    ```
+    @article{Maclean:2632203,
+          author        = "Maclean, Ewen Hamish and Carlier, Felix Simon and
+                          Giovannozzi, Massimo and Tomas Garcia, Rogelio",
+          title         = "{Report from LHC MD 2171: Dynamic aperture at 6.5 TeV}",
+          month         = "Mar",
+          year          = "2018",
+          reportNumber  = "CERN-ACC-NOTE-2018-0054",
+          url           = "https://cds.cern.ch/record/2632203",
+    }
+    ```
+
+### Run I
