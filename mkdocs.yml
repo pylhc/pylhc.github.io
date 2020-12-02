@@ -168,5 +168,7 @@ nav:
       - How To's:
         - Setup: resources/howto/setup.md
         - Teleworking: resources/howto/teleworking.md
+        - Editing Wiki: resources/howto/wiki.md
       - Publications: resources/publications.md
       - FAQ: resources/faqs.md
+
