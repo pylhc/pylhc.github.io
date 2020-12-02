@@ -6,7 +6,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
 To add new entries, please use the an `abstract` admonition:
 
 ```markdown
-??? abstract "Title, `Authors` [Paper ID](Link to resource){target=_blank}"
+??? abstract "Title, `Authors`, [Paper ID](Link to resource){target=_blank}"
     ```
     Bibtex entry
     ```
@@ -19,7 +19,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2020
 
-??? abstract "Detection of faulty beam position monitors using unsupervised learning, `E. Fol, R. Tomás, J. Coello de Portugal, and G. Franchetti` [Phys. Rev. Accel. Beams 23, 102805, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.102805){target=_blank}"
+??? abstract "Detection of faulty beam position monitors using unsupervised learning, `E. Fol, R. Tomás, J. Coello de Portugal, and G. Franchetti`, [Phys. Rev. Accel. Beams 23, 102805, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.102805){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.102805,
       title = {Detection of faulty beam position monitors using unsupervised learning},
@@ -37,7 +37,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Lattice and optics options for possible energy upgrades of the Large Hadron Collider, `J. Keintzel, R. Tomás, R. Bruce, M. Giovannozzi, T. Risselada, and F. Zimmermann` [Phys. Rev. Accel. Beams 23, 101602, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.101602){target=_blank}"
+??? abstract "Lattice and optics options for possible energy upgrades of the Large Hadron Collider, `J. Keintzel, R. Tomás, R. Bruce, M. Giovannozzi, T. Risselada, and F. Zimmermann`, [Phys. Rev. Accel. Beams 23, 101602, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.101602){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.101602,
       title = {Lattice and Optics Options for Possible Energy Upgrades of the Large Hadron Collider},
@@ -55,7 +55,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Effect of local linear coupling on linear and nonlinear observables in circular accelerators, `M. Hofer and R. Tomás` [Phys. Rev. Accel. Beams 23, 094001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.094001){target=_blank}"
+??? abstract "Effect of local linear coupling on linear and nonlinear observables in circular accelerators, `M. Hofer and R. Tomás`, [Phys. Rev. Accel. Beams 23, 094001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.094001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.094001,
       title = {Effect of Local Linear Coupling on Linear and Nonlinear Observables in Circular Accelerators},
@@ -73,7 +73,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Tuning the ultralow β∗ optics at the KEK Accelerator Test Facility 2, `R. Yang, A. Pastushenko, A. Aryshev, M. Bergamaschi, V. Cilento, A. Faus-Golfe, M. Fukuda, P. Korysko, K. Kubo, S. Kuroda, T. Naito, T. Okugi, F. Plassard, N. Terunuma, and R. Tomás` [Phys. Rev. Accel. Beams 23, 071003, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.071003){target=_blank}"
+??? abstract "Tuning the ultralow β∗ optics at the KEK Accelerator Test Facility 2, `R. Yang et al.`, [Phys. Rev. Accel. Beams 23, 071003, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.071003){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.071003,
       title = {Tuning the Ultralow ${\ensuremath{\beta}}^{*}$ Optics at the Kek Accelerator Test Facility 2},
@@ -91,7 +91,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Tuning the Compact Linear Collider 380 GeV final-focus system using realistic beam-beam signals, `J. Ögren, A. Latina, R. Tomás, and D. Schulte` [Phys. Rev. Accel. Beams 23, 051002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.051002){target=_blank}"
+??? abstract "Tuning the Compact Linear Collider 380 GeV final-focus system using realistic beam-beam signals, `J. Ögren, A. Latina, R. Tomás, and D. Schulte`, [Phys. Rev. Accel. Beams 23, 051002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.051002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.051002,
       title = {Tuning the Compact Linear Collider 380 Gev Final-focus System Using Realistic Beam-beam Signals},
@@ -109,7 +109,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Local observable for linear lattice imperfections in circular accelerators, `A. Wegscheider and R. Tomás` [Phys. Rev. Accel. Beams 23, 054002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.054002){target=_blank}"
+??? abstract "Local observable for linear lattice imperfections in circular accelerators, `A. Wegscheider and R. Tomás`, [Phys. Rev. Accel. Beams 23, 054002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.054002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.054002,
       title = {Local Observable for Linear Lattice Imperfections in Circular Accelerators},
@@ -127,7 +127,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Optics-measurement-based beam position monitor calibrations in the LHC insertion regions, `A. García-Tabarés Valdivieso and R. Tomás` [Phys. Rev. Accel. Beams 23, 042801, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.042801){target=_blank}"
+??? abstract "Optics-measurement-based beam position monitor calibrations in the LHC insertion regions, `A. García-Tabarés Valdivieso and R. Tomás`, [Phys. Rev. Accel. Beams 23, 042801, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.042801){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.042801,
       title = {Optics-measurement-based Beam Position Monitor Calibrations in the LHC Insertion Regions},
@@ -145,7 +145,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "New local optics measurements and correction techniques for the LHC and its luminosity upgrade, `J. Coello de Portugal, R. Tomás, and M. Hofer` [Phys. Rev. Accel. Beams 23, 041001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.041001){target=_blank}"
+??? abstract "New local optics measurements and correction techniques for the LHC and its luminosity upgrade, `J. Coello de Portugal, R. Tomás, and M. Hofer`, [Phys. Rev. Accel. Beams 23, 041001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.041001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.041001,
       title = {New Local Optics Measurements and Correction Techniques for the LHC and Its Luminosity Upgrade},
@@ -163,7 +163,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Emittance growth from luminosity burn-off in future hadron colliders, `R. Tomás, J. Keintzel, and S. Papadopoulou` [Phys. Rev. Accel. Beams 23, 031002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.031002){target=_blank}"
+??? abstract "Emittance growth from luminosity burn-off in future hadron colliders, `R. Tomás, J. Keintzel, and S. Papadopoulou`, [Phys. Rev. Accel. Beams 23, 031002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.031002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.031002,
       title = {Emittance Growth from Luminosity Burn-off in Future Hadron Colliders},
@@ -181,7 +181,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Measuring β∗ in SuperKEKB with K modulation, `P. Thrane, R. Tomás, A. Koval, K. Ohmi, Y. Ohnishi, and A. Wegscheider` [Phys. Rev. Accel. Beams 23, 012803, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.012803){target=_blank}"
+??? abstract "Measuring β∗ in SuperKEKB with K modulation, `P. Thrane et al.`, [Phys. Rev. Accel. Beams 23, 012803, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.012803){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.012803,
       title = {Measuring ${\ensuremath{\beta}}^{*}$ in Superkekb with $k$ Modulation},
@@ -199,7 +199,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Impact of flux jumps in future colliders, `J. Coello de Portugal, R. Tomás, L. Fiscarelli, D. Gamba, and M. Martino` [Phys. Rev. Accel. Beams 23, 011001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.011001){target=_blank}"
+??? abstract "Impact of flux jumps in future colliders, `J. Coello de Portugal, R. Tomás, L. Fiscarelli, D. Gamba, and M. Martino`, [Phys. Rev. Accel. Beams 23, 011001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.011001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.011001,
       title = {Impact of Flux Jumps in Future Colliders},
@@ -419,7 +419,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Compensation Of Orbit Distortion Due To Quadrupole Motion Using Feed-Forward Control At KEK Atf, `D. Bett et al.`, [Nucl. Instrum. Methods. Phys. Res. B **895**, 2018](http://www.sciencedirect.com/science/article/pii/S0168900218303735){target=_blank}"
+??? abstract "Compensation Of Orbit Distortion Due To Quadrupole Motion Using Feed-Forward Control At KEK ATF, `D. Bett et al.`, [Nucl. Instrum. Methods. Phys. Res. B **895**, 2018](http://www.sciencedirect.com/science/article/pii/S0168900218303735){target=_blank}"
     ```
     @article{j.nima.2018.03.037,
       title = {Compensation of Orbit Distortion Due to Quadrupole Motion Using Feed-Forward Control at {{KEK ATF}}},
@@ -574,7 +574,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Experimental Validation Of The Achromatic Telescopic Squeezing (Ats) Scheme At The LHC, `S. Fartoukh et al.`, [J. Phys.: Conf. Ser. **874**, 2017](https://doi.org/10.1088\%2F1742-6596\%2F874\%2F1\%2F012010){target=_blank}"
+??? abstract "Experimental Validation Of The Achromatic Telescopic Squeezing (Ats) Scheme at The LHC, `S. Fartoukh et al.`, [J. Phys.: Conf. Ser. **874**, 2017](https://doi.org/10.1088\%2F1742-6596\%2F874\%2F1\%2F012010){target=_blank}"
     ```
     @article{FartoukhExperimentalValidationAchromatic2017,
       title = {Experimental Validation of the {{Achromatic Telescopic Squeezing}} ({{ATS}}) Scheme at the {{LHC}}},
@@ -592,7 +592,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "LHC Optics Commissioning: A Journey Towards 1% Optics Control, `T. Persson et al.`, Phys. Rev. Accel. Beams **20**, 2017"
+??? abstract "LHC Optics Commissioning: A Journey Towards 1% Optics Control, `T. Persson et al.`, [Phys. Rev. Accel. Beams **20**, 2017](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.20.061002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.20.061002,
       title = {{{LHC}} Optics Commissioning: {{A}} Journey towards 1\% Optics Control},
@@ -800,7 +800,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Atf2 For Final Focus Test Beam For Future Linear Colliders, `S. Kuroda, and ATF2 Collaboration`, [Nucl. Part. Phys. Proc. **273-275**, 2016](http://www.sciencedirect.com/science/article/pii/S2405601415005192){target=_blank}"
+??? abstract "ATF2 For Final Focus Test Beam For Future Linear Colliders, `S. Kuroda, and ATF2 Collaboration`, [Nucl. Part. Phys. Proc. **273-275**, 2016](http://www.sciencedirect.com/science/article/pii/S2405601415005192){target=_blank}"
     ```
     @article{j.nuclphysbps.2015.09.030,
       title = {{{ATF2}} for {{Final Focus Test Beam}} for {{Future Linear Colliders}}},
@@ -1092,7 +1092,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Experimental And Theoretical Progress Of Linear Collider Final Focus Design And Atf2 Facility, `A. Seryi et al.`, [Nucl. Instrum. Methods. Phys. Res. B **740**, 2014](http://www.sciencedirect.com/science/article/pii/S0168900213017208){target=_blank}"
+??? abstract "Experimental And Theoretical Progress Of Linear Collider Final Focus Design And ATF2 Facility, `A. Seryi et al.`, [Nucl. Instrum. Methods. Phys. Res. B **740**, 2014](http://www.sciencedirect.com/science/article/pii/S0168900213017208){target=_blank}"
     ```
     @article{j.nima.2013.12.029,
       title = {Experimental and Theoretical Progress of Linear Collider Final Focus Design and {{ATF2}} Facility},
@@ -1388,7 +1388,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2007
 
-??? abstract "Emittance Sharing And Exchange Driven By Linear Betatron Coupling In Circular Accelerators, `A. Franchi, E. Métral, and R. Tomás`, Phys. Rev. ST Accel. Beams **10**, 2007"
+??? abstract "Emittance Sharing And Exchange Driven By Linear Betatron Coupling In Circular Accelerators, `A. Franchi, E. Métral, and R. Tomás`, [Phys. Rev. ST Accel. Beams **10**, 2007](https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.10.064003){target=_blank}"
     ```
     @article{PhysRevSTAB.10.064003,
       title = {Emittance Sharing and Exchange Driven by Linear Betatron Coupling in Circular Accelerators},
@@ -1512,25 +1512,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Decoherence Of A Longitudinally Kicked Beam With Chromaticity, `G. Rumolo, and R. Tomás`, [Nucl. Instrum. Methods Phys. Res **528**, 2004](http://www.sciencedirect.com/science/article/pii/S0168900204009830){target=_blank}"
-    ```
-    @article{j.nima.2004.03.206,
-      title = {Decoherence of a Longitudinally Kicked Beam with Chromaticity},
-      author = {Rumolo, G and Tom{\'a}s, Rogelio},
-      year = {2004},
-      month = aug,
-      volume = {528},
-      pages = {670--676},
-      issn = {0168-9002},
-      doi = {10.1016/j.nima.2004.03.206},
-      url = {http://www.sciencedirect.com/science/article/pii/S0168900204009830},
-      journal = {Nucl. Instrum. Methods Phys. Res},
-      keywords = {Chromaticity,Decoherence,Non-linear theory,Optics},
-      number = {3}
-    }
-    ```
-
-??? abstract "Statistical Analysis Of Rhic Beam Position Monitors Performance, `R. Calaga, and R. Tomás`, [Phys. Rev. ST Accel. Beams **7**, 2004](https://link.aps.org/doi/10.1103/PhysRevSTAB.7.042801){target=_blank}"
+??? abstract "Statistical Analysis Of RHIC Beam Position Monitors Performance, `R. Calaga, and R. Tomás`, [Phys. Rev. ST Accel. Beams **7**, 2004](https://link.aps.org/doi/10.1103/PhysRevSTAB.7.042801){target=_blank}"
     ```
     @article{PhysRevSTAB.7.042801,
       title = {Statistical Analysis of {{RHIC}} Beam Position Monitors Performance},
@@ -1567,13 +1549,35 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ## Strategy Reports
 
+??? abstract "Optics Measurements and Correction Challenges for the HL-LHC, `F. S. Carlier et al.`, [CERN-ACC-2017-0088](https://cds.cern.ch/record/2290899){target=_blank}"
+    ```
+    @techreport{Carlier:2290899,
+          author        = "Carlier, Felix Simon and Coello De Portugal - Martinez
+                          Vazquez, Jaime Maria and Fartoukh, Stephane and Fol, Elena
+                          and Gamba, Davide and Garcia-Tabares Valdivieso, Ana and
+                          Giovannozzi, Massimo and Hofer, Michael and Langner, Andy
+                          Sven and Maclean, Ewen Hamish and Malina, Lukas and Medina
+                          Medrano, Luis Eduardo and Persson, Tobias Hakan Bjorn and
+                          Skowronski, Piotr Krzysztof and Tomas Garcia, Rogelio and
+                          Van Der Veken, Frederik and Wegscheider, Andreas",
+          title         = "{Optics Measurements and Correction Challenges for the
+                          HL-LHC }",
+          institution   = "CERN",
+          address       = "Geneva",
+          number        = "CERN-ACC-2017-0088",
+          month         = "Oct",
+          year          = "2017",
+          reportNumber  = "CERN-ACC-2017-0088",
+          url           = "https://cds.cern.ch/record/2290899",
+    }
+    ```
 ## MD Notes
 
 ### Run II
 
 #### 2018
 
-??? abstract "MD4944: Local Linear Coupling Measurement at the IPs, `T. Persson et al.` [CERN-ACC-NOTE-2020-0013](https://cds.cern.ch/record/2710101){target=_blank}"
+??? abstract "MD4944: Local Linear Coupling Measurement at the IPs, `T. Persson et al.`, [CERN-ACC-NOTE-2020-0013](https://cds.cern.ch/record/2710101){target=_blank}"
     ```
     @article{Persson:2710101,
           author        = "Persson, Tobias Hakan Bjorn and Carlier, Felix Simon and
@@ -1587,7 +1591,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "MD 3603: Dynamic Aperture with uncorrected dipole b3, `M. Hofer et al.` [CERN-ACC-NOTE-2020-0049](https://cds.cern.ch/record/2733022){target=_blank}"
+??? abstract "MD 3603: Dynamic Aperture with uncorrected dipole b3, `M. Hofer et al.`, [CERN-ACC-NOTE-2020-0049](https://cds.cern.ch/record/2733022){target=_blank}"
     ```
     @article{Hofer:2733022,
           author        = "Hofer, Michael and Carlier, Felix Simon and Dilly, Joschua
@@ -1604,7 +1608,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Report and Analysis from LHC MD 3311: Amplitude Detuning at End-of-Squeeze, `J. Dilly et al.` [CERN-ACC-NOTE-2019-0042](https://cds.cern.ch/record/2692810){target=_blank}"
+??? abstract "Report and Analysis from LHC MD 3311: Amplitude Detuning at End-of-Squeeze, `J. Dilly et al.`, [CERN-ACC-NOTE-2019-0042](https://cds.cern.ch/record/2692810){target=_blank}"
     ```
     @article{Dilly:2692810,
           author        = "Dilly, Joschua Werner and Albert, Markus and Argyropoulos,
@@ -1620,7 +1624,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "MD3287: Luminosity Scans with Waist Shifts, `J. Coello De Portugal et al.` [CERN-ACC-NOTE-2020-0048](https://cds.cern.ch/record/2733019){target=_blank}"
+??? abstract "MD3287: Luminosity Scans with Waist Shifts, `J. Coello De Portugal et al.`, [CERN-ACC-NOTE-2020-0048](https://cds.cern.ch/record/2733019){target=_blank}"
     ```
     @article{CoelloDePortugal-MartinezVazquez:2733019,
           author        = "Coello De Portugal - Martinez Vazquez, Jaime Maria and
@@ -1635,7 +1639,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 #### 2017
 
-??? abstract "MD 2563: Optics Measurement and Corrections with Half Integer Tune, `A. Wegscheider et al.` [CERN-ACC-NOTE-2018-0055](https://cds.cern.ch/record/2632258){target=_blank}"
+??? abstract "MD 2563: Optics Measurement and Corrections with Half Integer Tune, `A. Wegscheider et al.`, [CERN-ACC-NOTE-2018-0055](https://cds.cern.ch/record/2632258){target=_blank}"
     ```
     @article{Wegscheider:2632258,
           author        = "Wegscheider, Andreas and Coello De Portugal - Martinez
@@ -1653,7 +1657,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Report from LHC MD 2171: Dynamic Aperture at 6.5 TeV, `E. Maclean et al.` [CERN-ACC-NOTE-2018-0054](https://cds.cern.ch/record/2632203){target=_blank}"
+??? abstract "Report from LHC MD 2171: Dynamic Aperture at 6.5 TeV, `E. Maclean et al.`, [CERN-ACC-NOTE-2018-0054](https://cds.cern.ch/record/2632203){target=_blank}"
     ```
     @article{Maclean:2632203,
           author        = "Maclean, Ewen Hamish and Carlier, Felix Simon and
