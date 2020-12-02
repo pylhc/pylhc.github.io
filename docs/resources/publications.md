@@ -218,11 +218,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     ```
 ### 2019
 
-<<<<<<< Updated upstream
-??? abstract "He-LHC: The High-Energy Large Hadron Collider, `A. Abada et al.`, [Eur. Phys. J. Spec. Top. **228**, 2019](https://doi.org/10.1140/epjst/e2019-900088-6){target=_blank}"
-=======
 ??? abstract "HE-LHC: The High-Energy Large Hadron Collider, `A. Abada et al.`, [Eur. Phys. J. Spec. Top. **228**, 2019](https://doi.org/10.1140/epjst/e2019-900088-6){target=_blank}"
->>>>>>> Stashed changes
     ```
     @article{AbadaHELHCHighEnergyLarge2019,
       title = {{{HE}}-{{LHC}}: {{The High}}-{{Energy Large Hadron Collider}}},
@@ -332,11 +328,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-<<<<<<< Updated upstream
-??? abstract "First Experimental Demonstration Of Forced Dynamic Aperture Measurements With LHC Ac Dipoles, `F. Carlier, R. Tomás, E. Maclean, and T. Persson`, [Phys. Rev. Accel. Beams **22**, 2019](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.22.031002){target=_blank}"
-=======
 ??? abstract "First Experimental Demonstration Of Forced Dynamic Aperture Measurements With LHC AC Dipoles, `F. Carlier, R. Tomás, E. Maclean, and T. Persson`, [Phys. Rev. Accel. Beams **22**, 2019](https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.22.031002){target=_blank}"
->>>>>>> Stashed changes
     ```
     @article{PhysRevAccelBeams.22.031002,
       title = {First Experimental Demonstration of Forced Dynamic Aperture Measurements with {{LHC}} Ac Dipoles},
@@ -410,11 +402,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-<<<<<<< Updated upstream
-??? abstract "Assessment Of The Performance Of High-Luminosity LHC Operational Scenarios: Integrated Luminosity And Effective Pile-Up Density, `L. Medina, R. Tomás, G. Arduini, and M. Napsuciale`, [Canadian Journal of Physics, 2018](https://cdnsciencepub.com/doi/abs/10.1139/cjp-2018-0291){target=_blank}"
-=======
 ??? abstract "Assessment Of The Performance Of High-Luminosity LHC Operational Scenarios: Integrated Luminosity And Effective Pile-Up Density, `L. Medina, R. Tomás, G. Arduini, and M. Napsuciale`, [Can. J. Phys., 2018](https://cdnsciencepub.com/doi/abs/10.1139/cjp-2018-0291){target=_blank}"
->>>>>>> Stashed changes
     ```
     @article{cjp-2018-0291,
       title = {Assessment of the Performance of {{High}}-{{Luminosity LHC}} Operational Scenarios: Integrated Luminosity and Effective Pile-up Density},
@@ -604,11 +592,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-<<<<<<< Updated upstream
-??? abstract "LHC Optics Commissioning: A Journey Towards 1\% Optics Control, `T. Persson et al.`, Physical Review Accelerators and Beams **20**, 2017"
-=======
 ??? abstract "LHC Optics Commissioning: A Journey Towards 1% Optics Control, `T. Persson et al.`, Phys. Rev. Accel. Beams **20**, 2017"
->>>>>>> Stashed changes
     ```
     @article{PhysRevAccelBeams.20.061002,
       title = {{{LHC}} Optics Commissioning: {{A}} Journey towards 1\% Optics Control},
@@ -745,11 +729,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-<<<<<<< Updated upstream
-??? abstract "The Magnetic Model Of The LHC At 6.5 Tev, `E. Todesco et al.`, IEEE Transactions on Applied Superconductivity **26**, 2016"
-=======
 ??? abstract "The Magnetic Model Of The LHC At 6.5 Tev, `E. Todesco et al.`, [IEEE Trans. Appl. Supercond. **26**, 2016](https://ieeexplore.ieee.org/abstract/document/7445861){target=_blank}"
->>>>>>> Stashed changes
     ```
     @article{TASC.2016.2549579,
       title = {The {{Magnetic Model}} of the {{LHC}} at 6.5 {{TeV}}},
@@ -1220,11 +1200,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-<<<<<<< Updated upstream
-??? abstract "Record Low $\Beta$ Beating In The LHC, `R. Tomás et al.`, Physical Review Special Topics - Accelerators and Beams **15**, 2012"
-=======
 ??? abstract "Record Low Beta Beating In The LHC, `R. Tomás et al.`, [Phys. Rev. ST Accel. Beams **15**, 2012](https://doi.org/10.1103/PhysRevSTAB.15.091001){target=_blank}"
->>>>>>> Stashed changes
     ```
     @article{PhysRevSTAB.15.091001,
       title = {Record Low Beta Beating in the {{LHC}}},
