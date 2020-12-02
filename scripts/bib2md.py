@@ -167,7 +167,7 @@ def _format_authors(raw):
     if len(authors) <= MAX_AUTHORS:
         return f'{", ".join(authors[:-1])}, and {authors[-1]}'
 
-    return f'{authors[0]} et al.'  # only if chosen == 2 above
+    return f'{authors[0]} et al.' 
 
 
 def _switch_names(formal_name):
