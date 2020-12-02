@@ -1,19 +1,19 @@
 
 # OMC Publications
 
-This page compiles various published papers, reports , and MD notes from OMC team members.
+This page compiles various published papers, reports and MD notes from OMC team members.
 
-For adding new entries, please use the following environment.
+To add new entries, please use the an `abstract` admonition:
 
-````markdown
+```markdown
 ??? abstract "Title, `Authors`  [Paper ID](Link to resource){target=_blank}"
     ```
     Bibtex entry
     ```
-````
+```
 
 Ideally, titles should be put in title case.
-The number of authors before resorting to `et al.` is up to the committers discretion.
+The number of authors before resorting to `et al.` is left up to the committers discretion.
 
 ## Journal Publications
 
