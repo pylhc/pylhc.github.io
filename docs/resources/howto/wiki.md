@@ -53,7 +53,7 @@ A link to the page then needs to be added in the `nav` section of the `mkdocs.ym
 ## Guidelines
 
 Pages are written in Markdown (file extension `.md`).
-A general overview of the syntax a well as some best practices can be found [here][markdownsyntax]{target=_blank}.
+A general overview of the syntax as well as some best practices can be found [here][markdownsyntax]{target=_blank}.
 Additionally, to allow for easier comparison between two versions of a file, it is recommended to keep it to one sentence per line.
 Ideally, the line length is kept below 100 characters.
 Following this, it is also recommended to not put links in the text, instead creating an ID at the end of the document and linking to this.
