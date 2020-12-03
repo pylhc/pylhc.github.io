@@ -91,10 +91,10 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Tuning the Compact Linear Collider 380 Gev Final-focus System Using Realistic Beam-beam Signals, `J. Ögren, A. Latina, R. Tomás, and D. Schulte`, [Phys. Rev. Accel. Beams 23, 051002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.051002){target=_blank}"
+??? abstract "Tuning the Compact Linear Collider 380 GeV Final-focus System Using Realistic Beam-beam Signals, `J. Ögren, A. Latina, R. Tomás, and D. Schulte`, [Phys. Rev. Accel. Beams 23, 051002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.051002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.051002,
-      title = {Tuning the Compact Linear Collider 380 Gev Final-focus System Using Realistic Beam-beam Signals},
+      title = {Tuning the Compact Linear Collider 380 GeV Final-focus System Using Realistic Beam-beam Signals},
       author = {\"Ogren, J. and Latina, A. and Tom\'as, R. and Schulte, D.},
       journal = {Phys. Rev. Accel. Beams},
       volume = {23},
@@ -127,7 +127,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Optics-measurement-based Beam Position Monitor Calibrations in the Lhc Insertion Regions, `A. García-Tabarés Valdivieso and R. Tomás`, [Phys. Rev. Accel. Beams 23, 042801, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.042801){target=_blank}"
+??? abstract "Optics-measurement-based Beam Position Monitor Calibrations in the LHC Insertion Regions, `A. García-Tabarés Valdivieso and R. Tomás`, [Phys. Rev. Accel. Beams 23, 042801, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.042801){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.042801,
       title = {Optics-measurement-based Beam Position Monitor Calibrations in the LHC Insertion Regions},
@@ -145,7 +145,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "New Local Optics Measurements and Correction Techniques for the Lhc and Its Luminosity Upgrade, `J. Coello de Portugal, R. Tomás, and M. Hofer`, [Phys. Rev. Accel. Beams 23, 041001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.041001){target=_blank}"
+??? abstract "New Local Optics Measurements and Correction Techniques for the LHC and Its Luminosity Upgrade, `J. Coello de Portugal, R. Tomás, and M. Hofer`, [Phys. Rev. Accel. Beams 23, 041001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.041001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.041001,
       title = {New Local Optics Measurements and Correction Techniques for the LHC and Its Luminosity Upgrade},
