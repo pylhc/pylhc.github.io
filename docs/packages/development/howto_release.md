@@ -2,7 +2,7 @@
 
 Our packages' release process to PyPI is automated through [Github Actions][github_actions]{target=_blank}, and triggered by manually creating a release from the Github repository.
 
-When the final changes for a release, including updating the package's version number, have been merged into the `master` branch, the release process is as follows: 
+When the final changes for a release, including updating the package's version number and updating the `Changelog.md` file, have been merged into the `master` branch, the release process is as follows: 
 
 1. Go to the `Releases` section and click `Draft a new release` in the top right.
 2. Enter the package's version number in the `tag version` field.
