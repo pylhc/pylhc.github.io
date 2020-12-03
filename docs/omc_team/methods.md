@@ -35,5 +35,35 @@ However, the K-Modulation method is usually more time-intensive, and is only app
 
 ## 3D Kicks
 
-[^1]: https://link.springer.com/book/10.1007%2F978-3-662-08581-3
-[^2]: https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.20.011005
+[^1]:
+    ??? abstract "Measurement and Control of Charged Particle Beams, `Michiko G. Minty, Frank Zimmermann`, [https://doi.org/10.1007/978-3-662-08581-3](https://link.springer.com/book/10.1007%2F978-3-662-08581-3){target=_blank}"
+        ```
+        @book{Minty:629879,
+        author = {Minty, Michiko G and Zimmermann, Frank},
+        title = {Measurement and control of charged particle beams},
+        publisher = {Springer},
+        address = {Berlin},
+        series = {Particle acceleration and detection},
+        year = {2003},
+        url = {https://cds.cern.ch/record/629879},
+        doi = {10.1007/978-3-662-08581-3}
+        }
+        ```
+
+[^2]:
+    ??? abstract "Accuracy and Feasibility of the Beta* Measurement for LHC and High Luminosity LHC Using K Modulation, `F. Carlier, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005){target=_blank}"
+        ```
+        @article{PhysRevAccelBeams.20.011005,
+        title = {Accuracy and Feasibility of the Beta* Measurement for {{LHC}} and {{High Luminosity LHC}} Using k Modulation},
+        author = {Carlier, F. and Tom{\'a}s, R.},
+        year = {2017},
+        month = jan,
+        volume = {20},
+        pages = {011005},
+        doi = {10.1103/PhysRevAccelBeams.20.011005},
+        url = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005},
+        journal = {Phys. Rev. Accel. Beams},
+        keywords = {read},
+        number = {1}
+        }
+        ```
