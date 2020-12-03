@@ -121,6 +121,8 @@ To create:
     $$
     ```
 
+- a footnote, use `[^1]` in the text and add at the bottom of the page `[^1]: Lorem ipsum`.
+
 ### Code listing
 
 To highlight `code` inline, surround the text to highlight with `` ` ``.
