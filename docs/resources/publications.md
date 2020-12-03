@@ -19,7 +19,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
 
 ### 2020
 
-??? abstract "Detection of faulty beam position monitors using unsupervised learning, `E. Fol, R. Tomás, J. Coello de Portugal, and G. Franchetti`, [Phys. Rev. Accel. Beams 23, 102805, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.102805){target=_blank}"
+??? abstract "Detection of Faulty Beam Position Monitors Using Unsupervised Learning, `E. Fol, R. Tomás, J. Coello de Portugal, and G. Franchetti`, [Phys. Rev. Accel. Beams 23, 102805, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.102805){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.102805,
       title = {Detection of faulty beam position monitors using unsupervised learning},
@@ -37,7 +37,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Lattice and optics options for possible energy upgrades of the Large Hadron Collider, `J. Keintzel, R. Tomás, R. Bruce, M. Giovannozzi, T. Risselada, and F. Zimmermann`, [Phys. Rev. Accel. Beams 23, 101602, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.101602){target=_blank}"
+??? abstract "Lattice and Optics Options for Possible Energy Upgrades of the Large Hadron Collider, `J. Keintzel, R. Tomás, R. Bruce, M. Giovannozzi, T. Risselada, and F. Zimmermann`, [Phys. Rev. Accel. Beams 23, 101602, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.101602){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.101602,
       title = {Lattice and Optics Options for Possible Energy Upgrades of the Large Hadron Collider},
@@ -55,7 +55,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Effect of local linear coupling on linear and nonlinear observables in circular accelerators, `M. Hofer and R. Tomás`, [Phys. Rev. Accel. Beams 23, 094001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.094001){target=_blank}"
+??? abstract "Effect of Local Linear Coupling on Linear and Nonlinear Observables in Circular Accelerators, `M. Hofer and R. Tomás`, [Phys. Rev. Accel. Beams 23, 094001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.094001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.094001,
       title = {Effect of Local Linear Coupling on Linear and Nonlinear Observables in Circular Accelerators},
@@ -73,7 +73,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Tuning the ultralow β∗ optics at the KEK Accelerator Test Facility 2, `R. Yang et al.`, [Phys. Rev. Accel. Beams 23, 071003, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.071003){target=_blank}"
+??? abstract "Tuning the Ultralow β∗ Optics at the KEK Accelerator Test Facility 2, `R. Yang et al.`, [Phys. Rev. Accel. Beams 23, 071003, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.071003){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.071003,
       title = {Tuning the Ultralow ${\ensuremath{\beta}}^{*}$ Optics at the Kek Accelerator Test Facility 2},
@@ -91,7 +91,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Tuning the Compact Linear Collider 380 GeV final-focus system using realistic beam-beam signals, `J. Ögren, A. Latina, R. Tomás, and D. Schulte`, [Phys. Rev. Accel. Beams 23, 051002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.051002){target=_blank}"
+??? abstract "Tuning the Compact Linear Collider 380 Gev Final-focus System Using Realistic Beam-beam Signals, `J. Ögren, A. Latina, R. Tomás, and D. Schulte`, [Phys. Rev. Accel. Beams 23, 051002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.051002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.051002,
       title = {Tuning the Compact Linear Collider 380 Gev Final-focus System Using Realistic Beam-beam Signals},
@@ -109,7 +109,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Local observable for linear lattice imperfections in circular accelerators, `A. Wegscheider and R. Tomás`, [Phys. Rev. Accel. Beams 23, 054002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.054002){target=_blank}"
+??? abstract "Local Observable for Linear Lattice Imperfections in Circular Accelerators, `A. Wegscheider and R. Tomás`, [Phys. Rev. Accel. Beams 23, 054002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.054002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.054002,
       title = {Local Observable for Linear Lattice Imperfections in Circular Accelerators},
@@ -127,7 +127,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Optics-measurement-based beam position monitor calibrations in the LHC insertion regions, `A. García-Tabarés Valdivieso and R. Tomás`, [Phys. Rev. Accel. Beams 23, 042801, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.042801){target=_blank}"
+??? abstract "Optics-measurement-based Beam Position Monitor Calibrations in the Lhc Insertion Regions, `A. García-Tabarés Valdivieso and R. Tomás`, [Phys. Rev. Accel. Beams 23, 042801, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.042801){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.042801,
       title = {Optics-measurement-based Beam Position Monitor Calibrations in the LHC Insertion Regions},
@@ -145,7 +145,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "New local optics measurements and correction techniques for the LHC and its luminosity upgrade, `J. Coello de Portugal, R. Tomás, and M. Hofer`, [Phys. Rev. Accel. Beams 23, 041001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.041001){target=_blank}"
+??? abstract "New Local Optics Measurements and Correction Techniques for the Lhc and Its Luminosity Upgrade, `J. Coello de Portugal, R. Tomás, and M. Hofer`, [Phys. Rev. Accel. Beams 23, 041001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.041001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.041001,
       title = {New Local Optics Measurements and Correction Techniques for the LHC and Its Luminosity Upgrade},
@@ -163,7 +163,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Emittance growth from luminosity burn-off in future hadron colliders, `R. Tomás, J. Keintzel, and S. Papadopoulou`, [Phys. Rev. Accel. Beams 23, 031002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.031002){target=_blank}"
+??? abstract "Emittance Growth from Luminosity Burn-off in Future Hadron Colliders, `R. Tomás, J. Keintzel, and S. Papadopoulou`, [Phys. Rev. Accel. Beams 23, 031002, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.031002){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.031002,
       title = {Emittance Growth from Luminosity Burn-off in Future Hadron Colliders},
@@ -181,7 +181,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Measuring β∗ in SuperKEKB with K modulation, `P. Thrane et al.`, [Phys. Rev. Accel. Beams 23, 012803, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.012803){target=_blank}"
+??? abstract "Measuring β∗ in SuperKEKB with K Modulation, `P. Thrane et al.`, [Phys. Rev. Accel. Beams 23, 012803, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.012803){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.012803,
       title = {Measuring ${\ensuremath{\beta}}^{*}$ in Superkekb with $k$ Modulation},
@@ -199,7 +199,7 @@ The number of authors before resorting to `et al.` is left up to the committers 
     }
     ```
 
-??? abstract "Impact of flux jumps in future colliders, `J. Coello de Portugal, R. Tomás, L. Fiscarelli, D. Gamba, and M. Martino`, [Phys. Rev. Accel. Beams 23, 011001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.011001){target=_blank}"
+??? abstract "Impact of Flux Jumps in Future Colliders, `J. Coello de Portugal, R. Tomás, L. Fiscarelli, D. Gamba, and M. Martino`, [Phys. Rev. Accel. Beams 23, 011001, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.011001){target=_blank}"
     ```
     @article{PhysRevAccelBeams.23.011001,
       title = {Impact of Flux Jumps in Future Colliders},
