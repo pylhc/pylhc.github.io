@@ -26,7 +26,7 @@ $$
 
 If these measurements are conducted for two adjacent quadrupoles, the evolution of the $\beta$-function in-between can be then obtained[^2].
 Here, the average $\beta$-function in the quadrupole is expressed in terms of the optics functions $\beta_0$, $\alpha_0$, and $\gamma_0$ at the end of the quadrupole.
-Assuming a drift space between the quadrupoles, these coordinates can then be expressed in terms of the distance of the quadrupole end to the middle of the driftsection $L^*$, the minimum $\beta$-function in the drift $\beta^*$, and $w$, the offset of this minimum with respect to the center.
+Assuming a drift space between the quadrupoles, these coordinates can then be expressed in terms of the distance of the quadrupole end to the middle of the drift-section $L^*$, the minimum $\beta$-function in the drift $\beta^*$, and $w$, the offset of this minimum with respect to the center of the drift.
 The length $L^*$ is usually obtained from the machine layout.
 Using the two average $\beta$-functions in the quadrupoles, the other two variables $\beta^*$ and $w$ can then be calculated.
 The $\beta$-function at other elements in the drift space can then be determined by propagation.
