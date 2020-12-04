@@ -3,7 +3,7 @@
 !!! note
     Very long content about the physics and practice of OMC methods + paper references for each (K-mod, 3D kicks, N-BPM...).
     Each method should be a H2, see examples below.
-    
+
 ## N-BPM
 
 ## K-Modulation
@@ -13,7 +13,7 @@ A more detailed description can be found in [^1] and the references therein.
 
 Also available on this page is a [checklist for conducting K-Modulation measurements](../procedures/kmod.md) in the LHC.
 
-The full K-Modulation analysis is two-fold: 
+The full K-Modulation analysis is two-fold:
 The [K-Modulation GUI](../guis/kmod/gui.md) is used for LHC measurements, and the following analysis is part of the [`omc3` package](../packages/omc3/getting_started.md).
 
 K-Modulation is a complementary optics measurement method compared to the techniques usually used in the LHC, which rely upon turn-by-turn data from multiple BPMs.

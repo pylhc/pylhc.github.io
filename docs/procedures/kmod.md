@@ -1,7 +1,7 @@
 # Measuring $\beta^{*}$ Using K-Modulation in the LHC
 
 The important stuff.
-This decides over lumi and lives in the experiments.
+This decides over luminosity and lives in the experiments.
 
 ## Measurement
 
@@ -69,7 +69,6 @@ This decides over lumi and lives in the experiments.
     - [ ] <details class="nodeco"><summary>Publish Results</summary>
         <p> If results are satisfactory, both `Python2` and `Python3` should create a file called `lsa_results.tfs`, which can be uploaded using the LSA optics uploader for other users to access data.
         </p></details>
-
 
 *[CO]: Closed Orbit
 *[BSRT]: Beam Synchrotron Radiation Telescope

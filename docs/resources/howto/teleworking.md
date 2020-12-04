@@ -29,7 +29,7 @@ Once logged in with your CERN credentials (Add `CERN.CH\` in front of your usern
 !!! note ""
     `Start` &rarr; `X-Win32 18` &rarr; `Lxplus (Default)`
 
-which opens a putty-terminal connected to `lxplus` and starts a `X-Server` in the background. 
+which opens a putty-terminal connected to `lxplus` and starts a `X-Server` in the background.
 
 <figure>
   <img src="../../../assets/images/tricks/putty_and_xserver_cernts.png" width=90%>
