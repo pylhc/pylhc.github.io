@@ -9,11 +9,12 @@
 ## K-Modulation
 
 This section gives a brief overview over the K-Modulation method.
-A more detailed description can be found [^1] and references therein.
+A more detailed description can be found in [^1] and the references therein.
 
-Also available on this page is a [checklist](../procedures/kmod.md) for conducting K-Modulation measurements in the LHC.
+Also available on this page is a [checklist for conducting K-Modulation measurements](../procedures/kmod.md) in the LHC.
 
-You can further find a description of the [K-Modulation GUI](../guis/kmod/gui.md) used for LHC measurements, and the analysis is part of [`omc3`](../packages/omc3/getting_started.md).
+The full K-Modulation analysis is two-fold: 
+The [K-Modulation GUI](../guis/kmod/gui.md) is used for LHC measurements, and the following analysis is part of the [`omc3` package](../packages/omc3/getting_started.md).
 
 K-Modulation is a complementary optics measurement method compared to the techniques usually used in the LHC, which rely upon turn-by-turn data from multiple BPMs.
 Instead of exciting the beam with a kicker magnet, the gradient of a quadrupole is changed and the induced tune-change is recorded.
@@ -24,13 +25,13 @@ $$
 $$
 
 If these measurements are conducted for two adjacent quadrupoles, the evolution of the $\beta$-function in-between can be then obtained[^2].
-Here, the average $\beta$-function in the quadrupole is expressed in terms of the optics functions $\beta_0$,$\alpha_0$, and $\gamma_0$ at the end of the quadrupole.
-Assuming a drift space between the quadrupoles, these coordinates can then be expressed in terms of the distance of the quadrupole end to the middle of the driftsection $L^*$, the minimum $\beta$-function in the drift $\beta^*$, and an offset with respect to the middle $w$.
-The length $L^*$ is taken from the machine layout.
-Using the two average $\beta$-functions in the quadrupoles, the other two variables $\beta^*$ and $w$ can then be obtained.
-The $\beta$-function at other elements in the drift space can then be obtained via propagation.
+Here, the average $\beta$-function in the quadrupole is expressed in terms of the optics functions $\beta_0$, $\alpha_0$, and $\gamma_0$ at the end of the quadrupole.
+Assuming a drift space between the quadrupoles, these coordinates can then be expressed in terms of the distance of the quadrupole end to the middle of the driftsection $L^*$, the minimum $\beta$-function in the drift $\beta^*$, and $w$, the offset of this minimum with respect to the center.
+The length $L^*$ is usually obtained from the machine layout.
+Using the two average $\beta$-functions in the quadrupoles, the other two variables $\beta^*$ and $w$ can then be calculated.
+The $\beta$-function at other elements in the drift space can then be determined by propagation.
 
-Compared to other methods, it allows to infer a potential waist shift and it's direction, which is not possible using the turn-by-turn based methods.
+Compared to other methods, K-Modulation allows to infer a potential waist shift and it's direction, which is not possible using the turn-by-turn based methods.
 However, the K-Modulation method is usually more time-intensive, and is only applicable with individually powered quadrupoles.
 
 ## 3D Kicks
