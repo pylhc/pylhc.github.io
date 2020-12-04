@@ -11,9 +11,9 @@
 This section gives a brief overview over the K-Modulation method.
 A more detailed description can be found [^1] and references therein.
 
-A checklist for conducting K-Modulation measurements in the LHC can be found [here](../procedures/kmod.md).
+Also available on this page is a [checklist](../procedures/kmod.md) for conducting K-Modulation measurements in the LHC.
 
-A description of the K-Modulation GUI used for LHC measurements is available [here](../guis/kmod/gui.md), and the analysis is part of [`omc3`](../packages/omc3/getting_started.md).
+You can further find a description of the [K-Modulation GUI](../guis/kmod/gui.md) used for LHC measurements, and the analysis is part of [`omc3`](../packages/omc3/getting_started.md).
 
 K-Modulation is a complementary optics measurement method compared to the techniques usually used in the LHC, which rely upon turn-by-turn data from multiple BPMs.
 Instead of exciting the beam with a kicker magnet, the gradient of a quadrupole is changed and the induced tune-change is recorded.
