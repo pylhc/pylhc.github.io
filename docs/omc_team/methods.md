@@ -23,7 +23,7 @@ $$
 \beta_{x,y} = \pm 2 \Delta K^{-1}\Big[ cot(2 \pi Q_{x,y}) [ 1 - cos(2 \pi \Delta Q_{x,y}) ] + sin(2 \pi \Delta Q_{x,y}) \Big].
 $$
 
-If these measurements are conducted for two adjacent quadrupoles, the evolution of the $\beta$-function in-between the modulateed quadrupoles can also be infered[^2].
+If these measurements are conducted for two adjacent quadrupoles, the evolution of the $\beta$-function in-between the modulated quadrupoles can also be inferred[^2].
 Here, the average $\beta$-function in the quadrupole is expressed in terms of the optics functions $\beta_0$, $\alpha_0$, and $\gamma_0$ at the end of the quadrupole.
 Assuming a drift space between the quadrupoles, these coordinates can then be expressed in terms of the distance of the quadrupole end to the middle of the drift-section $L^*$, the minimum $\beta$-function $\beta^*$, and $w$, the offset of this minimum with respect to the center of the drift.
 The length $L^*$ is usually obtained from the machine layout.
