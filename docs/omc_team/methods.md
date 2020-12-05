@@ -9,7 +9,7 @@
 ## K-Modulation
 
 This section gives a brief overview over the K-Modulation method.
-A more detailed description can be found in [^1] and the references therein.
+A more detailed description can be found in [^MintyZimmermann] and the references therein.
 
 Also available on this page is a [checklist for conducting K-Modulation measurements](../procedures/kmod.md) in the LHC.
 
@@ -18,13 +18,13 @@ The [K-Modulation GUI](../guis/kmod/gui.md) is used for LHC measurements, and th
 
 K-Modulation is a complementary optics measurement method compared to the techniques usually used in the LHC, which rely upon turn-by-turn data from multiple BPMs.
 Instead of exciting the beam with a kicker magnet, the gradient of a quadrupole is changed and the induced tune-change is recorded.
-The average $\beta$-function in the modulated quadrupole is linked to the gradient-change $\Delta K$ and tune-change $\Delta Q_{x,y}$ via [^1]
+The average $\beta$-function in the modulated quadrupole is linked to the gradient-change $\Delta K$ and tune-change $\Delta Q_{x,y}$ via [^MintyZimmermann]
 
 $$
 \beta_{x,y} = \pm 2 \Delta K^{-1}\Big[ cot(2 \pi Q_{x,y}) [ 1 - cos(2 \pi \Delta Q_{x,y}) ] + sin(2 \pi \Delta Q_{x,y}) \Big].
 $$
 
-If these measurements are conducted for two adjacent quadrupoles, the evolution of the $\beta$-function in-between can be then obtained[^2].
+If these measurements are conducted for two adjacent quadrupoles, the evolution of the $\beta$-function in-between can be then obtained[^FelixKmodPaper].
 Here, the average $\beta$-function in the quadrupole is expressed in terms of the optics functions $\beta_0$, $\alpha_0$, and $\gamma_0$ at the end of the quadrupole.
 Assuming a drift space between the quadrupoles, these coordinates can then be expressed in terms of the distance of the quadrupole end to the middle of the drift-section $L^*$, the minimum $\beta$-function $\beta^*$, and $w$, the offset of this minimum with respect to the center of the drift.
 The length $L^*$ is usually obtained from the machine layout.
@@ -36,7 +36,7 @@ However, the K-Modulation method is usually more time-intensive, and is only app
 
 ## 3D Kicks
 
-[^1]:
+[^MintyZimmermann]:
     ??? abstract "Measurement and Control of Charged Particle Beams, `Michiko G. Minty, Frank Zimmermann`, [https://doi.org/10.1007/978-3-662-08581-3](https://link.springer.com/book/10.1007%2F978-3-662-08581-3){target=_blank}"
         ```
         @book{Minty:629879,
@@ -51,7 +51,7 @@ However, the K-Modulation method is usually more time-intensive, and is only app
         }
         ```
 
-[^2]:
+[^FelixKmodPaper]:
     ??? abstract "Accuracy and Feasibility of the Beta* Measurement for LHC and High Luminosity LHC Using K Modulation, `F. Carlier, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005){target=_blank}"
         ```
         @article{PhysRevAccelBeams.20.011005,
