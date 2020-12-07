@@ -24,7 +24,7 @@ If you would like to implement a new feature, please submit an issue with a prop
 This will also allow us to better coordinate our efforts, prevent duplication of work, and help you craft the change so that it is successfully accepted into the project.
 
 ??? info "Our Availability"
-    Please note we are busy people and developping these packages is not our primary priority at work.
+    Please note we are busy people and developing these packages is not our primary priority at work.
     We may take some time to reply.
 
 ## Submission guidelines
@@ -59,7 +59,7 @@ If you do not find a related issue or PR, or if your PR is the implementation fo
 - Pull requests implementing functionality or fixes are merged into the master branch after passing CI, and a reviewer's approval.
 
 After your PR is accepted by a team member, please select **`squash and merge`** to merge into master.
-Afterwards, you can safely delete your branch and close the issue. 
+Afterwards, you can safely delete your branch and close the issue.
 
 ## Python Guidelines
 
@@ -67,14 +67,16 @@ We strive to use a common codestyle for our software.
 Please follow these guidelines to keep code cohesion up, and git diffs down.
 
 In case you want to contribute to a package's development, you should install it in `editable` mode:
-```
+
+```bash
 git clone https://github.com/pylhc/package_name
 pip install --editable package_name
 ```
 
 ??? tip "Installing Extras"
     You can install extra dependencies (as defined in `setup.py`) suited to your use case with the following commands:
-    ```
+
+    ```bash
     pip install --editable package_name[test]
     pip install --editable package_name[test,doc]
     pip install --editable package_name[all]
@@ -113,7 +115,6 @@ We use [PyCharm][pycharm]{target=_blank} as IDE in the team.
 ### Docstrings Convention
 
 To be compatible with our automatic API documentation generator, please respect [Sphinx][sphinx]{target=_blank} conventions.
-
 
 [omc3_issues]: https://github.com/pylhc/omc3/issues/new
 [gh_actions]: https://github.com/features/actions

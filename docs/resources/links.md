@@ -64,7 +64,7 @@
     ```
 
 === "LSA-App-Suite"
-    
+
     ```bash
     jws http://bewww.cern.ch/ap/deployments/applications/cern/lsa/lsa-app-suite/PRO/lsa-app-suite-lhc.jnlpx
     ```
@@ -148,7 +148,6 @@
 ### Java
 
 * [Java Guidelines][java_guidelines]{target=_blank .cern_internal}
-
 
 [omc_mattermost]: https://mattermost.web.cern.ch/be-dep/channels/omc-team
 [omc_indico]: https://indico.cern.ch/category/5986/

@@ -106,9 +106,9 @@ _Steps to be done on your [Gitlab][cern_gitlab]{target=_blank} repository:_
     This is done in `Settings` &rarr; `CI/CD` &rarr; `Variables`.
     Obviously the values of the variables will be the username and password of your [newly created service account](#create-service-account) respectively.
     These variables will be used in the next step in the YAML.
-    For obvious reasons, **DO NOT WRITE THE PASSWORD IN CLEAR TEXT INTO THE YAML**. 
+    For obvious reasons, **DO NOT WRITE THE PASSWORD IN CLEAR TEXT INTO THE YAML**.
 
-!!! danger "Security Risk!" 
+!!! danger "Security Risk!"
     **MAKE SURE AT LEAST THE `SERVICE_ACCOUNT_PASSWORD ` VARIABLE IS SET TO `Masked` !!!**
 
 ??? nodeco "8. Add a new stage to your `.gitlab-ci.yml` file, or create a new one."
@@ -151,10 +151,9 @@ _Steps to be done on your [Gitlab][cern_gitlab]{target=_blank} repository:_
         - **echo -e Host** line: Here the ssh `config` is adapted to use Kerberos as authetication method to any server (do not touch). 
         - **only master**: Only the commits to `master` trigger the CI. Omit this part if you want the repo to be pulled on every commit, or change it to limit upon which commits this happens (as is done in the [acc-models yml][acc_models_yml]{target=_blank}).  
 
-### Done !
+### Done!
 
 Whenever you are pushing now any commits to the `master` branch, the CI/CD will automatically pull the latest commit into the AFS directory.
-
 
 *[TN]: Technical Network
 *[GPN]: General Purpose Network, the main CERN network
@@ -163,7 +162,7 @@ Whenever you are pushing now any commits to the `master` branch, the CI/CD will 
 *[AFS]: Andrew File System
 *[CI]: Continuous Integration
 *[CD]: Continuous Delivery
-*[lxplus]: LinuX Public Login User Service
+*[lxplus]: Linux Public Login User Service
 
 [sshuttle]: https://sshuttle.readthedocs.io/en/stable/
 

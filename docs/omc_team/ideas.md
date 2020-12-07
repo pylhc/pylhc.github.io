@@ -1,6 +1,6 @@
 # Future MD Ideas
 
-## Run 3 MDs Ideas 
+## Run 3 MDs Ideas
 
 ### Linear Optics Related
 
@@ -38,7 +38,7 @@ Also swap connections between good and bad BPM to identified.
 * K-Modulation with Xing angle and OFB off for Leon's Xing angle reconstruction.
 * Arc K-modulation.
 * K-modulation in IR4 during the energy ramp.
-* Reduce to one the DCCTs per circuit with pilot in the machine and ATS optics to see the impact of 2 DCCTs. 
+* Reduce to one the DCCTs per circuit with pilot in the machine and ATS optics to see the impact of 2 DCCTs.
  Michele Martino also proposes increasing in 1ppm the noise of the DCCTs in one or all dipole PCs to see impact on tune jitter.
 
 ### Non-Linear Optics Related
@@ -48,7 +48,7 @@ Also swap connections between good and bad BPM to identified.
 * Emittance growth from octupoles and chroma.
 * Amplitude detuning measurement versus crossing angle with b6 corrector on, for 5 crossing angles to evaluate performance of the technique for b6 correction. 
 * Amplitude dependent optics: Dedicated settings at injection as PoP (Thomas & Barbara), alternative techniques in parallel (K-modulation with decohered beams and amplitude dependent segment-by-segment).
-* IR2 non-linear correction -> Dedicated squeeze for IR2 to allow for good triplet characterizaton to shed light on b4.
+* IR2 non-linear correction -> Dedicated squeeze for IR2 to allow for good triplet characterization to shed light on b4.
 * Amplitude detuning in ballistic optics.
 * ADT for single kicks.
 * b5 RDTs.

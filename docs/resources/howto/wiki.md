@@ -99,7 +99,7 @@ To create:
     In the specifier, additional information on the accessibility can be added.
     Links accessable only with a CERN login can be marked like `{target=_blank .cern_login}` or from the CERN network like `{target=_blank .cern_internal}`.
 
-- quote such as the one just above:
+- a quote such as the one just above:
 
     ```markdown
     > to markdown, or not to markdown
@@ -110,6 +110,18 @@ To create:
     ```markdown
     *[difficult word]: helpful explanation
     ```
+
+- an inline math environment, surround the equation with `$a^2 + b^2 = c^2$`.
+
+- a block math environment, use:
+  
+    ```markdown
+    $$
+    a^2 + b^2 = c^2
+    $$
+    ```
+
+- a footnote, use `[^1]` in the text and add at the bottom of the page `[^1]: Lorem ipsum`.
 
 ### Code listing
 

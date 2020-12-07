@@ -4,12 +4,14 @@
 
 The `omc3` package is `Python 3.7+` compatible, but not yet deployed to PyPI.
 The best way to install is though pip and VCS:
+
 ```bash
 git clone https://github.com/pylhc/omc3
 pip install /path/to/omc3
 ```
 
 Or simply from the online master branch, which is stable:
+
 ```bash
 pip install git+https://github.com/pylhc/omc3.git
 ```

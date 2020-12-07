@@ -14,17 +14,17 @@ The OMC team develops and maintains the following packages:
 
 - **OMC3** (Python 3.7+): [:fontawesome-solid-question-circle:](omc3/about.md) [:fontawesome-brands-github:][omc3]{target=\_blank} [:fontawesome-solid-book:][omc3_doc]{target=\_blank} <br>
   _frequency analysis, optics computation from turn-by-turn data, corrections calculations and results plotting._
-- **PyLHC-Tools** (Python 3.7+): [:fontawesome-solid-question-circle:](pylhc/about.md) [:fontawesome-brands-github:][pylhc]{target=\_blank} [:fontawesome-solid-book:][pylhc_doc]{target=\_blank} <br>
+- **PyLHC-Tools** (Python 3.7+): [:fontawesome-solid-question-circle:](pylhc/about.md) [:fontawesome-brands-github:][pylhc]{target=\_blank} [:fontawesome-solid-book:][pylhc_doc]{target=\_blank} [:fontawesome-solid-cube:][pylhc_pypi]{target=\_blank} <br>
   _useful OMC-related scripts._
 - **Example Study Scripts** (MAD-X): [:fontawesome-solid-question-circle:](mess/about.md) [:fontawesome-brands-github:][mess]{target=\_blank} <br>
   _collection of example studies._
 - **Beta-Beat.src** (Python 2.7): [:fontawesome-brands-github:][betabeatsrc]{target=\_blank} [:fontawesome-solid-book:][betabeatsrc_doc]{target=\_blank} <br>
   _frequency analysis, optics computation from turn-by-turn data and corrections calculations._
-- **TFS-Pandas** (Python 3.6+): [:fontawesome-brands-github:][tfspandas]{target=\_blank} [:fontawesome-solid-book:][tfspandas_doc]{target=\_blank} <br>
+- **TFS-Pandas** (Python 3.6+): [:fontawesome-brands-github:][tfspandas]{target=\_blank} [:fontawesome-solid-book:][tfspandas_doc]{target=\_blank} [:fontawesome-solid-cube:][tfs_pypi]{target=\_blank} <br>
   _*TFS files* I/O functionality._
-- **SDDS-Reader** (Python 3.6+): [:fontawesome-brands-github:][sdds]{target=\_blank} [:fontawesome-solid-book:][sdds_doc]{target=\_blank} <br>
+- **SDDS-Reader** (Python 3.6+): [:fontawesome-brands-github:][sdds]{target=\_blank} [:fontawesome-solid-book:][sdds_doc]{target=\_blank} [:fontawesome-solid-cube:][sdds_pypi]{target=\_blank} <br>
   _*SDDS files* I/O functionality._
-- **Generic-Parser** (Python 3.6+): [:fontawesome-brands-github:][generic_parser]{target=\_blank} [:fontawesome-solid-book:][generic_parser_doc]{target=\_blank} <br>
+- **Generic-Parser** (Python 3.6+): [:fontawesome-brands-github:][generic_parser]{target=\_blank} [:fontawesome-solid-book:][generic_parser_doc]{target=\_blank} [:fontawesome-solid-cube:][generic_parser_pypi]{target=\_blank} <br>
   _entrypoint argument parser functionality._
 
 
@@ -42,3 +42,7 @@ The OMC team develops and maintains the following packages:
 [generic_parser]: https://github.com/pylhc/generic_parser
 [generic_parser_doc]: https://pylhc.github.io/generic_parser
 [mess]: https://github.com/pylhc/MESS
+[pylhc_pypi]: https://pypi.org/project/pylhc/
+[sdds_pypi]: https://pypi.org/project/sdds/
+[tfs_pypi]: https://pypi.org/project/tfs-pandas/
+[generic_parser_pypi]: https://pypi.org/project/generic-parser/

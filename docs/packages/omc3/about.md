@@ -30,7 +30,6 @@ This software is licensed under the GNU GPLv3 License, see [License][license]{ta
 This work is the result of combined efforts by members of the [pylhc/omc-team][omc_team]{target=_blank} working group.
 Contributions are welcome, but tightly controlled, see the [guidelines](../development/contributing.md) page.
 
-
 [omc3_gh]: https://github.com/pylhc/omc3
 [omc3_doc]: https://pylhc.github.io/omc3/
 [omc3_changelog]: https://github.com/pylhc/omc3/blob/master/CHANGELOG.md
