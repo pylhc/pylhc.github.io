@@ -12,7 +12,7 @@ $$
 f\approx f_0 + \sum_i \frac{\partial f}{\partial x_i} \notag
 $$
 
-then we can write $\sigma_f$ the error of $f$ (its square actually) as follows:
+then we can write $\sigma_f$ the error of $f$ as follows ($\sigma_f^2$ actually):
 
 $$
 \sigma_f^2=
@@ -31,6 +31,7 @@ $$
 $$
 
 However, sometimes we should not neglect the covariances. 
+For more details, look on the Wikipedia: https://en.wikipedia.org/wiki/Propagation_of_uncertainty or in your favourite statistics textbook.
 
 ## Basics of Accelerator Physics
 
