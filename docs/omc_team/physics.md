@@ -5,6 +5,9 @@
     Includes the prerequisites of accelerator physics necessary to do OMC work / understand OMC methods.
     See example headers below.
 
+
+Until this section is filled, [Ewens presentation at Uni Goettingen][maclean_goettingen_2019]{target=_blank} provides some insights.
+
 ## Basic Error Propagation
 
 Let's have a function $f$ of variables $x_i$, which can be well linearised around some point $f_0$:
@@ -46,3 +49,4 @@ For details, see the more extensive [Wikipedia article about propagation of unce
 
 
 [wiki_propagation_uncertainty]: https://en.wikipedia.org/wiki/Propagation_of_uncertainty
+[maclean_goettingen_2019]: https://indico.cern.ch/event/788195/contributions/3364867/attachments/1886006/3109100/2019_07_25_HASCO_lcomp.pdf
