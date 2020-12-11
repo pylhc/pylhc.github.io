@@ -4,8 +4,9 @@
     Long and detailed note of the kind of accelerator physics that OMC takes care of.
     Includes the prerequisites of accelerator physics necessary to do OMC work / understand OMC methods.
     See example headers below.
-    
+
 ## Basic Error Propagation
+
 Let's have a function $f$ of variables $x_i$, which can be well linearised around some point $f_0$:
 
 $$
