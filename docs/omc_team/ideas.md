@@ -8,7 +8,7 @@
     * Telescopic for tune jitter measurements with enhanced arcs.
     * Ballistic with large vertical dispersion.
 * Half integer tune.
-* 60 degress arc cell phase advance for HE-LHC (or 1/3 HE-LHC).
+* 60 degress arc cell phase advance for HE-LHC (or 1/3 HE-LHC), and for improving knowledge on LHC itself as phase advance samples errors differently and arc sextupoles are factor ~2 weaker (more linear machine): arc errors, MCS shifts + coupling, BPM aberrations (beam signal closer to pure sin).
 * Experience HL-LHC-like  injection optics with beta*=6m (pilots only). 
 * Look at 11 T flux jumps with TbT data, possibly using a new optics with enhanced beta functions.
 * 2 possible experiments with TOTEM to understand the assymetry of the local dispersion in IR5:
