@@ -4,7 +4,8 @@
 
 ### Linear Optics Related
 
-* 2 New ballistic optics flavors:
+* 3 New ballistic optics flavors:
+    * Ballistic with beta* de-squeeze at top energy to reach above 1Km beta in dipoles, to study quadrupolar errors in dipoles. This is specially important in view of HL-LHC D2 b2 errors. 
     * Telescopic for tune jitter measurements with enhanced arcs.
     * Ballistic with large vertical dispersion.
 * Half integer tune.
