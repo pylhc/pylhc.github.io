@@ -16,6 +16,8 @@ The OMC team develops and maintains the following packages:
   _frequency analysis, optics computation from turn-by-turn data, corrections calculations and results plotting._
 - **PyLHC-Tools** (Python 3.7+): [:fontawesome-solid-question-circle:](pylhc/about.md) [:fontawesome-brands-github:][pylhc]{target=\_blank} [:fontawesome-solid-book:][pylhc_doc]{target=\_blank} [:fontawesome-solid-cube:][pylhc_pypi]{target=\_blank} <br>
   _useful OMC-related scripts._
+- **Optics-Functions** (Python 3.6+): [:fontawesome-brands-github:][optics_functions]{target=\_blank} [:fontawesome-solid-book:][optics_functions_doc]{target=\_blank} [:fontawesome-solid-cube:][optics_functions_pypi]{target=\_blank} <br>
+  _calculate various beam optics functions from TFS-Dataframes._
 - **Example Study Scripts** (MAD-X): [:fontawesome-solid-question-circle:](mess/about.md) [:fontawesome-brands-github:][mess]{target=\_blank} <br>
   _collection of example studies._
 - **Beta-Beat.src** (Python 2.7): [:fontawesome-brands-github:][betabeatsrc]{target=\_blank} [:fontawesome-solid-book:][betabeatsrc_doc]{target=\_blank} <br>
@@ -26,7 +28,6 @@ The OMC team develops and maintains the following packages:
   _*SDDS files* I/O functionality._
 - **Generic-Parser** (Python 3.6+): [:fontawesome-brands-github:][generic_parser]{target=\_blank} [:fontawesome-solid-book:][generic_parser_doc]{target=\_blank} [:fontawesome-solid-cube:][generic_parser_pypi]{target=\_blank} <br>
   _entrypoint argument parser functionality._
-
 
 [pylhc_github]: https://github.com/pylhc/ 
 [betabeatsrc]: https://github.com/pylhc/Beta-Beat.src
@@ -46,3 +47,6 @@ The OMC team develops and maintains the following packages:
 [sdds_pypi]: https://pypi.org/project/sdds/
 [tfs_pypi]: https://pypi.org/project/tfs-pandas/
 [generic_parser_pypi]: https://pypi.org/project/generic-parser/
+[optics_functions]: https://github.com/pylhc/optics_functions
+[optics_functions_doc]: https://pylhc.github.io/optics_functions
+[optics_functions_pypi]: https://pypi.org/project/optics-functions/
