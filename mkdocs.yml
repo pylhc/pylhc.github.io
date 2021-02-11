@@ -127,10 +127,11 @@ nav:
       - About: packages/mess/about.md
       - ↪ On Github: https://github.com/pylhc/MESS
     - Links to other Packages:
+      - ↪ optics-functions: https://github.com/pylhc/optics_functions
       - ↪ Beta-Beat.src: https://github.com/pylhc/Beta-Beat.src
       - ↪ tfs-pandas: https://github.com/pylhc/tfs
       - ↪ sdds: https://github.com/pylhc/sdds
-      - ↪ generic_parser: https://github.com/pylhc/generic_parser
+      - ↪ generic-parser: https://github.com/pylhc/generic_parser
     - Python Development: 
       - Contributing: packages/development/contributing.md
       - Virtual Environments: packages/development/howto_venv.md
