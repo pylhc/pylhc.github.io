@@ -94,9 +94,9 @@ In this example we will do a quick submit to HTCondor and starting simulations f
     mask='my_madx.mask',
     working_directory='/afs/cern.ch/work/u/username/study.tune_sweep',
     replace_dict={
-        BEAM=[1, 2],
-        TUNEX= [62.3, 62.302, 62.304, 62.306, 62.308, 62.31, 62.312, 62.314, 62.316, 62.318, 62.32],
-        TUNEY=[60.31, 60.312, 60.314, 60.316, 60.318, 60.32, 60.322, 60.324, 60.326, 60.328, 60.33],
+        "BEAM"=[1, 2],
+        "TUNEX"= [62.3, 62.302, 62.304, 62.306, 62.308, 62.31, 62.312, 62.314, 62.316, 62.318, 62.32],
+        "TUNEY"=[60.31, 60.312, 60.314, 60.316, 60.318, 60.32, 60.322, 60.324, 60.326, 60.328, 60.33],
     },
     jobid_mask="b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s",
     jobflavour="workday"
@@ -200,18 +200,28 @@ Instead of using mask file, the PyLHC submitter can also use a mask string as in
 This can be used if instead of using a file as input, the executable has a number of variable inputparameters, i.e. `executable --param1 X --param2 Y`.
 
 ??? info "Example config file"
+    A simple mask string call using the `config.ini` input to the pylhc-submitter would look like this.
     ```
     [DEFAULT]
     executable='expr',
     mask=' %(SUMMAND1)s + %(SUMMAND2)s > Outputdata/result.txt',
     working_directory='/afs/cern.ch/work/u/username/study.addition',
     replace_dict={
-        SUMMAND1= [1, 2, 3, 4],
-        SUMMAND2= [6, 7, 8, 9],
+        "SUMMAND1"= [1, 2, 3, 4],
+        "SUMMAND2"= [6, 7, 8, 9],
     },
     run_local=True
     num_processes=4
     ```
+
+??? info "Example cmdline call"
+    The same can be achieved via a cmdline call.
+
+    ```bash
+    python -m pylhc_submitter.job_submitter --executable 'expr' --mask '%(SUMMAND1)s + %(SUMMAND2)s > Outputdata/result.txt' --working_directory='/afs/cern.ch/work/u/username/study.addition' --replace_dict={"SUMMAND1"= [1, 2, 3, 4],"SUMMAND2"= [6, 7, 8, 9]} --run_local
+    ```
+
+    Given the lengthy call signature, calling directly from cmdline is not encouraged.
 
 Note that again, the user has to take care that the required results are saved in the correct `job_output_dir`.
 The `mask` string can be are more complicated multiline string, executing multiple commands.
@@ -224,8 +234,8 @@ The `mask` string can be are more complicated multiline string, executing multip
           python -m analysis.main --method %(METHOD)s',
     working_directory='/afs/cern.ch/work/u/username/study.multiline',
     replace_dict={
-        SEED= [1, 2, 3, 4],
-        METHOD= ['fast', 'slow', 'new'],
+        "SEED"= [1, 2, 3, 4],
+        "METHOD"= ['fast', 'slow', 'new'],
     },
     run_local=True
     num_processes=4
