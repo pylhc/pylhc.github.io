@@ -4,7 +4,7 @@ This section of the website goes over our computing and analysis softwares, whic
 
 Our main analysis software exist in two versions: `Beta-Beat.src` for Python 2, and its replacement `omc3` for Python 3.
 Development of the `Beta-Beat.src` package is limited to bug fixes, and new features are integrated directly into `omc3`.
-The `pylhc` package provides useful tools and scripts for our day-to-day work, and our other packages provide specific I/O and entrypoint utilities for our codes. 
+The `pylhc` package provides useful tools and scripts for our day-to-day work, and our other packages provide specific I/O and entrypoint utilities for our codes.
 
 All our Python codes, including legacy repositories, can be found on the [PyLHC organisation][pylhc_github]{target=_blank}'s page on Github.
 

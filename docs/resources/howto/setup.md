@@ -5,18 +5,23 @@
 To be able to run the GUI or CBNG seamlessly from computers which are not in the technical network, it might be useful to mount `/user`, `/nfs` and `/eos` via `sshfs` using the following recipe:
 
 1. Create mountpoints and symbolic links (only once)
+
 ```bash
 mkdir -p ~/mnt/user && ln -nfs ~/mnt/user /user
 mkdir ~/mnt/nfs && ln -nfs ~/mnt/nfs /nfs
 mkdir ~/mnt/eos && ln -nfs ~/mnt/eos /eos
 ```
+
 2. Mount network resources (repeat after timeouts and restarts)
+
 ```bash
 sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user
 sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs
 sshfs username@lxplus.cern.ch:/eos/ ~/mnt/eos
 ```
+
 3. If outside of the GPN, jump through `lxplus` to mount `dev3`-folders:
+
 ```bash
 sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
 sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
@@ -26,6 +31,7 @@ sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t userna
     To avoid getting asked for your password all the time, you should have your `ssh` properly configured with Kerberos.
 
 ??? tip "In case you need to unmount these"
+
     ```
     sudo fusermount -u ~/mnt/user
     sudo fusermount -u ~/mnt/nfs
@@ -39,12 +45,12 @@ If you are in the GPN but not on the TN, you will need to tunnel through some ma
 
 First, install the program [sshuttle][sshuttle]{target=_blank}, which should be available in your package manager.
 Then, run this command in a terminal and leave it open:
+
 ```bash
 sshuttle -vr <username>@cs-ccr-dev2 172.18.0.0/16
 ```
 
-All traffic related to the technical network will be redirected through the `cs-ccr-dev2` machine which has access to both networks. In case it isn't available, the other `cs-ccr-devX` machines can be used. 
-
+All traffic related to the technical network will be redirected through the `cs-ccr-dev2` machine which has access to both networks. In case it isn't available, the other `cs-ccr-devX` machines can be used.
 
 ## Configuring Gitlab CI to Automatically Pull into AFS
 
@@ -57,7 +63,7 @@ If you are programming locally, but also want to have a copy on AFS, either beca
     Admittedly, it is a low one if everything is done correctly, but just in case something goes wrong or leaks, you can just **delete this account**.
     Also, you can give this account **only the rights necessary** to write to AFS in the first place and do not risk that anyone can access other sensible information.
 
-??? nodeco "1. Create a new service account, via the [CERN account management][new_account]{target=_blank .cern_login}, of length 8."   
+??? nodeco "1. Create a new service account, via the [CERN account management][new_account]{target=_blank .cern_login}, of length 8."
     You need at least 8 characters to mask that name in Gitlab (if you want to do so), but on the other hand, there is a warning, that AFS cannot handle names longer than 8.
     So exactly 8 seems to be the sweetspot.
     If you do not care about masking the name (it is not as important as masking the password, see below) you can go shorter.
@@ -85,7 +91,7 @@ _Steps to be done on AFS:_
     Replace `ACCOUNTNAME` with the name of your Service Account. 
     This will give read/write access to this repository to the service account.
     Just giving these rights to the top-folder will not work, as it does not propagate to subfolders automatically.
-    
+
     A possible other way would be to create an empty folder and give writing rights to that one to the service account and then login to lxplus with the service account and clone the repository directly with that account.
     The latter is a good test to see if everything worked correctly anyway.
     Do not forget, if you have set up the repository with Kerberos authentification, to adapt your `.ssh/config` to delegate the credentials.

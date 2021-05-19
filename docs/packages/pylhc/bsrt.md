@@ -14,14 +14,12 @@ The analysis script runs through the following steps:
 - Additionally, plots for quick checks of fit parameters, auxiliary variables and beam evolution are generated.
 - If provided a `TfsDataFrame` file with timestamps, plots of the 2D distribution and comparison of fit parameters to cross sections are added.
 
-
 ## Logger
 
 Script used during Run II to log detailed BSRT data and save it for later analysis. 
 Data from the BSRT for each timestep is put in a `dictionary` and append to a `list`. 
 The `list` is then saved to disk through pickling. 
 Proper testing requires communication with ``FESA``s class, possible only from the Technical Network.
-
 
 *[BSRT]: Beam Synchrotron Radiation Telescope
 

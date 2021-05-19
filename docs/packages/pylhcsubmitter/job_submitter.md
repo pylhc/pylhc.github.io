@@ -201,6 +201,7 @@ This can be used if instead of using a file as input, the executable has a numbe
 
 ??? info "Example config file"
     A simple mask string call using the `config.ini` input to the pylhc-submitter would look like this.
+
     ```
     [DEFAULT]
     executable='expr',
@@ -227,6 +228,7 @@ Note that again, the user has to take care that the required results are saved i
 The `mask` string can be are more complicated multiline string, executing multiple commands.
 
 ??? info "Example multiline config file"
+
     ```
     [DEFAULT]
     executable=None,
