@@ -1,8 +1,11 @@
-# HTCondor Job Sumbitter
+# PyLHC Submitter
 [See the docs][documentation] for a detailed code description.
+Note that the full functionality is only available under Linux, with HTCondor configured e.g. on CERN's lxplus service.
+Currently, only local job execution is possible in Windows.
 
 ## Description
-The HTCondor Job sumitter allows to execute a parametric study using a script-mask and a `dictionary` with parameters to
+
+The PyLHC submitter allows to execute a parametric study using a script-mask and a `dictionary` with parameters to
 replace, from the command line. The parameters to be replaced must be present in the given mask as
 ``%(PARAMETER)s`` (other types apart from string also allowed).
 The type of script and executable is freely choosable, but defaults to ``madx`` - for which this
@@ -18,11 +21,10 @@ and job directory for further post processing.
 
 *--Required--*
 
-- **mask** *(str)*: Script Mask to use
+- **mask** *(str)*: Script Mask to use, can be either the Path to a mask file or a string.
 - **replace_dict** *(DictAsString)*: Dict containing the str to replace as
   keys and values a list of parameters to replace
 - **working_directory** *(str)*: Directory where data should be put
-
 
 *--Optional--*
 
@@ -60,19 +62,14 @@ and job directory for further post processing.
   This is inferred automatically for ['madx', 'python3', 'python2']. Otherwise not changed.
 - **ssh** *(str)*: Run htcondor from this machine via ssh (needs access to the `working_directory`)
 
-
-
-## Example: Tune Sweep
+## Example 1: Tune Sweep using a MAD-X mask
 
 In this example we will do a quick submit to HTCondor and starting simulations for both beams over a range of tunes.
 
 ???+ "Python Code"
-    ```python 
-    from pylhc.job_submitter import main as htcondor_submit
-    from omc3.utils import logging_tools
+    ```python
+    from pylhc_submitter.job_submitter import main as htcondor_submit
     import numpy as np
-
-    LOG = logging_tools.get_logger(__name__)
 
     if __name__ == '__main__':
         htcondor_submit(
@@ -84,10 +81,33 @@ In this example we will do a quick submit to HTCondor and starting simulations f
                 TUNEY=np.linspace(60.31, 60.33, 11).tolist(),
                 ),
             jobid_mask="b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s",
-            working_directory='/afs/cern.ch/work/u/username/study.tune_sweep',
-            ssh='lxplus.cern.ch'
+            working_directory='/afs/cern.ch/work/u/username/study.tune_sweep'
         )
     ```
+
+??? info "Submission with config file"
+    The same can also be achieved by creating a `config.ini` file containing
+
+    ```
+    [DEFAULT]
+    executable='madx',
+    mask='my_madx.mask',
+    working_directory='/afs/cern.ch/work/u/username/study.tune_sweep',
+    replace_dict={
+        BEAM=[1, 2],
+        TUNEX= [62.3, 62.302, 62.304, 62.306, 62.308, 62.31, 62.312, 62.314, 62.316, 62.318, 62.32],
+        TUNEY=[60.31, 60.312, 60.314, 60.316, 60.318, 60.32, 60.322, 60.324, 60.326, 60.328, 60.33],
+    },
+    jobid_mask="b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s",
+    jobflavour="workday"
+    run_local=False
+    resume_jobs=False
+    append_jobs=False
+    dryrun=False
+    num_processes=4
+    ```
+
+    and running `python -m pylhc_submitter.job_submitter --entry_cfg config.ini`
 
 ??? "my_madx.mask"
     ```
@@ -149,32 +169,75 @@ The result should look something like this:
     <figcaption><code>condor_q</code>: Shows the jobs in the condor queue.</figcaption>
 </figure>
 
-At the same time, a folder structure has developed in the given `working directory`:
+At the same time, a folder structure has been created in the given `working directory`:
 
 - In the main directory will be the **Job.tfs**, were each row corresponds to instance of parameters filled in and contains infos that.
-    - The first column will be `JobId` which is either just a numbering of the jobs, or - in our case - the filled in `jobid_mask`. 
-    - The next columns are the parameters given, here: `BEAM`, `TUNEX` and `TUNEY`. They contain the value the respective job-instance as filled in.
-    - `JobDirectory` contains the path to the job directory, while `JobFile` is the name of the file and `ShellScript` the name of the script within this directory, which are used to run the job.
+  - The first column will be `JobId` which is either just a numbering of the jobs, or - in our case - the filled in `jobid_mask`.
+  - The next columns are the parameters given, here: `BEAM`, `TUNEX` and `TUNEY`. They contain the value the respective job-instance as filled in.
+  - `JobDirectory` contains the path to the job directory, while `JobFile` is the name of the file and `ShellScript` the name of the script within thisdirectory, which are used to run the job.
 - The **queuehtc.sub** is the submission file, which tells HTCondor the paths to all the `ShellScripts` to run.
 - In the `JobDirectories`, also named according to the `jobid_mask`, there will be some files present already:
-    - The `ShellScript` **_Jobid_.sh**, which contains commands to create the `job_output_dir` and the `madx` command to run the script
-    - And the `JobFile` which is the original `mask`, parameter values filled in.
-All of these files are created before the submit to HTCondor. 
+  - The `ShellScript` **_Jobid_.sh**, which contains commands to create the `job_output_dir` and the `madx` command to run the script
+  - And the `JobFile` which is the original `mask`, parameter values filled in.
+All of these files are created before the submit to HTCondor.
 
-After all jobs have finished, `htcondor.___.err`, `htcondor.___.log` and `htcondor.___.out` files for the respective job are transferred to these directories, 
+After all jobs have finished, `htcondor.___.err`, `htcondor.___.log` and `htcondor.___.out` files for the respective job are transferred to these directories,
 containing the printouts of the outputstreams of the job.
-
 
 And finally, also the `job_output_dir`, here **Outputdata** containing the calculated **.twiss**-file, will be in there as well, ready for post-processing.
 
+### Check for failed jobs
+
+To see if and which Jobs have failed, the same command as above can be rerun, but using `resume_jobs=True` and `dryrun=True`.
+<!-- TODO add example script output -->
+By default, Jobs are classified as successful if the `job_output_dir`, here **Outputdata**, is present.
+To further refine the resubmission, the script can also check for the presence of files in the `job_output_dir` by using the `check_files` flag, which for the above example would look like this `check_files=["*.twiss.tfs"]`.
+If the `dryrun` flag is omitted or set to `False`, failed Jobs will be resubmitted to HTCondor.
+
+## Example 2: Run with mask string
+
+Instead of using mask file, the PyLHC submitter can also use a mask string as input for the executable.
+This can be used if instead of using a file as input, the executable has a number of variable inputparameters, i.e. `executable --param1 X --param2 Y`.
+
+??? info "Example config file"
+    ```
+    [DEFAULT]
+    executable='expr',
+    mask=' %(SUMMAND1)s + %(SUMMAND2)s > Outputdata/result.txt',
+    working_directory='/afs/cern.ch/work/u/username/study.addition',
+    replace_dict={
+        SUMMAND1= [1, 2, 3, 4],
+        SUMMAND2= [6, 7, 8, 9],
+    },
+    run_local=True
+    num_processes=4
+    ```
+
+Note that again, the user has to take care that the required results are saved in the correct `job_output_dir`.
+The `mask` string can be are more complicated multiline string, executing multiple commands.
+
+??? info "Example multiline config file"
+    ```
+    [DEFAULT]
+    executable=None,
+    mask='madx < Job%(SEED)s.madx\n
+          python -m analysis.main --method %(METHOD)s',
+    working_directory='/afs/cern.ch/work/u/username/study.multiline',
+    replace_dict={
+        SEED= [1, 2, 3, 4],
+        METHOD= ['fast', 'slow', 'new'],
+    },
+    run_local=True
+    num_processes=4
+    ```
 
 ## Pitfalls and Hints
 
 - when using the `ssh` option, the `working directory` needs to be accessible from both, the local machine as well as the ssh-server.
-  `ssh` is only used for the final commit command to send the jobs to HTCondor, as this is quite tricky to setup on a local machine. 
+  `ssh` is only used for the final commit command to send the jobs to HTCondor, as this is quite tricky to setup on a local machine.
 
-- the `run_local` option is only not suggested, as your jobs will obviously not be parallelized. 
-  If you have only short jobs, a small parameter space or are already on a powerful machine, you can use this option of course.  
+- the `run_local` option allows to run jobs in parallel on the local machine.
+  This is only recommended for short jobs and for a small number of jobs.
+  The `num_processes` option allows to specify how many concurrent processes will run (default:4).
 
-
-[documentation]: https://pylhc.github.io/PyLHC/entrypoints/job_submitter.html
+[documentation]: https://pylhc.github.io/submitter/entrypoints/submitter.html

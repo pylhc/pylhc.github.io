@@ -120,9 +120,13 @@ nav:
       - About: packages/pylhc/about.md
       - Forced DA Analysis: packages/pylhc/forced_da.md
       - Machine Settings Info: packages/pylhc/machine_settings_info.md
-      - Job Submitter: packages/pylhc/job_submitter.md
       - BSRT Logger/Analysis: packages/pylhc/bsrt.md
       - ↪ On Github: https://github.com/pylhc/PyLHC
+    - PyLHC-Submitter: 
+      - About: packages/pylhcsubmitter/about.md
+      - Job Submitter: packages/pylhcsubmitter/job_submitter.md
+      - AutoSix: packages/pylhcsubmitter/autosix.md
+      - ↪ On Github: https://github.com/pylhc/submitter
     - MESS:
       - About: packages/mess/about.md
       - ↪ On Github: https://github.com/pylhc/MESS
