@@ -1,66 +1,63 @@
 # PyLHC Submitter
+
 [See the docs][documentation] for a detailed code description.
-Note that the full functionality is only available under Linux, with HTCondor configured e.g. on CERN's lxplus service.
-Currently, only local job execution is possible in Windows.
+Note that the full functionality is only available under Linux with HTCondor configured, e.g. on CERN's `lxplus` service.
+Currently, only local job execution is possible in Windows or macOS.
 
 ## Description
 
-The PyLHC submitter allows to execute a parametric study using a script-mask and a `dictionary` with parameters to
-replace, from the command line. The parameters to be replaced must be present in the given mask as
-``%(PARAMETER)s`` (other types apart from string also allowed).
-The type of script and executable is freely choosable, but defaults to ``madx`` - for which this
-submitter was originally written.
+The PyLHC submitter allows to execute a parametric study using a script-mask and a `dictionary` with parameters to replace, from the command line.
+The parameters to be replaced must be present in the given mask as `%(PARAMETER)s` (other types apart from string also allowed).
+The type of script and executable is freely choosable, but defaults to `madx` - for which this submitter was originally written.
 
-When submitting to ``HTCondor``, data to be transferred back to the working directory must be
-written in a sub-folder defined by ``job_output_directory`` which defaults to **Outputdata**.
-This script also allows to check if all ``HTCondor`` jobs finished successfully, for resubmissions
-with a different parameter grid, and for local execution.
+When submitting to `HTCondor`, data to be transferred back to the working directory must be written in a sub-folder defined by `job_output_directory` which defaults to **Outputdata**.
+This script also allows to check if all `HTCondor` jobs finished successfully, for resubmissions with a different parameter grid, and for local execution.
 
-A **Jobs.tfs** file is created in the working directory containing the Job Id, parameter per job
-and job directory for further post processing.
+A **Jobs.tfs** file is created in the working directory containing the Job Id, parameter per job and job directory for further post processing.
 
-*--Required--*
-
-- **mask** *(str)*: Script Mask to use, can be either the Path to a mask file or a string.
-- **replace_dict** *(DictAsString)*: Dict containing the str to replace as
-  keys and values a list of parameters to replace
-- **working_directory** *(str)*: Directory where data should be put
-
-*--Optional--*
-
-- **append_jobs**: Flag to rerun job with finer/wider grid,
-  already existing points will not be reexecuted.
-  Action: ``store_true``
-- **check_files** *(str)*: List of files/file-name-masks expected to be in the
-  'job_output_dir' after a successful job (for appending/resuming). Uses the 'glob'
-  function, so unix-wildcards (*) are allowed. If not given, only the presence of the folder itself is checked.
-- **dryrun**: Flag to only prepare folders and scripts,
-  but does not start madx/submit jobs.
-  Together with `resume_jobs` this can be use to check which jobs succeeded and which failed.
-  Action: ``store_true``
-- **executable** *(str)*: Path to executable or job-type (of ['madx', 'python3', 'python2']) to use.
-- **htc_arguments** *(DictAsString)*: Additional arguments for htcondor, as Dict-String.
-  For AccountingGroup please use 'accounting_group'. 'max_retries' and 'notification' have defaults (if not given).
-  Others are just passed on.
-  Default: ``{}``
-- **job_output_dir** *(str)*: The name of the output dir of the job. (Make sure your script puts its data there!)
-  Default: ``Outputdata``
-- **jobflavour** *(str)*: Jobflavour to give rough estimate of runtime of one job
-  Choices: ``('espresso', 'microcentury', 'longlunch', 'workday', 'tomorrow', 'testmatch', 'nextweek')``
-  Default: ``workday``
-- **jobid_mask** *(str)*: Mask to name jobs from replace_dict
-- **num_processes** *(int)*: Number of processes to be used if run locally
-  Default: ``4``
-- **resume_jobs**: Only do jobs that did not work.
-  Action: ``store_true``
-- **run_local**: Flag to run the jobs on the local machine. Not suggested.
-  Action: ``store_true``
-- **script_arguments** *(DictAsString)*: Additional arguments to pass to the script,
-  as dict in key-value pairs ('--' need to be included in the keys).
-  Default: ``{}``
-- **script_extension** *(str)*: New extension for the scripts created from the masks.
-  This is inferred automatically for ['madx', 'python3', 'python2']. Otherwise not changed.
-- **ssh** *(str)*: Run htcondor from this machine via ssh (needs access to the `working_directory`)
+??? info "Detailed Arguments of the Script"
+    *--Required--*
+    
+    - **mask** *(str)*: Script Mask to use, can be either the Path to a mask file or a string.
+    - **replace_dict** *(DictAsString)*: Dict containing the str to replace as
+      keys and values a list of parameters to replace
+    - **working_directory** *(str)*: Directory where data should be put
+    
+    *--Optional--*
+    
+    - **append_jobs**: Flag to rerun job with finer/wider grid,
+      already existing points will not be reexecuted.
+      Action: ``store_true``
+    - **check_files** *(str)*: List of files/file-name-masks expected to be in the
+      'job_output_dir' after a successful job (for appending/resuming). Uses the 'glob'
+      function, so unix-wildcards (*) are allowed. If not given, only the presence of the folder itself is checked.
+    - **dryrun**: Flag to only prepare folders and scripts,
+      but does not start madx/submit jobs.
+      Together with `resume_jobs` this can be use to check which jobs succeeded and which failed.
+      Action: ``store_true``
+    - **executable** *(str)*: Path to executable or job-type (of ['madx', 'python3', 'python2']) to use.
+    - **htc_arguments** *(DictAsString)*: Additional arguments for htcondor, as Dict-String.
+      For AccountingGroup please use 'accounting_group'. 'max_retries' and 'notification' have defaults (if not given).
+      Others are just passed on.
+      Default: ``{}``
+    - **job_output_dir** *(str)*: The name of the output dir of the job. (Make sure your script puts its data there!)
+      Default: ``Outputdata``
+    - **jobflavour** *(str)*: Jobflavour to give rough estimate of runtime of one job
+      Choices: ``('espresso', 'microcentury', 'longlunch', 'workday', 'tomorrow', 'testmatch', 'nextweek')``
+      Default: ``workday``
+    - **jobid_mask** *(str)*: Mask to name jobs from replace_dict
+    - **num_processes** *(int)*: Number of processes to be used if run locally
+      Default: ``4``
+    - **resume_jobs**: Only do jobs that did not work.
+      Action: ``store_true``
+    - **run_local**: Flag to run the jobs on the local machine. Not suggested.
+      Action: ``store_true``
+    - **script_arguments** *(DictAsString)*: Additional arguments to pass to the script,
+      as dict in key-value pairs ('--' need to be included in the keys).
+      Default: ``{}``
+    - **script_extension** *(str)*: New extension for the scripts created from the masks.
+      This is inferred automatically for ['madx', 'python3', 'python2']. Otherwise not changed.
+    - **ssh** *(str)*: Run htcondor from this machine via ssh (needs access to the `working_directory`)
 
 ## Example 1: Tune Sweep using a MAD-X mask
 
