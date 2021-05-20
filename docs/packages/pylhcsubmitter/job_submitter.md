@@ -15,7 +15,7 @@ This script also allows to check if all `HTCondor` jobs finished successfully, f
 
 ??? info "Detailed Arguments of the Script"
     *--Required--*
-    
+
     - **mask** *(str)*: Script Mask to use, can be either the Path to a mask file or a string.
     - **replace_dict** *(DictAsString)*: Dict containing the str to replace as
       keys and values a list of parameters to replace
@@ -61,7 +61,7 @@ This script also allows to check if all `HTCondor` jobs finished successfully, f
 
 In the following examples, we will perform a tune sweep using a `MAD-X` mask.
 The simulations will be parametrized for both beams over a range of tunes in each plane.
-Parameters in the template script (see below) are indicated in the `%(PARAMETER)s` format. 
+Parameters in the template script (see below) are indicated in the `%(PARAMETER)s` format.
 
 ??? example "The `my_madx.mask` Template File"
     ```fortran
@@ -227,7 +227,7 @@ A folder structure is created in the given `working directory`, in which one wil
 !!! warning "Number of Jobs"
     As `job_submitter` creates a job for each combination in the inner product of the `replace_dict` parameters, the number of jobs can easily get high.
     In our example case, we are submitting `beam * tunex * tuney = 2 * 11 * 11 = 242` jobs.
-    It is worth noting current the max number of jobs to be submitted to `HTCondor` is set to `100k`.
+    It is worth noting that currently the max. number of jobs to be submitted to `HTCondor` is set to `100k`.
 
 After submitting our tune sweep studies, we can check the status of our jobs via the `condor_q` (unless running locally).
 The output should look something like this:
