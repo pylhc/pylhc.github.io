@@ -6,14 +6,12 @@ Currently, only local job execution is possible in Windows or macOS.
 
 ## Description
 
-The PyLHC submitter allows to execute a parametric study using a script-mask and a `dictionary` with parameters to replace, from the command line.
-The parameters to be replaced must be present in the given mask as `%(PARAMETER)s` (other types apart from string also allowed).
-The type of script and executable is freely choosable, but defaults to `madx` - for which this submitter was originally written.
+The `job_submitter` allows to execute a parametric study using a script mask and a `dictionary` of parameters to replace in this mask, from the command line.
+These parameters must be present in the given mask in the `%(PARAMETER)s` format (other types apart from string are also allowed).
+The type of script and executable is freely choosable, but defaults to `madx`, for which this submitter was originally written.
 
 When submitting to `HTCondor`, data to be transferred back to the working directory must be written in a sub-folder defined by `job_output_directory` which defaults to **Outputdata**.
 This script also allows to check if all `HTCondor` jobs finished successfully, for resubmissions with a different parameter grid, and for local execution.
-
-A **Jobs.tfs** file is created in the working directory containing the Job Id, parameter per job and job directory for further post processing.
 
 ??? info "Detailed Arguments of the Script"
     *--Required--*
@@ -223,10 +221,10 @@ A folder structure is created in the given `working directory`, in which one wil
     - A `ShellScript` **<Jobid>.sh**, which contains commands to create the `job_output_dir` and the `madx` command to run the script,
     - A `JobFile` which is the original `mask`, parameter values filled in.
 
-All of these files are created submission to `HTCondor`.
+Jobs to be submitted to `HTCondor` are determined through the inner product of the `replace_dict`: in our example each possible combination of the 3 given parameters.
 In case one runs the submitter with the `dryrun` flag, the execution stops here and files are accessible, but nothing is sent to the `HTCondor` scheduler.
 
-After submitting our tune sweep studies, we can check the status of our jobs via the `condor_q` (on the `ssh` server if not running locally).
+After submitting our tune sweep studies, we can check the status of our jobs via the `condor_q` (unless running locally).
 The output should look something like this:
 
 <figure>
