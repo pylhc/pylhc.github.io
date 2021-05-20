@@ -15,6 +15,9 @@ See the description of `replace_dict` below.
 In any other way, these *special* variables behave like normal variables and can also be inserted in your mask.
 They are also looped over in the same manner as any other variable (if given as a list).
 
+!!! tip "Recommended Reading"
+    It is recommended to have read the section about [job submitter](job_submitter.md) before this one, as these share many similarities and details are explained in the previous page.
+
 ??? info "Detailed Arguments of the Script"
     *--Required--*
     
@@ -70,12 +73,14 @@ They are also looped over in the same manner as any other variable (if given as 
 
 ## Using AutoSix
 
-!!! warning
+The parametrizing of simulations and submission can be done very similarly to `job_submitter` through Python, also by calling the `main` function of `autosix` with the desired parameters.
+
+!!! warning "SixTrack SEEDS"
     As the loop over seeds is handled by `SixDesk`, you need to set `FIRSTSEED` and `LASTSEED` to ``None`` or ``0`` to deactivate this loop.
     Otherwise, a ``%SEEDRAN`` placeholder is required in your mask, which needs to be present **after** filling in the variables (see example below).
 
-!!! hint
-    Unlike with `job_submitter`, the output directory of the `HTCondor` job (the 'mask-job') is not automatically transferred to the workspace.
+!!! hint "Output Directories"
+    Unlike with `job_submitter`, the output directory of the `HTCondor` job is not automatically transferred to the workspace.
     To have access to this data, you will need to specify different output directories in your mask manually, e.g. using strings containing the variable placeholders.
 
 ```python
@@ -108,84 +113,69 @@ if __name__ == "__main__":
     )
 ```
 
-Upon running the script the job-matrix is created (see *Jobs.tfs* in working directory) and the following stages are run per job:
+AutoSix is not only able to run MAD-X masks, but also Python scripts using `cpymad`.
+Requirement for the latter is to provide the as `executable` the path to a Python binary with `cpymad` and all relevant packages installed in the appropiate environment.
+In theory, any kind of mask is possible, given the correct `executable` is provided and the `Sixtrack` output files created.
 
-- `create_jobs`: create workspace; fill sysenv, sixdeskenv, mask.
-- `initialize_workspace`: initialize workspace from the env-files.
-- `submit_mask`: submit mask-job to HTCondor. (*interrupt*)
-- `check_input`: check if sixdesk input is complete.
-- `submit_sixtrack`: submit sixdesk-jobs to HTCondor. (*interrupt*)
-- `check_sixtrack_output`: check if all sixdesk jobs are completed.
-- `sixdb_load`: create database and load jobs output.
-- `sixdb_cmd`: calculated DA from database data.
-- `post_process`: extract data from database, write into *.tfs* and plot.
-- `final`: announce everything has finished
+!!! info "Necessary Input Files"
+    To create the files needed for `Sixtrack` input in (HL-)LHC simulations, MAD-X masks need to contain:
+    ```fortran
+    if (NRJ<5000.0000) {VRF400:=8.;} else {VRF400:=16.;};
+    LAGRF400.B1=0.5;
+    LAGRF400.B2=0.;
+    twiss;
+    sixtrack, cavall, radius=0.017;
+    ```
+    
+    Python masks using `cpymad` can do the same task with:
+    ```python
+    from cpymad.madx import Madx
+    madx = Madx()
+    # setup your study
+    madx.globals["VRF400"] = 8 if madx.globals["NRJ"] < 5000 else 16
+    madx.globals["LAGRF400.B1"] = 0.5
+    madx.globals["LAGRF400.B2"] = 0.
+    madx.twiss()  # used by sixtrack
+    madx.command.sixtrack(cavall=True, radius=0.017)
+    ```
 
-To keep track of the stages, they are written into the *stages\_completed.txt*
-in the *autosix\_output* directory in the workspaces.
+## What Happens After Submitting
+
+Upon running the script, the **Jobs.tfs** file is created similarly to `job_submitter`, and the following stages are run per job:
+
+1. `create_jobs`: create workspace, fill sysenv, sixdeskenv and mask.
+2. `initialize_workspace`: initialize workspace from the env-files.
+3. `submit_mask`: submit job to `HTCondor` from filled mask. (*interrupt*)
+4. `check_input`: check if sixdesk input is complete.
+5. `submit_sixtrack`: submit sixdesk jobs to `HTCondor`. (*interrupt*)
+6. `check_sixtrack_output`: check if all sixdesk jobs are completed.
+7. `sixdb_load`: create database and load jobs output.
+8. `sixdb_cmd`: calculate DA from database data.
+9. `post_process`: extract data from database, write into **.tfs** files and plot.
+10. `final`: announce every stage has completed.
+
+To keep track of the stages, they are written into a **stages\_completed.txt** file in the `autosix\_output` directory in the workspaces.
 Stages that are written in this file are assumed to be done and will be skipped.
-To rerun a stage, delete the stage and all following stages in that file and
-start your script anew.
+To rerun a stage, delete its entry and that of all following stages in the **stages\_completed.txt** file and start your run anew.
 
-The stages are run independently of each job, meaning different jobs can be
-at different stages. E.g. if one job has all data for the ``six_db`` analysis
-already, but the others are still running on sixdesk the
-``check_sixtrack_output`` stage will fail for these jobs but the other one will
-just continue.
+??? info "Execution Order"
+    The stages are ran independently of each job, meaning different jobs can be at different stages.
+    For instance, if one job has all data for the `six_db` analysis already, but the others are still running on `Sixdesk`, the `check_sixtrack_output` stage will fail for these jobs but continue for the job that is ready.
 
-Because the stages after ``submit_mask`` and ``submit_sixtrack`` need only be
-run after the jobs on HTCondor are completed, these two stages interrupt the
-execution of stages if they have successfully finished. Check your scheduler
-via ``condor_q`` and run your script again after everything is done, to
-have autosix continue its work.
+Because the stages after `submit_mask` and `submit_sixtrack` need only be ran after the jobs on `HTCondor` are completed, they will interrupt execution if previous stages have successfully finished.
+To have `AutoSix` continue its work, check your scheduler via `condor_q` and run your script again after everything is done.
+It will pick up where it left as written in the **stages\_completed.txt** file.
 
-!!! note
-    While most studies should be fine with the input options given, there is the
-    possibility to manually adapt the *sixdeskenv* and *sysenv* file before
-    workspace initialization but adding the switch ``stop_workspace_init``.
-    This will not reset automatically and one will have to remove the switch
-    again to continue.
-    As this is a bit of a workaround, it might be easier to define a new
-    variable in the **pylhc_submitter.sixdesk_tools.mask_sixdeskenv** file and put its
-    current default into **pylhc_submitter.constants.autosix.SIXENV_DEFAULT**.
-    One can then use the ``replace_dict`` to change its value.
-    This is left open as a task for the inspired user to implement, as only he
-    knows which variable he or she needs to change.
+!!! tip
+    While most studies should be fine with the input options given, there is the possibility to manually adapt the **sixdeskenv** and **sysenv** files before workspace initialization by using the `stop_workspace_init` flag.
+    This will not reset automatically and one will have to remove the switch again to continue.
+    As this is a bit of a workaround, it might be easier to define a new variable in the **pylhc_submitter.sixdesk_tools.mask_sixdeskenv** file and put its current default into **pylhc_submitter.constants.autosix.SIXENV_DEFAULT**.
+    One can then use the `replace_dict` to change its value.
+    This is left open as a task for the inspired user to implement, as only he knows which variable he or she needs to change.
 
-AutoSix is not only able to run MAD-X masks, but also **cpymad** masks.
-Requirement for the latter is to provide the ``executable`` path to a
-python binary with **cpymad**, and all other packages used, installed.
-
-To create the files needed for Sixtrack input, MAD-X masks need to contain
-
-```bash
-if (NRJ<5000.0000) {VRF400:=8.;} else {VRF400:=16.;};
-LAGRF400.B1=0.5;
-LAGRF400.B2=0.;
-twiss;
-sixtrack, cavall, radius=0.017;
-```
-
-while **cpymad** masks can do the same task with
-
-```python
-from cpymad.madx import Madx
-madx = Madx()
-# setup your study
-madx.globals["VRF400"] = 8 if madx.globals["NRJ"] < 5000 else 16
-madx.globals["LAGRF400.B1"] = 0.5
-madx.globals["LAGRF400.B2"] = 0.
-madx.twiss()  # used by sixtrack
-madx.command.sixtrack(cavall=True, radius=0.017)
-```
-
-In theory, any kind of mask is possible, given the correct ``executable``
-is provided and the Sixtrack outputfiles created.
-
-!!! note
-    For the creation of polar plots, the function
-    `pylhc_submitter.sixdesk_tools.post_process_da.plot_polar` is available,
-    which is used for the basic polar plotting in the ``post_process`` stage,
-    but provides more customization features if called manually.
+??? example "Polar Plots"
+    For the creation of polar plots, the function `pylhc_submitter.sixdesk_tools.post_process_da.plot_polar` is available.
+    It is used for the basic polar plotting in the `post_process` stage, but provides more customization features if called manually.
+    Details on its use can be found at the `PyLHC Submitter` API documentation.
 
 [documentation]: https://pylhc.github.io/submitter/entrypoints/submitter.html
