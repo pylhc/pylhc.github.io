@@ -166,8 +166,8 @@ python -m pylhc_submitter.job_submitter --entry_cfg config.ini
 
 ### Starting Studies with Mask Strings
 
-Instead of using mask file, `job_submitter` can also use a mask string as input for the executable.
-This can be used if instead of using a file as input, the executable has a number of variable input parameters, i.e. `executable --param1 X --param2 Y`.
+Instead of using a mask file, `job_submitter` can also use a string as input for the executable.
+This can be useful if the executable has a number of variable input parameters, i.e. `executable --param1 X --param2 Y`.
 
 A simple mask string call using the **config.ini** input to the pylhc-submitter would look like this:
 ```
@@ -197,7 +197,7 @@ The `mask` string can be a more complicated multiline string, executing multiple
 
 ### Starting Studies from the Command Line
 
-!!! warning "Users Beware!"
+!!! warning "Users Beware"
     While doing so is possible, using a simple command line call is discouraged.
     As you will see below, this method is much less clear and reproducible.
 
@@ -235,27 +235,29 @@ The output should look something like this:
 </figure>
 
 When all jobs are done running, the `htcondor.<jobid>.err`, `htcondor.<jobid>.log` and `htcondor.<jobid>.out` files for the respective job are transferred back to the appropriate directories.
-Finally, for each job the `job_output_dir`, here containing the calculated **.twiss.tfs** file, will be transfered back as well, ready for post-processing.
+Finally, for each job the `job_output_dir`, here containing the **.twiss.tfs** file, will be transfered back as well, ready for post-processing.
 
-## Checking for Failed Jobs
+## Checking for and Resubmitting Failed Jobs
 
 To see if and which Jobs have failed, the same command as above can be rerun using `resume_jobs` and `dryrun` flags (or use them as parameters set to `False`).
 By default, Jobs are classified as successful if the specified `job_output_dir` is present.
 <!-- TODO add example script output -->
 
-## Resubmitting Failed Jobs
-
 To resubmit the failed jobs to `HTCondor`, simply rerun the call and omit the `dryrun` flag or set its parameter to `False`.
-To further refine the resubmission, the script can also check for the presence of files in the `job_output_dir` by using the `check_files` flag.
-In the case of our tune sweep example, this would look like `check_files=["*.twiss.tfs"]`.
+
+!!! tip "Refining the Resubmission"
+    To further refine the resubmission, the script can also check for the presence of files in the `job_output_dir` by using the `check_files` flag.
+    In the case of our tune sweep example, this would look like `check_files=["*.twiss.tfs"]`.
 
 ## Pitfalls and Hints
 
-- when using the `ssh` option, the `working directory` needs to be accessible from both, the local machine as well as the ssh-server.
-  `ssh` is only used for the final commit command to send the jobs to `HTCondor`, as this is quite tricky to setup on a local machine.
+!!! warning "The `ssh` Option"
+    When using the `ssh` option, the working directory needs to be accessible from both the local machine as well as the `ssh` server.
+    In this case, `ssh` is only used for the final command submitting the jobs to `HTCondor`.
 
-- the `run_local` option allows to run jobs in parallel on the local machine.
-  This is only recommended for short jobs and for a small number of jobs.
-  The `num_processes` option allows to specify how many concurrent processes will run (default:4).
+!!! warning "Running Locally"
+    The `run_local` flag allows parallelizing jobs on your local machine through multiprocessing.
+    This is only recommended for short jobs and for a small number of jobs, as the stress on your machine can be intense.
+    The `num_processes` option allows to specify how many concurrent processes will run, by default 4.
 
 [documentation]: https://pylhc.github.io/submitter/entrypoints/submitter.html
