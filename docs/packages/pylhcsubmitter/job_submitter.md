@@ -177,7 +177,7 @@ python -m pylhc_submitter.job_submitter --executable madx --mask my_madx.mask --
 ### Starting Studies with Mask Strings
 
 Instead of using a mask file, `job_submitter` can also use a string as input for the executable.
-This can be useful if the executable has a number of variable input parameters, i.e. `executable --param1 X --param2 Y`.
+This can prove useful if the executable has a number of variable input parameters, i.e. `executable --param1 X --param2 Y`.
 
 A simple mask string call using the **config.ini** input to the pylhc-submitter would look like this:
 ```
@@ -207,8 +207,8 @@ The `mask` string can be a more complicated multiline string, executing multiple
 
 ## What Happens After Submitting
 
-When submitting, the `job_submitter` will issue several logging statements to keep you updated.
-In more details, here is what happens behind the scenes.
+When submitting, the `job_submitter` determines jobs to be submitted to `HTCondor` through the inner product of the `replace_dict`: in our example each possible combination of the 3 given parameters.
+The script will issue several logging statements to keep the user updated, but here is what happens behind the scenes.
 
 A folder structure is created in the given `working directory`, in which one will find:
 
@@ -221,8 +221,13 @@ A folder structure is created in the given `working directory`, in which one wil
     - A `ShellScript` **<Jobid>.sh**, which contains commands to create the `job_output_dir` and the `madx` command to run the script,
     - A `JobFile` which is the original `mask`, parameter values filled in.
 
-Jobs to be submitted to `HTCondor` are determined through the inner product of the `replace_dict`: in our example each possible combination of the 3 given parameters.
-In case one runs the submitter with the `dryrun` flag, the execution stops here and files are accessible, but nothing is sent to the `HTCondor` scheduler.
+!!! tip "Dry Runs"
+    In case one runs the submitter with the `dryrun` flag, the execution stops here and files are accessible, but nothing is sent to the `HTCondor` scheduler.
+
+!!! warning "Number of Jobs"
+    As `job_submitter` creates a job for each combination in the inner product of the `replace_dict` parameters, the number of jobs can easily get high.
+    In our example case, we are submitting `beam * tunex * tuney = 2 * 11 * 11 = 242` jobs.
+    It is worth noting that on the CERN services, the max number of jobs to be submitted to `HTCondor` is set to `100k`.
 
 After submitting our tune sweep studies, we can check the status of our jobs via the `condor_q` (unless running locally).
 The output should look something like this:
