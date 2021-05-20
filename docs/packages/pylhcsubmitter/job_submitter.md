@@ -239,11 +239,15 @@ Finally, for each job the `job_output_dir`, here containing the calculated **.tw
 
 ## Checking for Failed Jobs
 
-To see if and which Jobs have failed, the same command as above can be rerun, but using `resume_jobs=True` and `dryrun=True`.
+To see if and which Jobs have failed, the same command as above can be rerun using `resume_jobs` and `dryrun` flags (or use them as parameters set to `False`).
+By default, Jobs are classified as successful if the specified `job_output_dir` is present.
 <!-- TODO add example script output -->
-By default, Jobs are classified as successful if the `job_output_dir`, here **Outputdata**, is present.
-To further refine the resubmission, the script can also check for the presence of files in the `job_output_dir` by using the `check_files` flag, which for the above example would look like this `check_files=["*.twiss.tfs"]`.
-If the `dryrun` flag is omitted or set to `False`, failed Jobs will be resubmitted to `HTCondor`.
+
+## Resubmitting Failed Jobs
+
+To resubmit the failed jobs to `HTCondor`, simply rerun the call and omit the `dryrun` flag or set its parameter to `False`.
+To further refine the resubmission, the script can also check for the presence of files in the `job_output_dir` by using the `check_files` flag.
+In the case of our tune sweep example, this would look like `check_files=["*.twiss.tfs"]`.
 
 ## Pitfalls and Hints
 
