@@ -227,7 +227,7 @@ A folder structure is created in the given `working directory`, in which one wil
 !!! warning "Number of Jobs"
     As `job_submitter` creates a job for each combination in the inner product of the `replace_dict` parameters, the number of jobs can easily get high.
     In our example case, we are submitting `beam * tunex * tuney = 2 * 11 * 11 = 242` jobs.
-    It is worth noting that on the CERN services, the max number of jobs to be submitted to `HTCondor` is set to `100k`.
+    It is worth noting current the max number of jobs to be submitted to `HTCondor` is set to `100k`.
 
 After submitting our tune sweep studies, we can check the status of our jobs via the `condor_q` (unless running locally).
 The output should look something like this:
