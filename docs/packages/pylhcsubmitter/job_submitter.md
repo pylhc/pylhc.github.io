@@ -237,7 +237,7 @@ Finally, for each job the `job_output_dir`, here containing the **.twiss.tfs** f
 
 ## Checking for and Resubmitting Failed Jobs
 
-To see if and which Jobs have failed, the same command as above can be rerun using `resume_jobs` and `dryrun` flags (or use them as parameters set to `False`).
+To see if and which Jobs have failed, the same command as above can be rerun using `resume_jobs` and `dryrun` flags (or use them as parameters set to `True`).
 By default, Jobs are classified as successful if the specified `job_output_dir` is present.
 <!-- TODO add example script output -->
 
