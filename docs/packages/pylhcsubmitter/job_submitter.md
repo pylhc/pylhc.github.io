@@ -65,7 +65,7 @@ In the following examples, we will perform a tune sweep using a `MAD-X` mask.
 The simulations will be parametrized for both beams over a range of tunes in each plane.
 Parameters in the template script (see below) are indicated in the `%(PARAMETER)s` format. 
 
-??? "The `my_madx.mask` template file"
+??? example "The `my_madx.mask` Template File"
     ```fortran
     ! ----- Create Soft Links and Directories ----- !
     option, warn,info;
@@ -164,18 +164,6 @@ The jobs are then started by calling the submitter on this file from the command
 python -m pylhc_submitter.job_submitter --entry_cfg config.ini
 ```
 
-### Starting Studies from a Command Line Call
-
-!!! warning "Users Beware!"
-    While doing so is possible, using a simple command line call is discouraged.
-    As you will see below, this method is much less clear and reproducible.
-
-It is possible to skip the creation of a Python or a **config.ini** file completely when submitting, by providing each parameters as a flag at the command line.
-The above examples would be done through a (very lengthy) command line call as below:
-```bash
-python -m pylhc_submitter.job_submitter --executable madx --mask my_madx.mask --working_directory /afs/cern.ch/work/u/username/study.tune_sweep --replace_dict "{'BEAM': [1, 2], 'TUNEX': [62.3, 62.302, 62.304, 62.306, 62.308, 62.31, 62.312, 62.314, 62.316, 62.318, 62.32], 'TUNEY': [60.31, 60.312, 60.314, 60.316, 60.318, 60.32, 60.322, 60.324, 60.326, 60.328, 60.33]}" --jobid_mask b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s --jobflavour workday
-```
-
 ### Starting Studies with Mask Strings
 
 Instead of using mask file, `job_submitter` can also use a mask string as input for the executable.
@@ -192,16 +180,10 @@ run_local=True
 num_processes=4
 ```
 
-??? warning "From the Command Line"
-    The same can be achieved via a command line call:
-    ```bash
-    python -m pylhc_submitter.job_submitter --executable expr --mask "%(SUMMAND1)s + %(SUMMAND2)s > Outputdata/result.txt" --working_directory /afs/cern.ch/work/u/username/study.addition --replace_dict "{'SUMMAND1': [1, 2, 3, 4], 'SUMMAND2': [6, 7, 8, 9]} --run_local --num_processes 4
-    ```
-
 Note that again, the user has to take care that the required results are saved in the correct `job_output_dir`.
 The `mask` string can be a more complicated multiline string, executing multiple commands.
 
-??? info "Example Multiline Config File"
+??? example "Example Multiline Config File"
     ```
     [DEFAULT]
     executable=None
@@ -212,6 +194,18 @@ The `mask` string can be a more complicated multiline string, executing multiple
     run_local=True
     num_processes=4
     ```
+
+### Starting Studies from the Command Line
+
+!!! warning "Users Beware!"
+    While doing so is possible, using a simple command line call is discouraged.
+    As you will see below, this method is much less clear and reproducible.
+
+It is possible to skip the creation of a Python or a **config.ini** file completely when submitting, by providing each parameters as a flag at the command line.
+The above examples would be done through a (very lengthy) command line call as below:
+```bash
+python -m pylhc_submitter.job_submitter --executable madx --mask my_madx.mask --working_directory /afs/cern.ch/work/u/username/study.tune_sweep --replace_dict "{'BEAM': [1, 2], 'TUNEX': [62.3, 62.302, 62.304, 62.306, 62.308, 62.31, 62.312, 62.314, 62.316, 62.318, 62.32], 'TUNEY': [60.31, 60.312, 60.314, 60.316, 60.318, 60.32, 60.322, 60.324, 60.326, 60.328, 60.33]}" --jobid_mask b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s --jobflavour workday
+```
 
 ## What Happens After Submitting
 
@@ -242,7 +236,6 @@ The output should look something like this:
 
 When all jobs are done running, the `htcondor.<jobid>.err`, `htcondor.<jobid>.log` and `htcondor.<jobid>.out` files for the respective job are transferred back to the appropriate directories.
 Finally, for each job the `job_output_dir`, here containing the calculated **.twiss.tfs** file, will be transfered back as well, ready for post-processing.
-
 
 ## Checking for Failed Jobs
 
