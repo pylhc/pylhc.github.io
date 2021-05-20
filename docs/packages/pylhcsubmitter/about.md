@@ -29,9 +29,9 @@ pip install /path/to/submitter
 
 After installing, codes can be run with either
 
-- from the command line with arguments: `python -m pylhc.SCRIPT --FLAG ARGUMENT`;
-- from the command line providing a config file: `python -m pylhc.SCRIPT --entry_cfg config.ini`;
-- by calling the main function in a `python` script.
+- from the command line with arguments: `python -m pylhc_submitter.SCRIPT --FLAG ARGUMENT`;
+- from the command line providing a config file: `python -m pylhc_submitter.SCRIPT --entry_cfg config.ini`;
+- by calling the main function in a Python script.
 
 [repo]: https://github.com/pylhc/submitter
 [documentation]: https://pylhc.github.io/submitter/
