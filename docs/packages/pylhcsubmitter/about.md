@@ -4,8 +4,8 @@
 
 ## Functionality
 
-- [*Job Submitter*](job_submitter.md) - Allows to generate jobs based on a templates and submit them to HTCondor.
-- [*AutoSix*](autosix.md) - Allows to generate and submit parametric SixDesk studies easily.
+- [*Job Submitter*](job_submitter.md) - Generating jobs based on a templates file and submitting them to HTCondor.
+- [*AutoSix*](autosix.md) - Generating and submitting parametric SixDesk studies easily.
 
 ## Documentation
 

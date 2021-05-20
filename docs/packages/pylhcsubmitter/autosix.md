@@ -1,77 +1,11 @@
 # AutoSix
 
-[See the docs][documentation] for a detailed code description.
-
-## Description
-
-`AutoSix` is a wrapper to automatically perform the necessary setup and steps needed for `SixDesk` use.
-
-The functionality is similar to the `pylhc_submitter.job_submitter` in that the inner product of a `replace_dict` is used to automatically create a set of job-directories to gather the data.
-To avoid conflicts, each of these job-directories is a `SixDesk` workspace, meaning there can be only one study per directory.
-
-The `replace_dict` contains variables for your mask as well as variables for the SixDesk environment.
-See the description of `replace_dict` below.
-
-In any other way, these *special* variables behave like normal variables and can also be inserted in your mask.
-They are also looped over in the same manner as any other variable (if given as a list).
-
-!!! tip "Recommended Reading"
-    It is recommended to have read the section about [job submitter](job_submitter.md) before this one, as these share many similarities and details are explained in the previous page.
-
-??? info "Detailed Arguments of the Script"
-    *--Required--*
-    
-    - **mask** *(PathOrStr)*: Program mask to use
-    
-    - **replace_dict** *(DictAsString)*: Dict with keys of the strings to be replaced in the mask (required) as
-        well as the mask_sixdeskenv and mask_sysenv files in the sixdesk_tools
-        module. Required fields are TURNS, AMPMIN, AMPMAX, AMPSTEP,
-        ANGLES. Optional fields are RESUBMISSION, PLATFORM, LOGLEVEL,
-        FIRSTSEED, LASTSEED, ENERGY, NPAIRS, EMITTANCE, DIMENSIONS, WRITEBINS.
-        These keys can also be used in the mask if needed. The values of this
-        dict are lists of values to replace these or single entries.
-    
-    - **working_directory** *(PathOrStr)*: Directory where data should be put
-    
-    *--Optional--*
-    
-    - **da_turnstep** *(int)*: Step between turns used in DA-vs-Turns plot.
-        default: ``100``
-    
-    - **executable** *(PathOrStr)*: Path to executable.
-        default: ``/afs/cern.ch/user/m/mad/bin/madx``
-    
-    - **apply_mad6t_hacks**: Apply two hacks: Removes '<' in binary call and
-        ignore the check for 'Twiss fail' in the submission file.
-        This hack is needed in case this check greps the wrong lines,
-        e.g. in madx- comments. USE WITH CARE!!
-        action: ``store_true``
-    
-    - **jobid_mask** *(str)*: Mask to name jobs from replace_dict
-    
-    - **python3** *(PathOrStr)*: Path to python to use with sixdb (python3 with requirements
-        installed).
-        default: ``python3``
-    
-    - **python2** *(PathOrStr)*: Path to python to use with run_six.sh (python2 with requirements installed).
-        ONLY THE PATH TO THE DIRECTORY OF THE `python` BINARY IS NEEDED!
-        And it can't be an Anaconda Distribution.
-        default: None (uses the first `python` in path)
-    
-    - **resubmit**: Resubmits if needed.
-        action: ``store_true``
-    
-    - **ssh** *(str)*: Run htcondor from this machine via ssh (needs access to the
-        `working_directory`)
-    
-    - **stop_workspace_init**: Stops the workspace creation before initialization, so one can make
-        manual changes.
-        action: ``store_true``
-    
-    - **unlock**: Forces unlocking of folders.
-        action: ``store_true``
+[See the API documentation][documentation] for a detailed description of the code and the different parameters.
 
 ## Using AutoSix
+
+??? tip "Recommended Reading"
+    It is recommended to have read the section about [job submitter](job_submitter.md) before this one, as these share many similarities and details are explained in the previous page.
 
 The parametrizing of simulations and submission can be done very similarly to `job_submitter` through Python, also by calling the `main` function of `autosix` with the desired parameters.
 
@@ -178,4 +112,4 @@ It will pick up where it left as written in the **stages\_completed.txt** file.
     It is used for the basic polar plotting in the `post_process` stage, but provides more customization features if called manually.
     Details on its use can be found at the `PyLHC Submitter` API documentation.
 
-[documentation]: https://pylhc.github.io/submitter/entrypoints/submitter.html
+[documentation]: https://pylhc.github.io/submitter/entrypoints/submitter.html#autosix
