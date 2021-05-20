@@ -162,6 +162,18 @@ The jobs are then started by calling the submitter on this file from the command
 python -m pylhc_submitter.job_submitter --entry_cfg config.ini
 ```
 
+### Starting Studies from the Command Line
+
+!!! warning "Users Beware"
+    While doing so is possible, using a simple command line call is discouraged.
+    As you will see below, this method is much less clear and reproducible.
+
+It is possible to skip the creation of a Python or a **config.ini** file completely when submitting, by providing each parameters as a flag at the command line.
+The above examples would be done through a (very lengthy) command line call as below:
+```bash
+python -m pylhc_submitter.job_submitter --executable madx --mask my_madx.mask --working_directory /afs/cern.ch/work/u/username/study.tune_sweep --replace_dict "{'BEAM': [1, 2], 'TUNEX': [62.3, 62.302, 62.304, 62.306, 62.308, 62.31, 62.312, 62.314, 62.316, 62.318, 62.32], 'TUNEY': [60.31, 60.312, 60.314, 60.316, 60.318, 60.32, 60.322, 60.324, 60.326, 60.328, 60.33]}" --jobid_mask b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s --jobflavour workday
+```
+
 ### Starting Studies with Mask Strings
 
 Instead of using a mask file, `job_submitter` can also use a string as input for the executable.
@@ -192,18 +204,6 @@ The `mask` string can be a more complicated multiline string, executing multiple
     run_local=True
     num_processes=4
     ```
-
-### Starting Studies from the Command Line
-
-!!! warning "Users Beware"
-    While doing so is possible, using a simple command line call is discouraged.
-    As you will see below, this method is much less clear and reproducible.
-
-It is possible to skip the creation of a Python or a **config.ini** file completely when submitting, by providing each parameters as a flag at the command line.
-The above examples would be done through a (very lengthy) command line call as below:
-```bash
-python -m pylhc_submitter.job_submitter --executable madx --mask my_madx.mask --working_directory /afs/cern.ch/work/u/username/study.tune_sweep --replace_dict "{'BEAM': [1, 2], 'TUNEX': [62.3, 62.302, 62.304, 62.306, 62.308, 62.31, 62.312, 62.314, 62.316, 62.318, 62.32], 'TUNEY': [60.31, 60.312, 60.314, 60.316, 60.318, 60.32, 60.322, 60.324, 60.326, 60.328, 60.33]}" --jobid_mask b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s --jobflavour workday
-```
 
 ## What Happens After Submitting
 
