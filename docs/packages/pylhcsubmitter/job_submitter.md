@@ -13,49 +13,49 @@ Parameters in the template script (see below) are indicated in the `%(PARAMETER)
 
 ??? example "The `my_madx.mask` Template File"
     ```fortran
-    ! ----- Create Soft Links and Directories ----- !
-    option, warn,info;
+    ! ----- Create Symlinks to Resources ----- !
+    option, warn, info;
     system, "mkdir Outputdata";
     system, "ln -fns /afs/cern.ch/eng/lhc/optics/V6.503 db5";
     system, "ln -fns /afs/cern.ch/eng/lhc/optics/SLHCV1.0 slhc";
     system, "ln -fns /afs/cern.ch/eng/lhc/optics/runII/2018 optics2018";
-    !option, -echo,warn,-info;
+    !option, -echo, warn, -info;
 
     ! ----- Make macros available  ----- !
-    call,file="optics2018/toolkit/macro.madx";
+    call, file="optics2018/toolkit/macro.madx";
 
     ! ----- Beam Options  ----- !
-    mylhcbeam=%(BEAM)s; ! Will be replaced by values given to the submitter
-    qxinit=%(TUNEX)s; ! Will be replaced by values given to the submitter
-    qyinit=%(TUNEY)s; ! Will be replaced by values given to the submitter
-    emittance=7.29767146889e-09;
-    Nb_0=1.0e10;   ! number of particles in beam
+    mylhcbeam=%(BEAM)s;  ! Will be replaced by values given to the submitter
+    qxinit=%(TUNEX)s;    ! Will be replaced by values given to the submitter
+    qyinit=%(TUNEY)s;    ! Will be replaced by values given to the submitter
+    emittance=3.75e-06;
+    n_part=1.0e10;
 
     ! ----- Set up Lattice ----- !
-    call,file="optics2018/lhc_as-built.seq"; 
+    call, file="optics2018/lhc_as-built.seq";  ! LHC machine definition
 
     ! -----  Definine the optics ----- !
-    call, file="optics2018/PROTON/opticsfile.1";         ! Basic optics setup (injection optics)
-    call, file="optics2018/PROTON/opticsfile.22_ctpps2"; ! Redefine Optics to Round 30cm collision optics
+    call, file="optics2018/PROTON/opticsfile.22_ctpps2";  ! Optics to Round 30cm collision optics
 
-    beam, sequence=lhcb1, bv= 1, energy=NRJ, particle=proton, npart=Nb_0, kbunch=1, ex=emittance,ey=emittance;
-    beam, sequence=lhcb2, bv=-1, energy=NRJ, particle=proton, npart=Nb_0, kbunch=1, ex=emittance,ey=emittance;
+    ! ----- Create Beams ----- !
+    beam, sequence=lhcb1, bv= 1, energy=NRJ, particle=proton, npart=n_part, kbunch=1, ex=emittance, ey=emittance;
+    beam, sequence=lhcb2, bv=-1, energy=NRJ, particle=proton, npart=n_part, kbunch=1, ex=emittance, ey=emittance;
 
-    ! ----- Tune Matching and Output ----- !
+    ! ----- Tune Matching ----- !
     use, sequence=lhcb%(BEAM)s;
-
-    match,chrom;
-        global, q1=qxinit, q2=qyinit;
-        vary,   name=dQx.b%(BEAM)s, step=1.0E-7 ;
-        vary,   name=dQy.b%(BEAM)s, step=1.0E-7 ;
-        lmdif,  calls=100, tolerance=1.0E-21;
+    match, chrom;
+        global, q1=62.31, q2=60.32;
+        vary, name=dQx.b%(BEAM)s, step=1.0E-7;  ! Will be replaced by values given to the submitter
+        vary, name=dQy.b%(BEAM)s, step=1.0E-7;  ! Will be replaced by values given to the submitter
+        lmdif, calls=100, tolerance=1.0E-21;
     endmatch;
 
+    ! ----- Output Twiss ----- !
     select, flag=twiss, clear;
     select, flag=twiss, pattern="BPM", column=name,s,x,y,betx,bety,alfx,alfy,dx,dpx,mux,muy;
-    select, flag=twiss, pattern="M",   column=name,s,x,y,betx,bety,alfx,alfy,dx,dpx,mux,muy;
-    select, flag=twiss, pattern="IP",  column=name,s,x,y,betx,bety,alfx,alfy,dx,dpx,mux,muy;
-    twiss, chrom, file='Outputdata/b%(BEAM)s.twiss.tfs'; ! Will be replaced by values given to the submitter
+    select, flag=twiss, pattern="M", column=name,s,x,y,betx,bety,alfx,alfy,dx,dpx,mux,muy;
+    select, flag=twiss, pattern="IP", column=name,s,x,y,betx,bety,alfx,alfy,dx,dpx,mux,muy;
+    twiss, chrom, file='Outputdata/b%(BEAM)s.twiss.tfs';  ! Will be replaced by values given to the submitter
 
     ! ----- Cleanup Symlinks ----- !
     system, "unlink db5";
@@ -65,27 +65,32 @@ Parameters in the template script (see below) are indicated in the `%(PARAMETER)
 
 ### Starting Studies from Python
 
+??? success "Recommended Method"
+    Starting studies from Python is the recommended method, especially with a high number of parameters.
+    As we will see later on, other methods methods require all parameter values to be written down while the pythonic way allows for an easier and clearer definition of the parameter space. 
+
 The parametrizing of simulations and submission to `HTCondor` through Python is as simple as calling the `main` function of the submitter with the desired parameters.
 See below:
 ```python
-from pylhc_submitter.job_submitter import main as htcondor_submit
 import numpy as np
+from pylhc_submitter.job_submitter import main as htcondor_submit
 
 if __name__ == "__main__":
     htcondor_submit(
-        executable="madx",  # points to the latest MAD-X on afs
-        mask="my_madx.mask",  # the file to execute MAD-X on
-        replace_dict=dict(  # parameters to look for and replace in the file
-            BEAM=[1, 2], 
-            TUNEX=np.linspace(62.3, 62.32, 11).tolist(), 
+        executable="madx",  # default pointing to the latest MAD-X on afs
+        mask="my_madx.mask",  # template to fill and execute MAD-X on
+        replace_dict=dict(  # parameters to look for and replace in the template file
+            BEAM=[1, 2],
+            TUNEX=np.linspace(62.3, 62.32, 11).tolist(),
             TUNEY=np.linspace(60.31, 60.33, 11).tolist(),
         ),
-        jobid_mask="b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s",  # naming of the files
+        jobid_mask="b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s",  # naming of the submitted jobfiles
         working_directory="/afs/cern.ch/work/u/username/study.tune_sweep",  # outputs
-        jobflavour="workday"
+        jobflavour="workday",  # htcondor flavour
     )
 ```
 
+---
 ### Starting Studies from a Config File
 
 The same can also be achieved by specifying the previously called parameters in a **config.ini** file.
@@ -110,18 +115,20 @@ The jobs are then started by calling the submitter on this file from the command
 python -m pylhc_submitter.job_submitter --entry_cfg config.ini
 ```
 
+---
 ### Starting Studies from the Command Line
 
 !!! warning "Users Beware"
     While doing so is possible, using a simple command line call is discouraged.
-    As you will see below, this method is much less clear and reproducible.
+    As we will see in the example below, this method is not as clear as the previous ones, and prone to errors.
 
-It is possible to skip the creation of a Python or a **config.ini** file completely when submitting, by providing each parameters as a flag at the command line.
+It is possible to skip the creation of a Python or a **config.ini** file completely when submitting, by providing parameters through the `replace_dict` flag at the command line.
 The above examples would be done through a (very lengthy) command line call as below:
 ```bash
 python -m pylhc_submitter.job_submitter --executable madx --mask my_madx.mask --working_directory /afs/cern.ch/work/u/username/study.tune_sweep --replace_dict "{'BEAM': [1, 2], 'TUNEX': [62.3, 62.302, 62.304, 62.306, 62.308, 62.31, 62.312, 62.314, 62.316, 62.318, 62.32], 'TUNEY': [60.31, 60.312, 60.314, 60.316, 60.318, 60.32, 60.322, 60.324, 60.326, 60.328, 60.33]}" --jobid_mask b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s --jobflavour workday
 ```
 
+---
 ### Starting Studies with Mask Strings
 
 Instead of using a mask file, `job_submitter` can also use a string as input for the executable.
@@ -153,6 +160,7 @@ The `mask` string can be a more complicated multiline string, executing multiple
     num_processes=4
     ```
 
+---
 ## What Happens After Submitting
 
 When submitting, the `job_submitter` determines jobs to be submitted to `HTCondor` through the inner product of the `replace_dict`: in our example each possible combination of the 3 given parameters.
@@ -169,13 +177,14 @@ A folder structure is created in the given `working directory`, in which one wil
     - A `ShellScript` **<Jobid>.sh**, which contains commands to create the `job_output_dir` and the `madx` command to run the script,
     - A `JobFile` which is the original `mask`, parameter values filled in.
 
-!!! tip "Dry Runs"
-    In case one runs the submitter with the `dryrun` flag, the execution stops here and files are accessible, but nothing is sent to the `HTCondor` scheduler.
+??? tip "Dry Runs"
+    In case one runs the submitter with the `dryrun` flag, the execution stops here and prepared files are accessible, but nothing is sent to the `HTCondor` scheduler.
+    One can use this option to perform a thorough check before using `condor_submit` on the created submission file **queuehtc.sub**.
 
-!!! warning "Number of Jobs"
+??? warning "Number of Jobs"
     As `job_submitter` creates a job for each combination in the inner product of the `replace_dict` parameters, the number of jobs can easily get high.
     In our example case, we are submitting `beam * tunex * tuney = 2 * 11 * 11 = 242` jobs.
-    It is worth noting that currently the max. number of jobs to be submitted to `HTCondor` is set to `100k`.
+    It is worth noting that currently the maximum number of jobs to be submitted to `HTCondor` is set to `100k`.
 
 After submitting our tune sweep studies, we can check the status of our jobs via the `condor_q` (unless running locally).
 The output should look something like this:
