@@ -4,7 +4,7 @@ This section of the website goes over our computing and analysis softwares, whic
 
 Our main analysis software exist in two versions: `Beta-Beat.src` for Python 2, and its replacement `omc3` for Python 3.
 Development of the `Beta-Beat.src` package is limited to bug fixes, and new features are integrated directly into `omc3`.
-The `pylhc` package provides useful tools and scripts for our day-to-day work, and our other packages provide specific I/O and entrypoint utilities for our codes. 
+The `pylhc` package provides useful tools and scripts for our day-to-day work, and our other packages provide specific I/O and entrypoint utilities for our codes.
 
 All our Python codes, including legacy repositories, can be found on the [PyLHC organisation][pylhc_github]{target=_blank}'s page on Github.
 
@@ -16,6 +16,8 @@ The OMC team develops and maintains the following packages:
   _frequency analysis, optics computation from turn-by-turn data, corrections calculations and results plotting._
 - **PyLHC-Tools** (Python 3.7+): [:fontawesome-solid-question-circle:](pylhc/about.md) [:fontawesome-brands-github:][pylhc]{target=\_blank} [:fontawesome-solid-book:][pylhc_doc]{target=\_blank} [:fontawesome-solid-cube:][pylhc_pypi]{target=\_blank} <br>
   _useful OMC-related scripts._
+- **PyLHC-Submitter** (Python 3.7+): [:fontawesome-brands-github:][pylhc_submitter]{pylhcsubmitter/about.md} [:fontawesome-solid-book:][pylhc_submitter_doc]{target=\_blank} [:fontawesome-solid-cube:][pylhc_submitter_pypi]{target=\_blank} <br>
+  _Wrapper for HTCondor Job submission._
 - **Optics-Functions** (Python 3.6+): [:fontawesome-brands-github:][optics_functions]{target=\_blank} [:fontawesome-solid-book:][optics_functions_doc]{target=\_blank} [:fontawesome-solid-cube:][optics_functions_pypi]{target=\_blank} <br>
   _calculate various beam optics functions from TFS-Dataframes._
 - **Example Study Scripts** (MAD-X): [:fontawesome-solid-question-circle:](mess/about.md) [:fontawesome-brands-github:][mess]{target=\_blank} <br>
@@ -29,7 +31,7 @@ The OMC team develops and maintains the following packages:
 - **Generic-Parser** (Python 3.6+): [:fontawesome-brands-github:][generic_parser]{target=\_blank} [:fontawesome-solid-book:][generic_parser_doc]{target=\_blank} [:fontawesome-solid-cube:][generic_parser_pypi]{target=\_blank} <br>
   _entrypoint argument parser functionality._
 
-[pylhc_github]: https://github.com/pylhc/ 
+[pylhc_github]: https://github.com/pylhc/
 [betabeatsrc]: https://github.com/pylhc/Beta-Beat.src
 [betabeatsrc_doc]: https://pylhc.github.io/Beta-Beat.src
 [omc3]: https://github.com/pylhc/omc3
@@ -42,11 +44,14 @@ The OMC team develops and maintains the following packages:
 [sdds_doc]: https://pylhc.github.io/sdds
 [generic_parser]: https://github.com/pylhc/generic_parser
 [generic_parser_doc]: https://pylhc.github.io/generic_parser
+[pylhc_submitter]: https://github.com/pylhc/submitter
+[pylhc_submitter_doc]: https://pylhc.github.io/submitter/
 [mess]: https://github.com/pylhc/MESS
 [pylhc_pypi]: https://pypi.org/project/pylhc/
 [sdds_pypi]: https://pypi.org/project/sdds/
 [tfs_pypi]: https://pypi.org/project/tfs-pandas/
 [generic_parser_pypi]: https://pypi.org/project/generic-parser/
+[pylhc_submitter_pypi]: https://pypi.org/project/pylhc-submitter/
 [optics_functions]: https://github.com/pylhc/optics_functions
 [optics_functions_doc]: https://pylhc.github.io/optics_functions
 [optics_functions_pypi]: https://pypi.org/project/optics-functions/

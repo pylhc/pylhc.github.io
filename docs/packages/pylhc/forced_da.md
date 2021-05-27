@@ -1,6 +1,5 @@
 # Forced Dynamic Aperture Analysis
 
-
 !!! todo
     Description of a typical use-case, with easy examples for first-timers.
 
@@ -8,9 +7,7 @@
 
 Top-level script to run the forced DA analysis, following the procedure described in [Felix Carliers Forced DA Paper][CarlierForcedDA2019]{target=_blank}.
 
-
 Arguments:
-
 
 *--Required--*
 
@@ -24,7 +21,6 @@ Arguments:
 - **plane** *(str)*: Plane of the kicks.
   Flags: **['-p', '--plane']**
   Choices: ``['X', 'Y']``
-
 
 *--Optional--*
 
@@ -64,8 +60,6 @@ Arguments:
   Default: ``['standard']``
 - **manual_style** *(DictAsString)*: Additional style rcParameters which update the set of predefined ones.
   Default: ``{}``
-
-
 
 [documentation]: https://pylhc.github.io/PyLHC/entrypoints/forced_da_analysis.html
 [CarlierForcedDA2019]: https://journals.aps.org/prab/pdf/10.1103/PhysRevAccelBeams.22.031002

@@ -18,21 +18,20 @@
 ### GUI Links
 
 === "Beta-Beat"
-    
+
     * [Beta-Beat Gitlab][betabeat_gui_gitlab]{target=_blank .cern_login}
     * [Jira Bugtracker][jira_bugtracker]{target=_blank .cern_login}
     * [Artifactory][betabeat_artifactory]{target=_blank .cern_internal}
 
 === "Kmod"
-    
+
     * [Kmod Gitlab][kmod_gui_gitlab]{target=_blank .cern_login}
     * [Artifactory][kmod_artifactory]{target=_blank .cern_internal}
-    
+
 === "Multiturn"
 
     * [Multiturn Gitlab][multiturn_gitlab]{target=_blank .cern_login}
     * [Artifactory][multiturn_artifactory]{target=_blank .cern_internal}
-
 
 ### JWS Programs
 

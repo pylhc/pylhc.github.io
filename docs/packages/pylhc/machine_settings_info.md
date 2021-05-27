@@ -5,7 +5,6 @@
 
 [See the docs][documentation] for a detailed code description.
 
-
 Prints an overview over the machine settings at a provided given time, or the current settings if
 no time is given.
 
@@ -29,6 +28,5 @@ Can be run from command line, parameters as given in :meth:`print_machine_settin
                           Accelerator name.
     --out OUT, -o OUT     Output path.
 ```
-
 
 [documentation]: https://pylhc.github.io/PyLHC/entrypoints/machine_settings_info.html 

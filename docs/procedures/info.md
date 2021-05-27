@@ -27,7 +27,7 @@ To mark a task as finished, just click on the checkbox next to it!
     Plan: Quick outline of the steps to be performed and general goals.
     ```
     
-    A potental summary entry at the end of a shift may look like this:
+    A potential summary entry at the end of a shift may look like this:
 
     ```
     Title
