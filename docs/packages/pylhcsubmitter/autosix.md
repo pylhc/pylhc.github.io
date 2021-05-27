@@ -5,7 +5,7 @@
 ## Using AutoSix
 
 ??? tip "Recommended Reading"
-    It is recommended to have read the section about [job submitter](job_submitter.md) before this one, as these share many similarities and details are explained in the previous page.
+    It is recommended to have read the section about the [job submitter](job_submitter.md) before this one, as these share many similarities and details are explained in the previous page.
 
 The parametrizing of simulations and submission can be done very similarly to `job_submitter` through Python, also by calling the `main` function of `autosix` with the desired parameters.
 
@@ -100,12 +100,9 @@ Because the stages after `submit_mask` and `submit_sixtrack` need only be ran af
 To have `AutoSix` continue its work, check your scheduler via `condor_q` and run your script again after everything is done.
 It will pick up where it left as written in the **stages\_completed.txt** file.
 
-!!! tip
+!!! tip "Custom sixdesk envs"
     While most studies should be fine with the input options given, there is the possibility to manually adapt the **sixdeskenv** and **sysenv** files before workspace initialization by using the `stop_workspace_init` flag.
     This will not reset automatically and one will have to remove the switch again to continue.
-    As this is a bit of a workaround, it might be easier to define a new variable in the **pylhc_submitter.sixdesk_tools.mask_sixdeskenv** file and put its current default into **pylhc_submitter.constants.autosix.SIXENV_DEFAULT**.
-    One can then use the `replace_dict` to change its value.
-    This is left open as a task for the inspired user to implement, as only he knows which variable he or she needs to change.
 
 ??? example "Polar Plots"
     For the creation of polar plots, the function `pylhc_submitter.sixdesk_tools.post_process_da.plot_polar` is available.
