@@ -105,7 +105,7 @@ Either fix the permissions on `afs` or ask someone to do so for you.
 [jws_confluence]: https://wikis.cern.ch/display/DVTLS/jws+-+a+replacement+for+javaws
 [jws]: https://wikis.cern.ch/display/DVTLS/jws+-+a+replacement+for+javaws
 
-[mounting_resources]: ../resources/howto/setup.md/#mounting-tn-resources-on-gn-machines
-[connect_gpn]: ../resources/howto/teleworking.md/#accessing-cern-internal-websites
-[sshuttle_method]: ../resources/howto/setup.md/#running-guis-locally
-[jws_calls]: ../resources/links.md/#jws-programs
+[mounting_resources]: ../../resources/howto/setup/#mounting-tn-resources-on-gn-machines
+[connect_gpn]: ../../resources/howto/teleworking/#accessing-cern-internal-websites
+[sshuttle_method]: ../../resources/howto/setup/#running-guis-locally
+[jws_calls]: ../../resources/links/#jws-programs
