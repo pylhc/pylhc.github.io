@@ -88,8 +88,8 @@ Either fix the permissions on `afs` or ask someone to do so for you.
 *[LSA]: LHC Software Architecture
 *[GPN]: General Purpose Network
 
-[prod_bbgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-betabeating/PRO/BetaBeating-Control-3t.jnlp
-[dev_bbgui]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-betabeating/PRO/BetaBeating-Control-3t.jnlp
+[prod_bbgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
+[dev_bbgui]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
 [releases_bbgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating/
 
 
