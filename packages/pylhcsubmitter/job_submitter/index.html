@@ -79,7 +79,7 @@ jobflavour=&quot;workday&quot;
 executable=&quot;expr&quot;
 mask=&quot;%(SUMMAND1)s + %(SUMMAND2)s &gt; Outputdata/result.txt&quot;
 working_directory=&quot;/afs/cern.ch/work/u/username/study.addition&quot;
-replace_dict={&quot;SUMMAND1&quot;= [1, 2, 3, 4], &quot;SUMMAND2&quot;= [6, 7, 8, 9]}
+replace_dict={&quot;SUMMAND1&quot;: [1, 2, 3, 4], &quot;SUMMAND2&quot;: [6, 7, 8, 9]}
 run_local=True
 num_processes=4
 </code></pre></div></p> <p>Note that again, the user has to take care that the required results are saved in the correct <code>job_output_dir</code>. The <code>mask</code> string can be a more complicated multiline string, executing multiple commands.</p> <details class=example><summary>Example Multiline Config File</summary><div class=highlight><pre><span></span><code>[DEFAULT]
