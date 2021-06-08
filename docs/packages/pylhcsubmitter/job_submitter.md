@@ -220,4 +220,4 @@ To resubmit the failed jobs to `HTCondor`, simply rerun the call and omit the `d
     This is only recommended for short jobs and for a small number of jobs, as the stress on your machine can be intense.
     The `num_processes` option allows to specify how many concurrent processes will run, by default 4.
 
-[documentation]: https://pylhc.github.io/submitter/entrypoints/submitter.html
+[documentation]: https://pylhc.github.io/submitter/entrypoints/job_submitter.html
