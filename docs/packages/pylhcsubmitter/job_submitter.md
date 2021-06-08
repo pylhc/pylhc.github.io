@@ -140,7 +140,7 @@ A simple mask string call using the **config.ini** input to the pylhc-submitter 
 executable="expr"
 mask="%(SUMMAND1)s + %(SUMMAND2)s > Outputdata/result.txt"
 working_directory="/afs/cern.ch/work/u/username/study.addition"
-replace_dict={"SUMMAND1"= [1, 2, 3, 4], "SUMMAND2"= [6, 7, 8, 9]}
+replace_dict={"SUMMAND1": [1, 2, 3, 4], "SUMMAND2": [6, 7, 8, 9]}
 run_local=True
 num_processes=4
 ```
