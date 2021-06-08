@@ -7,7 +7,7 @@ site_description: >-
   Documentation pages for the OMC Team at CERN. Content includes documentation
   on our activities, workflows and software as well as resources for members.
 site_author: PyLHC/OMC-Team
-site_url: 'pylhc.github.io'
+site_url: https://pylhc.github.io
 use_directory_urls: true
 
 
