@@ -14,6 +14,7 @@
 * [OMC Mattermost][omc_mattermost]{target=_blank .cern_login}
 * [Meetings (OMC Team Indico)][omc_indico]{target=_blank}
 * [Rogelio's Website][roro_website]{target=_blank}
+* [OMC Logos][omc_logos]{target=_blank}
 
 ### GUI Links
 
@@ -151,6 +152,7 @@
 [omc_mattermost]: https://mattermost.web.cern.ch/be-dep/channels/omc-team
 [omc_indico]: https://indico.cern.ch/category/5986/
 [roro_website]: https://rtomas.web.cern.ch/rtomas/
+[omc_logos]: https://github.com/pylhc/pylhc.github.io/tree/master/docs/assets/logos
 
 [betabeat_gui_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating
 [jira_bugtracker]: https://its.cern.ch/jira/projects/BBGUI/
