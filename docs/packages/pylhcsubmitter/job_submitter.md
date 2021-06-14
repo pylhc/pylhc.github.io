@@ -26,8 +26,8 @@ Parameters in the template script (see below) are indicated in the `%(PARAMETER)
 
     ! ----- Beam Options  ----- !
     mylhcbeam=%(BEAM)s;  ! Will be replaced by values given to the submitter
-    qxinit=%(TUNEX)s;    ! Will be replaced by values given to the submitter
-    qyinit=%(TUNEY)s;    ! Will be replaced by values given to the submitter
+    qx=%(TUNEX)s;        ! Will be replaced by values given to the submitter
+    qy=%(TUNEY)s;        ! Will be replaced by values given to the submitter
     emittance=3.75e-06;
     n_part=1.0e10;
 
@@ -44,7 +44,7 @@ Parameters in the template script (see below) are indicated in the `%(PARAMETER)
     ! ----- Tune Matching ----- !
     use, sequence=lhcb%(BEAM)s;
     match, chrom;
-        global, q1=62.31, q2=60.32;
+        global, q1=qx, q2=qy;
         vary, name=dQx.b%(BEAM)s, step=1.0E-7;  ! Will be replaced by values given to the submitter
         vary, name=dQy.b%(BEAM)s, step=1.0E-7;  ! Will be replaced by values given to the submitter
         lmdif, calls=100, tolerance=1.0E-21;
@@ -55,7 +55,7 @@ Parameters in the template script (see below) are indicated in the `%(PARAMETER)
     select, flag=twiss, pattern="BPM", column=name,s,x,y,betx,bety,alfx,alfy,dx,dpx,mux,muy;
     select, flag=twiss, pattern="M", column=name,s,x,y,betx,bety,alfx,alfy,dx,dpx,mux,muy;
     select, flag=twiss, pattern="IP", column=name,s,x,y,betx,bety,alfx,alfy,dx,dpx,mux,muy;
-    twiss, chrom, file='Outputdata/b%(BEAM)s.twiss.tfs';  ! Will be replaced by values given to the submitter
+    twiss, chrom, file="Outputdata/b%(BEAM)s.twiss.tfs";  ! Will be replaced by values given to the submitter
 
     ! ----- Cleanup Symlinks ----- !
     system, "unlink db5";
