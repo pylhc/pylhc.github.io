@@ -19,6 +19,7 @@
 
 ### Coupling Related
 
+* Tilting triplets to correct local coupling to operate without MQSX.
 * Switching off MCS and main sextupoles in one arc to evaluate possible (systematic) vertical or horizontal misalignment of dipoles by measuring coupling and beta-beating during the b3 decay.
 In a previous MD there was a quadratic coupling increase due to the orbit bump in the arc (maybe the one without MS, tbc).
 * Crazy MD for this, could be shifting the edge of some dipoles up to see change in coupling.
