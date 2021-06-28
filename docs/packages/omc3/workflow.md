@@ -1,6 +1,6 @@
 # OMC3 Software Workflow
 
-## The OMC3 Analysis Workflow
+## The Analysis Workflow
 
 A typical workflow with `omc3` consists in performing analysis of measurement or simulation files, and eventually calculating corrections to apply.
 While `omc3` provides python modules to handle the different aspects of these tasks, it also provides entrypoint scripts to be called from the commandline.
@@ -53,46 +53,6 @@ To use them, refer to the [converter's API documentation][tbt_converter].
 The converter will create new files with the `.sdds` suffix appended to the original filename.
 In our case, a `trackone.sdds` file will be created.
 
-## Frequency Analysis
-
-Once measurement or simulation is in the appropriate format, the first step as seen in the table above consists in a harmonic analysis of the data.
-To do so, `omc3` provides the `hole_in_one` entrypoint script, which will perform harmonic analysis of the data when provided with the `--harpy` flag.
-
-The script provides options involved in both data cleaning and parameter tweaking for the harmonic analysis, which is useful when you have relevant information about your measurements. 
-To use these, refer to the `Harpy Kwargs` in the [hole_in_one API documentation][hole_in_one_harpy].
-
-In our example we will leave these to their default values to keep the analysis simple, and that `harpy` outputs all the computed results.
-Running the frequency analysis then goes as:
-```bash
-python -m omc3.hole_in_one --harpy \
-    --files trackone.sdds \
-    --tbt_datatype lhc \
-    --turns 0 1023 \
-    --autotunes transverse \
-    --to_write lin spectra full_spectra bpm_summary \
-    --outputdir harpy_output
-```
-
-In the output directory, `harpy` will create TFS files with the results of the analysis for both BPMs good and identified bad BPMs.
-The filenames are determined by appending the appropriate suffixes to the entry files.
-
-!!! info "Bad BPMs"
-    BPMs are determined as bad or not depending on several options from the cleaning phase.
-    While these are given sensible defaults, one might need to tweak them manually depending on their measurement. 
-    Additionally, known bad BPMs can be given with the `--bad_bpms` flag.
-
-In the ooutput files, various properties are given in column form for each observation point.
-Running `ls harpy_output/` yields the following result:
-```bash
-trackone.sdds.ampsx		    trackone.sdds.freqsx
-trackone.sdds.ampsy		    trackone.sdds.freqsy
-trackone.sdds.bad_bpms_x	trackone.sdds.linx
-trackone.sdds.bad_bpms_y	trackone.sdds.liny
-```
-
-??? question "Column Nomenclature"
-    TODO: add a reference with the meaning of each column.
-
 ## Creating a Model
 
 In order to perform the optics analysis, one needs a model of the given machine to compare to.
@@ -125,14 +85,108 @@ Running `ls lhc_model/` yields:
 macros			twiss.dat		twiss_elements.dat
 ```
 
+## Frequency Analysis
+
+Once measurement or simulation is in the appropriate format, the first step as seen in the table above consists in a harmonic analysis of the data.
+To do so, `omc3` provides the `hole_in_one` entrypoint script, which will perform harmonic analysis of the data when provided with the `--harpy` flag.
+
+The script provides options involved in both data cleaning and parameter tweaking for the harmonic analysis, which is useful when you have relevant information about your measurements. 
+To use these, refer to the `Harpy Kwargs` in the [hole_in_one API documentation][hole_in_one_harpy].
+
+In our example we will leave these to their default values to keep the analysis simple, and that `harpy` outputs all the computed results.
+Running the frequency analysis then goes as:
+```bash
+python -m omc3.hole_in_one --harpy \
+    --files trackone.sdds \
+    --tbt_datatype lhc \
+    --turns 0 1023 \
+    --autotunes transverse \
+    --to_write lin spectra full_spectra bpm_summary \
+    --outputdir harpy_output
+```
+
+??? warning "Memory Requirements"
+    During frequency analysis, `harpy` makes use of zero padding (with by default $2^{20}$ zeros) to improve the accuracy of results.
+    In turn, the padded arrays become consequent and, coupled with a high number of observation points, processing will require a substantial amount of RAM - easily into the few GBs range.
+
+    When running on limiting hardware, one can change the amount of zero padding with the `--turn_bits` flag for `harpy`.
+    It is important however to remember that decreasing this number will reduce the accuracy of the results, since it increases the range between detected frequencies.
+    Refer to the [API documentation][hole_iin_one_harpy] for details that could help in determining which number to use.
+
+In the output directory, `harpy` will create TFS files with the results of the analysis for both good BPMs and identified bad BPMs.
+The filenames are determined by appending the appropriate suffixes to the entry files.
+
+!!! info "Bad BPMs"
+    If given `bpm_summary` for the `--to_write` flag (which is the case by default), `harpy` will output the `.bad_bpms_[xy]` files.
+    BPMs are determined as bad or not depending on several options from the cleaning phase.
+    While these are given sensible defaults, one might need to tweak them manually depending on their measurement. 
+    Additionally, known bad BPMs can be given with the `--bad_bpms` flag.
+
+In the output files, various properties are given in column form for each observation point.
+Running `ls harpy_output/` yields the following result:
+```bash
+trackone.sdds.ampsx		    trackone.sdds.freqsx
+trackone.sdds.ampsy		    trackone.sdds.freqsy
+trackone.sdds.bad_bpms_x	trackone.sdds.linx
+trackone.sdds.bad_bpms_y	trackone.sdds.liny
+```
+
+??? question "Column Nomenclature"
+    TODO: add a reference with the meaning of each column in the important files (the `.lin*` ones)
+
 ## Optics Analysis
 
 TODO: write this section.
+```bash
+python -m omc3.hole_in_one --optics \
+    --accel lhc \
+    --year 2018 \
+    --beam 1 \
+    --files harpy_output/trackone.sdds \
+    --model_dir lhc_model \
+    --compensation none \
+    --three_bpm_method \
+    --coupling_method 1 \
+    --outputdir measured_optics
+```
 
-!!! tip "Hole in One"
+TODO: explain why 3bpm_method (n_bpm needs errors).
+
+In the output files, various properties are given in column form for each observation point.
+Running `ls measured_optics/` yields the following result:
+```bash
+beta_amplitude_x.tfs	    kick_x.tfs		        phase_y.tfs
+beta_amplitude_y.tfs	    kick_y.tfs		        special_phase_x.tfs
+beta_phase_x.tfs	        measure_optics.log	    special_phase_y.tfs
+beta_phase_y.tfs	        orbit_x.tfs		        total_phase_x.tfs
+interaction_point_x.tfs	    orbit_y.tfs		        total_phase_y.tfs
+interaction_point_y.tfs	    phase_x.tfs
+```
+
+??? tip "Hole in One"
     The harmonic analysis and optics analysis don't necessarily have to be seperated steps.
     It is possible to run the `hole_in_one` entrypoint with both `--harpy` and `--optics` flags, even though the command might become cumbersome.
-    The associated flags and options do not change.
+    The associated flags and options do not change, although only one `outputdir` should be given.
+    
+    Our example done in one step would be:
+    ```bash
+    python -m omc3.hole_in_one --harpy --optics \
+        --files trackone.sdds \
+        --tbt_datatype lhc \
+        --turns 0 1023 \
+        --autotunes transverse \
+        --to_write lin spectra full_spectra bpm_summary \
+        --accel lhc \
+        --year 2018 \
+        --beam 1 \
+        --model_dir lhc_model \
+        --compensation none \
+        --three_bpm_method \
+        --coupling_method 1 \
+        --outputdir measured_optics
+    ```
+    In this case, the output files from `harpy` are automatically handled and put into a subfolder named `lin_files` inside of the specified `outputdir`.
+    The rest is done and output as seen above.
 
 [sdds]: https://ops.aps.anl.gov/SDDSIntroTalk/slides.html
 [tbt_converter]: https://pylhc.github.io/omc3/entrypoints/other.html#tbt-converter
