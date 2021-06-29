@@ -14,19 +14,19 @@ The table below shows a general analysis workflow from BPM turn-by-turn measurem
 | SDDS files:  `*.sdds`  | :material-arrow-right: | TFS files: `*.lin[xy]` | :material-arrow-right: | TFS files: `*.tfs`                |
 
 In this page, we will go through the essential steps in preparing and performing an analysis, by going from start to finish with a simple example.
+In this walk-through, we will cover the use of the different entrypoints available to perform necessary steps.
 
 !!! example  ""
-    For our example, we will start from data obtained in `MAD-X` with the `TRACK` command for the LHC machine with a scenario adapted from the 2018 machine configurations.
+    For our walk-through example, we will start from data obtained in `MAD-X` with the `TRACK` command for the 1023 turns in the LHC machine, with a scenario adapted from the 2018 configuration.
     Changes from the nominal scenario in your simulation could be including errors tables, orbit bumps, speculative magnet errors, additional elements etc.
     It is also easy for the reader to follow along if starting from measurements files.
 
 ## Preparing Data for Analysis
 
-Analysis in `omc3` is mostly done from measurement data, which has to be given in the LHC's [SDDS][sdds] binary format.
-If your starting point is one or more measurement files in `SDDS` format from a similar machine, then you are set.
-However, if your data is in another format you will need to first convert it to `SDDS`.
+Analysis in `omc3` is mostly done from measurement data, but can also be done on simulated tracking data.
+While `omc3` codes can read data from many machine formats, we will for demonstration purposes first convert our data to the LHC's [SDDS][sdds] binary format.
 
-For this `omc3` provides the `tbt_converter` entrypoint script.
+For this `omc3` provides the `tbt_converter` entrypoint.
 A typical use consists in specifying the location of your turn-by-turn measurement files, the data type of said files and the location in which to write the converted `SDDS` data.
 The formats supported by the converter are:
 
@@ -34,11 +34,11 @@ The formats supported by the converter are:
 - Simulation formats: the `trackone` and `ptc` formats from tracking data from `MAD-X` or `PTC`.
 
 ??? info "The `trackone` and `ptc` formats"
-    What is referred to here as the `trackone` or `ptc` format is obtained by giving the `DUMP` and `ONETABLE` options to the `TRACK` or `PTC_TRACK` commands (respectively) in `MAD-X`.
+    What is referred to here as the `trackone` or `ptc` format is obtained by giving the `DUMP` and `ONETABLE` options to the `TRACK` or `PTC_TRACK` commands, respectively, in `MAD-X`.
     This way, all tracking data is written to a single file on disk, which you can feed to the `tbt_converter`.
     Remembering which tracking module was used is important as `PTC_TRACK` does not write in the same format as `MAD-X`'s `TRACK`.
 
-For our example, let us say that when setting up tracking we have asked `MAD-X` to output the data into a file called `trackone` (this is actually the defaults name).
+For our example, let us say that when setting up tracking we have asked `MAD-X` to output the data into a file called `trackone` (this is actually the default name).
 Using the converter to make a compatible `SDDS` file then goes as:
 ```bash
 python -m omc3.tbt_converter \
@@ -47,11 +47,12 @@ python -m omc3.tbt_converter \
     --outputdir .
 ```
 
-Other actions are supported, such as adding noise to the data or averaging across particles.
-To use them, refer to the [converter's API documentation][tbt_converter].
-
 The converter will create new files with the `.sdds` suffix appended to the original filename.
 In our case, a `trackone.sdds` file will be created.
+
+!!! tip "Other Uses"
+    The `tbt_converter` provides additional functionality such as adding noise to the provided data or averaging across particles.
+    To use these options, refer to the [converter's API documentation][tbt_converter].
 
 ## Creating a Model
 
@@ -59,18 +60,20 @@ In order to perform the optics analysis, one needs a model of the given machine 
 For this, `omc3` provides the `model_creator` entrypoint script, which allows you to run a model simulation of the desired machine and output the needed files.
 
 ??? example "Supported Machines"
-    The supported machines for model creation are `lhc`, `ps`, `esrf`, `psbooster`, `skekb`, `JPARC`, `petra` and `iota`.
-    It is possible to extend this list by defining an `Accelerator` class and a model creator for your machine.
+    The out-of-the-box supported machines for model creation are `lhc`, `ps` and `psbooster`, machines we work on.
+    While the `skekb`, `JPARC`, `petra` and `iota` have accelerator classes, no model creator has been implemented for them yet.
+    It is possible to extend this list for your machine by defining an appropriate `Accelerator` class as well as a model creator.
     See [this guide][new_machine_guide] for implementation steps.
 
 In our example, we would like to compare our data to the nominal model of the 2018 LHC. 
 Using the script to create a nominal model of the 2018 LHCB1, with the machine configuration defined in `opticsfile.22`, goes as:
 ```bash
-python -m omc3.model_creator.py \
+python -m omc3.model_creator \
     --accel lhc \
     --type nominal \
     --year 2018 \
     --beam 1 \
+    --energy 6.5 \
     --nat_tunes 62.31 60.32 \
     --modifiers opticsfile.22 \
     --outputdir lhc_model
@@ -82,18 +85,24 @@ Refer to the [model creator's API documentation][model_creator] for the list of 
 The model creation runs a `MAD-X` scenario and outputs the relevant twiss results to the desired directory.
 Running `ls lhc_model/` yields:
 ```bash
-macros			twiss.dat		twiss_elements.dat
+b2_errors.tfs		error_deffs.txt		    macros			twiss_elements.dat
+b2_settings.madx	job.create_model.madx	twiss.dat
 ```
+
+!!! question "What is a Model?"
+    As one can see, a "model" is essentially one or more TFS files with optics functions at BPMs (`twiss.dat`) and elements (`twiss_elements.dat`), other files being here for the user to understand or reproduce the result.
+    Had we created a driven model, then an additional `twiss_ac.dat` or `twiss_adt.dat` file would have been created, with optics functions at BPMs while driving the beam.
+    One can create their own models without the `model_creator` should they want to, as it only acts as a convenience wrapper. 
 
 ## Frequency Analysis
 
 Once measurement or simulation is in the appropriate format, the first step as seen in the table above consists in a harmonic analysis of the data.
-To do so, `omc3` provides the `hole_in_one` entrypoint script, which will perform harmonic analysis of the data when provided with the `--harpy` flag.
+To do so, `omc3` provides the `hole_in_one` entrypoint, which will perform frequency analysis of the data when provided with the `--harpy` flag.
 
 The script provides options involved in both data cleaning and parameter tweaking for the harmonic analysis, which is useful when you have relevant information about your measurements. 
 To use these, refer to the `Harpy Kwargs` in the [hole_in_one API documentation][hole_in_one_harpy].
 
-In our example we will leave these to their default values to keep the analysis simple, and that `harpy` outputs all the computed results.
+In our example we will leave most of these to their default values to keep the analysis simple, but ask from `harpy` to output all computed results.
 Running the frequency analysis then goes as:
 ```bash
 python -m omc3.hole_in_one --harpy \
@@ -107,11 +116,11 @@ python -m omc3.hole_in_one --harpy \
 
 ??? warning "Memory Requirements"
     During frequency analysis, `harpy` makes use of zero padding (with by default $2^{20}$ zeros) to improve the accuracy of results.
-    In turn, the padded arrays become consequent and, coupled with a high number of observation points, processing will require a substantial amount of RAM - easily into the few GBs range.
+    In turn, the padded arrays become consequent and, coupled with a high number of observation points, processing will require a substantial amount of RAM - well into the few GBs range for our example.
 
     When running on limiting hardware, one can change the amount of zero padding with the `--turn_bits` flag for `harpy`.
     It is important however to remember that decreasing this number will reduce the accuracy of the results, since it increases the range between detected frequencies.
-    Refer to the [API documentation][hole_iin_one_harpy] for details that could help in determining which number to use.
+    Refer to the [hole_in_one API documentation][hole_in_one_harpy] for details that could help in determining which number to use.
 
 In the output directory, `harpy` will create TFS files with the results of the analysis for both good BPMs and identified bad BPMs.
 The filenames are determined by appending the appropriate suffixes to the entry files.
