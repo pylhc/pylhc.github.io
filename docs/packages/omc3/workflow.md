@@ -66,7 +66,7 @@ For this, `omc3` provides the `model_creator` entrypoint, which allows you to ru
     See [this guide][new_machine_guide] for implementation steps.
 
 In our example, we would like to compare our data to the nominal model of the 2018 LHC. 
-Using the script to create a nominal model of the 2018 LHCB1, with the machine configuration defined in `opticsfile.22`, goes as:
+Using the script to create a nominal model of the 2018 LHCB1, with the machine configuration defined in an `opticsfile`, goes as:
 ```bash
 python -m omc3.model_creator \
     --accel lhc \
@@ -75,9 +75,14 @@ python -m omc3.model_creator \
     --beam 1 \
     --energy 6.5 \
     --nat_tunes 62.31 60.32 \
-    --modifiers opticsfile.22 \
+    --modifiers path/to/opticsfile \
     --outputdir lhc_model
 ```
+
+!!! bug "Specifying Paths"
+    At the moment, some issues may arise down the line when specifying input files with relative paths.
+    To ensure a seamless workflow, it is heavily recommended to use absolute paths.
+    This will be dealt with in the next release.
 
 Some of these options belong to the `model_creator` itself, while others depend explicitely on the chosen machine, here the LHC.
 Refer to the [model creator's API documentation][model_creator] for the list of options.
