@@ -57,7 +57,7 @@ In our case, a `trackone.sdds` file will be created.
 ## Creating a Model
 
 In order to perform the optics analysis, one needs a model of the given machine to compare to.
-For this, `omc3` provides the `model_creator` entrypoint script, which allows you to run a model simulation of the desired machine and output the needed files.
+For this, `omc3` provides the `model_creator` entrypoint, which allows you to run a model simulation of the desired machine and output the needed files.
 
 ??? example "Supported Machines"
     The out-of-the-box supported machines for model creation are `lhc`, `ps` and `psbooster`, machines we work on.
@@ -100,7 +100,7 @@ Once measurement or simulation is in the appropriate format, the first step as s
 To do so, `omc3` provides the `hole_in_one` entrypoint, which will perform frequency analysis of the data when provided with the `--harpy` flag.
 
 The script provides options involved in both data cleaning and parameter tweaking for the harmonic analysis, which is useful when you have relevant information about your measurements. 
-To use these, refer to the `Harpy Kwargs` in the [hole_in_one API documentation][hole_in_one_harpy].
+To use these, refer to the `Harpy Kwargs` section of the [hole_in_one API documentation][hole_in_one].
 
 In our example we will leave most of these to their default values to keep the analysis simple, but ask from `harpy` to output all computed results.
 Running the frequency analysis then goes as:
@@ -120,7 +120,7 @@ python -m omc3.hole_in_one --harpy \
 
     When running on limiting hardware, one can change the amount of zero padding with the `--turn_bits` flag for `harpy`.
     It is important however to remember that decreasing this number will reduce the accuracy of the results, since it increases the range between detected frequencies.
-    Refer to the [hole_in_one API documentation][hole_in_one_harpy] for details that could help in determining which number to use.
+    Refer to the [hole_in_one API documentation][hole_in_one] for details that could help in determining which number to use.
 
 In the output directory, `harpy` will create TFS files with the results of the analysis for both good BPMs and identified bad BPMs.
 The filenames are determined by appending the appropriate suffixes to the entry files.
@@ -145,21 +145,31 @@ trackone.sdds.bad_bpms_y	trackone.sdds.liny
 
 ## Optics Analysis
 
-TODO: write this section.
+Once harmonic analysis has been performed, one can move on to the reconstruction of optics quantities from computed spectra and phases.
+To do so, `omc3` provides the `hole_in_one` entrypoint, to be used this time with the `--optics` flag.
+
+In our example we will ask to use the `three_bpm_method` when reconstructing beta functions from phase advances, as the default `n_bpm_method` requires providing an error definition file which our simulation did not implement.
+Calling the entrypoint to perform optics analysis goes as:
 ```bash
 python -m omc3.hole_in_one --optics \
     --accel lhc \
     --year 2018 \
     --beam 1 \
+    --energy 6.5 \
     --files harpy_output/trackone.sdds \
     --model_dir lhc_model \
     --compensation none \
     --three_bpm_method \
-    --coupling_method 1 \
     --outputdir measured_optics
 ```
 
-TODO: explain why 3bpm_method (n_bpm needs errors).
+!!! warning "Input Files"
+    While `harpy` outputs various types of files with different suffixes, the optics analysis only looks for some of them.
+    Thus, when providing the `--files` flag, no specific files should be provided, and instead the path to `harpy` outputs **without a suffix** should be given.
+    In our example, this means entering `harpy_output/trackone.sdds`.
+
+Like other entrypoints, the optics analysis provides many options on methods to use and quantities to compute.
+To use these, refer to the `Optics Kwargs` section of the [hole_in_one API documentation][hole_in_one].
 
 In the output files, various properties are given in column form for each observation point.
 Running `ls measured_optics/` yields the following result:
@@ -199,6 +209,6 @@ interaction_point_y.tfs	    phase_x.tfs
 
 [sdds]: https://ops.aps.anl.gov/SDDSIntroTalk/slides.html
 [tbt_converter]: https://pylhc.github.io/omc3/entrypoints/other.html#tbt-converter
-[hole_in_one_harpy]: https://pylhc.github.io/omc3/entrypoints/analysis.html#omc3.hole_in_one.hole_in_one_entrypoint
+[hole_in_one]: https://pylhc.github.io/omc3/entrypoints/analysis.html#omc3.hole_in_one.hole_in_one_entrypoint
 [new_machine_guide]: know_how.md#how-to-create-files-for-your-file-accelerator
 [model_creator]: https://pylhc.github.io/omc3/entrypoints/other.html#model-creator
