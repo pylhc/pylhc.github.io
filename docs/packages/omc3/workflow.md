@@ -108,6 +108,7 @@ The script provides options involved in both data cleaning and parameter tweakin
 To use these, refer to the `Harpy Kwargs` section of the [hole_in_one API documentation][hole_in_one].
 
 In our example we will leave most of these to their default values to keep the analysis simple, but ask from `harpy` to output all computed results.
+We will input `lhc` for the `--tbt_datatype` flag, but if you skipped the use of the `tbt_converter` you should input the type of your machine there.
 Running the frequency analysis then goes as:
 ```bash
 python -m omc3.hole_in_one --harpy \
