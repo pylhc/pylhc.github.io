@@ -5,9 +5,9 @@ It provides tools which can be useful for working with accelerators, but are not
 
 ## Functionality
 
-- [*Forced DA Analysis*](forced_da) - Script to analyse forced DA.
-- [*Machine Settings Info*](machine_settings_info) - Prints an overview over the machine settings at a given time.
-- [*BSRT Logger* and *BSRT Analysis*](bsrt) - Saves data coming straight from LHC BSRT FESA class and allows subsequent analysis.
+- [*Forced DA Analysis*](forced_da.md) - Script to analyse forced DA.
+- [*Machine Settings Info*](machine_settings_info.md) - Prints an overview over the machine settings at a given time.
+- [*BSRT Logger* and *BSRT Analysis*](bsrt.md) - Saves data coming straight from LHC BSRT FESA class and allows subsequent analysis.
 
 ## Documentation
 
