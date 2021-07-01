@@ -122,6 +122,7 @@ nav:
       - Forced DA Analysis: packages/pylhc/forced_da.md
       - Machine Settings Info: packages/pylhc/machine_settings_info.md
       - BSRT Logger/Analysis: packages/pylhc/bsrt.md
+      - BPM Calibration: packages/pylhc/bpm_calibration.md
       - ↪ On Github: https://github.com/pylhc/PyLHC
     - PyLHC-Submitter: 
       - About: packages/pylhcsubmitter/about.md
