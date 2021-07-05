@@ -64,6 +64,7 @@ In this walk-through, we will cover the use of the different entrypoints availab
     use, sequence=lhcb1;
     makethin, sequence=lhcb1, style=teapot, makedipedge=false;
     
+    ! ----- Define Observation Points and Perform Tracking ----- !
     use, sequence=lhcb1;
     track, recloss=true, onepass=true, dump=true, onetable=true;
         observe, place="bpmyb.5l2.b1";
@@ -749,6 +750,10 @@ trackone.sdds.bad_bpms_x	trackone.sdds.linx
 trackone.sdds.bad_bpms_y	trackone.sdds.liny
 ```
 
+!!! tip "Plotting the Spectra"
+    The `omc3` package provides scripts and modules to quickly plot the spectra obtained from frequency analysis.
+    To use these, refer to the [Plot Spectrum][plot_spectrum] API documentation.
+
 ??? question "Column Nomenclature"
     TODO: add a reference with the meaning of each column in the important files (the `.lin*` ones)
 
@@ -792,7 +797,7 @@ interaction_point_y.tfs	    phase_x.tfs
 ```
 
 ??? tip "Hole in One"
-    The harmonic analysis and optics analysis don't necessarily have to be seperated steps.
+    The harmonic analysis and optics analysis don't necessarily have to be separated steps.
     It is possible to run the `hole_in_one` entrypoint with both `--harpy` and `--optics` flags, even though the command might become cumbersome.
     The associated flags and options do not change, although only one `outputdir` should be given.
     
@@ -819,6 +824,7 @@ interaction_point_y.tfs	    phase_x.tfs
 [mess]: https://github.com/pylhc/MESS
 [sdds]: https://ops.aps.anl.gov/SDDSIntroTalk/slides.html
 [tbt_converter]: https://pylhc.github.io/omc3/entrypoints/other.html#tbt-converter
+[plot_spectrum]: https://pylhc.github.io/omc3/entrypoints/plotting.html#plot-spectrum
 [hole_in_one]: https://pylhc.github.io/omc3/entrypoints/analysis.html#omc3.hole_in_one.hole_in_one_entrypoint
 [new_machine_guide]: know_how.md#how-to-create-files-for-your-file-accelerator
 [model_creator]: https://pylhc.github.io/omc3/entrypoints/other.html#model-creator
