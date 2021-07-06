@@ -1,5 +1,9 @@
 # OMC3 Software Workflow
 
+This page contains a walk-through of a typical but simple analysis workflow with the `omc3` codes.
+To follow along, the reader needs to [have installed](getting_started.md) the `omc3` package and to have measurement or simulation data to use the codes on.
+In case the reader does not have appropriate data to follow along with, a script is provided below to create some.
+
 ## The Analysis Workflow
 
 A typical workflow with `omc3` consists in performing analysis of measurement or simulation files, and eventually calculating corrections to apply.
@@ -41,8 +45,8 @@ In this walk-through, we will cover the use of the different entrypoints availab
     endedit;
 
     ! ----- Create Beams ----- !
-    beam, sequence=lhcb1, particle=proton, bv=1, energy=6500, npart=10000000000.0, ex=5.411538461538461e-10, ey=5.411538461538461e-10;
-    beam, sequence=lhcb2, particle=proton, bv=-1, energy=6500, npart=10000000000.0, ex=5.411538461538461e-10, ey=5.411538461538461e-10;
+    beam, sequence=lhcb1, particle=proton, bv=1, energy=6500, npart=1e10, ex=5.4115e-10, ey=5.4115e-10;
+    beam, sequence=lhcb2, particle=proton, bv=-1, energy=6500, npart=1e10, ex=5.4115e-10, ey=5.4115e-10;
     use, sequence=lhcb1;
     
     ! ----- Introduce Some Coupling ----- !
@@ -65,6 +69,7 @@ In this walk-through, we will cover the use of the different entrypoints availab
     makethin, sequence=lhcb1, style=teapot, makedipedge=false;
     
     ! ----- Define Observation Points and Perform Tracking ----- !
+    ! These points are the BPMs from the model's twiss.dat file
     use, sequence=lhcb1;
     track, recloss=true, onepass=true, dump=true, onetable=true;
         observe, place="bpmyb.5l2.b1";
@@ -648,8 +653,14 @@ Using the converter to make a compatible `SDDS` file then goes as:
 python -m omc3.tbt_converter \
     --files trackone \
     --tbt_datatype trackone \
+    --drop_elements LHCB1MSIA.EXIT.B1_P_ \
     --outputdir .
 ```
+
+!!! info ""
+    When tracking in `MAD-X`, by default the start of machine will be included in the list of observation points.
+    As we do not want this arbitrary point, we indicate to the `tbt_converter` we intend to drop it with the `--drop_elements` flag.
+    More than one element can be given to this flag.
 
 The converter will create new files with the `.sdds` suffix appended to the original filename.
 In our case, a `trackone.sdds` file will be created.
