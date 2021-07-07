@@ -28,6 +28,7 @@ In this walk-through, we will cover the use of the different entrypoints availab
 ??? example "Generating the Example Data"
     Here is the `MAD-X` script that will generate the example data used in this walk-through.
     It sets up a simple LHC configuration using files from `afs`, performs tracking and outputs a file named `trackone`.
+    The script can be copy-pasted with a click in the top right of its box.
     
     For anyone without access to `afs`, you can find these files in our [MESS][mess] repository, or can simply use one of your own.
     ```fortran
@@ -714,6 +715,9 @@ b2_settings.madx	job.create_model.madx	twiss.dat
     Had we created a driven model, then an additional `twiss_ac.dat` or `twiss_adt.dat` file would have been created, with optics functions at BPMs while driving the beam.
     One can create their own models without the `model_creator` should they want to, as it only acts as a convenience wrapper. 
 
+    A `driven model` is the same as above, with also a `TWISS` taking into account the exciting effect of an AC dipole or ADT onto the optics.
+    Creating this is easiest done with the `model_creator`, but can also be done individually with the a script installing the appropriate element into your sequence. 
+
 ## Frequency Analysis
 
 Once measurement or simulation is in the appropriate format, the first step as seen in the table above consists in a harmonic analysis of the data.
@@ -807,7 +811,9 @@ interaction_point_x.tfs	    orbit_y.tfs		        total_phase_y.tfs
 interaction_point_y.tfs	    phase_x.tfs
 ```
 
-??? tip "Hole in One"
+---
+
+!!! tip "Hole in One"
     The harmonic analysis and optics analysis don't necessarily have to be separated steps.
     It is possible to run the `hole_in_one` entrypoint with both `--harpy` and `--optics` flags, even though the command might become cumbersome.
     The associated flags and options do not change, although only one `outputdir` should be given.
