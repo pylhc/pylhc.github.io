@@ -47,3 +47,11 @@ jobs:
 
       - name: Build documentation
         run: python -m mkdocs build -d ./doc_build
+
+      - name: Upload build artifacts  # upload artifacts so PR reviewers can have a quick look without building the branch locally
+        uses: actions/upload-artifact@v2
+        if: success() && github.event_name == 'pull_request'
+        with:
+          name: site-build
+          path: doc_build
+          retention-days: 5
