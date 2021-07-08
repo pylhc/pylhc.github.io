@@ -24,7 +24,7 @@ If you would like to implement a new feature, please submit an issue with a prop
 This will also allow us to better coordinate our efforts, prevent duplication of work, and help you craft the change so that it is successfully accepted into the project.
 
 ??? info "Our Availability"
-    Please note we are busy people and developing these packages is not our primary priority at work.
+    Please note we are busy people and developing / maintaining these packages is not our primary priority at work.
     We may take some time to reply.
 
 ## Submission guidelines
