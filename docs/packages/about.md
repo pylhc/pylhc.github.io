@@ -19,7 +19,7 @@ The environment is located at `/afs/cern.ch/eng/sl/lintrack/OMC_Python3/` and ca
 
 !!! warning "Modifying the Environment"
     Please do not try to modify this environment.
-    Should you need specific packages, reach out to us or consider [setting up your own environment](development/howto_venv.md#creating-virtual-environments-with-the-acc-py-distribution) from our `Acc-Py` distribution.
+    Should you need specific packages, reach out to us or consider [setting up your own environment](development/howto_venv.md#creating-virtual-environments-with-acc-py) from our `Acc-Py` distribution.
 
 ??? question "Python 2 Environment"
     We do have a `miniconda2` installation in `lintrack` for legacy Python2 codes.
