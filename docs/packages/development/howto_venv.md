@@ -1,7 +1,7 @@
 # Creating and Using Python Virtual Environments
 
 Both for the development of Python codes as well as running programs, the creation of a Python virtual environment is recommended.
-Not only does it prevent version conflicts and ever-growing installations, it also allows to separate production and test scenarios.
+Not only does it prevent version conflicts and ever-growing installations, it also allows separating production and test scenarios.
 
 !!! tip "Python Virtual Environments"
     Don't know what a **virtual environment** is or what purpose it serves?
@@ -38,7 +38,7 @@ bash acc-py-2020.11-installer.sh
 The installation script will prompt you to enter the location in which to install the distribution.
 This does not have to be an existing directory, it can be created at install.
 
-!!! tip "Choosing the Install Location"
+!!! tip "Choosing the Installation Location"
     At post-install, the script will try to create a folder `apps` where it will install built applications, including the `acc-py` command line tool.
     This `apps` folder is created two directories up from the given installation location, which is a place you might not necessarily have access to.
     Should this be the case, the installation will error.
@@ -53,15 +53,14 @@ You are now done with the installation step.
 
 ## Creating Virtual Environments with Acc-Py
 
-First of all, make sure you do not have a previous Python virtual environment activated.
-Then, `source` the `setup.sh` script in the installed `Acc-Py` distribution to make the command line tools available:
+To make the command line tools available in the current shell, `source` the `setup.sh` script in the installed `Acc-Py` distribution:
 ```bash
 source dist_location/base/2020.11/setup.sh
 ```
 
 You should see a confirmation message output that reads: 
-```bash
-Acc-Py base 2020.11 is now active within this shell.
+```
+=>  Acc-Py base 2020.11 is now active within this shell.
 ```
 
 You now have access to the `acc-py` command line tool, which you can verify by running `acc-py -h` and checking that you get the help command output.
@@ -95,15 +94,14 @@ Different ways to use `pip` for package installations are nicely explained in th
 When your virtual environment has all the packages you wish, anyone with access to the distribution's `python` executable (because all environments will symlink to there) can use it.
 To use the environment's Python, one can either:
 
-- First `source /path/to/environment/bin/activate` then call `python` to run their programs.
-- Call the full path to the python executable `/path/to/environment/bin/python` directly to run their programs.
+- First `source /path/to/environment/bin/activate` then call `python`.
+- Call the full path to the python executable `/path/to/environment/bin/python` directly.
 
-*[python]: If you don't know what Python is, this section might not be for you
 *[GPN]: CERN General Public Network
 *[PyPi]: Default Python Package Index
 
 [virtual_env_primer]: https://realpython.com/python-virtual-environments-a-primer/
 [acc-py]: https://wikis.cern.ch/display/ACCPY/Accelerating+Python+Home
-[acc_py_standalone_doc]: ???
+[acc_py_standalone_doc]: https://wikis.cern.ch/display/ACCPY/Acc-Py+base#Acc-Pybase-Installingthebasedistributiononanothermachine
 [venv_module]: https://docs.python.org/3/library/venv.html
 [pip_installs]: https://pip.pypa.io/en/stable/reference/pip_install/#examples
