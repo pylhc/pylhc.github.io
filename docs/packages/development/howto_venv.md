@@ -9,7 +9,7 @@ Not only does it prevent version conflicts and ever-growing installations, it al
 
 ## Virtual Environments at CERN with Acc-Py
 
-The BE/CO [Acc-Py][acc-py]{target=_blank} distribution at CERN (at `/acc/local/share/python/acc-py/base/pro`) allows one to create Python virtual environments immediately configured for internal CERN index and apps.
+The BE/CO [Acc-Py][acc-py]{target=_blank .cern_internal} distribution at CERN (at `/acc/local/share/python/acc-py/base/pro`) allows one to create Python virtual environments immediately configured for internal CERN index and apps.
 `Acc-Py` is the official way to manage one's Python environments at CERN for the foreseeable future.
 
 However, because of how Python virtual environments work, the `python` executable in such a virtual environment is a symlink to the `Acc-Py` distribution's Python executable.

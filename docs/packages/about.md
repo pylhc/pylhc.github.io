@@ -10,12 +10,12 @@ All our Python codes, including legacy repositories, can be found on the [PyLHC 
 ## The OMC Production Environments
 
 The OMC Python 3 production environment for use for instance in the CCC is based on the CERN BE/CO [Acc-Py][accpy_docs]{target=_blank .cern_internal} distribution, although an OMC-specific one.
-The environment, along with many of our important files, is located in the `lintrack` directory on `afs` at `/afs/cern.ch/eng/sl/lintrack/`. 
+The environment, along with many of our important files, is located in the `/afs/cern.ch/eng/sl/lintrack/` directory on `afs`.
 
-The environment is located at `/afs/cern.ch/eng/sl/lintrack/OMC_Python3/` and can be used in two different ways:
+The environment is located at `/afs/cern.ch/eng/sl/lintrack/omc_python3/` and can be used in two different ways:
 
-- Activate the environment (`source /afs/cern.ch/eng/sl/lintrack/OMC_Python3/bin/activate`) then run `python` to execute your programs.
-- Point to the Python executable directly (`/afs/cern.ch/eng/sl/lintrack/OMC_Python3/bin/python`) to execute your programs.
+- Activate the environment (`source /afs/cern.ch/eng/sl/lintrack/omc_python3/bin/activate`) then run `python` to execute your programs.
+- Point to the Python executable directly (`/afs/cern.ch/eng/sl/lintrack/omc_python3/bin/python`) to execute your programs.
 
 !!! warning "Modifying the Environment"
     Please do not try to modify this environment.
