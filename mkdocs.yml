@@ -109,8 +109,8 @@ nav:
     - Physics of OMC: omc_team/physics.md
     - OMC Methods: omc_team/methods.md
     - Publications: omc_team/publications.md
-  - Python Packages:
-    - OMC Packages: packages/about.md
+  - Python Ecosystem:
+    - About: packages/about.md
     - omc3:
       - About omc3: packages/omc3/about.md
       - Getting Started: packages/omc3/getting_started.md

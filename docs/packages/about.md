@@ -1,16 +1,33 @@
-# OMC's Python Packages
+# The OMC Python Ecosystem
 
-This section of the website goes over our computing and analysis softwares, which are written in Python.
+This section of the website goes over our Python computing and analysis softwares and environments.
+Our main software for optics analysis exists in two versions: a legacy Python 2 version, `Beta-Beat.src`, and its Python 3 successor `omc3`.
+Development of `Beta-Beat.src` is limited to bug fixes while new features are reserved for `omc3`.
 
-Our main analysis software exist in two versions: `Beta-Beat.src` for Python 2, and its replacement `omc3` for Python 3.
-Development of the `Beta-Beat.src` package is limited to bug fixes, and new features are integrated directly into `omc3`.
-The `pylhc` package provides useful tools and scripts for our day-to-day work, and our other packages provide specific I/O and entrypoint utilities for our codes.
-
+Our other packages provide useful tools and scripts for our day-to-day work as well as specific I/O functionality and entrypoint utilities for our codes.
 All our Python codes, including legacy repositories, can be found on the [PyLHC organisation][pylhc_github]{target=_blank}'s page on Github.
 
-The OMC team develops and maintains the following packages:
+## The OMC Production Environments
 
-## Quick Access Links
+The OMC Python 3 production environment for use for instance in the CCC is based on the CERN BE/CO [Acc-Py][accpy_docs]{target=_blank .cern_internal} distribution, although an OMC-specific one.
+The environment, along with many of our important files, is located in the `/afs/cern.ch/eng/sl/lintrack/` directory on `afs`.
+
+The environment is located at `/afs/cern.ch/eng/sl/lintrack/omc_python3/` and can be used in two different ways:
+
+- Activate the environment (`source /afs/cern.ch/eng/sl/lintrack/omc_python3/bin/activate`) then run `python` to execute your programs.
+- Point to the Python executable directly (`/afs/cern.ch/eng/sl/lintrack/omc_python3/bin/python`) to execute your programs.
+
+!!! warning "Modifying the Environment"
+    Please do not try to modify this environment.
+    Should you need specific packages, reach out to us or consider [setting up your own environment](development/howto_venv.md#creating-virtual-environments-with-acc-py) from our `Acc-Py` distribution.
+
+??? question "Python 2 Environment"
+    We do have a `miniconda2` installation in `lintrack` for legacy Python2 codes.
+    This distribution is frozen and the use of Python 2 codes should be avoided as much as possible.
+
+## The OMC Python Packages
+
+The OMC team develops and maintains the following packages:
 
 - **OMC3** (Python 3.7+): [:fontawesome-solid-question-circle:](omc3/about.md) [:fontawesome-brands-github:][omc3]{target=\_blank} [:fontawesome-solid-book:][omc3_doc]{target=\_blank} <br>
   _frequency analysis, optics computation from turn-by-turn data, corrections calculations and results plotting._
@@ -32,6 +49,7 @@ The OMC team develops and maintains the following packages:
   _entrypoint argument parser functionality._
 
 [pylhc_github]: https://github.com/pylhc/
+[accpy_docs]: https://wikis.cern.ch/display/ACCPY/Accelerating+Python+Home
 [betabeatsrc]: https://github.com/pylhc/Beta-Beat.src
 [betabeatsrc_doc]: https://pylhc.github.io/Beta-Beat.src
 [omc3]: https://github.com/pylhc/omc3
