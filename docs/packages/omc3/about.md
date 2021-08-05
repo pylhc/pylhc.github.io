@@ -16,7 +16,7 @@ The `omc3` package serves the following purposes:
 - Providing a convenient wrapper to effortlessly run `MAD-X` jobs.
 
 For installation instructions and detailed content see the [getting started guide](getting_started.md).
-For a step by step walk-through of an `omc3` workflow, see the [workflow guide](workflow.md).
+For a step by step walk-through of an `omc3` analysis workflow, see the [workflow guide](analysis.md).
 
 ## Changelog
 

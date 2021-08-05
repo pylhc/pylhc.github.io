@@ -49,4 +49,4 @@ Other general utility scripts are in `/omc3/scripts` module:
 - `write_madx_macros.py` to generate `MAD-X` tracking macros with observation points from a twiss file.
 - `merge_kmod_results.py` to merge lsa_results files created by kmod, and add the luminosity imbalance if the 4 needed IP/Beam files combination are present.
 
-A typical analysis workflow with `omc3` is described in the [next page](workflow.md).
+A typical analysis workflow with `omc3` is described in the [next page](analysis.md).

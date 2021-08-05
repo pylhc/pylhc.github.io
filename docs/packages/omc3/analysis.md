@@ -770,7 +770,7 @@ trackone.sdds.bad_bpms_y	trackone.sdds.liny
     To use these, refer to the [Plot Spectrum][plot_spectrum] API documentation.
 
 ??? question "Column Nomenclature"
-    TODO: add a reference with the meaning of each column in the important files (the `.lin*` ones)
+    T
 
 ## Optics Analysis
 
