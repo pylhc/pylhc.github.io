@@ -1,6 +1,6 @@
 # Using PyLHC to Compute Calibration Factors
 
-The `bpm_calibration` module of `PyLHC` can be used to compute BPM calibration factors,
+The `bpm_calibration` module of `PyLHC` can be used to compute BPM calibration factors, according to the methods described [in this page](../../omc_team/methods.md#bpm-calibration).
 Only one entrypoints exists for both methods, the argument `method` can be used to select it, and defaults to `beta`.
 Using the script to make compute calibration factors through $\beta$-functions for instance from IP1 and IP5 goes as:
 ```bash         
