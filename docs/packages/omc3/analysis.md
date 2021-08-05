@@ -773,8 +773,8 @@ trackone.sdds.bad_bpms_y	trackone.sdds.liny
     The `*.amps[xy]`, `*.freqs[xy]` and `*.lin[xy]` files in the harmonic analysis output are **TFS** files.
 
     The `*.freqs[xy]` files contain for each BPM in column format the frequencies of the resonance lines detected in the spectrum, for respectively the horizontal (`.freqsx`) and vertical (`.freqsy`) planes while the `*.amps[xy]` files contain the amplitudes of said resonance lines.
-    This means in the column of a given BPM, the `nth` value in the `.amps[xy]` file corresponds to the amplitude of the resonance line located at the frequency given by the `nth` value in the column of the same name in the `.freqs[xy]` file.
-    Plotting the spectrum from these files would simply go as:
+    This means in the column of a given BPM, the `nth` row in the `.amps[xy]` file corresponds to the amplitude of the resonance line located at the frequency given by the `nth` row in the column of the same name in the `.freqs[xy]` file.
+    For illustration purposes, simplistic plotting of the horizontal spectrum (without the spectrum plotter mentioned above) from these files would go as:
     ```python
     import tfs
     import matplotlib.pyplot as plt
@@ -787,20 +787,19 @@ trackone.sdds.bad_bpms_y	trackone.sdds.liny
             plt.plot(freqsx[bpm], ampsx[bpm], ".-") 
             # plt.stem(freqsx[bpm], ampsx[bpm])  # would be more accurate but might stress your system
 
-    plt.xlim(0, 0.5)
-    plt.xlabel(r"$Q_x$")
-    plt.ylabel("Amplitude")
-    plt.title("Horizontal Spectrum")
+    plt.setp(plt.gca(), xlabel=r"$Q_x$", ylabel="Amplitude", title="Horizontal Spectrum", xlim=(0, 0.5))
     ```
 
     The `*.lin[xy]` files contain various data (in columns) computed for each BPM (in rows) as some summary information.
     Some column names are explicit: `BPM_RES` contains the determined BPM resolution, `CO` the closed orbit value at said BPM and `PK2PK` is the peak-to-peak value of oscillations registered by the given BPM.
     `TUNE[XY]`, `AMP[XY]` and `MU[XY]` are the detected tune, the amplitude of the tune line and the phase of the tune line for said BPM, respectively.
     
-    Some columns are named less explicitely but important for later optics calculations.
-    In the `.linx` file `FREQ01`, `AMP01` and `PHASE01` are respectively the frequency of the main vertical tune line in the horizontal spectrum, the ratio of this line to the main horizontal line and the phase of this line.
+    The other columns describe the phase (`PHASE`), amplitude ratio (`AMP`) and frequency (`FREQ`) of the line identified by the number in the column name, where underscores represent a minus sign.
+    Therefore, in the `.linx` file `FREQ01`, `AMP01` and `PHASE01` are respectively the frequency of the main vertical tune line in the horizontal spectrum, the ratio of this line's amplitude to that of the main horizontal line and the phase of this line.
     The equivalent columns in the `.liny` file are `FREQ10`, `AMP10` and `PHASE10`.
-    `FREQ02`, `AMP02` and `PHASE02` work similarly for the second vertical line in the horizontal spectrum, and so on.
+
+    Generally speaking, the frequency and amplitude of higher order lines is calculated using $m \cdot Q_x + n \cdot Q_y$  so `FREQ1_3` corresponds to $m = 1$ and $n = -3$ which is a decapolar line ($|m| + |n| = 4)$.
+    For more information, [this paper on normal forms][normal_forms]{target=_blank} is a good resource.
 
 ## Optics Analysis
 
@@ -872,6 +871,7 @@ interaction_point_y.tfs	    phase_x.tfs
 [sdds]: https://ops.aps.anl.gov/SDDSIntroTalk/slides.html
 [tbt_converter]: https://pylhc.github.io/omc3/entrypoints/other.html#tbt-converter
 [plot_spectrum]: https://pylhc.github.io/omc3/entrypoints/plotting.html#plot-spectrum
+[normal_forms]: https://cds.cern.ch/record/333077/files/p93.pdf
 [hole_in_one]: https://pylhc.github.io/omc3/entrypoints/analysis.html#omc3.hole_in_one.hole_in_one_entrypoint
 [new_machine_guide]: know_how.md#how-to-create-files-for-your-file-accelerator
 [model_creator]: https://pylhc.github.io/omc3/entrypoints/other.html#model-creator
