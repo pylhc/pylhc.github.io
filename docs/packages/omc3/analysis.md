@@ -695,11 +695,6 @@ python -m omc3.model_creator \
     --outputdir lhc_model
 ```
 
-!!! bug "Specifying Paths"
-    At the moment, some issues may arise down the line when specifying input files with relative paths.
-    To ensure a seamless workflow, it is recommended to use absolute paths.
-    This will be dealt with in the next release.
-
 Some of these options belong to the `model_creator` itself, while others depend explicitely on the chosen machine, here the LHC.
 Refer to the [model creator's API documentation][model_creator] for the list of options.
 
