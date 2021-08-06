@@ -1,4 +1,4 @@
-# OMC3 Software Workflow
+# OMC3 Optics Analysis Workflow
 
 This page contains a walk-through of a typical but simple analysis workflow with the `omc3` codes.
 To follow along, the reader needs to [have installed](getting_started.md) the `omc3` package and to have measurement or simulation data to use the codes on.
