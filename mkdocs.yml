@@ -114,7 +114,7 @@ nav:
     - omc3:
       - About omc3: packages/omc3/about.md
       - Getting Started: packages/omc3/getting_started.md
-      - Workflow: packages/omc3/workflow.md
+      - Analysis: packages/omc3/analysis.md
       - Know-How: packages/omc3/know_how.md
       - ↪ On Github: https://github.com/pylhc/omc3
     - PyLHC: 
