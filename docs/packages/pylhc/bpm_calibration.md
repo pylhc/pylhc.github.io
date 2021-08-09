@@ -5,7 +5,7 @@ Only one entrypoints exists for both methods, the argument `method` can be used 
 Using the script to make compute calibration factors through $\beta$-functions for instance from IP1 and IP5 goes as:
 ```bash         
 python -m pylhc.bpm_calibration \
-    --input <measurements directory> /
+    --input <measurements directory> \
     --output <output directory> \
     --ips 1 5 \
     --method beta
