@@ -52,7 +52,7 @@ $$
 (\Delta D_{x}^{\phi})^{2} = (D^\phi_x)^2 + \left(\frac{1}{2}\frac{D^A_{N,x}}{\sqrt{\beta_{x}^{\phi}}}\Delta \beta^{\phi}_{x}\right)^{2}
 $$
 
-Calibration factors are then defined as \cite{rama}[^RamaDispersionCalibration]:
+Calibration factors are then defined as[^RamaDispersionCalibration]:
 
 $$
 C_{x}^{A} = \frac{D^A_{N,x}\sqrt{\beta^{\phi}_x}}{D^A_x}
@@ -97,14 +97,14 @@ However, K-Modulation is usually more time-intensive, and is only applicable wit
     ??? abstract "Measurement and Control of Charged Particle Beams, `Michiko G. Minty, Frank Zimmermann`, [https://doi.org/10.1007/978-3-662-08581-3](https://link.springer.com/book/10.1007%2F978-3-662-08581-3){target=_blank}"
         ```
         @book{Minty:629879,
-        author = {Minty, Michiko G and Zimmermann, Frank},
-        title = {Measurement and control of charged particle beams},
-        publisher = {Springer},
-        address = {Berlin},
-        series = {Particle acceleration and detection},
-        year = {2003},
-        url = {https://cds.cern.ch/record/629879},
-        doi = {10.1007/978-3-662-08581-3}
+          author = {Minty, Michiko G and Zimmermann, Frank},
+          title = {Measurement and control of charged particle beams},
+          publisher = {Springer},
+          address = {Berlin},
+          series = {Particle acceleration and detection},
+          year = {2003},
+          url = {https://cds.cern.ch/record/629879},
+          doi = {10.1007/978-3-662-08581-3}
         }
         ```
 
@@ -112,33 +112,33 @@ However, K-Modulation is usually more time-intensive, and is only applicable wit
     ??? abstract "Accuracy and Feasibility of the Beta* Measurement for LHC and High Luminosity LHC Using K Modulation, `F. Carlier, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005){target=_blank}"
         ```
         @article{PhysRevAccelBeams.20.011005,
-        title = {Accuracy and Feasibility of the Beta* Measurement for {{LHC}} and {{High Luminosity LHC}} Using k Modulation},
-        author = {Carlier, F. and Tom{\'a}s, R.},
-        year = {2017},
-        month = jan,
-        volume = {20},
-        pages = {011005},
-        doi = {10.1103/PhysRevAccelBeams.20.011005},
-        url = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005},
-        journal = {Phys. Rev. Accel. Beams},
-        keywords = {read},
-        number = {1}
+          title = {Accuracy and Feasibility of the Beta* Measurement for {{LHC}} and {{High Luminosity LHC}} Using k Modulation},
+          author = {Carlier, F. and Tom{\'a}s, R.},
+          year = {2017},
+          month = jan,
+          volume = {20},
+          pages = {011005},
+          doi = {10.1103/PhysRevAccelBeams.20.011005},
+          url = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005},
+          journal = {Phys. Rev. Accel. Beams},
+          keywords = {read},
+          number = {1}
         }
         ```
 
 [^RamaDispersionCalibration]:
-    ??? abstract "Accuracy and Feasibility of the Beta* Measurement for LHC and High Luminosity LHC Using K Modulation, `F. Carlier, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005){target=_blank}"
+    ??? abstract "BPM Calibration Independent LHC Optics Correction, `R. Calaga, and R. Tomás, and F. Zimmermann`, [IEEE Particle Accelerator Conference, 2007](https://ieeexplore.ieee.org/document/4440536){target=_blank}"
         ```
-        @article{TODO,
-        title = {TODO},
-        author = {Rama,
-        year = {TODO},
-        month = TODO,
-        volume = {TODO},
-        pages = {TODO},
-        doi = {TODO},
-        url = {TODO},
-        journal = {TODO},
+        @inproceedings{Calaga:4440536,  
+          author={Calaga, R. and Tomas, R. and Zimmermann, F.},
+          booktitle={2007 IEEE Particle Accelerator Conference (PAC)},
+          title={BPM calibration independent LHC optics correction},
+          year={2007},
+          volume={},
+          number={},
+          pages={3693-3695},
+          url={https://accelconf.web.cern.ch/p07/PAPERS/THPAS091.PDF},
+          doi={10.1109/PAC.2007.4440536}
         }
         ```
 
