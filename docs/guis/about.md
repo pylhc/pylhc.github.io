@@ -19,6 +19,12 @@ The GUIs can be started from your development environment or via deployed `.jnlp
     - Latest [Beta-Beating development version][dev_bbgui]{target=_blank}.
     - Complete [list of releases][releases_bbgui]{target=_blank}.
     
+=== "Beta-Beat-OMC3"
+
+    - Latest [Beta-Beating production version][prod_bbgui_omc3]{target=_blank}.
+    - Latest [Beta-Beating development version][dev_bbgui_omc3]{target=_blank}.
+    - Complete [list of releases][releases_bbgui_omc3]{target=_blank}.
+    
 === "Kmod"
 
     - Latest [Kmod production version][prod_kmodgui]{target=_blank}.
@@ -92,11 +98,13 @@ Either fix the permissions on `afs` or ask someone to do so for you.
 [dev_bbgui]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
 [releases_bbgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating/
 
+[prod_bbgui_omc3]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating-omc3/PRO/BetaBeatingOMC3-Control-3t.jnlp
+[dev_bbgui_omc3]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-beta-beating-omc3/PRO/BetaBeatingOMC3-Control-3t.jnlp
+[releases_bbgui_omc3]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating-omc3/
 
 [prod_mtgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-multiturn/PRO/lhc-multiturn-lhc-multiturn.jnlp
 [dev_mtgui]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-multiturn/PRO/lhc-multiturn-lhc-multiturn.jnlp
 [releases_mtgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-multiturn/
-
 
 [prod_kmodgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-kmod/PRO/lhc-app-kmod-lhc-app-kmod.jnlp 
 [dev_kmodgui]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-kmod/PRO/lhc-app-kmod-lhc-app-kmod.jnlp 

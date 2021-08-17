@@ -50,6 +50,18 @@
     ```bash
     jws https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-betabeating/PRO/BetaBeating-Control-3t.jnlp
     ```
+    
+=== "Beta-Beat-OMC3"
+
+    _PRO_
+    ```bash
+    jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-betabeating-omc3/PRO/BetaBeatingOMC3-Control-3t.jnlp
+    ```
+
+    _DEV_
+    ```bash
+    jws https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-betabeating-omc3/PRO/BetaBeatingOMC3-Control-3t.jnlp
+    ```
 
 === "Kmod"
 
