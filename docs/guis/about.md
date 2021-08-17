@@ -19,7 +19,6 @@ The GUIs can be started from your development environment or via deployed `.jnlp
     - Latest [Beta-Beating development version][dev_bbgui]{target=_blank}.
     - Complete [list of releases][releases_bbgui]{target=_blank}.
     
-
 === "Beta-Beat-OMC3"
 
     - Latest [Beta-Beating production version][prod_bbgui_omc3]{target=_blank}.
