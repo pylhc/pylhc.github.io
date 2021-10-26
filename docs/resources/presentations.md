@@ -30,7 +30,7 @@ External presentations and seminars are collected on EOS and can be reached eith
 
     **Location:** Accelerator and Technology Seminar, Helmholtz-Zentrum Berlin
     
-    **Data:** Slides: `presentation.tex` in [CERNBOX][jdilly2021HZBResources]{target=_blank .cern_login}
+    **Data:** Slides: `presentation.tex` in [CERNBOX][jdilly2021HZB]{target=_blank .cern_login}
     ```
     /eos/project-o/omc/seminars/2021-09-21.jdilly.increasing_efficiency_and_stability_of_lhc_hllhc_operation
     ```
