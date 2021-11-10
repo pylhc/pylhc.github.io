@@ -8,10 +8,48 @@ It can load data files for all supported beams, mostly binary SDDS files or file
 
 ## Opening Files and Applying SVD Cleaning
 
+### Automatic BPM removal
+
+First, BPMs are removed based on the following criteria:
+
+- known bad BPMs (list is provided in `Beta-Beat.src/harmonic_analysis/clean.py` and can be extended in `Bad BPMs` field)
+- BPMs which are not found in the model are discarded
+- Flat BPMs (difference between min/max is smaller than `Pk-2-pk cut`)
+- Spiky BPMs (value higher than `Max peak cut` found in at least one turn)
+- An exact 0 is detected in at least one turn
+
+### SVD-cleaning
+
+Secondly, SVD cleaning is performed.
+SVD modes with localized spikes in their spatial vectors indicate faulty BPMs using `Sum square` setting to find such spikes. 
+To globally reduce the noise on all BPM readings, only a predefined number of strongest singular modes (`Sing val cut`) remain in the turn-by-turn data.
+While the `Sum square` setting has a direct influence on the number of BPMs identified as faulty, the number of modes affects the overall noise level in turn-by-turn signal. 
+The original application of SVD on BPMs data cleaning can be found [in this publication][svd_clean_rhic].
+
+If SVD is enabled in the settings, the external SVD cleaning python script will be called for the current file during the loading process.
+when SVD cleaning detects and removes bad BPMs, they will be marked in the BPM names list.
+
+All the settings mentioned above can be changed in the global settings panel:
+<figure>
+<center>
+  <img src="../../../assets/images/cleaning_settings.png" width="95%" />
+  <figcaption>Settings panel, where cleaning thresholds can be changed.</figcaption>
+</center>
+</figure>
+
+Turn-by-turn data cleaning is summarized in the output file which can be found at: 
+`Measurements/Beam1@...1-6600/Beam1@...sdds.bad_bpms_{x,y}.`
+
+It contains BPM names and corresponding threshold which identified a BPM as faulty.
+
+!!! note 
+    A single BPM can appear twice (for each threshold separately), e.g. in the case of exact zero flat signal.
+
 The content of the loaded files will be displayed in two charts:
 
-- One for the horizontal BPMs,
-- One for the vertical BPMs.
+- Horizontal BPMs,
+- Vertical BPMs.
+
 
 !!! todo
     Include a screenshot with two BPM panels.
@@ -19,10 +57,7 @@ The content of the loaded files will be displayed in two charts:
 The charts are interactive and can be used to zoom in/out, or focus on a given rectangle of the shown data.
 
 The charts can display either the measured amplitude values over turns for every BPM from the list or display the phase space, which is calculated by two consecutive BPMs.
-Additional functionality is done while loading a file.
 
-If SVD is enabled in the settings, the external SVD cleaning python script will be called for the current file during the loading process.
-If SVD cleaning detects and removes bad BPMs, they can be reviewed inside the bad BPM pane.
 
 !!! todo
     Include a screenshot of the bad bpms panel.
@@ -51,3 +86,5 @@ The buttons on the top left side of the pane provide useful features to handle t
 !!! note
     The `Create Average` option requires synchronized data from withing the same bounds, otherwise the results will be meaningless.
     The figure below shows three runs from LHC beam one with synchronized peaks for every turn and their corresponding averages.
+    
+  [svd_clean_rhic]: https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.7.042801
