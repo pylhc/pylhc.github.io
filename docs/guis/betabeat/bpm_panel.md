@@ -27,17 +27,17 @@ While the `Sum square` setting has a direct influence on the number of BPMs iden
 The original application of SVD on BPMs data cleaning can be found [in this publication][svd_clean_rhic].
 
 If SVD is enabled in the settings, the external SVD cleaning python script will be called for the current file during the loading process.
-If SVD cleaning detects and removes bad BPMs, they will be marked in the BPM names list.
+when SVD cleaning detects and removes bad BPMs, they will be marked in the BPM names list.
 
 All the settings mentioned above can be changed in the global settings panel:
 <figure>
 <center>
   <img src="../../../assets/images/cleaning_settings.png" width="95%" />
-  <figcaption>Settings panel where cleaning thresholds can be changed.</figcaption>
+  <figcaption>Settings panel, where cleaning thresholds can be changed.</figcaption>
 </center>
 </figure>
 
-Turn-by-turn data cleaning is summurized in the output file which can be found under the path: 
+Turn-by-turn data cleaning is summarized in the output file which can be found at: 
 `Measurements/Beam1@...1-6600/Beam1@...sdds.bad_bpms_{x,y}.`
 
 It contains BPM names and corresponding threshold which identified a BPM as faulty.
