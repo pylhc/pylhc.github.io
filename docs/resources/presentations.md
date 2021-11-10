@@ -34,6 +34,18 @@ External presentations and seminars are collected on EOS and can be reached eith
     ```
     /eos/project-o/omc/seminars/2021-09-21.jdilly.increasing_efficiency_and_stability_of_lhc_hllhc_operation
     ```
+    
+### 2020
+
+??? Abstract "*LHC optics measurements and corrections: A local observable for linear imperfections in circular accelerators* `A. Wegscheider`"
+    **Date:** 29.04.2020
+
+    **Location:** Gentner Day, CERN
+    
+    **Data:** Slides: `gentner_andreas.pdf` in [CERNBOX][awegsche2020Gentner]{target=_blank .cern_login}
+    ```
+    /eos/project-o/omc/seminars/2020-04-29.awegsche.gentner.omc_and_lobster
+    ```
 
 ### 2019 
 
@@ -70,6 +82,7 @@ External presentations and seminars are collected on EOS and can be reached eith
 [cernbox_seminars]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars&
 
 [jdilly2021HZB]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars/2021-09-21.jdilly.increasing_efficiency_and_stability_of_lhc_hllhc_operation
+[awegsche2020Gentner]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars/2020-04-29.awegsche.gentner.omc_and_lobster
 [emaclean2019HASCO]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars/2019-07-25.emaclean.acclerator_physics_and_the_lhc
 
 [emaclean2020BESeminar]: https://indico.cern.ch/event/884074/
