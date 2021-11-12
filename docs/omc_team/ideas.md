@@ -17,6 +17,7 @@
     * Measurements with ballistic optics.
 * Non-90 degrees arc cell phase advance to ease correction of errors in the arcs (reduce the knob degeneracy of orbit bumps at sextupoles).
 * Measure optics at smallest beta* for a long time, looking for an effect as in SKEKB where Final Focus quadrupole strength drifted by 0.01%.  https://kds.kek.jp/event/39396/
+* Try Closed Orbit Distortion optics measurement as in SuperKEKB with 3-6 orbit correctors per plane and orbit fitting.
 
 ### Coupling Related
 
