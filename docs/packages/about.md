@@ -43,6 +43,8 @@ The OMC team develops and maintains the following packages:
   _frequency analysis, optics computation from turn-by-turn data and corrections calculations._
 - **TFS-Pandas** (Python 3.6+): [:fontawesome-brands-github:][tfspandas]{target=\_blank} [:fontawesome-solid-book:][tfspandas_doc]{target=\_blank} [:fontawesome-solid-cube:][tfs_pypi]{target=\_blank} <br>
   _*TFS files* I/O functionality._
+- **Turn-by-Turn** (Python 3.7+): [:fontawesome-brands-github:][turnbyturn]{target=\_blank} [:fontawesome-solid-book:][turnbyturn_doc]{target=\_blank} [:fontawesome-solid-cube:][tbt_pypi]{target=\_blank} <br>
+  _*Particle accelerators turn by turn BPM measurements I/O functionality._
 - **SDDS-Reader** (Python 3.6+): [:fontawesome-brands-github:][sdds]{target=\_blank} [:fontawesome-solid-book:][sdds_doc]{target=\_blank} [:fontawesome-solid-cube:][sdds_pypi]{target=\_blank} <br>
   _*SDDS files* I/O functionality._
 - **Generic-Parser** (Python 3.6+): [:fontawesome-brands-github:][generic_parser]{target=\_blank} [:fontawesome-solid-book:][generic_parser_doc]{target=\_blank} [:fontawesome-solid-cube:][generic_parser_pypi]{target=\_blank} <br>
@@ -58,6 +60,8 @@ The OMC team develops and maintains the following packages:
 [pylhc_doc]: https://pylhc.github.io/PyLHC
 [tfspandas]: https://github.com/pylhc/tfs
 [tfspandas_doc]: https://pylhc.github.io/tfs
+[turnbyturn]: https://github.com/pylhc/turn_by_turn
+[turnbyturn_doc]: https://pylhc.github.io/turn_by_turn/
 [sdds]: https://github.com/pylhc/sdds
 [sdds_doc]: https://pylhc.github.io/sdds
 [generic_parser]: https://github.com/pylhc/generic_parser
@@ -68,6 +72,7 @@ The OMC team develops and maintains the following packages:
 [pylhc_pypi]: https://pypi.org/project/pylhc/
 [sdds_pypi]: https://pypi.org/project/sdds/
 [tfs_pypi]: https://pypi.org/project/tfs-pandas/
+[tbt_pypi]: https://pypi.org/project/turn-by-turn/
 [generic_parser_pypi]: https://pypi.org/project/generic-parser/
 [pylhc_submitter_pypi]: https://pypi.org/project/pylhc-submitter/
 [optics_functions]: https://github.com/pylhc/optics_functions
