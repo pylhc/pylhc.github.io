@@ -30,9 +30,19 @@ External presentations and seminars are collected on EOS and can be reached eith
 
     **Location:** Accelerator and Technology Seminar, Helmholtz-Zentrum Berlin
     
-    **Data:** Slides: `presentation.tex` in [CERNBOX][jdilly2021HZB]{target=_blank .cern_login}
+    **Data:** Slides: `presentation.pdf` in [CERNBOX][jdilly2021HZB]{target=_blank .cern_login}
     ```
     /eos/project-o/omc/seminars/2021-09-21.jdilly.increasing_efficiency_and_stability_of_lhc_hllhc_operation
+    ```
+    
+??? Abstract "*Corrections of high-order nonlinearities in the LHC and HL-LHC* `J. Dilly`"
+    **Date:** 17.03.2021
+
+    **Location:** DPG Spring Meetings
+    
+    **Data:** Slides: `presentation.pdf` in [CERNBOX][jdilly2021DPG]{target=_blank .cern_login}
+    ```
+    /eos/project/o/omc/seminars/2021-03-17.jdilly.DPG_spring.corrections_of_high-order_nonlinearities_in_the_LHC_and_HL-LHC
     ```
     
 ### 2020
@@ -82,6 +92,7 @@ External presentations and seminars are collected on EOS and can be reached eith
 [cernbox_seminars]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars&
 
 [jdilly2021HZB]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars/2021-09-21.jdilly.increasing_efficiency_and_stability_of_lhc_hllhc_operation
+[jdilly2021DPG]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars/2021-03-17.jdilly.DPG_spring.corrections_of_high-order_nonlinearities_in_the_LHC_and_HL-LHC
 [awegsche2020Gentner]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars/2020-04-29.awegsche.gentner.omc_and_lobster
 [emaclean2019HASCO]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars/2019-07-25.emaclean.acclerator_physics_and_the_lhc
 
