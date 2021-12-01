@@ -179,5 +179,6 @@ nav:
         - Editing Wiki: resources/howto/wiki.md
       - Publications: resources/publications.md
       - Presentations: resources/presentations.md
+      - Templates: resources/templates.md
       - FAQ: resources/faqs.md
 
