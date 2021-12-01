@@ -1,8 +1,11 @@
 # Templates
 
-Some of these templates are unofficial templates (marked), created for personal use.
-Even though they might look like official CERN resources, **they are not**.
-Please use responsibly.
+A collection of useful templates.
+
+!!! warning
+    Some of these are unofficial templates (marked), created for personal use.
+    Even though they might look like official CERN resources, **they are not**.
+    Please use responsibly.
 
 ## Presentations
 
