@@ -11,14 +11,14 @@ The `omc3` repository is the new version of our codes, refactored and rewritten 
 
 Installation is easily done via pip:
 ```bash
-pip install omc3
+python -m pip install omc3
 ```
 
 Additionally, some features require access to the CERN GPN and require CERN-specific dependencies.
 Those are installable from the CERN `Acc-Py` index through the `cern` extra.
 One can install from the CERN network or by providing the `index-url`:
 ```bash
-pip install --index-url http://acc-py-repo.cern.ch:8081/repository/vr-py-releases/simple --trusted-host acc-py-repo.cern.ch "omc3[cern]"
+python -m pip install --index-url http://acc-py-repo.cern.ch:8081/repository/vr-py-releases/simple --trusted-host acc-py-repo.cern.ch "omc3[cern]"
 ```
 
 ## What to expect
