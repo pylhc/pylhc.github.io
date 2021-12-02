@@ -14,9 +14,8 @@ Installation is easily done via pip:
 python -m pip install omc3
 ```
 
-Additionally, some features require access to the CERN GPN and require CERN-specific dependencies.
-Those are installable from the CERN `Acc-Py` index through the `cern` extra.
-One can install from the CERN network or by providing the `index-url`:
+Additionally, some features require access to the CERN Technical Network and require CERN-specific dependencies.
+Those are installable from the CERN `Acc-Py` index through the `cern` extra, and can be installed from the CERN network or by providing the `index-url`:
 ```bash
 python -m pip install --index-url http://acc-py-repo.cern.ch:8081/repository/vr-py-releases/simple --trusted-host acc-py-repo.cern.ch "omc3[cern]"
 ```
