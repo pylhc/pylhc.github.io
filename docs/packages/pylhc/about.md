@@ -9,6 +9,7 @@ It provides tools which can be useful for working with accelerators, but are not
 - [*Machine Settings Info*](machine_settings_info.md) - Prints an overview over the machine settings at a given time.
 - [*BSRT Logger* and *BSRT Analysis*](bsrt.md) - Saves data coming straight from LHC BSRT FESA class and allows subsequent analysis.
 - [*BPM Calibration*](bpm_calibration.md) - Script to compute the calibration factors for the LHC BPMs.
+- [*IR NonLinear RDT Correction*](irnl_correction.md) - Script to compute RDT correction in the (HL)LHC IRs including feed-down effects.
 
 ## Documentation
 
@@ -16,24 +17,19 @@ It provides tools which can be useful for working with accelerators, but are not
 
 ## Getting Started
 
-This  package is `Python 3.7+` compatible, but not yet deployed to PyPI.
-The best way to install is through pip and VCS:
+This  package is `Python 3.7+` compatible, and can be installed through `pip`:
 
 ```bash
-git clone https://github.com/pylhc/PyLHC
-pip install /path/to/PyLHC
-```
-
-Or simply from the online master branch, which is stable:
-
-```bash
-pip install git+https://github.com/pylhc/PyLHC.git#egg=pylhc
+python -m pip install pylhc
 ```
 
 After installing, codes can be run with either `python -m pylhc.SCRIPT --FLAG ARGUMENT` or calling path to the `.py` file directly.
 
-Note: some of the scripts access functionality only available on the CERN Technical Network.
-To use those, you should make sure to install the relevant extra dependencies with `pip install path/to/Pylhc[tech]`.
+Note: similarly to `omc3`, some of the scripts access functionality only available on the CERN Technical Network.
+To use those, you should make sure to install the relevant extra dependencies with:
+```bash
+python -m pip install --index-url http://acc-py-repo.cern.ch:8081/repository/vr-py-releases/simple --trusted-host acc-py-repo.cern.ch "pylhc[cern]"`.
+```
 
 [repo]: https://github.com/pylhc/PyLHC
 [documentation]: https://pylhc.github.io/PyLHC/
