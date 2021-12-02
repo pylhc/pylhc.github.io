@@ -60,7 +60,7 @@ This is a template for CERN Accelerator and Technology Sector (ATS) notes.
     </embed>
 </object>
 
-### CERN Yellow Report Submission
+### CERN Report Submission
 
 [Overleaf Template][CernReportTemplate]{target=_blank}
 
@@ -111,7 +111,7 @@ A LaTeX template for the PhD progress reports, similar to the description templa
 [PhdDescriptionTemplateCERN2018]: https://admin-eguide.web.cern.ch/en/content/thesis-description-template
 [PhdProgressTemplateCERN2015]: https://cds.cern.ch/record/1704442/files/DOCT_progress_report_template.doc
 
-[HiLumiTemplateLatex]: 
-[OMCTemplateLatex]: 
-[PhdDescriptionTemplateLatex]: 
-[PhdProgressTemplateLatex]: 
+[HiLumiTemplateLatex]: https://www.overleaf.com/latex/templates/unofficial-hilumi-presentation-template/vhfryxvzhtrn
+[OMCTemplateLatex]: https://www.overleaf.com/latex/templates/omc-presentation-template/xxhpqxzkjhxj
+[PhdDescriptionTemplateLatex]: https://www.overleaf.com/latex/templates/unofficial-cern-phd-description-2018-template/nzdmvbcxsvjt
+[PhdProgressTemplateLatex]: https://www.overleaf.com/latex/templates/unofficial-cern-phd-progress-report-2015-template/byjwrfytfnmm
