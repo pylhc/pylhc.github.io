@@ -24,7 +24,7 @@ A changelog file is made available in the Github repository, at the following [l
 
 ## License
 
-This software is licensed under the GNU GPLv3 License, see [License][license]{target=_blank}.
+This software is licensed under the `MIT` License, see [License][license]{target=_blank}.
 
 ## Authors
 
