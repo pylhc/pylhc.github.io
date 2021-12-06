@@ -187,7 +187,7 @@ $$
 $$
 
 where $H(n_x,n_y)$ is the measured spectral line which is just the real projection of the complex line. 
-%
+
 Under the assumption that the region between $s_a$ and $s_b$ is free from non-linearities and coupling
 the action $J_z$ does not change between the two positions and
 
@@ -258,12 +258,10 @@ $$
 From the equations for the phases above, one gets two expressions for each RDT phase:
 
 $$
-\begin{equation}
-  \begin{matrix*}[l]
-  q_{1001} &= -\arg{A_{0,1}}-\varphi_y + \tfrac{\pi}{2} &= \arg{B_{1,0}}+\varphi_x -\tfrac{\pi}{2}\\
-  q_{1010} &= -\arg{A_{0,-1}} +\varphi_y + \tfrac{\pi}{2} &= -\arg{B_{-1,0}}+\varphi_x +\tfrac{\pi}{2}
-  \end{matrix*}
-\end{equation}
+\begin{align}
+  q_{1001} &= -\arg{A_{0,1}}-\varphi_y + \tfrac{\pi}{2} & &= \arg{B_{1,0}}+\varphi_x -\tfrac{\pi}{2}\\
+  q_{1010} &= -\arg{A_{0,-1}} +\varphi_y + \tfrac{\pi}{2} & &= -\arg{B_{-1,0}}+\varphi_x +\tfrac{\pi}{2}
+\end{align}
 $$
 
 which can finally be used to calculate the coupling RDTs $f_{1001}$ and $f_{1010}$.
