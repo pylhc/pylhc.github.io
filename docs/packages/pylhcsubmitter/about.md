@@ -13,19 +13,23 @@
 
 ## Getting Started
 
-This package is `Python 3.7+` compatible and deployed to PyPI.
-The best way to install is through pip:
+!!! warning "Package Availability"
+    As it requires `HTCondor` bindings, this package is unavailable on Windows.
+    The package is available on:
+      - `Linux` through `PyPI`.
+      - `Linux` and `macOS` through `conda-forge`.
 
+Installation is easily done via pip:
 ```bash
-pip install pylhc-submitter
+python -m pip install pylhc-submitter
 ```
 
-Alternatively, a local copy of the repository can be obtained and installed as such:
-
+One can also install in a conda environment via the conda-forge channel with:
 ```bash
-git clone https://github.com/pylhc/submitter
-pip install /path/to/submitter
+conda install -c conda-forge pylhc_submitter
 ```
+
+After installing, scripts can be run with either python -m pylhc_submitter.SCRIPT --FLAG ARGUMENT or by calling the Python files directly.
 
 After installing, codes can be run with either
 

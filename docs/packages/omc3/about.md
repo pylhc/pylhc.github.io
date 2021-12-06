@@ -7,6 +7,19 @@ The `omc3` repository is the new version of our codes, refactored and rewritten 
     This section acts as a general documentation and guide to using the `omc3` package.
     The package's source can be found on [Github][omc3_gh]{target=_blank} and its API documentation can be found at the [following link][omc3_doc]{target=_blank}.
 
+## Installing
+
+Installation is easily done via pip:
+```bash
+python -m pip install omc3
+```
+
+Additionally, some features require access to the CERN Technical Network and require CERN-specific dependencies.
+Those are installable from the CERN `Acc-Py` index through the `cern` extra, and can be installed from the CERN network or by providing the `index-url`:
+```bash
+python -m pip install --index-url http://acc-py-repo.cern.ch:8081/repository/vr-py-releases/simple --trusted-host acc-py-repo.cern.ch "omc3[cern]"
+```
+
 ## What to expect
 
 The `omc3` package serves the following purposes:
@@ -18,13 +31,9 @@ The `omc3` package serves the following purposes:
 For installation instructions and detailed content see the [getting started guide](getting_started.md).
 For a step by step walk-through of an `omc3` analysis workflow, see the [workflow guide](analysis.md).
 
-## Changelog
-
-A changelog file is made available in the Github repository, at the following [link][omc3_changelog]{target=_blank}.
-
 ## License
 
-This software is licensed under the GNU GPLv3 License, see [License][license]{target=_blank}.
+This software is licensed under the `MIT` License, see [License][license]{target=_blank}.
 
 ## Authors
 
