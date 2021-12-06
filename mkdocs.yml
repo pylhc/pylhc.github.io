@@ -80,6 +80,7 @@ markdown_extensions:
       custom_checkbox: true
       clickable_checkbox: true
   - pymdownx.tilde
+  - pymdownx.highlight
 
 # Customization
 extra:
