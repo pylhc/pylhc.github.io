@@ -64,7 +64,7 @@ External presentations and seminars are collected on EOS and can be reached eith
 
     **Location:** HASCO, Göttingen 
     
-    **Data:** Slides: `Maclean - 2019 - Accelerator Physics and the LHC.pdf` in [CERNBOX][emaclean2019HASCO]{target=_blank .cern_login}
+    **Data:** [Slides][emaclean2019HASCOSlides]{target=_blank} from the [Seminar][emaclean2019HASCO]{target=_blank}
     ```
     /eos/project-o/omc/seminars/2019-07-25.emaclean.acclerator_physics_and_the_lhc
     ```
@@ -94,7 +94,8 @@ External presentations and seminars are collected on EOS and can be reached eith
 [jdilly2021HZB]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars/2021-09-21.jdilly.increasing_efficiency_and_stability_of_lhc_hllhc_operation
 [jdilly2021DPG]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars/2021-03-17.jdilly.DPG_spring.corrections_of_high-order_nonlinearities_in_the_LHC_and_HL-LHC
 [awegsche2020Gentner]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars/2020-04-29.awegsche.gentner.omc_and_lobster
-[emaclean2019HASCO]: https://cernbox.cern.ch/index.php/apps/files/?dir=/__myprojects/omc/seminars/2019-07-25.emaclean.acclerator_physics_and_the_lhc
+[emaclean2019HASCO]: https://indico.cern.ch/event/788195/contributions/3364867/
+[emaclean2019HASCOSlides]: https://indico.cern.ch/event/788195/contributions/3364867/attachments/1886006/3109100/2019_07_25_HASCO_lcomp.pdf
 
 [emaclean2020BESeminar]: https://indico.cern.ch/event/884074/
 [emaclean2020BESeminarSlides]: https://indico.cern.ch/event/884074/attachments/1979381/3295542/BEseminar.pptx

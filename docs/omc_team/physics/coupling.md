@@ -1,49 +1,4 @@
-# The Physics of OMC
 
-!!! note
-    Long and detailed note of the kind of accelerator physics that OMC takes care of.
-    Includes the prerequisites of accelerator physics necessary to do OMC work / understand OMC methods.
-    See example headers below.
-
-
-Until this section is filled, [Ewens presentation at Uni Goettingen][maclean_goettingen_2019]{target=_blank} provides some insights.
-
-## Basic Error Propagation
-
-Let's have a function $f$ of variables $x_i$, which can be well linearised around some point $f_0$:
-
-$$
-f\approx f_0 + \sum_i \frac{\partial f}{\partial x_i}
-$$
-
-then we can write the variance $\sigma_f^2$ of $f$ as follows:
-
-$$
-\sigma_f^2
-=
-J\Sigma J^T
-=
-\left(\begin{matrix} \frac{\partial f}{\partial x_1}&\frac{\partial f}{\partial x_2}&\cdots\end{matrix}\right)\cdot
-\left(\begin{matrix} \sigma_1^2&\sigma_{12}&\cdots\\ \sigma_{21}&\sigma_2^2&\cdots\\ \vdots& \vdots& \ddots \end{matrix}\right)
-\left(\begin{matrix} \frac{\partial f}{\partial x_1}\\\frac{\partial f}{\partial x_2}\\\vdots \end{matrix}\right)
-,
-$$
-
-where $J$ is the Jacobian of $f$ and the $\sigma_i$ are the uncertainties of variables $x_i$, while $\sigma_{ij}$ are the covariances between the variables.
-The **covariance matrix** $\Sigma$ you can get, for instance, from a fitting function.
-We often assume that the variables are not correlated, i.e. covariance matrix has non-zero values only on the diagonal.
-In such a case, we get the famous formula:
-
-$$
-\sigma_f^2=\sum_i \left(\frac{\partial f}{\partial x_i}\right)^2 \sigma_i^2  
-$$
-
-However, sometimes we should not neglect the covariances.
-For details, see the more extensive [Wikipedia article about propagation of uncertainty][wiki_propagation_uncertainty]{target=_blank} or your favourite statistics textbook.
-
-## Basics of Accelerator Physics
-
-### Coupling Measurement
 
 !!! Note
     This section makes heavy use of normal forms and resonance driving terms (RDTs).
@@ -55,6 +10,8 @@ For details, see the more extensive [Wikipedia article about propagation of unce
     and - for the full mathematical details - to the papers of [Bazzani][bazzani_normal_form]
     and [Bartolini][bartolini_normal_form].
 
+
+## The 2-BPM-Method
 One possible method to calculate coupling used for LHC -- which is independent of BPM calibration errors --
 makes use of two nearby BPMs in order to cancel out calibration factors. It is therefore called
 the _two BPM method_. This method is described in this section.
@@ -73,7 +30,7 @@ $$
 $$
 
 where $\zeta_{x/y}^\pm$ denotes normal form coordinates and $f_{1001}$ and $f_{1010}$ are the
-coupling RDTs. A calculation of the relations above can be found [here][franchi_emittance_sharing].
+coupling RDTs. A calculation of the relations above can be found in Franchi's paper about emittance sharing: [10.1103/PhysRevSTAB.10.064003][franchi_emittance_sharing].
 
 By the term _spectral lines_, we usually denote the Fourier transforms of the turn-by-turn spectrum.
 
@@ -136,8 +93,10 @@ the equations for $A_{0,1}$, $B_{1,0}$, $A_{0,-1}$ and $B_{-1,0}$
 
 $$
 \begin{align}
-    \left|f_{1001}\right| &= \frac{1}{2}\sqrt{\left| A_{0,1}B_{1,0} \right|} \\
+    \left|f_{1001}\right| &= \frac{1}{2}\sqrt{\left| A_{0,1}B_{1,0} \right|}
+\label{eq:normalised_spectral_line_to_rdt_diff} \\
     \left|f_{1010}\right| &= \frac{1}{2}\sqrt{\left| A_{0,-1}B_{-1,0} \right|}
+\label{eq:normalised_spectral_line_to_rdt_sum}
 \end{align}
 $$
 
@@ -145,7 +104,7 @@ The normalised spectral lines $A_{0,n_y}$ and $B_{n_x,0}$ are the Fourier compon
 coordinates. But only the projections onto the real axis can be measured. The next step is to calculate
 the complex coordinates from the measured ones.
 
-Since $h_z^\pm = z \pm ip_z$, the complex coordinate can be obtained from positon and momentum.
+Since $h_z^\pm = z \pm ip_z$, the complex coordinate can be obtained from position and momentum.
 BPMs can only measure position but using the position data from a second BPM one can reconstruct the momentum.
 The propagation of complex C-S coordinates through a region that is empty of non-linearities reads
 
@@ -160,7 +119,7 @@ $$
 \end{equation}
 $$
 
-where the transfer matrix $\mathbf{R}_{ab}$ is a simple rotation matrix as discussed in section~\ref{sec_intro_cs}.
+where the transfer matrix $\mathbf{R}_{ab}$ is a simple rotation matrix.
 From this one can reconstruct the momentum:
 
 $$
@@ -182,11 +141,12 @@ Since the Fourier transform is linear, this identity can be propagated to the sp
 
 $$
 \begin{equation}
+\label{eq:reconstr_cplx}
     H^+(n_x,n_y)_a = (1-i\tan\Delta)H(n_x,n_y)_a - \frac{i}{\cos\Delta}H(n_x,n_y)_b
 \end{equation}
 $$
 
-where $H(n_x,n_y)$ is the measured spectral line which is just the real projection of the complex line. 
+where $H(n_x,n_y)$ is the measured spectral line which is just the real projection of the complex line.
 
 Under the assumption that the region between $s_a$ and $s_b$ is free from non-linearities and coupling
 the action $J_z$ does not change between the two positions and
@@ -207,7 +167,7 @@ $$
 \end{align}
 $$
 
-This can be plugged into the reconstruction formula \eqref{eq_reconstr_cplx}
+This can be plugged into the reconstruction formula $\eqref{eq:reconstr_cplx}$
 
 $$
 \begin{equation}
@@ -232,9 +192,8 @@ $$
 \end{align}
 $$
 
-Which can now be plugged in the equations from the beginning, relating $f_{1001}$ and $f_{1010}$
-to the normalised spectral lines in order to calculate the amplitude of the coupling RDTs
-$f_{1001}$ and $f_{1010}$.
+Which can now be plugged into $\eqref{eq:normalised_spectral_line_to_rdt_diff}$ and $\eqref{eq:normalised_spectral_line_to_rdt_sum}$
+ in order to calculate the amplitude of the coupling RDTs $f_{1001}$ and $f_{1010}$.
 The phases of $A_{0.1},\,B_{1,0},\,A_{0,-1},\,B_{-1,0}$ contain the phases of the RDTs:
 
 $$
@@ -266,13 +225,7 @@ $$
 
 which can finally be used to calculate the coupling RDTs $f_{1001}$ and $f_{1010}$.
 
-## LHC IR Linear Optics
 
-## LHC IR NonLinear Optics
-
-
-[wiki_propagation_uncertainty]: https://en.wikipedia.org/wiki/Propagation_of_uncertainty
-[maclean_goettingen_2019]: https://indico.cern.ch/event/788195/contributions/3364867/attachments/1886006/3109100/2019_07_25_HASCO_lcomp.pdf
 [franchi_emittance_sharing]: https://inspirehep.net/files/14639a62394d4ce17ea972088f685d91
 [bazzani_normal_form]: https://inspirehep.net/literature/373560
 [bartolini_normal_form]: https://cds.cern.ch/record/333077
