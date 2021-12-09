@@ -47,7 +47,7 @@ For details, see the more extensive [Wikipedia article about propagation of unce
 
 !!! Note
     This section makes heavy use of normal forms and resonance driving terms (RDTs).
-    An introductin to those topics is beyond the scope of this website (for now?).
+    An introductin to those topics is beyond the scope of this website.
     The reader is referred to the great, illustrative introductions at the
     [CAS in Trondheim][herr_cas],
     [W. Herr's and E. Forest's chapter about non-linear dynamics][herr_forest_nf] and
@@ -75,7 +75,7 @@ $$
 where $\zeta_{x/y}^\pm$ denotes normal form coordinates and $f_{1001}$ and $f_{1010}$ are the
 coupling RDTs. A calculation of the relations above can be found [here][franchi_emittance_sharing].
 
-By the term _spectral lines_, we usually denote the fourier transforms of the turn-by-turn spectrum.
+By the term _spectral lines_, we usually denote the Fourier transforms of the turn-by-turn spectrum.
 
 $$
 \begin{align}
@@ -84,7 +84,7 @@ $$
 \end{align}
 $$
 
-If the BPM calibration is not perfect the measured $H$ and $V$ lines are not proportional w.r.t. each other:
+If the BPM calibration is not perfect, the measured $H$ and $V$ lines are not proportional w.r.t. each other:
 
 $$
 \newcommand{\meas}{^\text{meas}}
@@ -94,7 +94,7 @@ $$
 \end{align}
 $$
 
-The calibration factors $C_{x/y}$ cancel out if one devides the spectral line by the amplitude of
+The calibration factors $C_{x/y}$ cancel out if one divides the spectral line by the amplitude of
 the main line:
 
 $$
@@ -145,9 +145,9 @@ The normalised spectral lines $A_{0,n_y}$ and $B_{n_x,0}$ are the Fourier compon
 coordinates. But only the projections onto the real axis can be measured. The next step is to calculate
 the complex coordinates from the measured ones.
 
-Since $h_z^\pm = z \pm ip_z$ the complex coordinate can be obtained from positon and momentum.
+Since $h_z^\pm = z \pm ip_z$, the complex coordinate can be obtained from positon and momentum.
 BPMs can only measure position but using the position data from a second BPM one can reconstruct the momentum.
-The propagation of complex C-S coordinates through a region that is empty of nonlilnearities reads
+The propagation of complex C-S coordinates through a region that is empty of non-linearities reads
 
 $$
 \begin{equation}
