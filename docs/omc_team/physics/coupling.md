@@ -12,7 +12,7 @@
 
 
 ## The 2-BPM-Method
-One possible method to calculate coupling used for LHC -- which is independent of BPM calibration errors --
+One possible method to calculate coupling used for LHC - which is independent of BPM calibration errors -
 makes use of two nearby BPMs in order to cancel out calibration factors. It is therefore called
 the _two BPM method_. This method is described in this section.
 
