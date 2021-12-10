@@ -1,23 +1,23 @@
+# Linear Coupling
 
+This section pertains to the measurement and reconstruction of coupling resonance driving terms.
 
-!!! Note
-    This section makes heavy use of normal forms and resonance driving terms (RDTs).
-    An introductin to those topics is beyond the scope of this website.
-    The reader is referred to the great, illustrative introductions at the
-    [CAS in Trondheim][herr_cas],
-    [W. Herr's and E. Forest's chapter about non-linear dynamics][herr_forest_nf] and
-    [R. Tomas' paper about RDTs][tomas_rdt]
-    and - for the full mathematical details - to the papers of [Bazzani][bazzani_normal_form]
-    and [Bartolini][bartolini_normal_form].
+!!! tip "Relevant Resources"
+    This section makes heavy use of normal forms and resonance driving terms (`RDT`s).
+    While an introduction to those topics is beyond the scope of this website, the reader is referred to the great illustrative introductions at the
+    [CAS in Trondheim][herr_cas]{target=\_blank},
+    [W. Herr's and E. Forest's chapter about non-linear dynamics][herr_forest_nf]{target=\_blank} and
+    [R. Tomas' paper about RDTs][tomas_rdt]{target=\_blank}
+    and - for the full mathematical details - to the papers of [Bazzani][bazzani_normal_form]{target=\_blank}
+    and [Bartolini][bartolini_normal_form]{target=\_blank}.
 
 
 ## The 2-BPM-Method
-One possible method to calculate coupling used for LHC - which is independent of BPM calibration errors -
-makes use of two nearby BPMs in order to cancel out calibration factors. It is therefore called
-the _two BPM method_. This method is described in this section.
 
-Under the assumption that no other perturbations than linear transverse coupling are present in the
-lattice, the Courant-Snyder coordinates $h_{x/y}^\pm$ read
+One possible method to calculate coupling used for LHC - which is independent of BPM calibration errors - makes use of two nearby BPMs in order to cancel out calibration factors. 
+It is therefore called the _two BPM method_.
+
+Under the assumption that no other perturbations than linear transverse coupling are present in the lattice, the Courant-Snyder coordinates $h_{x/y}^\pm$ read:
 
 $$
 \newcommand{\conj}[1]{#1^*}
@@ -29,10 +29,10 @@ $$
 \end{align}
 $$
 
-where $\zeta_{x/y}^\pm$ denotes normal form coordinates and $f_{1001}$ and $f_{1010}$ are the
-coupling RDTs. A calculation of the relations above can be found in Franchi's paper about emittance sharing: [10.1103/PhysRevSTAB.10.064003][franchi_emittance_sharing].
+where $\zeta_{x/y}^\pm$ denotes normal form coordinates and $f_{1001}$ and $f_{1010}$ are the coupling RDTs. 
+A calculation of the relations above can be found in Franchi's paper about emittance sharing: [10.1103/PhysRevSTAB.10.064003][franchi_emittance_sharing]{target=\_blank}.
 
-By the term _spectral lines_, we usually denote the Fourier transforms of the turn-by-turn spectrum.
+By the term _spectral lines_, we usually denote the Fourier transforms of the turn-by-turn spectrum:
 
 $$
 \begin{align}
@@ -51,8 +51,7 @@ $$
 \end{align}
 $$
 
-The calibration factors $C_{x/y}$ cancel out if one divides the spectral line by the amplitude of
-the main line:
+The calibration factors $C_{x/y}$ cancel out if one divides the spectral line by the amplitude of the main line:
 
 $$
 \begin{align}
@@ -87,9 +86,7 @@ $$
 
 which contain $f_{1010}$.
 
-The coupling RDTs $f_{1010}$ and $f_{1001}$ can then be calculated by combining
-the equations for $A_{0,1}$, $B_{1,0}$, $A_{0,-1}$ and $B_{-1,0}$
-, respectively:
+The coupling RDTs $f_{1010}$ and $f_{1001}$ can then be calculated by combining the equations for $A_{0,1}$, $B_{1,0}$, $A_{0,-1}$ and $B_{-1,0}$, respectively:
 
 $$
 \begin{align}
@@ -100,13 +97,13 @@ $$
 \end{align}
 $$
 
-The normalised spectral lines $A_{0,n_y}$ and $B_{n_x,0}$ are the Fourier components of the complex
-coordinates. But only the projections onto the real axis can be measured. The next step is to calculate
-the complex coordinates from the measured ones.
+The normalised spectral lines $A_{0,n_y}$ and $B_{n_x,0}$ are the Fourier components of the complex coordinates.
+However, only the projections onto the real axis can be measured. 
+The next step is to calculate the complex coordinates from the measured ones.
 
 Since $h_z^\pm = z \pm ip_z$, the complex coordinate can be obtained from position and momentum.
-BPMs can only measure position but using the position data from a second BPM one can reconstruct the momentum.
-The propagation of complex C-S coordinates through a region that is empty of non-linearities reads
+BPMs can only measure position, but using the position data from a second BPM one can reconstruct the momentum.
+The propagation of complex Courant-Snyder coordinates through a region that is empty of non-linearities reads:
 
 $$
 \begin{equation}
@@ -148,8 +145,7 @@ $$
 
 where $H(n_x,n_y)$ is the measured spectral line which is just the real projection of the complex line.
 
-Under the assumption that the region between $s_a$ and $s_b$ is free from non-linearities and coupling
-the action $J_z$ does not change between the two positions and
+Under the assumption that the region between $s_a$ and $s_b$ is free from non-linearities and coupling, the action $J_z$ does not change between the two positions and one can infer:
 
 $$
 \begin{align}
@@ -158,7 +154,7 @@ $$
 \end{align}
 $$
 
-This allows to express the real normalised spectral lines as
+This allows to express the real normalised spectral lines as:
 
 $$
 \begin{align}
@@ -167,7 +163,7 @@ $$
 \end{align}
 $$
 
-This can be plugged into the reconstruction formula $\eqref{eq:reconstr_cplx}$
+These expressions can now be plugged into the reconstruction formula $\eqref{eq:reconstr_cplx}$:
 
 $$
 \begin{equation}
@@ -175,7 +171,7 @@ $$
 \end{equation}
 $$
 
-Together with the identity
+Together with the identity:
 
 $$
 \begin{equation}
@@ -183,7 +179,7 @@ $$
 \end{equation}
 $$
 
-because $H^-(1,0) = 0$, one can express $A^+(0,n_y)$ and $B(n_x, 0)$ in terms of normalised real spectral lines
+because $H^-(1,0) = 0$, one can express $A^+(0,n_y)$ and $B(n_x, 0)$ in terms of normalised real spectral lines:
 
 $$
 \begin{align}
@@ -192,8 +188,7 @@ $$
 \end{align}
 $$
 
-Which can now be plugged into $\eqref{eq:normalised_spectral_line_to_rdt_diff}$ and $\eqref{eq:normalised_spectral_line_to_rdt_sum}$
- in order to calculate the amplitude of the coupling RDTs $f_{1001}$ and $f_{1010}$.
+As a final step, one can now plug the above into $\eqref{eq:normalised_spectral_line_to_rdt_diff}$ and $\eqref{eq:normalised_spectral_line_to_rdt_sum}$ in order to calculate the amplitude of the coupling RDTs $f_{1001}$ and $f_{1010}$.
 The phases of $A_{0.1},\,B_{1,0},\,A_{0,-1},\,B_{-1,0}$ contain the phases of the RDTs:
 
 $$
@@ -205,7 +200,7 @@ $$
 \end{align}
 $$
 
-where the phase $\frac{\pi}{2}$ comes from the factor $i$ and the phases of the RDTs are defined as
+where the phase $\frac{\pi}{2}$ comes from the factor $i$ and the phases of the RDTs are defined as:
 
 $$
 \begin{align}
