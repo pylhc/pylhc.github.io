@@ -81,7 +81,6 @@ markdown_extensions:
       custom_checkbox: true
       clickable_checkbox: true
   - pymdownx.tilde
-  - pymdownx.highlight
 
 # Customization
 extra:
@@ -132,7 +131,7 @@ nav:
       - Machine Settings Info: packages/pylhc/machine_settings_info.md
       - BSRT Logger/Analysis: packages/pylhc/bsrt.md
       - BPM Calibration: packages/pylhc/bpm_calibration.md
-      - BPM Calibration: packages/pylhc/irnl_correction.md
+      - IRNL Correction: packages/pylhc/irnl_correction.md
       - ↪ On Github: https://github.com/pylhc/PyLHC
     - PyLHC-Submitter: 
       - About: packages/pylhcsubmitter/about.md
