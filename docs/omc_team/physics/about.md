@@ -1,9 +1,7 @@
 # The Physics of OMC
 
 !!! note
-    Long and detailed note of the kind of accelerator physics that OMC takes care of.
-    Includes the prerequisites of accelerator physics necessary to do OMC work / understand OMC methods.
-    See example headers below.
+    This section of the website is in construction.
 
 
 [Ewens presentation at Uni Goettingen][maclean_goettingen_2019]{target=_blank} gives a good general introduction into the topic of LHC related accelerator physics.
