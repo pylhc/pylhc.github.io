@@ -1,27 +1,11 @@
 /* mathjax-loader.js  file */
-/* ref: http://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/ */
-(function (win, doc) {
-  win.MathJax = {
-    config: ["MMLorHTML.js"],
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX"],
-    tex2jax: {
-      inlineMath: [ ["\\(","\\)"] ],
-      displayMath: [ ["\\[","\\]"] ]
-    },
-    TeX: {
-      TagSide: "right",
-      TagIndent: "1.2em",
-      MultLineWidth: "85%",
-      equationNumbers: {
-        autoNumber: "AMS",
-      },
-      unicode: {
-        fonts: "STIXGeneral,'Arial Unicode MS'"
-      }
-    },
-    displayAlign: 'center',
-    showProcessingMessages: false,
-    messageStyle: 'none'
-  };
-})(window, document);
+/* http://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/ */
+/* https://docs.mathjax.org/en/latest/input/tex/eqnumbers.html */
+/* https://docs.mathjax.org/en/latest/options/index.html */
+window.MathJax = {
+  tex: {
+    tags: 'ams',
+    tagSide: 'right',
+    tagIndent: '1.2em',
+  },
+};
