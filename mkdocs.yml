@@ -99,6 +99,7 @@ extra_css:
 extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - javascripts/mathjax-config.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # Site Layout
@@ -107,7 +108,12 @@ nav:
   - The OMC Team:
     - About: omc_team/about.md
     - Future MD Ideas: omc_team/ideas.md
-    - Physics of OMC: omc_team/physics.md
+    - Physics of OMC:
+      - About: omc_team/physics/about.md
+      - Error Propagation: omc_team/physics/error_propagation.md
+      - Coupling: omc_team/physics/coupling.md
+      - Linear IR Optics: omc_team/physics/ir_linear_optics.md
+      - Nonlinear IR Optics: omc_team/physics/ir_nonlinear_optics.md
     - OMC Methods: omc_team/methods.md
     - Publications: omc_team/publications.md
   - Python Ecosystem:
@@ -124,6 +130,7 @@ nav:
       - Machine Settings Info: packages/pylhc/machine_settings_info.md
       - BSRT Logger/Analysis: packages/pylhc/bsrt.md
       - BPM Calibration: packages/pylhc/bpm_calibration.md
+      - IRNL Correction: packages/pylhc/irnl_correction.md
       - ↪ On Github: https://github.com/pylhc/PyLHC
     - PyLHC-Submitter: 
       - About: packages/pylhcsubmitter/about.md
