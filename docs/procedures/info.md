@@ -54,6 +54,18 @@ To mark a task as finished, just click on the checkbox next to it!
     Comments on analysis results and attached screenshots.
     ```
 
+!!! tip "Machine Settings"
+    There is in `pylhc` a callable module to extract the machine settings at a given time, which one can use to find the relevant information to enter into the logbook.
+    A simple call would be, for instance here to get settings at call time:
+    ```bash
+    /afs/cern.ch/eng/sl/lintrack/omc_python3/bin/python -m pylhc.machine_settings_info
+    ```
+
+    Note that this needs to be run from a machine that has access to the technical network.
+    To only get specific knobs at specific times (careful with UTC times), see the [package's documentation][pylhc_doc].
+
+
 *[CCC]: CERN Control Center
 
 [op_webtools]: https://op-webtools.web.cern.ch/index.html
+[pylhc_doc]: https://pylhc.github.io/PyLHC
