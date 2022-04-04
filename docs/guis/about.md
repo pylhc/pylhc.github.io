@@ -71,13 +71,13 @@ If you encounter a complaint about `Java` being too old, try using `/mcr/bin/jws
 
 !!! failure
     ```bash
-    javaws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-betabeating/PRO/BetaBeating-Control-3t.jnlp
+    javaws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
     ```
     :material-arrow-right-bold: Disabling Java as it is too old and likely to be insecure. To reenable use jcontrol utility
 
 !!! success
     ```bash
-    /mcr/bin/jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-betabeating/PRO/BetaBeating-Control-3t.jnlp
+    /mcr/bin/jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
     ```
 
 #### Unspecific Error
