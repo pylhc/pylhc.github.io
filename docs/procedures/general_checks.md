@@ -6,7 +6,7 @@ Here are a few checks to perform before starting measurements.
 These are updated as much as possible for Run 3 values.
 
 - [ ] <details class="nodeco"><summary>Make Sure Intensity Is below $10^{10}$ppb until Local Corrections Are In</summary>
-      <p> After local corrections, we can move to having 3 bunches at $10^{10}$ppb evenly spaced along the ring.
+      <p> After local corrections, we can move to having 3 bunches (each below $10^{10}$ppb) evenly spaced along the ring.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Mask the Appropriate BLMs</summary>
@@ -23,7 +23,9 @@ These are updated as much as possible for Run 3 values.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Mask the ATLAS BCM</summary>
-      <p> This status should be visible in the Multiturn application.
+      <p> This status should be visible in the Multiturn application (better check still).
+      The only way to change this setting is by contacting the ATLAS control room.
+      See with the EIC to get in touch.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Check the AC Dipole Keys Are In</summary>
@@ -43,6 +45,8 @@ These are updated as much as possible for Run 3 values.
 Here are some general checks on should always keep in mind when performing measurements.
 
 - [ ] <details class="nodeco"><summary>Make Sure to Put in the Correct Tunes</summary>
+      <p> At top energy we're usually at $Q_x = 62.31$, $Q_y = 60.32$.
+      </p></details>
 
 - [ ] <details class="nodeco"><summary>Start with Small Kicks and Gradually Go up in Amplitude</summary>
       <p> For linear kicks we aim for $\sim 2mm$ in the arcs.
@@ -71,7 +75,7 @@ Here are some general checks on should always keep in mind when performing measu
 
 - [ ] <details class="nodeco"><summary>Give Sensible Names to Complete Sets of Data</summary>
       <p> When an analysis is done on a complete group of kicks, try to find a descriptive name.
-      See the [info][../info.md] page for naming conventions.
+      See the [info page](info.md) for naming conventions.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Log Anything of Interest in the Logbook</summary>
@@ -90,21 +94,21 @@ Here are some general checks on should always keep in mind when performing measu
       - [ ] <details class="nodeco"><summary>Triplets</summary>
             <p> The triplets are tricky as all three are powered in series with a common knob, then some have an additional trim.
             Calculated corrections should be *sign-swapped for Q1 and Q3 but not for Q2*.
-            See with the EIC if you have any doubts.
+            If creating new knobs is needed, see with the EIC.
             </p></details>
       - [ ] <details class="nodeco"><summary>Local Corrections</summary>
-            <p> Decide on a convention for how we output the corrections (omc3 or bbsrc) and how to use them? Do checks on friday for that!
+            <p> Decide on a convention for how we output the corrections (`omc3` or `BetaBeat.src`) and how to use them? Do checks on friday for that!
             </p></details>
 
 - [ ] <details class="nodeco"><summary>Knob Creation Permission</summary>
       <p> It is not enough to be logged in as `lhcop` to create knobs for corrections.
-      Both Tobias and Ewen have the permissions, if they aren't present see with the EIC.
+      Both Tobias and Ewen have the permissions, if they aren't present see with the EIC and they should be able to give permissions.
       </p></details>
 
 
 *[ppb]: protons per bunch
 *[BLM]: Beam Loss Monitor
 *[BCM]: Beam Condition Monitor
+*[EIC]: Engineer In Charge
 *[BPM]: Beam Position Monitor
 *[LSA]: LHC Software Architecture
-*[EIC]: Engineer In Charge
