@@ -175,6 +175,7 @@ nav:
       - KMod GUI hints: guis/developing/kmod_special.md
   - Procedures:
       - Info: procedures/info.md
+      - General Checks: procedures/general_checks.md
       - K Modulation: procedures/kmod.md
       - Amplitude Detuning: procedures/ampdet.md
       - Crossing Angle Scan: procedures/xing_scan.md
