@@ -1,7 +1,11 @@
 # Measuring $\beta^{*}$ Using K-Modulation in the LHC
 
-The important stuff.
-This decides over luminosity and lives in the experiments.
+!!! note ""
+    Please keep in mind the [general checks](general_checks.md) for measurements.
+
+??? info "The Procedure in Short"
+        The important stuff.
+        This decides over luminosity and lives in the experiments.
 
 ## Measurement
 
