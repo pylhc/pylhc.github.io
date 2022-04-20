@@ -6,10 +6,10 @@
 ??? info "The Procedure in Short"
 
       This methods aims to find the MQSX correction settings that would minimize betatron coupling and its impact on beam size *at IP*.
-      The method breaks the symmetry of the optics in the IR and forces local coupling RDTs to leak thoughout the machine, which makes them measurable through the $|C^{-}|$.
+      The method breaks the symmetry of the optics in the IR and forces local coupling RDTs to leak throughout the machine, which makes them measurable through the $|C^{-}|$.
 
 
-      After global corrections are done and trimmed in the machine, one applies a rigid waist shift in a given IR and scans the colinearity knob for the value that minimises the $|C^{-}|$.
+      After global corrections are done and trimmed in the machine, one applies a rigid waist shift in a given IR and scans the colinearity knob for the value that minimizes the $|C^{-}|$.
       These settings, when taking away the rigid waist shift, will minimize local coupling and its impact at IP.
 
 ## Preliminary Setup
@@ -25,8 +25,8 @@
 
 ## Procedure Per IP
 
-One should do this for earch of IP1, IP2, IP5 and IP8 which are the ones requiring local corrections.
-Keep in mind that this does beam 1 and 2 at the same time.
+This procedure is applied at every experimental insertion (IR1, IR2, IR5, IR8) where local corrections need to be established or checked.
+Keep in mind that this does beam 1 and 2 at the same time, but different IPs cannot/ should not be done in parallel.
 
 !!! warning "Orbit Feedback"
       Please remember to **always** keep the orbit feedback system ON during this procedure.
