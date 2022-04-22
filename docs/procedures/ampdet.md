@@ -1,5 +1,12 @@
 # Amplitude Detuning Measurements
 
+!!! note ""
+    Please keep in mind the [general checks](general_checks.md) for measurements.
+
+??? info "The Procedure in Short"
+
+      Little bit about the purpose and concept.
+
 !!! warning "This is only an example procedure for demonstration purposes, to be written."
 
 ## Measurement
