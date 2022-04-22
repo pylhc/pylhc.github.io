@@ -64,6 +64,15 @@ To mark a task as finished, just click on the checkbox next to it!
     Note that this needs to be run from a machine that has access to the technical network.
     To only get specific knobs at specific times (careful with UTC times), see the [package's documentation][pylhc_doc].
 
+!!! tip "Kick Groups"
+    There is in `pylhc` a callable module to extract relevant information for a kick group, or the list of kick groups in the dedicated space in `NFS`.
+    A simple call would be, for instance here to get relevant information of all kicks in a group:
+    ```bash
+    /afs/cern.ch/eng/sl/lintrack/omc_python3/bin/python -m pylhc.kickgroups info <KICKGROUPNAME>
+    ```
+
+    Note that this needs to be run from a machine that has access to the technical network *and* `NFS` (such as `dev2`, optics servers and CCC machines).
+    For the full usage details of this module, see the [package's documentation][pylhc_doc].
 
 *[CCC]: CERN Control Center
 
