@@ -180,6 +180,7 @@ nav:
       - Info: procedures/info.md
       - General Checks: procedures/general_checks.md
       - K Modulation: procedures/kmod.md
+      - Rigid Waist Shift: procedures/rigid_waist_shift.md
       - Amplitude Detuning: procedures/ampdet.md
       - Crossing Angle Scan: procedures/xing_scan.md
   - Resources:
