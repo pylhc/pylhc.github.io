@@ -9,7 +9,7 @@ It provides tools which can be useful for working with accelerators, but are not
 - [*Machine Settings Info*](machine_settings_info.md) - Prints an overview over the machine settings at a given time.
 - [*BSRT Logger* and *BSRT Analysis*](bsrt.md) - Saves data coming straight from LHC BSRT FESA class and allows subsequent analysis.
 - [*BPM Calibration*](bpm_calibration.md) - Script to compute the calibration factors for the LHC BPMs.
-- [*IR NonLinear RDT Correction*](irnl_correction.md) - Script to compute RDT correction in the (HL)LHC IRs including feed-down effects.
+- [*Display Kickgroups*](kickgroups.md) - Script to load kick groups and display relevant information.
 
 ## Documentation
 

@@ -130,13 +130,16 @@ nav:
       - Machine Settings Info: packages/pylhc/machine_settings_info.md
       - BSRT Logger/Analysis: packages/pylhc/bsrt.md
       - BPM Calibration: packages/pylhc/bpm_calibration.md
-      - IRNL Correction: packages/pylhc/irnl_correction.md
+      - Display Kickgroups: packages/pylhc/kickgroups.md
       - ↪ On Github: https://github.com/pylhc/PyLHC
     - PyLHC-Submitter: 
       - About: packages/pylhcsubmitter/about.md
       - Job Submitter: packages/pylhcsubmitter/job_submitter.md
       - AutoSix: packages/pylhcsubmitter/autosix.md
       - ↪ On Github: https://github.com/pylhc/submitter
+    - IRNL Corrections: 
+      - About: packages/irnl/about.md
+      - ↪ On Github: https://github.com/pylhc/irnl_rdt_correction
     - MESS:
       - About: packages/mess/about.md
       - ↪ On Github: https://github.com/pylhc/MESS
