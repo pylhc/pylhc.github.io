@@ -1,10 +1,10 @@
 # Git
 
-How to's concerning  `git` in general,  [`gitlab`][cern_gitlab], [`github`][github] and [CI].
+How to's concerning  `git` in general,  [`gitlab`][cern_gitlab], [`github`][github] and CI.
 
 ## Configuring Gitlab CI to Automatically Pull into AFS
 
-If you are programming locally, but also want to have a copy on AFS, either because your colleges are not comfortable with Gitlab or you need the code for other scripts that you are running on `lxplus` or similar, here is how:
+If you are programming locally, but also want to have a copy on AFS, either because your colleges are not comfortable with Gitlab or you need the code for other scripts that you are running on lxplus or similar, here is how:
 
 ### Create Service Account
 
