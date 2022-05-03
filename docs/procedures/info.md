@@ -19,6 +19,7 @@ To mark a task as finished, just click on the checkbox next to it!
 
     Fill : Fill Nr. for the first beam used for measurements.
     Beam Process: Beamprocess used during measurement.
+    Optics: The optics used for the machine configuration.
     If separate measurements are conducted for the different beams, note here which beam is used for what.
 
     Personnel: People joining either in person or remotely, operators and EIC.
