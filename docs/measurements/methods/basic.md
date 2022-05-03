@@ -68,10 +68,10 @@ $$
 This section gives a brief overview over the K-Modulation method.
 A more detailed description can be found in M. Minty and F. Zimmermann's book[^MintyZimmermann] and the references therein.
 
-Also available on this site is a [checklist for conducting K-Modulation measurements](../procedures/kmod.md) in the LHC.
+Also available on this site is a [checklist for conducting K-Modulation measurements][kmod_procedure] in the LHC.
 
 The full K-Modulation analysis is two-fold:
-The [K-Modulation GUI](../guis/kmod/gui.md) is used for LHC measurements, and the following analysis is part of the [`omc3` package](../packages/omc3/getting_started.md).
+The [K-Modulation GUI][kmod_gui] is used for LHC measurements, and the following analysis is part of the [`omc3` package][omc3_package].
 
 K-Modulation is a complementary optics measurement method which consists in changing the gradient of a quadrupole and measuring the induced tune variation.
 The average $\beta$-function in the modulated quadrupole is linked to the gradient change $\Delta K$ and tune change $\Delta Q_{x,y}$ via[^MintyZimmermann]:
@@ -141,5 +141,9 @@ However, K-Modulation is usually more time-intensive, and is only applicable wit
           doi={10.1109/PAC.2007.4440536}
         }
         ```
+
+[omc3_package]: ../../packages/omc3/getting_started.md
+[kmod_procedure]: ../../measurements/procedures/kmod.md
+[kmod_gui]: ../../guis/kmod/gui.md
 
 [bpm_calibration_constants]: https://github.com/pylhc/PyLHC/blob/master/pylhc/constants/calibration.py

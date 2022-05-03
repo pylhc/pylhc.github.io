@@ -87,7 +87,7 @@ Thanks to `Acc-Py`, everything is already set up to look into the CERN index, wh
 Different ways to use `pip` for package installations are nicely explained in the [official documentation][pip_installs]{target=_blank}.
 
 !!! info "Accessing the CERN Index"
-    Installing from the CERN index requires the executing machine to have access to the CERN GPN (General Public Network), or to [be tunnelled into the GPN](../../resources/howto/teleworking.md#accessing-cern-internal-websites).
+    Installing from the CERN index requires the executing machine to have access to the CERN GPN (General Public Network), or to [be tunnelled into the GPN][cern_internal_websites].
 
 ## Using Your Virtual Environment
 
@@ -96,6 +96,8 @@ To use the environment's Python, one can either:
 
 - First `source /path/to/environment/bin/activate` then call `python`.
 - Call the full path to the python executable `/path/to/environment/bin/python` directly.
+
+[cern_internal_websites]: ../../howto/teleworking.md#accessing-cern-internal-websites 
 
 *[GPN]: CERN General Public Network
 *[PyPi]: Default Python Package Index

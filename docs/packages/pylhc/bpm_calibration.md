@@ -1,6 +1,6 @@
 # Using PyLHC to Compute Calibration Factors
 
-The `bpm_calibration` module of `PyLHC` can be used to compute BPM calibration factors, according to the methods described [in this page](../../omc_team/methods.md#bpm-calibration).
+The `bpm_calibration` module of `PyLHC` can be used to compute [BPM calibration factors][bpm_calibration].
 Only one entrypoints exists for both methods, the argument `method` can be used to select it, and defaults to `beta`.
 Using the script to make compute calibration factors through $\beta$-functions for instance from IP1 and IP5 goes as:
 ```bash         
@@ -50,5 +50,7 @@ The output **TFS** files produced via the dispersion method contain the followin
 [comment]: <> (| :----------  | :-------------------: | :---------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |)
 [comment]: <> (| Meaning      | Longitudinal Position | Calibration factor determined from dispersion function                                    | Error associated to the calibration factor from dispersion                                                                                                                                                                                    | Calibration factor determined from fitting of the dispersion function                                                | Error associated to the calibrator factor from dispersion fit                                                                                                                                 |)
 [comment]: <> (| Calculation  |  -                    | ${C_{x}^{A}} = \frac{D^\phi_x}{D^A_x} = \frac{D^A_{N,x}\sqrt{\beta_{x}^{\phi}}}{D^A_{x}}$ | $\left&#40;\Delta {C^A_x}\right&#41;^{2} = \left&#40;\frac{\Delta D^\phi_x}{D^A_x}\right&#41;^2 + \left&#40;\Delta D^A_x \frac{D^\phi_x}{&#40;D^A_x&#41;^2}\right&#41;^2$ | $C^A_{x,y} = \sqrt{\frac{\beta^{\phi,fit}_{x,y}}{\beta^A_{x,y}}}$ | ${C_{x}^{A}} = \frac{D^{\phi,fit}_x}{D^A_x} = \frac{\left&#40;D^A_{N,x}\sqrt{\beta_{x}^{\phi}}\right&#41;^{fit}}{D_{x}^{A}}$ | $\left&#40;\Delta {C^A_x}\right&#41;^{2} = \left&#40;\frac{\Delta D^{\phi,fit}_x}{D^A_x}\right&#41;^2 + \left&#40;\Delta D^A_x \frac{D^{\phi,fit}_x}{&#40;D^A_x&#41;^2}\right&#41;^2$ |)
+
+[bpm_calibration]: ../../measurements/methods/basic.md#bpm-calibration
 
 [documentation]: https://pylhc.github.io/PyLHC/entrypoints/bpm_calibration.html

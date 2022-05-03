@@ -75,7 +75,7 @@ Here are some general checks on should always keep in mind when performing measu
 
 - [ ] <details class="nodeco"><summary>Give Sensible Names to Complete Sets of Data</summary>
       <p> When an analysis is done on a complete group of kicks, try to find a descriptive name.
-      See the [info page](info.md) for naming conventions.
+      See the [info page][about_procedures] for naming conventions.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Log Anything of Interest in the Logbook</summary>
@@ -105,6 +105,7 @@ Here are some general checks on should always keep in mind when performing measu
       Both Tobias and Ewen have the permissions, if they aren't present see with the EIC and they should be able to give permissions.
       </p></details>
 
+[about_procedures]: about.md
 
 *[ppb]: protons per bunch
 *[BLM]: Beam Loss Monitor

@@ -172,8 +172,8 @@ Whenever you are pushing now any commits to the `master` branch, the CI/CD will 
 
 [sshuttle]: https://sshuttle.readthedocs.io/en/stable/
 
-[kmod_gui]: ../../guis/kmod/gui.md
-[bb_gui]: ../../guis/betabeat/gui.md
+[kmod_gui]: ../guis/kmod/gui.md
+[bb_gui]: ../guis/betabeat/gui.md
 
 [new_account]: https://account.cern.ch/account/Management/NewAccount.aspx
 [afs_services]: https://resources.web.cern.ch/resources/Manage/AFS/Default.aspx

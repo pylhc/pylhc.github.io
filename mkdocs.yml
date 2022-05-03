@@ -108,13 +108,6 @@ nav:
   - The OMC Team:
     - About: omc_team/about.md
     - Future MD Ideas: omc_team/ideas.md
-    - Physics of OMC:
-      - About: omc_team/physics/about.md
-      - Error Propagation: omc_team/physics/error_propagation.md
-      - Coupling: omc_team/physics/coupling.md
-      - Linear IR Optics: omc_team/physics/ir_linear_optics.md
-      - Nonlinear IR Optics: omc_team/physics/ir_nonlinear_optics.md
-    - OMC Methods: omc_team/methods.md
     - Publications: omc_team/publications.md
   - Python Ecosystem:
     - About: packages/about.md
@@ -176,19 +169,29 @@ nav:
       - IDE Setup: guis/developing/ide_install.md
       - Releases: guis/developing/releases.md
       - KMod GUI hints: guis/developing/kmod_special.md
-  - Procedures:
-      - Info: procedures/info.md
-      - General Checks: procedures/general_checks.md
-      - K Modulation: procedures/kmod.md
-      - Rigid Waist Shift: procedures/rigid_waist_shift.md
-      - Amplitude Detuning: procedures/ampdet.md
-      - Crossing Angle Scan: procedures/xing_scan.md
+  - Measurements:
+    - Info: measurements/about.md
+    - Physics:
+      - Introduction: measurements/physics/about.md
+      - Error Propagation: measurements/physics/error_propagation.md
+      - Coupling: measurements/physics/coupling.md
+      - Linear IR Optics: measurements/physics/ir_linear_optics.md
+      - Nonlinear IR Optics: measurements/physics/ir_nonlinear_optics.md
+    - Procedures:
+        - Info: measurements/procedures/about.md
+        - General Checks: measurements/procedures/general_checks.md
+        - K Modulation: measurements/procedures/kmod.md
+        - Rigid Waist Shift: measurements/procedures/rigid_waist_shift.md
+        - Amplitude Detuning: measurements/procedures/ampdet.md
+        - Crossing Angle Scan: measurements/procedures/xing_scan.md
+    - Methods:
+        - Basic Methods: measurements/methods/basic.md
+  - How To's:
+    - Setup: howto/setup.md
+    - Teleworking: howto/teleworking.md
+    - Editing Wiki: howto/wiki.md
   - Resources:
       - Useful Links: resources/links.md
-      - How To's:
-        - Setup: resources/howto/setup.md
-        - Teleworking: resources/howto/teleworking.md
-        - Editing Wiki: resources/howto/wiki.md
       - Publications: resources/publications.md
       - Presentations: resources/presentations.md
       - Templates: resources/templates.md
