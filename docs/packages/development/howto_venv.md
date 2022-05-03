@@ -97,7 +97,7 @@ To use the environment's Python, one can either:
 - First `source /path/to/environment/bin/activate` then call `python`.
 - Call the full path to the python executable `/path/to/environment/bin/python` directly.
 
-[cern_internal_websites]: ../../howto/teleworking.md#accessing-cern-internal-websites 
+[cern_internal_websites]: ../../howto/teleworking/access.md#accessing-cern-internal-websites 
 
 *[GPN]: CERN General Public Network
 *[PyPi]: Default Python Package Index

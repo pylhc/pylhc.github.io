@@ -187,9 +187,21 @@ nav:
     - Methods:
         - Basic Methods: measurements/methods/basic.md
   - How To's:
-    - Setup: howto/setup.md
-    - Teleworking: howto/teleworking.md
-    - Editing Wiki: howto/wiki.md
+    - Info: howto/about.md
+    - General Setup: 
+      - Git: howto/setup/git.md
+      - GUIs: howto/setup/guis.md
+      - Shared Filesystems: howto/setup/shared_filesystems.md
+      - ↪ Virtual CentOS Machine: https://abpcomputing.web.cern.ch/guides/openstackCS8/
+    - Teleworking: 
+      - Remote Access: howto/teleworking/access.md
+      - ↪ Tricks from IT: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
+    - Wiki Pages: 
+      - Editing this Wiki: howto/wiki/editing.md
+      - ↪ CERN Docs: https://how-to.docs.cern.ch/
+    - Other Relevant How To's:
+      - ↪ ABPComputing: https://abpcomputing.web.cern.ch/
+      - ↪ BBLumi: http://bblumi.web.cern.ch/utilities_tricks/
   - Resources:
       - Useful Links: resources/links.md
       - Publications: resources/publications.md

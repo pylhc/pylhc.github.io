@@ -83,7 +83,7 @@ To create:
 
 - _italic_ text, surround the text with `_text_`.
 
-- an internal [link](../howto/wiki.md#general-text-formatting), use `[link](../howto/wiki.md#general-text-formatting)`
+- an internal [link](../../howto/wiki/editing.md#general-text-formatting), use `[link](../../howto/wiki/editing.md#general-text-formatting)`
   > Note that all links are relative to the current document! 
     The `#`-labels are created by headers automatically and can be omitted, in case you want to link to the page itself.
 
