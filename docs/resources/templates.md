@@ -13,7 +13,7 @@ A collection of useful templates.
 
 [Overleaf Template][CernBeamerTemplate]{target=_blank}
 
-This is a template for CERN presentations following the official CERN design guidelines.
+This is a template for CERN presentations following the official CERN design guidelines and based on the [official CERN Powerpoint Template][CernDesignDownloads]{target=_blank .cern_login}.
 
 <object data="../../../assets/template_examples/cern-presentation-title.pdf" type="application/pdf" width=100% height=500px>
     <embed src="../../../assets/template_examples/cern-presentation-title.pdf">
@@ -26,7 +26,7 @@ This is a template for CERN presentations following the official CERN design gui
 
 [Overleaf Template][OMCTemplateLatex]{target=_blank}
 
-A LaTeX template based on the [CERN beamer](#cern-beamer-semi-official) which in turn is based on the [official CERN Powerpoint Template][CernDesignDownloads]{target=_blank .cern_login}.
+A LaTeX template based on the [CERN beamer](#cern-beamer-semi-official), but with OMC-logo!
 
 <object data="../../../assets/template_examples/pres_OMCExample.pdf" type="application/pdf" width=100% height=500px>
     <embed src="../../../assets/template_examples/pres_OMCExample.pdf">
