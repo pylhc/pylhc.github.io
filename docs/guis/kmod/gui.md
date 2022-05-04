@@ -1,12 +1,15 @@
 # The Kmod GUI
 
-The Kmod GUI provides functionality to perform [K-Modulation](../../omc_team/methods.md#k-modulation) either as a full IP trim or through an individual magnet circuit, in the form of a graphical interface.
+The Kmod GUI provides functionality to perform [K-Modulation][kmod_method] either as a full IP trim or through an individual magnet circuit, in the form of a graphical interface.
 It also has the ability to extract and analyze data from previous trims.
 
 This site will guide you through the GUI's layout and functionality.
-For starters, check out [the basics of running the GUI](../about.md).
+For starters, check out [the basics of running the GUI][gui_basics].
 
-Alternatively, a procedure for performing K-modulation in the CCC is described on [this page](../../procedures/kmod.md).
+Alternatively, take a look at the [procedure for performing K-modulation in the CCC][kmod_measurements].
 
+[gui_basics]: ../about.md
+[kmod_method]: ../../measurements/physics/kmod.md
+[kmod_measurements]: ../../measurements/procedures/kmod.md
 
 *[CCC]: CERN Control Center

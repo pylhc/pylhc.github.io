@@ -1,60 +1,10 @@
-# Useful Setup How-To's
+# Git
 
-## Mounting TN Resources on GPN and Other Machines
-
-To be able to run the GUI or CBNG seamlessly from computers which are not in the technical network, it might be useful to mount `/user`, `/nfs` and `/eos` via `sshfs` using the following recipe:
-
-1. Create mountpoints and symbolic links (only once)
-
-```bash
-mkdir -p ~/mnt/user && ln -nfs ~/mnt/user /user
-mkdir ~/mnt/nfs && ln -nfs ~/mnt/nfs /nfs
-mkdir ~/mnt/eos && ln -nfs ~/mnt/eos /eos
-```
-
-2. Mount network resources (repeat after timeouts and restarts)
-
-```bash
-sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user
-sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs
-sshfs username@lxplus.cern.ch:/eos/ ~/mnt/eos
-```
-
-3. If outside of the GPN, jump through `lxplus` to mount `dev3`-folders:
-
-```bash
-sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
-sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
-```
-
-!!! info ""
-    To avoid getting asked for your password all the time, you should have your `ssh` properly configured with Kerberos.
-
-??? tip "In case you need to unmount these"
-
-    ```
-    sudo fusermount -u ~/mnt/user
-    sudo fusermount -u ~/mnt/nfs
-    sudo fusermount -u ~/mnt/eos
-    ```
-
-## Running GUIs Locally
-
-To use the [KMod GUI][kmod_gui] or the `KnobPanel` in the [Beta-Beat GUI][bb_gui], it is required to be on the TN, as they need to connect to LSA.
-If you are in the GPN but not on the TN, you will need to tunnel through some machines.
-
-First, install the program [sshuttle][sshuttle]{target=_blank}, which should be available in your package manager.
-Then, run this command in a terminal and leave it open:
-
-```bash
-sshuttle -vr <username>@cs-ccr-dev2 172.18.0.0/16
-```
-
-All traffic related to the technical network will be redirected through the `cs-ccr-dev2` machine which has access to both networks. In case it isn't available, the other `cs-ccr-devX` machines can be used.
+How to's concerning  `git` in general,  [`gitlab`][cern_gitlab], [`github`][github] and CI.
 
 ## Configuring Gitlab CI to Automatically Pull into AFS
 
-If you are programming locally, but also want to have a copy on AFS, either because your colleges are not comfortable with Gitlab or you need the code for other scripts that you are running on `lxplus` or similar, here is how:
+If you are programming locally, but also want to have a copy on AFS, either because your colleges are not comfortable with Gitlab or you need the code for other scripts that you are running on lxplus or similar, here is how:
 
 ### Create Service Account
 
@@ -172,11 +122,9 @@ Whenever you are pushing now any commits to the `master` branch, the CI/CD will 
 
 [sshuttle]: https://sshuttle.readthedocs.io/en/stable/
 
-[kmod_gui]: ../../guis/kmod/gui.md
-[bb_gui]: ../../guis/betabeat/gui.md
-
 [new_account]: https://account.cern.ch/account/Management/NewAccount.aspx
 [afs_services]: https://resources.web.cern.ch/resources/Manage/AFS/Default.aspx
+[github]: https://github.com/
 [cern_gitlab]: https://gitlab.cern.ch/
 [cern_linux]: https://linux.web.cern.ch/dockerimages/
 [acc_models_repo]: https://gitlab.cern.ch/acc-models/acc-models-lhc/

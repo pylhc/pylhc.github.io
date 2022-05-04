@@ -29,15 +29,15 @@ The environment is located at `/afs/cern.ch/eng/sl/lintrack/omc_python3/` and ca
 
 The OMC team develops and maintains the following packages:
 
-- **OMC3** (Python 3.7+): [:fontawesome-solid-question-circle:](omc3/about.md) [:fontawesome-brands-github:][omc3]{target=\_blank} [:fontawesome-solid-book:][omc3_doc]{target=\_blank} <br>
+- **OMC3** (Python 3.7+): [:fontawesome-solid-circle-question:](omc3/about.md) [:fontawesome-brands-github:][omc3]{target=\_blank} [:fontawesome-solid-book:][omc3_doc]{target=\_blank} <br>
   _frequency analysis, optics computation from turn-by-turn data, corrections calculations and results plotting._
-- **PyLHC-Tools** (Python 3.7+): [:fontawesome-solid-question-circle:](pylhc/about.md) [:fontawesome-brands-github:][pylhc]{target=\_blank} [:fontawesome-solid-book:][pylhc_doc]{target=\_blank} [:fontawesome-solid-cube:][pylhc_pypi]{target=\_blank} <br>
+- **PyLHC-Tools** (Python 3.7+): [:fontawesome-solid-circle-question:](pylhc/about.md) [:fontawesome-brands-github:][pylhc]{target=\_blank} [:fontawesome-solid-book:][pylhc_doc]{target=\_blank} [:fontawesome-solid-cube:][pylhc_pypi]{target=\_blank} <br>
   _useful OMC-related scripts._
 - **PyLHC-Submitter** (Python 3.7+): [:fontawesome-brands-github:][pylhc_submitter]{pylhcsubmitter/about.md} [:fontawesome-solid-book:][pylhc_submitter_doc]{target=\_blank} [:fontawesome-solid-cube:][pylhc_submitter_pypi]{target=\_blank} <br>
   _Wrapper for HTCondor Job submission._
 - **Optics-Functions** (Python 3.6+): [:fontawesome-brands-github:][optics_functions]{target=\_blank} [:fontawesome-solid-book:][optics_functions_doc]{target=\_blank} [:fontawesome-solid-cube:][optics_functions_pypi]{target=\_blank} <br>
   _calculate various beam optics functions from TFS-Dataframes._
-- **Example Study Scripts** (MAD-X): [:fontawesome-solid-question-circle:](mess/about.md) [:fontawesome-brands-github:][mess]{target=\_blank} <br>
+- **Example Study Scripts** (MAD-X): [:fontawesome-solid-circle-question:](mess/about.md) [:fontawesome-brands-github:][mess]{target=\_blank} <br>
   _collection of example studies._
 - **Beta-Beat.src** (Python 2.7): [:fontawesome-brands-github:][betabeatsrc]{target=\_blank} [:fontawesome-solid-book:][betabeatsrc_doc]{target=\_blank} <br>
   _frequency analysis, optics computation from turn-by-turn data and corrections calculations._

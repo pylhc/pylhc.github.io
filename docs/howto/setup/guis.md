@@ -1,19 +1,21 @@
-# Resources to Ease Teleworking
 
-## Accessing CERN-internal websites
+# GUI's
 
-Adapted from [here][codi_teleworking]{target=_blank}, you can create a web proxy:
+How to's related to the setup and running of the Gui's
+
+## Running GUIs Locally
+
+To use the [KMod GUI][kmod_gui] or the `KnobPanel` in the [Beta-Beat GUI][bb_gui], it is required to be on the TN, as they need to connect to LSA.
+If you are in the GPN but not on the TN, you will need to tunnel through some machines.
+
+First, install the program [sshuttle][sshuttle]{target=_blank}, which should be available in your package manager.
+Then, run this command in a terminal and leave it open:
 
 ```bash
-ssh -D 8090 username@lxtunnel.cern.ch
+sshuttle -vr <username>@cs-ccr-dev2 172.18.0.0/16
 ```
 
-The above command opens a tunnel at port `8090` which can be accessed via browser through `localhost:8090`.
-
-## Accessing Journal Papers etc.
-
-Lots of journals and resources can be accessed via the `CERN ezproxy` by prepending the viewing url with `https://ezproxy.cern.ch/login?url=`.
-See this [website][ezproxy_website]{target=_blank} for a list.
+All traffic related to the technical network will be redirected through the `cs-ccr-dev2` machine which has access to both networks. In case it isn't available, the other `cs-ccr-devX` machines can be used.
 
 ## Running Graphical Software on lxplus or the TN (e.g. GUI, Eclipse)
 
@@ -75,9 +77,13 @@ If your internet connection fails, you should still be able to resume your curre
     ```
     3. Click on file.
 
-*[RDP]: Remote Desktop Protocol
+*[TN]: Technical Network
+*[GPN]: General Purpose Network, the main CERN network
+*[CBNG]: Common Build Next Generation
+*[LSA]: LHC Software Architecture
+*[CI]: Continuous Integration
+*[CD]: Continuous Delivery
+*[lxplus]: Linux Public Login User Service
 
-[codi_teleworking]: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
-[plugin_firefox]: https://addons.mozilla.org/en-US/firefox/addon/switchyomega/
-[plugin_chrome]: https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
-[ezproxy_website]: https://login.ezproxy.cern.ch/
+[kmod_gui]: ../../guis/kmod/gui.md
+[bb_gui]: ../../guis/betabeat/gui.md
