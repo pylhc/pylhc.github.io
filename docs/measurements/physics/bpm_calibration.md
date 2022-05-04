@@ -72,4 +72,6 @@ $$
         }
         ```
 
+*[BPM]: Beam Position Monitor
+
 [bpm_calibration_constants]: https://github.com/pylhc/PyLHC/blob/master/pylhc/constants/calibration.py

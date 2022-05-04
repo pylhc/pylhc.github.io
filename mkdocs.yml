@@ -174,7 +174,7 @@ nav:
     - Physics and Methods:
       - Introduction: measurements/physics/about.md
       - Error Propagation: measurements/physics/error_propagation.md
-      - BPM-Calibration: measurements/physics/calibration.md
+      - BPM-Calibration: measurements/physics/bpm_calibration.md
       - Coupling: measurements/physics/coupling.md
       - K-Mod: measurements/physics/kmod.md
       - Linear IR Optics: measurements/physics/ir_linear_optics.md

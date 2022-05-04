@@ -220,6 +220,9 @@ $$
 
 which can finally be used to calculate the coupling RDTs $f_{1001}$ and $f_{1010}$.
 
+*[BPM]: Beam Position Monitor
+*[RDT]: Resonance Driving Term
+*[RDTs]: Resonance Driving Terms
 
 [franchi_emittance_sharing]: https://inspirehep.net/files/14639a62394d4ce17ea972088f685d91
 [bazzani_normal_form]: https://inspirehep.net/literature/373560
