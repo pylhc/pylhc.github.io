@@ -105,7 +105,7 @@ extra_javascript:
 # Site Layout
 nav:
   - Home: index.md
-  - The OMC Team:
+  - OMC Team:
     - About: omc_team/about.md
     - Future MD Ideas: omc_team/ideas.md
     - Publications: omc_team/publications.md
@@ -146,7 +146,7 @@ nav:
       - Contributing: packages/development/contributing.md
       - Virtual Environments: packages/development/howto_venv.md
       - Releases: packages/development/howto_release.md
-  - The OMC GUIs:
+  - GUIs:
     - The OMC GUIs: guis/about.md
     - Beta-Beat GUI:
       - About: guis/betabeat/gui.md
@@ -169,16 +169,17 @@ nav:
       - IDE Setup: guis/developing/ide_install.md
       - Releases: guis/developing/releases.md
       - KMod GUI hints: guis/developing/kmod_special.md
-  - Measurements and Corrections:
+  - Measurements & Corrections:
     - Info: measurements/about.md
-    - Physics:
+    - Physics and Methods:
       - Introduction: measurements/physics/about.md
       - Error Propagation: measurements/physics/error_propagation.md
+      - BPM-Calibration: measurements/physics/calibration.md
       - Coupling: measurements/physics/coupling.md
+      - K-Mod: measurements/physics/kmod.md
       - Linear IR Optics: measurements/physics/ir_linear_optics.md
       - Nonlinear IR Optics: measurements/physics/ir_nonlinear_optics.md
-    - Methods:
-        - Basic Methods: measurements/methods/basic.md
+      - 3D-Kicks: measurements/physics/threedkicks.md
     - Procedures:
         - Info: measurements/procedures/about.md
         - General Checks: measurements/procedures/general_checks.md

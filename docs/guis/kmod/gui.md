@@ -9,7 +9,7 @@ For starters, check out [the basics of running the GUI][gui_basics].
 Alternatively, take a look at the [procedure for performing K-modulation in the CCC][kmod_measurements].
 
 [gui_basics]: ../about.md
-[kmod_method]: ../../measurements/methods/basic.md#k-modulation
+[kmod_method]: ../../measurements/physics/kmod.md
 [kmod_measurements]: ../../measurements/procedures/kmod.md
 
 *[CCC]: CERN Control Center

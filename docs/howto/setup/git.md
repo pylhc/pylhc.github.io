@@ -115,6 +115,7 @@ Whenever you are pushing now any commits to the `master` branch, the CI/CD will 
 *[GPN]: General Purpose Network, the main CERN network
 *[CBNG]: Common Build Next Generation
 *[LSA]: LHC Software Architecture
+*[AFS]: Andrew File System
 *[CI]: Continuous Integration
 *[CD]: Continuous Delivery
 *[lxplus]: Linux Public Login User Service
