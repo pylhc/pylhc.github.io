@@ -109,6 +109,8 @@ nav:
     - About: omc_team/about.md
     - Future MD Ideas: omc_team/ideas.md
     - Publications: omc_team/publications.md
+    - ↪ On Mattermost: https://mattermost.web.cern.ch/be-dep/channels/omc-team
+    - ↪ Meetings (Indico): https://indico.cern.ch/category/5986/
   - Python Ecosystem:
     - About: packages/about.md
     - omc3:

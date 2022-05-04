@@ -1,4 +1,3 @@
-
 # BPM Calibration
 
 Beam Position Monitors (BPM) are instruments used to measure the transverse position of the beam at a certain longitudinal position in the accelerator.
@@ -53,7 +52,7 @@ $$
 C_{x}^{A} = \frac{D^A_{N,x}\sqrt{\beta^{\phi}_x}}{D^A_x}
 $$
 
-!!! info "Hozirontal Plane Only"
+!!! info "Horizontal Plane Only"
     It is important to note that calibration factors from dispersion are only computed in the horizontal plane.
 
 [^RamaDispersionCalibration]:
