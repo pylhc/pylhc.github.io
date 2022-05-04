@@ -5,7 +5,7 @@
 The OMC team is part of the ABP group at CERN, in the LNO section.
 We are responsible for the measurement and correction of the linear and non-linear accelerator optics in the [LHC][lhc]{target=_blank} as well as other machines is the CERN accelerator complex.
 Our meetings can be found on our [Indico page][omc_indico]{target=_blank}.
-For a more personal contact check out our [Mattermost channel][omc_mattermost]{target=_blank .cern_login} (with CERN-login only).
+For a more personal contact, ask for access to our [Mattermost channel][omc_mattermost]{target=_blank .cern_login} (invite only).
 
 !!! note "Note - Documentation Status"
     This site is currently under construction, and subject to constant change.
