@@ -25,7 +25,7 @@ Two different knobs are used for the waist shift that need to be trimmed in:
 - The triplets knob, which generates the waist shift itself.
 - The independent quadrupoles knob (Q4 - Q10), which re-matches the optics.
 
-The unit setting of the triplet knob is an arbitrary definition, where a value of $\pm1$ corresponds to a $\pm 0.5$% change of the triplet powering, which leads to a waist shift of ~43-44cm in a given direction.
+The unit setting of the triplet knob is an arbitrary definition, where a value of $\pm1$ corresponds to a $\pm 0.5$% change of the triplet powering, which leads to a waist shift of ~43-44cm in a given direction, for the $\beta^{*} = 30cm$ optics.
 The knob setting is defined as follows, with regards to Beam1 (reverse for Beam2):
 
 - Unit setting of +$1$: shifts the waist to the _left_ of the IP ($s_{waist}^{B1} < s_{IP}^{B1}$)
