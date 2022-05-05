@@ -11,6 +11,7 @@
 
       After global corrections are done and trimmed in the machine, one applies a rigid waist shift in a given IR and scans the colinearity knob for the value that minimizes the $|C^{-}|$.
       These settings, when taking away the rigid waist shift, will minimize local coupling and its impact at the IP.
+      Additional info can be found in Felix's 2021 IPAC paper[^SoubeletIPACLocalCouplingCorrection].
 
 ## Rigid Waist Shift & LSA Knobs
 
@@ -123,6 +124,18 @@ Keep in mind that this does Beam1 and Beam2 at the same time, but different IPs 
       <p> One might want to do another round of global corrections, mainly coupling, after applying the determined colinearity knob setting.
       </p></details>
 
+[^SoubeletIPACLocalCouplingCorrection]:
+    ??? abstract "Prospect for Interaction Region Local Coupling Correction in the LHC Run 3, `F. Soubelet, and T. Persson, and R. Tomás, and O. Apsimon, and C.P. Welsch`, [International Particle Accelerator Conference, 2021](https://accelconf.web.cern.ch/ipac2021/papers/mopab007.pdf){target=_blank}"
+        ```
+        @inproceedings{soubeletProspectInteractionRegion2021,  
+          author={Soubelet, F. and Persson, T. and Tomás, R. and Apsimon, O. and Welsch, C.P.},
+          booktitle={Proceedings of the 12th International Particle Accelerator Conference},
+          title={Prospect for Interaction Region Local Coupling Correction in the LHC Run 3},
+          year={2021},
+          url={https://accelconf.web.cern.ch/ipac2021/papers/mopab007.pdf},
+          doi={10.18429/JACOW-IPAC2021-MOPAB007}
+        }
+        ```
 
 *[rigid waist shift]: Shifting the waist of the beam from the IP point by un-balancing the powering of the left and right triplets in the IR.
 *[MQSX]: The skew quadrupole correctors localed next to Q3
