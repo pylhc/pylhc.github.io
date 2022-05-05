@@ -51,16 +51,16 @@ As a consequence, respect the following rules when applying the knobs below:
 
 ??? info "LSA Independent Quadrupoles Knobs"
 
-    |  Beam  |  IP   |                      Knob Name                      |
-    | :----: | :---: | :-------------------------------------------------: |
-    | Beam 1 |  IP1  | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP1neg |
-    |        |       | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos |
-    |        |  IP5  | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP5neg |
-    |        |       | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP5pos |
-    | Beam 2 |  IP1  | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1neg |
-    |        |       | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos |
-    |        |  IP5  | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP5neg |
-    |        |       | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP5pos |
+    |  IP   |  Beam  |                      Knob Name                      |
+    | :---: | :----: | :-------------------------------------------------: |
+    |  IP1  | Beam 1 | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP1neg |
+    |       |        | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP1pos |
+    |       | Beam 2 | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1neg |
+    |       |        | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos |
+    |  IP5  | Beam 1 | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP5neg |
+    |       |        | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP5pos |
+    |       | Beam 2 | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP5neg |
+    |       |        | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP5pos |
 
 ??? example "An Example"
     One wishes to implement the waist shift at IP1, shifting the waist to the left of IP (for Beam1).
