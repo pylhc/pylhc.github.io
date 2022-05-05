@@ -15,35 +15,30 @@
 ## Rigid Waist Shift & LSA Knobs
 
 Some information about the rigid waist shift can be found in [this gallery page][rws_gallery]{target=_blank} from Felix's package's documentation.
-Some details about the creation of these knobs and their addition in LSA can be found in this [LHC OMC logbook entry](https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/3545713){target=_blank} and the ones that follow.
+Some details about the creation of these knobs and their addition in LSA can be found in this [LHC OMC logbook entry][logbook_entry]{target=_blank} and the ones that follow.
 
 ### Knob Setting Convention
 
-Since the waist can be shifted in two directions - left and right of the IP - two knobs were generated per IP, for a unit setting of $1$ and -$1$.
-This unit setting is an arbitrary definition, where a value of $1$ corresponds to a $0.5$% change of the triplet powering.
-This, in turn, corresponds to  a waist shift of ~43-44cm in a given direction.
+Two different knobs are used for the waist shift that need to be trimmed in: 
 
+- The triplets knob, which generates the waist shift itself.
+- The independent quadrupoles knob (Q4 - Q10), which re-matches the optics.
+
+The unit setting of the triplet knob is an arbitrary definition, where a value of $\pm1$ corresponds to a $\pm 0.5$% change of the triplet powering, which leads to a waist shift of ~43-44cm in a given direction.
 The knob setting is defined as follows, with regards to Beam1 (reverse for Beam2):
 
 - Unit setting of +$1$: shifts the waist to the _left_ of the IP ($s_{waist}^{B1} < s_{IP}^{B1}$)
 - Unit setting of -$1$: shifts the waist to the _right_ of the IP ($s_{waist}^{B1} > s_{IP}^{B1}$)
 
-It is possible to generate knobs for different unit settings but for LHC operation these values are the ones that were used by Felix S.
-
 ### The Knobs in LSA
 
-There are two different types of knobs that need to be trimmed in:
-
-- A knob for the triplet quadrupoles
-- A knob for the independent quadrupoles used to rematch the optics.
-
-A knob for the MQTs could be used to rematch the working point, but in operation the tune feedback should take care of this.
-Since the triplet knob for a unit setting of +$1$ is the opposite sign of the knob for a unit setting of -$1$, only a single triplet knob per IP has been added to LSA, which can then be trimmed with a factor of ±$1$.
+Since the triplet knob for a unit setting of +$1$ is the exact opposite magnet powering of the knob for a unit setting of -$1$, only a single triplet knob per IP has been added to LSA, which can then be trimmed with a factor of $\pm1$.
+On the other hand, the re-matching quadrupole knobs are specific to a given direction of the shift, so two of them per IP (one per direction) were added to LSA, with the *pos* and *neg* suffixes.
 
 As a consequence, respect the following rules when applying the knobs below:
 
- - When trimming the triplet knob with a factor of +$1$, use the *pos* independent quadrupoles knob
- - When trimming the triplet knob with a factor of -$1$, use the *neg* independent quadrupoles knob
+ - When trimming the triplet knob with a factor of +$1$, use the *pos* re-matching quadrupoles knob.
+ - When trimming the triplet knob with a factor of -$1$, use the *neg* re-matching quadrupoles knob.
 
 ??? example "LSA Triplets Knobs"
 
@@ -86,8 +81,8 @@ As a consequence, respect the following rules when applying the knobs below:
 This procedure is applied at the main experimental insertions (IR1 and IR5) where local corrections need to be established or checked.
 Keep in mind that this does Beam1 and Beam2 at the same time, but different IPs cannot / should not be done in parallel.
 
-!!! warning "Orbit Feedback"
-      Please remember to **always** keep the orbit feedback system **ON** during this procedure if crossing angles are present in the machine.
+!!! warning "Orbit & Tune Feedbacks"
+      These feedbacks should be kept **ON** during the trim of the knobs and the procedure.
 
 - [ ] <details class="nodeco"><summary>Trim in the Waist Shift Knob</summary>
       <p> Trim the prepared knob in the machine, for a certain direction (waist left/right of the IP).
@@ -138,3 +133,4 @@ Keep in mind that this does Beam1 and Beam2 at the same time, but different IPs 
 *[Colinearity Knob]: This is a powering setting of the MQSXs, which corresponds to a K1S value of +/- 1E-4 m^-2.
 
 [rws_gallery]: https://fsoubelet.github.io/PyhDToolkit/gallery/demo_lhc_rigid_waist_shift.html
+[logbook_entry]: https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/3545713
