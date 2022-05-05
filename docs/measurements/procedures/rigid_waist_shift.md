@@ -63,9 +63,11 @@ As a consequence, respect the following rules when applying the knobs below:
     |       |        | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP5pos |
 
 ??? example "An Example"
-    One wishes to implement the waist shift at IP1, shifting the waist to the left of IP (for Beam1).
-    To do so they need to apply the *LHCBEAM/MD_ATS_2020-05_04_BX_RigidWaistShift_Triplet_IP1* with a factor of +$1$.
-    Since they used a +$1$ factor on the triplet knob, the corresponding re-matching quadrupoles knobs to use are those with the *pos* suffix, for Beam1 and Beam2: *LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos* and *LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos*.
+    We wish to implement the waist shift at IP1, shifting the waist to the left of IP (for Beam1).
+    To do so we need to apply the *LHCBEAM/MD_ATS_2020-05_04_BX_RigidWaistShift_Triplet_IP1* with a factor of +$1$.
+
+    Since we used a +$1$ factor on the triplet knob, the corresponding re-matching quadrupoles knobs to use are those with the *pos* suffix, and they should be trimmed with a factor +$1$.
+    The knobs to trim are then: *LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP1pos* and *LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos*.
 
 !!! warning "Value of the Waist Shift"
       The waist shift from the generated knobs should be of about 43 to 44cm in either direction.
