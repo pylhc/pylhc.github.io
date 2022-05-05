@@ -35,20 +35,21 @@ The knob setting is defined as follows, with regards to Beam1 (reverse for Beam2
 
 Since the triplet knob for a unit setting of +$1$ is the exact opposite magnet powering of the knob for a unit setting of -$1$, only a single triplet knob per IP has been added to LSA, which can then be trimmed with a factor of $\pm1$.
 On the other hand, the re-matching quadrupole knobs are specific to a given direction of the shift, so two of them per IP (one per direction) were added to LSA, with the *pos* and *neg* suffixes.
+These should always be trimmed with a factor of $1$.
 
 As a consequence, respect the following rules when applying the knobs below:
 
  - When trimming the triplet knob with a factor of +$1$, use the *pos* re-matching quadrupoles knob.
  - When trimming the triplet knob with a factor of -$1$, use the *neg* re-matching quadrupoles knob.
 
-??? example "LSA Triplets Knobs"
+??? info "LSA Triplets Knobs"
 
     |  IP   |                        Knob Name                         |
     | :---: | :------------------------------------------------------: |
     |  IP1  | LHCBEAM/MD_ATS_2020-05_04_BX_RigidWaistShift_Triplet_IP1 |
     |  IP5  | LHCBEAM/MD_ATS_2020-05_04_BX_RigidWaistShift_Triplet_IP5 |
 
-??? example "LSA Independent Quadrupoles Knobs"
+??? info "LSA Independent Quadrupoles Knobs"
 
     |  Beam  |  IP   |                      Knob Name                      |
     | :----: | :---: | :-------------------------------------------------: |
@@ -60,6 +61,11 @@ As a consequence, respect the following rules when applying the knobs below:
     |        |       | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos |
     |        |  IP5  | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP5neg |
     |        |       | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP5pos |
+
+??? example "An Example"
+    One wishes to implement the waist shift at IP1, shifting the waist to the left of IP (for Beam1).
+    To do so they need to apply the *LHCBEAM/MD_ATS_2020-05_04_BX_RigidWaistShift_Triplet_IP1* with a factor of +$1$.
+    Since they used a +$1$ factor on the triplet knob, the corresponding re-matching quadrupoles knobs to use are those with the *pos* suffix, for Beam1 and Beam2: *LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos* and *LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos*.
 
 !!! warning "Value of the Waist Shift"
       The waist shift from the generated knobs should be of about 43 to 44cm in either direction.
