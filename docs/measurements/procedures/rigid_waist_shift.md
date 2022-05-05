@@ -146,7 +146,7 @@ Keep in mind that this does Beam1 and Beam2 at the same time, but different IPs 
         ```
 
 *[rigid waist shift]: Shifting the waist of the beam from the IP point by un-balancing the powering of the left and right triplets in the IR.
-*[MQSX]: The skew quadrupole correctors localed next to Q3
+*[MQSX]: The skew quadrupole correctors located next to Q3
 *[LSA]: LHC Software Architecture
 *[IP]: Interaction Point
 *[IR]: Insertion Region
