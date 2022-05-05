@@ -151,7 +151,8 @@ Keep in mind that this does Beam1 and Beam2 at the same time, but different IPs 
 *[IP]: Interaction Point
 *[IR]: Insertion Region
 *[RDT]: Resonance Driving Terms
-*[Colinearity Knob]: This is a powering setting of the MQSXs, which corresponds to a K1S value of +/- 1E-4 m^-2.
+*[Colinearity Knob]: This is a powering setting of the MQSXs, which corresponds to a K1S value of  ±1E-4 m^-2.
+*[colinearity knob]: This is a powering setting of the MQSXs, which corresponds to a K1S value of  ±1E-4 m^-2.
 
 [rws_gallery]: https://fsoubelet.github.io/PyhDToolkit/gallery/demo_lhc_rigid_waist_shift.html
 [logbook_entry]: https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/3545713
