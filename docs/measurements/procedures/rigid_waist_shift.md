@@ -14,7 +14,7 @@
 
 ## Rigid Waist Shift & LSA Knobs
 
-Some information about the rigid waist shift can be found in [this gallery page][rws_gallery] from Felix's package's documentation.
+Some information about the rigid waist shift can be found in [this gallery page][rws_gallery]{target=_blank} from Felix's package's documentation.
 Some details about the creation of these knobs and their addition in LSA can be found in this [LHC OMC logbook entry](https://be-op-logbook.web.cern.ch/elogbook-server/GET/showEventInLogbook/3545713){target=_blank} and the ones that follow.
 
 ### Knob Setting Convention
@@ -40,32 +40,30 @@ There are two different types of knobs that need to be trimmed in:
 A knob for the MQTs could be used to rematch the working point, but in operation the tune feedback should take care of this.
 Since the triplet knob for a unit setting of +$1$ is the opposite sign of the knob for a unit setting of -$1$, only a single triplet knob per IP has been added to LSA, which can then be trimmed with a factor of ±$1$.
 
-As a consequence, respect the following rules:
+As a consequence, respect the following rules when applying the knobs below:
 
  - When trimming the triplet knob with a factor of +$1$, use the *pos* independent quadrupoles knob
  - When trimming the triplet knob with a factor of -$1$, use the *neg* independent quadrupoles knob
 
-Here are the LSA knobs for the triplets:
-<!-- Triplet knobs table -->
-|  IP   |                        Knob Name                         |
-| :---: | :------------------------------------------------------: |
-|  IP1  | LHCBEAM/MD_ATS_2020-05_04_BX_RigidWaistShift_Triplet_IP1 |
-|  IP5  | LHCBEAM/MD_ATS_2020-05_04_BX_RigidWaistShift_Triplet_IP5 |
-<!-- Triplet knobs table -->
+??? example "LSA Triplets Knobs"
 
-Here are the LSA knobs for the independent quadrupoles:
-<!-- Quadrupoles knobs table -->
-|  Beam  |  IP   |                      Knob Name                      |
-| :----: | :---: | :-------------------------------------------------: |
-| Beam 1 |  IP1  | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP1neg |
-|        |       | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos |
-|        |  IP5  | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP5neg |
-|        |       | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP5pos |
-| Beam 2 |  IP1  | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1neg |
-|        |       | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos |
-|        |  IP5  | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP5neg |
-|        |       | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP5pos |
-<!-- Quadrupoles knobs table -->
+    |  IP   |                        Knob Name                         |
+    | :---: | :------------------------------------------------------: |
+    |  IP1  | LHCBEAM/MD_ATS_2020-05_04_BX_RigidWaistShift_Triplet_IP1 |
+    |  IP5  | LHCBEAM/MD_ATS_2020-05_04_BX_RigidWaistShift_Triplet_IP5 |
+
+??? example "LSA Independent Quadrupoles Knobs"
+
+    |  Beam  |  IP   |                      Knob Name                      |
+    | :----: | :---: | :-------------------------------------------------: |
+    | Beam 1 |  IP1  | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP1neg |
+    |        |       | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos |
+    |        |  IP5  | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP5neg |
+    |        |       | LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP5pos |
+    | Beam 2 |  IP1  | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1neg |
+    |        |       | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos |
+    |        |  IP5  | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP5neg |
+    |        |       | LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP5pos |
 
 !!! warning "Value of the Waist Shift"
       The waist shift from the generated knobs should be of about 43 to 44cm in either direction.
