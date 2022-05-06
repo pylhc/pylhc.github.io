@@ -219,3 +219,7 @@
 .md-footer-social {
     padding-top: 20px;
 }
+
+.md-footer-social svg {
+    height: 25px;
+}
