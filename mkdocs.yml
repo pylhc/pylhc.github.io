@@ -178,15 +178,16 @@ nav:
       - Error Propagation: measurements/physics/error_propagation.md
       - BPM-Calibration: measurements/physics/bpm_calibration.md
       - Coupling: measurements/physics/coupling.md
-      - K-Mod: measurements/physics/kmod.md
+      - K-Modulation: measurements/physics/kmod.md
+      - Rigid Waist Shift: measurements/physics/rigid_waist_shift.md
       - Linear IR Optics: measurements/physics/ir_linear_optics.md
       - Nonlinear IR Optics: measurements/physics/ir_nonlinear_optics.md
       - 3D-Kicks: measurements/physics/threedkicks.md
     - Procedures:
         - Info: measurements/procedures/about.md
         - General Checks: measurements/procedures/general_checks.md
-        - K Modulation: measurements/procedures/kmod.md
-        - Rigid Waist Shift: measurements/procedures/rigid_waist_shift.md
+        - K-Modulation: measurements/physics/kmod/#measuring-beta-using-k-modulation-in-the-lhc
+        - Rigid Waist Shift: measurements/physics/rigid_waist_shift/#the-procedure
         - Amplitude Detuning: measurements/procedures/ampdet.md
         - Crossing Angle Scan: measurements/procedures/xing_scan.md
   - How To's:
