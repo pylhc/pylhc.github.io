@@ -21,7 +21,9 @@ window.MathJax = {
   }
 };
 
-/* Given in markdown example, but creates weird boxes, fixed with css.*/
+/* Redraws the page with mathjax equations.
+Otherwise a manual reload is needed.
+But creates weird boxes/scrollbars -> fixed with css.*/
 document$.subscribe(() => {
   MathJax.typesetPromise()
 })
