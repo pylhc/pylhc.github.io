@@ -21,7 +21,7 @@ window.MathJax = {
   }
 };
 
-/* Given in markdown example, but creates weird boxes */
-// document$.subscribe(() => {
-//   MathJax.typesetPromise()
-// })
+/* Given in markdown example, but creates weird boxes, fixed with css.*/
+document$.subscribe(() => {
+  MathJax.typesetPromise()
+})
