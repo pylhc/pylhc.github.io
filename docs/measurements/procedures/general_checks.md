@@ -9,6 +9,10 @@ These are updated as much as possible for Run 3 values.
       <p> After local corrections, we can move to having 3 bunches (each below $10^{10}$ppb) evenly spaced along the ring.
       </p></details>
 
+- [ ] <details class="nodeco"><summary>Make Sure The `Setup Beam` flags are `true` for Both Beams</summary>
+      <p> When looking at the LHC Page 1 Vistage, in the "BIS status and SMP flags" section the `Setup Beam` row should be green (`true`) for both beams.
+      </p></details>
+
 - [ ] <details class="nodeco"><summary>Mask the Appropriate BLMs</summary>
       <p> It is possible tp "mask" some of the BLMs, which means making sure they won't trigger any beam dump. They are essentially ignored in the interlocked system when masked.
       </p></details>
