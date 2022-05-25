@@ -96,11 +96,22 @@ Keep in mind that this does Beam1 and Beam2 at the same time, but different IPs 
 - [ ] <details class="nodeco"><summary>Trim in the Waist Shift Knob</summary>
       <p> Trim the prepared knob in the machine, for a certain direction (waist left/right of the IP).
       Remember that this affects both beams at the same time.
+      On can take a few measurements to assess the impact of the optics.
+      </p></details>
+
+- [ ] <details class="nodeco"><summary>Trim in the Corresponding Optics Re-Matching Knobs</summary>
+      <p> See the [Knobs in LSA](#the-knobs-in-lsa) section to determine which knobs to apply.
+      At this point one should also kick a few times and ensure the optics were re-matched properly.
+      </p></details>
+
+- [ ] <details class="nodeco"><summary>Take a Reference Measurement</summary>
+      <p> Do some kicks and measure $|C^{-}|$ and the optics.
+      This will serve as a baseline reference of the coupling in the machine without any colinearity knob applied.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Scan the Colinearity Knob</summary>
-      <p> Trim the colinearity knob, about half a unit at a time.
-      For each setting, do some kicks and measure the $|C^{-}|$.
+      <p> Trim the colinearity knob, about one or two units at a time depending on the range of values you want to cover.
+      For each setting, do some kicks and measure the $|C^{-}|$ and the optics.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Go Back to Nominal Machine</summary>
@@ -110,22 +121,34 @@ Keep in mind that this does Beam1 and Beam2 at the same time, but different IPs 
 
 - [ ] <details class="nodeco"><summary>Trim in the Opposite Waist Shift Knob</summary>
       <p> Trim the prepared knob in the machine, for the other direction (waist right/left of the IP).
+      On can take a few measurements to assess the impact of the optics.
+      </p></details>
+
+- [ ] <details class="nodeco"><summary>Trim in the Corresponding Optics Re-Matching Knobs</summary>
+      <p> See the [Knobs in LSA](#the-knobs-in-lsa) section to determine which knobs to apply.
+      At this point one should also kick a few times and ensure the optics were re-matched properly.
+      </p></details>
+
+- [ ] <details class="nodeco"><summary>Take a Reference Measurement</summary>
+      <p> Do some kicks and measure $|C^{-}|$ and the optics.
+      This will serve as a baseline reference of the coupling in the machine without any colinearity knob applied.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Scan the Colinearity Knob</summary>
-      <p> Trim the colinearity knob, about half a unit at a time.
-      For each setting, do some kicks and measure the $|C^{-}|$.
+      <p> Trim the colinearity knob, about one or two units at a time depending on the range of values you want to cover.
+      For each setting, do some kicks and measure the $|C^{-}|$ and the optics.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Determine the Correction</summary>
       <p> Plot the evolution of the $|C^{-}|$ against the setting of the colinearity knob, and pick the setting that minimizes it.
+      For best accuracy, one should substract the reference measurements (rematched optics without colinearity knob applied) for each measurement in the scans, eventually point by point.
       The curves for each beam might not be minimized exactly around the same point, and a compromise may be needed.
-      Eventually do a fit of the data to get a more accurate estimate of the correction.
+      Eventually do a fit of the data to get a better estimate of the correction.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>**Optional:** Perform a Luminosity Scan of the Colinearity Knob</summary>
       <p> In commissioning and if conditions allow, one can validate and fine tune the correction with a luminosity scan.
-      This has to be performed without a rigid waist shift.
+      This has to be performed without a rigid waist shift: simply scan the colinearity knob around the previously determined correction setting, and measure the instantaneous luminosity.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>**Optional:** Do Global Corrections After Trimming</summary>
