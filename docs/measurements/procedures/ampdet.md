@@ -22,9 +22,8 @@
     - [ ] Check correct crossing angles
     - [ ] <details class="nodeco"><summary>Check collimation sequence</summary>
         <p>
-        **"LOAD COARSE SETTINGS FOR NLO AT 30 CM"** 
-        is the current (run 3, 2022) collimation sequence for AC-Dipole kicks in the LHC at $\beta^* = 30$cm up to $\pm170\mu$rad IP1-V/IP5-H crossing
-        and $\pm15\mu$rad IP1-H, $-150\mu$rad - $+140\my$rad IP5-V separation.
+        **"LOAD COARSE SETTINGS FOR NLO AT 30 CM"** is the current (run 3, 2022) collimation sequence for AC-Dipole kicks in the LHC at $\beta^* = 30 cm$ up to $\pm 170\mu rad$ IP1-V/IP5-H crossing
+        and $\pm15\mu rad$ IP1-H, $-150\mu rad$ - $+140\mu rad$ IP5-V separation.
         </p></details>
 
 - [ ] <details class="nodeco"><summary>Correct Coupling</summary>
@@ -113,6 +112,8 @@
 ## Analysis
 
 Analysis performed with the Beta-Beat GUI omc3 v0.1.0.
+
+The analysis of amplitude detuning data is 
 
 - [ ] Load data
 - [ ] Check data for correct tunes
