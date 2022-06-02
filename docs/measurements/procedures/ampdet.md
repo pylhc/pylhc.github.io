@@ -6,7 +6,8 @@
 !!! info "The Procedure in Short"
 
     The basis of this measurement is to kick with increasing amplitude in a single plane and perform fits over the resulting tune shifts.
-    To assure a good direct and cross detuning measurement, it is important to check that both natural tune lines (for the horizontal and vertical tune) are visible in the respective spectrum.
+    To assure a good direct and cross detuning measurement, 
+    it is important to check that both natural tune lines (for the horizontal and vertical tune) are visible in the respective spectrum.
     It is of utmost importance for the detuning analysis to perform rigorous cleaning on the data. 
 
 ## Measurement
@@ -22,7 +23,8 @@
     - [ ] Check correct crossing angles
     - [ ] <details class="nodeco"><summary>Check collimation sequence</summary>
         <p>
-        **"LOAD COARSE SETTINGS FOR NLO AT 30 CM"** is the current (run 3, 2022) collimation sequence for AC-Dipole kicks in the LHC at $\beta^* = 30 cm$ up to $\pm 170\mu rad$ IP1-V/IP5-H crossing
+        **"LOAD COARSE SETTINGS FOR NLO AT 30 CM"** is the current (run 3, 2022) collimation sequence for AC-Dipole kicks 
+        in the LHC at $\beta^* = 30 cm$ up to $\pm 170\mu rad$ IP1-V/IP5-H crossing
         and $\pm150\mu rad$ IP1-H, $-150\mu rad$ to $+140\mu rad$ IP5-V separation.
         </p></details>
 
@@ -169,16 +171,19 @@ on how to optimize the analysis and only need to be applied where necessary.
           <p>
           The tune tolerance (found in the `Tune Settings`) specifies in what region around the assumed natural tune (see next step, the region is $f \pm tolerace$), the highest frequency line is chosen to be the natural tune.
           To not accidentally capture the main tune or other excited resonances close by, the tolerance should be kept low ($\approx 10^{-3}$).
-          In case of large detuning (e.g. $40 \cdot 10^3 m^{-1} \times 0.016 \rm{\mu m} = 6.4 \cdot 10^{-3}$) or change of the AC-Dipole frequency (e.g. to adapt for tune drifts), this could mean that the natural tune will not fall into this window anymore.
-          The both can be avoided using `Autotunes` and maybe adapting the tune deltas (see next step), but can also be easily remedied in the cleaning step via the `Update Nattune` functionality.
-          You can check the approximate tolerance window, by using the `Set Window` button of `Update Nattune`, which will set the markers according to the `Nattune` and `tolerance` in the `Tune Settings`,
+          In case of large detuning (e.g. $40 \cdot 10^3 m^{-1} \times 0.016 \rm{\mu m} = 6.4 \cdot 10^{-3}$) or change of the AC-Dipole frequency (e.g. to adapt for tune drifts), 
+          this could mean that the natural tune will not fall into this window anymore.
+          The both can be avoided using `Autotunes` and maybe adapting the tune deltas (see next step), 
+          but can also be easily remedied in the cleaning step via the `Update Nattune` functionality.
+          You can check the approximate tolerance window, by using the `Set Window` button of `Update Nattune`, 
+          which will set the markers according to the `Nattune` and `tolerance` in the `Tune Settings`,
           which might differ a bit from the actual window if `Autotunes` are used.
           </p>
-          <figure style="width:90%;">
+          <figure>
               <img src="../../../assets/images/amplitude_detuning_procedure/tune_settings.png">
               <figcaption>Tune settings.</figcaption>
           </figure>
-          <figure style="width:90%;">
+          <figure>
               <img class="clickImg" src="../../../assets/images/amplitude_detuning_procedure/FrequencyChart_tune_tolerance.png">
               <figcaption>Approximate tolerance window, shown in blue for the horizontal and in red for the vertical tune.</figcaption>
           </figure>
@@ -192,10 +197,11 @@ on how to optimize the analysis and only need to be applied where necessary.
           If this is activated (here for `transverse` planes), the highest peak in the whole spectrum is automatically assumed to be the driven tune.
           From those we can specify the difference to the natural tunes, by activating the `Nat. Deltas`, instead of the natural tunes themselves.
           Now, no matter the tune drift (if the tunes are kept updated in Multiturn), the unperturbed natural tune should always be, where we expect it.
-          **Beware that the signs between the `Nat. Deltas` and Multiturns are inverted**, as Multiturn uses the $\Delta$ to specify the excitation frequency based on the natural tune, 
+          :fontawesome-solid-circle-question: **Beware that the signs between the `Nat. Deltas` and Multiturns are inverted,** <br>
+           as Multiturn uses the $\Delta$ to specify the excitation frequency based on the natural tune, 
           while the GUI/harpy searches for the natural tune at $\Delta$ from the driven tune.
           </p>
-          <figure style="width:90%;">
+          <figure>
               <img src="../../../assets/images/amplitude_detuning_procedure/tune_settings.png">
               <figcaption>Tune settings.</figcaption>
           </figure>
@@ -221,15 +227,19 @@ on how to optimize the analysis and only need to be applied where necessary.
         <p>
         For the amplitude detuning analysis, the most important factor is the correct determination of the natural tunes.
         When the `harpy` frequency analysis is done, one can check the found tunes in the `Analysis Panel` in the `Time and Space` tab.
-        Make sure to select `NATTUNEX` and `NATTUNEY` not just the main tunes.
-        **And be sure that the found tune shown is the natural tune and not the driven tune**.
+        Make sure to select `NATTUNEX` and `NATTUNEY` not just the main tunes. <br>
+        :fontawesome-solid-triangle-exclamation: **Be sure that the found tune shown is the natural tune and not the driven tune.** <br>
         Often it is required to check only one of them at a time, to get a clearer view. 
         This can be easily achieved by *right clicking* into the data selection box on the left hand side of the plane that you want to unselect (or choosing `none`)
         and then *middle clicking* into the chart to autozoom the data.
         The BPMs should differ only very little in the found tune ($< 10^{-5}$), otherwise they need to be cleaned.
         The following steps describe how to do that.
         </p>
-        <figure style="width:90%;">
+        <figure>
+            <img class="clickImg" src="../../../assets/images/amplitude_detuning_procedure/data_with_outliers.png">
+            <figcaption>Example of `NATTUNEX` data with outliers.</figcaption>
+        </figure>
+        <figure>
             <img class="clickImg" src="../../../assets/images/amplitude_detuning_procedure/clean_data.png">
             <figcaption>Example for clean (but not perfect) `NATTUNEX` data.</figcaption>
         </figure>
@@ -242,7 +252,14 @@ on how to optimize the analysis and only need to be applied where necessary.
         In any case, one needs to manually identify which of the lines within the selected `tolerance` (see in one of the analysis steps above) is the actual tune.
         If it is not clear at first glance, **compare the spectrum of the current kick with previous kicks** to see the natural tune evolution with increasing amplitude.
         Once the right tune is identified - or determined of being not present in the spectrum - one of the next steps can be applied.
-        </p></details>
+        Very helpful when trying to identify where the currently found natural tune is located in the `Frequency Spectrum`, 
+        is to activate the `Resonance Lines` and select `Nat. Tune (Measured)`, which shows the average natural tunes of all BPMs (of the first selected analysis data).
+        <figure>
+            <img class="clickImg" src="../../../assets/images/amplitude_detuning_procedure/freq_nattune.gif">
+            <figcaption>Show the natural tune in the frequency spectum.</figcaption>
+        </figure>
+        </p>
+        </details>
     - [ ] <details class="nodeco"><summary>Update natural tune window (where applicable)</summary>
         <p>
         If the correct natural tune is visible in the spectrum but could not be identified properly, due to resonance lines close by or because the line lies outside of the `tolerance` window,
@@ -260,22 +277,46 @@ on how to optimize the analysis and only need to be applied where necessary.
              (<span style="color:blue">blue</span> markers for the horizontal tune, <span style="color:red">red</span> markers for the vertical tune).
         <li> Click <code style="color:green">Update Lin-File</code>.
         </ul>
-        <figure style="width:90%;">
+        <figure>
             <img class="clickImg" src="../../../assets/images/amplitude_detuning_procedure/update_linfile.gif">
             <figcaption>How to update the natural tune in the Lin-File.</figcaption>
         </figure>
         </details>
     - [ ] <details class="nodeco"><summary>Clean wrong BPMs (where applicable)</summary>
         <p>
+        If updating the natural tune window from the last step is not sufficient (e.g. if the tune line is hidden in noise), the respective BPMs should be removed.
+        Data can be manually cleaned by using the `Clean` functionality: Set the cursors around the data that you want to keep and `Clean`.
+        Or one can use the `Auto Clean` functionality, which removes all outliers based on a gaussian distribution of the points until all points either lie inside the given `limit` or
+        no points are beyond an automatically determined (by the number of points) range.
+        In both cases, the majority of the BPMs should already agree on the natural tune and any cleaning step can be undone, either separately in `X` and `Y` or int `both` planes.
+        <figure>
+            <img class="clickImg" src="../../../assets/images/amplitude_detuning_procedure/autoclean_and_revert.gif">
+            <figcaption>`Auto Clean` and `Undo` example.</figcaption>
+        </figure>
         </p></details>
     - [ ] <details class="nodeco"><summary>Clean wrong Measurements (where applicable)</summary>
         <p>
+        If the measurement is just very noisy and the natural tune can not be recovered using the `Update Lin-File` or cleaning methods described above,
+        it might be best to remove the measurement completely.
+        If rigorous kicks have been performed, this might not be dramatic.
+        In case one plane has resulted in a nice measurement, but the other not so much, this measurement might need to be manually cleaned in the `Kick File` after optics analysis,
+        see in the later step.
         </p></details>
-- [ ] <details class="nodeco"><summary>Run Optics Analysis</summary>
+- [ ] <details class="nodeco"><summary>Run combined Optics Analysis</summary>
     <p>
+    After all measurements are satisfyingly cleaned, the optics analysis (`Get Optics`) can be run on **all measurements combined**, so that they end up all
+    in the same folder in the same `Kick File` (per plane).
+    Give the analysis a nice name, identifying what kind of measurement you are doing (e.g. `b1_ampdet_vertical_30cm_with_xing`).
     </p></details>
 - [ ] <details class="nodeco"><summary>Final Cleaning in Kick-Files</summary>
     <p>
+    After the optics analysis has run, the only input from it that is needed for the detuning analysis, is are the `Kick-Files`.
+    In fact, these are the only files required to be present in the folder given as input to the python `analyse_amplitude_detuning` script.
+    In the case discussed above, that for one kick one wants to keep one tune plane but not the other, one can now open the respective `kick_x` or `kick_y`
+    file and set the natural tune entry (e.g. `NATTUNEX`) for that kick to `NaN`.
+    That way, this tune measurement will be ignored.<br>
+    :fontawesome-solid-triangle-exclamation: **If you delete the whole line of the kick, you also remove the action data, which is needed to calculate the cross-term for this kick.** <br>
+    You would therefore also erase that datapoint, even though the measurement was fine.
     </p></details>
 - [ ] <details class="nodeco"><summary>Run Amplitude Detuning Analysis</summary>
     <p>
