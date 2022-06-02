@@ -30,9 +30,9 @@
 
 - [ ] <details class="nodeco"><summary>Correct Coupling</summary>
       <p>
-        As always, coupling should be well corrected to $|C-| \leq 10^{-3}$.
-        This can be easily achieved by performing diagonal kicks of mediocre strength, and get the correction values from the GUI. 
-        **Beware that the signs need to be switched for correction in the machine**.
+      As always, coupling should be well corrected to $|C-| \leq 10^{-3}$.
+      This can be easily achieved by performing diagonal kicks of mediocre strength, and get the correction values from the GUI.<br>
+      :fontawesome-solid-triangle-exclamation: **Beware that the signs need to be switched for correction in the machine**.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Do initial measurement</summary>
