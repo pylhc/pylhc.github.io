@@ -53,12 +53,33 @@ a.cern_internal {
     background-color: var(--md-code-bg-color);
 }
 
-.md-typeset .nodeco > p {
-    background-color: var(--md-default-bg-color);
-    padding: 0 0 0 0.5rem;
+/* margin for the element after <summary> which is the first child */
+.md-typeset .nodeco > :nth-child(2) {
     margin: 0.3rem 1.5rem 0 0;
+}
+
+.md-typeset .nodeco p,
+.md-typeset .nodeco ul,
+.md-typeset .nodeco figure {
+    background-color: var(--md-default-bg-color);
+    padding: 0.2rem 0 0 0.5rem;
+    margin: 0 1.5rem 0 0 !important;
     font-weight: lighter;
     border-left: .2rem solid var(--md-default-fg-color--lighter);
+}
+
+
+.md-typeset .nodeco .leftFigure,
+.md-typeset .nodeco .rightFigure {
+    width:46%; 
+    margin: 0 0 0 0;
+    display: inline-block;
+}
+
+.md-typeset .nodeco .rightFigure {
+    padding: 0 0.2rem 0 0.5rem;
+    margin: 0 1.5rem 0 0;
+    border-left: none;
 }
 
 .md-typeset .nodeco > .admonition-title::before,
@@ -79,4 +100,8 @@ a.cern_internal {
 /* Fix the Mathjax scrolling boxes issue */
 .md-typeset div.arithmatex {
   overflow: initial;
+}
+
+.clickImg {
+  cursor: pointer;
 }
