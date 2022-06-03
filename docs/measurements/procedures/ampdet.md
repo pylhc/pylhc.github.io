@@ -6,9 +6,9 @@
 !!! info "The Procedure in Short"
 
     The basis of this measurement is to kick with increasing amplitude in a single plane and perform fits over the resulting tune shifts.
-    To assure a good direct and cross detuning measurement, 
+    To assure a good direct and cross detuning measurement,
     it is important to check that both natural tune lines (for the horizontal and vertical tune) are visible in the respective spectrum.
-    It is of utmost importance for the detuning analysis to perform rigorous cleaning on the data. 
+    It is of utmost importance for the detuning analysis to perform rigorous cleaning on the data.
 
 ## Measurement
 
@@ -16,22 +16,22 @@
 
 - [ ] <details class="nodeco"><summary>Confirm machine state</summary>
       <p>
-      Make sure that the configuration of the machine is as you expect it. 
+      Make sure that the configuration of the machine is as you expect it.
       </p></details>
     - [ ] Perform the [general checks](general_checks.md)
-    - [ ] Check correct $\beta^*$ 
+    - [ ] Check correct $\beta^*$
     - [ ] Check correct crossing angles
     - [ ] <details class="nodeco"><summary>Check collimation sequence</summary>
         <p>
-        **"LOAD COARSE SETTINGS FOR NLO AT 30 CM"** is the current (run 3, 2022) collimation sequence for AC-Dipole kicks 
+        **"LOAD COARSE SETTINGS FOR NLO AT 30 CM"** is the current (run 3, 2022) collimation sequence for AC-Dipole kicks
         in the LHC at $\beta^*$ = 30cm up to &plusmn;170&mu;rad IP1-V/IP5-H crossing
         and &plusmn;150&mu;rad IP1-H, &minus;150&mu;rad to +140&mu;rad IP5-V separation.
         </p></details>
 
 - [ ] <details class="nodeco"><summary>Correct Coupling</summary>
       <p>
-      As always, coupling should be well corrected to $|C-| \leq 10^{-3}$.
-      This can be easily achieved by performing diagonal kicks of mediocre strength, and get the correction values from the GUI.<br>
+      As always, coupling should be well corrected to $|C-| \approx 10^{-3}$.
+      This can be easily achieved by performing diagonal kicks of intermediate strength, and get the correction values from the GUI.<br>
       :fontawesome-solid-triangle-exclamation: **Beware that the signs need to be switched for correction in the machine**.
       </p></details>
 
@@ -59,16 +59,16 @@
 
 !!! info "Tune Deltas"
 
-    in the past, clean amplitude detuning measurements could be achieved with tune deltas (signs as given in Multiturn) of <br>
-    Horizontal: -0.009,<br> 
+    In the past, clean amplitude detuning measurements could be achieved with tune deltas (signs as given in Multiturn) of <br>
+    Horizontal: -0.009,<br>
     Vertical: +0.007.
 
 
-### Actual Measurement 
+### Actual Measurement
 
 !!! warning "When kicking with crossing angles"
 
-    When kicking with the crossing orbit bump in, make sure at each kick, that the **losses occur in IP6/IP7** 
+    When kicking with the crossing orbit bump in, make sure at each kick, that the **losses occur in IP6/IP7**
     and **not in the IPs with the crossing** in (usually IP1 and IP5)!
     Losses in these IPs can appear with minor amplitude change, so **keep the amplitude increase between kicks small**.
     If you see losses in the IPs with crossing angles, but you are not yet happy with your maximum amplitude and you still have a lot of beam intensity left,
@@ -84,14 +84,14 @@
     - [ ] <details class="nodeco"><summary>Check losses are low during each kick</summary>
           <p>
           Adapt amplitude increase accordingly, as you do not want to dump the beam because the losses were to high.
-          Also check the beam intensity, you will want to have good intensity if there are more detuning measurements in the other planes/settings to do. 
+          Also check the beam intensity, you will want to have good intensity if there are more detuning measurements in the other planes/settings to do.
           When kicking with crossing: head the warning above! Losses may occur with only a small amplitude increase!
           </p></details>
     - [ ] <details class="nodeco"><summary>Check for tune drift</summary>
           <p>
-          If you are kicking with reduced tune deltas, it is also important to have an eye on the tune drift of the machine, 
-          so that you do not further decrease the distance between natural tune and excitation. 
-          Update the tune in multiturn if necessary.
+          If you are kicking with reduced tune deltas, it is also important to have an eye on the tune drift of the machine,
+          so that you do not further decrease the distance between natural tune and excitation.
+          Update the tune in Multiturn if necessary.
           The tune drifts will be compensated in the python analysis step by using data from the BBQ.
           </p></details>
     - [ ] Try to reach 0.015&mu;m - 0.020&mu;m in action ($2J_x$)
@@ -106,13 +106,13 @@
     - [ ] <details class="nodeco"><summary>Check losses are low during each kick</summary>
           <p>
           Adapt amplitude increase accordingly, as you do not want to dump the beam because the losses were to high.
-          Also check the beam intensity, you will want to have good intensity if there are more detuning measurements in the other planes/settings to do. 
+          Also check the beam intensity, you will want to have good intensity if there are more detuning measurements in the other planes/settings to do.
           When kicking with crossing: head the warning above! Losses may occur with only a small amplitude increase!
           </p></details>
     - [ ] <details class="nodeco"><summary>Check for tune drift</summary>
           <p>
-          If you are kicking with reduced tune deltas, it is also important to have an eye on the tune drift of the machine, 
-          so that you do not further decrease the distance between natural tune and excitation. 
+          If you are kicking with reduced tune deltas, it is also important to have an eye on the tune drift of the machine,
+          so that you do not further decrease the distance between natural tune and excitation.
           Update the tune in multiturn if necessary.
           The tune drifts will be compensated in the python analysis step by using data from the BBQ.
           </p></details>
@@ -128,13 +128,13 @@
     - [ ] <details class="nodeco"><summary>Check losses are low during each kick</summary>
           <p>
           Adapt amplitude increase accordingly, as you do not want to dump the beam because the losses were to high.
-          Also check the beam intensity, you will want to have good intensity if there are more detuning measurements in the other planes/settings to do. 
+          Also check the beam intensity, you will want to have good intensity if there are more detuning measurements in the other planes/settings to do.
           When kicking with crossing: head the warning above! Losses may occur with only a small amplitude increase!
           </p></details>
     - [ ] <details class="nodeco"><summary>Check for tune drift</summary>
           <p>
-          If you are kicking with reduced tune deltas, it is also important to have an eye on the tune drift of the machine, 
-          so that you do not further decrease the distance between natural tune and excitation. 
+          If you are kicking with reduced tune deltas, it is also important to have an eye on the tune drift of the machine,
+          so that you do not further decrease the distance between natural tune and excitation.
           Update the tune in Multiturn if necessary.
           The tune drifts will be compensated in the python analysis step by using data from the BBQ.
           </p></details>
@@ -148,13 +148,16 @@
 
 ## Analysis
 
-Analysis performed with the Beta-Beat GUI `omc3-v0.1.1`, python package `omc3` `v0.4.0`.
+The analysis described here is performed with the Beta-Beat GUI `omc3-v0.1.1`, python package `omc3` `v0.4.0`.
+Earlier versions can analyse detuning as well, but some of the functionality described here is missing or a bit buggy,
+e.g. in these versions the 2D-detuning analysis was newly implemented, as well as the `Auto Clean` functionality,
+and the BBQ correction uses the wrong variable names. It is therefore recommended to use these or newer versions.
 
-The analysis of amplitude detuning data requires very accurate estimates of the natural tunes, 
+The analysis of amplitude detuning data requires very accurate estimates of the natural tunes,
 which can be hard to find if they get lost in the BPM noise or when they are close to resonances in the spectrum.
 Multiple features have been implemented in python and GUI to ease the detuning analysis.
 
-As the main steps follow the standard optics analysis, the entries described here are mostly hints and tricks 
+As the main steps follow the standard optics analysis, the entries described here are mostly hints and tricks
 on how to optimize the analysis and only need to be applied where necessary.
 
 - [ ] <details class="nodeco"><summary>Load Data</summary>
@@ -164,18 +167,18 @@ on how to optimize the analysis and only need to be applied where necessary.
       </p></details>
 - [ ] <details class="nodeco"><summary>Run Spectral Analysis</summary>
       <p>
-      A bad spectral analysis can be recovered by the steps mentioned in "Cleaning", 
+      A bad spectral analysis can be recovered by the steps mentioned in "Cleaning",
       but a good frequency spectrum and well found natural tunes will save you a lot of time later on.
       </p></details>
     - [ ] <details class="nodeco"><summary>Small `tolerance` (&asymp;10<sup>&minus;3</sup>)</summary>
           <p>
-          The tune tolerance (found in the `Tune Settings`) specifies in what region around the assumed natural tune (see next step, the region is $f$ &plusmn; tolerace), the highest frequency line is chosen to be the natural tune.
+          The tune tolerance (found in the `Tune Settings`) specifies in what region around the assumed natural tune (see next step, the region is $f$ &plusmn; tolerance), the highest frequency line is chosen to be the natural tune.
           To not accidentally capture the main tune or other excited resonances close by, the tolerance should be kept low (&asymp;10<sup>&minus;3</sup>).
-          In case of large detuning (e.g. 40 &middot; 10<sup>3</sup> m<sup>&minus;1</sup> &times; 0.016m = 6.4 &middot; 10<sup>&minus;3</sup>) or change of the AC-Dipole frequency (e.g. to adapt for tune drifts), 
+          In case of large detuning (e.g. 40 &middot; 10<sup>3</sup> m<sup>&minus;1</sup> &times; 0.016m = 6.4 &middot; 10<sup>&minus;3</sup>) or change of the AC-Dipole frequency (e.g. to adapt for tune drifts),
           this could mean that the natural tune will not fall into this window anymore.
-          The both can be avoided using `Autotunes` and maybe adapting the tune deltas (see next step), 
+          Both can be avoided using `Autotunes` and maybe adapting the tune deltas (see next step),
           but can also be easily remedied in the cleaning step via the `Update Nattune` functionality.
-          You can check the approximate tolerance window, by using the `Set Window` button of `Update Nattune`, 
+          You can check the approximate tolerance window, by using the `Set Window` button of `Update Nattune`,
           which will set the markers according to the `Nattune` and `tolerance` in the `Tune Settings`,
           which might differ a bit from the actual window if `Autotunes` are used.
           </p>
@@ -197,8 +200,8 @@ on how to optimize the analysis and only need to be applied where necessary.
           If this is activated (here for `transverse` planes), the highest peak in the whole spectrum is automatically assumed to be the driven tune.
           From those we can specify the difference to the natural tunes, by activating the `Nat. Deltas`, instead of the natural tunes themselves.
           Now, no matter the tune drift (if the tunes are kept updated in Multiturn), the unperturbed natural tune should always be, where we expect it.<br>
-          :fontawesome-solid-triangle-exclamation: **Beware that the signs between the `Nat. Deltas` and Multiturns are inverted,** <br>
-           as Multiturn uses the &Delta; to specify the excitation frequency based on the natural tune, 
+          :fontawesome-solid-triangle-exclamation: **Beware that the signs between the `Nat. Deltas` and Multiturn are inverted,** <br>
+           as Multiturn uses the &Delta; to specify the excitation frequency based on the natural tune,
           while the GUI/harpy searches for the natural tune at &Delta; from the driven tune.
           </p>
           <figure>
@@ -209,12 +212,12 @@ on how to optimize the analysis and only need to be applied where necessary.
     - [ ] <details class="nodeco"><summary>Good Frequency Resolution (`TurnBits > 15`)</summary>
           <p>
           As the tune shift can be very small, we would want a good resolution in frequency, which can be controlled by `TurnBits`.
-          The standard value of `TurnBits` of `20` (leading to 2<sup>20</sup> complex coefficients, i.e. 2<sup>21</sup> spectral lines) is a good start, but can lead to excessive memory use when analysing 15&minus;20 files at once. 
-          I estimate (from experience), that with `19` turn-bits, you will need 60GB to 80GB of RAM, `20` will obviously double and `18` half that value.
+          The standard value of `TurnBits` of `20` (leading to 2<sup>20</sup> complex coefficients, i.e. 2<sup>21</sup> spectral lines) is a good start, but can lead to excessive memory use when analysing 15&minus;20 files at once.
+          I estimate (from experience), that with `19` turn-bits, you will need 60GB to 80GB of RAM, `20` will obviously double and `18` halve that value.
           Both of these should be good values to use (see Infobox "TurnBit Estimation" below).<br>
           The `OutputBits` on the other hand can be smaller, as the highest line stored per "bucket" will keep the frequency location calculated from the higher resolution form `TurnBits`.
-          Therefore, even if the wrong line is selected (see step "Small tolerance"), the correct tune line will still be available in its bucket. 
-          The only issue would be, if there is a resonance really close by. 
+          Therefore, even if the wrong line is selected (see step "Small tolerance"), the correct tune line will still be available in its bucket.
+          The only issue would be, if there is a resonance really close by.
           A value of `10`-`12` (0.5 &middot; 10<sup>&minus;4</sup> - 10<sup>&minus;4</sup> tune units) should be enough, to keep the file-size manageable and allow to open all the files simultaneously in the GUI.
           </p></details>
 - [ ] <details class="nodeco"><summary>Check and Clean Data</summary>
@@ -229,9 +232,9 @@ on how to optimize the analysis and only need to be applied where necessary.
         When the `harpy` frequency analysis is done, one can check the found tunes in the `Analysis Panel` in the `Time and Space` tab.
         Make sure to select `NATTUNEX` and `NATTUNEY` not just the main tunes. <br>
         :fontawesome-solid-triangle-exclamation: **Be sure that the found tune shown is the natural tune and not the driven tune.** <br>
-        Often it is required to check only one of them at a time, to get a clearer view. 
+        Often it is required to check only one of them at a time, to get a clearer view.
         This can be easily achieved by *right clicking* into the data selection box on the left hand side of the plane that you want to unselect (or choosing `none`)
-        and then *middle clicking* into the chart to autozoom the data.
+        and then *middle clicking* into the chart to auto-zoom the data.
         The BPMs should differ only very little in the found tune (< 10<sup>&minus;5</sup>), otherwise they need to be cleaned.
         The following steps describe how to do that.
         </p>
@@ -252,7 +255,7 @@ on how to optimize the analysis and only need to be applied where necessary.
         In any case, one needs to manually identify which of the lines within the selected `tolerance` (see in one of the analysis steps above) is the actual tune.
         If it is not clear at first glance, **compare the spectrum of the current kick with previous kicks** to see the natural tune evolution with increasing amplitude.
         Once the right tune is identified - or determined of being not present in the spectrum - one of the next steps can be applied.
-        Very helpful when trying to identify where the currently found natural tune is located in the `Frequency Spectrum`, 
+        Very helpful when trying to identify where the currently found natural tune is located in the `Frequency Spectrum`,
         is to activate the `Resonance Lines` and select `Nat. Tune (Measured)`, which shows the average natural tunes of all BPMs (of the first selected analysis data).
         <figure>
             <img class="clickImg" src="../../../assets/images/amplitude_detuning_procedure/freq_nattune.gif">
@@ -266,14 +269,14 @@ on how to optimize the analysis and only need to be applied where necessary.
         one does not have to repeat the analysis with adapted tunes, deltas and tolerance window, as needs to be done when using the python2 GUI,
         but can use the `Update Lin-File` functionality:</p>
         <ul>
-        <li> Select the BPMs you want to update. 
+        <li> Select the BPMs you want to update.
           If you want to update only one plane deselect (*right click* into the data selection box or choose `none`) all BPMs in the other plane.
           If you want to update all BPMs in one plane, use `Ctrl + a` in the data of the plane you want to select. *(Minimize the legend first...)*<br>
-          :fontawesome-solid-triangle-exclamation: **ONLY SELECTED BPMS WILL BE UPDATED** 
+          :fontawesome-solid-triangle-exclamation: **ONLY SELECTED BPMS WILL BE UPDATED**
         <li> Activate the `Natural Tune Window` by checking `show`.
         <li> Click `Set Window` if the vertical markers are not showing.
-        <li> Set the markers so that the highest line they contain is the natural tune. 
-             If there is no line for a selected BPM between the markers ( the window is `empty`), it can either throw an `error`, `remove` the bpm or `ignore` and leave the value as is.<br> 
+        <li> Set the markers so that the highest line they contain is the natural tune.
+             If there is no line for a selected BPM between the markers ( the window is `empty`), it can either throw an `error`, `remove` the bpm or `ignore` and leave the value as is.<br>
              (<span style="color:blue">blue</span> markers for the horizontal tune, <span style="color:red">red</span> markers for the vertical tune).
         <li> Click <code style="color:green">Update Lin-File</code>.
         </ul>
@@ -310,8 +313,8 @@ on how to optimize the analysis and only need to be applied where necessary.
     </p></details>
 - [ ] <details class="nodeco"><summary>Final Cleaning in Kick-Files</summary>
     <p>
-    After the optics analysis has run, the only input from it that is needed for the detuning analysis, is are the `Kick-Files`.
-    In fact, these are the only files required to be present in the folder given as input to the python `analyse_amplitude_detuning` script.
+    After the optics analysis has run, the only input from it that is needed for the detuning analysis are the `Kick-Files`.
+    In fact, these are the only files required to be present in the folder given as input to the python `omc3.amplitude_detuning_analysis` script.
     In the case discussed above, that for one kick one wants to keep one tune plane but not the other, one can now open the respective `kick_x` or `kick_y`
     file and set the natural tune entry (e.g. `NATTUNEX`) for that kick to `NaN`.
     That way, this tune measurement will be ignored.<br>
@@ -326,11 +329,11 @@ on how to optimize the analysis and only need to be applied where necessary.
     To start the `python` analysis, click `Python Detuning Analysis`.
     In the `Amplitude Detuning Analysis` window make sure that the right `Action Plane` for your kicks is selected.
     Choose `XY` for the 2D/4D analysis.
-    Also make sure, that the tick at `AC-Dipole` is set, which will compensate the direct terms for the force oscillations (i.e. divide the detuning by a factor of 2) in the plots.
-    The analysis from the GUI is usually run with BBQ correction, which can be `deactivated` by choosing this option in the `BBQ Filtering Method` 
-    (it does not make sense to use the BBQ data without filtering first, therefore no filtering = no BBQ correction). 
+    Also make sure, that the tick at `AC-Dipole` is set, which will compensate the direct terms for the forced oscillations (i.e. divide the detuning by a factor of 2) in the plots.
+    The analysis from the GUI is usually run with BBQ correction, which can be `deactivated` by choosing this option in the `BBQ Filtering Method`
+    (it does not make sense to use the BBQ data without filtering first, therefore no filtering = no BBQ correction).
     Clicking on `Start` runs the amplitude detuning `python` script on the current optics data and - if this is successful - also runs the plotting functions
-    for the results (and the BBQ, if this function was not deactivated). 
+    for the results (and the BBQ, if this function was not deactivated).
     This plotting is also done in `python`, resulting in `matplotlib` windows to pop up and `plot.ampdet_dQ*d2J*.pdf` files to appear in the optics result directory.
     </p>
     <figure style="width:80%;">
@@ -343,20 +346,20 @@ on how to optimize the analysis and only need to be applied where necessary.
         To account for any tune drifts of the machine during the measurement, the tune data is corrected by the data from the BBQ.
         As this data is very noisy (and contains the outliers from the AC-Dipole excitation), it needs to be cleaned first.
         A moving average of the given `Window length` is used determining a tune estimation over the kick timerange.
-        This data is extracted from timber and saved into a `bbq_ampdet.tfs` file in the optics results folder. 
+        This data is extracted from timber and saved into a `bbq_ampdet.tfs` file in the optics results folder.
         So in case you run the same detuning analysis again, but maybe want to modify the BBQ cleaning parameters, this data can be re-used by ticking `Use previous BBQ`.
-        The first cleaning method `outliers` is using the same algorithm as `Auto Clean`, and requires an `outlier limit` to be set. 
-        BBQ data deviating less than this limit from the moving average are never cleaned. 
+        The first cleaning method `outliers` is using the same algorithm as `Auto Clean`, and requires an `outlier limit` to be set.
+        BBQ data deviating less than this limit from the moving average are never cleaned.
         The moving average is then calculated on the cleaned data and the closest value to the kick time subtracted from the natural tune measured during the kick.
-        The second method `cut` let's use choose a fixed `cut` around the assumed natural tunes and data beyond that value is cleaned.
-        In this case also `Fine windowing` can be enabled, which performs another moving average on the now cleaned data and datapoints deviating more than the `fine cut` 
+        The second method `cut` allows to choose a fixed `cut` around the assumed natural tunes and data beyond that value is cleaned.
+        In this case also `Fine windowing` can be enabled, which performs another moving average on the now cleaned data and data-points deviating more than the `fine cut`
         value are also cleaned.<br>
         </p></details>
 
 ??? info "Quick TurnBit Estimation"
     Let's assume a small detuning of 10 &middot; 10<sup>3</sup> m<sup>&minus;1</sup> and an action increase between kicks of 0.020 &mu;m / 20 kicks,
     leading to a detuning difference between two kicks of &Delta;Q = 1 &middot; 10<sup>&minus;5</sup>.
-    The frequency resolution $\Delta f$ is the inverse of the length of the turns-data (halfed, as we have pairs), so 2<sup>&minus;TurnBits&minus;1</sup> :<br>
+    The frequency resolution $\Delta f$ is the inverse of the length of the turns-data (halved, as we have pairs), so 2<sup>&minus;TurnBits&minus;1</sup> :<br>
     `TurnBits = 20`: $\Delta f = 4.8 \cdot 10^{-7}$<br>
     `TurnBits = 19`: $\Delta f = 9.5 \cdot 10^{-7}$<br>
     `TurnBits = 18`: $\Delta f = 1.9 \cdot 10^{-6}$<br>
