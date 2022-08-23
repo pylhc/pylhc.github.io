@@ -27,28 +27,18 @@ The environment is located at `/afs/cern.ch/eng/sl/lintrack/omc_python3/` and ca
 
 ## The OMC Python Packages
 
-The OMC team develops and maintains the following packages:
-
-- **OMC3** (Python 3.7+): [:fontawesome-solid-circle-question:](omc3/about.md) [:fontawesome-brands-github:][omc3]{target=\_blank} [:fontawesome-solid-book:][omc3_doc]{target=\_blank} <br>
-  _frequency analysis, optics computation from turn-by-turn data, corrections calculations and results plotting._
-- **PyLHC-Tools** (Python 3.7+): [:fontawesome-solid-circle-question:](pylhc/about.md) [:fontawesome-brands-github:][pylhc]{target=\_blank} [:fontawesome-solid-book:][pylhc_doc]{target=\_blank} [:fontawesome-solid-cube:][pylhc_pypi]{target=\_blank} <br>
-  _useful OMC-related scripts._
-- **PyLHC-Submitter** (Python 3.7+): [:fontawesome-brands-github:][pylhc_submitter]{pylhcsubmitter/about.md} [:fontawesome-solid-book:][pylhc_submitter_doc]{target=\_blank} [:fontawesome-solid-cube:][pylhc_submitter_pypi]{target=\_blank} <br>
-  _Wrapper for HTCondor Job submission._
-- **Optics-Functions** (Python 3.6+): [:fontawesome-brands-github:][optics_functions]{target=\_blank} [:fontawesome-solid-book:][optics_functions_doc]{target=\_blank} [:fontawesome-solid-cube:][optics_functions_pypi]{target=\_blank} <br>
-  _calculate various beam optics functions from TFS-Dataframes._
-- **Example Study Scripts** (MAD-X): [:fontawesome-solid-circle-question:](mess/about.md) [:fontawesome-brands-github:][mess]{target=\_blank} <br>
-  _collection of example studies._
-- **Beta-Beat.src** (Python 2.7): [:fontawesome-brands-github:][betabeatsrc]{target=\_blank} [:fontawesome-solid-book:][betabeatsrc_doc]{target=\_blank} <br>
-  _frequency analysis, optics computation from turn-by-turn data and corrections calculations._
-- **TFS-Pandas** (Python 3.6+): [:fontawesome-brands-github:][tfspandas]{target=\_blank} [:fontawesome-solid-book:][tfspandas_doc]{target=\_blank} [:fontawesome-solid-cube:][tfs_pypi]{target=\_blank} <br>
-  _*TFS files* I/O functionality._
-- **Turn-by-Turn** (Python 3.7+): [:fontawesome-brands-github:][turnbyturn]{target=\_blank} [:fontawesome-solid-book:][turnbyturn_doc]{target=\_blank} [:fontawesome-solid-cube:][tbt_pypi]{target=\_blank} <br>
-  _*Particle accelerators turn by turn BPM measurements I/O functionality._
-- **SDDS-Reader** (Python 3.6+): [:fontawesome-brands-github:][sdds]{target=\_blank} [:fontawesome-solid-book:][sdds_doc]{target=\_blank} [:fontawesome-solid-cube:][sdds_pypi]{target=\_blank} <br>
-  _*SDDS files* I/O functionality._
-- **Generic-Parser** (Python 3.6+): [:fontawesome-brands-github:][generic_parser]{target=\_blank} [:fontawesome-solid-book:][generic_parser_doc]{target=\_blank} [:fontawesome-solid-cube:][generic_parser_pypi]{target=\_blank} <br>
-  _entrypoint argument parser functionality._
+| Package                                                                                                                                              | Description                                                                                                  |                                             Version                                              | Linux | Windows | macOS |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------: | :---: | :-----: | :---: |
+| [**OMC3**][omc3]{target=\_blank} [:fontawesome-solid-circle-question:](omc3/about.md) [:fontawesome-solid-book:][omc3_doc]{target=\_blank}           | Frequency analysis, optics computation from turn-by-turn data, corrections calculations and results plotting |             [![](https://img.shields.io/pypi/v/omc3.svg)][omc3_pypi]{target=\_blank}             |   ✅   |    ✅    |   ✅   |
+| [**TFS-Pandas**][tfspandas]{target=\_blank} [:fontawesome-solid-book:][tfspandas_doc]{target=\_blank}                                                | TFS files I/O functionality                                                                                  |          [![](https://img.shields.io/pypi/v/tfs-pandas.svg)][tfs_pypi]{target=\_blank}           |   ✅   |    ✅    |   ✅   |
+| [**Turn-by-Turn**][turnbyturn]{target=\_blank} [:fontawesome-solid-book:][turnbyturn_doc]{target=\_blank}                                            | Particle accelerators turn-by-turn BPM measurements I/O functionality                                        |         [![](https://img.shields.io/pypi/v/turn_by_turn.svg)][tbt_pypi]{target=\_blank}          |   ✅   |    ✅    |   ✅   |
+| [**SDDS**][sdds]{target=\_blank}  [:fontawesome-solid-book:][sdds_doc]{target=\_blank}                                                               | SDDS files I/O functionality                                                                                 |             [![](https://img.shields.io/pypi/v/sdds.svg)][sdds_pypi]{target=\_blank}             |   ✅   |    ✅    |   ✅   |
+| [**PyLHC-Tools**][pylhc]{target=\_blank} [:fontawesome-solid-circle-question:](pylhc/about.md) [:fontawesome-solid-book:][pylhc_doc]{target=\_blank} | Useful OMC-related scripts                                                                                   |            [![](https://img.shields.io/pypi/v/PyLHC.svg)][pylhc_pypi]{target=\_blank}            |   ✅   |    ✅    |   ✅   |
+| [**PyLHC-Submitter**][pylhc_submitter]{target=\_blank} [:fontawesome-solid-book:][pylhc_submitter_doc]{target=\_blank}                               | Wrapper for HTCondor job submission                                                                          |  [![](https://img.shields.io/pypi/v/pylhc-submitter.svg)][pylhc_submitter_pypi]{target=\_blank}  |   ✅   |    ✅    |   ✅   |
+| [**Optics-Functions**][optics_functions]{target=\_blank} [:fontawesome-solid-book:][optics_functions_doc]{target=\_blank}                            | Calculate various beam optics functions from TFS-Dataframes                                                  | [![](https://img.shields.io/pypi/v/optics-functions.svg)][optics_functions_pypi]{target=\_blank} |   ✅   |    ✅    |   ✅   |
+| [**Generic-Parser**][generic_parser]{target=\_blank} [:fontawesome-solid-book:][generic_parser_doc]{target=\_blank}                                  | Entrypoint argument parser functionality                                                                     |   [![](https://img.shields.io/pypi/v/generic-parser.svg)][generic_parser_pypi]{target=\_blank}   |   ✅   |    ✅    |   ✅   |
+| [**Example Study Scripts**][mess]{target=\_blank} [:fontawesome-solid-circle-question:](mess/about.md)                                               | Collection of example studies                                                                                |                                                                                                  |   ✅   |    ✅    |   ✅   |
+| [**Beta-Beat.src**][betabeatsrc]{target=\_blank} [:fontawesome-solid-book:][betabeatsrc_doc]{target=\_blank}                                         | Frequency analysis, optics computation from turn-by-turn data and corrections calculations                   |                                                                                                  |   ✅   |    ✅    |   ✅   |
 
 [pylhc_github]: https://github.com/pylhc/
 [accpy_docs]: https://wikis.cern.ch/display/ACCPY/Accelerating+Python+Home
@@ -56,6 +46,7 @@ The OMC team develops and maintains the following packages:
 [betabeatsrc_doc]: https://pylhc.github.io/Beta-Beat.src
 [omc3]: https://github.com/pylhc/omc3
 [omc3_doc]: https://pylhc.github.io/omc3
+[omc3_pypi]: https://pypi.org/project/omc3/
 [pylhc]: https://github.com/pylhc/pylhc
 [pylhc_doc]: https://pylhc.github.io/PyLHC
 [tfspandas]: https://github.com/pylhc/tfs
