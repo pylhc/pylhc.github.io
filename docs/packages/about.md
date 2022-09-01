@@ -40,16 +40,13 @@ The environment is located at `/afs/cern.ch/eng/sl/lintrack/omc_python3/` and ca
 | [**Example Study Scripts**][mess]{target=\_blank} [:fontawesome-solid-circle-question:](mess/about.md)                                               | Collection of example MAD-X studies                                                                          |     [![](https://img.shields.io/github/v/release/pylhc/MESS?color=orange&label=Release&logo=Github)][mess_releases]{target=\_blank}      |   ✅   |   ✅   |    ✅    |
 | [**Beta-Beat.src**][betabeatsrc]{target=\_blank} [:fontawesome-solid-book:][betabeatsrc_doc]{target=\_blank}                                         | Frequency analysis, optics computation from turn-by-turn data and corrections calculations                   | [![](https://img.shields.io/github/v/release/pylhc/Beta-Beat.src?color=orange&label=Release&logo=Github)][mess_releases]{target=\_blank} |   ✅   |   ✅   |    ✅    |
 
-[pylhc_github]: https://github.com/pylhc/
+
 [accpy_docs]: https://wikis.cern.ch/display/ACCPY/Accelerating+Python+Home
 [betabeatsrc]: https://github.com/pylhc/Beta-Beat.src
 [betabeatsrc_doc]: https://pylhc.github.io/Beta-Beat.src
 [betabeatsrc_releases]: https://github.com/pylhc/Beta-Beat.src/releases
-[omc3]: https://github.com/pylhc/omc3
-[omc3_doc]: https://pylhc.github.io/omc3
-[omc3_pypi]: https://pypi.org/project/omc3/
-[pylhc]: https://github.com/pylhc/pylhc
-[pylhc_doc]: https://pylhc.github.io/PyLHC
+
+
 [tfspandas]: https://github.com/pylhc/tfs
 [tfspandas_doc]: https://pylhc.github.io/tfs
 [turnbyturn]: https://github.com/pylhc/turn_by_turn
@@ -58,16 +55,22 @@ The environment is located at `/afs/cern.ch/eng/sl/lintrack/omc_python3/` and ca
 [sdds_doc]: https://pylhc.github.io/sdds
 [generic_parser]: https://github.com/pylhc/generic_parser
 [generic_parser_doc]: https://pylhc.github.io/generic_parser
-[pylhc_submitter]: https://github.com/pylhc/submitter
-[pylhc_submitter_doc]: https://pylhc.github.io/submitter/
+[generic_parser_pypi]: https://pypi.org/project/generic-parser/
 [mess]: https://github.com/pylhc/MESS
 [mess_releases]: https://github.com/pylhc/MESS/releases
-[pylhc_pypi]: https://pypi.org/project/pylhc/
-[sdds_pypi]: https://pypi.org/project/sdds/
-[tfs_pypi]: https://pypi.org/project/tfs-pandas/
-[tbt_pypi]: https://pypi.org/project/turn-by-turn/
-[generic_parser_pypi]: https://pypi.org/project/generic-parser/
-[pylhc_submitter_pypi]: https://pypi.org/project/pylhc-submitter/
+[omc3]: https://github.com/pylhc/omc3
+[omc3_doc]: https://pylhc.github.io/omc3
+[omc3_pypi]: https://pypi.org/project/omc3/
 [optics_functions]: https://github.com/pylhc/optics_functions
 [optics_functions_doc]: https://pylhc.github.io/optics_functions
 [optics_functions_pypi]: https://pypi.org/project/optics-functions/
+[pylhc]: https://github.com/pylhc/pylhc
+[pylhc_doc]: https://pylhc.github.io/PyLHC
+[pylhc_github]: https://github.com/pylhc/
+[pylhc_pypi]: https://pypi.org/project/pylhc/
+[pylhc_submitter]: https://github.com/pylhc/submitter
+[pylhc_submitter_doc]: https://pylhc.github.io/submitter/
+[pylhc_submitter_pypi]: https://pypi.org/project/pylhc-submitter/
+[sdds_pypi]: https://pypi.org/project/sdds/
+[tbt_pypi]: https://pypi.org/project/turn-by-turn/
+[tfs_pypi]: https://pypi.org/project/tfs-pandas/
