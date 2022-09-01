@@ -207,6 +207,7 @@ nav:
       - ↪ BBLumi: http://bblumi.web.cern.ch/utilities_tricks/
   - Resources:
       - Useful Links: resources/links.md
+      - Computing: resources/computing.md
       - Publications: resources/publications.md
       - Presentations: resources/presentations.md
       - Templates: resources/templates.md
