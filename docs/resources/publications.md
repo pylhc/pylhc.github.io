@@ -3,7 +3,7 @@
 
 This page compiles various published papers, reports, and MD notes from OMC team members.
 
-To add new entries, please use the an `abstract` admonition:
+To add new entries, please use an `abstract` admonition:
 
 ```markdown
 ??? abstract "Title, `Authors`, [Paper ID](Link to resource){target=_blank}"
