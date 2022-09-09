@@ -1,4 +1,6 @@
-# Quick Run 3 Commissioning Timeline
+# A Quick Run 3 OMC Commissioning Timeline
+
+This page provides quick access links to logbook entries of important OMC shifts or measurements done during the LHC Run 3 Commissioning.
 
 ??? warning "Weird shift with the links"
     The logbook is weird and when clicking on the direct link to an event, sometimes it will not show the whole day's page.

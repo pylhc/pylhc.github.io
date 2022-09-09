@@ -208,7 +208,7 @@ nav:
       - ↪ ABPComputing: https://abpcomputing.web.cern.ch/
       - ↪ BBLumi: http://bblumi.web.cern.ch/utilities_tricks/
   - Resources:
-      - Run 3 Commissioning: resources/timeline.md
+      - LHC Run 3 Commissioning: resources/timeline.md
       - Useful Links: resources/links.md
       - Computing: resources/computing.md
       - Publications: resources/publications.md
