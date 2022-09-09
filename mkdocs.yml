@@ -109,9 +109,8 @@ nav:
   - Home: index.md
   - OMC Team:
     - About: omc_team/about.md
-    - LHC 2022 Commissioning: omc_team/timeline.md
-    - Future MD Ideas: omc_team/ideas.md
     - Publications: omc_team/publications.md
+    - Future MD Ideas: omc_team/ideas.md
     - ↪ On Mattermost: https://mattermost.web.cern.ch/be-dep/channels/omc-team
     - ↪ Meetings (Indico): https://indico.cern.ch/category/5986/
   - Python Ecosystem:
@@ -213,6 +212,8 @@ nav:
       - Computing: resources/computing.md
       - Publications: resources/publications.md
       - Presentations: resources/presentations.md
+      - Logbook:
+        - LHC 2022: resources/logbook/2022_lhc.md
       - Templates: resources/templates.md
       - FAQ: resources/faqs.md
 
