@@ -22,8 +22,8 @@ This page provides quick access links to logbook entries of important OMC shifts
 | 2022-04-28 |  Bug Report   |      SbS Bug with `acc-models-lhc` opticsfiles       |            [Entry][opticsfile_sbs_bug]{target=\_blank .cern_login}             |
 | 2022-04-28 | Commissioning |         First Ballistic Optics Measurements          |        [Shift Plan][first_ballistic_optics]{target=\_blank .cern_login}        |
 | 2022-05-02 | Commissioning |             Measurements in the Squeeze              |         [Shift Plan][squeeze_measurements]{target=\_blank .cern_login}         |
-| 2022-05-02 |  Measurement  |           First SbS and APJ K-Modulations            |            [Entry][first_sbs_apj_kmod]{target=\_blank .cern_login}             |
-| 2022-05-02 |  Measurement  |           SbS and APJ Mixin K-Modulations            |            [Entry][sbs_apj_mixin_kmod]{target=\_blank .cern_login}             |
+| 2022-05-03 |  Measurement  |           First SbS and APJ K-Modulations            |            [Entry][first_sbs_apj_kmod]{target=\_blank .cern_login}             |
+| 2022-05-03 |  Measurement  |           SbS and APJ Mixin K-Modulations            |            [Entry][sbs_apj_mixin_kmod]{target=\_blank .cern_login}             |
 | 2022-05-04 | Knobs Design  |       Felix S.' Rigid Waist Shift Knobs Design       |    [Shift Plan][rigid_waist_shift_knobs_design]{target=\_blank .cern_login}    |
 | 2022-05-08 | Commissioning |          IR1 Local Coupling SbS Refinement           |     [Entry][ir1_local_coupling_sbs_refinement]{target=\_blank .cern_login}     |
 | 2022-05-08 | Commissioning |      30cm Cycle and First NonLinear Corrections      |   [Shift Plan][30cm_cycle_first_nonlinear_corr]{target=\_blank .cern_login}    |
@@ -65,11 +65,11 @@ This page provides quick access links to logbook entries of important OMC shifts
 [first_ramp_flat_top]:                      https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-04-25T00%3A00%3A00&dateTo=2022-04-25T23%3A59%3A59&eventToHighlight=3541353
 [flattop_mqts_local_corr]:                  https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-04-26T00%3A00%3A00&dateTo=2022-04-26T23%3A59%3A59&eventToHighlight=3542145
 [first_flattop_squeeze]:                    https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-04-27T00%3A00%3A00&dateTo=2022-04-27T23%3A59%3A59&eventToHighlight=3543086
-[opticsfile_sbs_bug]:                       https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-04-27T00%3A00%3A00&dateTo=2022-04-27T23%3A59%3A59&eventToHighlight=3543196
+[opticsfile_sbs_bug]:                       https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-04-28T00%3A00%3A00&dateTo=2022-04-28T23%3A59%3A59&eventToHighlight=3543196
 [first_ballistic_optics]:                   https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-04-28T00%3A00%3A00&dateTo=2022-04-28T23%3A59%3A59&eventToHighlight=3543823
 [squeeze_measurements]:                     https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-05-02T00%3A00%3A00&dateTo=2022-05-02T23%3A59%3A59&eventToHighlight=3544650
-[first_sbs_apj_kmod]:                       https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-05-02T00%3A00%3A00&dateTo=2022-05-02T23%3A59%3A59&eventToHighlight=3544761
-[sbs_apj_mixin_kmod]:                       https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-05-02T00%3A00%3A00&dateTo=2022-05-02T23%3A59%3A59&eventToHighlight=3544774
+[first_sbs_apj_kmod]:                       https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-05-03T00%3A00%3A00&dateTo=2022-05-03T23%3A59%3A59&eventToHighlight=3544761
+[sbs_apj_mixin_kmod]:                       https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-05-03T00%3A00%3A00&dateTo=2022-05-03T23%3A59%3A59&eventToHighlight=3544774
 [rigid_waist_shift_knobs_design]:           https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-05-04T00%3A00%3A00&dateTo=2022-05-04T23%3A59%3A59&eventToHighlight=3545713
 [ir1_local_coupling_sbs_refinement]:        https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-05-08T00%3A00%3A00&dateTo=2022-05-08T23%3A59%3A59&eventToHighlight=3547939
 [ir1_local_coupling_refinement_trim]:       https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-05-09T00%3A00%3A00&dateTo=2022-05-09T23%3A59%3A59&eventToHighlight=3548033
