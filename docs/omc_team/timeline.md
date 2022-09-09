@@ -2,8 +2,8 @@
 
 This page provides quick access links to logbook entries of important OMC shifts or measurements done during the LHC Run 3 Commissioning.
 
-??? warning "Weird shift with the links"
-    The logbook is weird and when clicking on the direct link to an event, sometimes it will not show the whole day's page.
+??? warning "Uncomplete ELogbook Pages"
+    The elogbook is weird and when clicking on the direct link to an event, sometimes it will not show the whole day's page.
     If this happens, one can click on the `next day` or `next not empty shift` and then come back to the page, which will load correctly.
 
 
