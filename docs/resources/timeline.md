@@ -40,7 +40,7 @@
 | 2022-05-29 |         VELO Stop Issues Investigations - Part 3 Summary          |  [Summary][velo_stop_issues_investigations_3_sum]{target=\_blank}  |
 | 2022-06-01 |                IR1 Rigid Waist Shift Measurements                 |  [Shift Plan][ir1_rigid_waist_shift_measurements]{target=\_blank}  |
 | 2022-06-03 |             VELO Stop Issues Investigations - Part 4              |  [Shift Plan][velo_stop_issues_investigations_4]{target=\_blank}   |
-| 2022-06-04 |         VELO Stop Issues Investigations - Part 3 Summary          |  [Summary][velo_stop_issues_investigations_4_sum]{target=\_blank}  |
+| 2022-06-04 |         VELO Stop Issues Investigations - Part 4 Summary          |  [Summary][velo_stop_issues_investigations_4_sum]{target=\_blank}  |
 | 2022-06-04 |          Local Corrections & AmpDet with Crossing Angles          |  [Shift Plan][local_corr_ampdet_crossing_angles]{target=\_blank}   |
 | 2022-06-06 |         Measurements and Corrections with Crossing Angles         |  [Shift Plan][measurements_corr_crossing_angles]{target=\_blank}   |
 | 2022-06-09 |            New Global Corrections with Crossing Angles            |   [Shift Plan][new_global_corr_crossing_angles]{target=\_blank}    |
