@@ -19,3 +19,15 @@ for (var i = 0; i < elements.length; i++) {
   window.open(this.getAttribute("src"), '_blank');
 })
 };
+
+
+// var elements = document.getElementsByClassName("tooltip");
+var elements = document.getElementsByTagName("abbr");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].ariaLabel = elements[i].getAttribute("title");
+    elements[i].removeAttribute("title");
+    elements[i].setAttribute("class", "hint--top hint--large");
+
+};
+
+
