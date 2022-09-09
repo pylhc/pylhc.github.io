@@ -59,7 +59,7 @@ This page provides quick access links to logbook entries of important OMC shifts
 | 2022-08-04 | Commissioning |               Measurements in the Ramp               |          [Shift Plan][measurements_ramp]{target=\_blank}           |
 
 
-
+<!-- All the links below -->
 [inj_linear_optics]: https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-04-23T05%3A05%3A00&dateTo=2022-04-23T11%3A05%3A00&eventToHighlight=3540426
 [ink_nonlinear_optics]: https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-04-24T09%3A51%3A44&dateTo=2022-04-24T15%3A51%3A44&eventToHighlight=3540908
 [first_ramp_flat_top]: https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081&dateFrom=2022-04-25T08%3A45%3A00&dateTo=2022-04-25T14%3A45%3A00&eventToHighlight=3541353

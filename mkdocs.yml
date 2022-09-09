@@ -109,6 +109,7 @@ nav:
   - Home: index.md
   - OMC Team:
     - About: omc_team/about.md
+    - LHC Run 3 Commissioning: omc_team/timeline.md
     - Future MD Ideas: omc_team/ideas.md
     - Publications: omc_team/publications.md
     - ↪ On Mattermost: https://mattermost.web.cern.ch/be-dep/channels/omc-team
@@ -208,7 +209,6 @@ nav:
       - ↪ ABPComputing: https://abpcomputing.web.cern.ch/
       - ↪ BBLumi: http://bblumi.web.cern.ch/utilities_tricks/
   - Resources:
-      - LHC Run 3 Commissioning: resources/timeline.md
       - Useful Links: resources/links.md
       - Computing: resources/computing.md
       - Publications: resources/publications.md
