@@ -15,7 +15,7 @@ The `optics` machines are available at the `cs-ccr-optics[1-2].cern.ch` addresse
 
 The servers are hooked on to the Technical Network and can only be ssh into from `lxplus` nodes.
 
-??? tip "A Convenient SSH Config"
+??? tip "Convenient SSH Configuration Tricks"
     The following `ssh` config elements provide a convenient setup for users to access these machines.
     Remember to replace `your_username` below with your CERN username.
     ```bash
@@ -50,14 +50,14 @@ The OMC team maintains a python package, [pylhc_submitter](../packages/pylhcsubm
 !!! info "Monitoring"
     Monitoring tools are deployed through [Graphana][graphana]{target=_blank} that allow to get an overview of the batch system and the jobs running on it:
 
-    - The [general dashboard][graphana_htcondor]{target=_blank} gives access to various pages displaying information about various parts of the batch system (log in with CERN SSO on this page).
-    - The [following link][user_batch]{target=_blank} is an overview of the batch jobs for a given user (selectable in a dropdown menu at the top left).
+    - The [general dashboard][graphana_htcondor]{target=_blank .cern_login} gives access to various pages displaying information about various parts of the batch system (log in with CERN SSO on this page).
+    - The [following link][user_batch]{target=_blank .cern_login} is an overview of the batch jobs for a given user (selectable in a dropdown menu at the top left).
 
 ## ABP Computing Resources
 
 Various resources are accessible to ABP members, from special `e-groups` with higher HTCondor priority to dedicated high-end GPU equipped machines on which to run your jobs.
 
-Information on ABP-specific resources can be found on the [dedicated website][abpcomputing]{target=_blank}.
+Information on ABP-specific resources can be found on the [dedicated website][abpcomputing]{target=_blank}, tab `Computing resources`.
 
 ## CERN OpenStack Machines
 
