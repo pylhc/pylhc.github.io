@@ -21,7 +21,10 @@ for (var i = 0; i < elements.length; i++) {
 };
 
 
-// var elements = document.getElementsByClassName("tooltip");
+/* Change the abbr elements, which are used when creating the abbreviations (i.e. tooltips).
+   This set's the aria-label attribute which is used by the hint-style tooltips
+   and sets the class to use the correct css formatting (see hint.min.css)
+*/
 var elements = document.getElementsByTagName("abbr");
 for (var i = 0; i < elements.length; i++) {
     elements[i].ariaLabel = elements[i].getAttribute("title");
