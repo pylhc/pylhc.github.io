@@ -19,7 +19,7 @@ Abuse links for tooltips:
 /* From the actual hint.min.css */
 [class*="hint--"] {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
 }
 [class*="hint--"]:after,
 [class*="hint--"]:before {
@@ -276,7 +276,7 @@ Abuse links for tooltips:
 }
 .hint--limited:after {
     width: max-content;
-    max-width: 300px;
+    max-width: 350px;
 }
 .hint--small:after {
     width: 80px;
