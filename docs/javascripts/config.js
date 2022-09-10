@@ -25,12 +25,11 @@ for (var i = 0; i < elements.length; i++) {
    This set's the aria-label attribute which is used by the hint-style tooltips
    and sets the class to use the correct css formatting (see hint.min.css)
 */
-var elements = document.getElementsByTagName("abbr");
-for (var i = 0; i < elements.length; i++) {
-    elements[i].ariaLabel = elements[i].getAttribute("title");
-    elements[i].removeAttribute("title");
-    elements[i].setAttribute("class", "hint--top hint--large");
-
+var abbr_elements = document.getElementsByTagName("abbr");
+for (var i = 0; i < abbr_elements.length; i++) {
+    abbr_elements[i].ariaLabel = abbr_elements[i].getAttribute("title");
+    abbr_elements[i].removeAttribute("title");
+    abbr_elements[i].setAttribute("class", "hint--top hint--limited");
 };
 
 

@@ -57,9 +57,10 @@ Abuse links for tooltips:
     background: #383838;
     color: #fff;
     padding: 8px 10px;
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 14px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 12px;
+    line-height: 14px;
     white-space: nowrap;
     text-shadow: 0 -1px 0 #000;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
@@ -70,14 +71,9 @@ Abuse links for tooltips:
 [class*="hint--"][data-hint]:after {
     content: attr(data-hint);
 }
-[class*="hint--"][title]:after {
-    content: attr(title);
-}
 
 [aria-label=""]:after,
 [aria-label=""]:before,
-[title=""]:after,
-[title=""]:before,
 [data-hint=""]:after,
 [data-hint=""]:before {
     display: none !important;
@@ -270,12 +266,17 @@ Abuse links for tooltips:
     -moz-transform: translateY(8px);
     transform: translateY(8px);
 }
+.hint--limited:after,
 .hint--large:after,
 .hint--medium:after,
 .hint--small:after {
     white-space: normal;
     line-height: 1.4em;
     word-wrap: break-word;
+}
+.hint--limited:after {
+    width: max-content;
+    max-width: 300px;
 }
 .hint--small:after {
     width: 80px;
