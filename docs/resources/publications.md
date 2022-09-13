@@ -3,17 +3,19 @@
 
 This page compiles various published papers, reports, and MD notes from OMC team members.
 
-To add new entries, please use the an `abstract` admonition:
 
-```markdown
-??? abstract "Title, `Authors`, [Paper ID](Link to resource){target=_blank}"
-    ```
-    Bibtex entry
-    ```
-```
+???+ info "Adding New Entries"
+    To add new entries, please use an `abstract` admonition:
 
-Ideally, titles should be put in title case.
-The number of authors before resorting to `et al.` is left up to the committers discretion.
+    ```markdown
+    ??? abstract "Title, `Authors`, [Paper ID](Link to resource){target=_blank}"
+        ```
+        Bibtex entry
+        ```
+    ```
+
+    Ideally, titles should be put in title case.
+    The number of authors before resorting to `et al.` is left up to the committers' discretion.
 
 ## Journal Publications
 
