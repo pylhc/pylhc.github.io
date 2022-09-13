@@ -275,6 +275,7 @@ Abuse links for tooltips:
     word-wrap: break-word;
 }
 .hint--limited:after {
+    white-space: pre-line;
     width: max-content;
     max-width: 350px;
 }
