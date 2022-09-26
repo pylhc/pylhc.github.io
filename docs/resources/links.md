@@ -21,7 +21,7 @@
 === "Beta-Beat"
 
     * [Beta-Beat Gitlab][betabeat_gui_gitlab]{target=_blank .cern_login}
-    * [Jira Bugtracker][jira_bugtracker]{target=_blank .cern_login}
+    * [Beta-Beat Gitlab Issues][betabeat_gui_gitlab_issues]{target=_blank .cern_login}
     * [Artifactory][betabeat_artifactory]{target=_blank .cern_internal}
 
 === "Kmod"
@@ -167,7 +167,7 @@
 [omc_logos]: https://github.com/pylhc/pylhc.github.io/tree/master/docs/assets/logos
 
 [betabeat_gui_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating
-[jira_bugtracker]: https://its.cern.ch/jira/projects/BBGUI/
+[betabeat_gui_gitlab_issues]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues
 [betabeat_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-app-beta-beating
 
 [kmod_gui_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-kmod
