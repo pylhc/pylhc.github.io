@@ -72,8 +72,8 @@ python -m omc3.module arg1 arg2 ...
 * Do NOT use the Nattune-Updater (in the Spectrum panel) if you have free kicks (it adds a `NATTUNE`-Column to the lin-file).
 
 !!! warning "Bug Reporting"
-    If you find bugs, please make [JIRA tickets][jira_bug_tickets]{target=_blank} with the `OMC3-GUI` label.
+    If you find bugs, please create [issues][betabeat_gui_gitlab_issues]{target=_blank} with the `OMC3-GUI` label.
 
 
 [omc3_github_getting_started]: https://github.com/pylhc/omc3#getting-started
-[jira_bug_tickets]: https://its.cern.ch/jira/projects/BBGUI/issues
+[betabeat_gui_gitlab_issues]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues
