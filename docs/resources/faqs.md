@@ -11,7 +11,7 @@ errors or crash like other languages.
 * Check your `;`
     * A line needs to end with a semicolon. If not, the second line will be
       considered as part of it. The non-working line will then be ignored.
-* When tracking for Beam 2, load the `lchb4.seq` sequence file with `bv=1` flag
+* When tracking for Beam 2, load the `lhcb4.seq` sequence file with `bv=1` flag
     * The `sequence` to use remains `lhcb2`
     * If analysing the tracking with BB.src or OMC3, a model made with the 
       regular `lhc_as_built.seq` file and `lhcb2` sequence with `bv=-1` is 
