@@ -1,6 +1,6 @@
 Gradually include here different pieces of useful information, possibly from questions answered in meetings or on Mattermost, which don't really fit anywhere else
 
-# Common MAD-x Pitfalls
+# Common MAD-X Pitfalls
 
 MAD-X can sometimes be a bit tricky to work with. This section is intended to
 put together some of the common pitfalls encountered when creating a MAD-X
