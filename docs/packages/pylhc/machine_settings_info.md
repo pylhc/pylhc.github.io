@@ -5,7 +5,7 @@
 Prints an overview over the machine settings at a provided given time, or the current settings if
 no time is given.
 
-Can be run from command line, parameters as given in `print_machine_settings_overview.main`.
+Can be run from command line, parameters as given in `machine_settings_info.main`.
 
 ```bash
 usage: machine_settings_info.py [-h] [--time TIME] [--start_time START_TIME]
@@ -25,11 +25,28 @@ optional arguments:
                         List of knobnames.
 --accel ACCEL         Accelerator name.
 --output_dir OUTPUT_DIR
-                        Output directory.
+                      Output directory.
 --knob_definitions    Set to extract knob definitions.
 --source SOURCE       Source to extract data from.
 --log                 Write summary into log
                       (automatically done if no output path is given).
 ```
+
+
+!!! tip "Usage Examples"
+    Displaying basic summary information (beam process, fill, optics etc.), right now:
+    ```bash
+    python -m pylhc.machine_settings_info
+    ```
+
+    Querying the default knobs trims, right now:
+    ```bash
+    python -m pylhc.machine_settings_info --knobs default
+    ```
+
+    Querying the default knobs trims at a given time, and writing the output to a file:
+    ```bash
+    python -m pylhc.machine_settings_info --knobs default --time "2022-10-19 17:00:00.0" --output_dir .
+    ```
 
 [documentation]: https://pylhc.github.io/PyLHC/entrypoints/machine_info.html
