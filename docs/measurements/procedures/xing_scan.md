@@ -1,6 +1,6 @@
 # Crossing Angle Scans
 
-!!! note ""
+!!! note
     Please keep in mind the [general checks](general_checks.md) for measurements.
 
 ??? info "The Procedure in Short"

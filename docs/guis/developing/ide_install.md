@@ -32,7 +32,7 @@ As both IDEs require [CommonBuildNextGeneration (CBNG)][cbng_wiki]{target=_blank
     /user/pcrops/devtools/CBNG/PRO/bin/bob
     ```
     
-    !!! info ""
+    !!! info
         See `bob --help` for instructions about its commands.
 
 ## Importing a Project
@@ -66,7 +66,7 @@ To make it runnable, you will have to use CBNG to **resolve dependencies** and *
 Depending on your IDE you should run CBNGs `eclipse` or `idea` followed by `build`. 
 Running `dependencies` can help.
 
-!!! warning ""
+!!! warning
     No one in the OMC-Team is a `CBNG` expert, and sometimes running these commands leads to the desired outcome (of a runnable project) or not depending on the color of the DG's clothing.
 
 ## Running the GUI

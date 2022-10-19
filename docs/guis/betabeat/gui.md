@@ -4,7 +4,7 @@ The Beta-Beat GUI provides different functionalities separated in multiple views
 The GUI can be ran locally, provided you have access to `afs`, but most importantly directly from the CERN Control Center.
 This section provides a short overview for the main features.
 
-!!! info ""
+!!! info
     The code documentation of the Beta-Beat GUI can be found on CERN's gitlab pages.
     The master and OMC3 branches are generated:
 

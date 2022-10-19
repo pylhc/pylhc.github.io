@@ -36,7 +36,7 @@
 
 ### JWS Programs
 
-!!! warning ""
+!!! warning
     All of these are <span class="cern_internal"> only accessible from CERN Network </span>.
 
 === "Beta-Beat"
