@@ -26,10 +26,6 @@ jobs:
           cache: 'pip'
           cache-dependency-path: '**/requirements.txt'
 
-      - name: Get full Python version
-        id: full-python-version
-        run: echo ::set-output name=version::$(python -c "import sys; print('-'.join(str(v) for v in sys.version_info))")
-
       - name: Upgrade pip, setuptools and wheel
         run: python -m pip install --upgrade pip setuptools wheel
 
@@ -40,7 +36,7 @@ jobs:
         run: python -m mkdocs build -d ./doc_build
 
       - name: Upload build artifacts  # upload artifacts so PR reviewers can have a quick look without building the branch locally
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         if: success() && github.event_name == 'pull_request'
         with:
           name: site-build
