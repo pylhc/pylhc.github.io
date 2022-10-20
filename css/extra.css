@@ -32,6 +32,7 @@ a.cern_internal {
 .md-typeset details.nodeco {
   background-color: var(--md-default-bg-color);
   box-shadow: none;
+  border: none;
   border-left: 0;
   font-size: medium;
   font-weight: lighter;
