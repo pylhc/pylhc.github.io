@@ -28,7 +28,7 @@ Sadly, the machine you want to work on (_dev-server_, _optics-server_) will not 
 However, **cernts.cern.ch** allows you to connect to a windows machine via `Remote Desktop Connection` from Windows, or e.g. `Remmina` from Linux.
 Once logged in with your CERN credentials (Add `CERN.CH\` in front of your username to specify your domain) you can run:
 
-!!! note ""
+!!! note
     `Start` &rarr; `X-Win32 18` &rarr; `Lxplus (Default)`
 
 which opens a putty-terminal connected to `lxplus` and starts a `X-Server` in the background.

@@ -38,7 +38,7 @@ The GUIs can be started from your development environment or via deployed `.jnlp
     - Complete [list of releases][releases_mtgui]{target=_blank}.
 
 
-!!! warning ""
+!!! warning
     Please note that these site are currently available only to devices connected to the CERN network ([workaround][connect_gpn]).
 
 Open the `.jnlp` executable inside a browser, or [call it with `jws` from the command line][jws_calls]:
@@ -54,7 +54,7 @@ The following are required to run the GUIs:
 - A version of `Java>=8`.
 - The [`jws`][jws]{target=_blank .cern_internal} replacement for `javaws` (in case of errors, [see below](#problems-with-execution-due-to-disabled-java)).
 
-!!! info ""
+!!! info
     Being inside of the TN is required for the `KnobPanel`.
     To do so, either `ssh -X` to the `cs-ccr-dev` machines or use [the sshuttle method][sshuttle_method].
 

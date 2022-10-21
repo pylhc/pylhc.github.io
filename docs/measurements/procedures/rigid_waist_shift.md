@@ -1,6 +1,6 @@
 # IR LHC Local Coupling Corrections With a Rigid Waist Shift
 
-!!! note ""
+!!! note
     Please keep in mind the [general checks](general_checks.md) for measurements.
 
 ??? info "The Procedure in Short"

@@ -37,7 +37,7 @@ sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user -o ssh_command='ssh -t user
 sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
 ```
 
-!!! info ""
+!!! info
     To avoid getting asked for your password all the time, you should have your `ssh` properly configured with Kerberos.
 
 ??? tip "In case you need to unmount these"

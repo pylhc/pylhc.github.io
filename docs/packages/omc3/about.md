@@ -3,7 +3,7 @@
 The `omc3` package is the python tool of the Optics Measurements and Corrections team at CERN.
 The `omc3` repository is the new version of our codes, refactored and rewritten for `Python 3.7+`.
 
-!!! info ""
+!!! info
     This section acts as a general documentation and guide to using the `omc3` package.
     The package's source can be found on [Github][omc3_gh]{target=_blank} and its API documentation can be found at the [following link][omc3_doc]{target=_blank}.
 

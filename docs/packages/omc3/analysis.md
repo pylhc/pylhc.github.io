@@ -12,15 +12,15 @@ While `omc3` provides python modules to handle the different aspects of these ta
 The first step in the workflow consists in a harmonic frequency analysis performed with the `harpy` module, while the second one is an optics analysis performed with the `measure_optics` module.
 The table below shows a general analysis workflow from BPM turn-by-turn measurements or simulation file to results, as well as the corresponding files at each step:
 
-| Workflow & Files       |                        |                        |                        |                                   |
-| :--------------------- | :--------------------: | :--------------------: | :--------------------: | --------------------------------: |
-| Turn-by-Turn BPM Data  | :material-arrow-right: | Frequency Spectra      | :material-arrow-right: | Various Lattice Optics Parameters |
-| SDDS files:  `*.sdds`  | :material-arrow-right: | TFS files: `*.lin[xy]` | :material-arrow-right: | TFS files: `*.tfs`                |
+| Workflow & Files      |                        |                        |                        |                                   |
+| :-------------------- | :--------------------: | :--------------------: | :--------------------: | --------------------------------: |
+| Turn-by-Turn BPM Data | :material-arrow-right: |   Frequency Spectra    | :material-arrow-right: | Various Lattice Optics Parameters |
+| SDDS files:  `*.sdds` | :material-arrow-right: | TFS files: `*.lin[xy]` | :material-arrow-right: |                TFS files: `*.tfs` |
 
 In this page, we will go through the essential steps in preparing and performing an analysis, by going from start to finish with a simple example.
 In this walk-through, we will cover the use of the different entrypoints available to perform necessary steps.
 
-!!! example  ""
+!!! example 
     For our walk-through example, we will start from data obtained in `MAD-X` with the `TRACK` command for the 1023 turns in the LHC machine, with a scenario adapted from the 2018 configuration.
     Changes from the nominal scenario in your simulation could be including errors tables, orbit bumps, speculative magnet errors, additional elements etc.
     It is also easy for the reader to follow along if starting from measurements files.
@@ -658,7 +658,7 @@ python -m omc3.tbt_converter \
     --outputdir .
 ```
 
-!!! info ""
+!!! info
     When tracking in `MAD-X`, by default the start of machine will be included in the list of observation points.
     As we do not want this arbitrary point, we indicate to the `tbt_converter` we intend to drop it with the `--drop_elements` flag.
     More than one element can be given to this flag.
