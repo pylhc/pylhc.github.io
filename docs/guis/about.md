@@ -1,13 +1,12 @@
 # The OMC GUIs
 
-!!! note "About this"
-    Include a foreword about the GUIs, potentially a list doing dispatch like the betabeat one does with its panels.
-
-The OMC team develops several GUIs, each for a defined use:
+The OMC team uses several GUIs to help running data acquisition and analysis codes, each for a defined use:
 
 - [The Beta-Beat GUI](betabeat/gui.md) to perform analysis of measurement files and compute corrections.
-- [The Kmod GUI](kmod/gui.md) to perform K-modulation in different ways and extract the configuration and results data.
-- [The Multiturn GUI](multiturn/gui.md) to ???.
+- [The Kmod GUI](kmod/gui.md) to perform K-modulation, analyse data and export results.
+- [The Multiturn GUI](multiturn/gui.md) to perform beam excitation and data acquisition.
+
+Of these, only the Beta-Beat GUI is currently developed by the team.
 
 ## Running the GUIs
 
@@ -27,9 +26,11 @@ The GUIs can be started from your development environment or via deployed `.jnlp
     
 === "Kmod"
 
-    - Latest [Kmod production version][prod_kmodgui]{target=_blank}.
-    - Latest [Kmod development version][dev_kmodgui]{target=_blank}.
-    - Complete [list of releases][releases_kmodgui]{target=_blank}.
+    The K-mod GUI is now a Python app published with `acc-py`, and can be run with:
+    
+    ```bash
+    /acc/local/share/python/acc-py/apps/acc-py-cli/pro/bin/acc-py app run pykmodlhc
+    ```
     
 === "Multiturn"
 
@@ -71,13 +72,13 @@ If you encounter a complaint about `Java` being too old, try using `/mcr/bin/jws
 
 !!! failure
     ```bash
-    javaws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
+    javaws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating-omc3/PRO/BetaBeatingOMC3-Control-3t.jnlp
     ```
     :material-arrow-right-bold: Disabling Java as it is too old and likely to be insecure. To reenable use jcontrol utility
 
 !!! success
     ```bash
-    /mcr/bin/jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
+    /mcr/bin/jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating-omc3/PRO/BetaBeatingOMC3-Control-3t.jnlp
     ```
 
 #### Unspecific Error
