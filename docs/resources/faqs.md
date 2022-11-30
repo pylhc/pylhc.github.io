@@ -3,6 +3,28 @@
 !!! info 
     We are gradually including here different pieces of useful information, possibly from questions answered in meetings or on Mattermost, which don't really fit anywhere else as their whole page.
 
+## Beta-Beat.src Output Files
+
+The naming of output files in Beta-Beat.src analysis can be very unintuitive.
+Namely, one will see similar output files for a quantity which go as `get_*.out`, `get_*_free.out` and `get_*_free2.out`, where `*` is the calculated quantity (betas, phase, etc.).
+These each correspond to a variation of the calculated quantity, explained below.
+
+!!! question "Why Various Outputs?"
+    When doing our measurements, we use AC-Dipole driven excitations of the beam for a better signal-to-noise ratio in data acquisition.
+    However, as the AC-Dipole has an effect on the beam optics functions the reconstructed optics from these measurements are the driven optics, not those of the accelerator itself.
+    One can correct for this deviation in different ways, which is why there are several output files for each optics quantity computed.
+
+The files correspond to the following meanings:
+
+| Nomenclature      | Meaning                                                                          |
+| :---------------- | :------------------------------------------------------------------------------- |
+| `get_*.out`       | The optics functions **without** recalibration, from the driven excitation data. |
+| `get_*_free.out`  | The optics functions recalibrated **analytically** using an equation.            |
+| `get_*_free2.out` | The optics functions recalibrated **the other way**, see bellow.                 |
+
+In the case of the `get_*_free2.out` files, the recalibration is done differently depending on the computed quantity.
+For some quantities (for instance for $\beta$ from phase) this uses the model values, for others (for instance the coupling RDTs $f_{1001}$ and $f_{1010}$) it is a rescaling in which the model values are used *indirectly*.
+
 ## MAD-X Pitfalls
 
 `MAD-X` can sometimes be a bit tricky to work with.
