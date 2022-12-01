@@ -23,7 +23,7 @@ The files correspond to the following meanings:
 | `get_*_free2.out` | The optics functions recalibrated **the other way**, see bellow.                 |
 
 In the case of the `get_*_free2.out` files, the recalibration is done differently depending on the computed quantity.
-For some quantities (for instance for $\beta$ from phase) this uses the model values, for others (for instance the coupling RDTs $f_{1001}$ and $f_{1010}$) it is a rescaling in which the model values are used *indirectly*.
+For some quantities (for instance for $\beta$ from phase) this uses the model values, for others (for instance the coupling RDTs $f_{1001}$ and $f_{1010}$) it is a rescaling in which the model values are used *indirectly*[^MiyamotoMeasurementCouplingRDTsACDipole].
 
 ## MAD-X Pitfalls
 
@@ -92,3 +92,19 @@ This is due to the fact that `pjlsa` will look for the beamprocess at the given 
 
 
 [madx_doc_bv]: http://madx.web.cern.ch/madx/releases/last-rel/madxuguide.pdf
+
+
+[^MiyamotoMeasurementCouplingRDTsACDipole]:
+    ??? abstract "Measurement of Coupling Resonance Driving Terms with the AC Dipole", `R. Miyamoto`, [BNL--94350-2010-IR, 1013520](https://www.bnl.gov/isd/documents/74582.pdf){target=_blank}"
+        ```
+        @report{MiyamotoMeasurementCouplingRDTsACDipole,
+            title        = {Measurement of {{Coupling Resonance Driving Terms}} with the {{AC Dipole}}},
+            author       = {Miyamoto, R.},
+            year         = 2010,
+            month        = 10,
+            number       = {BNL--94350-2010-IR, 1013520},
+            doi          = {10.2172/1013520},
+            url          = {https://www.bnl.gov/isd/documents/74582.pdf},
+            langid       = {english}
+        }
+        ```
