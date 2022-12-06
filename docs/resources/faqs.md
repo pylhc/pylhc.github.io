@@ -3,7 +3,9 @@
 !!! info 
     We are gradually including here different pieces of useful information, possibly from questions answered in meetings or on Mattermost, which don't really fit anywhere else as their whole page.
 
-## Beta-Beat.src Output Files
+## Beta-Beat.src Caveats
+
+### Meaning of Beta-Beat.src Output Files
 
 The naming of output files in Beta-Beat.src analysis can be very unintuitive.
 Namely, one will see similar output files for a quantity which go as `get_*.out`, `get_*_free.out` and `get_*_free2.out`, where `*` is the calculated quantity (betas, phase, etc.).
