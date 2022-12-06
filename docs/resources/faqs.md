@@ -23,7 +23,7 @@ One can compensate for this deviation in different ways, which is why there are 
     In the case of the `get_*_free2.out` files, the compensation is done differently depending on the computed quantity.
     For some quantities (for instance for $\beta$ from phase) this uses the model values, for others (for instance the coupling RDTs $f_{1001}$ and $f_{1010}$) it is a rescaling in which the model values are used *indirectly*.
 
-The method used to output the `get_*_free2.out` files is sometimes more robust as it does not rely on the existence of certain BPMs in the output (which could be missing after cleaning), and in some edge cases is more accurate.
+The method used to output the `get_*_free2.out` files is sometimes more robust as it does not rely on the existence of certain BPMs in the output (which could be missing after cleaning), and in some edge cases is more accurate[^HoydalsvikSubPerMilCouplingLHC].
 
 !!! tip "Do Compare Outputs"
     For debugging purposes, if the final result looks unbelievable, it might be of advantage to check the uncompensated output to rule out (or confirm) a failure in the recalibration method.
@@ -108,6 +108,23 @@ This is due to the fact that `pjlsa` will look for the beamprocess at the given 
             number       = {BNL--94350-2010-IR, 1013520},
             doi          = {10.2172/1013520},
             url          = {https://www.bnl.gov/isd/documents/74582.pdf},
+            langid       = {english}
+        }
+        ```
+
+[^HoydalsvikSubPerMilCouplingLHC]:
+    ??? abstract "Reaching the Sub Per Mil Level Coupling Corrections in the LHC", `E. Høydalsvik and T. Persson`, [IPAC 2021](https://accelconf.web.cern.ch/ipac2021/papers/thpab001.pdf){target=_blank}"
+        ```
+        @inproceedings{IPAC:Hoydalsvik:SubPerMilCouplingLHC,
+            title        = {Reaching the {{Sub Per Mil Level Coupling Corrections}} in the {{LHC}}},
+            author       = {Høydalsvik, Eirik and Persson, Tobias},
+            booktitle    = {Proceedings of the 12th {{International Particle Accelerator Conference}}},
+            publisher    = {{JACoW Publishing, Geneva, Switzerland}},
+            volume       = {IPAC2021},
+            doi          = {10.18429/JACOW-IPAC2021-THPAB001},
+            isbn         = {978-3-95450-214-1},
+            url          = {https://accelconf.web.cern.ch/ipac2021/papers/thpab001.pdf},
+            date         = 2021,
             langid       = {english}
         }
         ```
