@@ -89,6 +89,7 @@ Here are some general checks on should always keep in mind when performing measu
 ## General Corrections Caveats
 
 - [ ] <details class="nodeco"><summary>Beware of the Corrections Signs</summary>
+      For a quick (but rough) reference see [this presentation][riccardo_lhc_polarity]. 
       - [ ] <details class="nodeco"><summary>Calculated Global Corrections</summary>
             <p> The calculated global correction are really corrections and should be trimmed in with a positive sign.
             </p></details>
@@ -110,6 +111,7 @@ Here are some general checks on should always keep in mind when performing measu
       </p></details>
 
 [about_procedures]: about.md
+[riccardo_lhc_polarity]: https://indico.cern.ch/event/1225615/contributions/5155824/attachments/2564269/4420427/Investigation%20on%20triplet%20polarity.pdf
 
 *[ppb]: protons per bunch
 *[BLM]: Beam Loss Monitor
