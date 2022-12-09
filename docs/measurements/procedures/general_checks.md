@@ -89,7 +89,7 @@ Here are some general checks on should always keep in mind when performing measu
 ## General Corrections Caveats
 
 - [ ] <details class="nodeco"><summary>Beware of the Corrections Signs</summary>
-      For a quick (but rough) reference see [this presentation][riccardo_lhc_polarity]. 
+      For a quick (but rough) reference see [this old note][polarity_acc_note] [this 2022 presentation][riccardo_lhc_polarity] by Riccardo. 
       - [ ] <details class="nodeco"><summary>Calculated Global Corrections</summary>
             <p> The calculated global correction are really corrections and should be trimmed in with a positive sign.
             </p></details>
@@ -111,6 +111,7 @@ Here are some general checks on should always keep in mind when performing measu
       </p></details>
 
 [about_procedures]: about.md
+[polarity_acc_note]: https://cds.cern.ch/record/1667590/files/CERN-ACC-NOTE-2014-0012.pdf
 [riccardo_lhc_polarity]: https://indico.cern.ch/event/1225615/contributions/5155824/attachments/2564269/4420427/Investigation%20on%20triplet%20polarity.pdf
 
 *[ppb]: protons per bunch
