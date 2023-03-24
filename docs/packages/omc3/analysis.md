@@ -64,7 +64,7 @@ In this walk-through, we will cover the use of the different entrypoints availab
     endmatch;
     
     ! ----- Slice Lattice for Tracking ----- !
-    slicefactor = 4    
+    slicefactor = 4;    
     call, file="/afs/cern.ch/eng/lhc/optics/runII/2018/toolkit/myslice.madx";  ! needs AFS access
     use, sequence=lhcb1;
     makethin, sequence=lhcb1, style=teapot, makedipedge=false;
