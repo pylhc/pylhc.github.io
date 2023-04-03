@@ -345,4 +345,9 @@
          <lastmod>2023-04-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://pylhc.github.io/resources/logbook/2023_lhc/</loc>
+         <lastmod>2023-04-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
