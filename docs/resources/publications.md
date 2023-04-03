@@ -19,6 +19,60 @@ This page compiles various published papers, reports, and MD notes from OMC team
 
 ## Journal Publications
 
+### 2022
+
+??? abstract "Prospects for Beam-Based Study of Dodecapole Nonlinearities in the CERN High-Luminosity Large Hadron Collider, `E. H. Maclean, F.S. Carlier, J. Dilly, M. Le Garrec, M. Giovannozzi, and R. Tomás`, [Eur. Phys. J. Plus (2022) 137:1249](https://link.springer.com/article/10.1140/epjp/s13360-022-03367-2){target=_blank}"
+    ```
+    @article{Maclean2022,
+      author    = {E. H. Maclean and F. S. Carlier and J. Dilly and M. Le Garrec and M. Giovannozzi and R. Tomás},
+      doi       = {10.1140/epjp/s13360-022-03367-2},
+      journal   = {The European Physical Journal Plus},
+      month     = nov,
+      number    = {11},
+      publisher = {Springer Science and Business Media {LLC}},
+      title     = {Prospects for beam-based study of dodecapole nonlinearities in the {CERN} High-Luminosity Large Hadron Collider},
+      url       = {https://doi.org/10.1140/epjp/s13360-022-03367-2},
+      volume    = {137},
+      year      = {2022}
+    }
+    ```
+
+??? abstract "Phase Advance Constraint in K-Modulation for Precise $\beta$-Function Determination, `H. Garcia-Morales, M. Hofer, E. H. Maclean, L. van Riesen-Haupt, and R. Tomás`, [Phys. Rev. Accel. Beams 25, 041002, 2022](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.25.041002){target=_blank}"
+    ```
+    @article{PhysRevAccelBeams.25.041002,
+      author    = {Garcia-Morales, H. and Hofer, M. and Maclean, E. H. and van Riesen-Haupt, L. and Tom\'as, R.},
+      doi       = {10.1103/PhysRevAccelBeams.25.041002},
+      issue     = {4},
+      journal   = {Phys. Rev. Accel. Beams},
+      month     = {Apr},
+      numpages  = {11},
+      pages     = {041002},
+      publisher = {American Physical Society},
+      title     = {Phase advance constraint in $K$ modulation for precise $\ensuremath{\beta}$-function determination},
+      url       = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.25.041002},
+      volume    = {25},
+      year      = {2022}
+    }
+    ```
+
+### 2021
+
+??? abstract "Supervised Learning-Based Reconstruction of Magnet Errors in Circular Accelerators", `E. Fol, R. Tomás and G. Franchetti`, [Eur. Phys. J. Plus (2021) 136:365](https://link.springer.com/article/10.1140/epjp/s13360-021-01348-5){target=_blank}"
+    ```
+    @article{Fol2021,
+      author    = {E. Fol and R. Tomás and G. Franchetti},
+      doi       = {10.1140/epjp/s13360-021-01348-5},
+      journal   = {The European Physical Journal Plus},
+      month     = apr,
+      number    = {4},
+      publisher = {Springer Science and Business Media {LLC}},
+      title     = {Supervised learning-based reconstruction of magnet errors in circular accelerators},
+      url       = {https://doi.org/10.1140/epjp/s13360-021-01348-5},
+      volume    = {136},
+      year      = {2021}
+    }
+    ```
+
 ### 2020
 
 ??? abstract "Detection of Faulty Beam Position Monitors Using Unsupervised Learning, `E. Fol, R. Tomás, J. Coello de Portugal, and G. Franchetti`, [Phys. Rev. Accel. Beams 23, 102805, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.102805){target=_blank}"
