@@ -11,6 +11,13 @@ Abuse links for tooltips:
     color: #088a49;
 }
 
+/* make overflow visible -> tooltips can extend outside of table */ 
+.md-typeset__scrollwrap,
+.md-typeset table:not([class]) {
+    overflow: visible;
+}
+
+
 /* deactivate clicking */
 .md-typeset .tooltip:active {
     pointer-events: none;
@@ -23,6 +30,7 @@ Abuse links for tooltips:
 }
 [class*="hint--"]:after,
 [class*="hint--"]:before {
+    overflow: visible;
     position: absolute;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -40,6 +48,7 @@ Abuse links for tooltips:
 }
 [class*="hint--"]:hover:after,
 [class*="hint--"]:hover:before {
+    overflow: visible;
     visibility: visible;
     opacity: 1;
     -webkit-transition-delay: 0.1s;
