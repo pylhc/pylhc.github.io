@@ -19,6 +19,26 @@ This page compiles various published papers, reports, and MD notes from OMC team
 
 ## Journal Publications
 
+### 2023
+
+??? abstract "Rigid Waist Shift: A New Method for Local Coupling Corrections in the LHC Interaction Regions, `F. Soubelet, T. Persson, R. Tomás, O. Apsimon and C. Welsch`, [Phys. Rev. Accel. Beams 25, 051001, 2023](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.051001){target=_blank}"
+    ```
+    @article{Soubelet2023,
+      author    = {Soubelet, Felix and Persson, Tobias and Tomás, Rogelio and Apsimon, Oznur and Welsch, Carsten P.},
+      doi       = {10.1103/PhysRevAccelBeams.26.051001},
+      issue     = {5},
+      journal   = {Phys. Rev. Accel. Beams},
+      month     = {May},
+      numpages  = {13},
+      pages     = {051001},
+      publisher = {American Physical Society},
+      title     = {Rigid waist shift: A new method for local coupling corrections in the LHC interaction regions},
+      url       = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.051001},
+      volume    = {26},
+      year      = 2023
+    }
+    ```
+
 ### 2022
 
 ??? abstract "Prospects for Beam-Based Study of Dodecapole Nonlinearities in the CERN High-Luminosity Large Hadron Collider, `E. H. Maclean, F.S. Carlier, J. Dilly, M. Le Garrec, M. Giovannozzi, and R. Tomás`, [Eur. Phys. J. Plus (2022) 137:1249](https://link.springer.com/article/10.1140/epjp/s13360-022-03367-2){target=_blank}"
