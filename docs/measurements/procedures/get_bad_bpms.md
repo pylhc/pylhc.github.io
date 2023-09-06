@@ -5,6 +5,10 @@ The following script is intended to facilitate the process of retrieving such a 
 
 ??? info "The script"
 
+    Here's the script, for reference.
+
+    Note that this is just a template, if specific measurements / globbing sounds better than just taking unchecked all the measurements in one (or several) output folder, feel free to adapt if necessary.
+
     ```python
     import pathlib
     import tfs
