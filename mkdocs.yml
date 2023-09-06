@@ -192,6 +192,7 @@ nav:
         - Rigid Waist Shift: measurements/procedures/rigid_waist_shift.md
         - Amplitude Detuning: measurements/procedures/ampdet.md
         - Crossing Angle Scan: measurements/procedures/xing_scan.md
+        - Compiling Bad BPMs for BI: measurements/procedures/get_bad_bpms.md
   - How To's:
     - Info: howto/about.md
     - General Setup: 
