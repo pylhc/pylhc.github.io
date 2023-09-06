@@ -134,6 +134,7 @@ It scans all measurements in a list of given GUI output folders (`DATES`) and co
 Output will be written to `"bad_bpms.txt"`
 
 ## Usage:
+- [ ] Define a set of representative measurements (those shoulf probably span different optics configurations and different analysis purposes)
 - [ ] Make sure that the measurements have the desired cleaning method applied.
       If needed rerun the measurements with the GUI.
 - [ ] Adapt the `DATES` list at the beginning of this script accordingly
