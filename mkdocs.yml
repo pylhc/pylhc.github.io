@@ -32,6 +32,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.instant
+    - content.action.edit  # editing button on the pages is opt-in since v9
   palette:
     scheme: preference
     primary: indigo
