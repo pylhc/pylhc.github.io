@@ -214,5 +214,6 @@ nav:
       - Logbook:
         - LHC 2022: resources/logbook/2022_lhc.md
         - LHC 2023: resources/logbook/2023_lhc.md
+        - PS  2023: resources/logbook/2023_ps.md
       - Templates: resources/templates.md
       - FAQ: resources/faqs.md
