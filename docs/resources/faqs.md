@@ -47,7 +47,7 @@ There is a specific caveat for the beam 2 sequence definition that one needs to 
 
 For practical reasons, the properties of all elements of the LHC are defined (in the `lhc.seq`) as if they apply to a clockwise proton beam (beam 1).
 This allows a single definition for elements traversed by both beams.
-Their effects on a beam with identical particle charge but running in the opposite direction (beam 2) must then be reversed inside the program, which is achieved by creating a beam with a [bv=-1 flag](madx_doc_bv) (section `7.4`).
+Their effects on a beam with identical particle charge but running in the opposite direction (beam 2) must then be reversed inside the program, which is achieved by creating a beam with a [bv=-1 flag][madx_doc]{target=_blank} (section `7.4`).
 
 However, in order to perform tracking for the `lhcb2` sequence the exact elements definitions are necessary, as well as a `bv` flag of 1.
 This is done in the `lhcb4.seq` file.
@@ -96,9 +96,6 @@ This is due to the fact that `pjlsa` will look for the beamprocess at the given 
     Be aware though that if no trim for the knobs are in the defined time range, no values will be returned at all.
 
 
-[madx_doc_bv]: http://madx.web.cern.ch/madx/releases/last-rel/madxuguide.pdf
-
-
 [^MiyamotoMeasurementCouplingRDTsACDipole]:
     ??? abstract "Measurement of Coupling Resonance Driving Terms with the AC Dipole", `R. Miyamoto`, [BNL--94350-2010-IR, 1013520](https://www.bnl.gov/isd/documents/74582.pdf){target=_blank}"
         ```
@@ -130,3 +127,7 @@ This is due to the fact that `pjlsa` will look for the beamprocess at the given 
             langid       = {english}
         }
         ```
+
+
+
+[madx_doc]: http://madx.web.cern.ch/madx/releases/last-rel/madxuguide.pdf
