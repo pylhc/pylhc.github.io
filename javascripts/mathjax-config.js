@@ -11,6 +11,7 @@ window.MathJax = {
     displayMath: [["\\[", "\\]"]],
     processEscapes: true,
     processEnvironments: true,
+    // add equation numbering:
     tags: 'ams',
     tagSide: 'right',
     tagIndent: '1.2em',
