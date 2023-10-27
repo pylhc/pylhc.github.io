@@ -260,7 +260,7 @@ def calculate_shifts(file_path: Union[str, Path]):
         for key, value in shift_split.items():
             parts[key] += value
 
-    print(f"Shifts in File {file_path.name}") 
+    print(f"\nShifts from '{COLUMN_START}'/'{COLUMN_END}' columns in File {file_path.name}") 
     # print(f"Time spend during working hours: {time_delta_to_hours(parts[WORK])}h")
     # print(f"Time spend outside of working hours: {time_delta_to_hours(parts[OUTSIDE])}h")
     # print(f"Time spend on holidays or weekends: {time_delta_to_hours(parts[HOLIDAY])}h")
@@ -304,7 +304,7 @@ def manual_shifts(file_path: Union[str, Path]):
         for value, key in shift_split:
             parts[key] += float(value)
 
-    print(f"Shifts in File {file_path.name}") 
+    print(f"\nShifts from '{COLUMN_SHIFTS}' column in File {file_path.name}") 
     # print(f"Time spend during working hours: {time_delta_to_hours(parts[WORK])}h")
     # print(f"Time spend outside of working hours: {time_delta_to_hours(parts[OUTSIDE])}h")
     # print(f"Time spend on holidays or weekends: {time_delta_to_hours(parts[HOLIDAY])}h")
@@ -354,11 +354,9 @@ if __name__ == "__main__":
 
 
     # Examples --------------------------------------------------
-    print("\nFrom the Start/End Time Columns:")
     shift_c = calculate_shifts("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md") 
     plot_results(shift_c, title="OMC Shifts LHC 2023")
 
-    print("\nFrom the Shifts Columns:")
     shift_m = manual_shifts("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md")
     plot_results(shift_m, title="OMC Shifts LHC 2023")
 
