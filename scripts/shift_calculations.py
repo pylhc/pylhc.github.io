@@ -1,11 +1,18 @@
+""" Script to calculate the shifts from the first markdown table in a given file. 
+This data can then be plotted with `plot_results`, e.g. for the end-of-year report.
+"""
 from datetime import datetime, timedelta
 from pathlib import Path
+import re
 from typing import Dict, Sequence, Union
 import pandas as pd
+from matplotlib import pyplot as plt
+
 
 # Parse Markdown File ----------------------------------------------------------
 COLUMN_START = "Start Date"
 COLUMN_END = "End Date"
+COLUMN_SHIFTS = "Shifts"
 DATE_FORMAT = "%Y-%m-%d %H:%M"
 
 def parse_file(file_path: Path) -> pd.DataFrame:
@@ -69,9 +76,9 @@ def str_to_dt(date_str: str) -> datetime:
 
 
 # Check dates ------------------------------------------------------------------
-WORK = "working_hours"
-OUTSIDE = "outside_of_working_hours"  # on a weekday
-HOLIDAY = "holidays_or_weekends"
+WORK = "W"
+NIGHT = "N"  # on a weekday
+HOLIDAY = "H"
 
 WORK_START_TIME = {"hour": 8, "minute": 30, "second": 0}
 WORK_END_TIME  = {"hour": 17, "minute": 30, "second": 0}
@@ -134,7 +141,7 @@ def calculate_shift_parts(start_time: datetime, end_time: datetime) -> Dict[str,
     
     time_split = {
         WORK: timedelta(),
-        OUTSIDE: timedelta(),
+        NIGHT: timedelta(),
         HOLIDAY: timedelta(),
     }
 
@@ -149,12 +156,12 @@ def calculate_shift_parts(start_time: datetime, end_time: datetime) -> Dict[str,
 
             if current_time < work_start:
                 # difference to work starting time (or shift)
-                time_split[OUTSIDE] += min(work_start, end_time) - current_time
+                time_split[NIGHT] += min(work_start, end_time) - current_time
                 current_time = work_start
 
             elif current_time >= work_end:
                 # difference to end of the day (or shift)
-                time_split[OUTSIDE] += min(day_end, end_time) - current_time
+                time_split[NIGHT] += min(day_end, end_time) - current_time
                 current_time = day_end
 
             else:
@@ -196,7 +203,7 @@ def test_working_hours_friday():
         end_time=datetime(2023, 10, 28, 4, 0)
     )
     assert abs(time_delta_to_hours(parts[WORK]) - 1.5) < EPS
-    assert abs(time_delta_to_hours(parts[OUTSIDE]) - 6.5) < EPS
+    assert abs(time_delta_to_hours(parts[NIGHT]) - 6.5) < EPS
     assert abs(time_delta_to_hours(parts[HOLIDAY]) - 4.0) < EPS
 
 
@@ -206,7 +213,7 @@ def test_working_hours_monday_wednesday():
         end_time=datetime(2023, 10, 25, 16, 0)
     )
     assert abs(time_delta_to_hours(parts[WORK]) - 25.5) < EPS
-    assert abs(time_delta_to_hours(parts[OUTSIDE]) - 31.5) < EPS
+    assert abs(time_delta_to_hours(parts[NIGHT]) - 31.5) < EPS
     assert abs(time_delta_to_hours(parts[HOLIDAY]) - 0) < EPS
 
 
@@ -216,62 +223,147 @@ def test_working_hours_single_day():
         end_time=datetime(2023, 10, 23, 16, 0)
     )
     assert abs(time_delta_to_hours(parts[WORK]) - 7) < EPS
-    assert abs(time_delta_to_hours(parts[OUTSIDE]) - 0) < EPS
+    assert abs(time_delta_to_hours(parts[NIGHT]) - 0) < EPS
     assert abs(time_delta_to_hours(parts[HOLIDAY]) - 0) < EPS
 
 
 # Main --------------------------------------------------------------------------
 
 def calculate_shifts(file_path: Union[str, Path]):
-    """Calculate the shifts from the first markdown table in a given file.
+    """Calculate the shifts from Start/End Date columns of the first markdown table in a given file.
 
     Args:
         file_path (Union[str, Path]): Path to the markdown file.
 
     Returns:
         Dict[str, timedelta]: Dictionary of the total time deltas separated by 
-        the type of hours (working hours, outside working hours, holidays or weekends).
+        the type of hours (working hours, night hours, holidays or weekends).
     """
     file_path = Path(file_path)
     df = parse_file(file_path)
     parts = {
         WORK: timedelta(),
-        OUTSIDE: timedelta(),
+        NIGHT: timedelta(),
         HOLIDAY: timedelta(),
     }
+    if not all(c in df.columns for c in [COLUMN_START, COLUMN_END]):
+        raise ValueError(f"No start or end time column found in {file_path.name}")
+
     for _, entry in df.iterrows():
-        if entry[COLUMN_START] and entry[COLUMN_END]:
-            shift_split = calculate_shift_parts(
-                start_time=str_to_dt(entry[COLUMN_START]),
-                end_time=str_to_dt(entry[COLUMN_END]),
-            )
-            for key, value in shift_split.items():
-                parts[key] += value
+        if not entry[COLUMN_START] or not entry[COLUMN_END]:
+            continue
+
+        shift_split = calculate_shift_parts(
+            start_time=str_to_dt(entry[COLUMN_START]),
+            end_time=str_to_dt(entry[COLUMN_END]),
+        )
+        for key, value in shift_split.items():
+            parts[key] += value
 
     print(f"Shifts in File {file_path.name}") 
     # print(f"Time spend during working hours: {time_delta_to_hours(parts[WORK])}h")
     # print(f"Time spend outside of working hours: {time_delta_to_hours(parts[OUTSIDE])}h")
     # print(f"Time spend on holidays or weekends: {time_delta_to_hours(parts[HOLIDAY])}h")
     print(f"Shifts during working hours: {time_delta_to_shifts(parts[WORK])}")
-    print(f"Shifts outside of working hours: {time_delta_to_shifts(parts[OUTSIDE])}")
+    print(f"Shifts outside of working hours: {time_delta_to_shifts(parts[NIGHT])}")
     print(f"Shifts on holidays or weekends: {time_delta_to_shifts(parts[HOLIDAY])}")
 
     return parts
 
 
+
+def manual_shifts(file_path: Union[str, Path]):
+    """Calculate the shifts from Shifts column of the first markdown table in a given file.
+
+    Args:
+        file_path (Union[str, Path]): Path to the markdown file.
+
+    Returns:
+        Dict[str, timedelta]: Dictionary of the total time deltas separated by 
+        the type of hours (working hours, night hours, holidays or weekends).
+    """
+    file_path = Path(file_path)
+    df = parse_file(file_path)
+
+    parts = {
+        WORK: 0.0,
+        NIGHT: 0.0, 
+        HOLIDAY: 0.0,
+    }
+
+    all_names = "".join(parts.keys())
+
+    if COLUMN_SHIFTS not in df.columns:
+        raise ValueError(f"No shift column found in {file_path.name}")
+
+    for _, entry in df.iterrows():
+        if not entry[COLUMN_SHIFTS]:
+            continue
+
+        shift_split = re.findall(fr"([\d.]+)([{all_names}])", entry[COLUMN_SHIFTS])         
+        for value, key in shift_split:
+            parts[key] += float(value)
+
+    print(f"Shifts in File {file_path.name}") 
+    # print(f"Time spend during working hours: {time_delta_to_hours(parts[WORK])}h")
+    # print(f"Time spend outside of working hours: {time_delta_to_hours(parts[OUTSIDE])}h")
+    # print(f"Time spend on holidays or weekends: {time_delta_to_hours(parts[HOLIDAY])}h")
+    print(f"Shifts during working hours: {parts[WORK]}")
+    print(f"Shifts outside of working hours: {parts[NIGHT]}")
+    print(f"Shifts on holidays or weekends: {parts[HOLIDAY]}")
+
+    return parts
+
+
+def plot_results(parts, title: str = None, output_path: Union[str, Path] = None):
+    """Plot the results of a calculation.
+
+    Args:
+        parts (Dict[str, timedelta]): Dictionary of the total time deltas separated by 
+        the type of hours (working hours, outside working hours, holidays or weekends).
+        output_path (Union[str, Path]): Path to the output file.
+    """
+    fig, ax = plt.subplots()
+    name_map = {
+        WORK: "Working hour shifts",
+        NIGHT: "Night shifts",
+        HOLIDAY: "Holidays or weekends",
+    }
+
+    data = [time_delta_to_shifts(value) if isinstance(value, timedelta) else value for value in parts.values() ]
+    labels = [f"{name_map[k]}: {v:.1f}" for k, v in zip(parts.keys(), data)]
+
+    ax.pie(data, labels=labels, autopct='%1.1f%%')
+
+    if title:
+        ax.set_title(title)
+
+    fig.tight_layout()
+    if output_path:
+        fig.savefig(output_path)
+
+    return fig
+
+
 if __name__ == "__main__":
+    # Run Tests ------------------------------------------------
     test_timedelta_conversion()
     test_working_hours_friday()
     test_working_hours_single_day()
     test_working_hours_monday_wednesday()
 
-    calculate_shifts("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md") 
-    # file_path = Path("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md")
-    # parse_file(file_path)
-    # parts = calculate_shift_parts(start_time=datetime(2023, 10, 27, 16, 0), end_time=datetime(2023, 10, 28, 4, 0))
-    # print(f"Time spend during working hours: {time_delta_to_hours(parts[WORK])}h")
-    # print(f"Time spend outside of working hours: {time_delta_to_hours(parts[OUTSIDE])}h")
-    # print(f"Time spend on holidays or weekends: {time_delta_to_hours(parts[HOLIDAY])}h")
+
+    # Examples --------------------------------------------------
+    print("\nFrom the Start/End Time Columns:")
+    shift_c = calculate_shifts("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md") 
+    plot_results(shift_c, title="OMC Shifts LHC 2023")
+
+    print("\nFrom the Shifts Columns:")
+    shift_m = manual_shifts("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md")
+    plot_results(shift_m, title="OMC Shifts LHC 2023")
+
+    plt.show()
+
 
 
 
