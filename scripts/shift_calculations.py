@@ -363,14 +363,3 @@ if __name__ == "__main__":
     plot_results(shift_m, title="OMC Shifts LHC 2023")
 
     plt.show()
-
-
-
-
-        
-
-
-        
-
-
-
