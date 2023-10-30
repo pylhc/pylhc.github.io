@@ -212,8 +212,18 @@ nav:
       - Publications: resources/publications.md
       - Presentations: resources/presentations.md
       - Logbook:
-        - LHC 2022: resources/logbook/2022_lhc.md
-        - LHC 2023: resources/logbook/2023_lhc.md
-        - PS  2023: resources/logbook/2023_ps.md
+        - AD:
+          - 2023: resources/logbook/2023_ad.md
+        - LEIR:
+          - 2023: resources/logbook/2023_leir.md
+        - LHC: 
+          - 2022: resources/logbook/2022_lhc.md
+          - 2023: resources/logbook/2023_lhc.md
+        - PS: 
+          - 2023: resources/logbook/2023_ps.md
+        - PSB:
+          - 2023: resources/logbook/2023_psb.md
+        - SPS:
+          - 2023: resources/logbook/2023_sps.md
       - Templates: resources/templates.md
       - FAQ: resources/faqs.md
