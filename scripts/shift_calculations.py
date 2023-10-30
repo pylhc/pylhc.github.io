@@ -286,7 +286,6 @@ def manual_shifts(file_path: Union[str, Path]):
 
     parts = {shift: 0.0 for shift in ALL_SHIFTS}
 
-    all_names = "".join(parts.keys())
 
     if COLUMN_SHIFTS not in df.columns:
         raise ValueError(f"No shift column found in {file_path.name}")
@@ -295,7 +294,7 @@ def manual_shifts(file_path: Union[str, Path]):
         if not entry[COLUMN_SHIFTS]:
             continue
 
-        shift_split = re.findall(fr"([\d.]+)([{all_names}])", entry[COLUMN_SHIFTS])         
+        shift_split = re.findall(fr"([\d.]+)([WH]N?)", entry[COLUMN_SHIFTS])         
         for value, key in shift_split:
             parts[key] += float(value)
 
