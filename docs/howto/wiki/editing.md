@@ -333,14 +333,14 @@ When creating a table, please ensure that column width is constant and that pipe
 To paste an image, use the following code.
 
 ```markdown
-![Image](../../assets/images/tricks/placeholder.gif)
+![Image](../assets/images/tricks/placeholder.gif)
 ```
 
 To include a centered image with a caption, use the following code.
 
 ```html
 <figure>
-    <img src="../../../assets/images/something/image.png" width=90%>
+    <img src="../../assets/images/something/image.png" width=90%>
   <figcaption>Figure: Something really amazing.</figcaption>
 </figure>
 ```

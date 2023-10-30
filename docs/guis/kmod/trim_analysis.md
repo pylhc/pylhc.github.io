@@ -12,7 +12,7 @@ Just ignore the rest (TODO: why???)
 The `Select trim` button will open the trim selection panel and the `Last trim` button will just load the last trim entry from Timber.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/select_trim_panel.png" width="90%" />
+  <img src="../../assets/images/kmod_gui/select_trim_panel.png" width="90%" />
   <figcaption>The "Select Trim" Panel.</figcaption>
 </figure>
 
@@ -20,7 +20,7 @@ If you chose `Select trim`, then select the desired IP then navigate othe desire
 You can switch between different IPs and dates by using the `combo` boxes.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/select_trim_by_date.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/select_trim_by_date.png" width="100%" />
   <figcaption>Select Trim by Date.</figcaption>
 </figure>
 
@@ -29,7 +29,7 @@ You can switch between different IPs and dates by using the `combo` boxes.
 The selected/loaded trim will then be displayed in the `Measurement View Dialog`, from which you can analyze the trim data with different options.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/measurement_view.png"/>
+  <img src="../../assets/images/kmod_gui/measurement_view.png"/>
   <figcaption>Measurement View.</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ The (old) python code of this script can be found [here][kmod_python2]{target=_b
 The results are stored in the file named `beta_star.out`.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/betastar_input.png" width="85%" />
+  <img src="../../assets/images/kmod_gui/betastar_input.png" width="85%" />
   <figcaption>Estimated beta-star input.</figcaption>
 </figure>
 

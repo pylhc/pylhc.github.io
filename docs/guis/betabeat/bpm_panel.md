@@ -32,7 +32,7 @@ when SVD cleaning detects and removes bad BPMs, they will be marked in the BPM n
 All the settings mentioned above can be changed in the global settings panel:
 <figure>
 <center>
-  <img src="../../../assets/images/cleaning_settings.png" width="95%" />
+  <img src="../../assets/images/cleaning_settings.png" width="95%" />
   <figcaption>Settings panel, where cleaning thresholds can be changed.</figcaption>
 </center>
 </figure>

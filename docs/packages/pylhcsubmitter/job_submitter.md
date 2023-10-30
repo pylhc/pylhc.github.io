@@ -190,7 +190,7 @@ After submitting our tune sweep studies, we can check the status of our jobs via
 The output should look something like this:
 
 <figure>
-    <img src="../../../assets/images/job_submitter/tune_sweep_condor_q.png" width="100%" />
+    <img src="../../assets/images/job_submitter/tune_sweep_condor_q.png" width="100%" />
     <figcaption><code>condor_q</code>: Shows the jobs in the condor queue.</figcaption>
 </figure>
 

@@ -8,7 +8,7 @@ You can choose another model directory by pressing on the `update model` button 
 The model data is used for preset values in the GUI and the orbit-offset script needs the model for its calculations.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/load_model.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/load_model.png" width="100%" />
   <figcaption>Loading a Model</figcaption>
 </figure>
 
