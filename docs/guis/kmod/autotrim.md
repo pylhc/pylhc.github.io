@@ -33,7 +33,7 @@ The energy value is gathered live from the LHC, but can be edited.
 Underneath is another tabbed pane for each task in the current process which needs some user input.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/autotrim_input.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/autotrim_input.png" width="100%" />
   <figcaption>The AutoTrim input panel.</figcaption>
 </figure>
 
@@ -53,14 +53,14 @@ It is built as a tabbed pane which holds the content of the processes for many I
 The status panel and the result panel are the main components for each process.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/autotrim_simulation_mode.gif" width="100%" />
+  <img src="../../assets/images/kmod_gui/autotrim_simulation_mode.gif" width="100%" />
   <figcaption>The ResultsView.</figcaption>
 </figure>
 
 At the top is a `thread queue` bar which displays all the active, finished and scheduled threads.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/autotrim_thread_queue.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/autotrim_thread_queue.png" width="100%" />
   <figcaption>The thread queue of the results view.</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ The last panel is the logger text area for each task.
 Per default, it will show the last logging entry with the corresponding time, but the user can expand the list by clicking on the drop-down button.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/autotrim_status_panel.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/autotrim_status_panel.png" width="100%" />
   <figcaption>The AutoTrim Status Panel.</figcaption>
 </figure>
 
@@ -108,7 +108,7 @@ The `AutoTrim` provides two ways to add existing trim data to the process queue:
 Start by creating your IP tab by clicking on the button on the left side: tick the `Load existing trim` checkbox and it will open the trim selection panel.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/autotrim_load_existing.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/autotrim_load_existing.png" width="100%" />
   <figcaption>AutoTrim: load existing trim.</figcaption>
 </figure>
 
@@ -116,7 +116,7 @@ Expand the date picker and choose the day when the trim was executed.
 Left click on the trim you want to load and press the `Select trim` button.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/autotrim_date_picker.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/autotrim_date_picker.png" width="100%" />
   <figcaption>AutoTrim: load existing trim, date picker.</figcaption>
 </figure>
 
@@ -138,7 +138,7 @@ You can now set some basic options for the selected trims in the `Options` pane.
 These values are automatically set as preset values for the loaded trim tabs.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/autotrim_trim_selection_wizard.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/autotrim_trim_selection_wizard.png" width="100%" />
   <figcaption>The AutoTrim Trim Selection Wizard.</figcaption>
 </figure>
 
@@ -170,7 +170,7 @@ Parameters:
 - **Waist Shift [m]**: Estimated waist-shift as double value.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/analyzing_config.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/analyzing_config.png" width="100%" />
   <figcaption>The Analyzing Configuration.</figcaption>
 </figure>
 
@@ -181,7 +181,7 @@ The saved plots of the script are displayed on the right side for each beam.
 By clicking on the image it will expand and show the full-size plot in a new frame.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/analyzing_trim_result.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/analyzing_trim_result.png" width="100%" />
   <figcaption>The Analyzing Trim Results.</figcaption>
 </figure>
 

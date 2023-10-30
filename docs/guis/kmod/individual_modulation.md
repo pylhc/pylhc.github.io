@@ -18,7 +18,7 @@ As example for the naming convention, the circuit `RQ5/.R4B2/K1` corresponds to 
 Under `Trim Function`, select `Sine Function` before continuing.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/select_quadrupole.png" width="90%" />
+  <img src="../../assets/images/kmod_gui/select_quadrupole.png" width="90%" />
   <figcaption>Select circuits.</figcaption>
 </figure>
 
