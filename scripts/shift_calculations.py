@@ -1,13 +1,14 @@
 """ Script to calculate the shifts from the first markdown table in a given file. 
 This data can then be plotted with `plot_results`, e.g. for the end-of-year report.
 """
+import re
 from datetime import datetime, timedelta
 from pathlib import Path
-import re
 from typing import Dict, Sequence, Union
+
+import matplotlib as mpl
 import pandas as pd
 from matplotlib import pyplot as plt
-
 
 # Parse Markdown File ----------------------------------------------------------
 COLUMN_START = "Start Date"
@@ -157,7 +158,7 @@ def calculate_shift_parts(start_time: datetime, end_time: datetime) -> Dict[str,
             day_shift, night_shift = HOLIDAY, HOLIDAY_NIGHT
         
         # hours on this day
-        day_end = current_time.replace(day=current_time.day + 1, hour=0, minute=0, second=0)
+        day_end = (current_time + timedelta(days=1)).replace(hour=0, minute=0, second=0)
         work_start = current_time.replace(**WORK_START_TIME)
         work_end = current_time.replace(**WORK_END_TIME)
 
@@ -265,7 +266,7 @@ def calculate_shifts(file_path: Union[str, Path]):
 
     print(f"\nShifts from '{COLUMN_START}'/'{COLUMN_END}' columns in File {file_path.name}") 
     for shift, name in SHIFT_NAMING.items():
-        print(f"{name}: {parts[shift]}")
+        print(f"{name}: {time_delta_to_shifts(parts[shift]):.1f} ({time_delta_to_hours(parts[shift]):.1f}h)")
 
     return parts
 
@@ -305,7 +306,7 @@ def manual_shifts(file_path: Union[str, Path]):
     return parts
 
 
-def plot_results(parts, title: str = None, output_path: Union[str, Path] = None):
+def plot_results(parts, title: str = "", output_path: Union[str, Path] = None):
     """Plot the results of a calculation.
 
     Args:
@@ -320,8 +321,8 @@ def plot_results(parts, title: str = None, output_path: Union[str, Path] = None)
 
     ax.pie(data, labels=labels, autopct='%1.1f%%')
 
-    if title:
-        ax.set_title(title)
+    title += f"\nTotal Shifts: {sum(data):.1f}" 
+    ax.set_title(title)
 
     fig.tight_layout()
     if output_path:
@@ -339,8 +340,9 @@ if __name__ == "__main__":
 
 
     # Examples --------------------------------------------------
+    mpl.rcParams["figure.figsize"] = 7.0, 4.8
     shift_c = calculate_shifts("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md") 
-    plot_results(shift_c, title="OMC Shifts LHC 2023")
+    plot_results(shift_c, title="OMC Shifts LHC 2023 (from Start/End)")
 
     shift_m = manual_shifts("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md")
     plot_results(shift_m, title="OMC Shifts LHC 2023")
