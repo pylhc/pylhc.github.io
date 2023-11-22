@@ -331,7 +331,6 @@ def plot_results(parts, title: str = "", output_path: Union[str, Path] = None):
     title += f"\nTotal Shifts: {sum(data):.1f}" 
     ax.set_title(title)
     ax.axis('equal')
-
     fig.tight_layout()
     if output_path:
         fig.savefig(output_path)
@@ -348,7 +347,9 @@ if __name__ == "__main__":
 
 
     # Examples --------------------------------------------------
+
     mpl.rcParams["figure.figsize"] = 7.68, 4.8
+    
     shift_c = calculate_shifts("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md") 
     plot_results(shift_c, title="OMC Shifts LHC 2023 (from Start/End)")
 
