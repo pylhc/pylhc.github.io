@@ -319,10 +319,18 @@ def plot_results(parts, title: str = "", output_path: Union[str, Path] = None):
     data = [time_delta_to_shifts(value) if isinstance(value, timedelta) else value for value in parts.values() ]
     labels = [f"{SHIFT_NAMING[k]}: {v:.1f}" for k, v in zip(parts.keys(), data)]
 
-    ax.pie(data, labels=labels, autopct='%1.1f%%')
+    ax.pie(
+        data, labels=labels, 
+        autopct='%1.1f%%', 
+        explode=[0.1 * (s == WORK) for s in parts.keys()], 
+        shadow=True,
+        # startangle=90,  # rotate if needed
+        # counterclock=False,  # go the other way around
+    )
 
     title += f"\nTotal Shifts: {sum(data):.1f}" 
     ax.set_title(title)
+    ax.axis('equal')
 
     fig.tight_layout()
     if output_path:
@@ -340,7 +348,7 @@ if __name__ == "__main__":
 
 
     # Examples --------------------------------------------------
-    mpl.rcParams["figure.figsize"] = 7.0, 4.8
+    mpl.rcParams["figure.figsize"] = 7.68, 4.8
     shift_c = calculate_shifts("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md") 
     plot_results(shift_c, title="OMC Shifts LHC 2023 (from Start/End)")
 
