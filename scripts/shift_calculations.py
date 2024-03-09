@@ -350,10 +350,22 @@ if __name__ == "__main__":
 
     mpl.rcParams["figure.figsize"] = 7.68, 4.8
     
-    shift_c = calculate_shifts("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md") 
-    plot_results(shift_c, title="OMC Shifts LHC 2023 (from Start/End)")
+    repo_dir = Path(__file__).parent.parent
+    logbook_dir = repo_dir / "docs" / "resources" / "logbook"
+    
+    # shift_c = calculate_shifts(logbook_dir / "2023_lhc.md") 
+    # plot_results(shift_c, title="OMC Shifts LHC 2023 (from Start/End)")
+    
+    # shift_c = calculate_shifts(logbook_dir / "2023_ps.md") 
+    # plot_results(shift_c, title="OMC Shifts PS 2023 (from Start/End)")
 
-    shift_m = manual_shifts("/mnt/volume/jdilly/projects/pylhc.github.io/docs/resources/logbook/2023_lhc.md")
-    plot_results(shift_m, title="OMC Shifts LHC 2023")
+    shift_m = manual_shifts(logbook_dir / "2023_lhc.md")
+    plot_results(shift_m, title="OMC Shifts LHC 2023", output_path="lhc_2023_shifts.pdf")
+    
+    shift_m = manual_shifts(logbook_dir / "2023_ps.md")
+    plot_results(shift_m, title="OMC Shifts PS 2023", output_path="ps_2023_shifts.pdf")
+    
+    shift_m = manual_shifts(logbook_dir / "2023_psb.md")
+    plot_results(shift_m, title="OMC Shifts PSBooster 2023", output_path="psb_2023_shifts.pdf")
 
     plt.show()
