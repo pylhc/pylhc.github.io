@@ -214,17 +214,22 @@ nav:
       - Logbook:
         - AD:
           - 2023: resources/logbook/2023_ad.md
+          - 2024: resources/logbook/2024_ad.md
         - LEIR:
           - 2023: resources/logbook/2023_leir.md
+          - 2024: resources/logbook/2024_leir.md
         - LHC: 
           - 2022: resources/logbook/2022_lhc.md
           - 2023: resources/logbook/2023_lhc.md
           - 2024: resources/logbook/2024_lhc.md
         - PS: 
           - 2023: resources/logbook/2023_ps.md
+          - 2024: resources/logbook/2024_ps.md
         - PSB:
           - 2023: resources/logbook/2023_psb.md
+          - 2024: resources/logbook/2024_psb.md
         - SPS:
           - 2023: resources/logbook/2023_sps.md
+          - 2024: resources/logbook/2024_sps.md
       - Templates: resources/templates.md
       - FAQ: resources/faqs.md
