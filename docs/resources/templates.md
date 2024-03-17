@@ -15,9 +15,9 @@ A collection of useful templates.
 
 This is a template for CERN presentations following the official CERN design guidelines and based on the [official CERN Powerpoint Template][CernDesignDownloads]{target=_blank .cern_login}.
 
-<object data="../../../assets/template_examples/cern-presentation-title.pdf" type="application/pdf" width=100% height=500px>
-    <embed src="../../../assets/template_examples/cern-presentation-title.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../../assets/template_examples/cern-presentation-title.pdf">Download PDF</a>.</p>
+<object data="../../assets/template_examples/cern-presentation-title.pdf" type="application/pdf" width=100% height=500px>
+    <embed src="../../assets/template_examples/cern-presentation-title.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../assets/template_examples/cern-presentation-title.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
@@ -28,9 +28,9 @@ This is a template for CERN presentations following the official CERN design gui
 
 A LaTeX template based on the [CERN beamer](#cern-beamer-semi-official), but with OMC-logo!
 
-<object data="../../../assets/template_examples/pres_OMCExample.pdf" type="application/pdf" width=100% height=500px>
-    <embed src="../../../assets/template_examples/pres_OMCExample.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../../assets/template_examples/pres_OMCExample.pdf">Download PDF</a>.</p>
+<object data="../../assets/template_examples/pres_OMCExample.pdf" type="application/pdf" width=100% height=500px>
+    <embed src="../../assets/template_examples/pres_OMCExample.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../assets/template_examples/pres_OMCExample.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
@@ -40,9 +40,9 @@ A LaTeX template based on the [CERN beamer](#cern-beamer-semi-official), but wit
 
 A heavily modified [CERN beamer](#cern-beamer-semi-official) template based on the [official HiLumi Powerpoint Template][HiLumiTemplates]{target=_blank .cern_login}.
 
-<object data="../../../assets/template_examples/pres_HiLumiExample.pdf" type="application/pdf" width=100% height=500px>
-    <embed src="../../../assets/template_examples/pres_HiLumiExample.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../../assets/template_examples/pres_HiLumiExample.pdf">Download PDF</a>.</p>
+<object data="../../assets/template_examples/pres_HiLumiExample.pdf" type="application/pdf" width=100% height=500px>
+    <embed src="../../assets/template_examples/pres_HiLumiExample.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../assets/template_examples/pres_HiLumiExample.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
@@ -54,9 +54,9 @@ A heavily modified [CERN beamer](#cern-beamer-semi-official) template based on t
 
 This is a template for CERN Accelerator and Technology Sector (ATS) notes.
 
-<object data="../../../assets/template_examples/cern-ats-note.pdf" type="application/pdf" width=100% height=500px>
-    <embed src="../../../assets/template_examples/cern-ats-note.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../../assets/template_examples/cern-ats-note.pdf">Download PDF</a>.</p>
+<object data="../../assets/template_examples/cern-ats-note.pdf" type="application/pdf" width=100% height=500px>
+    <embed src="../../assets/template_examples/cern-ats-note.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../assets/template_examples/cern-ats-note.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
@@ -66,9 +66,9 @@ This is a template for CERN Accelerator and Technology Sector (ATS) notes.
 
 This is a template for authors who are preparing their contribution for one of CERN's official publications (CERN Yellow Report series, CERN Proceedings series, etc.). 
 
-<object data="../../../assets/template_examples/cern-yellow-report-template.pdf" type="application/pdf" width=100% height=500px>
-    <embed src="../../../assets/template_examples/cern-yellow-report-template.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../../assets/template_examples/cern-yellow-report-template.pdf">Download PDF</a>.</p>
+<object data="../../assets/template_examples/cern-yellow-report-template.pdf" type="application/pdf" width=100% height=500px>
+    <embed src="../../assets/template_examples/cern-yellow-report-template.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../assets/template_examples/cern-yellow-report-template.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
@@ -81,9 +81,9 @@ This is a template for authors who are preparing their contribution for one of C
 
 A LaTeX template for the PhD description, based on the [official CERN HR template from 2018][PhdDescriptionTemplateCERN2018]{target=_blank .cern_login}.
 
-<object data="../../../assets/template_examples/note_template_phd_abstract.pdf" type="application/pdf" width=100% height=500px>
-    <embed src="../../../assets/template_examples/note_template_phd_abstract.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../../assets/template_examples/note_template_phd_abstract.pdf">Download PDF</a>.</p>
+<object data="../../assets/template_examples/note_template_phd_abstract.pdf" type="application/pdf" width=100% height=500px>
+    <embed src="../../assets/template_examples/note_template_phd_abstract.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../assets/template_examples/note_template_phd_abstract.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 
@@ -94,9 +94,9 @@ A LaTeX template for the PhD description, based on the [official CERN HR templat
 
 A LaTeX template for the PhD progress reports, similar to the description template, based on the [official CERN HR template from 2015][PhdProgressTemplateCERN2015]{target=_blank .cern_login}.
 
-<object data="../../../assets/template_examples/note_phd_report_XXmonth.pdf" type="application/pdf" width=100% height=500px>
-    <embed src="../../../assets/template_examples/note_phd_report_XXmonth.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../../assets/template_examples/note_phd_report_XXmonth.pdf">Download PDF</a>.</p>
+<object data="../../assets/template_examples/note_phd_report_XXmonth.pdf" type="application/pdf" width=100% height=500px>
+    <embed src="../../assets/template_examples/note_phd_report_XXmonth.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="../../assets/template_examples/note_phd_report_XXmonth.pdf">Download PDF</a>.</p>
     </embed>
 </object>
 

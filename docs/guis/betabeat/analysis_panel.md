@@ -33,7 +33,7 @@ After cleaning is finished, the optics function can be computed from the harmoni
 
 <figure>
   <center>
-  <img src="../../../assets/images/analysis_panel_cleaning.png" width="65%" />
+  <img src="../../assets/images/analysis_panel_cleaning.png" width="65%" />
   <figcaption> Cleaning before optics analysis </figcaption>
   </center>
 </figure>

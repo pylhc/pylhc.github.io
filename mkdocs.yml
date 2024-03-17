@@ -8,7 +8,7 @@ site_description: >-
   on our activities, workflows and software as well as resources for members.
 site_author: PyLHC/OMC-Team
 site_url: https://pylhc.github.io
-use_directory_urls: true
+use_directory_urls: false 
 
 
 # Repository
@@ -32,6 +32,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.instant
+    - content.action.edit  # editing button on the pages is opt-in since v9
   palette:
     scheme: preference
     primary: indigo
@@ -63,9 +64,6 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.keys:
@@ -99,8 +97,8 @@ extra_css:
 
 extra_javascript:
   - javascripts/config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - javascripts/mathjax-config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
@@ -215,7 +213,24 @@ nav:
       - Publications: resources/publications.md
       - Presentations: resources/presentations.md
       - Logbook:
-        - LHC 2022: resources/logbook/2022_lhc.md
-        - LHC 2023: resources/logbook/2023_lhc.md
+        - AD:
+          - 2023: resources/logbook/2023_ad.md
+          - 2024: resources/logbook/2024_ad.md
+        - LEIR:
+          - 2023: resources/logbook/2023_leir.md
+          - 2024: resources/logbook/2024_leir.md
+        - LHC: 
+          - 2022: resources/logbook/2022_lhc.md
+          - 2023: resources/logbook/2023_lhc.md
+          - 2024: resources/logbook/2024_lhc.md
+        - PS: 
+          - 2023: resources/logbook/2023_ps.md
+          - 2024: resources/logbook/2024_ps.md
+        - PSB:
+          - 2023: resources/logbook/2023_psb.md
+          - 2024: resources/logbook/2024_psb.md
+        - SPS:
+          - 2023: resources/logbook/2023_sps.md
+          - 2024: resources/logbook/2024_sps.md
       - Templates: resources/templates.md
       - FAQ: resources/faqs.md

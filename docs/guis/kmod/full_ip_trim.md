@@ -4,7 +4,7 @@ The `Full IP Trim` module of the GUI executes the K-Modulation on a selected Int
 Each bigger experiment like ATLAS (IP1), ALICE (IP2), CMS (IP5) and LHCb (IP8) is referred to by its corresponding number in the LHC complex.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/ip_panel_trim.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/ip_panel_trim.png" width="100%" />
   <figcaption>Choose an IP.</figcaption>
 </figure>
 
@@ -19,7 +19,7 @@ The available parameters are the following:
 - **Cycles**: How many times the modulation is done. Default value is `3`.
 
     <figure>
-      <img src="../../../assets/images/kmod_gui/trim_config.png" width="100%" />
+      <img src="../../assets/images/kmod_gui/trim_config.png" width="100%" />
       <figcaption>Select trim parameter.</figcaption>
     </figure>
 
@@ -30,7 +30,7 @@ After the modulation is done, it will show the whole trim results in the corresp
 The trim results are stored in the `save directory` of the current IP.
 
 <figure>
-  <img src="../../../assets/images/kmod_gui/trim_result_panel.png" width="100%" />
+  <img src="../../assets/images/kmod_gui/trim_result_panel.png" width="100%" />
   <figcaption>Trim result panel.</figcaption>
 </figure>
 

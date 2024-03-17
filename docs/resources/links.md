@@ -36,6 +36,9 @@
 
 ### JWS Programs
 
+The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_internal} webpage.
+
+
 !!! warning
     All of these are <span class="cern_internal"> only accessible from CERN Network </span>.
 
@@ -102,12 +105,13 @@
 
 ### Teleworking
 
-* [CodiMD CERN - Teleworking Tips & Tricks][codimd]{target=_blank}
-* [Cern Computing Blog - Useful tools for teleworking][cern_computing_blog]{target=_blank  .cern_login}
+* [CodiMD CERN - Teleworking Tips & Tricks][codimd_teleworking]{target=_blank}
+* [Cern Computing Blog - Useful tools for teleworking][cern_computing_blog]{target=_blank .cern_login}
 * [Remote Desktop Service][remote_desktop_service]{target=_blank .cern_login} (or with application, connect to **cernts.cern.ch**)
 
 ### Computing setup for Members
 
+* [VSCode on LxPlus][vscode_lxplus]{target=_blank .cern_login}
 * [LHC Data Sources][lhc_data_sources]{target=_blank}
 * [HTCondor Batch Docs][batch_docs]{target=_blank}
 * [Setup HTCondor for local use][htcondor_local]{target=_blank}
@@ -130,6 +134,7 @@
 
 ### Info
 
+* [CERN Naming Conventions][naming_conventions]{target=_blank}
 * [LHC Naming Conventions - Equipment Codes][equipment_codes]{target=_blank}
 * [Beam-Beam and Luminosity Studies][bblumi]{target=_blank}
 * [Accelerating Python Wiki][acc_py_wiki]{target=_blank .cern_internal}
@@ -166,6 +171,8 @@
 [roro_website]: https://rtomas.web.cern.ch/rtomas/
 [omc_logos]: https://github.com/pylhc/pylhc.github.io/tree/master/docs/assets/logos
 
+[cas_main]: https://cas.cern.ch/
+
 [betabeat_gui_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating
 [betabeat_gui_gitlab_issues]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues
 [betabeat_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-app-beta-beating
@@ -176,6 +183,7 @@
 [multiturn_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-multiturn
 [multiturn_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-multiturn
 
+[vscode_lxplus]: https://cern.service-now.com/service-portal?id=kb_article&n=KB0008901
 [accounts_cern]: https://account.cern.ch/account/Management/MyAccounts.aspx
 [services_cern]: https://resources.web.cern.ch/resources/Manage/ListServices.aspx
 [afs_kerberos_ubuntu]: https://gist.github.com/OmeGak/9530124
@@ -186,11 +194,12 @@
 [htcondor_local]: https://twiki.cern.ch/twiki/bin/view/ABPComputing/LxbatchHTCondor
 [htcondor_python]: http://pylhc.github.io/Beta-Beat.src/utils/index.html#module-utils.htcondor_wrapper
 
-[codimd]: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
+[codimd_teleworking]: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
 [cern_computing_blog]: https://computing-blog.web.cern.ch/2020/03/useful-tools-for-teleworking/
 [remote_desktop_service]: https://remotedesktop.web.cern.ch/remotedesktop/RDweb/Desktops.aspx
 
 [equipment_codes]: https://edms5.cern.ch/cedar/plsql/codes.systems
+[naming_conventions]: https://naming.cern.ch/
 [lhc_gitlab]: https://gitlab.cern.ch/acc-models/acc-models-lhc
 [cern_optics_repo_site]: https://acc-models.web.cern.ch/acc-models/
 [op_webtools]: https://op-webtools.web.cern.ch/index.html
