@@ -83,9 +83,20 @@ document$.subscribe(function createLogbookLinks() {
         var logbook = trimmed[1];
         var event_id = trimmed[2];
         element.href = 'https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=' + logbook + '&dateFrom=' + date + 'T00%3A00%3A00&dateTo=' + date + 'T23%3A59%3A59&eventToHighlight=' + event_id;
+        element.setAttribute("alt_href", 'https://logbook.cern.ch/elogbook-server/#/logbook?logbookId=' + logbook + '&dateFrom=' + date + 'T00%3A00%3A00&dateTo=' + date + 'T23%3A59%3A59&eventToHighlight=' + event_id);
 
         element.target = "_blank";
         element.classList.add('cern_login');
+        element.addEventListener("click", function(event) {
+            // Check if the alt key is pressed
+            if (event.altKey) {
+                event.preventDefault(); // Prevent default link behavior
+                var altDestination = this.getAttribute("alt_href");
+                if (altDestination) {
+                    window.open(altDestination, '_blank'); // Open link in a new tab
+                }
+            }
+        });
     };
 })
 
