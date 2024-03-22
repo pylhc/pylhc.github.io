@@ -2,407 +2,407 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pylhc.github.io/index.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/betabeat/analysis_panel.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/betabeat/beam_selection.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/betabeat/bpm_panel.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/betabeat/correction_panel.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/betabeat/gui.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/betabeat/omc3.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/betabeat/optics_panel.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/developing/ide_install.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/developing/kmod_special.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/developing/releases.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/kmod/autotrim.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/kmod/full_ip_trim.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/kmod/gui.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/kmod/individual_modulation.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/kmod/load_model.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/kmod/trim_analysis.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/guis/multiturn/gui.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/howto/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/howto/setup/git.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/howto/setup/guis.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/howto/setup/shared_filesystems.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/howto/teleworking/access.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/howto/wiki/editing.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/physics/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/physics/bpm_calibration.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/physics/coupling.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/physics/error_propagation.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/physics/ir_linear_optics.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/physics/ir_nonlinear_optics.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/physics/kmod.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/physics/threedkicks.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/procedures/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/procedures/ampdet.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/procedures/general_checks.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/procedures/kmod.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/procedures/rigid_waist_shift.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/procedures/xing_scan.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/omc_team/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/omc_team/ideas.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/omc_team/publications.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/development/contributing.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/development/howto_release.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/development/howto_venv.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/irnl/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/mess/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/omc3/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/omc3/analysis.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/omc3/getting_started.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/omc3/know_how.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/pylhc/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/pylhc/bpm_calibration.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/pylhc/bsrt.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/pylhc/forced_da.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/pylhc/kickgroups.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/pylhc/machine_settings_info.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/pylhcsubmitter/about.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/pylhcsubmitter/autosix.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/pylhcsubmitter/job_submitter.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/computing.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/faqs.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/links.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/presentations.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/publications.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/templates.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2022_lhc.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2023_ad.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2023_leir.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2023_lhc.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2023_ps.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2023_psb.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2023_sps.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2024_ad.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2024_leir.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2024_lhc.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2024_ps.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2024_psb.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://pylhc.github.io/resources/logbook/2024_sps.html</loc>
-         <lastmod>2024-03-20</lastmod>
+         <lastmod>2024-03-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
