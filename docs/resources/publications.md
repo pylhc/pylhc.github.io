@@ -19,7 +19,26 @@ This page compiles various published papers, reports, and MD notes from OMC team
 
 ## Journal Publications
 
+### 2024
+
 ### 2023
+
+??? abstract "First Operational Dodecapole Correction in the LHC, `J. Dilly et al.`, [Phys. Rev. Accel. Beams 26, 121001, 2023](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.121001){target=_blank}"
+    ```
+    @article{DillyFirstOperationalDodecapole2023,
+    title = {First Operational Dodecapole Correction in the {{LHC}}},
+    author = {Dilly, J. and Ferrentino, V. and Le Garrec, M. and Maclean, E. H. and Malina, L. and Persson, T. and Pugnat, T. and van Riesen-Haupt, L. and Soubelet, F. and Tomás, R.},
+    date = {2023-12-05},
+    journaltitle = {Physical Review Accelerators and Beams},
+    shortjournal = {Phys. Rev. Accel. Beams},
+    volume = {26},
+    number = {12},
+    pages = {121001},
+    publisher = {American Physical Society},
+    doi = {10.1103/PhysRevAccelBeams.26.121001},
+    url = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.121001},
+    }
+    ```
 
 ??? abstract "Rigid Waist Shift: A New Method for Local Coupling Corrections in the LHC Interaction Regions, `F. Soubelet, T. Persson, R. Tomás, O. Apsimon and C. Welsch`, [Phys. Rev. Accel. Beams 25, 051001, 2023](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.051001){target=_blank}"
     ```
@@ -1669,9 +1688,67 @@ This page compiles various published papers, reports, and MD notes from OMC team
     ```
 ## MD Notes
 
+### Run III
+
+#### 2024
+
+#### 2023
+
+#### 2022
+
+
+??? abstract "MD6864 --- Decapole Studies at Injection, `M. Le Garrec et al.`, 2023, URL: [CERN-ACC-NOTE-2023-0018](https://cds.cern.ch/record/2879070){target=_blank}"
+    ```
+    @techreport{LeGarrecMD6864DecapoleStudies2023,
+      type = {Accelerators \& {{Technology Sector Note}}},
+      title = {{{MD6864}} --- {{Decapole}} Studies at Injection},
+      author = {Le Garrec, Mael and Carlier, Felix Simon and Dilly, Joschua Werner and Ferrentino, Vittorio and Maclean, Ewen Hamish and Paraschou, Konstantinos and Tomas Garcia, Rogelio},
+      year = {2023},
+      month = oct,
+      number = {CERN-ACC-NOTE-2023-0018},
+      institution = {CERN},
+      url = {https://cds.cern.ch/record/2879070}
+    }
+    ```
+
+??? abstract "Report From LHC MD 6863: Amplitude Detuning Corrections From Feed-Down, `J. Dilly, M. Garrec, E. Maclean, L. van Riesen-Haupt, and R. Tomas`, 2023, [CERN-ACC-NOTE-2023-0028](https://cds.cern.ch/record/2913600){target=_blank}"
+    ```
+    @techreport{DillyReportLHCMD2023,
+      type = {Accelerators \& {{Technology Sector Note}}},
+      title = {Report from {{LHC MD}} 6863: {{Amplitude Detuning Corrections}} from {{Feed-Down}}},
+      author = {Dilly, J and Garrec, M Le and Maclean, E H and {van Riesen-Haupt}, L and Tomas, R},
+      year = {2023},
+      month = apr,
+      number = {CERN-ACC-NOTE-2023-0028},
+      address = {Geneva, Switzerland},
+      institution = {CERN},
+      url = {https://cds.cern.ch/record/2913600}
+    }
+    ```
+
+#### 2021
+
+
 ### Run II
 
 #### 2018
+
+
+??? abstract "Report From LHC MD 3312: Replicating HL-LHC DA, `J. Dilly et al.`, 2022, URL: [CERN-ACC-NOTE-2022-0021](https://cds.cern.ch/record/2824571){target=_blank}"
+    ```
+    @techreport{DillyReportLHCMD2022,
+      type = {Accelerators \& {{Technology Sector Note}}},
+      title = {Report from {{LHC MD}} 3312: {{Replicating HL-LHC DA}}},
+      shorttitle = {Report from {{LHC MD}} 3312},
+      author = {Dilly, Joschua Werner and Albert, Markus and Carlier, Felix Simon and {Coello De Portugal - Martinez Vazquez}, Jaime Maria and Dalena, Barbara and Fol, Elena and Hofer, Michael and Maclean, Ewen Hamish and Malina, Lukas and Persson, Tobias Hakan Bjorn and Solfaroli Camillocci, Matteo and Spitznagel, Martin Lukas and Tomas Garcia, Rogelio and {Garcia-Tabares Valdivieso}, Ana},
+      year = {2022},
+      month = aug,
+      number = {CERN-ACC-NOTE-2022-0021},
+      address = {Geneva, Switzerland},
+      institution = {CERN},
+      url = {https://cds.cern.ch/record/2824571}
+    }
+    ```
 
 ??? abstract "MD4944: Local Linear Coupling Measurement at the IPs, `T. Persson et al.`, [CERN-ACC-NOTE-2020-0013](https://cds.cern.ch/record/2710101){target=_blank}"
     ```
