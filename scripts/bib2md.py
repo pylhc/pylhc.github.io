@@ -197,7 +197,8 @@ def _format_other(entry):
         return f'[{journal}]({url}){{target=_blank}}'
 
     if url:
-        url = f'URL: [{url}]({url}){{target=_blank}}'
+        link = entry.get('reportNumber', entry.get("number", url))
+        url = f'[{link}]({url}){{target=_blank}}'
 
     if journal and url:
         return f"{journal}, {url}"
@@ -209,4 +210,4 @@ def _format_other(entry):
 
 
 if __name__ == '__main__':
-    main(bibfile=Path("path/to/bibfile"), citekeys=["citekeys", "touse"], add_year=True)
+    main(bibfile=Path("path/to/bibfile"), citekeys=["cite_keys", "to_use"], add_year=True)
