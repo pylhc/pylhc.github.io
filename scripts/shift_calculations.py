@@ -8,7 +8,7 @@ from pathlib import Path
 import matplotlib as mpl
 from matplotlib import pyplot as plt
 from matplotlib.figure import Figure
-from scripts.parse_md_table import parse_file
+from parse_md_table import parse_file
 
 
 # Check dates ------------------------------------------------------------------
@@ -383,6 +383,11 @@ if __name__ == "__main__":
     repo_dir = Path(__file__).parent.parent
     logbook_dir = repo_dir / "docs" / "resources" / "logbook"
     
+    # 2022 ---------------------------------------------------------------------
+
+    shift_m = manual_shifts(logbook_dir / "2022_lhc.md")
+    plot_results(shift_m, title="OMC Shifts LHC 2022", output_path="lhc_2022_shifts.pdf")
+    
     # 2023 ---------------------------------------------------------------------
 
     # shift_c = calculate_shifts(logbook_dir / "2023_lhc.md") 
@@ -391,8 +396,8 @@ if __name__ == "__main__":
     # shift_c = calculate_shifts(logbook_dir / "2023_ps.md") 
     # plot_results(shift_c, title="OMC Shifts PS 2023 (from Start/End)")
 
-    # shift_m = manual_shifts(logbook_dir / "2023_lhc.md")
-    # plot_results(shift_m, title="OMC Shifts LHC 2023", output_path="lhc_2023_shifts.pdf")
+    shift_m = manual_shifts(logbook_dir / "2023_lhc.md")
+    plot_results(shift_m, title="OMC Shifts LHC 2023", output_path="lhc_2023_shifts.pdf")
     
     # shift_m = manual_shifts(logbook_dir / "2023_ps.md")
     # plot_results(shift_m, title="OMC Shifts PS 2023", output_path="ps_2023_shifts.pdf")
@@ -402,8 +407,8 @@ if __name__ == "__main__":
 
     # 2024 ---------------------------------------------------------------------
 
-    # shift_m = manual_shifts(logbook_dir / "2024_lhc.md")
-    # plot_results(shift_m, title="OMC Shifts LHC 2024", output_path="lhc_2024_shifts.pdf")
+    shift_m = manual_shifts(logbook_dir / "2024_lhc.md")
+    plot_results(shift_m, title="OMC Shifts LHC 2024", output_path="lhc_2024_shifts.pdf")
 
     # shift_m = manual_shifts(logbook_dir / "2024_lhc.md", shift_type="Commissioning")
     # plot_results(shift_m, title="OMC Shifts LHC 2024 (Commissioning)", output_path="lhc_2024_shifts_commish.pdf")
@@ -420,7 +425,7 @@ if __name__ == "__main__":
     # shift_m = manual_shifts(logbook_dir / "2024_sps.md")
     # plot_results(shift_m, title="OMC Shifts SPS 2024", output_path="sps_2024_shifts.pdf")
 
-    plot_all_machines_in_year(2024, {"leir": 19}, output_path="machines_2024.pdf")
+    # plot_all_machines_in_year(2024, {"leir": 19}, output_path="machines_2024.pdf")
 
 
     plt.show()
