@@ -84,7 +84,7 @@ def same_day(d1: datetime, d2: datetime) -> bool:
     return (d1.year == d2.year) and (d1.month == d2.month) and (d1.day == d2.day)
 
 
-def is_holiday(date: datetime):
+def is_holiday(date: datetime) -> bool:
     """ True is date is on a known holiday. """
     return any(same_day(date, h) for h in CERN_HOLIDAYS)
 
@@ -138,11 +138,11 @@ def calculate_shift_parts(start_time: datetime, end_time: datetime) -> dict[str,
     return time_split 
 
 
-def time_delta_to_hours(time_delta: timedelta):
+def time_delta_to_hours(time_delta: timedelta) -> float:
     return time_delta.total_seconds() / 3600
 
 
-def time_delta_to_shifts(time_delta: timedelta):
+def time_delta_to_shifts(time_delta: timedelta) -> float:
     return time_delta_to_hours(time_delta) / SHIFT_LENGTH
 
 
@@ -365,6 +365,8 @@ def plot_all_machines_in_year(
     fig.tight_layout()
     if output_path:
         fig.savefig(output_path)
+
+    return fig
     
 
 
