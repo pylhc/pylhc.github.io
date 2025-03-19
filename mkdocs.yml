@@ -232,5 +232,6 @@ nav:
         - SPS:
           - 2023: resources/logbook/2023_sps.md
           - 2024: resources/logbook/2024_sps.md
+          - 2025: resources/logbook/2025_sps.md
       - Templates: resources/templates.md
       - FAQ: resources/faqs.md
