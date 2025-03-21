@@ -226,11 +226,11 @@ nav:
         - PS: 
           - 2023: resources/logbook/2023_ps.md
           - 2024: resources/logbook/2024_ps.md
-	  - 2025: resources/logbook/2025_ps.md
+          - 2025: resources/logbook/2025_ps.md
         - PSB:
           - 2023: resources/logbook/2023_psb.md
           - 2024: resources/logbook/2024_psb.md
-	  - 2025: resources/logbook/2025_psb.md
+          - 2025: resources/logbook/2025_psb.md
         - SPS:
           - 2023: resources/logbook/2023_sps.md
           - 2024: resources/logbook/2024_sps.md
