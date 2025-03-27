@@ -38,6 +38,17 @@ DATE_FORMAT = "%Y-%m-%d %H:%M"
 
 CERN_HOLIDAYS = [
     # https://home.cern/official-holidays/
+    datetime(2025, 1, 1),
+    datetime(2025, 4, 18),
+    datetime(2025, 4, 21),
+    datetime(2025, 5, 1),
+    datetime(2025, 5, 29),
+    datetime(2025, 6, 9),
+    datetime(2025, 9, 11),
+    datetime(2025, 12, 24),
+    datetime(2025, 12, 25),
+    datetime(2025, 12, 31),
+    # https://home.cern/official-holidays/
     datetime(2024, 1, 1),
     datetime(2024, 3, 29),
     datetime(2024, 4, 1),
