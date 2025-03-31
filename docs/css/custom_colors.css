@@ -16,9 +16,4 @@
   font-weight: bold;
 }
 
-/* Custom emphasis classes (for bpm_filtering.md) */
-.tbt-related { color: var(--color-atlasgreen); font-weight: bold; }
-.svd-related { color: var(--color-cernred); font-weight: bold; }
-.spec-related { color: var(--color-atlasorange); font-weight: bold; }
-.manual-related { color: var(--color-cernlightblue); font-weight: bold; }
-.iforest-related { color: var(--color-cernpurple); font-weight: bold; }
+

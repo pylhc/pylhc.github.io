@@ -1,6 +1,13 @@
+<style>
+.tbt-related { color: var(--color-atlasgreen); font-weight: bold; }
+.svd-related { color: var(--color-cernred); font-weight: bold; }
+.spec-related { color: var(--color-atlasorange); font-weight: bold; }
+.manual-related { color: var(--color-cernlightblue); font-weight: bold; }
+.iforest-related { color: var(--color-cernpurple); font-weight: bold; }
+</style>
 
 
-The content of this page has been converted from the presenation given as ["OMC3 bad BPM detection" on the 31.03.2025](https://indico.cern.ch/event/1531923/) .
+The content of this page has been converted from the presentation given as ["OMC3 bad BPM detection" on the 31.03.2025](https://indico.cern.ch/event/1531923/) .
 
 
 ## OMC-Analysis
@@ -8,22 +15,22 @@ The content of this page has been converted from the presenation given as ["OMC3
 ![BPM vs Owl](../../assets/images/bpm_filtering/bpmvsowl.png)
 
 * To get <span class="omc-emph">reliable</span> and <span class="omc-emph">reproducible</span> optics measurements, we cannot trust all BPM data that we are getting.
-* At <span class="omc-emph">different stages</span> of the code, we try to determine the ``trustworthyness''.
+* At <span class="omc-emph">different stages</span> of the code, we try to determine the "trustworthyness".
 * Some BPMs are fully <span class="omc-emph">excluded</span>, others are getting <span class="omc-emph">errorbars</span> based on their <span class="omc-emph">noise-level</span> (which are often used as *weights*, e.g. for correction calculations).
 
 
 ## Automatic
 
-* First the <span class="tbt-related">Turn-by-Turn Data</span> is checked for ``obvious'' signs.
+* First the <span class="tbt-related">Turn-by-Turn Data</span> is checked for "obvious" signs.
     * <span class="tbt-related">EXACT_ZERO</span>: Any value has an <span class="tbt-related">exact zero</span> (might lead to false positives, but unlikely if happens in multiple datasets).
     * <span class="tbt-related">NANS</span>: Data contains <span class="tbt-related">NaN-values</span> (happens in SPS BPMs).
-    * <span class="tbt-related">FLAT</span>: <span class="tbt-related">Peak-to-Peak</span> value was <span class="tbt-related">below</span> a given threshold (10nm).
-    * <span class="tbt-related">SPIKY</span>: A <span class="tbt-related">spike</span> in the data, <span class="tbt-related">above</span> a given threshold (2cm).
+    * <span class="tbt-related">FLAT</span>: <span class="tbt-related">Peak-to-Peak</span> value was <span class="tbt-related">below</span> a given threshold (default: 10nm).
+    * <span class="tbt-related">SPIKY</span>: A <span class="tbt-related">spike</span> in the data, <span class="tbt-related">above</span> a given threshold (default: 2cm).
 * To reduce <span class="svd-related">noise</span> we perform an SVD-decomposition and keep only the <span class="svd-related">strongest modes</span>.
-    * <span class="svd-related">SVD_PEAK</span>: The BPM had a <span class="svd-related">mode</span> in the U-Matrix above a given threshold (0.925).
+    * <span class="svd-related">SVD_PEAK</span>: The BPM had a <span class="svd-related">mode</span> in the U-Matrix above a given threshold (default: 0.925).
 * Most information about the optics come from a <span class="spec-related">spectral analysis</span>.
     * <span class="spec-related">NO_TUNE</span>: Tune line could <span class="spec-related">not be found</span> in the spectrum.
-    * <span class="spec-related">TUNE_CLEAN</span>: Tune line found was <span class="spec-related">too far from the average</span> of the other BPMs (by more than $10^{-5}$).
+    * <span class="spec-related">TUNE_CLEAN</span>: Tune line found was <span class="spec-related">too far from the average</span> of the other BPMs (default: > $10^{-5}$).
 
 ## Manual
 
@@ -33,12 +40,16 @@ The content of this page has been converted from the presenation given as ["OMC3
     * <span class="manual-related">Non-sensical</span> data points.
     * Cause <span class="manual-related">analysis issues</span> (e.g. phase-offsets, negative $\beta$, NaNs).
     * <span class="manual-related">Calibration</span> issues:
-        * $\beta$-form-phase looks normal, peak in $\beta$-from-amplitude
+        * $\beta$-from-phase looks normal, peak in $\beta$-from-amplitude
         * $\beta$-ratios large.
         * Measure in <span class="manual-related">different optics</span> to <span class="manual-related">confirm BPM issue</span>.
 * **Good hint:** <span class="manual-related">Filtering them solves observed issues</span>.
 
-![Beta Beating Example](../../assets/images/bpm_filtering/BetaBeating.png)
+
+<figure>
+  <img src="../../assets/images/bpm_filtering/BetaBeating.png">
+  <figcaption>Observed Beta-Beating with some large errorbars (e.g. IP1 and IP5) and unrealistic beating (around 2200m in Y)</figcaption>
+</figure>
 
 ## Isolation Forest
 
