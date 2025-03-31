@@ -48,7 +48,8 @@ CERN_HOLIDAYS = [
     datetime(2025, 12, 24),
     datetime(2025, 12, 25),
     datetime(2025, 12, 31),
-    # https://home.cern/official-holidays/
+    # At some point they stopped having a page for each year so for 2024 we can refer to:
+    # https://home.cern/news/official-news/cern/official-holidays-2024-and-end-year-closure-20242025
     datetime(2024, 1, 1),
     datetime(2024, 3, 29),
     datetime(2024, 4, 1),
