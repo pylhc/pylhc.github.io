@@ -93,6 +93,7 @@ extra:
 # Extras to load
 extra_css:
   - css/extra.css
+  - css/custom_colors.css
   - css/hint.min.css
 
 extra_javascript:
@@ -178,6 +179,7 @@ nav:
       - Introduction: measurements/physics/about.md
       - Error Propagation: measurements/physics/error_propagation.md
       - BPM-Calibration: measurements/physics/bpm_calibration.md
+      - BPM-Filtering: measurements/physics/bpm_filtering.md
       - Coupling: measurements/physics/coupling.md
       - K-Mod: measurements/physics/kmod.md
       - Linear IR Optics: measurements/physics/ir_linear_optics.md
