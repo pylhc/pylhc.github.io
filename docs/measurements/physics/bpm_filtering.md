@@ -23,7 +23,7 @@ The content of this page has been converted from the presenation given as ["OMC3
     * <span class="svd-related">SVD_PEAK</span>: The BPM had a <span class="svd-related">mode</span> in the U-Matrix above a given threshold (0.925).
 * Most information about the optics come from a <span class="spec-related">spectral analysis</span>.
     * <span class="spec-related">NO_TUNE</span>: Tune line could <span class="spec-related">not be found</span> in the spectrum.
-    * <span class="spec-related">TUNE_CLEAN</span>: Tune line found was <span class="spec-related">too far from the average</span> of the other BPMs.
+    * <span class="spec-related">TUNE_CLEAN</span>: Tune line found was <span class="spec-related">too far from the average</span> of the other BPMs (by more than $10^{-5}$).
 
 ## Manual
 
