@@ -38,6 +38,18 @@ DATE_FORMAT = "%Y-%m-%d %H:%M"
 
 CERN_HOLIDAYS = [
     # https://home.cern/official-holidays/
+    datetime(2025, 1, 1),
+    datetime(2025, 4, 18),
+    datetime(2025, 4, 21),
+    datetime(2025, 5, 1),
+    datetime(2025, 5, 29),
+    datetime(2025, 6, 9),
+    datetime(2025, 9, 11),
+    datetime(2025, 12, 24),
+    datetime(2025, 12, 25),
+    datetime(2025, 12, 31),
+    # At some point they stopped having a page for each year so for 2024 we can refer to:
+    # https://home.cern/news/official-news/cern/official-holidays-2024-and-end-year-closure-20242025
     datetime(2024, 1, 1),
     datetime(2024, 3, 29),
     datetime(2024, 4, 1),
