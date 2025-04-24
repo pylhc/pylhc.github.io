@@ -213,29 +213,31 @@ nav:
       - Computing: resources/computing.md
       - Publications: resources/publications.md
       - Presentations: resources/presentations.md
-      - Logbook:
+      - Logbook: &logbook
+        - About: logbook/about.md
         - AD:
-          - 2023: resources/logbook/2023_ad.md
-          - 2024: resources/logbook/2024_ad.md
+          - 2023: logbook/AD/2023_ad.md
+          - 2024: logbook/AD/2024_ad.md
         - LEIR:
-          - 2023: resources/logbook/2023_leir.md
-          - 2024: resources/logbook/2024_leir.md
+          - 2023: logbook/LEIR/2023_leir.md
+          - 2024: logbook/LEIR/2024_leir.md
         - LHC: 
-          - 2022: resources/logbook/2022_lhc.md
-          - 2023: resources/logbook/2023_lhc.md
-          - 2024: resources/logbook/2024_lhc.md
-          - 2025: resources/logbook/2025_lhc.md
+          - 2022: logbook/LHC/2022_lhc.md
+          - 2023: logbook/LHC/2023_lhc.md
+          - 2024: logbook/LHC/2024_lhc.md
+          - 2025: logbook/LHC/2025_lhc.md
         - PS: 
-          - 2023: resources/logbook/2023_ps.md
-          - 2024: resources/logbook/2024_ps.md
-          - 2025: resources/logbook/2025_ps.md
+          - 2023: logbook/PS/2023_ps.md
+          - 2024: logbook/PS/2024_ps.md
+          - 2025: logbook/PS/2025_ps.md
         - PSB:
-          - 2023: resources/logbook/2023_psb.md
-          - 2024: resources/logbook/2024_psb.md
-          - 2025: resources/logbook/2025_psb.md
+          - 2023: logbook/PSB/2023_psb.md
+          - 2024: logbook/PSB/2024_psb.md
+          - 2025: logbook/PSB/2025_psb.md
         - SPS:
-          - 2023: resources/logbook/2023_sps.md
-          - 2024: resources/logbook/2024_sps.md
-          - 2025: resources/logbook/2025_sps.md
+          - 2023: logbook/SPS/2023_sps.md
+          - 2024: logbook/SPS/2024_sps.md
+          - 2025: logbook/SPS/2025_sps.md
       - Templates: resources/templates.md
       - FAQ: resources/faqs.md
+  - Logbook: *logbook
