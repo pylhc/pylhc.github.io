@@ -341,7 +341,7 @@ def plot_all_machines_in_year(
     color_map = {name: f"C{ii}" for ii, name in enumerate(["lhc", "sps", "ps", "psb", "leir", "ad", "superkekb"])}
 
     data_map: dict[str, float] = {}
-    for file_path in logbook_dir.glob(f"{year:4d}_*.md"):
+    for file_path in logbook_dir.glob(f"**/{year:4d}_*.md"):
         machine = file_path.stem.split("_")[1]
         if calculate:
             shift = calculate_shifts(file_path)
@@ -395,7 +395,7 @@ if __name__ == "__main__":
     mpl.rcParams["figure.figsize"] = 7.68, 4.8
     
     repo_dir = Path(__file__).parent.parent
-    logbook_dir = repo_dir / "docs" / "resources" / "logbook"
+    logbook_dir = repo_dir / "docs" / "logbook"
     
     # 2022 ---------------------------------------------------------------------
 
@@ -419,10 +419,37 @@ if __name__ == "__main__":
     # shift_m = manual_shifts(logbook_dir / "2023_psb.md")
     # plot_results(shift_m, title="OMC Shifts PSBooster 2023", output_path="psb_2023_shifts.pdf")
 
+    # plot_all_machines_in_year(2023, additional={}, output_path="machines_2023.pdf")
+
     # 2024 ---------------------------------------------------------------------
 
-    # shift_m = manual_shifts(logbook_dir / "2024_lhc.md")
+    # shift_m = manual_shifts(logbook_dir / "LHC" / "2024_lhc.md")
     # plot_results(shift_m, title="OMC Shifts LHC 2024", output_path="lhc_2024_shifts.pdf")
+
+    shift_m = manual_shifts(logbook_dir / "LHC" /"2024_lhc.md", shift_type="Commissioning")
+    plot_results(shift_m, title="OMC Shifts LHC 2024 (Commissioning)", output_path="lhc_2024_shifts_commish.pdf")
+    
+    # shift_m = manual_shifts(logbook_dir / "2024_lhc.md", shift_type="MD")
+    # plot_results(shift_m, title="OMC Shifts LHC 2024 (MDs)", output_path="lhc_2024_shifts_md.pdf")
+    
+    # shift_m = manual_shifts(logbook_dir / "2024_ps.md")
+    # plot_results(shift_m, title="OMC Shifts PS 2024", output_path="ps_2024_shifts.pdf")
+    
+    # shift_m = manual_shifts(logbook_dir / "2024_psb.md")
+    # plot_results(shift_m, title="OMC Shifts PSBooster 2024", output_path="psb_2024_shifts.pdf")
+    
+    # shift_m = manual_shifts(logbook_dir / "2024_sps.md")
+    # plot_results(shift_m, title="OMC Shifts SPS 2024", output_path="sps_2024_shifts.pdf")
+
+    # plot_all_machines_in_year(2024, {"leir": 9, "superkekb": 4}, output_path="machines_2024.pdf")
+
+    # 2025 ---------------------------------------------------------------------
+
+    shift_m = manual_shifts(logbook_dir / "LHC" / "2025_lhc.md")
+    plot_results(shift_m, title="OMC Shifts LHC 2025", output_path="lhc_2025_shifts.pdf")
+    
+    # shift_m = calculate_shifts(logbook_dir / "LHC" /"2025_lhc.md")
+    # plot_results(shift_m, title="OMC Shifts LHC 2025", output_path="lhc_2025_shifts_calc.pdf")
 
     # shift_m = manual_shifts(logbook_dir / "2024_lhc.md", shift_type="Commissioning")
     # plot_results(shift_m, title="OMC Shifts LHC 2024 (Commissioning)", output_path="lhc_2024_shifts_commish.pdf")
@@ -441,8 +468,7 @@ if __name__ == "__main__":
     
     # plot_all_machines_in_year(2023, additional={}, output_path="machines_2023.pdf")
 
-    plot_all_machines_in_year(2024, {"leir": 9, "superkekb": 4}, output_path="machines_2024.pdf")
-
+    # plot_all_machines_in_year(2024, {"leir": 9, "superkekb": 4}, output_path="machines_2024.pdf")
 
     plt.show()
 
