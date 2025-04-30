@@ -404,14 +404,17 @@ if __name__ == "__main__":
     
     # 2023 ---------------------------------------------------------------------
 
-    # shift_c = calculate_shifts(logbook_dir / "2023_lhc.md") 
+    # shift_c = calculate_shifts(logbook_dir / "LHC" / "2023_lhc.md") 
     # plot_results(shift_c, title="OMC Shifts LHC 2023 (from Start/End)")
     
     # shift_c = calculate_shifts(logbook_dir / "2023_ps.md") 
     # plot_results(shift_c, title="OMC Shifts PS 2023 (from Start/End)")
 
-    # shift_m = manual_shifts(logbook_dir / "2023_lhc.md")
-    # plot_results(shift_m, title="OMC Shifts LHC 2023", output_path="lhc_2023_shifts.pdf")
+    shift_m = manual_shifts(logbook_dir / "LHC" / "2023_lhc.md")
+    plot_results(shift_m, title="OMC Shifts LHC 2023", output_path="lhc_2023_shifts.pdf")
+
+    shift_m = manual_shifts(logbook_dir / "LHC" / "2023_lhc.md", shift_type="Commissioning")
+    plot_results(shift_m, title="OMC Shifts LHC 2023 (Commissioning)", output_path="lhc_2023_shifts_commish.pdf")
     
     # shift_m = manual_shifts(logbook_dir / "2023_ps.md")
     # plot_results(shift_m, title="OMC Shifts PS 2023", output_path="ps_2023_shifts.pdf")
@@ -426,8 +429,8 @@ if __name__ == "__main__":
     # shift_m = manual_shifts(logbook_dir / "LHC" / "2024_lhc.md")
     # plot_results(shift_m, title="OMC Shifts LHC 2024", output_path="lhc_2024_shifts.pdf")
 
-    shift_m = manual_shifts(logbook_dir / "LHC" /"2024_lhc.md", shift_type="Commissioning")
-    plot_results(shift_m, title="OMC Shifts LHC 2024 (Commissioning)", output_path="lhc_2024_shifts_commish.pdf")
+    # shift_m = manual_shifts(logbook_dir / "LHC" /"2024_lhc.md", shift_type="Commissioning")
+    # plot_results(shift_m, title="OMC Shifts LHC 2024 (Commissioning)", output_path="lhc_2024_shifts_commish.pdf")
     
     # shift_m = manual_shifts(logbook_dir / "2024_lhc.md", shift_type="MD")
     # plot_results(shift_m, title="OMC Shifts LHC 2024 (MDs)", output_path="lhc_2024_shifts_md.pdf")
