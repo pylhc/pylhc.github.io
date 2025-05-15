@@ -8,6 +8,11 @@ It can load data files for all supported beams, mostly binary SDDS files or file
 
 ## Opening Files and Applying SVD Cleaning
 
+### Opening Files
+
+- Each tab has now an <span style="color:green;">Open Files</span> button, which opens only the files specific to this tab.
+- The magic <span style="color:green">**+**</span> button is gone, as its functionality was confusing (and there were different stories about its workings).
+
 ### Automatic BPM removal
 
 First, BPMs are removed based on the following criteria:
@@ -21,9 +26,9 @@ First, BPMs are removed based on the following criteria:
 ### SVD-cleaning
 
 Secondly, SVD cleaning is performed.
-SVD modes with localized spikes in their spatial vectors indicate faulty BPMs using `Sum square` setting to find such spikes. 
+SVD modes with localized spikes in their spatial vectors indicate faulty BPMs using `Sum square` setting to find such spikes.
 To globally reduce the noise on all BPM readings, only a predefined number of strongest singular modes (`Sing val cut`) remain in the turn-by-turn data.
-While the `Sum square` setting has a direct influence on the number of BPMs identified as faulty, the number of modes affects the overall noise level in turn-by-turn signal. 
+While the `Sum square` setting has a direct influence on the number of BPMs identified as faulty, the number of modes affects the overall noise level in turn-by-turn signal.
 The original application of SVD on BPMs data cleaning can be found [in this publication][svd_clean_rhic].
 
 If SVD is enabled in the settings, the external SVD cleaning python script will be called for the current file during the loading process.
@@ -37,12 +42,12 @@ All the settings mentioned above can be changed in the global settings panel:
 </center>
 </figure>
 
-Turn-by-turn data cleaning is summarized in the output file which can be found at: 
+Turn-by-turn data cleaning is summarized in the output file which can be found at:
 `Measurements/Beam1@...1-6600/Beam1@...sdds.bad_bpms_{x,y}.`
 
 It contains BPM names and corresponding threshold which identified a BPM as faulty.
 
-!!! note 
+!!! note
     A single BPM can appear twice (for each threshold separately), e.g. in the case of exact zero flat signal.
 
 The content of the loaded files will be displayed in two charts:
@@ -66,7 +71,7 @@ The charts can display either the measured amplitude values over turns for every
 
 The buttons on the top left side of the pane provide useful features to handle the BPM data.
 
-- `Remove Turns` can be used to cut turns from the start or the end, to focus on a specified range of the data. 
+- `Remove Turns` can be used to cut turns from the start or the end, to focus on a specified range of the data.
 
 !!! todo
     Include a screenshot of before-after comparison for `Remove Turns`.
@@ -79,12 +84,12 @@ The buttons on the top left side of the pane provide useful features to handle t
 - `Do Analysis` spawns the configuration dialogue for the external analysis.
   This will call an external program to perform harmonic analysis of the BPM data, in order to compute tunes and similar beam properties.
   The results from the analysis can be seen in the [Analysis Panel](analysis_panel.md).
-   
+
 !!! todo
     Include of screenshot of `Do Analysis` dialogue window.
 
 !!! note
     The `Create Average` option requires synchronized data from withing the same bounds, otherwise the results will be meaningless.
     The figure below shows three runs from LHC beam one with synchronized peaks for every turn and their corresponding averages.
-    
+
   [svd_clean_rhic]: https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.7.042801
