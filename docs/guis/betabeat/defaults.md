@@ -38,17 +38,17 @@ consoleLogging=False   # activate additional logging  (visible if started from t
 checkFreeSpace=False   # check fee space at GUI start (visible if started from terminal)
 
 # BPM-Panel
-runOptics=False  # set the tickbox next to the `Analyse` button
+runOptics=False  # set the tickbox next to the `Run Analysis` button
 
 # Analysis-Panel
-autoclean.limit=0.1  # set the autoclean limit
-clean.sigmas=2       # set the number of sigmas for the autoclean
+autoclean.limit=0.1  # keep points within this limit, even if they are outliers
+clean.sigmas=2       # remove points beyond this many sigmas from the mean
 clean.bounds=0.7     # this ratio of points needs to remain otherwise cleaning aborts
 
 # Amplitude-Detuning-Window
 ampdet.tunecut=0.05  # limit around the given tune to exclude from the BBQ tune
 ampdet.window=100    # length of the moving average window for the BBQ tune
-ampdet.outlierLimit=0.0002  # Cut on outliears around the mean
+ampdet.outlierLimit=0.0002   # Cut on outliers around the mean
 ampdet.usePreviousBBQ=False  # Use previously extraced BBQ data if present
 ```
 
