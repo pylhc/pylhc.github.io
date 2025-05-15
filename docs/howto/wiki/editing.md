@@ -84,7 +84,7 @@ To create:
 - _italic_ text, surround the text with `_text_`.
 
 - an internal [link](../../howto/wiki/editing.md#general-text-formatting), use `[link](../../howto/wiki/editing.md#general-text-formatting)`
-  > Note that all links are relative to the current document! 
+  > Note that all links are relative to the current document!
     The `#`-labels are created by headers automatically and can be omitted, in case you want to link to the page itself.
 
 - an external [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.<br>
@@ -106,7 +106,7 @@ To create:
     ```
 
 - small hints to a difficult word, which appear on mouse over, add at the bottom of the file:
-  
+
     ```markdown
     *[difficult word]: helpful explanation
     ```
@@ -114,7 +114,7 @@ To create:
 - an inline math environment, surround the equation with `$a^2 + b^2 = c^2$`.
 
 - a block math environment, use:
-  
+
     ```markdown
     $$
     a^2 + b^2 = c^2

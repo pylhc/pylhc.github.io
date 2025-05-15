@@ -8,7 +8,7 @@ site_description: >-
   on our activities, workflows and software as well as resources for members.
 site_author: PyLHC/OMC-Team
 site_url: https://pylhc.github.io
-use_directory_urls: false 
+use_directory_urls: false
 
 
 # Repository
@@ -74,11 +74,14 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.superfences
   - pymdownx.tabbed:
-      alternate_style: true 
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
   - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 # Customization
 extra:
@@ -121,7 +124,7 @@ nav:
       - Analysis: packages/omc3/analysis.md
       - Know-How: packages/omc3/know_how.md
       - ↪ On Github: https://github.com/pylhc/omc3
-    - PyLHC: 
+    - PyLHC:
       - About: packages/pylhc/about.md
       - Forced DA Analysis: packages/pylhc/forced_da.md
       - Machine Settings Info: packages/pylhc/machine_settings_info.md
@@ -129,12 +132,12 @@ nav:
       - BPM Calibration: packages/pylhc/bpm_calibration.md
       - Display Kickgroups: packages/pylhc/kickgroups.md
       - ↪ On Github: https://github.com/pylhc/PyLHC
-    - PyLHC-Submitter: 
+    - PyLHC-Submitter:
       - About: packages/pylhcsubmitter/about.md
       - Job Submitter: packages/pylhcsubmitter/job_submitter.md
       - AutoSix: packages/pylhcsubmitter/autosix.md
       - ↪ On Github: https://github.com/pylhc/submitter
-    - IRNL Corrections: 
+    - IRNL Corrections:
       - About: packages/irnl/about.md
       - ↪ On Github: https://github.com/pylhc/irnl_rdt_correction
     - MESS:
@@ -146,7 +149,7 @@ nav:
       - ↪ tfs-pandas: https://github.com/pylhc/tfs
       - ↪ sdds: https://github.com/pylhc/sdds
       - ↪ generic-parser: https://github.com/pylhc/generic_parser
-    - Python Development: 
+    - Python Development:
       - Contributing: packages/development/contributing.md
       - Virtual Environments: packages/development/howto_venv.md
       - Releases: packages/development/howto_release.md
@@ -198,15 +201,15 @@ nav:
         - Crossing Angle Scan: measurements/procedures/xing_scan.md
   - How To's:
     - Info: howto/about.md
-    - General Setup: 
+    - General Setup:
       - Git: howto/setup/git.md
       - GUIs: howto/setup/guis.md
       - Shared Filesystems: howto/setup/shared_filesystems.md
       - ↪ Virtual CentOS Machine: https://abpcomputing.web.cern.ch/guides/openstackCS8/
-    - Teleworking: 
+    - Teleworking:
       - Remote Access: howto/teleworking/access.md
       - ↪ Tricks from IT: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
-    - Wiki Pages: 
+    - Wiki Pages:
       - Editing this Wiki: howto/wiki/editing.md
       - ↪ CERN Docs: https://how-to.docs.cern.ch/
     - Other Relevant How To's:
@@ -225,12 +228,12 @@ nav:
         - LEIR:
           - 2023: logbook/LEIR/2023_leir.md
           - 2024: logbook/LEIR/2024_leir.md
-        - LHC: 
+        - LHC:
           - 2022: logbook/LHC/2022_lhc.md
           - 2023: logbook/LHC/2023_lhc.md
           - 2024: logbook/LHC/2024_lhc.md
           - 2025: logbook/LHC/2025_lhc.md
-        - PS: 
+        - PS:
           - 2023: logbook/PS/2023_ps.md
           - 2024: logbook/PS/2024_ps.md
           - 2025: logbook/PS/2025_ps.md
