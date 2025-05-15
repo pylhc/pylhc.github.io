@@ -11,18 +11,18 @@ Of these, only the Beta-Beat GUI is currently developed by the team.
 ## Running the GUIs
 
 The GUIs can be started from your development environment or via deployed `.jnlp` from the archives:
-
-=== "Beta-Beat"
-
-    - Latest [Beta-Beating production version][prod_bbgui]{target=_blank}.
-    - Latest [Beta-Beating development version][dev_bbgui]{target=_blank}.
-    - Complete [list of releases][releases_bbgui]{target=_blank}.
     
 === "Beta-Beat-OMC3"
 
     - Latest [Beta-Beating production version][prod_bbgui_omc3]{target=_blank}.
     - Latest [Beta-Beating development version][dev_bbgui_omc3]{target=_blank}.
     - Complete [list of releases][releases_bbgui_omc3]{target=_blank}.
+
+=== "Beta-Beat (Legacy)"
+
+    - Latest [Beta-Beating production version][prod_bbgui]{target=_blank}.
+    - Latest [Beta-Beating development version][dev_bbgui]{target=_blank}.
+    - Complete [list of releases][releases_bbgui]{target=_blank}.
     
 === "Kmod"
 
@@ -65,6 +65,26 @@ The following are required to run the GUIs:
 ## Troubleshooting
 
 You may encounter the following errors:
+
+#### Running in the CCC in 2025
+
+On the CCC terminals, there are some issues related to finding the correct java path,
+which affects `NXCals` extraction.
+
+To avoid this, close all windows and CCMs and then run:
+
+```bash
+/user/slops/data/LHC_DATA/OP_DATA/Betabeat/launch_ccm.sh
+```
+
+This script performs the follwowing commands, which could also be done manually in a terminal:
+
+- Create a kerberos ticket: `kinit lhcop`
+- Adapt the path/set `JAVA_HOME` to use the correct java: `export PATH=/bin:$PATH`  and/or `export JAVA_HOME=/usr/java/jdk`  (either should be fine)
+- run `ccm` or `/mcr/bin/ccm`
+
+Then select `LHCOP` and launch the Beta-Beat GUI from the new CCM window.
+
 
 #### Problems with execution due to disabled Java
 

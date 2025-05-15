@@ -38,7 +38,7 @@ After cleaning is finished, the optics function can be computed from the harmoni
   </center>
 </figure>
 
-### Additional cleaning based on the tune ##
+### Additional cleaning based on the tune
 Additionally, BPMs can be cleaned based on the tune values computed by harmonic analysis. The chart displaying the selected columns of harmonic analysis data has interactive cursors. These cursors can be moved manually to set the thresholds for tune-based cleaning - all BPMs having tune values outside of the set range will be removed. The cursors can be also automatically set to e.g. 4 sigmas deviation from the average tune values over all BPMs.
 
 ### Summary of cleaning steps before optics analysis
@@ -53,6 +53,12 @@ The `Frequency` tab displays the computed frequencies for every BPM.
 
 A `Get Optics` button can be used to start the optics calculation.
 This will call an external python script again, with the results available in the [Optics Panel](optics_panel.md).
+
+### Nattune Updater
+
+* You can set a frequency range and it does not redo the analysis but just picks the highest peak in that range and assigns it to `NATTUNE` in the lin-file.
+* This should be very helpful for amplitude detuning analysis.
+* Do NOT use the Nattune-Updater if you have free kicks (it adds a `NATTUNE`-Column to the lin-file).
 
 !!! todo
     Include a screenshot of the frequency panel.

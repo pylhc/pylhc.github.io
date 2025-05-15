@@ -154,12 +154,16 @@ nav:
     - The OMC GUIs: guis/about.md
     - Beta-Beat GUI:
       - About: guis/betabeat/gui.md
+      - Defaults: guis/betabeat/defaults.md
       - Beam Selection: guis/betabeat/beam_selection.md
       - BPM Panel: guis/betabeat/bpm_panel.md
       - Analysis Panel: guis/betabeat/analysis_panel.md
       - Optics Panel: guis/betabeat/optics_panel.md
+      - Settings: guis/betabeat/settings.md
+      - Plotting: guis/betabeat/plots.md
       - Correction Panel: guis/betabeat/correction_panel.md
-      - The omc3 branch: guis/betabeat/omc3.md
+      - Amplitude Detuning: guis/betabeat/ampdet.md
+      - BetaBeat.src: guis/betabeat/betabeatsource.md
     - Kmod GUI:
       - About: guis/kmod/gui.md
       - Loading a Model: guis/kmod/load_model.md

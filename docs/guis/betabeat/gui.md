@@ -6,10 +6,8 @@ This section provides a short overview for the main features.
 
 !!! info
     The code documentation of the Beta-Beat GUI can be found on CERN's gitlab pages.
-    The master and OMC3 branches are generated:
-
+      
       * [Master branch][bbgui_doc_bbsrc]{target=_blank}
-      * [OMC3 branch][bbgui_doc_omc3]{target=_blank}
 
 
 The GUI provides several panels, each for a defined use and with a set of options and results:
@@ -22,7 +20,15 @@ The GUI provides several panels, each for a defined use and with a set of option
 This site will guide you through the GUI's layout and functionality.
 For starters, check out [the basics of running the GUI](../about.md).
 
+!!! warning "Bug Reporting"
+    If you find bugs, please create [issues][betabeat_gui_gitlab_issues]{target=_blank} with the `OMC3-GUI` label.
+
+## General Notes
+
+### Opening Files
+
+* Each tab has now an <span style="color:green;">Open Files</span> button, which opens only the files specific to this tab.
+* The magic <span style="color:green">**+**</span> button is gone, as its functionality was confusing (and there were different stories about its workings).
 
 [bbgui_doc_bbsrc]: https://lhc-app-beta-beating.docs.cern.ch/master/
-[bbgui_doc_omc3]: https://lhc-app-beta-beating.docs.cern.ch/omc3/
-
+[betabeat_gui_gitlab_issues]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues
