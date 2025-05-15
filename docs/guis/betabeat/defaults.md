@@ -16,6 +16,7 @@ The GUI defaults to specific locations for which `python` binary to use, the inp
 Different key-value pairs can be set inside for the desired defaults, for example:
 
 ```ini
+# Beam Selection
 beam = LHCB2
 inputPath = /some/afs/location/with/your/data/
 outputPath = /some/afs/location/with/your/results/
@@ -32,6 +33,7 @@ Additionally, there are some GUI settings that can either only be set via argume
 modify/set the default value in the GUI fields:
 
 ```ini
+# Console
 consoleLogging=False   # activate additional logging  (visible if started from terminal)
 checkFreeSpace=False   # check fee space at GUI start (visible if started from terminal)
 
