@@ -47,6 +47,12 @@ The modulation plan will show up in the upper center part of the GUI window.
 
 ## Modulating
 
-## Next
+Repeat the previous steps for all circuits you want to modulate.
+Once all the desired modulations are added to the playlist, click the green `RUN` button just to its right.
+It is not recommended to run different modulations simultaneously.
+
+The modulation is performed automatically and as it progresses the selected circuits' currents as well as the measured tunes for each beam are displayed in the lower center part of the GUI.
+
+When the modulation is finished it will show up in the `MODULATIONS` tab of the lower center part of the GUI, ready to be analyzed.
 
 [kmod_measurements]: ../../measurements/procedures/kmod.md
