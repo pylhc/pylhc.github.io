@@ -3,7 +3,6 @@
 
 This page compiles various published papers, reports, and MD notes from OMC team members.
 
-
 ???+ info "Adding New Entries"
     To add new entries, please use an `abstract` admonition:
 
@@ -19,9 +18,9 @@ This page compiles various published papers, reports, and MD notes from OMC team
 
 ## Journal Publications
 
-### 2024
+### 2024 Papers
 
-### 2023
+### 2023 Papers
 
 ??? abstract "First Operational Dodecapole Correction in the LHC, `J. Dilly et al.`, [Phys. Rev. Accel. Beams 26, 121001, 2023](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.121001){target=_blank}"
     ```
@@ -58,7 +57,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2022
+### 2022 Papers
 
 ??? abstract "Prospects for Beam-Based Study of Dodecapole Nonlinearities in the CERN High-Luminosity Large Hadron Collider, `E. H. Maclean, F.S. Carlier, J. Dilly, M. Le Garrec, M. Giovannozzi, and R. Tomás`, [Eur. Phys. J. Plus (2022) 137:1249](https://link.springer.com/article/10.1140/epjp/s13360-022-03367-2){target=_blank}"
     ```
@@ -94,7 +93,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2021
+### 2021 Papers
 
 ??? abstract "Supervised Learning-Based Reconstruction of Magnet Errors in Circular Accelerators", `E. Fol, R. Tomás and G. Franchetti`, [Eur. Phys. J. Plus (2021) 136:365](https://link.springer.com/article/10.1140/epjp/s13360-021-01348-5){target=_blank}"
     ```
@@ -112,7 +111,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2020
+### 2020 Papers
 
 ??? abstract "Detection of Faulty Beam Position Monitors Using Unsupervised Learning, `E. Fol, R. Tomás, J. Coello de Portugal, and G. Franchetti`, [Phys. Rev. Accel. Beams 23, 102805, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.102805){target=_blank}"
     ```
@@ -311,7 +310,8 @@ This page compiles various published papers, reports, and MD notes from OMC team
       url = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.23.011001}
     }
     ```
-### 2019
+
+### 2019 Papers
 
 ??? abstract "HE-LHC: The High-Energy Large Hadron Collider, `A. Abada et al.`, [Eur. Phys. J. Spec. Top. **228**, 2019](https://doi.org/10.1140/epjst/e2019-900088-6){target=_blank}"
     ```
@@ -441,7 +441,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2018
+### 2018 Papers
 
 ??? abstract "Towards Future Circular Colliders, `R. Tomas, M. Benedikt, M. Hofer, J. Keintzel, and F. Zimmermann`, [SISSA Medialab **321**, 2018](https://pos.sissa.it/321/268){target=_blank}"
     ```
@@ -582,7 +582,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2017
+### 2017 Papers
 
 ??? abstract "Local Correction of Quadrupole Errors at LHC Interaction Regions Using Action and Phase Jump Analysis on Turn-By-Turn Beam Position Data, `J. Cardona, A. García Bonilla, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111004){target=_blank}"
     ```
@@ -740,7 +740,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2016
+### 2016 Papers
 
 ??? abstract "High Luminosity LHC: Challenges and Plans, `G. Arduini et al.`, [J. Inst. **11**, 2016](http://stacks.iop.org/1748-0221/11/i=12/a=C12081){target=_blank}"
     ```
@@ -933,7 +933,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2015
+### 2015 Papers
 
 ??? abstract "First Measurement and Correction of Nonlinear Errors in the Experimental Insertions of the CERN Large Hadron Collider, `E. Maclean, R. Tomás, M. Giovannozzi, and T. Persson`, [Phys.Rev. ST Accel.Beams **18**, 2015](https://doi.org/10.1103/PhysRevSTAB.18.121002){target=_blank}"
     ```
@@ -986,7 +986,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2014
+### 2014 Papers
 
 ??? abstract "Mitigation of Ground Motion Effects in Linear Accelerators via Feed-Forward Control, `J. Pfingstner et al.`, [Phys. Rev. ST Accel. Beams **17**, 2014](https://link.aps.org/doi/10.1103/PhysRevSTAB.17.122801){target=_blank}"
     ```
@@ -1208,7 +1208,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2013
+### 2013 Papers
 
 ??? abstract "Application of Independent Component Analysis to AC Dipole Based Optics Measurement and Correction at the Relativistic Heavy Ion Collider, `X. Shen et al.`, [Phys. Rev. ST Accel. Beams **16**, 2013](https://link.aps.org/doi/10.1103/PhysRevSTAB.16.111001){target=_blank}"
     ```
@@ -1276,7 +1276,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2012
+### 2012 Papers
 
 ??? abstract "A Large Hadron Electron Collider at CERN Report on the Physics and Design Concepts for Machine and Detector, `J. Fernandez et al.`, [J. Phys. G: Nucl. Part. Phys. **39**, 2012](https://doi.org/10.1088\%2F0954-3899\%2F39\%2F7\%2F075001){target=_blank}"
     ```
@@ -1332,7 +1332,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2011
+### 2011 Papers
 
 ??? abstract "Response of Colliding Beam-Beam System to Harmonic Excitation Due to Crab-Cavity Rf Phase Modulation, `K. Ohmi et al.`, [Phys. Rev. ST Accel. Beams **14**, 2011](https://link.aps.org/doi/10.1103/PhysRevSTAB.14.111003){target=_blank}"
     ```
@@ -1368,7 +1368,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2010
+### 2010 Papers
 
 ??? abstract "LHC Optics Model, Measurements and Corrections, `R. Tomás et al.`, 2010, URL: [https://cds.cern.ch/record/1269904](https://cds.cern.ch/record/1269904){target=_blank}"
     ```
@@ -1433,7 +1433,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2009
+### 2009 Papers
 
 ??? abstract "Beam Dynamics Aspects of Crab Cavities in the CERN Large Hadron Collider, `Y. Sun et al.`, [Phys. Rev. ST Accel. Beams **12**, 2009](https://link.aps.org/doi/10.1103/PhysRevSTAB.12.101002){target=_blank}"
     ```
@@ -1483,7 +1483,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2007
+### 2007 Papers
 
 ??? abstract "Emittance Sharing and Exchange Driven by Linear Betatron Coupling in Circular Accelerators, `A. Franchi, E. Métral, and R. Tomás`, [Phys. Rev. ST Accel. Beams **10**, 2007](https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.10.064003){target=_blank}"
     ```
@@ -1536,7 +1536,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2006
+### 2006 Papers
 
 ??? abstract "Nonlinear Optimization of Beam Lines, `R. Tomás`, [Phys. Rev. ST Accel. Beams **9**, 2006](https://link.aps.org/doi/10.1103/PhysRevSTAB.9.081001){target=_blank}"
     ```
@@ -1554,7 +1554,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2005
+### 2005 Papers
 
 ??? abstract "Measurement of Global and Local Resonance Terms, `R. Tomás et al.`, [Phys. Rev. ST Accel. Beams **8**, 2005](https://link.aps.org/doi/10.1103/PhysRevSTAB.8.024001){target=_blank}"
     ```
@@ -1607,7 +1607,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2004
+### 2004 Papers
 
 ??? abstract "Decoherence of a Longitudinally Kicked Beam With Chromaticity, `G. Rumolo, and R. Tomás`, [Nucl. Instrum. Methods Phys. Res **528**, 2004](http://www.sciencedirect.com/science/article/pii/S0168900204009830){target=_blank}"
     ```
@@ -1644,7 +1644,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-### 2002
+### 2002 Papers
 
 ??? abstract "Normal Form of Particle Motion Under the Influence of an AC Dipole, `R. Tomás`, [Phys. Rev. ST Accel. Beams **5**, 2002](https://link.aps.org/doi/10.1103/PhysRevSTAB.5.054001){target=_blank}"
     ```
@@ -1686,16 +1686,16 @@ This page compiles various published papers, reports, and MD notes from OMC team
           url           = "https://cds.cern.ch/record/2290899",
     }
     ```
+
 ## MD Notes
 
 ### Run III
 
-#### 2024
+#### 2024 Notes
 
-#### 2023
+#### 2023 Notes
 
-#### 2022
-
+#### 2022 Notes
 
 ??? abstract "MD6864 --- Decapole Studies at Injection, `M. Le Garrec et al.`, 2023, URL: [CERN-ACC-NOTE-2023-0018](https://cds.cern.ch/record/2879070){target=_blank}"
     ```
@@ -1726,13 +1726,11 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-#### 2021
-
+#### 2021 Notes
 
 ### Run II
 
-#### 2018
-
+#### 2018 Notes
 
 ??? abstract "Report From LHC MD 3312: Replicating HL-LHC DA, `J. Dilly et al.`, 2022, URL: [CERN-ACC-NOTE-2022-0021](https://cds.cern.ch/record/2824571){target=_blank}"
     ```
@@ -1810,7 +1808,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
-#### 2017
+#### 2017 Notes
 
 ??? abstract "MD 2563: Optics Measurement and Corrections with Half Integer Tune, `A. Wegscheider et al.`, [CERN-ACC-NOTE-2018-0055](https://cds.cern.ch/record/2632258){target=_blank}"
     ```
