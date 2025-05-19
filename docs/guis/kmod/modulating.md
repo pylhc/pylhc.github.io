@@ -23,7 +23,7 @@ In the list below select the circuits to be modulated.
 
 ## Choosing Settings
 
-Once the desired circuits are selected, move on to the `Settings` sectoion just below and choose:
+Once the desired circuits are selected, move on to the `Settings` section just below and choose:
 
 - The modulation waveform (`Sinusoidal` or `Rectangular`).
 - The number of modulation periods.
