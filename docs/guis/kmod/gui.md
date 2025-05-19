@@ -32,9 +32,8 @@ After opening, the GUI should look like this:
 
 The following pages are available:
 
-- [Performing a Modulation](modulating.md) for how to do Kmod at an IP or a single circuit.
-- [Extracting Data](extracting.md) for how to retrieve previous modulation data from `NXCALS`.
-- [Analyzing Data](analyzing.md) for how to analyze the modulation data and export results.
+- [Performing a Modulation](modulating.md) for how to select circuits and settings and running modulations.
+- [Analyzing Data](analyzing.md) for how to retrieve previous modulations from `NXCALS`, analyze any modulation data and export results.
 
 [gui_basics]: ../about.md#running-in-the-ccc-in-2025
 [kmod_method]: ../../measurements/physics/kmod.md

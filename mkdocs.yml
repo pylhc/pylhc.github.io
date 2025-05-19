@@ -170,8 +170,7 @@ nav:
     - Kmod GUI:
       - About: guis/kmod/gui.md
       - Performing a Modulation: guis/kmod/modulating.md
-      - Extracting Data: guis/kmod/full_ip_trim.md
-      - Analyzing Data: guis/kmod/individual_modulation.md
+      - Analyzing Modulations: guis/kmod/analyzing.md
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
     - Developing the GUIs:
