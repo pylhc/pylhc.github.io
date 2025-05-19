@@ -25,7 +25,7 @@ After opening, the GUI should look like this:
 
 <figure>
   <center>
-  <img src="../../assets/images/kmod_gui/kmod_landing_page.png" width="85%" alt="Kmod GUI landing page" />
+  <img src="../../assets/images/kmod_gui/default_view.png" width="85%" alt="Kmod GUI landing page" />
   <figcaption> Kmod GUI Landing Page </figcaption>
   </center>
 </figure>
