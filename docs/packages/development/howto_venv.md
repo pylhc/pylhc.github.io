@@ -58,7 +58,7 @@ To make the command line tools available in the current shell, `source` the `set
 source dist_location/base/2020.11/setup.sh
 ```
 
-You should see a confirmation message output that reads: 
+You should see a confirmation message output that reads:
 ```
 =>  Acc-Py base 2020.11 is now active within this shell.
 ```
@@ -97,7 +97,7 @@ To use the environment's Python, one can either:
 - First `source /path/to/environment/bin/activate` then call `python`.
 - Call the full path to the python executable `/path/to/environment/bin/python` directly.
 
-[cern_internal_websites]: ../../howto/teleworking/access.md#accessing-cern-internal-websites 
+[cern_internal_websites]: ../../resources/remote_access.md#accessing-cern-internal-websites
 
 *[GPN]: CERN General Public Network
 *[PyPi]: Default Python Package Index
