@@ -11,7 +11,7 @@ Of these, only the Beta-Beat GUI is currently developed by the team.
 ## Running the GUIs
 
 The GUIs can be started from your development environment or via deployed `.jnlp` from the archives:
-    
+
 === "Beta-Beat-OMC3"
 
     - Latest [Beta-Beating production version][prod_bbgui_omc3]{target=_blank}.
@@ -26,7 +26,7 @@ The GUIs can be started from your development environment or via deployed `.jnlp
     
 === "Kmod"
 
-    The K-mod GUI is now a Python app published with `acc-py`, and can be run with:
+    The K-modulations GUI is now a Python app published with `acc-py`, and can be run with:
     
     ```bash
     /acc/local/share/python/acc-py/apps/acc-py-cli/pro/bin/acc-py app run pykmodlhc
@@ -38,14 +38,13 @@ The GUIs can be started from your development environment or via deployed `.jnlp
     - Latest [Multiturn development version][dev_mtgui]{target=_blank}.
     - Complete [list of releases][releases_mtgui]{target=_blank}.
 
-
 !!! warning
-    Please note that these site are currently available only to devices connected to the CERN network ([workaround][connect_gpn]).
+    Please note these sites are currently available only to devices connected to the CERN network ([see: workaround][connect_gpn]).
 
 Open the `.jnlp` executable inside a browser, or [call it with `jws` from the command line][jws_calls]:
 
 !!! info "Compatibility Issues"
-    Since `javaws` (java web start) makes trouble due to intenal security mechanisms, a replacement named `jws` was developed and has to be used to run the `jlnp` file.
+    Since `javaws` (java web start) causes trouble due to internal security mechanisms, a replacement named `jws` was developed and has to be used to run the `jlnp` file.
     For further information see the [jws Confluence][jws_confluence]{target=_blank .cern_internal} page.
 
 ## Requirements
@@ -66,18 +65,17 @@ The following are required to run the GUIs:
 
 You may encounter the following errors:
 
-#### Running in the CCC in 2025
+### Running in the CCC in 2025
 
 On the CCC terminals, there are some issues related to finding the correct java path,
 which affects `NXCals` extraction.
-
 To avoid this, close all windows and CCMs and then run:
 
 ```bash
 /user/slops/data/LHC_DATA/OP_DATA/Betabeat/launch_ccm.sh
 ```
 
-This script performs the follwowing commands, which could also be done manually in a terminal:
+This script performs the following commands, which could also be done manually in a terminal:
 
 - Create a kerberos ticket: `kinit lhcop`
 - Adapt the path/set `JAVA_HOME` to use the correct java: `export PATH=/bin:$PATH`  and/or `export JAVA_HOME=/usr/java/jdk`  (either should be fine)
@@ -85,8 +83,7 @@ This script performs the follwowing commands, which could also be done manually 
 
 Then select `LHCOP` and launch the Beta-Beat GUI from the new CCM window.
 
-
-#### Problems with execution due to disabled Java
+### Problems with execution due to disabled Java
 
 If you encounter a complaint about `Java` being too old, try using `/mcr/bin/jws`.
 
@@ -101,15 +98,14 @@ If you encounter a complaint about `Java` being too old, try using `/mcr/bin/jws
     /mcr/bin/jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating-omc3/PRO/BetaBeatingOMC3-Control-3t.jnlp
     ```
 
-#### Unspecific Error
+### Unspecific Error
 
 !!! failure
     Any random error
 
-If so, check that you can import `numpy` from the `omc-anaconda-python`.
+If so, check that you can import `numpy` from the `OMC` production Python environment.
 If this leads to the previously raised error, then the permissions are broken.
 Either fix the permissions on `afs` or ask someone to do so for you.
-
 
 *[TN]: Technical Network
 *[LSA]: LHC Software Architecture
