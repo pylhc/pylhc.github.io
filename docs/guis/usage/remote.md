@@ -1,7 +1,6 @@
 
-# GUI's
+# Running Outside of the TN
 
-How to's related to the setup and running of the Gui's
 
 ## Running GUIs Locally
 
@@ -54,7 +53,7 @@ If your internet connection fails, you should still be able to resume your curre
     1. Open `X-Win32 18 Configuration`.
     2. `Manual...` &rarr; `More...` &rarr; `command`.
     3. Target: `"C:\Program Files (x86)\PuTTY_CERN\putty.exe" -ssh -X machine_at_cern.cern.ch`.
-    
+
     Fill out the other fields to your liking.
     You can even create a shortcut on the screen, from the right-click menu on the newly created connection.
 
