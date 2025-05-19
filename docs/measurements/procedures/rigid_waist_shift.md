@@ -5,13 +5,13 @@
 
 ??? info "The Procedure in Short"
 
-      This methods aims to find the MQSX correction settings that would minimize betatron coupling and its impact on beam size *at the IP*.
+      This methods aims to find the MQSX correction settings that would minimize betatron coupling and its impact on beam size _at the IP_.
       The method breaks the symmetry of the optics in the IR and forces local coupling RDTs to leak throughout the machine, which makes them measurable through the $|C^{-}|$.
 
 
       After global corrections are done and trimmed in the machine, one applies a rigid waist shift in a given IR and scans the colinearity knob for the value that minimizes the $|C^{-}|$.
       These settings, when taking away the rigid waist shift, will minimize local coupling and its impact at the IP.
-      Additional info can be found in Felix's 2021 IPAC paper[^SoubeletIPACLocalCouplingCorrection].
+      Additional info can be found in Felix's 2021 IPAC paper[^SoubeletIPACLocalCouplingCorrection] and 2023 PRAB paper[^SoubeletPRABLocalCouplingCorrection].
 
 ## Rigid Waist Shift & LSA Knobs
 
@@ -20,7 +20,7 @@ Some details about the creation of these knobs and their addition in LSA can be 
 
 ### Knob Setting Convention
 
-Two different knobs are used for the waist shift that need to be trimmed in: 
+Two different knobs are used for the waist shift that need to be trimmed in:
 
 - The triplets knob, which generates the waist shift itself.
 - The independent quadrupoles knob (Q4 - Q10), which re-matches the optics.
@@ -34,13 +34,13 @@ The knob setting is defined as follows, with regards to Beam1 (reverse for Beam2
 ### The Knobs in LSA
 
 Since the triplet knob for a unit setting of +$1$ is the exact opposite magnet powering of the knob for a unit setting of -$1$, only a single triplet knob per IP has been added to LSA, which can then be trimmed with a factor of $\pm1$.
-On the other hand, the re-matching quadrupole knobs are specific to a given direction of the shift, so two of them per IP (one per direction) were added to LSA, with the *pos* and *neg* suffixes.
+On the other hand, the re-matching quadrupole knobs are specific to a given direction of the shift, so two of them per IP (one per direction) were added to LSA, with the _pos_ and _neg_ suffixes.
 These should always be trimmed with a factor of $1$.
 
 As a consequence, respect the following rules when applying the knobs below:
 
- - When trimming the triplet knob with a factor of +$1$, use the *pos* re-matching quadrupoles knob.
- - When trimming the triplet knob with a factor of -$1$, use the *neg* re-matching quadrupoles knob.
+- When trimming the triplet knob with a factor of +$1$, use the _pos_ re-matching quadrupoles knob.
+- When trimming the triplet knob with a factor of -$1$, use the _neg_ re-matching quadrupoles knob.
 
 ??? info "LSA Triplets Knobs"
 
@@ -64,10 +64,10 @@ As a consequence, respect the following rules when applying the knobs below:
 
 ??? example "An Example"
     We wish to implement the waist shift at IP1, shifting the waist to the left of IP (for Beam1).
-    To do so we need to apply the *LHCBEAM/MD_ATS_2020-05_04_BX_RigidWaistShift_Triplet_IP1* with a factor of +$1$.
+    To do so we need to apply the _LHCBEAM/MD_ATS_2020-05_04_BX_RigidWaistShift_Triplet_IP1_ with a factor of +$1$.
 
-    Since we used a +$1$ factor on the triplet knob, the corresponding re-matching quadrupoles knobs to use are those with the *pos* suffix, and they should be trimmed with a factor +$1$.
-    The knobs to trim are then: *LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP1pos* and *LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos*.
+    Since we used a +$1$ factor on the triplet knob, the corresponding re-matching quadrupoles knobs to use are those with the _pos_ suffix, and they should be trimmed with a factor +$1$.
+    The knobs to trim are then: _LHCBEAM/MD_ATS_2022_05_04_B1_RigidWaitsShift_IP1pos_ and _LHCBEAM/MD_ATS_2022_05_04_B2_RigidWaitsShift_IP1pos_.
 
 !!! warning "Value of the Waist Shift"
       The waist shift from the generated knobs should be of about 43 to 44cm in either direction.
@@ -77,7 +77,7 @@ As a consequence, respect the following rules when applying the knobs below:
 ## Preliminary Setup
 
 - [ ] <details class="nodeco"><summary>Do Global Corrections</summary>
-      <p> This procedure needs global corrections to be trimmed in the machine first, so optics and *global coupling* should be taken care of beforehand.
+      <p> This procedure needs global corrections to be trimmed in the machine first, so optics and _global coupling_ should be taken care of beforehand.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>**Optional:** Scan the Colinearity Knob to Check Conditions</summary>
@@ -158,13 +158,32 @@ Keep in mind that this does Beam1 and Beam2 at the same time, but different IPs 
 [^SoubeletIPACLocalCouplingCorrection]:
     ??? abstract "Prospect for Interaction Region Local Coupling Correction in the LHC Run 3, `F. Soubelet, and T. Persson, and R. Tomás, and O. Apsimon, and C.P. Welsch`, [International Particle Accelerator Conference, 2021](https://accelconf.web.cern.ch/ipac2021/papers/mopab007.pdf){target=_blank}"
         ```
-        @inproceedings{soubeletProspectInteractionRegion2021,  
+        @inproceedings{soubeletProspectInteractionRegion2021,
           author={Soubelet, F. and Persson, T. and Tomás, R. and Apsimon, O. and Welsch, C.P.},
           booktitle={Proceedings of the 12th International Particle Accelerator Conference},
           title={Prospect for Interaction Region Local Coupling Correction in the LHC Run 3},
           year={2021},
           url={https://accelconf.web.cern.ch/ipac2021/papers/mopab007.pdf},
           doi={10.18429/JACOW-IPAC2021-MOPAB007}
+        }
+        ```
+
+[^SoubeletPRABLocalCouplingCorrection]:
+    ??? abstract "Rigid Waist Shift: A New Method for Local Coupling Corrections in the LHC Interaction Regions, `F. Soubelet, T. Persson, R. Tomás, O. Apsimon and C. Welsch`, [Phys. Rev. Accel. Beams 25,     051001, 2023](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.051001){target=_blank}"
+        ```
+        @article{Soubelet2023,
+          author    = {Soubelet, Felix and Persson, Tobias and Tomás, Rogelio and Apsimon, Oznur and Welsch, Carsten P.},
+          doi       = {10.1103/PhysRevAccelBeams.26.051001},
+          issue     = {5},
+          journal   = {Phys. Rev. Accel. Beams},
+          month     = {May},
+          numpages  = {13},
+          pages     = {051001},
+          publisher = {American Physical Society},
+          title     = {Rigid waist shift: A new method for local coupling corrections in the LHC interaction regions},
+          url       = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.051001},
+          volume    = {26},
+          year      = 2023
         }
         ```
 
