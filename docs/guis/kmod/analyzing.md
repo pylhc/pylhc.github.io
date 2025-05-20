@@ -70,6 +70,8 @@ The GUI handles the structure among IPs, planes etc. and just needs to be provid
     We have the convention of exporting analysis data to a `Kmod` folder in the location of the day for measurements, which is set by the `Beta-Beat` GUI.
     For a given day this would be: `/user/slops/data/LHC_DATA/OP_DATA/Betabeat/YYYY-MM-DD/Kmod`.
 
+    One should then make a subfolder for the export of the modulation, e.g. `.../Kmod/IP1_60cm`.
+
 Select a directory (or create one with the folder button at the top right) and click `Choose`.
 
 <figure>
