@@ -65,9 +65,8 @@ These files store the magnet names and corresponding correction strengths.
 
 They are also displayed in the [Correction Panel](correction_panel.md).
 
-
 ### Optics Plotting
 
-* RDT and CRDT plots are added dynamically depending on the files present in the respective folders.
-* Nicer names and more structure in the tree.
-* Backend was rewritten, so it is now more modular and easier to add new plot-types.
+- RDT and CRDT plots are added dynamically depending on the files present in the respective folders.
+- Nicer names and more structure in the tree.
+- Backend was rewritten, so it is now more modular and easier to add new plot-types.
