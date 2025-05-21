@@ -185,12 +185,16 @@ on how to optimize the analysis and only need to be applied where necessary.
           which might differ a bit from the actual window if `Autotunes` are used.
           </p>
           <figure>
-              <img src="../../assets/images/amplitude_detuning_procedure/tune_settings.png">
+              <center>
+              <img src="../../assets/images/amplitude_detuning_procedure/tune_settings.png" alt="Tune settings panel">
               <figcaption>Tune settings.</figcaption>
+              </center>
           </figure>
           <figure>
-              <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/FrequencyChart_tune_tolerance.png">
+              <center>
+              <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/FrequencyChart_tune_tolerance.png" alt="Tune tolerance window">
               <figcaption>Approximate tolerance window, shown in blue for the horizontal and in red for the vertical tune.</figcaption>
+              </center>
           </figure>
           </details>
     - [ ] <details class="nodeco"><summary>Use `Autotunes` and `Nat. Deltas`</summary>
@@ -207,8 +211,10 @@ on how to optimize the analysis and only need to be applied where necessary.
           while the GUI/harpy searches for the natural tune at &Delta; from the driven tune.
           </p>
           <figure>
-              <img src="../../assets/images/amplitude_detuning_procedure/tune_settings.png">
+              <center>
+              <img src="../../assets/images/amplitude_detuning_procedure/tune_settings.png" alt="Tune settings panel">
               <figcaption>Tune settings.</figcaption>
+              </center>
           </figure>
           </details>
     - [ ] <details class="nodeco"><summary>Good Frequency Resolution (`TurnBits > 15`)</summary>
@@ -241,12 +247,16 @@ on how to optimize the analysis and only need to be applied where necessary.
         The following steps describe how to do that.
         </p>
         <figure>
-            <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/data_with_outliers.png">
-            <figcaption>Example of `NATTUNEX` data with outliers.</figcaption>
+          <center>
+          <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/data_with_outliers.png" alt="Example of `NATTUNEX` data with outliers">
+          <figcaption>Example of `NATTUNEX` data with outliers.</figcaption>
+          </center>
         </figure>
         <figure>
-            <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/clean_data.png">
-            <figcaption>Example for clean (but not perfect) `NATTUNEX` data.</figcaption>
+          <center>
+          <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/clean_data.png" alt="Example for clean `NATTUNEX` data">
+          <figcaption>Example for clean (but not perfect) `NATTUNEX` data.</figcaption>
+          </center>
         </figure>
         </details>
     - [ ] <details class="nodeco"><summary>Check Frequency Chart</summary>
@@ -260,8 +270,10 @@ on how to optimize the analysis and only need to be applied where necessary.
         Very helpful when trying to identify where the currently found natural tune is located in the `Frequency Spectrum`,
         is to activate the `Resonance Lines` and select `Nat. Tune (Measured)`, which shows the average natural tunes of all BPMs (of the first selected analysis data).
         <figure>
-            <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/freq_nattune.gif">
-            <figcaption>Show the natural tune in the frequency spectum.</figcaption>
+          <center>
+          <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/freq_nattune.gif" alt="GIF showing the natural tune in the frequency spectum">
+          <figcaption>Show the natural tune in the frequency spectum.</figcaption>
+          </center>
         </figure>
         </p>
         </details>
@@ -283,8 +295,10 @@ on how to optimize the analysis and only need to be applied where necessary.
         <li> Click <code style="color:green">Update Lin-File</code>.
         </ul>
         <figure>
-            <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/update_linfile.gif">
-            <figcaption>How to update the natural tune in the Lin-File.</figcaption>
+          <center>
+          <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/update_linfile.gif" alt="GIF showing the update lin-file functionality">
+          <figcaption>How to update the natural tune in the Lin-File.</figcaption>
+          </center>
         </figure>
         </details>
     - [ ] <details class="nodeco"><summary>Clean wrong BPMs (where applicable)</summary>
@@ -295,8 +309,10 @@ on how to optimize the analysis and only need to be applied where necessary.
         no points are beyond an automatically determined (by the number of points) range.
         In both cases, the majority of the BPMs should already agree on the natural tune and any cleaning step can be undone, either separately in `X` and `Y` or int `both` planes.
         <figure>
-            <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/autoclean_and_revert.gif">
-            <figcaption>`Auto Clean` and `Undo` example.</figcaption>
+          <center>
+          <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/autoclean_and_revert.gif" alt="GIF showing the `Auto Clean` and `Undo` functionality">
+          <figcaption>`Auto Clean` and `Undo` example.</figcaption>
+          </center>
         </figure>
         </p></details>
     - [ ] <details class="nodeco"><summary>Clean wrong Measurements (where applicable)</summary>
@@ -339,8 +355,10 @@ on how to optimize the analysis and only need to be applied where necessary.
     This plotting is also done in `python`, resulting in `matplotlib` windows to pop up and `plot.ampdet_dQ*d2J*.pdf` files to appear in the optics result directory.
     </p>
     <figure style="width:80%;">
-        <img src="../../assets/images/amplitude_detuning_procedure/ampdet_analysis_window.png">
-        <figcaption>The amplitude detuning analysis window.</figcaption>
+      <center>
+      <img src="../../assets/images/amplitude_detuning_procedure/ampdet_analysis_window.png" alt="Amplitude detuning analysis window">
+      <figcaption>The amplitude detuning analysis window.</figcaption>
+      </center>
     </figure>
     </details>
     - [ ] <details class="nodeco"><summary>With BBQ correction</summary>
