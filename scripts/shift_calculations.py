@@ -128,8 +128,16 @@ def calculate_shift_parts(start_time: datetime, end_time: datetime) -> dict[str,
 
         # hours on this day
         day_end = (current_time + timedelta(days=1)).replace(hour=0, minute=0, second=0)
-        work_start = current_time.replace(**WORK_START_TIME)
-        work_end = current_time.replace(**WORK_END_TIME)
+        work_start = current_time.replace(
+            hour=WORK_START_TIME["hour"],
+            minute=WORK_START_TIME["minute"],
+            second=WORK_START_TIME["second"]
+        )
+        work_end = current_time.replace(
+            hour=WORK_END_TIME["hour"],
+            minute=WORK_END_TIME["minute"],
+            second=WORK_END_TIME["second"]
+        )
 
         if current_time < work_start:
             # difference to work starting time (or shift)
@@ -203,7 +211,7 @@ def test_working_hours_single_day():
 
 # Main --------------------------------------------------------------------------
 
-def calculate_shifts(file_path: str | Path, shift_type: str  = None) -> dict[str, timedelta]:
+def calculate_shifts(file_path: str | Path, shift_type: str  | None = None) -> dict[str, timedelta]:
     """Calculate the shifts from Start/End Date columns of the first markdown table in a given file.
 
     Args:
@@ -243,7 +251,7 @@ def calculate_shifts(file_path: str | Path, shift_type: str  = None) -> dict[str
     return parts
 
 
-def manual_shifts(file_path: str | Path, shift_type: str = None) -> dict[str, float]:
+def manual_shifts(file_path: str | Path, shift_type: str | None = None) -> dict[str, float]:
     """Calculate the shifts from Shifts column of the first markdown table in a given file.
 
     Args:
@@ -269,7 +277,7 @@ def manual_shifts(file_path: str | Path, shift_type: str = None) -> dict[str, fl
         if not entry[COLUMN_SHIFTS]:
             continue
 
-        shift_split = re.findall(fr"([\d.]+)([WH]N?)", entry[COLUMN_SHIFTS])
+        shift_split = re.findall(r"([\d.]+)([WH]N?)", entry[COLUMN_SHIFTS])
         for value, key in shift_split:
             parts[key] += float(value)
 
@@ -280,7 +288,7 @@ def manual_shifts(file_path: str | Path, shift_type: str = None) -> dict[str, fl
     return parts
 
 
-def plot_results(parts, title: str = "", output_path: str | Path = None) -> Figure:
+def plot_results(parts, title: str = "", output_path: str | Path | None = None) -> Figure:
     """Plot the results of a calculation.
 
     Args:
@@ -324,7 +332,7 @@ def plot_results(parts, title: str = "", output_path: str | Path = None) -> Figu
 
 
 def plot_all_machines_in_year(
-    year: int, additional: dict[str, float], calculate: bool = False, output_path: str | Path = None
+    year: int, additional: dict[str, float], calculate: bool = False, output_path: str | Path | None = None
     ) -> Figure:
     """Do a pychart for all machines of a specific year.
 
