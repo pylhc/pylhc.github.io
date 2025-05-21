@@ -23,7 +23,7 @@ As both IDEs require [CommonBuildNextGeneration (CBNG)][cbng_wiki]{target=_blank
     to the specified location `/user/pcrops/devtools/CBNG/PRO/`
 
     A more extensive guide can be found in the [CBNG Wiki for IDEA integration][cbng_idea]{target=_blank}.
-    Alternatively, run CBNG directly [from the commandline](#cbng-from-commandline) instead.
+    Alternatively, run CBNG directly from the commandline instead.
 
 === "CBNG from the Command Line"
     Another sometimes easier alternative that works with any IDE is to run CBNGs `bob` with the desired command (e.g. `build`, `dependencies`, `eclipse`, `idea`) in the folder of the project from the commandline.
