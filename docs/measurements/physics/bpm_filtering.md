@@ -42,8 +42,10 @@ The content of this page has been converted from the presentation given as ["OMC
 * **Good hint:** <span class="manual-related">Filtering them solves observed issues</span>.
 
 <figure>
-  <img src="../../assets/images/bpm_filtering/BetaBeating.png">
+  <center>
+  <img src="../../assets/images/bpm_filtering/BetaBeating.png" alt="Beta-beating with large errorbars" />
   <figcaption>Observed Beta-Beating with some large errorbars (e.g. IP1 and IP5) and unrealistic beating (around 2200m in Y)</figcaption>
+  </center>
 </figure>
 
 ## Isolation Forest
