@@ -19,7 +19,7 @@
       - `Linux` through `PyPI`.
       - `Linux` and `macOS` through `conda-forge`.
 
-Installation is easily done via pip:
+Installation is easily done via `pip`:
 
 ```bash
 python -m pip install pylhc-submitter

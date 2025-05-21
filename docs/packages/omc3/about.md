@@ -9,7 +9,7 @@ The `omc3` repository is the new version of our codes, refactored and rewritten 
 
 ## Installing
 
-Installation is easily done via pip:
+Installation is easily done via `pip`:
 
 ```bash
 python -m pip install omc3
