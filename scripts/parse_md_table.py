@@ -21,19 +21,19 @@ def parse_file(file_path: Path) -> pd.DataFrame:
     return df
 
 
-def parse_line(line: str):
+def parse_line(line: str) -> list[str]:
     """Convert a single line of a table into a list of parts.
 
     Args:
         line (str): Line of the table.
 
     Returns:
-        List[str]: List of the table row entries.
+        list[str]: List of the table row entries.
     """
     return [part.strip() for part in line.split("|")][1:-1]
 
 
-def get_table_parts(content: Sequence[str]):
+def get_table_parts(content: Sequence[str]) -> tuple[list[str], list[str]]:
     """ Splits a markdown table into header and data. """
     header = []
     data = []
