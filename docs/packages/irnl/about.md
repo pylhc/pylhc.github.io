@@ -20,7 +20,7 @@ After installing, codes can be run with either `python -m irnl-rdt-correction --
 [documentation]: https://pylhc.github.io/irnl_rdt_correction/
 
 [^OBruning]:
-    ??? abstract "Dynamic aperture studies for the LHC separation dipoles, `O. Bruning et al. `, [https://cds.cern.ch/record/742967](https://cds.cern.ch/record/742967){target=_blank}"
+    ??? abstract "Dynamic aperture studies for the LHC separation dipoles, `O. Bruning et al.`, [https://cds.cern.ch/record/742967](https://cds.cern.ch/record/742967){target=_blank}"
         ```
         @techreport{Brüning:742967,
             author        = "Brüning, Oliver Sim and Fartoukh, Stéphane David and
