@@ -3,9 +3,9 @@
 The `Optics Panel` provides graphical interface to compare the computed optics to the nominal model.
 There are in total three main tabs for the optics panel:
 
-- The [Optics](#Optics Tab) tab, where a tree menu (on the left) provides many physical properties to be displayed.
-- The [Segment-by-Segment: Segment](#Segment-by-Segment: Segment Tab) tab, to have a look at properties in a pre-defined segment of the machine.
-- The [Segment-by-Segment: Element](#Segment-by-Segment: Element Tab) tab, to have a look at properties for a pre-defined list of elements in the machine.
+- The [Optics](#optics-tab) tab, where a tree menu (on the left) provides many physical properties to be displayed.
+- The [Segment-by-Segment: Segment](#segment-by-segment-segment-tab) tab, to have a look at properties in a pre-defined segment of the machine.
+- The [Segment-by-Segment: Element](#segment-by-segment-element-tab) tab, to have a look at properties for a pre-defined list of elements in the machine.
 
 ## Optics Tab
 
