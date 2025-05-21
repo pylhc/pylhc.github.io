@@ -680,7 +680,6 @@ For this, `omc3` provides the `model_creator` entrypoint, which allows you to ru
     The out-of-the-box supported machines for model creation are `lhc`, `ps` and `psbooster`, machines we work on.
     While the `skekb`, `JPARC`, `petra` and `iota` have accelerator classes, no model creator has been implemented for them yet.
     It is possible to extend this list for your machine by defining an appropriate `Accelerator` class as well as a model creator.
-    See [this guide][new_machine_guide] for implementation steps.
 
 In our example, we would like to compare our data to the nominal model of the 2018 LHC.
 Using the script to create a nominal model of the 2018 LHCB1, with the machine configuration and opticsfile used in our example, goes as:
@@ -875,5 +874,4 @@ interaction_point_y.tfs     phase_x.tfs
 [plot_spectrum]: https://pylhc.github.io/omc3/entrypoints/plotting.html#plot-spectrum
 [normal_forms]: https://cds.cern.ch/record/333077/files/p93.pdf
 [hole_in_one]: https://pylhc.github.io/omc3/entrypoints/analysis.html#omc3.hole_in_one.hole_in_one_entrypoint
-[new_machine_guide]: know_how.md#how-to-create-files-for-your-file-accelerator
 [model_creator]: https://pylhc.github.io/omc3/entrypoints/other.html#model-creator
