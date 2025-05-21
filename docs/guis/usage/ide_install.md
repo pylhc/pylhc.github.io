@@ -50,7 +50,7 @@ Firstly, you should clone the desired repository to an adequate location on your
 
 === "Kmod GUI"
     ```bash
-    git clone https://gitlab.cern.ch/acc-co/lhc/lhc-app-kmod
+    git clone https://gitlab.cern.ch/gtrad/pyKmodLHC
     ```
 
 You then simply import the project into your IDE.
