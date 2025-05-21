@@ -58,7 +58,7 @@ You then simply import the project into your IDE.
 ??? warning "IntelliJ Specificity"
     For IntelliJ, you might have to:
 
-    1. Create an empty `build.gradle` file if you want to trigger a gradle import dialogue where you need to choose **use local gradle distribution** and set the **gradle home** to `/user/pcrops/devtools/CBNG/PRO/bin/bob` ([as above](#gradlehome))
+    1. Create an empty `build.gradle` file if you want to trigger a gradle import dialogue where you need to choose **use local gradle distribution** and set the **gradle home** to `/user/pcrops/devtools/CBNG/PRO/bin/bob` (as above).
     2. Go to `File -> Project Structure ... -> Modules` and set the **Dependencies storage format** to `Eclipse (.classpath)`.
     This one you should check on a regular basis, as it tends to reset itself.
 
