@@ -131,6 +131,6 @@ Either fix the permissions on `afs` or ask someone to do so for you.
 [jws]: https://wikis.cern.ch/display/DVTLS/jws+-+a+replacement+for+javaws
 
 [mounting_resources]: ../howto/setup/shared_filesystems.md#mounting-tn-resources-on-gn-machines
-[connect_gpn]: ../howto/teleworking/access.md#accessing-cern-internal-websites
+[connect_gpn]: ../resources/remote_access.md#accessing-cern-internal-websites
 [sshuttle_method]: ../howto/setup/guis.md#running-guis-locally
 [jws_calls]: ../resources/links.md#jws-programs
