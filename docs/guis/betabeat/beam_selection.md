@@ -29,7 +29,7 @@ This **needs to have omc3 installed as a package**.
 See [omc3 on github][omc3_github]{target=_blank}.
 
 ```bash
-pip install git+https://github.com/pylhc/omc3.git
+python -m pip install git+https://github.com/pylhc/omc3.git
 ```
 
 This is because python calls are now made by module, i.e.:
