@@ -47,12 +47,16 @@
         See Info-box "Tune Deltas" below.
         </p>
         <figure class="leftFigure">
-            <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/FrequencyChart_one_tune_not_found.png">
-            <figcaption>Bad Spectrum.</figcaption>
+          <center>
+          <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/FrequencyChart_one_tune_not_found.png" alt="A  bad spectrum">
+          <figcaption>Bad Spectrum.</figcaption>
+          </center>
         </figure>
         <figure class="rightFigure">
-            <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/FrequencyChart_both_tunes_found.png">
-            <figcaption>Good Spectrum.</figcaption>
+          <center>
+          <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/FrequencyChart_both_tunes_found.png" alt="A  good spectrum">
+          <figcaption>Good Spectrum.</figcaption>
+          </center>
         </figure>
         </details>
     - [ ] Repeat until the spectrum looks usable
@@ -63,7 +67,6 @@
     Horizontal: -0.009,<br>
     Vertical: +0.007.
 
-
 ### Actual Measurement
 
 !!! warning "When kicking with crossing angles"
@@ -73,7 +76,6 @@
     Losses in these IPs can appear with minor amplitude change, so **keep the amplitude increase between kicks small**.
     If you see losses in the IPs with crossing angles, but you are not yet happy with your maximum amplitude and you still have a lot of beam intensity left,
     you can kick at the same amplitude a few times and hope that the losses go down (the outermost particles are scraped) and then (carefully) continue increasing amplitude again.
-
 
 - [ ] <details class="nodeco"><summary>Kicks in the vertical plane</summary>
       <p>
