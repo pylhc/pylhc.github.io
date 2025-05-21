@@ -1,7 +1,6 @@
 
 # Running Outside of the TN
 
-
 ## Running GUIs Locally
 
 To use the [KMod GUI][kmod_gui] or the `KnobPanel` in the [Beta-Beat GUI][bb_gui], it is required to be on the TN, as they need to connect to LSA.
