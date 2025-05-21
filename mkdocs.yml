@@ -169,11 +169,8 @@ nav:
       - BetaBeat.src: guis/betabeat/betabeatsource.md
     - Kmod GUI:
       - About: guis/kmod/gui.md
-      - Loading a Model: guis/kmod/load_model.md
-      - Full IP Trim: guis/kmod/full_ip_trim.md
-      - Magnet Modulation: guis/kmod/individual_modulation.md
-      - Analyzing Trim Data: guis/kmod/trim_analysis.md
-      - Using Auto Trim: guis/kmod/autotrim.md
+      - Performing a Modulation: guis/kmod/modulating.md
+      - Analyzing Modulations: guis/kmod/analyzing.md
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
     - Usage and Development:
