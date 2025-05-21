@@ -201,8 +201,8 @@ nav:
         - Git: resources/git_setup.md
         - Resources: resources/computing.md
         - Remote Access: resources/remote_access.md
-        - ↪ TW tricks from IT: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
         - Shared Filesystems: resources/shared_filesystems.md
+        - ↪ TW tricks from IT: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
       - How To's:
         - Editing this Wiki: resources/wiki.md
         - ↪ CERN Docs: https://how-to.docs.cern.ch/
