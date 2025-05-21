@@ -83,5 +83,6 @@ If your internet connection fails, you should still be able to resume your curre
 *[CD]: Continuous Delivery
 *[lxplus]: Linux Public Login User Service
 
+[sshuttle]: https://sshuttle.readthedocs.io/en/stable/
 [kmod_gui]: ../../guis/kmod/gui.md
 [bb_gui]: ../../guis/betabeat/gui.md
