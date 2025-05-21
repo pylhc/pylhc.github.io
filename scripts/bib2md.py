@@ -10,6 +10,8 @@ This makes only sense, if you have your citekeys sorted by year!
 
 Requires: titlecase
 """
+from __future__ import annotations
+
 import re
 from pathlib import Path
 from typing import Iterable
@@ -42,11 +44,11 @@ TO_REPLACE = {  # to be replaced in the title. First part (key) is case-insensit
 
 
 # Patterns of bib-file:
-type_citekey_pattern = "^\s*@(?P<type>.+){(?P<citekey>.+),\s*$"
-key_value_pattern = "^\s*(?P<key>.*)\s*=\s*{(?P<value>.*)},?\s*$"
+type_citekey_pattern = r"^\s*@(?P<type>.+){(?P<citekey>.+),\s*$"
+key_value_pattern = r"^\s*(?P<key>.*)\s*=\s*{(?P<value>.*)},?\s*$"
 
 
-def main(bibfile: Path, citekeys: Iterable[str] = None, add_year: bool = False):
+def main(bibfile: Path, citekeys: Iterable[str] | None = None, add_year: bool = False):
     """Prints markdown-admonitions for given bibfile and citekeys.
     If no citekeys are given, it prints all.
     """
@@ -95,7 +97,7 @@ def read_bibfile(bibfile: Path) -> dict:
     return collection
 
 
-def print_markdown(collection: dict, citekeys: Iterable[str] = None, add_year: bool = False):
+def print_markdown(collection: dict, citekeys: Iterable[str] | None = None, add_year: bool = False):
     """ Prints the markdown entries of the collection-dict of given citekeys.
     If citekeys is None, all are printed.
     `add_year` adds a year header, whenever the year changes between entries. """
