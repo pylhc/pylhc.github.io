@@ -90,7 +90,7 @@ options:
 
 Example: All bad BPMs from 2025, written into file and all &gt; 50% in terminal
 
-```
+```bash
 python -m omc3.scripts.bad_bpms_summary --dates 2025-* \
                                        --accel_glob LHCB* \
                                        --outfile bad_bpms_2025.txt \
