@@ -1,8 +1,10 @@
 # The Beam Selection Window
 
 <figure>
+  <center>
   <img src="../../assets/images/betabeat_gui/beam_selection.png" width="100%" alt="The beam selection window" />
   <figcaption>The Beam Selection Window.</figcaption>
+  <center>
 </figure>
 
 The Beam Selection Window is your entry point to the GUI.
