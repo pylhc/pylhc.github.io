@@ -37,7 +37,7 @@ Clicking `Go` will call for another python script and take you to the `Segment-b
 ## Segment-by-Segment: Element Tab
 
 Pre-defined lists of elements can be selected to view properties across said elements.
-The working is similar to the one for different [segments](#Segment-by-Segment: Segment).
+The working is similar to the one for different [segments](#segment-by-segment-segment-tab).
 
 !!! todo
     Include a screenshot of the element tab.
