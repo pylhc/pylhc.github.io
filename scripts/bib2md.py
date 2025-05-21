@@ -10,9 +10,10 @@ This makes only sense, if you have your citekeys sorted by year!
 
 Requires: titlecase
 """
+import re
 from pathlib import Path
 from typing import Iterable
-import re
+
 from titlecase import titlecase
 
 # Some tuning parameters:
@@ -170,7 +171,7 @@ def _format_authors(raw):
     if len(authors) <= MAX_AUTHORS:
         return f'{", ".join(authors[:-1])}, and {authors[-1]}'
 
-    return f'{authors[0]} et al.' 
+    return f'{authors[0]} et al.'
 
 
 def _switch_names(formal_name):
