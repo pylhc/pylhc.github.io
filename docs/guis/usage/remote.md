@@ -35,7 +35,7 @@ which opens a putty-terminal connected to `lxplus` and starts a `X-Server` in th
   <center>
   <img src="../../assets/images/tricks/putty_and_xserver_cernts.png" width="90%" alt="Putty and Xserver on cernts" />
   <figcaption>Putty and XServer on cernts</figcaption>
-  <center>
+  </center>
 </figure>
 
 Executing any graphical software from this terminal will ask for connection authorization, which you need to approve.
@@ -44,7 +44,7 @@ Executing any graphical software from this terminal will ask for connection auth
   <center>
   <img src="../../assets/images/tricks/allow_xserver_connection.png" width="60%" alt="Approval prompt for a connection to XServer" />
   <figcaption>Approval prompt for a connection to XServer</figcaption>
-  <center>
+  </center>
 </figure>
 
 This way you can run any graphical application smoothly.
