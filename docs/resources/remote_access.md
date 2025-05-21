@@ -12,7 +12,7 @@ ssh -D 8090 username@lxtunnel.cern.ch
 
 The above command opens a tunnel at port `8090` which can be accessed via browser through `localhost:8090`.
 
-## Accessing Journal Papers etc.
+## Accessing Journal Papers
 
 Lots of journals and resources can be accessed via the `CERN ezproxy` by prepending the viewing url with `https://ezproxy.cern.ch/login?url=`.
 See this [website][ezproxy_website]{target=_blank} for a list.
