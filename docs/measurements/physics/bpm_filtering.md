@@ -56,7 +56,12 @@ The content of this page has been converted from the presentation given as ["OMC
 !!! warning "Under Re-evaluation"
     This functionality is currently under re-evaluation and has only been used on a small amount of data in 2021-2024!
 
-![Isolation Forest Example](../../assets/images/bpm_filtering/iforest.png)
+<figure>
+  <center>
+  <img src="../../assets/images/bpm_filtering/iforest.png" width="85%" alt="Isolation forest visualisation" />
+  <figcaption>Isolation Forest Clustering of BPMs Revealing Outliers</figcaption>
+  </center>
+</figure>
 
 [E. Fol - Machine Learning for BPM failure detection](https://indico.cern.ch/event/762124/contributions/3174751/attachments/1740028/2815322/hss_meeting_2410.pdf)<br>
 [E. Fol - Isolation Forest for bad BPMs: performance evaluation](https://indico.cern.ch/event/776442/contributions/3228674/attachments/1759222/2853627/omc_meeting_26nov.pdf)
