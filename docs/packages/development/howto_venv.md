@@ -31,6 +31,7 @@ The default distribution is recommended but installation is identical for other 
 As of writing this walk-through, this corresponds to the `acc-py-2020.11-installer.sh` file.
 The installer itself is an executable to be called from the command line.
 Once the file is downloaded, run it at the command line (you might need to `chmod u+x` the file):
+
 ```bash
 bash acc-py-2020.11-installer.sh
 ```
@@ -54,30 +55,35 @@ You are now done with the installation step.
 ## Creating Virtual Environments with Acc-Py
 
 To make the command line tools available in the current shell, `source` the `setup.sh` script in the installed `Acc-Py` distribution:
+
 ```bash
 source dist_location/base/2020.11/setup.sh
 ```
 
 You should see a confirmation message output that reads:
-```
+
+```bash
 =>  Acc-Py base 2020.11 is now active within this shell.
 ```
 
 You now have access to the `acc-py` command line tool, which you can verify by running `acc-py -h` and checking that you get the help command output.
 The command to create a virtual environment is based on the built-in [venv][venv_module]{target=_blank} module and should feel familiar if you know `venv`.
 To create a virtual environment, run:
+
 ```bash
 acc-py venv /path/to/environment/
 ```
 
 This will create a virtual environment at `/path/to/environment/`.
 To activate this environment, run:
+
 ```bash
 source /path/to/environment/bin/activate
 ```
 
 You can confirm you are running the appropriate Python with `which python`, which should point to `/path/to/environment/bin/python`.
 You can then install packages in this environment with:
+
 ```bash
 python -m pip install <package-name>
 ```
