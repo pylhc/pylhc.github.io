@@ -12,8 +12,6 @@ The content of this page has been converted from the presentation given as ["OMC
 
 ## OMC-Analysis
 
-![BPM vs Owl](../../assets/images/bpm_filtering/bpmvsowl.png)
-
 * To get <span class="omc-emph">reliable</span> and <span class="omc-emph">reproducible</span> optics measurements, we cannot trust all BPM data that we are getting.
 * At <span class="omc-emph">different stages</span> of the code, we try to determine the "trustworthyness".
 * Some BPMs are fully <span class="omc-emph">excluded</span>, others are getting <span class="omc-emph">errorbars</span> based on their <span class="omc-emph">noise-level</span> (which are often used as *weights*, e.g. for correction calculations).
@@ -91,7 +89,5 @@ python -m omc3.scripts.bad_bpms_summary --dates 2025-* \
                                        --outfile bad_bpms_2025.txt \
                                        --print_percentage 50
 ```
-
-![A Bad BPM](../../assets/images/bpm_filtering/badbpm.png)
 
 *[BPM]: Beam Position Monitor
