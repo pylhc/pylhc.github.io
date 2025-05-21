@@ -5,20 +5,20 @@
 !!! todo
     Examples of are missing. Maybe just copy-paste of the `README.md` files in the repository.
 
-### Getting Started
+## Getting Started
 
 The scripts can be browsed via github or the full repository can be obtained either via `git clone https://github.com/pylhc/MESS.git` or downloading the zipped repository.
 
-### Prerequisites
+## Prerequisites
 
 To run the scripts, [MAD-X][madx] is required. If not otherwise stated, all scripts have been tested using MAD-X > 5.05.02.
 
-### Documentation
+## Documentation
 
 - Each script directory contains a ``README``, outlining the basic functionality and notes on possible pitfalls.
 - Excessive use of comments in the MAD-X scripts itself is encouraged.
 
-### Maintainability
+## Maintainability
 
 - The main scripts should be named ``job.madx`` and placed in an accordingly named directory in the directory tree.
 - Supporting files should be uploaded in the script directory. Links to external afs directories should be avoided as files might be modified there or removed.
@@ -40,7 +40,7 @@ To run the scripts, [MAD-X][madx] is required. If not otherwise stated, all scri
 
 ## Authors
 
-* **pyLHC/OMC-Team** - *Working Group* - [pyLHC][omc_team]
+- **pyLHC/OMC-Team** - *Working Group* - [pyLHC][omc_team]
 
 ## License
 
