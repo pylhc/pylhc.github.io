@@ -79,9 +79,8 @@ If everything worked fine, the Gui should now be runnable via the `void main()` 
 * [Accsoft-Eclipse Downloads][accsoft_eclipse]{target=_blank}
 * [Accsoft Eclipse Wiki][accsoft_eclipse_wiki]{target=_blank}
 
-[mounting_tn]: ../../howto/setup/shared_filesystems.md#mounting-tn-resources-on-gn-machines
+[mounting_tn]: ../../resources/shared_filesystems.md#mounting-tn-resources-on-gpn-and-other-machines
 [gui_releases]: releases.md
-
 [idea_download]: https://www.jetbrains.com/idea/download/
 [cbng_wiki]: https://wikis.cern.ch/display/DVTLS/CBNG
 [cbng_eclipse]: https://wikis.cern.ch/display/DVTLS/CBNG+-+Eclipse+Integration
