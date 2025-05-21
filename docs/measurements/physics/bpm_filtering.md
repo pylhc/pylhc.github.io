@@ -1,3 +1,5 @@
+# BPM Filtering
+
 <style>
 .tbt-related { color: var(--color-atlasgreen); font-weight: bold; }
 .svd-related { color: var(--color-cernred); font-weight: bold; }
@@ -6,9 +8,7 @@
 .iforest-related { color: var(--color-cernpurple); font-weight: bold; }
 </style>
 
-
 The content of this page has been converted from the presentation given as ["OMC3 bad BPM detection" on the 31.03.2025](https://indico.cern.ch/event/1531923/) .
-
 
 ## OMC-Analysis
 
@@ -17,7 +17,6 @@ The content of this page has been converted from the presentation given as ["OMC
 * To get <span class="omc-emph">reliable</span> and <span class="omc-emph">reproducible</span> optics measurements, we cannot trust all BPM data that we are getting.
 * At <span class="omc-emph">different stages</span> of the code, we try to determine the "trustworthyness".
 * Some BPMs are fully <span class="omc-emph">excluded</span>, others are getting <span class="omc-emph">errorbars</span> based on their <span class="omc-emph">noise-level</span> (which are often used as *weights*, e.g. for correction calculations).
-
 
 ## Automatic
 
@@ -34,7 +33,6 @@ The content of this page has been converted from the presentation given as ["OMC
 
 ## Manual
 
-
 * <span class="manual-related">KNOWN</span>: Identified <span class="manual-related">manually</span>; sticking out spectrum/optics <span class="manual-related">regularly</span>.
     * <span class="manual-related">Large error bars</span>.
     * <span class="manual-related">Non-sensical</span> data points.
@@ -44,7 +42,6 @@ The content of this page has been converted from the presentation given as ["OMC
         * $\beta$-ratios large.
         * Measure in <span class="manual-related">different optics</span> to <span class="manual-related">confirm BPM issue</span>.
 * **Good hint:** <span class="manual-related">Filtering them solves observed issues</span>.
-
 
 <figure>
   <img src="../../assets/images/bpm_filtering/BetaBeating.png">
@@ -60,7 +57,6 @@ The content of this page has been converted from the presentation given as ["OMC
     This functionality is currently under re-evaluation and has only been used on a small amount of data in 2021-2024!
 
 ![Isolation Forest Example](../../assets/images/bpm_filtering/iforest.png)
-
 
 [E. Fol - Machine Learning for BPM failure detection](https://indico.cern.ch/event/762124/contributions/3174751/attachments/1740028/2815322/hss_meeting_2410.pdf)<br>
 [E. Fol - Isolation Forest for bad BPMs: performance evaluation](https://indico.cern.ch/event/776442/contributions/3228674/attachments/1759222/2853627/omc_meeting_26nov.pdf)
@@ -97,7 +93,5 @@ python -m omc3.scripts.bad_bpms_summary --dates 2025-* \
 ```
 
 ![A Bad BPM](../../assets/images/bpm_filtering/badbpm.png)
-
-
 
 *[BPM]: Beam Position Monitor
