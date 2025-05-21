@@ -23,7 +23,7 @@ It should prevent the appearance of unphysical spikes in the optics functions wh
 Isolation Forest perfroms anomaly detection on the whole set of selected measurements data.
 Clicking on "Detect and remove bad BPMs"-button triggers an external python script which analyses the selected files.
 The output file is written in the TFS format and contains the list of detected bad BPMs is written to the folder of the first selected measurement in the analysis table.
-  
+
 The output can be found in:  `Measurements/.../bad_bpms_iforest_{x,y}`.
 
 During IF-cleaning, the lines corresponding to detected faulty BPMs will be removed from the lin-files.
@@ -33,7 +33,7 @@ After cleaning is finished, the optics function can be computed from the harmoni
 
 <figure>
   <center>
-  <img src="../../assets/images/analysis_panel_cleaning.png" width="65%" />
+  <img src="../../assets/images/analysis_panel_cleaning.png" width="65%" alt="Cleaning before optics analysis" />
   <figcaption> Cleaning before optics analysis </figcaption>
   </center>
 </figure>
