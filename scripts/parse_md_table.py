@@ -5,7 +5,7 @@ import pandas as pd
 
 
 def parse_file(file_path: Path) -> pd.DataFrame:
-    """ Parses a markdown file, containing a shift-table, into a pandas dataframe.
+    """Parses a markdown file, containing a shift-table, into a pandas dataframe.
 
     Args:
         file_path (Path): Path to the markdown file.
@@ -34,7 +34,7 @@ def parse_line(line: str) -> list[str]:
 
 
 def get_table_parts(content: Sequence[str]) -> tuple[list[str], list[str]]:
-    """ Splits a markdown table into header and data. """
+    """Splits a markdown table into header and data."""
     header = []
     data = []
     header_finished = False
