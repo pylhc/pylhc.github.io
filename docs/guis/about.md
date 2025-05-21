@@ -132,5 +132,5 @@ Either fix the permissions on `afs` or ask someone to do so for you.
 
 [mounting_resources]: ../howto/setup/shared_filesystems.md#mounting-tn-resources-on-gn-machines
 [connect_gpn]: ../resources/remote_access.md#accessing-cern-internal-websites
-[sshuttle_method]: ../howto/setup/guis.md#running-guis-locally
+[sshuttle_method]: usage/remote.md#running-guis-locally
 [jws_calls]: ../resources/links.md#jws-programs
