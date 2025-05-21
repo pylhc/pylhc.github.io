@@ -1,4 +1,4 @@
-""" Script to calculate the shifts from the first markdown table in a given file. 
+""" Script to calculate the shifts from the first markdown table in a given file.
 This data can then be plotted with `plot_results`, e.g. for the end-of-year report.
 """
 import re
@@ -10,7 +10,6 @@ from matplotlib import pyplot as plt
 from matplotlib.figure import Figure
 from parse_md_table import parse_file
 
-
 # Check dates ------------------------------------------------------------------
 COLUMN_START = "Start Date"
 COLUMN_END = "End Date"
@@ -18,7 +17,7 @@ COLUMN_SHIFTS = "Shifts"
 COLUMN_TYPE = "Type"
 
 WORK = "W"
-WORK_NIGHT = "WN" 
+WORK_NIGHT = "WN"
 HOLIDAY = "H"
 HOLIDAY_NIGHT = "HN"
 ALL_SHIFTS = (WORK, WORK_NIGHT, HOLIDAY, HOLIDAY_NIGHT)
@@ -105,19 +104,19 @@ def calculate_shift_parts(start_time: datetime, end_time: datetime) -> dict[str,
     """Split the given shift into work hours, holidays/weekends day or night shifts.
 
     Args:
-        start_time (datetime): Start time of the shift 
-        end_time (datetime): End time of the shift 
+        start_time (datetime): Start time of the shift.
+        end_time (datetime): End time of the shift.
 
     Raises:
-        ValueError: In case start_time is later than end_time 
+        ValueError: In case start_time is later than end_time.
 
     Returns:
-        Dict[str, timedelta]: Dictionary of the time deltas. 
+        Dict[str, timedelta]: Dictionary of the time deltas.
 
     """
     if start_time > end_time:
         raise ValueError(f"Start time {start_time} is after end time {end_time}")
-    
+
     time_split = {shift: timedelta() for shift in ALL_SHIFTS}
 
     current_time = start_time
@@ -126,7 +125,7 @@ def calculate_shift_parts(start_time: datetime, end_time: datetime) -> dict[str,
             day_shift, night_shift = WORK, WORK_NIGHT
         else:
             day_shift, night_shift = HOLIDAY, HOLIDAY_NIGHT
-        
+
         # hours on this day
         day_end = (current_time + timedelta(days=1)).replace(hour=0, minute=0, second=0)
         work_start = current_time.replace(**WORK_START_TIME)
@@ -147,7 +146,7 @@ def calculate_shift_parts(start_time: datetime, end_time: datetime) -> dict[str,
             time_split[day_shift] += min(work_end, end_time) - current_time
             current_time = work_end
 
-    return time_split 
+    return time_split
 
 
 def time_delta_to_hours(time_delta: timedelta) -> float:
@@ -171,7 +170,7 @@ def test_timedelta_conversion():
 
 def test_working_hours_friday():
     parts = calculate_shift_parts(
-        start_time=datetime(2023, 10, 27, 16, 0), 
+        start_time=datetime(2023, 10, 27, 16, 0),
         end_time=datetime(2023, 10, 28, 4, 0)
     )
     assert abs(time_delta_to_hours(parts[WORK]) - 1.5) < EPS
@@ -182,7 +181,7 @@ def test_working_hours_friday():
 
 def test_working_hours_monday_wednesday():
     parts = calculate_shift_parts(
-        start_time=datetime(2023, 10, 23, 7, 0), 
+        start_time=datetime(2023, 10, 23, 7, 0),
         end_time=datetime(2023, 10, 25, 16, 0)
     )
     assert abs(time_delta_to_hours(parts[WORK]) - 25.5) < EPS
@@ -193,7 +192,7 @@ def test_working_hours_monday_wednesday():
 
 def test_working_hours_single_day():
     parts = calculate_shift_parts(
-        start_time=datetime(2023, 10, 23, 9, 0), 
+        start_time=datetime(2023, 10, 23, 9, 0),
         end_time=datetime(2023, 10, 23, 16, 0)
     )
     assert abs(time_delta_to_hours(parts[WORK]) - 7) < EPS
@@ -209,10 +208,10 @@ def calculate_shifts(file_path: str | Path, shift_type: str  = None) -> dict[str
 
     Args:
         file_path (str | Path): Path to the markdown file.
-        shift_type (str, optional): Regex to filter shift type. 
+        shift_type (str, optional): Regex to filter shift type.
 
     Returns:
-        Dict[str, timedelta]: Dictionary of the total time deltas separated by 
+        Dict[str, timedelta]: Dictionary of the total time deltas separated by
         the type of hours (working hours, night hours, holidays or weekends).
     """
     file_path = Path(file_path)
@@ -237,7 +236,7 @@ def calculate_shifts(file_path: str | Path, shift_type: str  = None) -> dict[str
         for key, value in shift_split.items():
             parts[key] += value
 
-    print(f"\nShifts from '{COLUMN_START}'/'{COLUMN_END}' columns in File {file_path.name}") 
+    print(f"\nShifts from '{COLUMN_START}'/'{COLUMN_END}' columns in File {file_path.name}")
     for shift, name in SHIFT_NAMING.items():
         print(f"{name}: {time_delta_to_shifts(parts[shift]):.1f} ({time_delta_to_hours(parts[shift]):.1f}h)")
 
@@ -252,7 +251,7 @@ def manual_shifts(file_path: str | Path, shift_type: str = None) -> dict[str, fl
         shift_type (str): Regex to filter shift-type.
 
     Returns:
-        Dict[str, timedelta]: Dictionary of the total time deltas separated by 
+        Dict[str, timedelta]: Dictionary of the total time deltas separated by
         the type of hours (working hours, night hours, holidays or weekends).
     """
     file_path = Path(file_path)
@@ -270,11 +269,11 @@ def manual_shifts(file_path: str | Path, shift_type: str = None) -> dict[str, fl
         if not entry[COLUMN_SHIFTS]:
             continue
 
-        shift_split = re.findall(fr"([\d.]+)([WH]N?)", entry[COLUMN_SHIFTS])         
+        shift_split = re.findall(fr"([\d.]+)([WH]N?)", entry[COLUMN_SHIFTS])
         for value, key in shift_split:
             parts[key] += float(value)
 
-    print(f"\nShifts from '{COLUMN_SHIFTS}' column in File {file_path.name}") 
+    print(f"\nShifts from '{COLUMN_SHIFTS}' column in File {file_path.name}")
     for shift, name in SHIFT_NAMING.items():
         print(f"{name}: {parts[shift]}")
 
@@ -285,7 +284,7 @@ def plot_results(parts, title: str = "", output_path: str | Path = None) -> Figu
     """Plot the results of a calculation.
 
     Args:
-        parts (Dict[str, timedelta]): Dictionary of the total time deltas separated by 
+        parts (Dict[str, timedelta]): Dictionary of the total time deltas separated by
         the type of hours (working hours, outside working hours, holidays or weekends).
         output_path (str | Path): Path to the output file.
     """
@@ -307,14 +306,14 @@ def plot_results(parts, title: str = "", output_path: str | Path = None) -> Figu
     # plot
     ax.pie(
         data, labels=labels, colors=colors,
-        autopct='%1.1f%%', 
-        explode=explode, 
+        autopct='%1.1f%%',
+        explode=explode,
         shadow=True,
         # startangle=90,  # rotate if needed
         # counterclock=False,  # go the other way around
     )
 
-    title += f"\nTotal Shifts: {sum(data):.1f}" 
+    title += f"\nTotal Shifts: {sum(data):.1f}"
     ax.set_title(title)
     ax.axis('equal')
     fig.tight_layout()
@@ -345,13 +344,13 @@ def plot_all_machines_in_year(
         machine = file_path.stem.split("_")[1]
         if calculate:
             shift = calculate_shifts(file_path)
-        else: 
+        else:
             shift = manual_shifts(file_path)
         times = [time_delta_to_shifts(value) if isinstance(value, timedelta) else value for value in shift.values()]
         data_map[machine] = sum(times)
 
     for name, value in additional.items():
-        if name in data_map: 
+        if name in data_map:
             data_map[name] += value
         else:
             data_map[name] = value
@@ -360,18 +359,18 @@ def plot_all_machines_in_year(
     data = [d for d in data_map.values() if d]
     colors = [color_map[name] for name, d in data_map.items() if d]
     labels = [f"{name.upper()}: {d:.1f}" for name, d in data_map.items() if d]
-    
+
     # plot
     fig, ax = plt.subplots()
     ax.pie(
         data, labels=labels, colors=colors,
-        autopct='%1.1f%%', 
+        autopct='%1.1f%%',
         shadow=True,
         # startangle=90,  # rotate if needed
         # counterclock=False,  # go the other way around
     )
 
-    title = f"Total OMC Shifts in {year:d}: {sum(data):.1f}" 
+    title = f"Total OMC Shifts in {year:d}: {sum(data):.1f}"
     ax.set_title(title)
     ax.axis('equal')
     fig.tight_layout()
@@ -379,7 +378,7 @@ def plot_all_machines_in_year(
         fig.savefig(output_path)
 
     return fig
-    
+
 
 
 if __name__ == "__main__":
@@ -393,21 +392,21 @@ if __name__ == "__main__":
     # Examples --------------------------------------------------
 
     mpl.rcParams["figure.figsize"] = 7.68, 4.8
-    
+
     repo_dir = Path(__file__).parent.parent
     logbook_dir = repo_dir / "docs" / "logbook"
-    
+
     # 2022 ---------------------------------------------------------------------
 
     # shift_m = manual_shifts(logbook_dir / "2022_lhc.md")
     # plot_results(shift_m, title="OMC Shifts LHC 2022", output_path="lhc_2022_shifts.pdf")
-    
+
     # 2023 ---------------------------------------------------------------------
 
-    # shift_c = calculate_shifts(logbook_dir / "LHC" / "2023_lhc.md") 
+    # shift_c = calculate_shifts(logbook_dir / "LHC" / "2023_lhc.md")
     # plot_results(shift_c, title="OMC Shifts LHC 2023 (from Start/End)")
-    
-    # shift_c = calculate_shifts(logbook_dir / "2023_ps.md") 
+
+    # shift_c = calculate_shifts(logbook_dir / "2023_ps.md")
     # plot_results(shift_c, title="OMC Shifts PS 2023 (from Start/End)")
 
     shift_m = manual_shifts(logbook_dir / "LHC" / "2023_lhc.md")
@@ -415,10 +414,10 @@ if __name__ == "__main__":
 
     shift_m = manual_shifts(logbook_dir / "LHC" / "2023_lhc.md", shift_type="Commissioning")
     plot_results(shift_m, title="OMC Shifts LHC 2023 (Commissioning)", output_path="lhc_2023_shifts_commish.pdf")
-    
+
     # shift_m = manual_shifts(logbook_dir / "2023_ps.md")
     # plot_results(shift_m, title="OMC Shifts PS 2023", output_path="ps_2023_shifts.pdf")
-    
+
     # shift_m = manual_shifts(logbook_dir / "2023_psb.md")
     # plot_results(shift_m, title="OMC Shifts PSBooster 2023", output_path="psb_2023_shifts.pdf")
 
@@ -431,16 +430,16 @@ if __name__ == "__main__":
 
     # shift_m = manual_shifts(logbook_dir / "LHC" /"2024_lhc.md", shift_type="Commissioning")
     # plot_results(shift_m, title="OMC Shifts LHC 2024 (Commissioning)", output_path="lhc_2024_shifts_commish.pdf")
-    
+
     # shift_m = manual_shifts(logbook_dir / "2024_lhc.md", shift_type="MD")
     # plot_results(shift_m, title="OMC Shifts LHC 2024 (MDs)", output_path="lhc_2024_shifts_md.pdf")
-    
+
     # shift_m = manual_shifts(logbook_dir / "2024_ps.md")
     # plot_results(shift_m, title="OMC Shifts PS 2024", output_path="ps_2024_shifts.pdf")
-    
+
     # shift_m = manual_shifts(logbook_dir / "2024_psb.md")
     # plot_results(shift_m, title="OMC Shifts PSBooster 2024", output_path="psb_2024_shifts.pdf")
-    
+
     # shift_m = manual_shifts(logbook_dir / "2024_sps.md")
     # plot_results(shift_m, title="OMC Shifts SPS 2024", output_path="sps_2024_shifts.pdf")
 
@@ -450,28 +449,27 @@ if __name__ == "__main__":
 
     shift_m = manual_shifts(logbook_dir / "LHC" / "2025_lhc.md")
     plot_results(shift_m, title="OMC Shifts LHC 2025", output_path="lhc_2025_shifts.pdf")
-    
+
     # shift_m = calculate_shifts(logbook_dir / "LHC" /"2025_lhc.md")
     # plot_results(shift_m, title="OMC Shifts LHC 2025", output_path="lhc_2025_shifts_calc.pdf")
 
     # shift_m = manual_shifts(logbook_dir / "2024_lhc.md", shift_type="Commissioning")
     # plot_results(shift_m, title="OMC Shifts LHC 2024 (Commissioning)", output_path="lhc_2024_shifts_commish.pdf")
-    
+
     # shift_m = manual_shifts(logbook_dir / "2024_lhc.md", shift_type="MD")
     # plot_results(shift_m, title="OMC Shifts LHC 2024 (MDs)", output_path="lhc_2024_shifts_md.pdf")
-    
+
     # shift_m = manual_shifts(logbook_dir / "2024_ps.md")
     # plot_results(shift_m, title="OMC Shifts PS 2024", output_path="ps_2024_shifts.pdf")
-    
+
     # shift_m = manual_shifts(logbook_dir / "2024_psb.md")
     # plot_results(shift_m, title="OMC Shifts PSBooster 2024", output_path="psb_2024_shifts.pdf")
-    
+
     # shift_m = manual_shifts(logbook_dir / "2024_sps.md")
     # plot_results(shift_m, title="OMC Shifts SPS 2024", output_path="sps_2024_shifts.pdf")
-    
+
     # plot_all_machines_in_year(2023, additional={}, output_path="machines_2023.pdf")
 
     # plot_all_machines_in_year(2024, {"leir": 9, "superkekb": 4}, output_path="machines_2024.pdf")
 
     plt.show()
-

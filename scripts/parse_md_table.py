@@ -3,19 +3,20 @@ from pathlib import Path
 
 import pandas as pd
 
+
 def parse_file(file_path: Path) -> pd.DataFrame:
     """ Parses a markdown file, containing a shift-table, into a pandas dataframe.
 
     Args:
-        file_path (Path): Path to the markdown file. 
+        file_path (Path): Path to the markdown file.
 
     Returns:
-        pd.DataFrame: DataFrame containing the shift table. 
+        pd.DataFrame: DataFrame containing the shift table.
     """
     header, data = get_table_parts(file_path.read_text().split("\n"))
     df = pd.DataFrame(
         columns=parse_line(header[0]),
-        data=[parse_line(line) for line in data], 
+        data=[parse_line(line) for line in data],
     )
     return df
 
@@ -24,10 +25,10 @@ def parse_line(line: str):
     """Convert a single line of a table into a list of parts.
 
     Args:
-        line (str): Line of the table. 
+        line (str): Line of the table.
 
     Returns:
-        List[str]: List of the table row entries. 
+        List[str]: List of the table row entries.
     """
     return [part.strip() for part in line.split("|")][1:-1]
 
@@ -46,7 +47,7 @@ def get_table_parts(content: Sequence[str]):
                 continue
             else:
                 break
-        
+
         if ":---" in line:
             header_finished = True
             continue
@@ -57,5 +58,3 @@ def get_table_parts(content: Sequence[str]):
             data.append(line)
 
     return header, data
-
-
