@@ -30,7 +30,7 @@ sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs
 sshfs username@lxplus.cern.ch:/eos/ ~/mnt/eos
 ```
 
-### If outside of the GPN, jump through `lxplus` to mount `dev3`-folders:
+### If outside of the GPN, jump through `lxplus` to mount `dev3`-folders
 
 ```bash
 sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user -o ssh_command='ssh -t username@lxplus.cern.ch ssh'
