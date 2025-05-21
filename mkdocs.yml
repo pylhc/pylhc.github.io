@@ -177,7 +177,6 @@ nav:
       - IDE Setup: guis/usage/ide_install.md
       - Remote: guis/usage/remote.md
       - Releases: guis/usage/releases.md
-      - KMod GUI hints: guis/usage/kmod_special.md
   - Measurements & Corrections:
     - Info: measurements/about.md
     - Physics and Methods:
