@@ -21,7 +21,6 @@ This is a template for CERN presentations following the official CERN design gui
     </embed>
 </object>
 
-
 ### OMC Beamer (Unofficial)
 
 [Overleaf Template][OMCTemplateLatex]{target=_blank}
@@ -64,7 +63,7 @@ This is a template for CERN Accelerator and Technology Sector (ATS) notes.
 
 [Overleaf Template][CernReportTemplate]{target=_blank}
 
-This is a template for authors who are preparing their contribution for one of CERN's official publications (CERN Yellow Report series, CERN Proceedings series, etc.). 
+This is a template for authors who are preparing their contribution for one of CERN's official publications (CERN Yellow Report series, CERN Proceedings series, etc.).
 
 <object data="../../assets/template_examples/cern-yellow-report-template.pdf" type="application/pdf" width=100% height=500px>
     <embed src="../../assets/template_examples/cern-yellow-report-template.pdf">
@@ -73,7 +72,6 @@ This is a template for authors who are preparing their contribution for one of C
 </object>
 
 ## PhD Forms
-
 
 ### PhD Description LaTeX (Unofficial)
 
@@ -87,7 +85,6 @@ A LaTeX template for the PhD description, based on the [official CERN HR templat
     </embed>
 </object>
 
-
 ### PhD Progress Report LaTeX (Unofficial)
 
 [Overleaf Template][PhdProgressTemplateLatex]{target=_blank}
@@ -100,12 +97,10 @@ A LaTeX template for the PhD progress reports, similar to the description templa
     </embed>
 </object>
 
-
-
 [CernATSNoteTemplate]: https://www.overleaf.com/latex/templates/cern-ats-note/yzjmgkrvtsqg
 [CernReportTemplate]: https://www.overleaf.com/latex/templates/cern-yellow-report-template/kwztmyrgqbbk
-[CernBeamerTemplate]: https://www.overleaf.com/latex/templates/cern-presentation-title/mgnwzmtgtvkw 
-[CernDesignDownloads]: https://design-guidelines.web.cern.ch/downloads 
+[CernBeamerTemplate]: https://www.overleaf.com/latex/templates/cern-presentation-title/mgnwzmtgtvkw
+[CernDesignDownloads]: https://design-guidelines.web.cern.ch/downloads
 
 [HiLumiTemplates]: https://espace.cern.ch/HiLumi/HLLHC%20Templates/Forms/AllItems.aspx
 [PhdDescriptionTemplateCERN2018]: https://admin-eguide.web.cern.ch/en/content/thesis-description-template
