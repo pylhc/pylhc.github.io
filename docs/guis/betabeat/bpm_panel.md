@@ -4,6 +4,7 @@ The BPM panel provides a graphical interface to query and visualize information 
 It can load data files for all supported beams, mostly binary SDDS files or files in the SDDS ASCII format.
 
 !!! todo
+
     Include a screenshot, possibly of settings when opening files?
 
 ## Opening Files and Applying SVD Cleaning
@@ -36,10 +37,10 @@ when SVD cleaning detects and removes bad BPMs, they will be marked in the BPM n
 
 All the settings mentioned above can be changed in the global settings panel:
 <figure>
-<center>
-  <img src="../../assets/images/cleaning_settings.png" width="95%" />
+  <center>
+  <img src="../../assets/images/cleaning_settings.png" width="95%" alt="Cleaning thresholds in the settings panel"/>
   <figcaption>Settings panel, where cleaning thresholds can be changed.</figcaption>
-</center>
+  </center>
 </figure>
 
 Turn-by-turn data cleaning is summarized in the output file which can be found at:
@@ -48,6 +49,7 @@ Turn-by-turn data cleaning is summarized in the output file which can be found a
 It contains BPM names and corresponding threshold which identified a BPM as faulty.
 
 !!! note
+
     A single BPM can appear twice (for each threshold separately), e.g. in the case of exact zero flat signal.
 
 The content of the loaded files will be displayed in two charts:
@@ -55,16 +57,16 @@ The content of the loaded files will be displayed in two charts:
 - Horizontal BPMs,
 - Vertical BPMs.
 
-
 !!! todo
+
     Include a screenshot with two BPM panels.
 
 The charts are interactive and can be used to zoom in/out, or focus on a given rectangle of the shown data.
 
 The charts can display either the measured amplitude values over turns for every BPM from the list or display the phase space, which is calculated by two consecutive BPMs.
 
-
 !!! todo
+
     Include a screenshot of the bad bpms panel.
 
 ## Removing Turns and Computing an Average
@@ -74,11 +76,13 @@ The buttons on the top left side of the pane provide useful features to handle t
 - `Remove Turns` can be used to cut turns from the start or the end, to focus on a specified range of the data.
 
 !!! todo
+
     Include a screenshot of before-after comparison for `Remove Turns`.
 
 - `Create Average` allows loading several data files too visualize their average repesentations on the same graph, which helps detecting differences or reducing noise.
 
 !!! todo
+
     Include a screenshot of `Create Average` effect.
 
 - `Do Analysis` spawns the configuration dialogue for the external analysis.
@@ -86,9 +90,11 @@ The buttons on the top left side of the pane provide useful features to handle t
   The results from the analysis can be seen in the [Analysis Panel](analysis_panel.md).
 
 !!! todo
+
     Include of screenshot of `Do Analysis` dialogue window.
 
 !!! note
+
     The `Create Average` option requires synchronized data from withing the same bounds, otherwise the results will be meaningless.
     The figure below shows three runs from LHC beam one with synchronized peaks for every turn and their corresponding averages.
 
