@@ -1,4 +1,3 @@
-
 # K-Modulation
 
 This section gives a brief overview over the K-Modulation method.
@@ -16,7 +15,7 @@ $$
 \beta_{x,y} = \pm 2 \Delta K^{-1}\Big[ cot(2 \pi Q_{x,y}) [ 1 - cos(2 \pi \Delta Q_{x,y}) ] + sin(2 \pi \Delta Q_{x,y}) \Big]
 $$
 
-If these measurements are conducted for two adjacent quadrupoles, the evolution of the $\beta$-function in-between the modulated quadrupoles can also be inferred[^FelixKmodPaper].
+If these measurements are conducted for two adjacent quadrupoles, the evolution of the $\beta$-function in-between the modulated quadrupoles can also be inferred[^FelixCarlierKmodPaper].
 Here, the average $\beta$-function in the quadrupole is expressed in terms of the optics functions $\beta_0$, $\alpha_0$, and $\gamma_0$ at the end of the quadrupole.
 
 Assuming a drift space between the quadrupoles, these coordinates can then be expressed in terms of the distance of the quadrupole end to the middle of the drift-section $L^*$, the minimum $\beta$-function $\beta^*$, and $w$, the offset of this minimum with respect to the center of the drift.
@@ -26,7 +25,6 @@ The $\beta$-function at other elements in the drift space can then be determined
 
 Compared to other methods, K-Modulation allows to infer a potential waist shift and its direction, which is not possible using the turn-by-turn based methods.
 However, K-Modulation is usually more time-intensive, and is only applicable with individually powered quadrupoles.
-
 
 [^MintyZimmermann]:
     ??? abstract "Measurement and Control of Charged Particle Beams, `Michiko G. Minty, Frank Zimmermann`, [https://doi.org/10.1007/978-3-662-08581-3](https://link.springer.com/book/10.1007%2F978-3-662-08581-3){target=_blank}"
@@ -43,7 +41,7 @@ However, K-Modulation is usually more time-intensive, and is only applicable wit
         }
         ```
 
-[^FelixKmodPaper]:
+[^FelixCarlierKmodPaper]:
     ??? abstract "Accuracy and Feasibility of the Beta* Measurement for LHC and High Luminosity LHC Using K Modulation, `F. Carlier, and R. Tomás`, [Phys. Rev. Accel. Beams **20**, 2017](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005){target=_blank}"
         ```
         @article{PhysRevAccelBeams.20.011005,
