@@ -167,7 +167,7 @@ nav:
       - Correction Panel: guis/betabeat/correction_panel.md
       - Amplitude Detuning: guis/betabeat/ampdet.md
       - BetaBeat.src: guis/betabeat/betabeatsource.md
-    - Kmod GUI:
+    - K-Modulation GUI:
       - About: guis/kmod/gui.md
       - Performing a Modulation: guis/kmod/modulating.md
       - Analyzing Modulations: guis/kmod/analyzing.md
