@@ -90,6 +90,41 @@ Clicking on any of the variables will plot the associated data just below.
 
 ### Cleaning Extracted Data
 
+Move on to the `Cleaning` tab.
+
+- Potentially change the start and end times depending on when the modulation happens in your extracted data via `Refine Start` and `Refine End` entries.
+
+    !!! warning "Expected Times"
+        Please note that the `Refine Start` and `Refine End` entries refer to times in the Dataframes themselves, and it is possible that there are timezone issues from the extracted data times.
+        One can check the times on the plotted data itself.
+
+- Click the `Create Plateaus` button. This will extract the correct tune values from dp/p and create steps that can be analyzed. These will then be displayed, for the selected beam, both the RF frequency and the raw tune data.
+
+<figure>
+  <center>
+  <img src="../../assets/images/chroma_gui/cleaning_tab_raw_data.png" width="85%" alt="Cleaning tab with raw tune data" />
+  <figcaption> Cleaning Tab with Plot of RF Frequency and Raw Tune Data  </figcaption>
+  </center>
+</figure>
+
+- Click `Clean Data` in the top part of the window. This will compute the tune average for each step and remove outliers. The windows for each tune can be specified and outliers removed in `Bad Tune Lines` in the top part. The minimum plateau length is used to remove very short steps.
+
+In the plotting part of the window, move on to the `Cleaned Data` tab next to the `Raw Data` one.
+This will display the clean tune data, with its error bar for each step.
+Ideally this error bar should not be too visible.
+Note that some steps may be entirely cleaned out due to the cleaning settings.
+
+<figure>
+  <center>
+  <img src="../../assets/images/chroma_gui/cleaning_tab_cleaned_data.png" width="85%" alt="Cleaning tab with cleaned tune data" />
+  <figcaption> Cleaning Tab with Plot of RF Frequency and Cleaned Tune Data  </figcaption>
+  </center>
+</figure>
+
+### Computing Chromaticity
+
+### Determining Corrections
+
 [timber_web]: https://timber.cern.ch/
 
 *[EIC]: Engineer in Charge, operators of the LHC
