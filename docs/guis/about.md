@@ -5,6 +5,7 @@ The OMC team uses several GUIs to help running data acquisition and analysis cod
 - [The Beta-Beat GUI](betabeat/gui.md) to perform analysis of measurement files and compute corrections.
 - [The Kmod GUI](kmod/gui.md) to perform K-modulation, analyse data and export results.
 - [The Multiturn GUI](multiturn/gui.md) to perform beam excitation and data acquisition.
+- [The Chroma GUI](chroma/gui.md) to determine chromaticity from RF scan analysis and compute corrections.
 
 Of these, only the Beta-Beat GUI is currently developed by the team.
 
@@ -37,6 +38,14 @@ The GUIs can be started from your development environment or via deployed `.jnlp
     - Latest [Multiturn production version][prod_mtgui]{target=_blank}.
     - Latest [Multiturn development version][dev_mtgui]{target=_blank}.
     - Complete [list of releases][releases_mtgui]{target=_blank}.
+
+=== "Chroma"
+
+    The Chroma GUI is a Python app published with `acc-py`, and can be run with:
+
+    ```bash
+    /acc/local/share/python/acc-py/apps/acc-py-cli/pro/bin/acc-py app run chroma-gui
+    ```
 
 !!! warning
     Please note these sites are currently available only to devices connected to the CERN network ([see: workaround][connect_gpn]).
