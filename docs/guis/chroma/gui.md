@@ -46,6 +46,44 @@ It should open to this default view:
   </center>
 </figure>
 
+To start an analysis, click `File` in the top left, then click `New`.
+The following menu will appear:
 
+<figure>
+  <center>
+  <img src="../../assets/images/chroma_gui/new_analysis_menu.png" width="85%" alt="Pop up menu for new analysis" />
+  <figcaption> New Measurement Analysis  </figcaption>
+  </center>
+</figure>
+
+In there, set the following:
+
+- For `Location`, select a directory where to store all data for this measurement analysis.
+- For `Model B1` select the _directory_ with the relevant beam 1 model.
+- For `Model B2` select the _directory_ with the relevant beam 2 model.
+- Optionally, add a description of the measurement.
+- Finally, click `Create`.
+
+Next, go to the `Timber` tab and select `start` and `end` dates to extract data from, then click `Extract Data`.
+
+!!! tip "Time Convention"
+    Note that the times are expected in UTC. One can check the online [Timber][timber_web]{target=_blank .cern_internal} interface for the correct time range of the scan data to extract.
+
+!!! note "Data Extraction Process"
+    There is no need to click `Extract raw BBQ` unless to re-analyze the raw data. There are specific UCAP nodes which have done this analysis already.
+
+    There is no loading bar, the panel will just say "Extracting data from Timber..." on the right (and show some things in the terminal). Be patient.
+
+When the extraction is done, the extracted variables will be listed in the central list view.
+Clicking on any of the variables will plot the associated data just below.
+
+<figure>
+  <center>
+  <img src="../../assets/images/chroma_gui/plot_extracted_data.png" width="85%" alt="Timber tab with plot of selected extracted data" />
+  <figcaption> Timber Tab with Plot of Selected Extracted Data  </figcaption>
+  </center>
+</figure>
+
+[timber_web]: https://timber.cern.ch/
 
 *[EIC]: Engineer in Charge, operators of the LHC
