@@ -3,7 +3,7 @@
 The non-linear chromaticity GUI provides functionality to analyze [chromaticity scans](#performing-scans) in the LHC.
 The GUI itself has no functionality for making these measurements and only serves to extract and analyze data from `NXCALS`.
 
-!!! note "Kerberos"
+!!! info "Kerberos"
     Note that using the GUI requires a valid Kerberos token.
 
 The GUI is published with `acc-py`, and can be run with:
@@ -73,7 +73,7 @@ Next, go to the `Timber` tab and select `start` and `end` dates to extract data 
 !!! tip "Time Convention"
     Note that the times are expected in UTC. One can check the online [Timber][timber_web]{target=_blank .cern_internal} interface for the correct time range of the scan data to extract.
 
-!!! note "Data Extraction Process"
+!!! info "Data Extraction Process"
     There is no need to click `Extract raw BBQ` unless to re-analyze the raw data. There are specific UCAP nodes which have done this analysis already.
 
     There is no loading bar, the panel will just say "Extracting data from Timber..." on the right (and show some things in the terminal). Be patient.
@@ -142,6 +142,40 @@ Similarly, the computed value for each order is shown in a table in the top righ
     One can manually set the `DPP Range` values to exclude extreme `dpp` values that would look fishy from the fit.
 
 ### Determining Corrections
+
+Move to the `Corrections` tab.
+
+- Keep the method set to `Global` correction scheme.
+- For `Observables to correct` select `DQ2` or `DQ3` to correct $Q''$ or $Q'''$. Adapt the selection to the fitted order from the previous step.
+- Click `Correct` to compute corrections for the given settings.
+
+<figure>
+  <center>
+  <img src="../../assets/images/chroma_gui/corrections_tab.png" width="90%" alt="Corrections tab determined trims" />
+  <figcaption> Corrections Tab with Determined Trims for the Given Measurement and Settings  </figcaption>
+  </center>
+</figure>
+
+!!! info "Trimming Corrections"
+    The resulting correction needs to be **added** to all correctors as displayed, with no sign change.
+
+    In the example screenshot above, this means going to `LSA App Suite`, selecting the relevant corrector circuit for `B1` and trimming an additional `818.1284` to the current value.
+
+    The relevant LHC circuits can be found on pages 2 and 3 of this MD note:
+
+    ??? abstract "MD6864 --- Decapole Studies at Injection, `M. Le Garrec et al.`, 2023, URL: [CERN-ACC-NOTE-2023-0018](https://cds.cern.ch/record/2879070){target=_blank}"
+        ```
+        @techreport{LeGarrecMD6864DecapoleStudies2023,
+        type = {{Accelerators \& Technology Sector Note}},
+        title = {{MD6864 --- Decapole Studies at Injection}},
+        author = {Le Garrec, Mael and Carlier, Felix Simon and Dilly, Joschua Werner and Ferrentino, Vittorio and Maclean, Ewen Hamish and Paraschou, Konstantinos and Tomas Garcia, Rogelio},
+        year = {2023},
+        month = oct,
+        number = {CERN-ACC-NOTE-2023-0018},
+        institution = {CERN},
+        url = {https://cds.cern.ch/record/2879070}
+        }
+        ```
 
 [timber_web]: https://timber.cern.ch/
 
