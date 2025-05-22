@@ -170,6 +170,8 @@ nav:
       - About: guis/kmod/gui.md
       - Performing a Modulation: guis/kmod/modulating.md
       - Analyzing Modulations: guis/kmod/analyzing.md
+    - Chromaticity GUI:
+      - About: guis/chroma/gui.md
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
     - Usage and Development:
