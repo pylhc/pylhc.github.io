@@ -1695,8 +1695,6 @@ This page compiles various published papers, reports, and MD notes from OMC team
 
 #### 2023 Notes
 
-#### 2022 Notes
-
 ??? abstract "MD6864 --- Decapole Studies at Injection, `M. Le Garrec et al.`, 2023, URL: [CERN-ACC-NOTE-2023-0018](https://cds.cern.ch/record/2879070){target=_blank}"
     ```
     @techreport{LeGarrecMD6864DecapoleStudies2023,
@@ -1710,6 +1708,8 @@ This page compiles various published papers, reports, and MD notes from OMC team
       url = {https://cds.cern.ch/record/2879070}
     }
     ```
+
+#### 2022 Notes
 
 ??? abstract "Report From LHC MD 6863: Amplitude Detuning Corrections From Feed-Down, `J. Dilly, M. Garrec, E. Maclean, L. van Riesen-Haupt, and R. Tomas`, 2023, [CERN-ACC-NOTE-2023-0028](https://cds.cern.ch/record/2913600){target=_blank}"
     ```
