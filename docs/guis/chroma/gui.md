@@ -46,6 +46,8 @@ It should open to this default view:
   </center>
 </figure>
 
+### Starting a New Analysis
+
 To start an analysis, click `File` in the top left, then click `New`.
 The following menu will appear:
 
@@ -63,6 +65,8 @@ In there, set the following:
 - For `Model B2` select the _directory_ with the relevant beam 2 model.
 - Optionally, add a description of the measurement.
 - Finally, click `Create`.
+
+### Extracting Scan Data
 
 Next, go to the `Timber` tab and select `start` and `end` dates to extract data from, then click `Extract Data`.
 
@@ -83,6 +87,8 @@ Clicking on any of the variables will plot the associated data just below.
   <figcaption> Timber Tab with Plot of Selected Extracted Data  </figcaption>
   </center>
 </figure>
+
+### Cleaning Extracted Data
 
 [timber_web]: https://timber.cern.ch/
 
