@@ -123,6 +123,24 @@ Note that some steps may be entirely cleaned out due to the cleaning settings.
 
 ### Computing Chromaticity
 
+Move on to the `Chromaticity` tab.
+
+- Select the highest order to be computed and plotted in `Chromaticity Orders to Plot`. Here 3 is a good start but you might want go higher based on the resulting data fits. All lower orders are computed anyways, check them if wanted in the plot.
+- Click `Compute Chromaticity`. A fit is performed up to the provided order.
+
+The results will be shown in plots below.
+Similarly, the computed value for each order is shown in a table in the top right part of the window.
+
+<figure>
+  <center>
+  <img src="../../assets/images/chroma_gui/chromaticity_tab.png" width="85%" alt="Chromaticity tab with fit to data up to provided order" />
+  <figcaption> Chromaticity Tab with Fit of Data up to the Provided Order  </figcaption>
+  </center>
+</figure>
+
+!!! tip "Restricting Fit Range"
+    One can manually set the `DPP Range` values to exclude extreme `dpp` values that would look fishy from the fit.
+
 ### Determining Corrections
 
 [timber_web]: https://timber.cern.ch/
