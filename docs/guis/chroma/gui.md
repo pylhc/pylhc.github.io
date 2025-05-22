@@ -29,7 +29,7 @@ dpp = \frac{\Delta f_{RF}}{140} \cdot 10^{-3}.
 $$
 
 A good modulation aims to reach between $2 \cdot 10^{-3}$ and $3 \cdot 10^{-3}$ in momentum deviation.
-Typically, the scans are performed with ±300Hz.
+Typically, the scans are performed with ±300Hz in steps of 20Hz.
 
 !!! tip "Max Modulation Amplitude"
     Scans have been performed safely in the past with ±400Hz, in cases where specific high orders were investigated.
