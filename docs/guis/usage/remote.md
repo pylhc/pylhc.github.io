@@ -1,7 +1,6 @@
 
 # Running Outside of the TN
 
-
 ## Running GUIs Locally
 
 To use the [KMod GUI][kmod_gui] or the `KnobPanel` in the [Beta-Beat GUI][bb_gui], it is required to be on the TN, as they need to connect to LSA.
@@ -33,15 +32,19 @@ Once logged in with your CERN credentials (Add `CERN.CH\` in front of your usern
 which opens a putty-terminal connected to `lxplus` and starts a `X-Server` in the background.
 
 <figure>
-  <img src="../../assets/images/tricks/putty_and_xserver_cernts.png" width=90%>
+  <center>
+  <img src="../../assets/images/tricks/putty_and_xserver_cernts.png" width="90%" alt="Putty and Xserver on cernts" />
   <figcaption>Putty and XServer on cernts</figcaption>
+  </center>
 </figure>
 
 Executing any graphical software from this terminal will ask for connection authorization, which you need to approve.
 
 <figure>
-  <img src="../../assets/images/tricks/allow_xserver_connection.png" width=60%>
+  <center>
+  <img src="../../assets/images/tricks/allow_xserver_connection.png" width="60%" alt="Approval prompt for a connection to XServer" />
   <figcaption>Approval prompt for a connection to XServer</figcaption>
+  </center>
 </figure>
 
 This way you can run any graphical application smoothly.
@@ -84,5 +87,6 @@ If your internet connection fails, you should still be able to resume your curre
 *[CD]: Continuous Delivery
 *[lxplus]: Linux Public Login User Service
 
+[sshuttle]: https://sshuttle.readthedocs.io/en/stable/
 [kmod_gui]: ../../guis/kmod/gui.md
 [bb_gui]: ../../guis/betabeat/gui.md

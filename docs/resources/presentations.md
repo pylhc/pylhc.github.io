@@ -3,13 +3,13 @@
 This page contains a collection of important presentations that have been by different members of the OMC-Team over the years.
 In general (e.g. if a presentation is not listed here) CERN-internal presentation can be found with a bit of searching on indico:
 
-
 * [OMC Team Indico][omc_indico]{target=_blank}
 * [BE-ABP-LNO Indico][lno_indico]{target=_blank}
 * [BE-Seminars Indico][be_seminars_indico]{target=_blank}
 
 External presentations and seminars are collected on EOS and can be reached either directly or via [CERNBOX][cernbox_seminars]{target=_blank .cern_login}:
-```
+
+```bash
 /eos/project-o/omc/seminars
 ```
 
@@ -20,71 +20,64 @@ External presentations and seminars are collected on EOS and can be reached eith
 
     **Always cite your sources!**
 
-
 ## Introduction Seminars
 
-### 2021
+### 2021 Seminars
 
 ??? Abstract "*Increasing efficiency and stability of LHC/HL-LHC operation by corrections of high-order nonlinearities* `J. Dilly`"
     **Date:** 21.09.2021
 
     **Location:** Accelerator and Technology Seminar, Helmholtz-Zentrum Berlin
-    
+
     **Data:** Slides: `presentation.pdf` in [CERNBOX][jdilly2021HZB]{target=_blank .cern_login}
     ```
     /eos/project-o/omc/seminars/2021-09-21.jdilly.increasing_efficiency_and_stability_of_lhc_hllhc_operation
     ```
-    
+
 ??? Abstract "*Corrections of high-order nonlinearities in the LHC and HL-LHC* `J. Dilly`"
     **Date:** 17.03.2021
 
     **Location:** DPG Spring Meetings
-    
+
     **Data:** Slides: `presentation.pdf` in [CERNBOX][jdilly2021DPG]{target=_blank .cern_login}
     ```
     /eos/project/o/omc/seminars/2021-03-17.jdilly.DPG_spring.corrections_of_high-order_nonlinearities_in_the_LHC_and_HL-LHC
     ```
-    
-### 2020
+
+### 2020 Seminars
 
 ??? Abstract "*LHC optics measurements and corrections: A local observable for linear imperfections in circular accelerators* `A. Wegscheider`"
     **Date:** 29.04.2020
 
     **Location:** Gentner Day, CERN
-    
+
     **Data:** Slides: `gentner_andreas.pdf` in [CERNBOX][awegsche2020Gentner]{target=_blank .cern_login}
     ```
     /eos/project-o/omc/seminars/2020-04-29.awegsche.gentner.omc_and_lobster
     ```
 
-### 2019 
+### 2019 Seminars
 
 ??? Abstract "*Accelerator Physics and the LHC* `E. H. Maclean`"
     **Date:** 25.07.2019
 
-    **Location:** HASCO, Göttingen 
-    
+    **Location:** HASCO, Göttingen
+
     **Data:** [Slides][emaclean2019HASCOSlides]{target=_blank} from the [Seminar][emaclean2019HASCO]{target=_blank}
     ```
     /eos/project-o/omc/seminars/2019-07-25.emaclean.acclerator_physics_and_the_lhc
     ```
 
-
 ## BE-Seminars
 
-### 2020
+### 2020 BE Seminars
 
 ??? Abstract "*Highlights from beam-based studies of nonlinear optics in the LHC and implications for HL-LHC* `E. H. Maclean`"
     **Date:** 31.01.2020
 
     **Location:** CERN
-    
+
     **Data:** [Slides][emaclean2020BESeminarSlides]{target=_blank} from the [Seminar][emaclean2020BESeminar]{target=_blank}
-
-
-## Important OMC Presentations
-
-
 
 [omc_indico]: https://indico.cern.ch/category/5986/
 [lno_indico]: https://indico.cern.ch/category/13266/

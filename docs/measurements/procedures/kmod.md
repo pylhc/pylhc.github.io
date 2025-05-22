@@ -58,4 +58,4 @@ Please keep in mind the [general checks](general_checks.md) for measurements, an
 [kmod_run]: ../../guis/kmod/modulating.md
 [kmod_analysis]: ../../guis/kmod/analyzing.md
 [kmod_method]: ../../measurements/physics/kmod.md
-[beta_beat_gui]: ../../guis/beta_beat/gui.md
+[beta_beat_gui]: ../../guis/betabeat/gui.md

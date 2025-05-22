@@ -10,16 +10,20 @@ This makes only sense, if you have your citekeys sorted by year!
 
 Requires: titlecase
 """
+
+from __future__ import annotations
+
+import re
 from pathlib import Path
 from typing import Iterable
-import re
+
 from titlecase import titlecase
 
 # Some tuning parameters:
-ADMONITION = 'abstract'  # Admonition type
-EXCLUDE_KEYS = ["file", "urldate", "abstract", "langid"]  # these are removed from bib-entry
-MAX_AUTHORS = 5  # before writing "et al"
-TO_REPLACE = {  # to be replaced in the title. First part (key) is case-insensitive regex
+ADMONITION: str = "abstract"  # Admonition type
+EXCLUDE_KEYS: list[str] = ["file", "urldate", "abstract", "langid"]  # these are removed from bib-entry
+MAX_AUTHORS: int = 5  # before writing "et al"
+TO_REPLACE: dict[str, str] = {  # to be replaced in the title. First part (key) is case-insensitive regex
     "lhc": "LHC",
     "cern": "CERN",
     "fcc": "FCC",
@@ -27,8 +31,8 @@ TO_REPLACE = {  # to be replaced in the title. First part (key) is case-insensit
     "fcc-hh": "FCC-hh",
     "fcc-he": "FCC-he",
     "he-lhc": "HE-LHC",
-    'hllhc': "HLLHC",
-    'hl-lhc': "HL-LHC",
+    "hllhc": "HLLHC",
+    "hl-lhc": "HL-LHC",
     " ac ": " AC ",
     "ac-dipole": "AC-Dipole",
     " acdipole ": "ACDipole",
@@ -36,16 +40,16 @@ TO_REPLACE = {  # to be replaced in the title. First part (key) is case-insensit
     " kek ": " KEK ",
     " atf ": " ATF ",
     " atf2 ": " ATF2 ",
-    " clic ": " CLIC "
+    " clic ": " CLIC ",
 }
 
 
 # Patterns of bib-file:
-type_citekey_pattern = "^\s*@(?P<type>.+){(?P<citekey>.+),\s*$"
-key_value_pattern = "^\s*(?P<key>.*)\s*=\s*{(?P<value>.*)},?\s*$"
+type_citekey_pattern: str = r"^\s*@(?P<type>.+){(?P<citekey>.+),\s*$"
+key_value_pattern: str = r"^\s*(?P<key>.*)\s*=\s*{(?P<value>.*)},?\s*$"
 
 
-def main(bibfile: Path, citekeys: Iterable[str] = None, add_year: bool = False):
+def main(bibfile: Path, citekeys: Iterable[str] | None = None, add_year: bool = False) -> None:
     """Prints markdown-admonitions for given bibfile and citekeys.
     If no citekeys are given, it prints all.
     """
@@ -54,12 +58,12 @@ def main(bibfile: Path, citekeys: Iterable[str] = None, add_year: bool = False):
 
 
 def read_bibfile(bibfile: Path) -> dict:
-    """ Reads the bib-file and converts it's content to a dictionary.
+    """Reads the bib-file and converts it's content to a dictionary.
     The entries are sorted by citekey and additional two entries
     `entrytype` (e.g. article, report etc.) and `rawtext` (the bib-raw text)
-     are created.
+    are created.
     """
-    with open(bibfile, 'r') as f:
+    with open(bibfile, "r") as f:
         full_content = f.readlines()
 
     collection = dict()
@@ -74,30 +78,32 @@ def read_bibfile(bibfile: Path) -> dict:
 
         match = re.match(type_citekey, line)
         if match:
-            citekey = match.group('citekey')
+            citekey = match.group("citekey")
             collection[citekey] = dict()
-            collection[citekey]['entrytype'] = match.group('type')
-            collection[citekey]['rawtext'] = line
+            collection[citekey]["entrytype"] = match.group("type")
+            collection[citekey]["rawtext"] = line
             continue
 
         match = re.match(key_value, line)
         if match:
-            key_ = match.group('key').strip()
+            key_ = match.group("key").strip()
             if key_ in EXCLUDE_KEYS:
                 continue
-            collection[citekey][key_] = match.group('value').replace("{", "").replace("}", "")
+            collection[citekey][key_] = match.group("value").replace("{", "").replace("}", "")
 
         if line.strip() == "}":
-            collection[citekey]['rawtext'] = collection[citekey]['rawtext'].rstrip('\n').rstrip(",") + "\n"
-        collection[citekey]['rawtext'] += line
+            collection[citekey]["rawtext"] = (
+                collection[citekey]["rawtext"].rstrip("\n").rstrip(",") + "\n"
+            )
+        collection[citekey]["rawtext"] += line
 
     return collection
 
 
-def print_markdown(collection: dict, citekeys: Iterable[str] = None, add_year: bool = False):
-    """ Prints the markdown entries of the collection-dict of given citekeys.
+def print_markdown(collection: dict, citekeys: Iterable[str] | None = None, add_year: bool = False):
+    """Prints the markdown entries of the collection-dict of given citekeys.
     If citekeys is None, all are printed.
-    `add_year` adds a year header, whenever the year changes between entries. """
+    `add_year` adds a year header, whenever the year changes between entries."""
     if citekeys is None:
         citekeys = collection.keys()
 
@@ -106,33 +112,33 @@ def print_markdown(collection: dict, citekeys: Iterable[str] = None, add_year: b
         entry = collection[citekey]
         rawtext = entry["rawtext"].replace("\n", "\n    ").strip()
 
-        doi = entry.get('doi')
+        doi = entry.get("doi")
         # replace citekey with doi-name, if it's of 13.231223/doi.name.323 format
-        if doi and len(doi.split('/')) == 2:
-            rawtext = rawtext.replace(citekey, doi.split('/')[-1])
+        if doi and len(doi.split("/")) == 2:
+            rawtext = rawtext.replace(citekey, doi.split("/")[-1])
 
         indented = "    " + rawtext
 
         # add year header if requested
-        year = entry.get('year')
+        year = entry.get("year")
         if add_year and year and year != last_year:
             last_year = year
             print()
-            print(f'### {year}')
+            print(f"### {year}")
 
         # Print the markdown admonition
         print()
         print(f'??? {ADMONITION} "{_format_description(entry)}"')
-        print('    ```')
+        print("    ```")
         print(indented)
         print("    ```")
 
 
 def _format_description(entry):
     authors = entry.get("author", entry.get("editor", ""))
-    author_str = ''
+    author_str = ""
     if authors:
-        author_str = f'`{_format_authors(authors)}`'
+        author_str = f"`{_format_authors(authors)}`"
 
     title_str = titlecase(entry.get("title"))
 
@@ -141,16 +147,16 @@ def _format_description(entry):
     title_str = title_str.replace("\\", "")
     other_str = _format_other(entry)
 
-    full_str = ''
+    full_str = ""
     if author_str and title_str:
-        full_str = f'{title_str}, {author_str}'
+        full_str = f"{title_str}, {author_str}"
     elif author_str:
         full_str = author_str
     elif title_str:
         full_str = title_str
 
     if full_str and other_str:
-        full_str = f'{full_str}, {other_str}'
+        full_str = f"{full_str}, {other_str}"
     else:
         full_str = other_str
 
@@ -168,37 +174,37 @@ def _format_authors(raw):
         return authors[0]
 
     if len(authors) <= MAX_AUTHORS:
-        return f'{", ".join(authors[:-1])}, and {authors[-1]}'
+        return f"{', '.join(authors[:-1])}, and {authors[-1]}"
 
-    return f'{authors[0]} et al.' 
+    return f"{authors[0]} et al."
 
 
-def _switch_names(formal_name):
+def _switch_names(formal_name: str) -> str:
     parts = formal_name.split(", ")
     if len(parts) == 2:
         return f"{parts[1][0]}. {parts[0]}"
     return formal_name
 
 
-def _format_other(entry):
-    journal = entry.get('journal', entry.get('publisher', ''))
-    volume = entry.get('volume')
+def _format_other(entry: dict):
+    journal = entry.get("journal", entry.get("publisher", ""))
+    volume = entry.get("volume")
     if volume:
-        journal = f'{journal} **{volume}**'
+        journal = f"{journal} **{volume}**"
 
-    year = entry.get('year', entry.get('date', '    ')[:4]).strip()
+    year = entry.get("year", entry.get("date", "    ")[:4]).strip()
     if journal and year:
-        journal = f'{journal}, {year}'
+        journal = f"{journal}, {year}"
     else:
         journal = year
 
-    url = entry.get('url', '')
+    url = entry.get("url", "")
     if (journal != year) and url:
-        return f'[{journal}]({url}){{target=_blank}}'
+        return f"[{journal}]({url}){{target=_blank}}"
 
     if url:
-        link = entry.get('reportNumber', entry.get("number", url))
-        url = f'[{link}]({url}){{target=_blank}}'
+        link = entry.get("reportNumber", entry.get("number", url))
+        url = f"[{link}]({url}){{target=_blank}}"
 
     if journal and url:
         return f"{journal}, {url}"
@@ -209,5 +215,5 @@ def _format_other(entry):
     return journal
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main(bibfile=Path("path/to/bibfile"), citekeys=["cite_keys", "to_use"], add_year=True)

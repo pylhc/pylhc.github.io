@@ -122,7 +122,6 @@ nav:
       - About omc3: packages/omc3/about.md
       - Getting Started: packages/omc3/getting_started.md
       - Analysis: packages/omc3/analysis.md
-      - Know-How: packages/omc3/know_how.md
       - ↪ On Github: https://github.com/pylhc/omc3
     - PyLHC:
       - About: packages/pylhc/about.md
@@ -177,7 +176,6 @@ nav:
       - IDE Setup: guis/usage/ide_install.md
       - Remote: guis/usage/remote.md
       - Releases: guis/usage/releases.md
-      - KMod GUI hints: guis/usage/kmod_special.md
   - Measurements & Corrections:
     - Info: measurements/about.md
     - Physics and Methods:
@@ -203,8 +201,8 @@ nav:
         - Git: resources/git_setup.md
         - Resources: resources/computing.md
         - Remote Access: resources/remote_access.md
-        - ↪ TW tricks from IT: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
         - Shared Filesystems: resources/shared_filesystems.md
+        - ↪ TW tricks from IT: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
       - How To's:
         - Editing this Wiki: resources/wiki.md
         - ↪ CERN Docs: https://how-to.docs.cern.ch/

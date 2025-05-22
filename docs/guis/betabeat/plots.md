@@ -2,7 +2,6 @@
 
 All plots are running with the same backend classes, which allows additional control via mouse and keyboard.
 
-
 ## Keyboard/Mouse Shortcuts
 
 * ++lbutton++ : Draw and zoom into rectangle.
@@ -13,4 +12,3 @@ All plots are running with the same backend classes, which allows additional con
 * ++shift+mousewheel++ : Zoom y-axis relative to mouse position.
 * ++alt+mousewheel++ : Zoom relative to plot center.
 * ++shift+alt+mousewheel++ : Zoom y-axis relative to plot center.
-
