@@ -36,4 +36,16 @@ Typically, the scans are performed with ±300Hz.
 
 ## Analyzing Scans
 
+To analyze data from a scan, start by launching the GUI as instructed above.
+It should open to this default view:
+
+<figure>
+  <center>
+  <img src="../../assets/images/chroma_gui/default_view.png" width="85%" alt="Chroma GUI landing page" />
+  <figcaption> Chroma GUI Landing Page </figcaption>
+  </center>
+</figure>
+
+
+
 *[EIC]: Engineer in Charge, operators of the LHC
