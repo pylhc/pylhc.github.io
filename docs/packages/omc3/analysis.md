@@ -2,7 +2,7 @@
 
 This page contains a walk-through of a typical but simple analysis workflow with the `omc3` codes.
 To follow along, the reader needs to [have installed](getting_started.md) the `omc3` package and to have measurement or simulation data to use the codes on.
-In case the reader does not have appropriate data to follow along with, a script is provided below to create some.
+In case the reader does not have appropriate data to follow along with, a `MAD-X` script is provided below to create some.
 
 ## The Analysis Workflow
 
@@ -36,8 +36,10 @@ In this walk-through, we will cover the use of the different entrypoints availab
     option, echo=false, warn=false;
 
     ! ----- Set up Lattice and Define the Optics ----- !
-    call, file="/afs/cern.ch/eng/lhc/optics/runII/2018/lhc_as-built.seq";  ! needs AFS access
-    call, file="/afs/cern.ch/eng/lhc/optics/runII/2018/PROTON/opticsfile.22";  ! needs AFS access
+    call, file="/afs/cern.ch/eng/lhc/optics/runII/2018/lhc_as-built.seq";  ! from AFS
+    call, file="/afs/cern.ch/eng/lhc/optics/runII/2018/PROTON/opticsfile.22";  ! from AFS
+    !call, file="MESS/LHC/AC_Dipole_Tracking/lhc_as-built.seq";  ! from MESS
+    !call, file="MESS/LHC/AC_Dipole_Tracking/opticsfile.22";  ! from MESS
 
     ! ----- Re-Cycle Sequence as in the Model ----- !
     seqedit, sequence=lhcb1;
@@ -65,7 +67,8 @@ In this walk-through, we will cover the use of the different entrypoints availab
 
     ! ----- Slice Lattice for Tracking ----- !
     slicefactor = 4;
-    call, file="/afs/cern.ch/eng/lhc/optics/runII/2018/toolkit/myslice.madx";  ! needs AFS access
+    call, file="/afs/cern.ch/eng/lhc/optics/runII/2018/toolkit/myslice.madx";  ! from AFS
+    !call, file="MESS/LHC/AC_Dipole_Tracking/myslice.madx";  ! from MESS
     use, sequence=lhcb1;
     makethin, sequence=lhcb1, style=teapot, makedipedge=false;
 
@@ -638,10 +641,10 @@ While `omc3` codes can read data from many machine formats, we will for demonstr
 
 For this `omc3` provides the `tbt_converter` entrypoint.
 A typical use consists in specifying the location of your turn-by-turn measurement files, the data type of said files and the location in which to write the converted `SDDS` data.
-The formats supported by the converter are:
+The formats supported by the converter are listed in its help output, the main ones being:
 
-- Machine formats: `lhc`, `iota` and `esrf`, or any machine using one of these.
-- Simulation formats: the `trackone` and `ptc` formats from tracking data from `MAD-X` or `PTC`.
+- Machine formats: `lhc`, `sps`, `iota` and `esrf`, or any machine using one of these.
+- Simulation formats: the `trackone` and `ptc` formats from tracking data from `MAD-X` or `PTC`, or `madng` from `MAD-NG`.
 
 ??? info "The `trackone` and `ptc` formats"
     What is referred to here as the `trackone` or `ptc` format is obtained by giving the `DUMP` and `ONETABLE` options to the `TRACK` or `PTC_TRACK` commands, respectively, in `MAD-X`.
@@ -677,7 +680,7 @@ In order to perform the optics analysis, one needs a model of the given machine 
 For this, `omc3` provides the `model_creator` entrypoint, which allows you to run a model simulation of the desired machine and output the needed files.
 
 ??? example "Supported Machines"
-    The out-of-the-box supported machines for model creation are `lhc`, `ps` and `psbooster`, machines we work on.
+    The out-of-the-box supported machines for model creation are `lhc`, `sps`, `ps` and `psbooster`, machines we work on.
     While the `skekb`, `JPARC`, `petra` and `iota` have accelerator classes, no model creator has been implemented for them yet.
     It is possible to extend this list for your machine by defining an appropriate `Accelerator` class as well as a model creator.
 
@@ -709,7 +712,7 @@ b2_settings.madx job.create_model.madx twiss.dat
 
 !!! question "What is a Model?"
     As one can see, a "model" is essentially one or more TFS files with optics functions at BPMs (`twiss.dat`) and elements (`twiss_elements.dat`), other files being here for the user to understand or reproduce the result.
-    Had we created a driven model, then an additional `twiss_ac.dat` or `twiss_adt.dat` file would have been created, with optics functions at BPMs while driving the beam.
+    Had we created a driven model, then an additional `twiss_ac.dat` or `twiss_adt.dat` file would have been created, with optics functions at BPMs while exciting the beam.
     One can create their own models without the `model_creator` should they want to, as it only acts as a convenience wrapper.
 
     A `driven model` is the same as above, with also a `TWISS` taking into account the exciting effect of an AC dipole or ADT onto the optics.
@@ -721,7 +724,7 @@ Once measurement or simulation is in the appropriate format, the first step as s
 To do so, `omc3` provides the `hole_in_one` entrypoint, which will perform frequency analysis of the data when provided with the `--harpy` flag.
 
 The script provides options involved in both data cleaning and parameter tweaking for the harmonic analysis, which is useful when you have relevant information about your measurements.
-To use these, refer to the `Harpy Kwargs` section of the [hole_in_one API documentation][hole_in_one].
+To use these, refer to the `Harpy kwargs` section of the [hole_in_one API documentation][hole_in_one].
 
 In our example we will leave most of these to their default values to keep the analysis simple, but ask from `harpy` to output all computed results.
 We will input `lhc` for the `--tbt_datatype` flag, but if you skipped the use of the `tbt_converter` you should input the type of your machine there.
@@ -773,6 +776,7 @@ trackone.sdds.bad_bpms_y trackone.sdds.liny
 
     The `*.freqs[xy]` files contain for each BPM in column format the frequencies of the resonance lines detected in the spectrum, for respectively the horizontal (`.freqsx`) and vertical (`.freqsy`) planes while the `*.amps[xy]` files contain the amplitudes of said resonance lines.
     This means in the column of a given BPM, the `nth` row in the `.amps[xy]` file corresponds to the amplitude of the resonance line located at the frequency given by the `nth` row in the column of the same name in the `.freqs[xy]` file.
+
     For illustration purposes, simplistic plotting of the horizontal spectrum (without the spectrum plotter mentioned above) from these files would go as:
     ```python
     import tfs
