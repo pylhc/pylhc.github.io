@@ -11,20 +11,23 @@
 | [**Optics-Functions**][optics_functions]{target=\_blank} | Calculate various beam optics functions from TFS-Dataframes                                                  | [![PyPI version for Optics-Functions](https://img.shields.io/pypi/v/optics-functions.svg)][optics_functions_pypi]{target=\_blank}                                               | [:fontawesome-solid-book:][optics_functions_doc]{target=\_blank} |                                                                        |
 | [**Generic-Parser**][generic_parser]{target=\_blank}     | Entrypoint argument parser functionality                                                                     | [![PyPI version for Generic-Parser](https://img.shields.io/pypi/v/generic-parser.svg)][generic_parser_pypi]{target=\_blank}                                                     | [:fontawesome-solid-book:][generic_parser_doc]{target=\_blank}   |                                                                        |
 | [**Example Study Scripts**][mess]{target=\_blank}        | Collection of example MAD-X studies                                                                          | [![GitHub release for MESS](https://img.shields.io/github/v/release/pylhc/MESS?color=orange&label=Release&logo=Github)][mess_releases]{target=\_blank}                          |                                                                  | [:fontawesome-solid-circle-question:](mess/about.md)                   |
-| [**Beta-Beat.src**][betabeatsrc]{target=\_blank}         | Frequency analysis, optics computation from turn-by-turn data and corrections calculations                   | [![GitHub release for Beta-Beat.src](https://img.shields.io/github/v/release/pylhc/Beta-Beat.src?color=orange&label=Release&logo=Github)][betabeatsrc_releases]{target=\_blank} | [:fontawesome-solid-book:][betabeatsrc_doc]{target=\_blank}      |                                                                        |
 
 ## The OMC Python Ecosystem
 
 This section of the website goes over our Python computing and analysis softwares and environments.
-Our main software for optics analysis exists in two versions: a legacy Python 2 version, `Beta-Beat.src`, and its Python 3 successor `omc3`.
-Development of `Beta-Beat.src` is limited to bug fixes while new features are reserved for `omc3`.
+Our main software for optics analysis is `omc3`.
 
 Our other packages provide useful tools and scripts for our day-to-day work as well as specific I/O functionality and entrypoint utilities for our codes.
 All our Python codes, including legacy repositories, can be found on the [PyLHC organisation][pylhc_github]{target=_blank}'s page on Github.
 
+??? note "Beta-Beat.src"
+    The predecessor to `omc3` is a Python 2 code named [`Beta-Beat.src`][betabeatsrc].
+    This code has been limited to bug fixes for a while and is no longer actively developed.
+    We strongly decourage its use.
+
 ## The OMC Production Environments
 
-The OMC Python 3 production environment for use for instance in the CCC is based on the CERN BE/CO [Acc-Py][accpy_docs]{target=_blank .cern_internal} distribution, although an OMC-specific one.
+The OMC Python 3 production environment, for use for instance in the CCC, is based on the CERN BE/CO [Acc-Py][accpy_docs]{target=_blank .cern_internal} distribution, although an OMC-specific one.
 The environment, along with many of our important files, is located in the `/afs/cern.ch/eng/sl/lintrack/` directory on `afs`.
 
 The environment is located at `/afs/cern.ch/eng/sl/lintrack/omc_python3/` and can be used in two different ways:
@@ -32,7 +35,7 @@ The environment is located at `/afs/cern.ch/eng/sl/lintrack/omc_python3/` and ca
 - Activate the environment (`source /afs/cern.ch/eng/sl/lintrack/omc_python3/bin/activate`) then run `python` to execute your programs.
 - Point to the Python executable directly (`/afs/cern.ch/eng/sl/lintrack/omc_python3/bin/python`) to execute your programs.
 
-!!! warning "Modifying the Environment"
+!!! bug "Modifying the Environment"
     Please do not try to modify this environment.
     Should you need specific packages, reach out to us or consider [setting up your own environment](development/howto_venv.md#creating-virtual-environments-with-acc-py) from our `Acc-Py` distribution.
 
