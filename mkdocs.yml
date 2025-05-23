@@ -33,6 +33,7 @@ theme:
     - navigation.tabs
     - navigation.instant
     - content.action.edit  # editing button on the pages is opt-in since v9
+    - content.code.copy  # copy button for code blocks
   palette:
     scheme: preference
     primary: indigo
@@ -166,10 +167,12 @@ nav:
       - Correction Panel: guis/betabeat/correction_panel.md
       - Amplitude Detuning: guis/betabeat/ampdet.md
       - BetaBeat.src: guis/betabeat/betabeatsource.md
-    - Kmod GUI:
+    - K-Modulation GUI:
       - About: guis/kmod/gui.md
       - Performing a Modulation: guis/kmod/modulating.md
       - Analyzing Modulations: guis/kmod/analyzing.md
+    - Chromaticity GUI:
+      - About: guis/chroma/gui.md
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
     - Usage and Development:
