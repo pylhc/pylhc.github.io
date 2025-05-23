@@ -15,7 +15,7 @@ as well as the service account handling the access to it.
 
 The service account was created as in the past direct access to these repositories lead to
 accidental changes that affected all users.
-Limiting access to the service account ensures an active decision to make changes and thus avoids unwanted changes and even data loss,
+Limiting access to the service account ensures an active decision to make modifications and thus avoids unwanted changes and binary or data loss,
 which can be especially troublesome if only detected online during CCC measurements.
 
 You can log into the `lintrack` account with the following command:
@@ -27,7 +27,7 @@ ssh lintrack@lxplus.cern.ch
 You will then be greeted with a welcome message and some information about shortcuts we have set up for quick access and management of the repositories.
 
 !!! info "Access"
-    Due to CERN regulations, you cannot log into the `lintrack` account from outside CERN.
+    Due to CERN regulations, you cannot log into the `lintrack` account from outside the CERN network.
 
 ## Github
 

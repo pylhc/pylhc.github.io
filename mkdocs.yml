@@ -151,8 +151,8 @@ nav:
       - ↪ generic-parser: https://github.com/pylhc/generic_parser
     - Python Development:
       - Contributing: packages/development/contributing.md
-      - Virtual Environments: packages/development/howto_venv.md
       - Releases: packages/development/howto_release.md
+      - Virtual Environments: packages/development/howto_venv.md
       - Managing: packages/development/managing.md
   - GUIs:
     - The OMC GUIs: guis/about.md

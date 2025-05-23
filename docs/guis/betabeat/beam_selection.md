@@ -17,7 +17,15 @@ The options chosen here will also define the **folder-structure** you will be us
 
 ## Beam
 
+In this field you can choose from the implemented Beams of the LHC or machines in general.
+Use the `generic` accelerator, if your machine does not have its own accelerator class.
+
+The beam you choose not only determines some of the **default settings**, which can be overwritten by user [defaults](defaults.md)
+or changed later on, but also the **folder-structure** of the GUI, which cannot be changed without restarting the GUI.
+
 ## Output
+
+
 
 ## Input
 
