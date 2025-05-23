@@ -6,21 +6,6 @@ The `omc3` package is the python tool of the Optics Measurements and Corrections
     This section acts as a general documentation and guide to using the `omc3` package.
     The package's source can be found on [Github][omc3_gh]{target=_blank} and its API documentation can be found at the [following link][omc3_doc]{target=_blank}.
 
-## Installing
-
-Installation is easily done via `pip`:
-
-```bash
-python -m pip install omc3
-```
-
-Additionally, some features require access to the CERN Technical Network and require CERN-specific dependencies.
-Those are installable from the CERN [Acc-Py][accpy_docs]{target=_blank .cern_internal} index through the `cern` extra, and can be installed from the CERN network or by providing the `index-url`:
-
-```bash
-python -m pip install --index-url http://acc-py-repo.cern.ch:8081/repository/vr-py-releases/simple --trusted-host acc-py-repo.cern.ch "omc3[cern]"
-```
-
 ## What to expect
 
 The `omc3` package serves the following purposes:
