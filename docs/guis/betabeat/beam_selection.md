@@ -25,7 +25,9 @@ or changed later on, but also the **folder-structure** of the GUI, which cannot 
 
 ## Output
 
+### Load Data
 
+### Old Structure
 
 ## Input
 
