@@ -21,7 +21,7 @@ Our other packages provide useful tools and scripts for our day-to-day work as w
 All our Python codes, including legacy repositories, can be found on the [PyLHC organisation][pylhc_github]{target=_blank}'s page on Github.
 
 ??? note "Beta-Beat.src"
-    The predecessor to `omc3` is a Python 2 code named [`Beta-Beat.src`][betabeatsrc].
+    The predecessor to `omc3` is a Python 2 code named [`Beta-Beat.src`][betabeatsrc]{target=_blank}.
     This code has been limited to bug fixes for a while and is no longer actively developed.
     We strongly decourage its use.
 
