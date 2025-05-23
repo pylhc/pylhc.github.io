@@ -27,6 +27,7 @@ After installing, codes can be run with either `python -m pylhc.SCRIPT --FLAG AR
 
 Note: similarly to `omc3`, some of the scripts access functionality only available on the CERN Technical Network.
 To use those, you should make sure to install the relevant extra dependencies with:
+
 ```bash
 python -m pip install --index-url http://acc-py-repo.cern.ch:8081/repository/vr-py-releases/simple --trusted-host acc-py-repo.cern.ch "pylhc[cern]"`.
 ```

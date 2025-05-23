@@ -33,6 +33,7 @@ theme:
     - navigation.tabs
     - navigation.instant
     - content.action.edit  # editing button on the pages is opt-in since v9
+    - content.code.copy  # copy button for code blocks
   palette:
     scheme: preference
     primary: indigo
@@ -122,7 +123,6 @@ nav:
       - About omc3: packages/omc3/about.md
       - Getting Started: packages/omc3/getting_started.md
       - Analysis: packages/omc3/analysis.md
-      - Know-How: packages/omc3/know_how.md
       - ↪ On Github: https://github.com/pylhc/omc3
     - PyLHC:
       - About: packages/pylhc/about.md
@@ -167,17 +167,18 @@ nav:
       - Correction Panel: guis/betabeat/correction_panel.md
       - Amplitude Detuning: guis/betabeat/ampdet.md
       - BetaBeat.src: guis/betabeat/betabeatsource.md
-    - Kmod GUI:
+    - K-Modulation GUI:
       - About: guis/kmod/gui.md
       - Performing a Modulation: guis/kmod/modulating.md
       - Analyzing Modulations: guis/kmod/analyzing.md
+    - Chromaticity GUI:
+      - About: guis/chroma/gui.md
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
     - Usage and Development:
       - IDE Setup: guis/usage/ide_install.md
       - Remote: guis/usage/remote.md
       - Releases: guis/usage/releases.md
-      - KMod GUI hints: guis/usage/kmod_special.md
   - Measurements & Corrections:
     - Info: measurements/about.md
     - Physics and Methods:
@@ -203,8 +204,8 @@ nav:
         - Git: resources/git_setup.md
         - Resources: resources/computing.md
         - Remote Access: resources/remote_access.md
-        - ↪ TW tricks from IT: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
         - Shared Filesystems: resources/shared_filesystems.md
+        - ↪ TW tricks from IT: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
       - How To's:
         - Editing this Wiki: resources/wiki.md
         - ↪ CERN Docs: https://how-to.docs.cern.ch/

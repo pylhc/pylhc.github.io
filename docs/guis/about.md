@@ -5,6 +5,7 @@ The OMC team uses several GUIs to help running data acquisition and analysis cod
 - [The Beta-Beat GUI](betabeat/gui.md) to perform analysis of measurement files and compute corrections.
 - [The Kmod GUI](kmod/gui.md) to perform K-modulation, analyse data and export results.
 - [The Multiturn GUI](multiturn/gui.md) to perform beam excitation and data acquisition.
+- [The Chroma GUI](chroma/gui.md) to determine chromaticity from RF scan analysis and compute corrections.
 
 Of these, only the Beta-Beat GUI is currently developed by the team.
 
@@ -23,20 +24,28 @@ The GUIs can be started from your development environment or via deployed `.jnlp
     - Latest [Beta-Beating production version][prod_bbgui]{target=_blank}.
     - Latest [Beta-Beating development version][dev_bbgui]{target=_blank}.
     - Complete [list of releases][releases_bbgui]{target=_blank}.
-    
+
 === "Kmod"
 
     The K-modulations GUI is now a Python app published with `acc-py`, and can be run with:
-    
+
     ```bash
     /acc/local/share/python/acc-py/apps/acc-py-cli/pro/bin/acc-py app run pykmodlhc
     ```
-    
+
 === "Multiturn"
 
     - Latest [Multiturn production version][prod_mtgui]{target=_blank}.
     - Latest [Multiturn development version][dev_mtgui]{target=_blank}.
     - Complete [list of releases][releases_mtgui]{target=_blank}.
+
+=== "Chroma"
+
+    The Chroma GUI is a Python app published with `acc-py`, and can be run with:
+
+    ```bash
+    /acc/local/share/python/acc-py/apps/acc-py-cli/pro/bin/acc-py app run chroma-gui
+    ```
 
 !!! warning
     Please note these sites are currently available only to devices connected to the CERN network ([see: workaround][connect_gpn]).
@@ -123,14 +132,14 @@ Either fix the permissions on `afs` or ask someone to do so for you.
 [dev_mtgui]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-multiturn/PRO/lhc-multiturn-lhc-multiturn.jnlp
 [releases_mtgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-multiturn/
 
-[prod_kmodgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-kmod/PRO/lhc-app-kmod-lhc-app-kmod.jnlp 
-[dev_kmodgui]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-kmod/PRO/lhc-app-kmod-lhc-app-kmod.jnlp 
+[prod_kmodgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-kmod/PRO/lhc-app-kmod-lhc-app-kmod.jnlp
+[dev_kmodgui]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-kmod/PRO/lhc-app-kmod-lhc-app-kmod.jnlp
 [releases_kmodgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-kmod/
 
 [jws_confluence]: https://wikis.cern.ch/display/DVTLS/jws+-+a+replacement+for+javaws
 [jws]: https://wikis.cern.ch/display/DVTLS/jws+-+a+replacement+for+javaws
 
-[mounting_resources]: ../howto/setup/shared_filesystems.md#mounting-tn-resources-on-gn-machines
-[connect_gpn]: ../howto/teleworking/access.md#accessing-cern-internal-websites
-[sshuttle_method]: ../howto/setup/guis.md#running-guis-locally
+[mounting_resources]: ../resources/shared_filesystems.md#mounting-tn-resources-on-gpn-and-other-machines
+[connect_gpn]: ../resources/remote_access.md#accessing-cern-internal-websites
+[sshuttle_method]: usage/remote.md#running-guis-locally
 [jws_calls]: ../resources/links.md#jws-programs

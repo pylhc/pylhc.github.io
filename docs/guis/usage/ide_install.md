@@ -21,17 +21,17 @@ As both IDEs require [CommonBuildNextGeneration (CBNG)][cbng_wiki]{target=_blank
     File -> Settings -> Build, Execution, Deployment -> Build Tools -> Gradle
     ```
     to the specified location `/user/pcrops/devtools/CBNG/PRO/`
-    
+
     A more extensive guide can be found in the [CBNG Wiki for IDEA integration][cbng_idea]{target=_blank}.
-    Alternatively, run CBNG directly [from the commandline](#cbng-from-commandline) instead.
+    Alternatively, run CBNG directly from the commandline instead.
 
 === "CBNG from the Command Line"
-    Another sometimes easier alternative that works with any IDE is to run CBNGs `bob` with the desired command (e.g. `build`, `dependencies`, `eclipse`, `idea`) in the folder of the project from the commandline. 
+    Another sometimes easier alternative that works with any IDE is to run CBNGs `bob` with the desired command (e.g. `build`, `dependencies`, `eclipse`, `idea`) in the folder of the project from the commandline.
     The full path to `bob` is:
     ```
     /user/pcrops/devtools/CBNG/PRO/bin/bob
     ```
-    
+
     !!! info
         See `bob --help` for instructions about its commands.
 
@@ -50,20 +50,20 @@ Firstly, you should clone the desired repository to an adequate location on your
 
 === "Kmod GUI"
     ```bash
-    git clone https://gitlab.cern.ch/acc-co/lhc/lhc-app-kmod
+    git clone https://gitlab.cern.ch/gtrad/pyKmodLHC
     ```
 
 You then simply import the project into your IDE.
 
-??? warning "IntelliJ Specificity" 
-    For IntelliJ, you might have to
-    
-    1. Create an empty `build.gradle` file if you want to trigger a gradle import dialogue where you need to choose **use local gradle distribution** and set the **gradle home** to `/user/pcrops/devtools/CBNG/PRO/bin/bob` ([as above](#gradlehome))
+??? warning "IntelliJ Specificity"
+    For IntelliJ, you might have to:
+
+    1. Create an empty `build.gradle` file if you want to trigger a gradle import dialogue where you need to choose **use local gradle distribution** and set the **gradle home** to `/user/pcrops/devtools/CBNG/PRO/bin/bob` (as above).
     2. Go to `File -> Project Structure ... -> Modules` and set the **Dependencies storage format** to `Eclipse (.classpath)`.
     This one you should check on a regular basis, as it tends to reset itself.
 
 To make it runnable, you will have to use CBNG to **resolve dependencies** and **build** the project first.
-Depending on your IDE you should run CBNGs `eclipse` or `idea` followed by `build`. 
+Depending on your IDE you should run CBNGs `eclipse` or `idea` followed by `build`.
 Running `dependencies` can help.
 
 !!! warning
@@ -79,9 +79,8 @@ If everything worked fine, the Gui should now be runnable via the `void main()` 
 * [Accsoft-Eclipse Downloads][accsoft_eclipse]{target=_blank}
 * [Accsoft Eclipse Wiki][accsoft_eclipse_wiki]{target=_blank}
 
-[mounting_tn]: ../../howto/setup/shared_filesystems.md#mounting-tn-resources-on-gn-machines
+[mounting_tn]: ../../resources/shared_filesystems.md#mounting-tn-resources-on-gpn-and-other-machines
 [gui_releases]: releases.md
-
 [idea_download]: https://www.jetbrains.com/idea/download/
 [cbng_wiki]: https://wikis.cern.ch/display/DVTLS/CBNG
 [cbng_eclipse]: https://wikis.cern.ch/display/DVTLS/CBNG+-+Eclipse+Integration
@@ -89,4 +88,4 @@ If everything worked fine, the Gui should now be runnable via the `void main()` 
 [accsoft_eclipse]: http://eclipse.cern.ch/
 [accsoft_eclipse_wiki]: https://wikis.cern.ch/display/DVTLS/Eclipse+IDE
 
-*[DG]: Director General: Currently Fabiola Gianotti
+*[DG]: Director General

@@ -30,7 +30,7 @@ Get a local copy of this repository, set up a `Python3.6+` environment and insta
 
 ```bash
 git clone https://github.com/pylhc/pylhc.github.io
-pip install mkdocs mkdocs-material mkdocs-minify-plugin
+python -m pip install mkdocs mkdocs-material mkdocs-minify-plugin
 ```
 
 Create a branch (from master) and make your changes.
@@ -87,7 +87,7 @@ To create:
   > Note that all links are relative to the current document!
     The `#`-labels are created by headers automatically and can be omitted, in case you want to link to the page itself.
 
-- an external [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.<br>
+- an external [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.
 
     >Note that at the bottom of the file, an ID named `bestwiki` should be created, together with the hyperlink to the webpage, like so:
 

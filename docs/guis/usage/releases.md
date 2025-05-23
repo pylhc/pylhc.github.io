@@ -2,5 +2,5 @@
 
 ## Releasing the GUIs
 
-
-_TODO: Description how to release the GUIs_
+!!! todo
+    Describe how to release the GUIs

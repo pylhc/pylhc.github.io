@@ -1,8 +1,10 @@
 # The Beam Selection Window
 
 <figure>
-  <img src="../../assets/images/betabeat_gui/beam_selection.png" width="100%" />
+  <center>
+  <img src="../../assets/images/betabeat_gui/beam_selection.png" width="100%" alt="The beam selection window" />
   <figcaption>The Beam Selection Window.</figcaption>
+  </center>
 </figure>
 
 The Beam Selection Window is your entry point to the GUI.
@@ -21,14 +23,19 @@ The options chosen here will also define the **folder-structure** you will be us
 
 ## Python Executable
 
-In the Beam-Selection Window you need to give it a python-binary (e.g. `venv/bin/python`).
+In the Beam-Selection Window you need to give it a python-binary (e.g. `.venv/bin/python`).
 Best would be if you have a local virtual environment.
 This **needs to have omc3 installed as a package**.
-See [omc3 on github][omc3_github_getting_started]{target=_blank}.
+See [omc3 on github][omc3_github]{target=_blank}.
+
 ```bash
-pip install git+https://github.com/pylhc/omc3.git
+python -m pip install git+https://github.com/pylhc/omc3.git
 ```
+
 This is because python calls are now made by module, i.e.:
+
 ```bash
 python -m omc3.module arg1 arg2 ...
 ```
+
+[omc3_github]: https://github.com/pylhc/omc3

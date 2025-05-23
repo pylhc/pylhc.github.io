@@ -20,7 +20,7 @@ The table below shows a general analysis workflow from BPM turn-by-turn measurem
 In this page, we will go through the essential steps in preparing and performing an analysis, by going from start to finish with a simple example.
 In this walk-through, we will cover the use of the different entrypoints available to perform necessary steps.
 
-!!! example 
+!!! example
     For our walk-through example, we will start from data obtained in `MAD-X` with the `TRACK` command for the 1023 turns in the LHC machine, with a scenario adapted from the 2018 configuration.
     Changes from the nominal scenario in your simulation could be including errors tables, orbit bumps, speculative magnet errors, additional elements etc.
     It is also easy for the reader to follow along if starting from measurements files.
@@ -29,16 +29,16 @@ In this walk-through, we will cover the use of the different entrypoints availab
     Here is the `MAD-X` script that will generate the example data used in this walk-through.
     It sets up a simple LHC configuration using files from `afs`, performs tracking and outputs a file named `trackone`.
     The script can be copy-pasted with a click in the top right of its box.
-    
+
     For anyone without access to `afs`, you can find these files in our [MESS][mess] repository, or can simply use one of your own.
     ```fortran
     option, warn, info;
     option, echo=false, warn=false;
-    
+
     ! ----- Set up Lattice and Define the Optics ----- !
     call, file="/afs/cern.ch/eng/lhc/optics/runII/2018/lhc_as-built.seq";  ! needs AFS access
     call, file="/afs/cern.ch/eng/lhc/optics/runII/2018/PROTON/opticsfile.22";  ! needs AFS access
-    
+
     ! ----- Re-Cycle Sequence as in the Model ----- !
     seqedit, sequence=lhcb1;
     flatten;
@@ -49,10 +49,10 @@ In this walk-through, we will cover the use of the different entrypoints availab
     beam, sequence=lhcb1, particle=proton, bv=1, energy=6500, npart=1e10, ex=5.4115e-10, ey=5.4115e-10;
     beam, sequence=lhcb2, particle=proton, bv=-1, energy=6500, npart=1e10, ex=5.4115e-10, ey=5.4115e-10;
     use, sequence=lhcb1;
-    
+
     ! ----- Introduce Some Coupling ----- !
     CMRS.b1_sq = 0.001;
-    
+
     ! ----- Match Tunes and Chromaticities ----- !
     match, chrom=true;
         global, sequence=lhcb1, q1=62.31, q2=60.32, dq1=2.0, dq2=2.0;
@@ -62,13 +62,13 @@ In this walk-through, we will cover the use of the different entrypoints availab
         vary, name="dqpy.b1_sq", step=1e-07;
         lmdif, calls=100, tolerance=1e-21;
     endmatch;
-    
+
     ! ----- Slice Lattice for Tracking ----- !
-    slicefactor = 4;    
+    slicefactor = 4;
     call, file="/afs/cern.ch/eng/lhc/optics/runII/2018/toolkit/myslice.madx";  ! needs AFS access
     use, sequence=lhcb1;
     makethin, sequence=lhcb1, style=teapot, makedipedge=false;
-    
+
     ! ----- Define Observation Points and Perform Tracking ----- !
     ! These points are the BPMs from the model's twiss.dat file
     use, sequence=lhcb1;
@@ -650,6 +650,7 @@ The formats supported by the converter are:
 
 For our example, let us say that when setting up tracking we have asked `MAD-X` to output the data into a file called `trackone` (this is actually the default name).
 Using the converter to make a compatible `SDDS` file then goes as:
+
 ```bash
 python -m omc3.tbt_converter \
     --files trackone \
@@ -679,10 +680,10 @@ For this, `omc3` provides the `model_creator` entrypoint, which allows you to ru
     The out-of-the-box supported machines for model creation are `lhc`, `ps` and `psbooster`, machines we work on.
     While the `skekb`, `JPARC`, `petra` and `iota` have accelerator classes, no model creator has been implemented for them yet.
     It is possible to extend this list for your machine by defining an appropriate `Accelerator` class as well as a model creator.
-    See [this guide][new_machine_guide] for implementation steps.
 
-In our example, we would like to compare our data to the nominal model of the 2018 LHC. 
+In our example, we would like to compare our data to the nominal model of the 2018 LHC.
 Using the script to create a nominal model of the 2018 LHCB1, with the machine configuration and opticsfile used in our example, goes as:
+
 ```bash
 python -m omc3.model_creator \
     --accel lhc \
@@ -700,30 +701,32 @@ Refer to the [model creator's API documentation][model_creator] for the list of 
 
 The model creation runs a `MAD-X` scenario and outputs the relevant twiss results to the desired directory.
 Running `ls lhc_model/` yields:
+
 ```bash
-b2_errors.tfs		error_deffs.txt		    macros			twiss_elements.dat
-b2_settings.madx	job.create_model.madx	twiss.dat
+b2_errors.tfs  error_deffs.txt      macros   twiss_elements.dat
+b2_settings.madx job.create_model.madx twiss.dat
 ```
 
 !!! question "What is a Model?"
     As one can see, a "model" is essentially one or more TFS files with optics functions at BPMs (`twiss.dat`) and elements (`twiss_elements.dat`), other files being here for the user to understand or reproduce the result.
     Had we created a driven model, then an additional `twiss_ac.dat` or `twiss_adt.dat` file would have been created, with optics functions at BPMs while driving the beam.
-    One can create their own models without the `model_creator` should they want to, as it only acts as a convenience wrapper. 
+    One can create their own models without the `model_creator` should they want to, as it only acts as a convenience wrapper.
 
     A `driven model` is the same as above, with also a `TWISS` taking into account the exciting effect of an AC dipole or ADT onto the optics.
-    Creating this is easiest done with the `model_creator`, but can also be done individually with the a script installing the appropriate element into your sequence. 
+    Creating this is easiest done with the `model_creator`, but can also be done individually with the a script installing the appropriate element into your sequence.
 
 ## Frequency Analysis
 
 Once measurement or simulation is in the appropriate format, the first step as seen in the table above consists in a harmonic analysis of the data.
 To do so, `omc3` provides the `hole_in_one` entrypoint, which will perform frequency analysis of the data when provided with the `--harpy` flag.
 
-The script provides options involved in both data cleaning and parameter tweaking for the harmonic analysis, which is useful when you have relevant information about your measurements. 
+The script provides options involved in both data cleaning and parameter tweaking for the harmonic analysis, which is useful when you have relevant information about your measurements.
 To use these, refer to the `Harpy Kwargs` section of the [hole_in_one API documentation][hole_in_one].
 
 In our example we will leave most of these to their default values to keep the analysis simple, but ask from `harpy` to output all computed results.
 We will input `lhc` for the `--tbt_datatype` flag, but if you skipped the use of the `tbt_converter` you should input the type of your machine there.
 Running the frequency analysis then goes as:
+
 ```bash
 python -m omc3.hole_in_one --harpy \
     --files trackone.sdds \
@@ -748,16 +751,17 @@ The filenames are determined by appending the appropriate suffixes to the entry 
 !!! info "Bad BPMs"
     If given `bpm_summary` for the `--to_write` flag (which is the case by default), `harpy` will output the `.bad_bpms_[xy]` files.
     BPMs are determined as bad or not depending on several options from the cleaning phase.
-    While these are given sensible defaults, one might need to tweak them manually depending on their measurement. 
+    While these are given sensible defaults, one might need to tweak them manually depending on their measurement.
     Additionally, known bad BPMs can be given with the `--bad_bpms` flag.
 
 In the output files, various properties are given in column form for each observation point.
 Running `ls harpy_output/` yields the following result:
+
 ```bash
-trackone.sdds.ampsx		    trackone.sdds.freqsx
-trackone.sdds.ampsy		    trackone.sdds.freqsy
-trackone.sdds.bad_bpms_x	trackone.sdds.linx
-trackone.sdds.bad_bpms_y	trackone.sdds.liny
+trackone.sdds.ampsx      trackone.sdds.freqsx
+trackone.sdds.ampsy      trackone.sdds.freqsy
+trackone.sdds.bad_bpms_x trackone.sdds.linx
+trackone.sdds.bad_bpms_y trackone.sdds.liny
 ```
 
 !!! tip "Plotting the Spectra"
@@ -779,7 +783,7 @@ trackone.sdds.bad_bpms_y	trackone.sdds.liny
 
     for bpm in ampsx.columns:
         if bpm in freqsx.columns:  # safety check but no reason it wouldn't be there
-            plt.plot(freqsx[bpm], ampsx[bpm], ".-") 
+            plt.plot(freqsx[bpm], ampsx[bpm], ".-")
             # plt.stem(freqsx[bpm], ampsx[bpm])  # would be more accurate but might stress your system
 
     plt.setp(plt.gca(), xlabel=r"$Q_x$", ylabel="Amplitude", title="Horizontal Spectrum", xlim=(0, 0.5))
@@ -788,7 +792,7 @@ trackone.sdds.bad_bpms_y	trackone.sdds.liny
     The `*.lin[xy]` files contain various data (in columns) computed for each BPM (in rows) as some summary information.
     Some column names are explicit: `BPM_RES` contains the determined BPM resolution, `CO` the closed orbit value at said BPM and `PK2PK` is the peak-to-peak value of oscillations registered by the given BPM.
     `TUNE[XY]`, `AMP[XY]` and `MU[XY]` are the detected tune, the amplitude of the tune line and the phase of the tune line for said BPM, respectively.
-    
+
     The other columns describe the phase (`PHASE`), amplitude ratio (`AMP`) and frequency (`FREQ`) of the line identified by the number in the column name, where underscores represent a minus sign.
     Therefore, in the `.linx` file `FREQ01`, `AMP01` and `PHASE01` are respectively the frequency of the main vertical tune line in the horizontal spectrum, the ratio of this line's amplitude to that of the main horizontal line and the phase of this line.
     The equivalent columns in the `.liny` file are `FREQ10`, `AMP10` and `PHASE10`.
@@ -803,6 +807,7 @@ To do so, `omc3` provides the `hole_in_one` entrypoint, to be used this time wit
 
 In our example we will ask to use the `three_bpm_method` when reconstructing beta functions from phase advances, as the default `n_bpm_method` requires providing an error definition file which our simulation did not implement.
 Calling the entrypoint to perform optics analysis goes as:
+
 ```bash
 python -m omc3.hole_in_one --optics \
     --accel lhc \
@@ -826,13 +831,14 @@ To use these, refer to the `Optics Kwargs` section of the [hole_in_one API docum
 
 In the output files, various properties are given in column form for each observation point.
 Running `ls measured_optics/` yields the following result:
+
 ```bash
-beta_amplitude_x.tfs	    kick_x.tfs		        phase_y.tfs
-beta_amplitude_y.tfs	    kick_y.tfs		        special_phase_x.tfs
-beta_phase_x.tfs	        measure_optics.log	    special_phase_y.tfs
-beta_phase_y.tfs	        orbit_x.tfs		        total_phase_x.tfs
-interaction_point_x.tfs	    orbit_y.tfs		        total_phase_y.tfs
-interaction_point_y.tfs	    phase_x.tfs
+beta_amplitude_x.tfs     kick_x.tfs          phase_y.tfs
+beta_amplitude_y.tfs     kick_y.tfs          special_phase_x.tfs
+beta_phase_x.tfs         measure_optics.log     special_phase_y.tfs
+beta_phase_y.tfs         orbit_x.tfs          total_phase_x.tfs
+interaction_point_x.tfs     orbit_y.tfs          total_phase_y.tfs
+interaction_point_y.tfs     phase_x.tfs
 ```
 
 ---
@@ -841,7 +847,7 @@ interaction_point_y.tfs	    phase_x.tfs
     The harmonic analysis and optics analysis don't necessarily have to be separated steps.
     It is possible to run the `hole_in_one` entrypoint with both `--harpy` and `--optics` flags, even though the command might become cumbersome.
     The associated flags and options do not change, although only one `outputdir` should be given.
-    
+
     Our example done in one step would be:
     ```bash
     python -m omc3.hole_in_one --harpy --optics \
@@ -868,5 +874,4 @@ interaction_point_y.tfs	    phase_x.tfs
 [plot_spectrum]: https://pylhc.github.io/omc3/entrypoints/plotting.html#plot-spectrum
 [normal_forms]: https://cds.cern.ch/record/333077/files/p93.pdf
 [hole_in_one]: https://pylhc.github.io/omc3/entrypoints/analysis.html#omc3.hole_in_one.hole_in_one_entrypoint
-[new_machine_guide]: know_how.md#how-to-create-files-for-your-file-accelerator
 [model_creator]: https://pylhc.github.io/omc3/entrypoints/other.html#model-creator
