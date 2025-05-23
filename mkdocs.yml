@@ -153,26 +153,31 @@ nav:
       - Contributing: packages/development/contributing.md
       - Virtual Environments: packages/development/howto_venv.md
       - Releases: packages/development/howto_release.md
+      - Managing: packages/development/managing.md
   - GUIs:
     - The OMC GUIs: guis/about.md
     - Beta-Beat GUI:
       - About: guis/betabeat/gui.md
       - Defaults: guis/betabeat/defaults.md
       - Beam Selection: guis/betabeat/beam_selection.md
+      - Settings: guis/betabeat/settings.md
+      - Plotting: guis/betabeat/plots.md
       - BPM Panel: guis/betabeat/bpm_panel.md
       - Analysis Panel: guis/betabeat/analysis_panel.md
       - Optics Panel: guis/betabeat/optics_panel.md
-      - Settings: guis/betabeat/settings.md
-      - Plotting: guis/betabeat/plots.md
       - Correction Panel: guis/betabeat/correction_panel.md
       - Amplitude Detuning: guis/betabeat/ampdet.md
       - BetaBeat.src: guis/betabeat/betabeatsource.md
+    - Segment-by-Segment GUI:
+      - About: guis/segment_by_segment/gui.md
     - K-Modulation GUI:
       - About: guis/kmod/gui.md
       - Performing a Modulation: guis/kmod/modulating.md
       - Analyzing Modulations: guis/kmod/analyzing.md
     - Chromaticity GUI:
       - About: guis/chroma/gui.md
+    - RDT Feeddown GUI:
+      - About: guis/rdt_feeddown/gui.md
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
     - Usage and Development:
