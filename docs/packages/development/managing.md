@@ -31,17 +31,45 @@ You will then be greeted with a welcome message and some information about short
 
 ### Repositories
 
-TODO
+Local copies of the [github repositories][pylhc_github] are kept in `/afs/cern.ch/eng/sl/lintrack/omc_repos/`.
+There is a shortcut available on the `lintrack` welcome screen to update all repositories.
+
+These repositories are used in the `python_edge` environment and might be modified online to test new features
+or fix issues.
+
+!!! warning "Keeping them clean"
+    Changes to the repositories should be short lived and patched into the packages properly within a day or two and the repository reset to its original state.
+    In the past, changes made during shifts were often forgotten and after a while no one knew why the changes were made which version was the correct one to use.
 
 ### Python Installations
 
-TODO
+The python installations are located in `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/`.
+In this folder you can also find the `acc-py` installers as well as the `omc_requirements_*.txt` files to easily setup new environments.
+
+- `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/base/` contains the base `acc-py` installations from which the environments are derived.
+- In `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/venv/` contains the environments. These are automatically picked up by the [BetaBeat GUI](/guis/betabeat/gui.html).
+
+The main environments are:
+
+- `omc_py3xx_releases`: The main production environment which is used for the CCC. All packages are installed via their official `pypi` release.
+- `omc_py3xx_repos`: The development environment which is used for the testing of new packages. All packages are installed from the local `git` repositories.
+
+These two environments are also symlinked to `/afs/cern.ch/eng/sl/lintrack/omc_python3` and `/afs/cern.ch/eng/sl/lintrack/omc_python_edge` respectively.
+
+!!! info "TODO"
+    - If you want the newest version of a repository to be used in `python_edge` you need to pull the changes into the local repository manually (see also the `lintrack` welcome screen).
+    - Whenever there is a new release for one of the packages, it needs to be manually installed into the `omc_py3xx_releases` environment.
+      Shortcuts are available (see the `lintrack` welcome screen), but for single updates one can use `python -m pip install -U <package>`.
+    - On new `acc-py` releases, a new base environment needs to be created and the `omc_py3xx_releases` and `omc_py3xx_repos` environments derived.
+      You can use the `omc_requirements_*.txt` files for this process.
+      To avoid issues, the former and new bases/environments can be kept in parallel for a while.
+      Don't forget to also update the symlinks.
 
 ## Github
 
 The settings for the organization `pylhc` should be automatically available to you, if you have been given the right permissions (either `admin` or `code owner`).
 
-Our repositories use the [`.github`][pylhc_github] configuration repository to manage
+Our repositories use the [`.github`][pylhc_github_github] configuration repository to manage
 
 - Issue Templates
 - Workflows
@@ -115,7 +143,8 @@ To add a new repository to Zenodo, you need to make sure that the `.zenodo.json`
 [pypi]: https://pypi.org
 [zenodo]: https://zenodo.org
 [zenodo_github]: https://zenodo.org/account/settings/github/
-[pylhc_github]: https://github.com/pylhc/.github
+[pylhc_github]: https://github.com/pylhc
+[pylhc_github_github]: https://github.com/pylhc/.github
 [pylhc_publish]: https://github.com/pylhc/.github/blob/master/.github/workflows/publish.yml
 [pypi_apitoken]: https://pypi.org/help/#apitoken
 [pylhc_labels_workflow]: https://github.com/pylhc/.github/blob/master/.github/workflows/assign_labels_to_all_repos.yml
