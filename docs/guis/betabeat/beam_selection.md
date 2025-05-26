@@ -32,15 +32,14 @@ Depending on your choice of `Beam` a default is already preselected for you.
     The GUI needs to be able to write to the selected folder.
     If you do not have write access to the folder, you will get a warning and cannot continue to start the GUI.
 
-Special Entries:
+#### Special Entries
 
 - _LHC-Betabeat_: `/user/slops/data/LHC_DATA/OP_DATA/Betabeat/`
 - _Other_: Lets you choose your own path, starting from your default (usually `home`) folder for file dialogs.
 - _Other (Last Selected)_: Lets you choose your own path, starting from the last selected folder in this dropdown.
 - _Other (Accel)_: Lets you choose your own path, starting from default of the selected beam/acceelerator.
 
-
-Folder Structure:
+#### Folder Structure
 
 Within your selected output folder, a new folder for the current date will be created.
 Withing that folder, a folder for the selected beam/accelerator will be created.
@@ -148,6 +147,5 @@ or choose your own environment (e.g. `.venv/bin/python`).
     ```
 
     See [omc3 on github][omc3_github]{target=_blank}.
-
 
 [omc3_github]: https://github.com/pylhc/omc3
