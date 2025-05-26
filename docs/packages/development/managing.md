@@ -29,6 +29,14 @@ You will then be greeted with a welcome message and some information about short
 !!! info "Access"
     Due to CERN regulations, you cannot log into the `lintrack` account from outside the CERN network.
 
+### Repositories
+
+TODO
+
+### Python Installations
+
+TODO
+
 ## Github
 
 The settings for the organization `pylhc` should be automatically available to you, if you have been given the right permissions (either `admin` or `code owner`).

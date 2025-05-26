@@ -3,11 +3,11 @@
 /* Define the specific colors using CSS variables (optional but good practice) */
 :root {
   --color-cernniceblue: #0669b2;
-  --color-atlasgreen: #27a572;  
-  --color-cernred: #e15e32;     
-  --color-atlasorange: #f09010; 
+  --color-atlasgreen: #27a572;
+  --color-cernred: #e15e32;
+  --color-atlasorange: #f09010;
   --color-cernlightblue: #15b3da;
-  --color-cernpurple: #6e2466;   
+  --color-cernpurple: #6e2466;
 }
 
 /* General emphasis class */
@@ -16,4 +16,7 @@
   font-weight: bold;
 }
 
-
+.warning-colored {
+  color: var(--color-cernred);
+  font-weight: bold;
+}
