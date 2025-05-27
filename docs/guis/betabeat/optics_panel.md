@@ -17,7 +17,7 @@ A wide variety of computed physical properties can be visualized across the enti
 
 ### Open Files
 
- - TODO: Open and convert BBS files!
+ - TODO: Open and convert BBS files! [outputfiles](/guis/betabeat/betabeatsource.html#meaning-of-the-output-files)
 
 ## Segment-by-Segment: Segment Tab
 

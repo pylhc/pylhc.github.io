@@ -4,9 +4,9 @@ Since 2025, the former `omc3` branch has been moved to the `master` branch of th
 The "BetaBeat.src" branch of the GUI has been retired from `master` to the `BetaBeatSrc` branch
 and is no longer under active development.
 
-Legacy version are still available on CAS.
+Legacy version are still available on [CAS][bbs_cas]{target=_blank .cern_internal}.
 
-## Meaning of Beta-Beat.src Output Files
+## Meaning of the Output Files
 
 The naming of output files in Beta-Beat.src analysis can be very unintuitive.
 Namely, one will see similar output files for a quantity which go as `get_*.out`, `get_*_free.out` and `get_*_free2.out`, where `*` is the calculated quantity (betas, phase, etc.).
@@ -61,3 +61,5 @@ The method used to output the `get_*_free2.out` files is sometimes more robust a
             langid       = {english}
         }
         ```
+
+[bbs_cas]: https://cas.cern.ch/project?groupId=cern.lhc&artifactId=lhc-app-beta-beating
