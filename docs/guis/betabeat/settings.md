@@ -265,9 +265,44 @@ The `python` default is `""`, i.e. no suffix.
   </center>
 </figure>
 
+In this tab, the settings to determine and define the accelerator class are specified,
+which is the `python`-internal representation of the accelerator and its settings in use.
+
+!!! warning "Automatically Set"
+    Most of these settings are automatically set from the selected machine and there is **no need to change them manually**.
+    If you do, you can analyse data from other machines, but the results will be put into the output directory of the selected machine,
+    which might be very confusing to find this data later on.
+    The best way to change the machine is to restart the GUI and select the machine you want to use in the [Beam Selection Window](beam_selection.md).
+
+- **ModelDir**:
+  The directory in which the model is stored.
+  This is automatically set by the currently loaded model.
+
+- **Accelerator Name**:
+  Name of the accelerator, this is automatically set by the selected beam/accelerator but can be overwritten by the user, **which is not recommended!**{.warning-colored}
+
+- **LHC Mode**:
+  Only active if `lhc` is selected.
+  Mode (e.g. `hllhc`) or year of the LHC accelerator, this is automatically set by the current year but can be overwritten by the user to analyse old or simulation data.
+
+- **Beam**:
+  Only active if `lhc` is selected.
+  Beam of the LHC that is currently analysed.
+  This is automatically set by the currently selected beam but can be overwritten by the user to analyse the other beam, **which is not recommended!**{.warning-colored}
+
+- **PSBooster Ring**:
+  Only active if `psb` is selected.
+  Ring of the PSB that is currently analysed.
+
+- **SuperKEKB Ring**:
+  Only active if `skekb` is selected.
+  Ring of the SuperKEKB that is currently analysed.
+  This is automatically set by the selected beam/accelerator but can be overwritten by the user, **which is not recommended!**{.warning-colored}
+
 !!! warning "For Developers"
-    Quite a lot of functionality has been implemented to make the creation of new settings entries,
-    allowing them to be used from configuration files and displaying them in the UI as smooth as possible.
+    Quite a lot of functionality has been implemented to make the creation of new settings entries as smooth as possible,
+    not only the transfer of values between model and UI but also allowing them to be also easily manipulated from configuration files.
+
     **Please use it!**
 
     It should be mostly a copy-and-paste from other already implemented entries,
@@ -276,19 +311,20 @@ The `python` default is `""`, i.e. no suffix.
 
     In `model/settings`:
 
-    - add a descriptive attritbute to the respective settings class.
-    - add your vlaue to the constructor of the class, with default values.
-    - add your value to the copy-constructor of the class.
-    - add a nice tooltip to the label (e.g. the help text from the corresponding `python` argument).
+    - add a **descriptive attritbute** to the respective settings class.
+    - add your vlaue to the **constructor** of the class, with default values.
+    - add your value to the **copy-constructor** of the class.
+    - add a nice **tooltip** to the label (e.g. the help text from the corresponding `python` argument).
     - use `getProperty()` to automatically **extract** the value from the property file in a unified way and set the attribute on the class.
     - use `setProperty()` to automatically **set** the value in the property file in a unified way from the current value of the class.
     - add your value into the `toString()` function of the class.
 
     In `view/settings`:
 
+    - add the **label** and appropriate user **interface element**.
     - use `getComponentValue()` to automatically **extract** the value from the UI in a unified way and set the attribute on the class.
     - use `setComponentValue()` to automatically **set** the value in the UI in a unified way from the current value of the class.
-    - use `addColorActionListener()` on the new label to automatically set the color on changes.
+    - use `addColorActionListener()` on the new label to **automatically set the color on changes**.
 
 [python-docs]: https://pylhc.github.io/omc3/
 [multiturn]: /guis/multiturn/gui.html
