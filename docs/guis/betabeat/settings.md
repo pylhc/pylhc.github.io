@@ -299,6 +299,8 @@ which is the `python`-internal representation of the accelerator and its setting
   Ring of the SuperKEKB that is currently analysed.
   This is automatically set by the selected beam/accelerator but can be overwritten by the user, **which is not recommended!**{.warning-colored}
 
+## Adding New Settings
+
 !!! warning "For Developers"
     Quite a lot of functionality has been implemented to make the creation of new settings entries as smooth as possible,
     not only the transfer of values between model and UI but also allowing them to be also easily manipulated from configuration files.
