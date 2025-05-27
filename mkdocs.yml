@@ -68,7 +68,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.keys:
-      key_map: {"okbtn": "OK", "cancelbtn": "Cancel", "mousewheel": "Mouse Wheel"}
+      key_map: {"okbtn": "OK", "cancelbtn": "Cancel", "mousewheel": "&#9881; Mouse Wheel"}
   - pymdownx.mark
   - pymdownx.snippets:
       check_paths: true
