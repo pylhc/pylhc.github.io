@@ -15,6 +15,10 @@ A wide variety of computed physical properties can be visualized across the enti
 !!! todo
     Include a screenshot with the main optics tab.
 
+### Open Files
+
+ - TODO: Open and convert BBS files!
+
 ## Segment-by-Segment: Segment Tab
 
 A list of pre-defined segments of the machine can be selected to view properties across said segment.

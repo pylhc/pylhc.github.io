@@ -17,6 +17,11 @@
 }
 
 .warning-colored {
+  color: var(--color-atlasorange);
+  font-weight: bold;
+}
+
+.cernred {
   color: var(--color-cernred);
   font-weight: bold;
 }
