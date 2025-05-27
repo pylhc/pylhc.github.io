@@ -160,7 +160,7 @@ nav:
       - About: guis/betabeat/gui.md
       - Defaults: guis/betabeat/defaults.md
       - Beam Selection: guis/betabeat/beam_selection.md
-      - General Components: guis/betabeat/general_components.md
+      - Common Components: guis/betabeat/common_components.md
       - Settings: guis/betabeat/settings.md
       - Model Creation: guis/betabeat/model_creation.md
       - BPM Panel: guis/betabeat/bpm_panel.md

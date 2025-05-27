@@ -1,4 +1,4 @@
-# General Components
+# Common Components
 
 Independent of which tab is selected, some general components of the UI are common or even always present.
 
