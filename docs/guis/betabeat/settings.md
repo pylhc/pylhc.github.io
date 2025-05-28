@@ -32,7 +32,6 @@ There is some general behaviour, that is true for all settings-tabs:
 - ++"Load from File"++: When loading settings from file, not all possible entries need to be present in that file and **only present ones will be modified** in the UI.
   Entries in the file, that are not recognized as settings will be ignored.
 
-
 !!! info "Some Background on the Internals"
     To "apply" settings simply means that the current values in the UI are assinged to the corresponding settings class,
     each an internal representation of a settings tab,
@@ -245,6 +244,17 @@ The `python` default is `""`, i.e. no suffix.
   <figcaption>The Cleaning-tab of the settings window.</figcaption>
   </center>
 </figure>
+
+Most of the cleaning, for which the settings can be changed here, are part of the harmonic analysis module `harpy` in `omc3`
+and will be executed during the "Analyse Spectrum" phase.
+
+!!! warning "Deactivating Cleaning"
+    Cleaning can be deactivated via the **Active** toggle, but this is not recommended when working with measured data (in contrast to simulation data),
+    not only because measured data usually contains BPMs with faulty signals, but also because the synchronizing of measured data to model via the **First BPM** setting
+    is done within the cleaning module (see below).
+
+??? info "Why is cleaning part of the harmonic analysis?"
+    Cleaning is part of the harmonic analysis in `harpy` as the harmonic analysis is done
 
 
 ## Optics-Tab

@@ -1,6 +1,3 @@
-# Copyright (c) 2020 Felix Soubelet <felix.soubelet@cern.ch>
-
-
 # Project information
 site_name: OMC Documentation
 site_description: >-
@@ -182,6 +179,7 @@ nav:
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
     - Usage and Development:
+      - Guidelines: guis/usage/guidelines.md
       - IDE Setup: guis/usage/ide_install.md
       - Remote: guis/usage/remote.md
       - Releases: guis/usage/releases.md
