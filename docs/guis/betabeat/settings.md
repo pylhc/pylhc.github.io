@@ -247,6 +247,7 @@ The `python` default is `""`, i.e. no suffix.
 
 Most of the cleaning, for which the settings can be changed here, are part of the harmonic analysis module `harpy` in `omc3`
 and will be executed during the "Analyse Spectrum" phase.
+Some of this procedure is also described on the [BPM filtering page][bpm_filtering].
 
 !!! warning "Deactivating Cleaning"
     Cleaning can be deactivated via the **Active** toggle, but this is not recommended when working with measured data (in contrast to simulation data),
@@ -254,8 +255,52 @@ and will be executed during the "Analyse Spectrum" phase.
     is done within the cleaning module (see below).
 
 ??? info "Why is cleaning part of the harmonic analysis?"
-    Cleaning is part of the harmonic analysis in `harpy` as the harmonic analysis is done
+    Cleaning is part of the harmonic analysis in `harpy` as the [frequency analysis is done on the v-matrix of the SVD][harpy_ipac]:
+    SVD is used to reduce the noise in the BPM data by selecting only the most important modes and in the same step also to detect bad bpms.
+    As this decomposition is a linear transformation, the frequency analysis can be run directly on decomposed v-matrix, without
+    having to re-compose the data into the time-domain, saving time and memory.
+    The disadvantage is that, as we do not save the SVD matrices, there is no way to only run _cleaning_ without frequency analysis at the moment.
+    For more details, see [doi:10.18429/JACoW-IPAC2022-WEPOMS035][harpy_ipac].
 
+- **Active**:
+  If active, the cleaning module is run during the "Analyse Spectrum" phase.
+  See the caveat above about not running it.
+  Default: `False`.
+
+- **Bad BPMs**:
+  A list of [BPMs already known as "bad"][bad_bpms], i.e. not to be used for frequency analysis.
+
+- **Wrong Polarity BPMs**:
+  A list of BPMs that have been found to have wrong polarity.
+  Their signal will be inverted.
+
+- **First BPM**:
+  The BPM which is used as the reference for synchronizing the BPMs to the model.
+  This should be the first BPM in the turn-by-turn data, which is usually the first BPM after the injection,
+  so it is different for different machines and even the LHC beams.
+  The "synchronization" is done by simply ignoring the first turn from all BPMs starting at the given BPM to the last BPM in the model,
+  meaning the measured data is synchronized to the model, not the other way around.
+
+- **Max Peak**:
+
+- **Peak-to-Peak Cut**:
+
+- **Singular Value Cut**:
+
+- **SVD Dominance Cut**:
+
+- **Keep Dominant BPMs**:
+
+- **Keep Exact Zeros**:
+
+- **Opposite Direction**:
+
+### GUI Cleaning
+
+The GUI provides additional ways of cleaning BPMs on the output of the harmonic analysis in the [Analysis Panel](analysis_panel.md).
+The BPMs given here to the **Keep BPMs** field will be kept, even if they are outside the specified cut-offs or identified as outliers.
+The defaults here for the LHC are the BPMs **closest to the AC-Dipole**, as they are used for compensating for the additional phase-advance
+introduced by the AC-Dipole and if they are not found in the data, the optics analysis will fail.
 
 ## Optics-Tab
 
@@ -339,4 +384,7 @@ which is the `python`-internal representation of the accelerator and its setting
     - use `addColorActionListener()` on the new label to **automatically set the color on changes**.
 
 [python-docs]: https://pylhc.github.io/omc3/
-[multiturn]: /guis/multiturn/gui.html
+[multiturn]: ../multiturn/gui.md
+[harpy_ipac]: https://accelconf.web.cern.ch/ipac2022/papers/wepoms035.pdf
+[bpm_filtering]: ../../measurements/physics/bpm_filtering.md
+[bad_bpms]: ../../measurements/physics/bpm_filtering.md#manual
