@@ -282,14 +282,38 @@ Some of this procedure is also described on the [BPM filtering page][bpm_filteri
   meaning the measured data is synchronized to the model, not the other way around.
 
 - **Max Peak**:
+  BPMs with any orbit value **larger** than this value will be removed from the analysis.
+  This ensures the removal of BPMs with unrealisticly high signals, e.g. very large noise.
+  Default: `0.02`.
 
 - **Peak-to-Peak Cut**:
+  BPMs with an absolute difference between their maximum and minimum value **lower** than this value will be removed from the analysis.
+  This ensures that BPMs with a very flat signal are removed.
+  Default: `1e-8`.
 
 - **Singular Value Cut**:
+  Keep this amount of modes with the highest singular values, i.e. the most important modes.
+  The remaining modes will be removed from the analysis.
+  This is one of the most important parameters for general noise removal.
+  Default: `12`.
 
 - **SVD Dominance Cut**:
+  Limit for single BPM dominating a mode.
+  If any BPM has a larger value than this in a single mode, it will be removed from the analysis.
+  Only the BPM with the highest value will be removed and then the SVD-matrices are renormalized,
+  if  "SVD Dominance Iterations" is set, this procedure is then repeated for the remaining BPMs.
+  Default: `0.925`.
 
 - **Keep Dominant BPMs**:
+  _[Deprecated: Remove!][gitlab_issue279]_
+
+- **SVD Dominance Iterations**:
+  _[Coming Soon!][gitlab_issue279]_<br>
+  Maximal number of iterations of U matrix elements removal and renormalisation in iterative SVD cleaning of dominant BPMs.
+  Only used, if the "SVD Dominance Cut" is not `None` and any BPM is above the dominance cut.
+  As only the BPM with the highest value in a mode is removed, this is also the maximum number of BPMs removed due to the dominance cleaning.
+  If this is set to `0`, the dominance cleaning is skipped (i.e. the "SVD Dominance Cut" is ignored) and all BPMs are kept.
+  Default: `3`.
 
 - **Keep Exact Zeros**:
 
@@ -388,3 +412,4 @@ which is the `python`-internal representation of the accelerator and its setting
 [harpy_ipac]: https://accelconf.web.cern.ch/ipac2022/papers/wepoms035.pdf
 [bpm_filtering]: ../../measurements/physics/bpm_filtering.md
 [bad_bpms]: ../../measurements/physics/bpm_filtering.md#manual
+[gitlab_issue279]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/279

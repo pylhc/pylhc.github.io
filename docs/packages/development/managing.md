@@ -47,7 +47,7 @@ The python installations are located in `/afs/cern.ch/eng/sl/lintrack/omc_acc_py
 In this folder you can also find the `acc-py` installers as well as the `omc_requirements_*.txt` files to easily setup new environments.
 
 - `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/base/` contains the base `acc-py` installations from which the environments are derived.
-- In `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/venv/` contains the environments. These are automatically picked up by the [BetaBeat GUI](/guis/betabeat/gui.html).
+- In `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/venv/` contains the environments. These are automatically picked up by the [BetaBeat GUI](../..//guis/betabeat/gui.md).
 
 The main environments are:
 
@@ -118,7 +118,7 @@ For more details, see the [official documentation][github_codeowners].
 
 The access to [PyPI][pypi] is provided by the `pylhc` service account, for which you will need password and 2FA authentication.
 
-Publishing access is given to the github workflows via [API-Token](https://pypi.org/help/#apitoken) (Settings -> Account Settings -> API Tokens) to all repositories of the `pylhc` organization.
+Publishing access is given to the github workflows via [API-Token][pypi_apitoken] (Settings -> Account Settings -> API Tokens) to all repositories of the `pylhc` organization.
 This is done by using the [publish workflow][pylhc_publish] and passing the token as secret:
 
 - `PYPI_USERNAME` : `__token__` (literal string)
@@ -138,7 +138,6 @@ To add a new repository to Zenodo, you need to make sure that the `.zenodo.json`
 - Flip the switch to `On`
 - Create a release on `github` -> The page for your repo should now be visible on Zenodo!
 - Add the `badge` to your `README.md`
-
 
 [pypi]: https://pypi.org
 [zenodo]: https://zenodo.org
