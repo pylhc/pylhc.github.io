@@ -316,8 +316,15 @@ Some of this procedure is also described on the [BPM filtering page][bpm_filteri
   Default: `3`.
 
 - **Keep Exact Zeros**:
+  By default, BPMs that contain exact zeros in their data are removed as in the LHC zeros are added to the data when the value was not found (in other machines this might be `NaNs` instead).
+  If, for some reason, you expect exact zeros in your data and you want to keep those BPMs, set this to `True`.
+  Default: `False`.
 
 - **Opposite Direction**:
+  If the measured beam data is in the opposite direction from the model, as e.g. the case for the LHC Beam 2 (when not using a Beam 4 model),
+  this box needs to be checked so that the analysis knows about this direction change.
+  In the GUI this should be set automatically when choosing LHCB2.
+  Default: `False`.
 
 ### GUI Cleaning
 
@@ -334,6 +341,77 @@ introduced by the AC-Dipole and if they are not found in the data, the optics an
   <figcaption>The Optics-tab of the settings window.</figcaption>
   </center>
 </figure>
+
+- **Files**:
+  Files to to use for the optics analysis.
+  These are the output files from `harpy`.
+  This field is not editable and is only shown here, as `files` is an argument to `optics_measurement` and an attribute on the internal `OpticsSettings` class.
+  The actual files to use are chosen from the [Analysis Panel](analysis_panel.md), after which this field is automatically filled in when shown in the [Run Optics](analysis_panel.md#run-optics) popup window.
+
+- **Outputdir**:
+  Directory to place to output of the optics analysis.
+  The field is not editable and is only shown here, as `outputdir` is an argument to `optics_measurement` and an attribute on the internal `OpticsSettings` class.
+  The actual directory is chosen by the user per analysis, when setting an analysis name in the [Run Optics](analysis_panel.md#run-optics) popup window.
+
+- **Calibrationdir**:
+  Path to the directory containing the [calibration][bpm_calibration] files, used to rescale the BPM amplitudes and amplitude errors.
+  This field should be automatically set correctly, when choosing an accelerator in the [Beam Selection Window](beam_selection.md).
+
+- **Phase Advance via Union of BPMs**:
+  Uses the `how=outer` pandas method to join dataframes of multiple measurements, which is equivalent to a union of BPMs (i.e. uses all BPMs present in any measurement file),
+  instead of the default `how=inner` which creates an intersection of BPMs (i.e. uses only BPMs present in all measurement files).
+  Default: `False`.
+
+- **Nonlinear Calculations**:
+  Activate which "nonlinear" calculations should be performed: The calculation of Resonance Driving Terms (RDTs) and/or the calculation of combined RDTs.
+
+- **RDT Magnet Order**:
+  When RDT calculation is active, this field specifies the highest order of magnetic fields for which the corresponding RDTs are calculated.
+  Needs to be between 2 and 8 (including).
+  Default: `4` (octupoles).
+
+- **Use Three-Bpm Method**:
+  When active, the [Three-BPM Method][three_bpm_method] is used to calculate beta-from-phase, otherwise the [N-BPM Method][n_bpm_method] is used.
+  Default: `False`.
+
+- **Calculate only coupling**:
+  When active, skips most of the optics calcualtions and calculates only phases and coupling RDTs.
+  Useful for quick analysis or machines that do not support (e.g. not enough BPMs) some of the other analysis methods.
+  Default: `False`.
+
+- **3D-Excitation**:
+  Activate this, when [3D-Excitation/3D-Kicks][three_d_kicks] were used to calculate chromatic parameters directly from the longitudinal information of the harmonic analysis.
+  Default: `False`
+
+- **Isolation Forest Active**:
+  Activate for additional filtering of BPMs before analysis via the [Isolation Forest][isolation_forest_cleaning] machine learning method.
+  Default: `False`.<br>
+  :fontawesome-solid-triangle-exclamation:{.warning-colored} _[This method is currently under re-evaluation][isolation_forest_issue]._
+
+- **Calculate Second-Order Dispersion**:
+  Activate to calculate also second order dispersion.
+  Default: `False`.
+
+- **Calculate Chromatic Beating**:
+  Activate to calculate chromatic beatings: W, PHI and coupling.
+  Default: `False`.
+
+- **Coupling Method**:
+  Switch between the different coupling methods. Default: `2`.
+    - `0`: Disabled.
+    - `1`: 1 BPM Method.
+    - `2`: 2 BPMs Method.<br>
+
+- **Range of BPMs**
+  Select the range of BPMs for beta-from-phase calculation.
+  Can be an odd number between `5` and `15` BPMs (including).
+  Default: `11`.
+
+- **Compensation Mode**
+  Mode of phase compensation for the analysis in case of a driven beam excitation,
+  to remove the effect of the AC-Dipole (present in the measurements) from the actual phase advances in the machine (i.e. when the AC-Dipole is not used during the rest of the operation).
+  This can be `model`, `equation` or `none`.
+  Default: `model`.
 
 ## Accelerator-Tab
 
@@ -412,4 +490,10 @@ which is the `python`-internal representation of the accelerator and its setting
 [harpy_ipac]: https://accelconf.web.cern.ch/ipac2022/papers/wepoms035.pdf
 [bpm_filtering]: ../../measurements/physics/bpm_filtering.md
 [bad_bpms]: ../../measurements/physics/bpm_filtering.md#manual
+[isolation_forest_cleaning]: ../../measurements/physics/bpm_filtering.md#isolation-forest
+[bpm_calibration]: ../../measurements/physics/bpm_calibration.md
+[three_d_kicks]: ../../measurements/physics/threedkicks.md
 [gitlab_issue279]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/279
+[n_bpm_method]: https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.20.111002
+[three_bpm_method]: https://repository.cern/records/eny2v-4y338
+[isolation_forest_issue]: https://github.com/pylhc/omc3/issues/184
