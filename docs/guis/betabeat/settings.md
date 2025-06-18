@@ -38,17 +38,17 @@ There is some general behaviour, that is true for all settings-tabs:
     which is used to persistently store the settings in memory and pass them between different parts of the application.
     To "reset" the settings, the stored values are reloaded from this internal representation to the UI.
 
-## Gui-Tab
+## Gui Tab
 
 <figure>
   <center>
   <img src="../../assets/images/betabeat_gui/settings_gui.png" width="100%" alt="GUI settings tab." />
-  <figcaption>The Gui-tab of the settings window.</figcaption>
+  <figcaption>The Gui tab of the settings window.</figcaption>
   </center>
 </figure>
 
 The GUI tab contains settings that steer the behaviour of the GUI.
-This is in contrasts to the other settings tabs, which control the settings passed on to the `python` tasks.
+This is in contrast to the other settings tabs, which control the settings passed on to the `python` tasks.
 
 - **Turn-by-Turn Datatype of Files to be Opened**:
   Specify the datatype of the turn-by-turn data files that you open when clicking on ++"Open Files"++{.green-gui-button} in the [BPM Panel](bpm_panel.md).
@@ -93,13 +93,12 @@ This is in contrasts to the other settings tabs, which control the settings pass
   Conversely, if `Also run optics analysis` is selected, the first step of the `harpy` analsysis will be run sequentially per file,
   as coordination between multiple tasks is not implemented.
 
-
-## Tunes-Tab
+## Tunes Tab
 
 <figure>
   <center>
   <img src="../../assets/images/betabeat_gui/settings_tunes.png" width="100%" alt="Tunes settings tab." />
-  <figcaption>The Tunes-tab of the settings window.</figcaption>
+  <figcaption>The Tunes tab of the settings window.</figcaption>
   </center>
 </figure>
 
@@ -118,7 +117,7 @@ The first row defines the main line to be found in the spectrum, which is the **
 the **natural tune** in the case of free kicks.
 
 The natural tunes can be given either directly or as differences to the main tune, by activating the `Nat. Deltas` checkbox.
-This is also reflected in parameters given to `harpy` and can be useful together with the `Autotunes` setting, e.g. if different working points with the same delta a probed.
+This is also reflected in parameters given to `harpy` and can be useful together with the `Autotunes` setting, e.g. if different working points with the same delta are probed.
 
 !!! warning "Deltas Sign-Convention"
     The signs between the `Nat. Deltas` here and in [Multiturn][multiturn] are inverted, because [Multiturn][multiturn] uses the natural tunes as the basis
@@ -137,7 +136,7 @@ The fields are non-editable when it does not make sense in the current settings 
   If active, free kicks are used instead of AC-Dipole kicks.
 
 - **Autotunes**:
-  If active, the highest peak in the whole spectrum is automatically assumed to be the main tune, either in the **`transversal`** planes or in **`all`** planes including the longitudinal.
+  If active, the highest peak in the whole spectrum is automatically assumed to be the main tune, either in the **`transverse`** planes or in **`all`** planes including the longitudinal.
   Otherwise the main tune is defined as the highest peak in the spectrum around the tunes given in the first row &plusmn; the tolerance.
 
 - **Clean Limit**:
@@ -146,19 +145,18 @@ The fields are non-editable when it does not make sense in the current settings 
 
 - **Tolerance**:
   The tolerance for the peak search in the spectrum.
-  This tolerance is uses for all peaks (unless `Autotunes` is active, in which case it is not used for the main tune), i.e. for all harmonics/resonance lines searched for in the spectrum.
+  This tolerance is used for all peaks (unless `Autotunes` is active, in which case it is not used for the main tune), i.e. for all harmonics/resonance lines searched for in the spectrum.
 
-
-## Harpy-Tab
+## Harpy Tab
 
 <figure>
   <center>
   <img src="../../assets/images/betabeat_gui/settings_harpy.png" width="100%" alt="Harpy settings tab." />
-  <figcaption>The Harpy-tab of the settings window.</figcaption>
+  <figcaption>The Harpy tab of the settings window.</figcaption>
   </center>
 </figure>
 
-The Harpy-tab contains the settings for the harmonic `harpy` analysis.
+The Harpy tab contains the settings for the harmonic `harpy` analysis.
 
 - **Files**:
   This field is not editable and automatically set when selecting TbT files in the [BPM Panel](bpm_panel.md) and running the analysis.
@@ -219,14 +217,15 @@ The Harpy-tab contains the settings for the harmonic `harpy` analysis.
 
 - **TbtDataType**:
   The datatype of the input turn-by-turn data.
-  Many options are available here, as they could be used when running the analysis from commadline.
+  Many options are available here, as they could be used when running the analysis from command-line.
   Yet, as we have imported the data already into the GUI, and the GUI only supports `lhc` and `sps` turn-by-turn data, this setting should be set to either of these two values.
   Default: `lhc`.
 
 - **Resonances**:
   The multipole order of the resonances looked for in the spectrum and written out in the `lin`-files.
-  If you want to run optics analysis for high-order RDTs later on, you need to set this number respectively, depending on the order of the RDT you want to analyse.
-  Default: `4`.
+  Needs to be between 2 and 8 (including).
+  If you want to run optics analysis for high-order RDTs later on, you need to set this number respectively, depending on the order of the RDT you want to analyse (see _RDT Magnet Order_ in the [Optics-Tab](#optics-tab) below).
+  Default: `4` (octupoles).
 
 ### Automated Suffixes
 
@@ -368,6 +367,7 @@ introduced by the AC-Dipole and if they are not found in the data, the optics an
 - **RDT Magnet Order**:
   When RDT calculation is active, this field specifies the highest order of magnetic fields for which the corresponding RDTs are calculated.
   Needs to be between 2 and 8 (including).
+  Calculation of RDTs of a given order require the lines of that order to have been identified in the harmonic analysis, hence the _Resonances_ field of the [Harpy-Tab](#harpy-tab) needs to be set to at least the same value.
   Default: `4` (octupoles).
 
 - **Use Three-Bpm Method**:

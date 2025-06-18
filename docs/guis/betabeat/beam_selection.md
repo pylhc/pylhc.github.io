@@ -37,13 +37,13 @@ Depending on your choice of `Beam` a default is already preselected for you.
 - _LHC-Betabeat_: `/user/slops/data/LHC_DATA/OP_DATA/Betabeat/`
 - _Other_: Lets you choose your own path, starting from your default (usually `home`) folder for file dialogs.
 - _Other (Last Selected)_: Lets you choose your own path, starting from the last selected folder in this dropdown.
-- _Other (Accel)_: Lets you choose your own path, starting from default of the selected beam/acceelerator.
+- _Other (Accel)_: Lets you choose your own path, starting from default of the selected beam/accelerator.
 
 #### Folder Structure
 
 Within your selected output folder, a new folder for the current date will be created.
 Withing that folder, a folder for the selected beam/accelerator will be created.
-Within that folde in turn, folders for `Measurements`, `Results` and `Models` will be created.
+Within that folder in turn, folders for `Measurements`, `Results` and `Models` will be created.
 If any of these folders already exist, they will be used, e.g.:
 
 ```text

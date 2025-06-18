@@ -11,9 +11,9 @@ This is for three reasons:
 
 ### Model-View-Controller Architecture
 
-While not strictly enforced, our GUIs follow the [Model-View-Controller][mvc_wiki]{:target="_blank"} architecture,
+While not strictly enforced, our GUIs follow the [Model-View-Controller][mvc_wiki]{target="_blank"} architecture,
 as it is a very useful and therefore also very common GUI pattern.
-[A better explanation can be found here][mvc_geeks]{:target="_blank"}, but this section summarizes a few key points relevant to our usecase.
+[A better explanation can be found here][mvc_geeks]{target="_blank"}, but this section summarizes a few key points relevant to our usecase.
 
 The main philosophy of the MVC architecture is to separate the actual GUI elments, the _View_, from the underlying data, stored in the _Model_,
 and let the _Controller_ handle the communication between the two and with the user.
@@ -21,10 +21,10 @@ and let the _Controller_ handle the communication between the two and with the u
 In our code this is not always possible or strictly enforced and sometimes it is even hard to distinguish whether something should be part of the
 _Controller_ or the _View_, but it is a good idea to at least think about if it can be done for the specific part you are working on.
 
-Main advatages of the MVC architecture are:
+Main advantages of the MVC architecture are:
 
 - The _Model_ components are usually easier to test.
-- It automatically reduces complexity and coupling in the GUI code, by its build-in separation of functionality and modularization.
+- It automatically reduces complexity and coupling in the GUI code, by its built-in separation of functionality and modularization.
 - This makes it easier to reutilize code between different parts of the GUI (e.g. re-use of the same data) or even between different GUIs (e.g use the same plotting components).
 - It is easier to find the part in the code that you want to change (i.e. do you want to make a cosmetic change? - _View_; or a workflow change? - _Controller_; or a change in how to store data? - _Model_).
 
@@ -35,7 +35,7 @@ this code has been used for many years and probably will be continued to be used
 
 **Try to keep it clean!**
 
-Because GUI testing is hard and because we have easy access to old versions via [CAS][cas_cern]{:target="_blank" .cern_internal},
+Because GUI testing is hard and because we have easy access to old versions via [CAS][cas_cern]{target="_blank" .cern_internal},
 there is no tests suite and no review process for the `java` development and changes can be simply pushed to the `master` branch.
 
 Some "best practices" have been established through the years:
@@ -51,11 +51,11 @@ Some "best practices" have been established through the years:
 - Do not use `Strings` for file paths, for now we mostly use `File` objects (but see also the [Issue #239][issue_239]).
 
 !!! tip "Factory Pattern"
-    One pattern that you will find in different places of `java` code is the [factory design-pattern][factory_pattern_wiki]{:target="_blank"}.
+    One pattern that you will find in different places of `java` code is the [factory design-pattern][factory_pattern_wiki]{target="_blank"}.
     While useful in some scenarios, I personally (jdilly) find it too verbose and annoying to implement,
-    in the past there were even [scripts to automatically write the factory-code][internal_program_writer]{:target="_blank"} because it needs so many lines of repeating code.
+    in the past there were even [scripts to automatically write the factory-code][internal_program_writer]{target="_blank"} because it needs so many lines of repeating code.
 
-    In particular, this pattern was used for the [creation of the `ExternalProgram` classes][factory_pattern_doc]{:target="_blank"} to allow the setting of
+    In particular, this pattern was used for the [creation of the `ExternalProgram` classes][factory_pattern_doc] to allow the setting of
     multiple attributes before even creating the class, without having to write multiple constructors
     (which in turn is a limitation of the `java` language, as you cannot set "default" values as in `python`).
     The newer implementations of the `ExternalPrograms` follow a different approach:

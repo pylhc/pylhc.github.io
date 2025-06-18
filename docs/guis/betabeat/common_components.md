@@ -106,14 +106,14 @@ additional logging information will be printed to the terminal.
   </center>
 </figure>
 
-A "tasks" in the context of this GUI means the running of an external program in a separate process.
+A "task" in the context of this GUI means the running of an external program in a separate process.
 Sometimes even multiple processes might be started consecutively in the same taks, if they are dependent on each other.
 As the GUI is a front-end for our `python` library, the external processes are usually calls to `python` modules,
 constructed from the currently selected files and [settings](settings.md).
 The exact call can often be found in the [terminal](#terminal) or in the `command.run` files often created by th GUI in the selected output folder,
 as well as at the top of the `.ini` files created by `python`.
 
-When a taskis started from the GUI, it is shown in the **Running tasks** tab found at the bottom of the GUI next to the console,
+When a task is started from the GUI, it is shown in the **Running tasks** tab found at the bottom of the GUI next to the console,
 with a small animation to indicate that it is running.
 
 As long as any task is running, there will also be a small animation on the right of the status bar at the very bottom.

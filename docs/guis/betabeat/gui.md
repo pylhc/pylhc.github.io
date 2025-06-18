@@ -22,7 +22,8 @@ The GUI provides several panels, each for a defined use and with a set of option
 - [The Correction Panel](correction_panel.md) to display the computed necessary corrections to reach the nominal model.
 - [The Amplitude Detuning Panel](ampdet.md) for amplitude detuning analysis.
 
-Most of these panels use the same plotting backend, details of which are described in the [Plotting](plots.md) section.
+some GUI elements are shared between different panels, and are described in the [Common Components](common_components.md) section,
+in particular, information with regards to the shared [plotting backend](common_components.md#plotting) can be found there.
 
 This site will guide you through the GUI's layout and functionality.
 For starters, check out [the basics of running the GUI](../about.md).
