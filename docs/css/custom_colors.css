@@ -3,11 +3,11 @@
 /* Define the specific colors using CSS variables (optional but good practice) */
 :root {
   --color-cernniceblue: #0669b2;
-  --color-atlasgreen: #27a572;  
-  --color-cernred: #e15e32;     
-  --color-atlasorange: #f09010; 
+  --color-atlasgreen: #27a572;
+  --color-cernred: #e15e32;
+  --color-atlasorange: #f09010;
   --color-cernlightblue: #15b3da;
-  --color-cernpurple: #6e2466;   
+  --color-cernpurple: #6e2466;
 }
 
 /* General emphasis class */
@@ -16,4 +16,36 @@
   font-weight: bold;
 }
 
+.warning-colored {
+  color: var(--color-atlasorange);
+  font-weight: bold;
+}
 
+.cernred {
+  color: var(--color-cernred);
+  font-weight: bold;
+}
+
+.settings-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.1em;
+  height: 1.1em;
+  background-color: rgb(71, 148, 192);
+  color: white;
+  font-size: 1em;
+  border-radius: 4px;  /* optional: adds slight rounding */
+}
+
+.green-gui-button kbd {
+  background-color: rgb(88, 226, 46) !important;
+  color: black !important;
+  box-shadow: 0 .1rem 0 .05rem var(--md-typeset-kbd-border-color),0 .1rem 0 var(--md-typeset-kbd-border-color),0 -.1rem .2rem rgb(159, 202, 146) inset;;
+}
+
+.red-gui-button kbd {
+  background-color: rgb(226, 46, 46) !important;
+  color: black !important;
+  box-shadow: 0 .1rem 0 .05rem var(--md-typeset-kbd-border-color),0 .1rem 0 var(--md-typeset-kbd-border-color),0 -.1rem .2rem rgb(202, 142, 124) inset;;
+}

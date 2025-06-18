@@ -33,7 +33,7 @@ The environment is located at `/afs/cern.ch/eng/sl/lintrack/omc_python3/` and ca
 - Point to the Python executable directly (`/afs/cern.ch/eng/sl/lintrack/omc_python3/bin/python`) to execute your programs.
 
 !!! warning "Modifying the Environment"
-    Please do not try to modify this environment.
+    You cannot modify this environment, [unless you are one of the maintainers](development/managing.md).
     Should you need specific packages, reach out to us or consider [setting up your own environment](development/howto_venv.md#creating-virtual-environments-with-acc-py) from our `Acc-Py` distribution.
 
 ??? question "Python 2 Environment"

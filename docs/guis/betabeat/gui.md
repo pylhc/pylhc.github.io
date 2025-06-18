@@ -5,9 +5,14 @@ The GUI can be ran locally, provided you have access to `afs`, but most importan
 This section provides a short overview for the main features.
 
 !!! info
-    The gitlab CI automatically generates an [API documentation page][bbgui_doc_omc3]{target=_blank} based on the source code.
-
+    The gitlab CI automatically generates an [API documentation page][bbgui_doc_omc3]{target=_blank} based on the source code.<br>
     (A legacy version for the `BetaBeat.src` branch is [also available][bbgui_doc_bbsrc]{target=_blank}.)
+
+One would usually start with setting up the GUI via:
+
+- [Defaults](defaults.md) to set some default values right from the start of the GUI.
+- [The Beam Selection Window](beam_selection.md) to set the beam, paths and the `python` binary to use.
+- [The Settings Window](settings.md) to set additional options for the GUI and analysis.
 
 The GUI provides several panels, each for a defined use and with a set of options and results:
 
@@ -15,9 +20,16 @@ The GUI provides several panels, each for a defined use and with a set of option
 - [The Analysis Panel](analysis_panel.md) to display and manipulate the results of harmonic analysis on measurement data.
 - [The Optics Panel](optics_panel.md) to compare computed optics to nominal models.
 - [The Correction Panel](correction_panel.md) to display the computed necessary corrections to reach the nominal model.
+- [The Amplitude Detuning Panel](ampdet.md) for amplitude detuning analysis.
+
+some GUI elements are shared between different panels, and are described in the [Common Components](common_components.md) section,
+in particular, information with regards to the shared [plotting backend](common_components.md#plotting) can be found there.
 
 This site will guide you through the GUI's layout and functionality.
 For starters, check out [the basics of running the GUI](../about.md).
+
+The main focus of this documentation is the version that uses the `omc3` package.
+For some additional information regarding the legacy `BetaBeat.src` version, see [the dedicated page](betabeatsource.md).
 
 !!! warning "Bug Reporting"
     If you find bugs, please create [issues][betabeat_gui_gitlab_issues]{target=_blank} with the `OMC3-GUI` label.

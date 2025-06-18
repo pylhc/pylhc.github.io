@@ -868,6 +868,11 @@ interaction_point_y.tfs     phase_x.tfs
     In this case, the output files from `harpy` are automatically handled and put into a subfolder named `lin_files` inside of the specified `outputdir`.
     The rest is done and output as seen above.
 
+## Amplitude Detuning Analysis
+
+From the optics output files, in particular the `kick_[xy].tfs` files, one can perform amplitude detuning analysis.
+The detailed steps to run this from the GUI are described in [the amplitude detuning analysis procedure](/measurements/procedures/ampdet.html#analysis).
+
 [mess]: https://github.com/pylhc/MESS
 [sdds]: https://ops.aps.anl.gov/SDDSIntroTalk/slides.html
 [tbt_converter]: https://pylhc.github.io/omc3/entrypoints/other.html#tbt-converter
