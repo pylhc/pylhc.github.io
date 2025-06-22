@@ -8,25 +8,23 @@ CBNG is only available in the Technical Network and one needs to either run the 
 In principle running the CBNG commands can be done through the command-line,
 but to have full debugging capabilities it is recommended to set it up in the IDE directly.
 
-The easiest IDE to setup is the modified Eclipse versions provided by [Accsoft-Eclipse][accsoft_eclipse]{target=_blank}.
-There is also an [installation guide available][cbng_wiki]{target=_blank}.
+The easiest IDE to setup is the modified [Accsoft Eclipse](#eclipse) versions, as for [IntelliJ IDEA](#intellij-idea) and [VSCode](#vscode) additional configuration is required.
+We recommend nonetheless the usage of VSCode, as this is the one most widely used in our team and hence we have the most experience with it.
+To be able to use the same IDE for different languages is also of value.
 
-To use [IntelliJ IDEA][idea_download] or [VSCode][vscode_webpage] additional setup is required.
-Yet, the usage of VSCode is recommended by us, as this is the one most widely used in our team and hence we have the most experience with it - not just for Java development but for other languages as well.
-
-## CBNG Setup
+## Setting Up the IDE
 
 ### VSCode
 
-Do be able to use VSCode as an IDE for Java, the [Extension pack for Java][vscode_java]{target=_blank} needs to be installed.
+Do be able to use [VSCode][vscode_webpage]{target=_blank} as an IDE for Java, the [Extension pack for Java][vscode_java]{target=_blank} needs to be installed.
 
 Additionally, the following settings need to be set in `Extensions -> Language Support for Java -> Gradle`:
 
 <figure>
-<center>
-<img src="../../assets/images/gui_ide_setup/vscode_cbng.png" width="100%" alt="VSCode settings for CBNG." />
-<figcaption>Example VSCode settings for CBNG.</figcaption>
-</center>
+  <center>
+    <img src="../../assets/images/gui_ide_setup/vscode_cbng.png" width="100%" alt="VSCode settings for CBNG." />
+    <figcaption>Example VSCode settings for CBNG.</figcaption>
+  </center>
 </figure>
 
 - *Java > Import > Gradle > Wrapper: Enabled*:<br>
@@ -40,6 +38,15 @@ Additionally, the following settings need to be set in `Extensions -> Language S
 - *Java > Import > Gradle > User: Home*:<br>
   Set a path to where you want your local gradle wrapper to put the cached data, e.g. `/tmp/bob_username/`.
   Beware that this setting might also be steered via the `GRADLE_USER_HOME` environment variable. Make sure that you do not have conflicting values there, as it is not clear which one will have priority.
+
+If everything worked correctly, the CBNG specific tasks and dependencies should be available from within the IDE in the *Gradle* (Elephant) view in the sidebar.
+
+<figure>
+  <center>
+    <img src="../../assets/images/gui_ide_setup/vscode_gradle_tasks.png" width="40%" alt="VSCode Gradle Tasks." />
+    <figcaption>VSCode Gradle Tasks.</figcaption>
+  </center>
+</figure>
 
 ??? note "Lauch Configuration"
     To create a launch configuration for the main class, add the following to the `launch.json` file:
@@ -55,7 +62,7 @@ Additionally, the following settings need to be set in `Extensions -> Language S
 
 !!! warning "Troubleshooting"
     If you are having problems with the setup, check the [CBNG Wiki][cbng_wiki]{target=_blank} for further details.
-    Often it is enough to remove the cached dirs (see `GRADLE_USER_HOME` above) and restart VSCode (`Ctrl + Shift + P` -> `Reload Window`).
+    Often it is enough to remove the cached dirs, typically `/tmp/bob_username`  (see `GRADLE_USER_HOME` above) and `/tmp/bob_cache_username` (check `BOB_USER_CACHE`) and then restart VSCode (`Ctrl + Shift + P` -> `Reload Window`).
 
 ### Eclipse
 
@@ -100,6 +107,15 @@ The full path to `bob` is:
 !!! info
     See `bob --help` for instructions about its commands.
 
+!!! warning "Environment Variables"
+    CBNG needs to be run with the same environment variables as the IDE, e.g. `JAVA_HOME`, `BOB_USER_CACHE` and `GRADLE_USER_HOME` (see [VSCode](#vscode)).
+    You can for example export them in your `~/.bashrc` file, or in the terminal where you run CBNGs `bob` commands.
+
+    ```bash
+    export BOB_USER_CACHE=/tmp/bob_cache_username
+    export GRADLE_USER_HOME=/tmp/bob_username
+    export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
+    ```
 ## Importing a Project
 
 The project can be imported using the git-integrations of the IDEs (Eclipse and IntelliJ) directly, using the Gitlab paths below.
