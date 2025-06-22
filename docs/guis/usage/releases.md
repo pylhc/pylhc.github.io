@@ -9,11 +9,11 @@
 ## Normal Release
 
 !!! tip "Preparation"
-    - Add new features to the [changelog][bbgui_changelog]:<br>
-      To track changes and easily identify breaking changes, please add them to the [CHANGELOG.md][bbgui_changelog].
+    - Add new features to the [changelog][bbgui_changelog]{target=_blank .cern_login}:<br>
+      To track changes and easily identify breaking changes, please add them to the [CHANGELOG.md][bbgui_changelog]{target=_blank .cern_login}.
       Preferrably, this should be done already before merging the changes into the master branch, but should be at least be ensured to be **up-to-date during release**.
-    - Update version in [product.xml][bbgui_product_xml]:<br>
-      The version number needs to be updated in the [product.xml][bbgui_product_xml] file.
+    - Update version in [product.xml][bbgui_product_xml]{target=_blank .cern_login}:<br>
+      The version number needs to be updated in the [product.xml][bbgui_product_xml]{target=_blank .cern_login} file.
       **If an already used version number/identifyer is used, the release procedure will fail.**
     - Have a clean repository and no uncommitted changes:<br>
       The release process runs in the current folder of your local machine and will fail if there are any uncommitted changes in the repository.
@@ -36,13 +36,13 @@ This task will build the project, run tests (if they existed, see admonition bel
 On this server, all previous versions can be found, and the latest version is automatically linked within the `PRO` folder,
 which is used to start the GUI from the CCM in the CCC.
 Older versions can be run directly via [jws using the links to the `.jnlp` file][jws_programs].
-An entry on the [CAS][cas_cern] will be created for the new release.
-The release is also [automatically tagged][bbgui_tags] with the prefix `release-` and the version number in the [product.xml][bbgui_product_xml] file.
+An entry on the [CAS][cas_cern]{target=_blank .cern_internal}  will be created for the new release.
+The release is also [automatically tagged][bbgui_tags]{target=_blank .cern_login}  with the prefix `release-` and the version number in the [product.xml][bbgui_product_xml]{target=_blank .cern_login} file.
 
 !!! warning "Breaking Things"
     In contrast to our `python` backend development, there is no real CI and testing for the GUIs.
     This means, that you **need to make sure** manually, that everything works as expected and no functionality is broken, before release.
-    In case of major bugs occuring online, you can always revert to using a previous version from the [CAS][cas_cern] (search for `omc3` or `beta-beating`).
+    In case of major bugs occuring online, you can always revert to using a previous version from the [CAS][cas_cern]{target=_blank .cern_internal}  (search for `omc3` or `beta-beating`).
 
 ## Dev-Release
 
@@ -61,8 +61,8 @@ This release procedure will upload the `.jnlp` file to the [be deployment server
 
 (note the `deployments-dev` distinction).
 Older versions can be run directly via [jws using the links to the `.jnlp` file][jws_programs].
-An entry on the [CAS][cas_cern] will be created for the new release yet the entry it will be only available for 30 days.
-After that time you need to find the `.jnlp` file manually from the [deployment servers][deployment_url].
+An entry on the [CAS][cas_cern]{target=_blank .cern_internal} will be created for the new release yet the entry it will be only available for 30 days.
+After that time you need to find the `.jnlp` file manually from the [deployment servers][deployment_url]{target=_blank}.
 
 There is no special preparations required for this release type and tests are not autoamatically run.
 The version from the [product.xml][bbgui_product_xml] will be used, but if the same version has been released already, **the files on the [deployment servers][deployment_url] will be overwritten**.

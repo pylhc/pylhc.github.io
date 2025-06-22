@@ -2,7 +2,7 @@
 
 There are multiple IDEs that have been used in the past to delevop the GUI.
 While editing the code itself can be done with any IDE, running the application comes with some pitfalls,
-due to the usage of [Common Build Next Generation (CBNG)][cbng_wiki]{target=_blank} to resolve dependencies.
+due to the usage of [Common Build Next Generation (CBNG)][cbng_wiki]{target=_blank .cern_login} to resolve dependencies.
 CBNG is only available in the Technical Network and one needs to either run the development tools from somewhere in the TN (e.g. from the `dev-server`) or [mount the required paths via `sshfs`][mounting_tn].
 
 In principle running the CBNG commands can be done through the command-line,
