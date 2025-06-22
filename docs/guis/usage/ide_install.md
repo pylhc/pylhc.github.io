@@ -116,6 +116,7 @@ The full path to `bob` is:
     export GRADLE_USER_HOME=/tmp/bob_username
     export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
     ```
+
 ## Importing a Project
 
 The project can be imported using the git-integrations of the IDEs (Eclipse and IntelliJ) directly, using the Gitlab paths below.
@@ -149,7 +150,6 @@ Running `clean` and/or`dependencies` can also help.
 - [Accsoft-Eclipse Downloads][accsoft_eclipse]{target=_blank}
 
 [mounting_tn]: ../../resources/shared_filesystems.md#mounting-tn-resources-on-gpn-and-other-machines
-[gui_releases]: releases.md
 [idea_download]: https://www.jetbrains.com/idea/download/
 [accsoft_eclipse]: http://eclipse.cern.ch/
 [cbng_eclipse]: https://confluence.cern.ch/display/DVTLS/CBNG+-+Eclipse+Integration
