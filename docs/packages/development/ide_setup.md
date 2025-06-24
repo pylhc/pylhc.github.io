@@ -38,7 +38,7 @@ Main:
 Additional:
 
 - [Ruff][vscode_ruff]{target=_blank}: A fast Python linter.
-- [Github Pullrequests][vscode_github]{target=_blank}: Interact with Github Pullrequests directly from VSCode.
+- [Github Pull Requests][vscode_github]{target=_blank}: Interact with Github pull requests directly from VSCode.
 - [Markdown Table Formatter][vscode_markdown_tables]{target=_blank}: Format tables in markdown files.
 
 [vscode_lxplus]: https://cern.service-now.com/service-portal?id=kb_article&n=KB0008901
