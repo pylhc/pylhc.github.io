@@ -94,7 +94,7 @@ To enable a more detailed output, you can change the logging level to `DEBUG` fo
 
 ### Terminal
 
-If the GUI was started from the terminal and the [`consoleLogging` option](defaults.md#addtional-gui-defaults) is set to `True`
+If the GUI was started from the terminal and the [`consoleLogging` option](defaults.md#additional-gui-defaults) is set to `True`
 additional logging information will be printed to the terminal.
 
 ## Running Tasks
