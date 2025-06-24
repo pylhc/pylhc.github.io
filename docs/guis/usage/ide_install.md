@@ -20,24 +20,24 @@ Do be able to use [VSCode][vscode_webpage]{target=_blank} as an IDE for Java, th
 
 Additionally, the following settings need to be set in `Extensions -> Language Support for Java -> Gradle`:
 
+- *Java > Import > Gradle > Wrapper: Enabled*:<br>
+  Needs to be **un-ticked**.
+- *Java > Import > Gradle: Version*:<br>
+  Needs to be **empty**.
+- *Java > Import > Gradle: Home*:<br>
+  Set to the absolute path to the CBNG directory, e.g. `/user/pcrops/devtools/CBNG/PRO/` or [wherever you have mounted][mounting_tn] the `/user` folder (see screenshot).
+- *Java > Import > Gradle > Java: Home*:<br>
+  Set to where the Java SDK is installed, e.g. `/usr/lib/jvm/java-11-openjdk/` on your current system. This is very important as otherwise the wrong Java version might be used!
+- *Java > Import > Gradle > User: Home*:<br>
+  Set a path to where you want your local gradle wrapper to put the cached data, e.g. `/tmp/bob_username/`.
+  Beware that this setting might also be steered via the `GRADLE_USER_HOME` environment variable. Make sure that you do not have conflicting values there, as it is not clear which one will have priority.
+
 <figure>
   <center>
     <img src="../../assets/images/gui_ide_setup/vscode_cbng.png" width="100%" alt="VSCode settings for CBNG." />
     <figcaption>Example VSCode settings for CBNG.</figcaption>
   </center>
 </figure>
-
-- *Java > Import > Gradle > Wrapper: Enabled*:<br>
-  Needs to be **un-ticked**.
-- *Java > Import > Gradle: Home*:<br>
-  Needs to be **empty**.
-- *Java > Import > Gradle: Home*:<br>
-  Set to the absolute path to the CBNG directory, e.g. `/user/pcrops/devtools/CBNG/PRO/` or [whereever you have mounted][mounting_tn] the `/user` folder (see screenshot).
-- *Java > Import > Gradle > Java: Home*:<br>
-  Set to where the Java SDK is installed, e.g. `/usr/lib/jvm/java-11-openjdk/` on your current system. This is very important as otherwise the wrong Java version might be used!
-- *Java > Import > Gradle > User: Home*:<br>
-  Set a path to where you want your local gradle wrapper to put the cached data, e.g. `/tmp/bob_username/`.
-  Beware that this setting might also be steered via the `GRADLE_USER_HOME` environment variable. Make sure that you do not have conflicting values there, as it is not clear which one will have priority.
 
 If everything worked correctly, the CBNG specific tasks and dependencies should be available from within the IDE in the *Gradle* (Elephant) view in the sidebar.
 
@@ -68,25 +68,21 @@ If everything worked correctly, the CBNG specific tasks and dependencies should 
 
 A more extensive guide can be found in the [CBNG Wiki for Eclipse integration][cbng_eclipse]{target=_blank}.
 
-In short:
-
-Download your preferred version from their [download page][accsoft_eclipse]{target=_blank} and install.
+In short, download your preferred version from their [download page][accsoft_eclipse]{target=_blank} and install.
 With this version, `CBNG` comes automatically installed and can be used by simply dragging the desired project into the CBNG window.
 
 ### IntelliJ IDEA
 
 A more extensive guide can be found in the [CBNG Wiki for IDEA integration][cbng_idea]{target=_blank}.
 
-In short:
-
-Download your preferred version from their [download page][idea_download]{target=_blank} and install.
+In short, download your preferred version from their [download page][idea_download]{target=_blank} and install.
 `CBNG` needs to be setup in IDEA manually, by setting the Gradle home path in:
 
 ```text
 File -> Settings -> Build, Execution, Deployment -> Build Tools -> Gradle
 ```
 
-to the specified location `/user/pcrops/devtools/CBNG/PRO/` or [whereever you have mounted][mounting_tn] the `/user` folder
+to the specified location `/user/pcrops/devtools/CBNG/PRO/` or [wherever you have mounted][mounting_tn] the `/user` folder
 
 ??? warning "IntelliJ Specificity"
     After importing a project (see below), you might have to:
@@ -121,18 +117,13 @@ The full path to `bob` is:
 
 The project can be imported using the git-integrations of the IDEs (Eclipse and IntelliJ) directly, using the Gitlab paths below.
 This should be straightforward, but you are giving up some control.
-In the next subsections the manual path of getting the source-code into the IDE is outlined in the hope to point to some pitfalls that may occur and how to avoid them.
 
+It is recommended to import a project manually, follwing the steps below:
 Firstly, you should clone the desired repository to an adequate location on your hard-drive, depending on which project you want to work on:
 
 === "Beta-Beat GUI"
     ```bash
     git clone https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating
-    ```
-
-=== "Kmod GUI"
-    ```bash
-    git clone https://gitlab.cern.ch/gtrad/pyKmodLHC
     ```
 
 You then simply import/open the project into your IDE.

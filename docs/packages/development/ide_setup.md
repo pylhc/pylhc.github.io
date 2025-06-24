@@ -15,6 +15,8 @@ the following VSCode features are of great value:
   Check the [CERN Knowledge Base][vscode_lxplus]{target=_blank} for more information.
 - [Python support][vscode_python]{target=_blank}:<br>
   Make use of static type checking and auto-completion. Interact with the code via an easy-to-use debugger.
+- [Debugging][vscode_debugging]{target=_blank}:<br>
+  Enables you to stop your program at any point and interact with it as well as inspect variables and their values.
 - [Interactive Python][vscode_interactive_python]{target=_blank}:<br>
   Use any script as if it were a jupyter notebook, allowing you to run code snippets in real time and inspect variables.
 - [Integrated Testing][vscode_testing]{target=_blank}:<br>
@@ -42,6 +44,7 @@ Additional:
 [vscode_lxplus]: https://cern.service-now.com/service-portal?id=kb_article&n=KB0008901
 [vscode_webpage]: https://code.visualstudio.com/
 [vscode_python]: https://code.visualstudio.com/docs/python/python-quick-start
+[vscode_debugging]: https://code.visualstudio.com/docs/python/debugging
 [vscode_interactive_python]: https://code.visualstudio.com/docs/python/jupyter-support-py
 [vscode_remote_ssh]: https://code.visualstudio.com/docs/remote/ssh-tutorial
 [vscode_testing]: https://code.visualstudio.com/docs/python/testing
