@@ -90,7 +90,7 @@ This information is much more detailed than the [console](#console), and should 
 an error is reported.
 
 By default the `python` logging is initialized at the `INFO` level.
-To enable a more detailed output, you can change the logging level to `DEBUG` for all tasks in the [settings window](settings.md#gui).
+To enable a more detailed output, you can change the logging level to `DEBUG` for all tasks in the [settings window](settings.md#gui-tab).
 
 ### Terminal
 
