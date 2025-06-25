@@ -149,6 +149,7 @@ nav:
     - Python Development:
       - Contributing: packages/development/contributing.md
       - Releases: packages/development/howto_release.md
+      - IDE Setup: packages/development/ide_setup.md
       - Virtual Environments: packages/development/howto_venv.md
       - Managing: packages/development/managing.md
   - GUIs:
