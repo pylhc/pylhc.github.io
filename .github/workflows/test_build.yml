@@ -7,10 +7,6 @@ defaults:
 
 on: [push, pull_request]  # Runs on all push events to any branch
 
-# We use uv pip and it should use the system python from our runner
-env:
-  UV_SYSTEM_PYTHON: 1
-
 jobs:
   documentation:
     name: Build Static Documentation

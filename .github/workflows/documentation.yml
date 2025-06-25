@@ -10,10 +10,6 @@ on:  # Runs on any push event to master
     branches:
       - master
 
-# We use uv pip and it should use the system python from our runner
-env:
-  UV_SYSTEM_PYTHON: 1
-
 jobs:
   documentation:
     name: Build and Publish Static Documentation
