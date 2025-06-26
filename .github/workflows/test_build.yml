@@ -5,11 +5,10 @@ defaults:
   run:
     shell: bash
 
-on: [push, pull_request]  # Runs on all push events to any branch
-
-# We use uv pip and it should use the system python from our runner
 env:
-  UV_SYSTEM_PYTHON: 1
+  UV_COMPILE_BYTECODE: 1
+
+on: [push, pull_request]  # Runs on all push events to any branch
 
 jobs:
   documentation:
@@ -19,22 +18,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install uv
-        uses: astral-sh/setup-uv@v5
-        with:
-          enable-cache: true
-          cache-dependency-glob: "requirements.txt"
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Install uv and Python
+        uses: astral-sh/setup-uv@v6
         with:
           python-version: 3.13
+          enable-cache: true
+          activate-environment: true
+          cache-dependency-glob: "requirements.txt"
 
       - name: Install dependencies
         run: uv pip install -r requirements.txt
 
       - name: Build documentation
-        run: uv run python -m mkdocs build -d ./doc_build
+        run: python -m mkdocs build -d ./doc_build
 
       # Upload artifacts if in PR so reviewers can have a quick look without building documentation from the branch locally
       - name: Upload build artifacts
