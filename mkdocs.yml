@@ -179,6 +179,9 @@ nav:
       - About: guis/rdt_feeddown/gui.md
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
+        - AC Dipole Measurements: guis/multiturn/acdipole.md
+        - ADT AC Dipole Measurements: guis/multiturn/adt.md
+        - AC Dipole Scheduling: guis/multiturn/scheduler.md
     - Usage and Development:
       - Guidelines: guis/usage/guidelines.md
       - IDE Setup: guis/usage/ide_install.md
