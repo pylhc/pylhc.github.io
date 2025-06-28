@@ -46,6 +46,6 @@ Once you have created or loaded a kick schedule, it is necessary to setup the ho
 
 Now all the settings are ready, it is possible to run the kick schedule from the very beginning of the table by selecting the button `Acquire with ACDipoleScheduled excitation` at the bottom left of the GUI (highlighted in yellow). This will start the measurement with the first row of the table, and will automatically move to the next row once the measurement is complete. 
 
-[!INFO] If you are running a kick schedule and you would like to cancel the aquisition, you can do so by selecting the button `Stop`. But if you have just done a kick on one amplitude, pressing `Stop` will not stop the next kick from being executed, instead it will stop after the next kick is complete. There is no way to cancel the next kick once it is waiting for the AC-Dipole to be ready. 
+[!INFO] If you are running a kick schedule and you would like to cancel the acquisition, you can do so by selecting the button `Stop`. But if you have just done a kick on one amplitude, pressing `Stop` will not stop the next kick from being executed, instead it will stop after the next kick is complete. There is no way to cancel the next kick once it is waiting for the AC-Dipole to be ready. 
 
 It is also possible to run the kick schedule from a specific row. This is done by selecting the row in the table and then selecting the button `Start from Selection`. This will start the measurement from the selected row and will automatically move to the next row once the measurement is complete.
