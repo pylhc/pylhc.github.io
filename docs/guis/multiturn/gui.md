@@ -39,7 +39,7 @@ After opening, the GUI should look like this:
 
 5. Once the group is created, it will appear in the list of available groups right at the bottom of the list. Then select the group by clicking on it and then clicking the `Activate Selected`. This should then create a new entry in the `LHC-OMC` logbook. <!-- Add link here? -->
 
-6. Next, it is neccessary to set up the tunes. This is possible by clicking the buttons `Acquire QH` and `Acquire QV`. Then, the values can be manually refined if necessary.
+6. Next, it is necessary to set up the tunes. This is possible by clicking the buttons `Acquire QH` and `Acquire QV`. Then, the values can be manually refined if necessary.
 
 7. Finally, before moving to the measurement panels, change the input field turns to the number of turns you want to measure. For AC-dipole measurements, this is typically **6,600 turns**, while for ADT AC-dipole measurements, this is typically **40,000 turns**. Do not set these values higher than these for the respective measurements, as this can lead to the AC-dipole being damaged or the BPM buffers overflowing causing data to be lost/overwritten.
 
