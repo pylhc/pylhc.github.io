@@ -37,7 +37,7 @@ Sometimes when you are increasing in kick amplitude, you will see suddenly large
 ---
 
 ### Kick amplitudes during the ramp
-A typical table of amplitdues during the ramp is as follows:
+A typical table of amplitudes during the ramp is as follows:
 
 <!--  time    TeV   phaseknob    ATS            betas(m)       kick(%)    
   30s   0.46        100%      1     11   11   10   10       3
