@@ -27,7 +27,7 @@ After opening, the GUI should look like this:
     </center>
 </figure>
 
-3. In the dialog, typically you will want to create a new kick group. To do this, click the `Create New Group` button at the bottom in the centre. This will open the following dialog:
+3. Typically one wants to create a new kick group. To do so, click the `Create New Group` button at the bottom in the centre. This will open the following dialog, with a default naming scheme:
 <figure>
     <center>
     <img src="../../assets/images/multiturn_gui/create_kick_group.png" width="85%" alt="Create New Group Dialog" />
