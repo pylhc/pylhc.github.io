@@ -1,9 +1,10 @@
 # AC-Dipole Scheduler
-Once all the steps have been followed in the [Multiturn GUI](gui.md), you can start the measurements with the AC-dipole Scheduler.
+Once all the steps have been followed in the [Multiturn GUI](gui.md), it is possible to automate the process of running measurements with different kick amplitudes using the AC-Dipole Scheduler.
 
 The multiturn application provides a scheduler to run predefined kick amplitudes one after another.
 This is useful to automate the process of running measurements with different kick amplitudes, which can speed up the process of collecting data for analysis, and potentially reduces the number of people required on shift.
-The scheduler can be found in the `ACDipoleScheduled` tab of the Multiturn GUI, see the screenshot below:
+The scheduler can be found in the `ACDipoleScheduled` tab of the Multiturn GUI, as illustrated below:
+
 <figure>
     <center>
     <img src="../../assets/images/multiturn_gui/ACDipoleScheduler.png" width="85%" alt="AC-Dipole Scheduler Tab" />
@@ -14,8 +15,8 @@ The scheduler can be found in the `ACDipoleScheduled` tab of the Multiturn GUI, 
 # Creating a Kick Schedule
 There are two main ways to create a kick schedule:
 
-1. **Manual Creation**: You can manually create a kick schedule by selecting the button `Create Table` below the table. 
-2. **Prewritten Schedules**: You can load a prewritten kick schedule from a file by selecting the button `Import .csv` below the table.
+- **Manual Creation**: You can manually create a kick schedule by selecting the button `Create Table` below the table. 
+- **Prewritten Schedules**: You can load a prewritten kick schedule from a file by selecting the button `Import .csv` below the table.
 
 You can also just edit the template table that is already present in the GUI by changing the `H Amplitude (%)` and `V Amplitude (%)` values in the table. It is not possible to edit the `Index` column. To reset this template table, select the button `Reload from Template` below the table.
 
@@ -46,6 +47,13 @@ Once you have created or loaded a kick schedule, it is necessary to setup the ho
 
 Now all the settings are ready, it is possible to run the kick schedule from the very beginning of the table by selecting the button `Acquire with ACDipoleScheduled excitation` at the bottom left of the GUI (highlighted in yellow). This will start the measurement with the first row of the table, and will automatically move to the next row once the measurement is complete. 
 
-[!INFO] If you are running a kick schedule and you would like to cancel the acquisition, you can do so by selecting the button `Stop`. But if you have just done a kick on one amplitude, pressing `Stop` will not stop the next kick from being executed, instead it will stop after the next kick is complete. There is no way to cancel the next kick once it is waiting for the AC-Dipole to be ready. 
+!!! info
+    To cancel the acquisition while running a kick schedule, press the `Stop` button. Note that if a kick was just done when pressing `Stop`, the schedule will stop after the next kick is complete. There is no way to cancel the next kick once it is waiting for the AC-Dipole to be ready. 
 
 It is also possible to run the kick schedule from a specific row. This is done by selecting the row in the table and then selecting the button `Start from Selection`. This will start the measurement from the selected row and will automatically move to the next row once the measurement is complete.
+
+
+*[AC-Dipole]: Alternating Current Dipole
+*[ADT AC-Dipole]: LHC Transverse Damper
+*[ADT]: LHC Transverse Damper
+*[BPM]: Beam Position Monitor
