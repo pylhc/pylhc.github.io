@@ -42,7 +42,7 @@ At injection the beam is not particularly hard and small kick amplitudes lead to
     Should they reduce the beam might have just needed cleaning and one can increase the kick amplitude further. Otherwise, stop increasing unless a beam dump is affordable. Refer to the experts on shift if you are unsure about the losses, and whether you can increase the kick amplitude further.
 
 ### Kick amplitudes during the ramp
-A an example of a table of amplitudes during the ramp is as follows:
+An example of a table of amplitudes during the ramp is as follows:
 
 |  Time  | Energy (TeV) | Phase Knob | ATS  | Kick Amplitude (%) |
 |--------|--------------|------------|------|--------------------|
