@@ -41,7 +41,10 @@ For instance the scenario from the screenshot above will create a table with 4 r
 
 ### Prewritten Schedules
 
-To load a prewritten kick schedule, select the button `Import .csv` below the table. This will open a file dialog where you can select the `.csv` file containing the kick schedule. There exists a small repository of prewritten kick schedules that can be used as a starting point for your measurements, which can be found in the `/user/slops/data/LHC_DATA/OP_DATA/Betabeat/MULTITURN_KICK_SCHEDULES/` directory:
+To load a prewritten kick schedule, select the ++"Import .csv"++ button below the table.
+This will open a file dialog to navigate and select the `.csv` file containing the kick schedule.
+
+There exists a small repository of prewritten kick schedules to be imported, which can be found in the `/user/slops/data/LHC_DATA/OP_DATA/Betabeat/MULTITURN_KICK_SCHEDULES/` directory
 
 <figure>
     <center>
@@ -52,13 +55,18 @@ To load a prewritten kick schedule, select the button `Import .csv` below the ta
 
 ## Running a Kick Schedule
 
-Once you have created or loaded a kick schedule, it is necessary to setup the horizontal and vertical kick tune deltas. Refer to the [AC-Dipole Measurements](acdipole.md) page for context on what to set these to.
+Once a kick schedule is ready, it is necessary to setup the horizontal and vertical kick tune deltas just below.
+Refer to the [common settings](excitation.md#common-settings) as well as the [AC-Dipole](excitation.md#ac-dipole-excitation) section on the previous page to set these.
+Please also make sure the [safety checks](safety.md) have been performed.
 
-Now all the settings are ready, it is possible to run the kick schedule from the very beginning of the table by selecting the button `Acquire with ACDipoleScheduled excitation` at the bottom left of the GUI (highlighted in yellow). This will start the measurement with the first row of the table, and will automatically move to the next row once the measurement is complete.
+Click the yellow ++"Acquire with ACDipoleScheduled excitation"++ button at the bottom left of the GUI to start running the schedule.
+This will an acquisition with the first row's settings, and will automatically move on to the next row once the AC Dipole is ready to kick again.
 
-!!! info
-    To cancel the acquisition while running a kick schedule, press the `Stop` button. Note that if a kick was just done when pressing `Stop`, the schedule will stop after the next kick is complete. There is no way to cancel the next kick once it is waiting for the AC-Dipole to be ready.
+!!! info "Cancelling a Schedule"
+    To cancel the acquisition while running a kick schedule, press the ++"Stop"++ button.
+    Note that if the scheduler has moved on to the next row and is already waiting for the AC Dipole to be ready when ++"Stop"++ is pressed, the schedule will stop after the next kick is complete and not before.
+    There is no way to cancel the next kick once it is waiting for the AC Dipole to be ready.
 
-It is also possible to run the kick schedule from a specific row. This is done by selecting the row in the table and then selecting the button `Start from Selection`. This will start the measurement from the selected row and will automatically move to the next row once the measurement is complete.
+It is also possible to run the kick schedule from a specific row, by selecting the given row in the table and then clicking the ++"Start from Selection"++ button.
 
 *[AC Dipole]: Alternating Current Dipole
