@@ -87,44 +87,52 @@ Selecting the `ACDipole` tab will change the right-hand side of the GUI window t
 
 <figure>
     <center>
-    <img src="../../assets/images/multiturn_gui/default_view.png" width="85%" alt="AC-Dipole Tab" />
-    <figcaption>AC-Dipole Tab</figcaption>
+    <img src="../../assets/images/multiturn_gui/default_view.png" width="80%" alt="AC Dipole Tab" />
+    <figcaption>AC Dipole Tab</figcaption>
     </center>
 </figure>
 
-There are two important steps to take before starting the measurements:
+The two following settings need to be set before starting measurements.
 
-## Tune Deltas
+### Tune Deltas
 
-- Set the Tune Deltas, this is done by changing the `start` text fields in the `Tune deltas` of the `Horizontal settings` and `Vertical settings` sections of the GUI.
+The excitation device drives the beam motion to a different frequency than the natural tune, which is determined by its offset from the natural tune, called the "tune delta".
+Set this values in the `start` fields of the `Tune deltas` section, for both the horizontal and vertical planes (`Horizontal settings` and `Vertical settings` sections).
 
 !!! tip "Typical Default Values"
-    - The horizontal tune delta is typically set to **-0.01**.
-    - The vertical tune delta is typically set to **0.012**.
-    - These values result in typical excitation tunes of **Qx = 0.27** and **Qy = 0.322**.
-    Depending on the measurements you are performing, these values may need to be adjusted. Always consult with the experts on shift if you are unsure about the tune deltas to use.
 
-- Set the Kick Amplitudes by changing the `Excitation amplitude (%)` text fields in the `Horizontal settings` and `Vertical settings` sections of the GUI.
+    We often perform optics measurements using the $Q_x = 0.28$, $Q_y = 0.31$ tunes, and the following tune deltas:
 
-You can see the excitation tunes under `Start Excitation tune` below the `Tune deltas` section.
+    - The horizontal tune delta is typically set to $\Delta Q_x = -0.01$.
+    - The vertical tune delta is typically set to $\Delta Q_x = 0.012$.
 
-## Selecting the Kick Amplitudes
+    These values result in typical excitation tunes of $Q_x^{driven} = 0.27$ and $Q_y^{driven} = 0.322$.
+    Depending on the specific measurements, other tunes and tune deltas may be required.
+    Always consult with the experts on shift if unsure about the values to use.
 
-Kick amplitudes are important as they determine the excitation strength. Generally higher kicks lead to better measurements, but come with the risk of beam losses and beam dump.
+The resulting driven tunes will be automatically computed and displayed under `Start Excitation tune`.
+Make sure to double check these values, as a wrong setting can lead to a direct beam dump.
+
+### Kick Amplitudes
+
+Kick amplitudes determine the excitation strength.
+Generally higher kicks lead to better signal-to-noise ration and allow measuring more faint beam modes and RDTs, but come with the risk of beam losses and beam dump.
+
+Set the Kick Amplitudes by changing the value in `Excitation amplitude (%)` field, for both the horizontal and vertical planes (`Horizontal settings` and `Vertical settings` sections).
 
 !!! warning
     Always ask the experts on shift if you are unsure about the kick amplitudes to use.
 
-### Kick amplitudes at injection
+#### Kick amplitudes at injection
 
-At injection the beam is not particularly hard and small kick amplitudes lead to large peak to peak oscillations. We generally use small amplitudes, starting from **1%** or **3%** and going up slowly in steps of **2%** or **3%**, until beam losses during kicks stop being reasonable.
+At injection the beam is not particularly hard and small kick amplitudes lead to large peak to peak oscillations. We generally use small amplitudes, starting from __1%__ or __3%__ and going up slowly in steps of __2%__ or __3%__, until beam losses during kicks stop being reasonable.
 
 !!! tip "Losses on Kicks"
     Sometimes when increasing the kick amplitude, one will notice large losses. In this case it is recommended to kick a couple times at this amplitude or just below to see if the losses reduce or are consistent.
 
     Should they reduce the beam might have just needed cleaning and one can increase the kick amplitude further. Otherwise, stop increasing unless a beam dump is affordable. Refer to the experts on shift if you are unsure about the losses, and whether you can increase the kick amplitude further.
 
-### Kick amplitudes during the ramp
+#### Kick amplitudes during the ramp
 
 An example of a table of amplitudes during the ramp is as follows:
 
@@ -142,13 +150,14 @@ An example of a table of amplitudes during the ramp is as follows:
 
 This table scales the kick amplitudes with the energy, and hence the kick amplitudes are larger at higher energies. The values in the table are a good starting point, but it is important to monitor the losses and reduce the kick amplitudes accordingly.
 
-### Kick amplitudes top energy
+#### Kick amplitudes top energy
 
-When at top energy, the beam is quite hard, and hence we can use larger kick amplitudes. Starting from **5%** and going up in steps of **5%** until the losses start to increase significantly usually works well.
+When at top energy, the beam is quite hard, and hence we can use larger kick amplitudes. Starting from __5%__ and going up in steps of __5%__ until the losses start to increase significantly usually works well.
 
 !!! warning
     Always ask the experts on shift if you are unsure about the kick amplitudes to use.
 
 *[AC Dipole]: Alternating Current Dipole
 *[ADT]: LHC Transverse Damper
-*[BBQ]: Base Band Q, a system used to continuously measure the beam's tunes.
+*[BBQ]: Base Band Q, a system used to continuously measure the beam's tunes
+*[RDT]: Resonance Driving Term
