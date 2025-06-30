@@ -31,7 +31,6 @@ The following pages are available:
 - [Scheduled Excitations](scheduler.md) for how to schedule and run AC-Dipole measurements with a set of predefined kick amplitudes.
 
 *[AC Dipole]: Alternating Current Dipole
-*[ADT AC-Dipole]: LHC Transverse Damper
 *[ADT]: LHC Transverse Damper
 *[BPM]: Beam Position Monitor
 

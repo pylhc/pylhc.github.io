@@ -176,7 +176,7 @@ It is also possible to manually enter the bunches, each number separated by a sp
 These correspond to the excitation plateau length, and does not include ramp-up and ramp-down times.
 
 !!! info "Excitation Duration"
-    For AC-Dipole measurements, this setting is typically __6600 turns__, while for ADT AC-Dipole measurements it is typically __40,000 turns__.
+    For AC-Dipole measurements, this setting is typically __6600 turns__, while for ADT measurements it is typically __40,000 turns__.
     Do not set these values higher than these for the respective measurements, as this can lead to the AC Dipole being damaged or the BPM buffers overflowing causing data to be lost or overwritten.
 
 *[ATLAS BCM]: ATLAS Beam Condition Monitor
