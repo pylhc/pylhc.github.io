@@ -38,7 +38,7 @@ A first check to perform is that specific systems of the machine themselves are 
 
 ## Flag Status
 
-At the top left of the GUI, a small section titled `Flag Status` displays simple main flags, as show below:
+At the top left of the GUI, a small section titled `Flag Status` displays simple main flags, as shown below:
 
 <figure>
     <center>
