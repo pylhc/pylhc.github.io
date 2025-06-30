@@ -1,10 +1,8 @@
 # AC Dipole Scheduler
 
 It is possible to automate the process of running measurements with different kick amplitudes using the AC Dipole Scheduler.
-
-The multiturn application provides a scheduler to run predefined kick amplitudes one after another.
-This is useful to automate the process of running measurements with different kick amplitudes, which can speed up the process of collecting data for analysis, and potentially reduces the number of people required on shift.
-The scheduler can be found in the `ACDipoleScheduled` tab of the Multiturn GUI, as illustrated below:
+To access the scheduler, select the `ACDipoleScheduled` tab at the top of the GUI.
+The right-hand side of the GUI window will then display the following:
 
 <figure>
     <center>
@@ -15,16 +13,16 @@ The scheduler can be found in the `ACDipoleScheduled` tab of the Multiturn GUI, 
 
 ## Creating a Kick Schedule
 
-There are two main ways to create a kick schedule:
-
-- **Manual Creation**: You can manually create a kick schedule by selecting the button `Create Table` below the table.
-- **Prewritten Schedules**: You can load a prewritten kick schedule from a file by selecting the button `Import .csv` below the table.
-
-You can also just edit the template table that is already present in the GUI by changing the `H Amplitude (%)` and `V Amplitude (%)` values in the table. It is not possible to edit the `Index` column. To reset this template table, select the button `Reload from Template` below the table.
+A kick schedule can be created either manually or by loading a prewritten template schedule from file.
+It is also possible to edit the template that is already present in the GUI by changing the `H Amplitude (%)` and `V Amplitude (%)` values in the table.
+It is not possible to edit the `Index` column.
+To reset this template table, select the button ++"Reload from Template"++ below the table.
 
 ### Manual Creation
 
-To manually create a kick schedule, select the button `Create Table` below the table. This will create the following dialog:
+To create a kick schedule from scratch, select the ++"Create Table"++ button below the table.
+This will open the following dialog:
+
 <figure>
     <center>
     <img src="../../assets/images/multiturn_gui/create_schedule_table.png" width="85%" alt="Create Kick Schedule Dialog" />
@@ -32,9 +30,14 @@ To manually create a kick schedule, select the button `Create Table` below the t
     </center>
 </figure>
 
-The start and end amplitudes are inclusive. The step size tells you how many rows of the table will be created, and will only create rows below or equal to the end amplitude. The `H Amplitude (%)` and `V Amplitude (%)` columns will be filled with the values from the start to the end amplitude, with the step size as the increment. The `Index` column will be automatically filled with the row number.
+Set the start and end amplitudes as well as the step size in their respective fields.
+Note that the start and end are inclusive, and entries would only be created up to the `End Amplitude`.
+Click the ++"Create Kick Table"++ when done.
 
-The example above will create a table with 4 rows - 3%, 5%, 7%, and 9% for both the horizontal and vertical kick amplitudes. The `Index` column will be filled with the values 1, 2, 3, and 4 respectively.
+This will bring you back to the previous view, with the `H Amplitude (%)` and `V Amplitude (%)` columns filled with the inferred kick steps.
+The `Index` column is automatically filled with row numbers, don't mind it.
+
+For instance the scenario from the screenshot above will create a table with 4 rows - `3%`, `5%`, `7%`, and `9%` for both the horizontal and vertical kick amplitudes.
 
 ### Prewritten Schedules
 
