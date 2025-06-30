@@ -41,7 +41,7 @@ Once created the new group will appear at the bottom of the list of available gr
 - Select the new group and click the ++"Activate selected"++.
 This should then create a new entry in the `LHC-OMC` logbook with information about the group, and all acquisitions done in this group will be logged to that entry automatically.
 
-## Tunes Setup
+### Tunes Setup
 
 The fields in this section expect the values of the horizontal and vertical tunes for the selected beam:
 
@@ -56,7 +56,7 @@ They should be the natural tunes used in the machine during measurements.
 Either enter the values manually or, to enter the current tunes click the ++"Acquire QH"++ and ++"Acquire QV"++ buttons which will update the value to the current one measured with the BBQ.
 These values can be manually refined if necessary.
 
-## Concentrator Settings
+### Concentrator Settings
 
 These settings refer to the excitation to be performed.
 The excitation device needs to know which bunches to excite and how long the excitation should last (in terms of turns).
@@ -77,7 +77,7 @@ It is also possible to manually enter the bunches, each number separated by a sp
 - Set the number of turns to maintain the excitation for in the `Turns` field below.
 These correspond to the excitation plateau length, and does not include ramp-up and ramp-down times.
 
-!!! info "Excitation Duration"
+!!! tip "Excitation Duration"
     For AC-Dipole measurements, this setting is typically __6600 turns__, while for ADT measurements it is typically __40,000 turns__.
     Do not set these values higher than these for the respective measurements, as this can lead to the AC Dipole being damaged or the BPM buffers overflowing causing data to be lost or overwritten.
 
@@ -149,6 +149,6 @@ When at top energy, the beam is quite hard, and hence we can use larger kick amp
 !!! warning
     Always ask the experts on shift if you are unsure about the kick amplitudes to use.
 
-
 *[AC Dipole]: Alternating Current Dipole
 *[ADT]: LHC Transverse Damper
+*[BBQ]: Base Band Q, a system used to continuously measure the beam's tunes.

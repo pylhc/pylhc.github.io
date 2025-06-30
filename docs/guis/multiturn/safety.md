@@ -1,4 +1,4 @@
-# Measurement Setup
+# Safety Checks
 
 After selecting which beam to excite and acquire data for, the next step is to prepare the correct excitation settings and check for various state flags.
 A first check to perform is that specific systems of the machine themselves are in the correct state to allow for beam excitation.
@@ -109,7 +109,6 @@ When all these flags are in the correct state, you can proceed to the [next step
 
 *[ATLAS BCM]: ATLAS Beam Condition Monitor
 *[EIC]: Engineer in Charge, operators of the LHC
-*[BBQ]: Base Band Q, a system used to continuously measure the beam's tunes.
 *[AC Dipole]: Alternating Current Dipole
 *[ADT]: LHC Transverse Damper
 *[BPM]: Beam Position Monitor
