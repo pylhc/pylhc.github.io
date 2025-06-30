@@ -119,43 +119,67 @@ Kick amplitudes determine the excitation strength.
 Generally higher kicks lead to better signal-to-noise ration and allow measuring more faint beam modes and RDTs, but come with the risk of beam losses and beam dump.
 
 Set the Kick Amplitudes by changing the value in `Excitation amplitude (%)` field, for both the horizontal and vertical planes (`Horizontal settings` and `Vertical settings` sections).
+Always ask the experts on shift if unsure about the kick amplitudes to set.
 
-!!! warning
-    Always ask the experts on shift if you are unsure about the kick amplitudes to use.
+??? info "Kick Amplitudes at Injection"
 
-#### Kick amplitudes at injection
+    As the beams are not particularly hard at injection, small kick amplitudes lead to large peak to peak oscillations and we generally use small amplitudes.
+    A reasonable starting point is anywhere between __1%__ and __3%__, then going up slowly in steps of __2%__, until beam losses during kicks stop being reasonable.
 
-At injection the beam is not particularly hard and small kick amplitudes lead to large peak to peak oscillations. We generally use small amplitudes, starting from __1%__ or __3%__ and going up slowly in steps of __2%__ or __3%__, until beam losses during kicks stop being reasonable.
+??? info "Kick Amplitudes in the Ramp"
 
-!!! tip "Losses on Kicks"
-    Sometimes when increasing the kick amplitude, one will notice large losses. In this case it is recommended to kick a couple times at this amplitude or just below to see if the losses reduce or are consistent.
+    Performing kicks in the ramp requires careful planning.
+    As the beam energy increases, so does the beam rigidity harder and hence larger kick amplitudes can be used.
+    Nevertheless, careful monitoring of losses during acquisitions and adjusting the kick amplitudes accordingly is crucial.
 
-    Should they reduce the beam might have just needed cleaning and one can increase the kick amplitude further. Otherwise, stop increasing unless a beam dump is affordable. Refer to the experts on shift if you are unsure about the losses, and whether you can increase the kick amplitude further.
+    Typically, we prepare a table various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
+    These should follow the various match points for the given energy ramp program.
+    <!-- TODO: check this first! Most of these information can be found by searching `LSA` in the `CCM`, then navigating to and opening `Generator`, `Edit` mode and searching & selecting the relevant beam process. -->
 
-#### Kick amplitudes during the ramp
+    An __example table__ is shown below.
 
-An example of a table of amplitudes during the ramp is as follows:
+    | Time  | Energy (TeV) | Phase Knob | ATS  | Kick Amplitude (%) |   Optics    |
+    |:-----:|:------------:|:----------:|:----:|:------------------:|:-----------:|
+    |  30s  |     0.46     |    100%    |  1   |         3          | TODO: write |
+    | 240s  |     1.0      |    50%     |  1   |         7          | TODO: write |
+    | 405s  |     1.9      |     0%     |  1   |         13         | TODO: write |
+    | 580s  |     2.9      |     0%     |  1   |         19         | TODO: write |
+    | 720s  |     3.7      |     0%     |  1   |         24         | TODO: write |
+    | 860s  |     4.5      |     0%     |  1   |         30         | TODO: write |
+    | 1010s |     5.5      |     0%     | 0.75 |         36         | TODO: write |
+    | 1160s |     6.2      |     0%     | 0.57 |         41         | TODO: write |
+    | 1247s |     6.6      |     0%     | 0.5  |         45         | TODO: write |
 
-|  Time  | Energy (TeV) | Phase Knob | ATS  | Kick Amplitude (%) |
-|--------|--------------|------------|------|--------------------|
-| 30s    | 0.46         | 100%       | 1    | 3                  |
-| 240s   | 1.0          | 50%        | 1    | 7                  |
-| 405s   | 1.9          | 0%         | 1    | 13                 |
-| 580s   | 2.9          | 0%         | 1    | 19                 |
-| 720s   | 3.7          | 0%         | 1    | 24                 |
-| 860s   | 4.5          | 0%         | 1    | 30                 |
-| 1010s  | 5.5          | 0%         | 0.75 | 36                 |
-| 1160s  | 6.2          | 0%         | 0.57 | 41                 |
-| 1247s  | 6.6          | 0%         | 0.5  | 45                 |
+    The values in this table are a good starting point, but it is important to monitor the losses and reduce the kick amplitudes accordingly.
 
-This table scales the kick amplitudes with the energy, and hence the kick amplitudes are larger at higher energies. The values in the table are a good starting point, but it is important to monitor the losses and reduce the kick amplitudes accordingly.
+??? info "Kick Amplitudes at Top Energy"
 
-#### Kick amplitudes top energy
+    At top energy the increased beam rigidity allows us larger kick amplitudes.
+    A reasonable starting point is __5%__, then going up in steps of __5%__ until beam losses during kicks stop being reasonable.
+    Remember that it is very time-consuming to get back to this state when losing the beam at top energy, so monitor beam losses carefully and be reasonable with the kick increases.
 
-When at top energy, the beam is quite hard, and hence we can use larger kick amplitudes. Starting from __5%__ and going up in steps of __5%__ until the losses start to increase significantly usually works well.
+### Exciting the Beam
 
-!!! warning
-    Always ask the experts on shift if you are unsure about the kick amplitudes to use.
+Trigger an acquisition by clicking the yellow ++"Acquire with ACDipole Excitation"++ button at the bottom left of the GUI.
+The AC Dipole will arm, then kick the beam.
+Make sure to have a `BLM Display` application open and to monitor the losses during that time.
+
+Afterwards, a new tab will open at the very top of the GUI to display the BPM measurements, which can be checked.
+
+??? info "Losses on Kicks"
+    Sometimes when increasing the kick amplitude, one will notice large losses.
+    In this case it is recommended to kick a couple times at this amplitude or just below to see if the losses reduce or are consistent.
+
+    Should they reduce the beam might have just needed cleaning and one can increase the kick amplitude further.
+    Otherwise, stop increasing unless a beam dump is affordable.
+    Refer to the experts on shift if unsure about the losses, and whether the kick amplitude can be increased further.
+
+!!! danger "Do not Kick Both Beams Simultaneously"
+    Triggering an acquisition will always turns off the tune feedback, radial loop, and orbit feedback for that beam.
+    Afterward, the system restores these to the exact state they were in before the acquisition.
+
+    This means if one kicks Beam 1 and quickly after Beam 2, Beam 1’s feedback loops will be left off!
+    This is because they were off when the system triggered the Beam 2 measurement, and the system restores the global state.
 
 *[AC Dipole]: Alternating Current Dipole
 *[ADT]: LHC Transverse Damper
