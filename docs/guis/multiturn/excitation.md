@@ -104,7 +104,7 @@ Set these values in the `start` fields of the `Tune deltas` section, for both th
     We often perform optics measurements using the $Q_x = 0.28$, $Q_y = 0.31$ tunes, and the following tune deltas:
 
     - The horizontal tune delta is typically set to $\Delta Q_x = -0.01$.
-    - The vertical tune delta is typically set to $\Delta Q_x = 0.012$.
+    - The vertical tune delta is typically set to $\Delta Q_y = 0.012$.
 
     These values result in typical excitation tunes of $Q_x^{driven} = 0.27$ and $Q_y^{driven} = 0.322$.
     Depending on the specific measurements, other tunes and tune deltas may be required.
