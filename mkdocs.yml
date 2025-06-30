@@ -179,7 +179,7 @@ nav:
       - About: guis/rdt_feeddown/gui.md
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
-        - Measurement Setup: guis/multiturn/setup.md
+        - Safety Checks: guis/multiturn/safety.md
         - Beam Excitation: guis/multiturn/excitation.md
         - AC-Dipole Measurements: guis/multiturn/acdipole.md
         - ADT AC-Dipole Measurements: guis/multiturn/adt.md
