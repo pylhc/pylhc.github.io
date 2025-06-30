@@ -3,11 +3,38 @@
 After selecting which beam to excite and acquire data for, the next step is to prepare the correct excitation settings and check for various state flags.
 A first check to perform is that specific systems of the machine themselves are in the correct state to allow for beam excitation.
 
-!!! tip "Good Red, Bad Red"
+!!! info "Good Red, Bad Red"
     As one will see below, an indicator colored in red is not always a bad thing in the Multiturn GUI, due to conventions.
     Check thoroughly the meaning of each indicator (also called flag) from the instructions below and make sure they are in a correct state.
 
-<!-- TODO: vertical menu recap -->
+??? tip "Quick Recap"
+
+    Please read the following sections carefully regarding the meaning of various flags.
+    Here is a quick recap of flags to check and the expected state for measurements:
+
+    === "Beam Presence"
+        Should be <span style="color:green;">__green__</span>.
+
+    === "Setup Beam"
+        Should be <span style="color:green;">__green__</span>.
+
+    === "ATLAS BCM"
+        Should be <span style="color:red;">__red__</span>.
+
+    === "Orbit FB"
+        Should be <span style="color:red;">__red__</span>.
+
+    === "Radial Loop"
+        Should be <span style="color:red;">__red__</span>.
+
+    === "Tune FBs"
+        Should all be <span style="color:red;">__red__</span> during measurements. Is turned off automatically when acquiring, and turned back on afterwards.
+
+    === "Chroma FBs"
+        Not so important.
+
+    === "Landau FBs"
+        Not so important.
 
 ## Flag Status
 
