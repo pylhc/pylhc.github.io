@@ -97,7 +97,7 @@ The two following settings need to be set before starting measurements.
 ### Tune Deltas
 
 The excitation device drives the beam motion to a different frequency than the natural tune, which is determined by its offset from the natural tune, called the "tune delta".
-Set this values in the `start` fields of the `Tune deltas` section, for both the horizontal and vertical planes (`Horizontal settings` and `Vertical settings` sections).
+Set these values in the `start` fields of the `Tune deltas` section, for both the horizontal and vertical planes (`Horizontal settings` and `Vertical settings` sections).
 
 !!! tip "Typical Default Values"
 
