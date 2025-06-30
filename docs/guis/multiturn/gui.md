@@ -27,7 +27,7 @@ After opening, select at the top of the GUI either the `Acquisition BEAM1` or `A
 The following pages are available:
 
 - [Measurements Settings](setup.md) for how to prepare beam excitation and acquisition.
-- [Beam Excitation](analyzing.md) for how to excite the beam with either the AC Dipole or the ADT.
+- [Beam Excitation](excitation.md) for how to excite the beam with either the AC Dipole or the ADT.
 - [Kick Scheduler](scheduler.md) for how to schedule and run AC-Dipole measurements with a set of predefined kick amplitudes.
 
 *[AC Dipole]: Alternating Current Dipole
