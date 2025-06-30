@@ -160,7 +160,7 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
 
 ### Exciting the Beam
 
-Trigger an acquisition by clicking the yellow ++"Acquire with ACDipole Excitation"++ button at the bottom left of the GUI.
+Trigger an acquisition by clicking the yellow ++"Acquire with ACDipole excitation"++ button at the bottom left of the GUI.
 The AC Dipole will arm, then kick the beam.
 Make sure to have a `BLM Display` application open and to monitor the losses during that time.
 
@@ -180,6 +180,26 @@ Afterwards, a new tab will open at the very top of the GUI to display the BPM me
 
     This means if one kicks Beam 1 and quickly after Beam 2, Beam 1’s feedback loops will be left off!
     This is because they were off when the system triggered the Beam 2 measurement, and the system restores the global state.
+
+## ADT AC-Dipole Excitation
+
+Selecting the `ADTACDipole` tab will change the right-hand side of the GUI window to display the following:
+
+<figure>
+    <center>
+    <img src="../../assets/images/multiturn_gui/ADTACDipole.png" width="80%" alt="ADT AC-Dipole Tab" />
+    <figcaption>ADT AC-Dipole Tab</figcaption>
+    </center>
+</figure>
+
+Currently ADT AC-dipole measurements are almost identical to the AC Dipole measurements.
+Refer to the [AC Dipole Excitation](#ac-dipole-excitation) section above for the settings and steps.
+
+!!! note "Slight Differences"
+
+    Note that ADT AC-dipole measurements can be performed over a longer number of turns, typically __40,000 turns__, but the resulting peak-to-peak oscillations are smaller than for the AC Dipole kicks.
+
+Trigger an acquisition by clicking the yellow ++"Acquire with ADT/AC excitation"++ button at the bottom left of the GUI.
 
 *[AC Dipole]: Alternating Current Dipole
 *[ADT]: LHC Transverse Damper
