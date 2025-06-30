@@ -105,7 +105,12 @@ Talk to the experts on shift if you are unsure about these settings.
     The chromaticity feedback acts on dedicated sextupole circuits in the arcs to keep the beam's chromaticities to the desired values.
     The Landau damping flags display the powering state of the octupole circuits in the arcs, which are used to damp the beam's coherent oscillations.
 
-When all these flags are in the correct state, you can proceed to the [next step of the measurement setup](excitation.md).
+## Kicker Keys
+
+In order to allow for beam excitation with the AC Dipole or the ADT, the physical key must be inserted in the nearby server room, and turned to correct setting.
+Let the current EIC know which device you plan on using, and ask them to go insert the key in the server room.
+
+When all these checks are satisfied, proceed to the [next step of the measurement setup](excitation.md).
 
 *[ATLAS BCM]: ATLAS Beam Condition Monitor
 *[EIC]: Engineer in Charge, operators of the LHC
