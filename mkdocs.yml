@@ -181,9 +181,9 @@ nav:
         - About: guis/multiturn/gui.md
         - Safety Checks: guis/multiturn/safety.md
         - Beam Excitation: guis/multiturn/excitation.md
-        - AC-Dipole Measurements: guis/multiturn/acdipole.md
-        - ADT AC-Dipole Measurements: guis/multiturn/adt.md
-        - AC-Dipole Scheduling: guis/multiturn/scheduler.md
+        - Scheduled Excitations: guis/multiturn/scheduler.md
+        # - AC-Dipole Measurements: guis/multiturn/acdipole.md
+        # - ADT AC-Dipole Measurements: guis/multiturn/adt.md
     - Usage and Development:
       - Guidelines: guis/usage/guidelines.md
       - IDE Setup: guis/usage/ide_install.md
