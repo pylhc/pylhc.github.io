@@ -116,4 +116,3 @@ When all these checks are satisfied, proceed to the [next step of the measuremen
 *[EIC]: Engineer in Charge, operators of the LHC
 *[AC Dipole]: Alternating Current Dipole
 *[ADT]: LHC Transverse Damper
-*[BPM]: Beam Position Monitor
