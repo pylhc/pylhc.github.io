@@ -1,6 +1,7 @@
 # Measurement Setup
 
 After selecting which beam to excite and acquire data for, the next step is to prepare the correct excitation settings and check for various state flags.
+A first check to perform is that specific systems of the machine themselves are in the correct state to allow for beam excitation.
 
 !!! tip "Good Red and Bad Red"
     As one will see below, an indicator colored in red is not always a bad thing in the Multiturn GUI, due to conventions.
@@ -25,7 +26,6 @@ Their meanings are as follows:
 !!! info "Masking the BCM"
     The ATLAS BCM can only be masked by ATLAS operators, from their control room.
     Ask the current EIC to call the ATLAS control room and ask to mask their BCM before starting measurements.
-
 
 
 *[ATLAS BCM]: ATLAS Beam Condition Monitor
