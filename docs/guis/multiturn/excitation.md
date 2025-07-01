@@ -11,7 +11,13 @@ The following settings are set identically for both the AC Dipole and the ADT, i
 ### Kick Groups
 
 Before exciting the beam, one should select or create a kick group.
-This is done by clicking the ++"Select Active group"++ button in the top left corner of the GUI, which will open the following dialog:
+A kick group collects measurements under a single name, gathers them in the logbook and makes it easier in the future to simultaneously load related kicks at once.
+
+??? tip "Kickgroups in JSON"
+    Each kick group also has a corresponding `.json` file in `/user/slops/data/LHC_DATA/OP_DATA/Betabeat/KickGroups/MULTITURN_ACQ_GROUPS`, in which the paths to the acquired turn-by-turn data and their individual `.json` files containing information about the excitation parameter is stored.
+    See also the [PyLHC tool for KickGroups][pylhc_kickgroups]{target=_blank}.
+
+Creating a new group is done by clicking the ++"Select Active group"++ button in the top left corner of the GUI, which will open the following dialog:
 
 <figure>
     <center>
@@ -205,3 +211,5 @@ Trigger an acquisition by clicking the yellow ++"Acquire with ADT/AC excitation"
 *[ADT]: LHC Transverse Damper
 *[BBQ]: Base Band Q, a system used to continuously measure the beam's tunes
 *[RDT]: Resonance Driving Term
+
+[pylhc_kickgroups]: https://pylhc.github.io/PyLHC/entrypoints/kickgroups.html
