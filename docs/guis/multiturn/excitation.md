@@ -219,7 +219,7 @@ Trigger an acquisition by clicking the yellow ++"Acquire with ADT/AC excitation"
 
 *[AC Dipole]: Alternating Current Dipole
 *[ADT]: LHC Transverse Damper
-*[BBQ]: Base Band Q, a system used to continuously measure the beam's tunes
+*[BBQ]: Base Band Tune, a system used to continuously measure the beam's tunes
 *[RDT]: Resonance Driving Term
 
 [pylhc_kickgroups]: https://pylhc.github.io/PyLHC/entrypoints/kickgroups.html
