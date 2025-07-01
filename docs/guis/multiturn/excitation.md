@@ -148,7 +148,7 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
     Nevertheless, careful monitoring of losses during acquisitions and adjusting the kick amplitudes accordingly is crucial.
 
     Typically, we prepare a table various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
-    These should follow the various match points for the given energy ramp program.
+    These should follow the various match points for the given energy ramp program, and the kick strengths should scale approximately linearly with the beam energy, starting from safe strength at injection.
     <!-- TODO: check this first! Most of these information can be found by searching `LSA` in the `CCM`, then navigating to and opening `Generator`, `Edit` mode and searching & selecting the relevant beam process. -->
 
     An __example table__ is shown below.
