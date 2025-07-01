@@ -153,21 +153,33 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
 
     Typically, we prepare a table various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
     These should follow the various match points for the given energy ramp program, and the kick strengths should scale approximately linearly with the beam energy, starting from safe strength at injection.
-    <!-- TODO: check this first! Most of these information can be found by searching `LSA` in the `CCM`, then navigating to and opening `Generator`, `Edit` mode and searching & selecting the relevant beam process. -->
 
-    An __example table__ is shown below.
+    Most of these information can be found by opening a `CCM` then navigating to `LHC Control` -> `LHC Beam Control` -> `Settings` -> `Generation`.
+    Once the app has opened, select the `Edit types` tab then the `Beam Process Type` sub-tab.
+    Search & select the relevant beam process using the `Filter` field on the left, then click the big black ++"Show/Hide optic Table"++.
+    This will create a popup window displaying the match points during the ramp (if the BP is for a ramp) with their time, energy and optics file.
 
-    | Time  | Energy (TeV) | Phase Knob | ATS  | Kick Amplitude (%) |   Optics    |
-    |:-----:|:------------:|:----------:|:----:|:------------------:|:-----------:|
-    |  30s  |     0.46     |    100%    |  1   |         3          | TODO: write |
-    | 240s  |     1.0      |    50%     |  1   |         7          | TODO: write |
-    | 405s  |     1.9      |     0%     |  1   |         13         | TODO: write |
-    | 580s  |     2.9      |     0%     |  1   |         19         | TODO: write |
-    | 720s  |     3.7      |     0%     |  1   |         24         | TODO: write |
-    | 860s  |     4.5      |     0%     |  1   |         30         | TODO: write |
-    | 1010s |     5.5      |     0%     | 0.75 |         36         | TODO: write |
-    | 1160s |     6.2      |     0%     | 0.57 |         41         | TODO: write |
-    | 1247s |     6.6      |     0%     | 0.5  |         45         | TODO: write |
+    <figure>
+        <center>
+        <img src="../../assets/images/multiturn_gui/lsa_generation_bp_optics_table.png" width="80%" alt="Beam Process Optics Table from LSA Generation App" />
+        <figcaption>Beam Process Optics Table from LSA Generation App</figcaption>
+        </center>
+    </figure>
+
+    An __example table__ is shown below, generated for the proton-proton `RAMP-SQUEEZE-6.8TeV-ATS-2m-2025` beam process as in the picture above.
+    It is okay to copy-paste a previous table and update it.
+
+    | Time  | Energy (TeV) | Phase Knob | ATS | Kick Amplitude (%) |                  Optics                  |
+    |:-----:|:------------:|:----------:|:---:|:------------------:|:----------------------------------------:|
+    |  30s  |     0.46     |    100%    |  1  |         3          | R2025aRP_A11mC11mA10mL10m_PhaseKnob100On |
+    | 240s  |     1.0      |    50%     |  1  |         7          | R2025aRP_A11mC11mA10mL10m_PhaseKnob50On  |
+    | 405s  |     1.9      |     0%     |  1  |         13         |        R2025aRP_A11mC11mA10mL10m         |
+    | 580s  |     2.9      |     0%     |  1  |         19         |     R2025aRP_A700cmmC700cmA10mL700cm     |
+    | 720s  |     3.7      |     0%     |  1  |         24         |     R2025aRP_A370cmmC370cmA10mL370cm     |
+    | 860s  |     4.5      |     0%     |  1  |         30         |    R2025aRP_A200cmmC200cmA10mL200cm_1    |
+    | 1010s |     5.5      |     0%     | 0.8 |         36         |   R2025aRP_A200cmmC200cmA10mL200cm_0-8   |
+    | 1160s |     6.2      |     0%     | 0.6 |         41         |   R2025aRP_A200cmmC200cmA10mL200cm_0-6   |
+    | 1247s |     6.7      |     0%     | 0.5 |         45         |   R2025aRP_A200cmmC200cmA10mL200cm_0-5   |
 
     The values in this table are a good starting point, but it is important to monitor the losses and reduce the kick amplitudes accordingly.
 
@@ -225,5 +237,6 @@ Trigger an acquisition by clicking the yellow ++"Acquire with ADT/AC excitation"
 *[ADT]: LHC Transverse Damper
 *[BBQ]: Base Band Tune, a system used to continuously measure the beam's tunes
 *[RDT]: Resonance Driving Term
+*[BP]: Beam Process
 
 [pylhc_kickgroups]: https://pylhc.github.io/PyLHC/entrypoints/kickgroups.html
