@@ -44,6 +44,10 @@ These are updated as much as possible for Run 3 values.
       <p> There should be a pre-made setting for this.
       </p></details>
 
+- [ ] <details class="nodeco"><summary>Deactivate Injection Protection</summary>
+      <p> Only if measuring at injection, ask the EIC to deactivate this setting.
+      </p></details>
+
 !!! note "Timing Tables"
     Normally, starting in Run 3 the timing tables are automatically loaded by the Multiturn application.
     It can't hurt to check that they are, though.
@@ -93,7 +97,7 @@ Here are some general checks on should always keep in mind when performing measu
 ## General Corrections Caveats
 
 - [ ] <details class="nodeco"><summary>Beware of the Corrections Signs</summary>
-      For a quick (but rough) reference see [this old note][polarity_acc_note] [this 2022 presentation][riccardo_lhc_polarity] by Riccardo.
+      For a quick (but rough) reference see [this old note][polarity_acc_note]{target=_blank} and [this 2022 presentation][riccardo_lhc_polarity]{target=_blank} by Riccardo.
       - [ ] <details class="nodeco"><summary>Calculated Global Corrections</summary>
             <p> The calculated global correction are really corrections and should be trimmed in with a positive sign.
             </p></details>
