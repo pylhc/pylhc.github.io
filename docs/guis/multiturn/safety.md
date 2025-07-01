@@ -2,6 +2,7 @@
 
 After selecting which beam to excite and acquire data for, the next step is to prepare the correct excitation settings and check for various state flags.
 A first check to perform is that specific systems of the machine themselves are in the correct state to allow for beam excitation.
+Some general checks are [available on this page](../../measurements/procedures/general_checks.md), and below are the specific checks to perform in the Multiturn GUI.
 
 !!! info "Good Red, Bad Red"
     As one will see below, an indicator colored in red is not always a bad thing in the Multiturn GUI, due to conventions.
