@@ -43,7 +43,7 @@ theme:
 
     # Palette toggle for dark mode
     - scheme: slate
-      primary: indigo
+      primary: cern
       accent: amber
       toggle:
         icon: material/brightness-4
