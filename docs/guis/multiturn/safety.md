@@ -21,7 +21,7 @@ Some general checks are [available on this page](../../measurements/procedures/g
     | **Orbit Feedback**  |     <span style="color:red;">**Red**</span>     | Orbit feedback should be off during measurements.                                  |
     | **Radial Loop**     |     <span style="color:red;">**Red**</span>     | Radial loop feedback should be off during measurements.                            |
     | **Tune Feedbacks**  |     <span style="color:red;">**Red**</span>     | All tune feedbacks should be off during measurements. Turned off/on automatically. |
-    | **Chroma Feedback** |                Not so important                 | Usually left as is.                                                                |
+    | **Chroma Feedback** |   <span style="color:green;">**Green**</span>   | Displays acceptable (or not) state of last measured chromaticity value.            |
     | **Landau Feedback** | Usually <span style="color:red;">**Red**</span> | Usually off, unless you want to include the MOs in your measurements.              |
 
 ## Flag Status
@@ -88,7 +88,7 @@ They will automatically be turned off when you start a measurement, and will be 
 Similarly to the above, these flags display the state of the chromaticity feedback for each beam and plane (chroma), or simply each beam (landau).
 
 <!-- TODO: double check on the chroma state thing -->
-- `Chroma State`: indicates the state of the chromaticity feedback for each beam and plane; green if active and red if depowered.
+- `Chroma State`: indicates the status of the last measured chromaticity value; displays as green if acceptable for optics measurements and red otherwise. __Always make sure it is green__.
 - `Landau Damping`: refers to the powering of the MO circuits and is red when the MOs are off, green when they are powered. __It should usually be red__, but can be green should you choose to include the effects of the MOs in your measurements.
 
 Talk to the experts on shift if you are unsure about these settings.
