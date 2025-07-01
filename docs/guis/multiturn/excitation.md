@@ -215,10 +215,6 @@ Currently ADT AC-dipole measurements are almost identical to the AC Dipole measu
 This deficit can be overcome in improving the signal-to-noise ratio through increased measurement lengths, i.e. up to __40,000 turns__.
 Refer to the [AC Dipole Excitation](#ac-dipole-excitation) section above for the settings and steps.
 
-!!! note "Slight Differences"
-
-    Note that ADT AC-dipole measurements can be performed over a longer number of turns, typically __40,000 turns__, but the resulting peak-to-peak oscillations are smaller than for the AC Dipole kicks.
-
 Trigger an acquisition by clicking the yellow ++"Acquire with ADT/AC excitation"++ button at the bottom left of the GUI.
 
 *[AC Dipole]: Alternating Current Dipole
