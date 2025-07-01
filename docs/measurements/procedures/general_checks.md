@@ -5,6 +5,10 @@
 Here are a few checks to perform before starting measurements.
 These are updated as much as possible for Run 3 values.
 
+!!! tip "Multiturn Application"
+    Measurements are performed using the Multiturn application.
+    [See here](../../guis/multiturn/gui.md) for a full section about this GUI and how to use it.
+
 - [ ] <details class="nodeco"><summary>Make Sure Intensity Is below $10^{10}$ppb until Local Corrections Are In</summary>
       <p> After local corrections, we can move to having 3 bunches (each below $10^{10}$ppb) evenly spaced along the ring.
       </p></details>
@@ -14,7 +18,7 @@ These are updated as much as possible for Run 3 values.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Mask the Appropriate BLMs</summary>
-      <p> It is possible tp "mask" some of the BLMs, which means making sure they won't trigger any beam dump. They are essentially ignored in the interlocked system when masked.
+      <p> It is possible to "mask" some of the BLMs, which means making sure they won't trigger any beam dump. They are essentially ignored in the interlocked system when masked.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Turn Off the Landau Octupoles</summary>
