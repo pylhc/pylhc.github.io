@@ -62,6 +62,12 @@ They should be the natural tunes used in the machine during measurements.
 Either enter the values manually or, to enter the current tunes click the ++"Acquire QH"++ and ++"Acquire QV"++ buttons which will update the value to the current one measured with the BBQ.
 These values can be manually refined if necessary.
 
+!!! warning "Unexpected Tunes"
+    This acquisition is also a sanity check for the state of the machine.
+    It can happen that the machine tunes are different from what is expected, e.g. because it was forgotten to revert them to the desired working point.
+    Such a mistake would easily be detected with a press of this button, which can prevent unexpected beam dumps.
+    Use this feature!
+
 ### Concentrator Settings
 
 These settings refer to the excitation to be performed.
