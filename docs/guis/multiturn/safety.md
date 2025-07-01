@@ -8,34 +8,21 @@ Some general checks are [available on this page](../../measurements/procedures/g
     As one will see below, an indicator colored in red is not always a bad thing in the Multiturn GUI, due to conventions.
     Check thoroughly the meaning of each indicator (also called flag) from the instructions below and make sure they are in a correct state.
 
-??? tip "Quick Recap"
+!!! tip "Quick Recap"
 
     Please read the following sections carefully regarding the meaning of various flags.
     Here is a quick recap of flags to check and the expected state for measurements:
 
-    === "Beam Presence"
-        Should be <span style="color:green;">__green__</span>.
-
-    === "Setup Beam"
-        Should be <span style="color:green;">__green__</span>.
-
-    === "ATLAS BCM"
-        Should be <span style="color:red;">__red__</span>.
-
-    === "Orbit FB"
-        Should be <span style="color:red;">__red__</span>.
-
-    === "Radial Loop"
-        Should be <span style="color:red;">__red__</span>.
-
-    === "Tune FBs"
-        Should all be <span style="color:red;">__red__</span> during measurements. Is turned off automatically when acquiring, and turned back on afterwards.
-
-    === "Chroma FBs"
-        Not so important.
-
-    === "Landau FBs"
-        Not so important.
+    | Flag                |                 Expected State                  | Notes                                                                              |
+    |---------------------|:-----------------------------------------------:|------------------------------------------------------------------------------------|
+    | **Beam Presence**   |   <span style="color:green;">**Green**</span>   | Beam must be present.                                                              |
+    | **Setup Beam**      |   <span style="color:green;">**Green**</span>   | Beam must be in Setup mode.                                                        |
+    | **ATLAS BCM**       |     <span style="color:red;">**Red**</span>     | Should be masked (red). Ask EIC to contact ATLAS control room to mask BCM.         |
+    | **Orbit Feedback**  |     <span style="color:red;">**Red**</span>     | Orbit feedback should be off during measurements.                                  |
+    | **Radial Loop**     |     <span style="color:red;">**Red**</span>     | Radial loop feedback should be off during measurements.                            |
+    | **Tune Feedbacks**  |     <span style="color:red;">**Red**</span>     | All tune feedbacks should be off during measurements. Turned off/on automatically. |
+    | **Chroma Feedback** |                Not so important                 | Usually left as is.                                                                |
+    | **Landau Feedback** | Usually <span style="color:red;">**Red**</span> | Usually off, unless you want to include the MOs in your measurements.              |
 
 ## Flag Status
 
@@ -99,7 +86,11 @@ They will automatically be turned off when you start a measurement, and will be 
 ### Chroma State & Landau Damping
 
 Similarly to the above, these flags display the state of the chromaticity feedback for each beam and plane (chroma), or simply each beam (landau).
-These are less important for the measurement setup and are typically left as is.
+
+<!-- TODO: double check on the chroma state thing -->
+- `Chroma State`: indicates the state of the chromaticity feedback for each beam and plane; green if active and red if depowered.
+- `Landau Damping`: refers to the powering of the MO circuits and is red when the MOs are off, green when they are powered. __It should usually be red__, but can be green should you choose to include the effects of the MOs in your measurements.
+
 Talk to the experts on shift if you are unsure about these settings.
 
 ??? info "What are those?"
