@@ -211,7 +211,8 @@ Selecting the `ADTACDipole` tab will change the right-hand side of the GUI windo
     </center>
 </figure>
 
-Currently ADT AC-dipole measurements are almost identical to the AC Dipole measurements.
+Currently ADT AC-dipole measurements are almost identical to the AC Dipole measurements, but due to the limitations of the magnet, cannot (yet) reach the same kick-strengths as the dedicated AC-dipole.
+This deficit can be overcome in improving the signal-to-noise ratio through increased measurement lengths, i.e. up to __40,000 turns__.
 Refer to the [AC Dipole Excitation](#ac-dipole-excitation) section above for the settings and steps.
 
 !!! note "Slight Differences"
