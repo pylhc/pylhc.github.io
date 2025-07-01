@@ -82,12 +82,16 @@ The excitation device needs to know which bunches to excite and how long the exc
 
 - To select the bunches, click the ++"Select ..."++ button under the `Bunches` section, which opens the following dialog:
 
-<!-- TODO: Need to add a screenshot of the multiturn -->
+<figure>
+    <center>
+    <img src="../../assets/images/multiturn_gui/bunch_selection.png" width="85%" alt="Bunch Selection Panel" />
+    <figcaption> Bunch Selection Panel, Highlighting the Filled Slots in Green </figcaption>
+    </center>
+</figure>
 
-- Choose ++"Select Bunches with Beam"++ to select all bunches present in the machine.
+- Choose ++"Select Bunches with Beam"++ to select all bunches present in the machine, then click ++"OK"++ in the top right to validate the selection.
 We typically do not inject bunches that won't be excited for optics measurements.
-It is also possible to manually enter the bunches, each number separated by a space.
-<!-- TODO: Check if they are space of comma separated -->
+It is also possible to manually enter the (comma-separated) bunches to excite.
 
 - Set the number of turns to maintain the excitation for in the `Turns` field below.
 These correspond to the excitation plateau length, and does not include ramp-up and ramp-down times.
