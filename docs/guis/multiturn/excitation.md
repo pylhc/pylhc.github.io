@@ -190,7 +190,7 @@ Afterwards, a new tab will open at the very top of the GUI to display the BPM me
     Refer to the experts on shift if unsure about the losses, and whether the kick amplitude can be increased further.
 
 !!! danger "Do not Kick Both Beams Simultaneously"
-    Triggering an acquisition will always turns off the tune feedback, radial loop, and orbit feedback for that beam.
+    Triggering an acquisition will always turn off the tune feedback, radial loop, and orbit feedback for that beam.
     Afterward, the system restores these to the exact state they were in before the acquisition.
 
     This means if one kicks Beam 1 and quickly after Beam 2, Beam 1’s feedback loops will be left off!
