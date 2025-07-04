@@ -40,7 +40,7 @@ To do so:
 
 - Adapt the text entry under `Group Name` to reflect the measurements to be done in this group.
 A good naming practice is to lead with the date and beam number as suggested, e.g. `YYYY-MM-DD_BEAM1_Measurement_description`.
-Make sure to press ++"Enter"++ after typing the name.
+Make sure to press `Enter` after typing the name.
 Optionally add a description in the field below, and click the ++"Create"++ button.
 Once created the new group will appear at the bottom of the list of available groups.
 
