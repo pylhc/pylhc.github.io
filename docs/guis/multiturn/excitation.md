@@ -238,5 +238,6 @@ Trigger an acquisition by clicking the yellow ++"Acquire with ADT/AC excitation"
 *[BBQ]: Base Band Tune, a system used to continuously measure the beam's tunes
 *[RDT]: Resonance Driving Term
 *[BP]: Beam Process
+*[beam dump]: Whenever the beams are sent out of the machine by the protection systems. It is equivalent to losing 100% of the beam at once.
 
 [pylhc_kickgroups]: https://pylhc.github.io/PyLHC/entrypoints/kickgroups.html
