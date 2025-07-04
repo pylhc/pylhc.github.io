@@ -195,7 +195,7 @@ Trigger an acquisition by clicking the yellow ++"Acquire with ACDipole excitatio
 The AC Dipole will arm, then kick the beam.
 Make sure to have a `BLM Display` application open and to monitor the losses during that time.
 
-Afterwards, a new tab will open at the very top of the GUI to display the BPM measurements, which can be checked.
+Afterwards, a new tab will open at the very top of the GUI to display the BPM measurements, which can be checked: a menu list lets one select any BPM from each beam, and view the recorded bunch centroid turn-by-turn data through the acquisition.
 
 ??? info "Losses on Kicks"
     Sometimes when increasing the kick amplitude, one will notice large losses.
