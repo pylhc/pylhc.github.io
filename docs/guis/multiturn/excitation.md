@@ -66,7 +66,7 @@ These values can be manually refined if necessary.
     This acquisition is also a sanity check for the state of the machine.
     It can happen that the machine tunes are different from what is expected, e.g. because it was forgotten to revert them to the desired working point.
     Such a mistake would easily be detected with a press of this button, which can prevent unexpected beam dumps.
-    Use this feature!
+    __Use this feature!__
 
 ### Concentrator Settings
 
