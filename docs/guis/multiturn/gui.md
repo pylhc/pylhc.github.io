@@ -24,8 +24,8 @@ After opening, select at the top of the GUI either the `Acquisition BEAM1` or `A
     It is recommended to not kick both beams from the same GUI, as it can lead to crashes and unexpected behavior.
     Open a separate GUI for each beam.
 
-    !!! tip "Closing Tabs"
-        To avoid kicking the wrong beam accidentally, one can drag and drop the tab for the unused beam out of the GUI.
+!!! tip "Closing Tabs"
+    To avoid kicking the wrong beam accidentally, one can drag and drop the tab for the unused beam out of the GUI.
 
 The following pages are available:
 
