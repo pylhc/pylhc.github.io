@@ -156,7 +156,7 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
 
 ??? info "Kick Amplitudes at Injection"
 
-    As the beams are not particularly hard at injection, small kick amplitudes lead to large peak to peak oscillations and we generally use small amplitudes.
+    As the beams have a relatively low rigidity at injection, small kick amplitudes lead to large peak to peak oscillations and we generally use small amplitudes.
     A reasonable starting point is anywhere between __1%__ and __3%__, then going up slowly in steps of __2%__, until beam losses during kicks stop being reasonable.
 
 ??? info "Kick Amplitudes in the Ramp"
