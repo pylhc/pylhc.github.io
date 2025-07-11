@@ -89,6 +89,8 @@ The excitation device needs to know which bunches to excite and how long the exc
     </center>
 </figure>
 
+#### Bunches
+
 - To select the bunches, click the ++"Select ..."++ button under the `Bunches` section, which opens the following dialog:
 
 <figure>
@@ -102,6 +104,8 @@ The excitation device needs to know which bunches to excite and how long the exc
 This determines which bunches to record the BPM turn-by-turn data for.
 It is also possible to manually enter the (comma-separated) bunches to excite.
 Once done, click ++"OK"++ in the top right to validate the selection.
+
+#### Turns
 
 - Set the number of turns to maintain the excitation for in the `Turns` field below.
 These correspond to the excitation plateau length, and does not include ramp-up and ramp-down times.
