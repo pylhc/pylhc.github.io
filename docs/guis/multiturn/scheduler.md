@@ -31,7 +31,7 @@ This will open the following dialog:
 </figure>
 
 Set the start and end amplitudes as well as the step size in their respective fields.
-Note that the start and end are inclusive, and entries would only be created up to the `End Amplitude`.
+Note that the start and end are inclusive.
 Click the ++"Create Kick Table"++ when done.
 
 This will bring you back to the previous view, with the `H Amplitude (%)` and `V Amplitude (%)` columns filled with the inferred kick steps.
