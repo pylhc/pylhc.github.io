@@ -166,7 +166,7 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
 ??? info "Kick Amplitudes in the Ramp"
 
     Performing kicks in the ramp requires careful planning.
-    As the beam energy increases, so does the beam rigidity harder and hence larger kick amplitudes can be used.
+    As the beam energy increases, so does the beam rigidity and hence larger kick amplitudes can be used.
     Nevertheless, careful monitoring of losses during acquisitions and adjusting the kick amplitudes accordingly is crucial.
 
     Typically, we prepare a table various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
