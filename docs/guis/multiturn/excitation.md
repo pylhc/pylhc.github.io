@@ -153,7 +153,7 @@ Make sure to double check these values, as a wrong setting can lead to a direct 
 ### Kick Amplitudes
 
 Kick amplitudes, together with the tune deltas, contribute to determining the excitation strength.
-Generally higher kicks lead to better signal-to-noise ration and allow measuring more faint beam modes and RDTs, but come with the risk of beam losses and therefore signal degradation, or even beam dump.
+Generally larger excitations lead to better signal-to-noise ratio and allow measuring more faint beam modes and RDTs, but come with the risk of beam losses and therefore signal degradation, or even beam dump.
 
 Set the Kick Amplitudes by changing the value in `Excitation amplitude (%)` field, for both the horizontal and vertical planes (`Horizontal settings` and `Vertical settings` sections).
 Always ask the experts on shift if unsure about the kick amplitudes to set.
