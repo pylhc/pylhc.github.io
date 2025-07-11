@@ -1,5 +1,14 @@
 # Performing Beam Excitation
 
+<!-- The following is for the table to fit the
+page in the admonition for kicks in the ramp -->
+<style scoped>
+th, td {
+    min-width: 2.5rem !important;
+    padding: 0.9375em 0.5em !important;
+}
+</style>
+
 Once [all the checks](safety.md) have been performed, one can start measurements.
 In the Multiturn GUI one can perform beam excitation with either the AC Dipole or the ADT, and both procedures are very similar.
 Select either the `ACDipole` or `ADTACDipole` tab at the top of the GUI, depending on the desired excitation device.
