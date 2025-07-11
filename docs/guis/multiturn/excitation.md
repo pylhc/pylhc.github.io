@@ -98,9 +98,10 @@ The excitation device needs to know which bunches to excite and how long the exc
     </center>
 </figure>
 
-- Choose ++"Select Bunches with Beam"++ to select all bunches present in the machine, then click ++"OK"++ in the top right to validate the selection.
-We typically do not inject bunches that won't be excited for optics measurements.
+- Choose ++"Select Bunches with Beam"++ to select all bunches present in the machine, or individually select the bunches by clicking on their slots.
+This determines which bunches to record the BPM turn-by-turn data for.
 It is also possible to manually enter the (comma-separated) bunches to excite.
+Once done, click ++"OK"++ in the top right to validate the selection.
 
 - Set the number of turns to maintain the excitation for in the `Turns` field below.
 These correspond to the excitation plateau length, and does not include ramp-up and ramp-down times.
