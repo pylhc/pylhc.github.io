@@ -16,7 +16,7 @@ To be able to use the same IDE for different languages is also of value.
 
 ### VSCode
 
-Do be able to use [VSCode][vscode_webpage]{target=_blank} as an IDE for Java, the [Extension pack for Java][vscode_java]{target=_blank} needs to be installed.
+To be able to use [VSCode][vscode_webpage]{target=_blank} as an IDE for Java, the [Extension pack for Java][vscode_java]{target=_blank} needs to be installed.
 
 Additionally, the following settings need to be set in `Extensions -> Language Support for Java -> Gradle`:
 

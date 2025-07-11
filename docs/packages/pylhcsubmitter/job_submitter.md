@@ -67,7 +67,7 @@ Parameters in the template script (see below) are indicated in the `%(PARAMETER)
 
 ??? success "Recommended Method"
     Starting studies from Python is the recommended method, especially with a high number of parameters.
-    As we will see later on, other methods methods require all parameter values to be written down while the pythonic way allows for an easier and clearer definition of the parameter space. 
+    As we will see later on, other methods methods require all parameter values to be written down while the pythonic way allows for an easier and clearer definition of the parameter space.
 
 The parametrizing of simulations and submission to `HTCondor` through Python is as simple as calling the `main` function of the submitter with the desired parameters.
 See below:
@@ -190,7 +190,7 @@ After submitting our tune sweep studies, we can check the status of our jobs via
 The output should look something like this:
 
 <figure>
-    <img src="../../assets/images/job_submitter/tune_sweep_condor_q.png" width="100%" />
+    <img src="../../assets/images/job_submitter/tune_sweep_condor_q.png" width="100%" alt="Jobs in the condor queue" />
     <figcaption><code>condor_q</code>: Shows the jobs in the condor queue.</figcaption>
 </figure>
 
