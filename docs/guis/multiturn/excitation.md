@@ -143,6 +143,10 @@ Set these values in the `start` fields of the `Tune deltas` section, for both th
     Depending on the specific measurements, other tunes and tune deltas may be required.
     Always consult with the experts on shift if unsure about the values to use.
 
+    !!! warning "Diagonal Kicks"
+        Kicking completely "diagonal", i.e. with the same absolute delta in both planes, can lead to [additional resonance excitation and loss of DA](https://accelconf.web.cern.ch/ipac2016/papers/thpmr044.pdf){target=_blank}.
+        One should therefore always use slightly different tune deltas in the two planes.
+
 The resulting driven tunes will be automatically computed and displayed under `Start Excitation tune`.
 Make sure to double check these values, as a wrong setting can lead to a direct beam dump.
 
