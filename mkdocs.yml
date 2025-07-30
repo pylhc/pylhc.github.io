@@ -32,9 +32,23 @@ theme:
     - content.action.edit  # editing button on the pages is opt-in since v9
     - content.code.copy  # copy button for code blocks
   palette:
-    scheme: preference
-    primary: indigo
-    accent: amber
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: cern
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   font:
     text: Roboto
     code: Roboto Mono
@@ -179,6 +193,9 @@ nav:
       - About: guis/rdt_feeddown/gui.md
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
+        - Safety Checks: guis/multiturn/safety.md
+        - Beam Excitation: guis/multiturn/excitation.md
+        - Scheduled Excitations: guis/multiturn/scheduler.md
     - Usage and Development:
       - Guidelines: guis/usage/guidelines.md
       - IDE Setup: guis/usage/ide_install.md
