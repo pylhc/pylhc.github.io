@@ -55,6 +55,8 @@ After clicking on ++"Create New"++ in the [model selection window](#model-select
 
 Currently model creation is only implemented in the GUI for the [LHC](#lhc-model-creation) and the [SPS](#sps-model-creation) accelerators.
 
+### General
+
 They are using **unified window components**, which follow a common structure, described here, and differ in the accelerator specific details, which are explained in the sections below.
 
 #### Base
@@ -138,7 +140,6 @@ This can be used to install your own optics modifications.
 Clicking on the ++"Create New"++{.green-gui-button} button will start the model creation.
 If any [extraction](#extraction) is selected, these tasks will run first and they can take a few minutes.
 
-
 !!! warning "Loading a new Model"
     When the model creation is finished (but before the full-response creation), a popup will ask you if you want to load the model or not.
     Before you see this window, it is not possible to click on the ++"Load"++{.green-gui-button} button in the [model selection window](#model-selection-window), even though its name is already appearing in the list, because the model is not yet fully created.
@@ -152,12 +153,12 @@ If any [extraction](#extraction) is selected, these tasks will run first and the
   </center>
 </figure>
 
-#### Tunes
+#### Tunes (LHC)
 
 For the LHC the tunes are set by default to `0.28 - 0.01` in horizontal and `0.31 + 0.012` in vertical,
 which are our default tunes for LHC measurements.
 
-#### Accelerator
+#### Accelerator (LHC)
 
 - **Beam**:
 The beam is pre-defined by the accelerator choosen in the [beam selection window](beam_selection.md).
@@ -172,7 +173,7 @@ of the `acc-models/lhc` repository.
 You can search through the list via regular expression in the **Filter** field.
 - **dpp**: The momentum deviation for the model.
 
-#### Extraction
+#### Extraction (LHC)
 
 This section allows you to extract the actual settings from the LHC via NXCals
 at the given time UTC at the top if the section.
@@ -214,10 +215,6 @@ This will result in additional `*_best_knowledge.dat` twiss-output files, which 
       </center>
     </figure>
 
-
-
-
-
 ### SPS Model Creation
 
 <figure>
@@ -227,6 +224,22 @@ This will result in additional `*_best_knowledge.dat` twiss-output files, which 
   </center>
 </figure>
 
+#### Tunes (SPS)
+
+The **fractional tunes** are set by default to some values, that have suited us in the past,
+but as the settings of the SPS can differ quite drastically, you need to check the currently used values in the SPS multiturn application.
+
+!!! warning "Integer Tunes"
+    The **integer tunes** are set from the filename of the choosen _Strength File_ (below).
+    If you want to set them manually, make sure to **first select a strength file and then change the integer tunes**.
+
+#### Accelerator (SPS)
+
+- **Year**:
+This field is automatically filled by the frist layer of subfolders in the `acc-models/sps` repository.
+- **Strength File**:
+This field is automatically filled by the files in the `strengths` folder within the choosen _year_ of the `acc-models/sps` repository.
+- **Kinetic Energy**: Activate and set the energy at which the accelerator is running in GeV, if needed for your model.
 
 [bbgui_issue_202]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/202
 [acc-models]: https://acc-models.web.cern.ch/acc-models/
@@ -241,3 +254,6 @@ This will result in additional `*_best_knowledge.dat` twiss-output files, which 
 *[CCC]: Cern Control Center
 *[MQTs]: Tuning Trim Quadrupole Magnets of the LHC
 *[RBAC]: Role Based Access Control
+*[LHC]: Large Hadron Collider
+*[SPS]: Super Proton Synchrotron
+*[OMC]: Optics Measurement and Correction
