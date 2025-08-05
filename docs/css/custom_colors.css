@@ -49,3 +49,15 @@
   color: black !important;
   box-shadow: 0 .1rem 0 .05rem var(--md-typeset-kbd-border-color),0 .1rem 0 var(--md-typeset-kbd-border-color),0 -.1rem .2rem rgb(202, 142, 124) inset;;
 }
+
+.yellow-gui-button kbd {
+  background-color: rgb(255, 201, 0) !important;
+  color: black !important;
+  box-shadow: 0 .1rem 0 .05rem var(--md-typeset-kbd-border-color),0 .1rem 0 var(--md-typeset-kbd-border-color),0 -.1rem .2rem rgb(202, 177, 124) inset;;
+}
+
+.blue-gui-button kbd {
+  background-color: rgb(0, 0, 255) !important;
+  color: rgb(250, 247, 247) !important;
+  box-shadow: 0 .1rem 0 .05rem var(--md-typeset-kbd-border-color),0 .1rem 0 var(--md-typeset-kbd-border-color),0 -.1rem .2rem rgb(124, 125, 202) inset;;
+}
