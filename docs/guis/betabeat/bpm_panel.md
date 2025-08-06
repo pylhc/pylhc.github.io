@@ -8,91 +8,89 @@
   </center>
 </figure>
 
+The BPM panel provides a graphical interface to query and visualize information for the BPM data files, i.e. the Turn-by-Turn data.
 
-The BPM panel provides a graphical interface to query and visualize information for the BPM data files.
-It can load data files for all supported beams, mostly binary SDDS files or files in the SDDS ASCII format.
 
-!!! todo
+## Loading Data
 
-    Include a screenshot, possibly of settings when opening files?
+### Measurement Groups aka Kick Groups
 
-## Opening Files and Applying SVD Cleaning
+!!! warning "Not yet implemented"
+    The GUI does not yet support loading of measurement groups (i.e. kick groups).
+    The idea is to load all data from a single [kick-group, as defined in the Multiturn GUI](../multiturn/excitation.html#kick-groups) at once
+    or monitor a currently active kick-group and load the files as they are created.
 
-### Opening Files
 
-- Each tab has now an <span style="color:green;">Open Files</span> button, which opens only the files specific to this tab.
-- The magic <span style="color:green">**+**</span> button is gone, as its functionality was confusing (and there were different stories about its workings).
+### Open Files
 
-### Automatic BPM removal
+Use the ++"Open Files"++{.green-gui-button} button to open turn-by-turn data.
 
-First, BPMs are removed based on the following criteria:
-
-- known bad BPMs (list is provided in `Beta-Beat.src/harmonic_analysis/clean.py` and can be extended in `Bad BPMs` field)
-- BPMs which are not found in the model are discarded
-- Flat BPMs (difference between min/max is smaller than `Pk-2-pk cut`)
-- Spiky BPMs (value higher than `Max peak cut` found in at least one turn)
-- An exact 0 is detected in at least one turn
-
-### SVD-cleaning
-
-Secondly, SVD cleaning is performed.
-SVD modes with localized spikes in their spatial vectors indicate faulty BPMs using `Sum square` setting to find such spikes.
-To globally reduce the noise on all BPM readings, only a predefined number of strongest singular modes (`Sing val cut`) remain in the turn-by-turn data.
-While the `Sum square` setting has a direct influence on the number of BPMs identified as faulty, the number of modes affects the overall noise level in turn-by-turn signal.
-The original application of SVD on BPMs data cleaning can be found [in this publication][svd_clean_rhic].
-
-If SVD is enabled in the settings, the external SVD cleaning python script will be called for the current file during the loading process.
-when SVD cleaning detects and removes bad BPMs, they will be marked in the BPM names list.
-
-All the settings mentioned above can be changed in the global settings panel:
 <figure>
   <center>
-  <img src="../../assets/images/cleaning_settings.png" width="95%" alt="Cleaning thresholds in the settings panel"/>
-  <figcaption>Settings panel, where cleaning thresholds can be changed.</figcaption>
+  <img src="../../assets/images/betabeat_gui/open_files.png" width="80%" alt="Open Files Dialog"/>
+  <figcaption>The Open Files Dialog.</figcaption>
   </center>
 </figure>
 
-Turn-by-turn data cleaning is summarized in the output file which can be found at:
-`Measurements/Beam1@...1-6600/Beam1@...sdds.bad_bpms_{x,y}.`
+!!! warning "Model Required"
+    To be able to load files, you need to first need to have a [model loaded](model_creation.md#model-selection-window).
+    The name of the model will appear at the top of the GUI.
+    This is required, as the BPMs are checked vs the model and sorted by longitunial location.
 
-It contains BPM names and corresponding threshold which identified a BPM as faulty.
+!!! warning "Naming Filter"
+    For the LHC, the displayed files in the file-dialog are automatically filtered to show only `@BunchTurn` files of the currently selected beam.
+    You can change/deactivate that filter ("Files of Type") at the bottom of the dialog!
 
-!!! note
+Multiple files can be opened at once and are added to the current `Measurements` directory, as well as to the table of loaded files in the panel.
+If the file contained multiple bunches, they are added as separate entries.
 
-    A single BPM can appear twice (for each threshold separately), e.g. in the case of exact zero flat signal.
+!!! warning "Supported Formats"
+    The GUI itself only supports the opening of LHC-type (dual plane BPMs) or SPS-type (single plane BPMs) binary `.sdds` files.
+    You can choose in the [gui tab of the settings](settings.md#gui-tab) which format your turn-by-turn data is and if you want
+    to convert it into one of the supported formats.
+    The GUI will then call the [`omc3.tbt_converter`][tbt_converter] to convert the file.
+    All formats that can be read by the [`turn-by-turn` package][tbt_package] are supported.
+    If you choose the **"DO NOT CONVERT"** option, the files are simply copied into the current `Measurements` directory.
 
-The content of the loaded files will be displayed in two charts:
+If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, a window will open to prompt the user with the ["Do analysis Dialog"](bpm_panel.md#do-analysis).
 
-- Horizontal BPMs,
-- Vertical BPMs.
 
-!!! todo
+## Investigating Data
 
-    Include a screenshot with two BPM panels.
+After selecting one or more files in the table of loaded files, the turn-by-turn data is visualized in the two bottom charts, one for each plane.
+The charts are [interactive](common_components.md#plotting) and can display either the measured amplitude values over turns for every BPM from the list or display the phase space, which is calculated by two consecutive BPMs.
+You can select multiple measurements at once to compare them, but only one BPM per plane at a time.
 
-The charts are interactive and can be used to zoom in/out, or focus on a given rectangle of the shown data.
+<figure>
+  <center>
+  <img src="../../assets/images/betabeat_gui/bpm_turn_by_turn_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
+  <figcaption>Turn-by-Turn view of BPM data with two measurements selected.</figcaption>
+  </center>
+</figure>
 
-The charts can display either the measured amplitude values over turns for every BPM from the list or display the phase space, which is calculated by two consecutive BPMs.
+<figure>
+  <center>
+  <img src="../../assets/images/betabeat_gui/bpm_data_phase_space.png" width="100%" alt="Phase space view of BPM data"/>
+  <figcaption>Phase space view of BPM data.</figcaption>
+  </center>
+</figure>
 
-!!! todo
+!!! info "Bad BPMS"
+    After [harmonic-analysis](#do-analysis) has been performed, the [bad BPMS][bpm_filtering] will be marked in red in the lists.
 
-    Include a screenshot of the bad bpms panel.
+### Averages, Removal of Turns and Splitting Files
 
-## Removing Turns and Computing an Average
+!!! warning "Broken Functionality"
+    These features [are currently broken][issue283] and we are considering whether they are actually needed.
 
-The buttons on the top left side of the pane provide useful features to handle the BPM data.
+The buttons on the top left side of the pane provide some features to handle the BPM data.
 
-- `Remove Turns` can be used to cut turns from the start or the end, to focus on a specified range of the data.
+- ++"Create Average"++ allows loading several data files too visualize their average repesentations on the same graph, which helps detecting differences or reducing noise.
+- ++"Remove Turns"++ can be used to cut turns from the start or the end, to focus on a specified range of the data.
+- ++"Split Files"++ splits the current BPM data file into N files, where N is specified in the dialog and the resulting files will have old-turns/N turns.
 
-!!! todo
+## Do Analysis
 
-    Include a screenshot of before-after comparison for `Remove Turns`.
-
-- `Create Average` allows loading several data files too visualize their average repesentations on the same graph, which helps detecting differences or reducing noise.
-
-!!! todo
-
-    Include a screenshot of `Create Average` effect.
 
 - `Do Analysis` spawns the configuration dialogue for the external analysis.
   This will call an external program to perform harmonic analysis of the BPM data, in order to compute tunes and similar beam properties.
@@ -107,4 +105,10 @@ The buttons on the top left side of the pane provide useful features to handle t
     The `Create Average` option requires synchronized data from withing the same bounds, otherwise the results will be meaningless.
     The figure below shows three runs from LHC beam one with synchronized peaks for every turn and their corresponding averages.
 
-  [svd_clean_rhic]: https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.7.042801
+
+
+[svd_clean_rhic]: https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.7.042801
+[tbt_converter]: https://github.com/pylhc/omc3/blob/master/omc3/tbt_converter.py
+[tbt_package]: https://github.com/pylhc/turn_by_turn
+[issue283]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/283
+[bpm_filtering]: ../../measurements/physics/bpm_filtering.md
