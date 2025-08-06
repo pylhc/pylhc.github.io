@@ -1,5 +1,14 @@
 # The Beta-Beat GUI BPM Panel
 
+
+<figure>
+  <center>
+  <img src="../../assets/images/betabeat_gui/bpm_panel.png" width="100%" alt="The BPM Panel"/>
+  <figcaption>The BPM Panel.</figcaption>
+  </center>
+</figure>
+
+
 The BPM panel provides a graphical interface to query and visualize information for the BPM data files.
 It can load data files for all supported beams, mostly binary SDDS files or files in the SDDS ASCII format.
 

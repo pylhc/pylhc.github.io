@@ -11,8 +11,15 @@ Independent of which tab is selected, some general components of the UI are comm
 
 All plots are running with the same back-end classes, which allows additional control via mouse and keyboard.
 
-Zooming can be achieved by drawing a rectangle with the left mouse button or with the shortcuts listed below.
-They also support the "hover" feature, which allows you to inspect additional details about the plotted points by hovering your mouse cursor over them.
+<figure>
+  <center>
+  <img src="../../assets/images/betabeat_gui/plot_with_hover.png" width="100%" alt="Beta-Beating Plot with BPM hover info." />
+  <figcaption>Hover info on a Beta-Beating Plot.</figcaption>
+  </center>
+</figure>
+
+- **Zoom**: Zooming can be achieved by drawing a rectangle with the left mouse button or with the shortcuts listed below.
+- **Hover Info**: The plots support the "hover" feature, which allows you to inspect additional details about the plotted points by hovering your mouse cursor over them.
 
 ### Shortcuts
 
@@ -123,6 +130,35 @@ As long as any task is running, there will also be a small animation on the righ
     the tasks cannot really be aborted and either nothing will happen or the task entry will vanish,
     but the actual task will keep running in the background.
     This needs to be implemented in the future.
+
+## File Opening Dialogs
+
+To make navigating between different folders easier, especially considering the deeply nested paths of `afs` and `nfs`,
+some shortcuts have been implemented into the file opening dialogs, which become available for all relavant dialogs **after [the beam selection window](beam_selection.md)**.
+They can be found at the top right of the dialog, and hovering them will show their functionality:
+
+<figure>
+  <center>
+  <img src="../../assets/images/betabeat_gui/open_files_folders.png" width="30%" alt="Special links in the file opening dialogs." />
+  <figcaption>Special links in the file opening dialogs.</figcaption>
+  </center>
+</figure>
+
+- **First Path** (:fontawesome-solid-check::fontawesome-solid-x:):
+Return to the initial path you were in when the window opened.
+- **Input Path** (:fontawesome-solid-circle-info:):
+Go to the path set as [_Input Path_ in the beam selection window](beam_selection.md#input).
+- **Output Path** (:fontawesome-solid-eye:):
+Go to the path set as [_Output Path_ in the beam selection window](beam_selection.md#output).
+- **Root Path** (**<>**)
+Go to the root-path for the current GUI instance, i.e. the path in which the accelerator-folder (e.g. `LHCB1`) is located.
+This is usually the date-directory within the output folder, unless you have choosen that folder as the _Output Path_,
+in which case it will be the same as the _Output Path_ (see the [Continue Analysis Admonition in the Beam Selection Window](beam_selection.md#folder-structure)).
+- **Fill Dir** (:fontawesome-solid-arrow-right:) _(Only available for the LHC and only if the folder is mounted)_:
+Go to the fill-directory of [the choosen accelerator](beam_selection.md#beam).
+- **Accelerator Dir** (:fontawesome-solid-star:) _(Only available for LHC, SPS, PS and PSB, and only if the folder is mounted)_:
+Go to the default OMC analyis directory of [the choosen accelerator](beam_selection.md#beam),
+which is usually the same as [the _Output Dir_, if the default is used in the beam selection window](beam_selection.md#output).
 
 [omc3]: https://github.com/omc3
 [pylhc]: https://github.com/PyLHC
