@@ -1,5 +1,4 @@
-# The Beta-Beat GUI BPM Panel
-
+# The BPM Panel
 
 <figure>
   <center>
@@ -10,7 +9,6 @@
 
 The BPM panel provides a graphical interface to query and visualize information for the BPM data files, i.e. the Turn-by-Turn data.
 
-
 ## Loading Data
 
 ### Measurement Groups aka Kick Groups
@@ -19,7 +17,6 @@ The BPM panel provides a graphical interface to query and visualize information 
     The GUI does not yet support loading of measurement groups (i.e. kick groups).
     The idea is to load all data from a single [kick-group, as defined in the Multiturn GUI](../multiturn/excitation.html#kick-groups) at once
     or monitor a currently active kick-group and load the files as they are created.
-
 
 ### Open Files
 
@@ -53,7 +50,6 @@ If the file contained multiple bunches, they are added as separate entries.
     If you choose the **"DO NOT CONVERT"** option, the files are simply copied into the current `Measurements` directory.
 
 If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, a window will open to prompt the user with the ["Do analysis Dialog"](bpm_panel.md#do-analysis).
-
 
 ## Investigating Data
 
@@ -91,7 +87,6 @@ The buttons on the top left side of the pane provide some features to handle the
 
 ## Do Analysis
 
-
 - `Do Analysis` spawns the configuration dialogue for the external analysis.
   This will call an external program to perform harmonic analysis of the BPM data, in order to compute tunes and similar beam properties.
   The results from the analysis can be seen in the [Analysis Panel](analysis_panel.md).
@@ -104,8 +99,6 @@ The buttons on the top left side of the pane provide some features to handle the
 
     The `Create Average` option requires synchronized data from withing the same bounds, otherwise the results will be meaningless.
     The figure below shows three runs from LHC beam one with synchronized peaks for every turn and their corresponding averages.
-
-
 
 [svd_clean_rhic]: https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.7.042801
 [tbt_converter]: https://github.com/pylhc/omc3/blob/master/omc3/tbt_converter.py
