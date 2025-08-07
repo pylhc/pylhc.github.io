@@ -91,9 +91,11 @@ _(:fontawesome-solid-triangle-exclamation:{.warning-colored} [Currently not work
 Name of the [Kick Group](#measurement-groups-aka-kick-groups) this file belongs to.
 _(:fontawesome-solid-triangle-exclamation:{.warning-colored} [Currently not working.][issue282])_
 - **No. of bad BPMs**:
-Number of [bad BPMs][bpm_filtering] identified in this file.
-This value is `0` upon loading the file and will be updated when the harmonic analysis is done.
-These will be marked in red in the BPM lists below.
+Number of [bad BPMs][bpm_filtering] identified in this file as a sum between the two planes.
+This value is `0` upon loading the file and will be updated when the harmonic analysis is done, which also performs the BPM filtering if [cleaning](settings.md#cleaning-tab) is active.
+Bad BPMs will be [marked in red in the BPM lists below](#bad-bpms).<br>
+_(:fontawesome-solid-triangle-exclamation:{.warning-colored} The default value for the case of something going wrong when updating this value is `-1` per plane
+and hence sometimes `-2` is shown in this column, e.g. when the bad-BPM output file is missing.)_
 
 !!! warning "Memory Usage"
     File that are opened in this panel are stored in memory.
@@ -124,9 +126,11 @@ You can select multiple measurements at once to compare them, but only one BPM p
   </center>
 </figure>
 
-!!! info "Bad BPMS"
-    After [harmonic-analysis](#do-analysis) has been performed, the [bad BPMS][bpm_filtering] will be marked in red in the lists.
-    _(To be checked: This feature might only work if you re-load the data after the analysis.)_
+### Bad BPMs
+
+After [harmonic-analysis](#start-analysis) has been performed, the [bad BPMS][bpm_filtering] will be marked in red in the lists.
+Hovering the BPM name will show a tooltip with the reason the BPM was deemed bad.
+_(To be checked: This feature might only work if you re-load the data after the analysis.)_
 
 ### Averages, Removal of Turns and Splitting Files
 
