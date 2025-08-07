@@ -90,12 +90,7 @@ a.cern_internal {
 
 }
 
-/* Useful to set a `cern` blue as primary in mkdocs.yml (dark mode) */
-[data-md-color-primary="cern"] {
-  --md-primary-fg-color: #0033a0;
-  --md-primary-fg-color--light: #9BAEDB;
-  --md-primary-fg-color--dark:  #0033A0;
-}
+
 
 /* Fix the Mathjax scrolling boxes issue */
 .md-typeset div.arithmatex {

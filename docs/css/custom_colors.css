@@ -10,6 +10,14 @@
   --color-cernpurple: #6e2466;
 }
 
+
+/* Useful to set a `cern` blue as primary in mkdocs.yml (dark mode) */
+[data-md-color-primary="cern"] {
+  --md-primary-fg-color: #0033a0;
+  --md-primary-fg-color--light: #9BAEDB;
+  --md-primary-fg-color--dark:  #0033A0;
+}
+
 /* General emphasis class */
 .omc-emph {
   color: var(--md-primary-fg-color);

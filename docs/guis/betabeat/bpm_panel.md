@@ -2,19 +2,20 @@
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/bpm_panel.png" width="100%" alt="The BPM Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel.png" width="100%" alt="The BPM Panel"/>
   <figcaption>The BPM Panel.</figcaption>
   </center>
 </figure>
 
-The BPM panel provides a graphical interface to query and visualize information for the BPM data files, i.e. the Turn-by-Turn data.
+The BPM panel provides a graphical interface to query and visualize information for the BPM data files, i.e. the Turn-by-Turn data
+and select the data to be analyzed further.
 
 ## Loading Data
 
 ### Measurement Groups aka Kick Groups
 
 !!! warning "Not yet implemented"
-    The GUI does not yet support loading of measurement groups (i.e. kick groups).
+    The GUI does [not yet support loading of measurement groups][issue282] (i.e. kick groups).
     The idea is to load all data from a single [kick-group, as defined in the Multiturn GUI](../multiturn/excitation.html#kick-groups) at once
     or monitor a currently active kick-group and load the files as they are created.
 
@@ -24,7 +25,7 @@ Use the ++"Open Files"++{.green-gui-button} button to open turn-by-turn data.
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/open_files.png" width="80%" alt="Open Files Dialog"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/open_files.png" width="95%" alt="Open Files Dialog"/>
   <figcaption>The Open Files Dialog.</figcaption>
   </center>
 </figure>
@@ -34,24 +35,76 @@ Use the ++"Open Files"++{.green-gui-button} button to open turn-by-turn data.
     The name of the model will appear at the top of the GUI.
     This is required, as the BPMs are checked vs the model and sorted by longitunial location.
 
-!!! warning "Naming Filter"
+!!! tip "Naming Filter"
     For the LHC, the displayed files in the file-dialog are automatically filtered to show only `@BunchTurn` files of the currently selected beam.
     You can change/deactivate that filter ("Files of Type") at the bottom of the dialog!
 
 Multiple files can be opened at once and are added to the current `Measurements` directory, as well as to the table of loaded files in the panel.
-If the file contained multiple bunches, they are added as separate entries.
+If the file contained multiple bunches, they are added as separate entries (see [below](#table-of-loaded-files)).
 
-!!! warning "Supported Formats"
-    The GUI itself only supports the opening of LHC-type (dual plane BPMs) or SPS-type (single plane BPMs) binary `.sdds` files.
-    You can choose in the [gui tab of the settings](settings.md#gui-tab) which format your turn-by-turn data is and if you want
-    to convert it into one of the supported formats.
-    The GUI will then call the [`omc3.tbt_converter`][tbt_converter] to convert the file.
-    All formats that can be read by the [`turn-by-turn` package][tbt_package] are supported.
-    If you choose the **"DO NOT CONVERT"** option, the files are simply copied into the current `Measurements` directory.
+If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, a window will open to prompt the user with the ["Do analysis Dialog"][do_analysis_dialog].
 
-If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, a window will open to prompt the user with the ["Do analysis Dialog"](bpm_panel.md#do-analysis).
+!!! tip "Reopening Files"
+    - If you are opening a file with the same filename as an already opened file, an error will be thrown.
+    - If you want to open a new file with the same name as an previously opened file, i.e. one with the same name in the `Measurements` directory,
+    a popup will ask if the old file should be overwritten or simply opened instead (without running the converter).
+    - If you restart the GUI and select the ["Load Data" option in the beam selection window](beam_selection.md#load-data),
+      all files in the `Measurements` directory will be reloaded (without running the converter).
 
-## Investigating Data
+#### Supported File Formats
+
+The GUI itself only supports the opening of LHC-type (dual plane BPMs) or SPS-type (single plane BPMs) binary `.sdds` files.
+You can choose in the [gui tab of the settings](settings.md#gui-tab) which format your turn-by-turn data is and if you want
+to convert it into one of the supported formats.
+The GUI will then call the [`omc3.tbt_converter`][tbt_converter] to convert the file.
+All formats that can be read by the [`turn-by-turn` package][tbt_package] are supported.
+If you choose the **"DO NOT CONVERT"** option, the files are simply copied into the current `Measurements` directory.
+
+!!! tip "LHC ASCII files"
+    The old ASCII format (for SPS and LHC), which is still in use in some older conversion scripts and MAD-X tracking scripts,
+    are identified automatically by the converter when choosing `lhc` or `sps` as the file type to be opened.
+    Use then **the same format** for the conversion, i.e. `lhc` or `sps` respectively.
+    This looks weird, but the converter will output the data in binary format.
+
+## Table of Loaded Files
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel_table.png" width="100%" alt="Table of loaded files"/>
+  <figcaption>The Table of loaded files in the BPM Panel.</figcaption>
+  </center>
+</figure>
+
+The table at the top of the panel shows the files that are currently opened in the GUI.
+These are not necessarily all files present in the `Measurement` directory, as they need to be explicitly opened!
+
+
+- **File**:
+Name of the file, without the path.
+- **Bunch ID**:
+The ID of the bunch within the file.
+If the file contains multiple bunches, multiple entries with the same _File_ name, but different _Bunch IDs_ will be created.
+- **Analysis Done**:
+Idicator if the analysis has been performed on this file.
+_(:fontawesome-solid-triangle-exclamation:{.warning-colored} [Currently not working.][issue285])_
+- **Kick Group**:
+Name of the [Kick Group](#measurement-groups-aka-kick-groups) this file belongs to.
+_(:fontawesome-solid-triangle-exclamation:{.warning-colored} [Currently not working.][issue282])_
+- **No. of bad BPMs**:
+Number of [bad BPMs][bpm_filtering] identified in this file.
+This value is `0` upon loading the file and will be updated when the harmonic analysis is done.
+These will be marked in red in the BPM lists below.
+
+!!! warning "Memory Usage"
+    File that are opened in this panel are stored in memory.
+    If your computer is running low on memory, you might want to close some of the open files.
+
+### Removing Entries
+
+Clicking on the ++"Remove"++{.red-gui-button} button will remove the selected entries from the table of loaded files.<br>
+:fontawesome-solid-triangle-exclamation:{.warning-colored} This will **not** remove the files from the `Measurements` directory!
+
+## Investigating Turn-by-Turn Data
 
 After selecting one or more files in the table of loaded files, the turn-by-turn data is visualized in the two bottom charts, one for each plane.
 The charts are [interactive](common_components.md#plotting) and can display either the measured amplitude values over turns for every BPM from the list or display the phase space, which is calculated by two consecutive BPMs.
@@ -59,20 +112,21 @@ You can select multiple measurements at once to compare them, but only one BPM p
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/bpm_turn_by_turn_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_turn_by_turn_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
   <figcaption>Turn-by-Turn view of BPM data with two measurements selected.</figcaption>
   </center>
 </figure>
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/bpm_data_phase_space.png" width="100%" alt="Phase space view of BPM data"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_data_phase_space.png" width="100%" alt="Phase space view of BPM data"/>
   <figcaption>Phase space view of BPM data.</figcaption>
   </center>
 </figure>
 
 !!! info "Bad BPMS"
     After [harmonic-analysis](#do-analysis) has been performed, the [bad BPMS][bpm_filtering] will be marked in red in the lists.
+    _(To be checked: This feature might only work if you re-load the data after the analysis.)_
 
 ### Averages, Removal of Turns and Splitting Files
 
@@ -85,23 +139,18 @@ The buttons on the top left side of the pane provide some features to handle the
 - ++"Remove Turns"++ can be used to cut turns from the start or the end, to focus on a specified range of the data.
 - ++"Split Files"++ splits the current BPM data file into N files, where N is specified in the dialog and the resulting files will have old-turns/N turns.
 
-## Do Analysis
+## Start Analysis
 
-- `Do Analysis` spawns the configuration dialogue for the external analysis.
-  This will call an external program to perform harmonic analysis of the BPM data, in order to compute tunes and similar beam properties.
-  The results from the analysis can be seen in the [Analysis Panel](analysis_panel.md).
+The ++"Analyse Spectra"++{.green-gui-button} button spawns [the configuration dialog][do_analysis_dialog] for the harmonic analysis.
+This will call an external program to perform a frequency analysis of the BPM data **of the selected files**, in order to compute tunes and similar beam properties.
+The results from the analysis can be seen in the [Analysis Panel](analysis_panel.md), in which also the settings are discussed in detail.
 
-!!! todo
+The **"Run optics as well"** checkbox will define whether the _"Optics Analysis"_ in the _["Do analysis Dialog"][do_analysis_dialog]_ is automatically pre-checked.
 
-    Include of screenshot of `Do Analysis` dialogue window.
-
-!!! note
-
-    The `Create Average` option requires synchronized data from withing the same bounds, otherwise the results will be meaningless.
-    The figure below shows three runs from LHC beam one with synchronized peaks for every turn and their corresponding averages.
-
-[svd_clean_rhic]: https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.7.042801
 [tbt_converter]: https://github.com/pylhc/omc3/blob/master/omc3/tbt_converter.py
 [tbt_package]: https://github.com/pylhc/turn_by_turn
+[issue282]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/282
 [issue283]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/283
+[issue285]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/285
 [bpm_filtering]: ../../measurements/physics/bpm_filtering.md
+[do_analysis_dialog]: analysis_panel.md#do-analysis-dialog
