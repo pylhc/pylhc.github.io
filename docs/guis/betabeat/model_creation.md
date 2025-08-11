@@ -163,7 +163,7 @@ which are our default tunes for LHC measurements.
 - **Beam**:
 The beam is pre-defined by the accelerator choosen in the [beam selection window](beam_selection.md).
 - **Year/Tag**:
-This field is automatically filled by the frist layer of subfolders in the `acc-models/lhc` repository.
+This field is automatically filled by the first layer of subfolders in the `acc-models/lhc` repository.
 - **Energy**:
 The energy at which the accelerator is running in GeV.
 - **Optics File**:
@@ -241,6 +241,7 @@ This field is automatically filled by the frist layer of subfolders in the `acc-
 This field is automatically filled by the files in the `strengths` folder within the choosen _year_ of the `acc-models/sps` repository.
 - **Kinetic Energy**: Activate and set the energy at which the accelerator is running in GeV, if needed for your model.
 
+[global_correction_checks]: correction_panel.md#correction-checks
 [bbgui_issue_202]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/202
 [acc-models]: https://acc-models.web.cern.ch/acc-models/
 [multiturn]: ../multiturn/gui.md
