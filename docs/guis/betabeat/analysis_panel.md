@@ -10,12 +10,14 @@ The analysis panel provides graphical interface to visualize results from harmon
 </figure>
 
 
-## Loaded Files
+## Loading Files
 
-- ++"Open Files"++{.green-gui-button}: Opens a dialog to select files to be loaded.
-- ++"Attach Files"++{.yellow-gui-button}: Opens a dialog to select files to be attached to the currently loaded files.
-- ++"Delete Files"++{.red-gui-button}: Deletes the selected files from the analysis table.
-- ++"Get Optics"++{.green-gui-button}: Triggers an external python script which computes the optics functions from the harmonic analysis data.
+The buttons at the top of the panel provide functionality to load and remove files from the analysis table as well as to start the [optics analysis](#do-optics-dialog).
+
+- ++"Open Files"++{.green-gui-button}: Opens a dialog to select files to be loaded. The files will be **copied** into the `Measurements` folder and opened from there.
+- ++"Attach Files"++{.yellow-gui-button}: Opens a dialog to select files to be loaded. The files will be **opened from their current location**.
+- ++"Delete Files"++{.red-gui-button}: Removes the selected files from the analysis table.
+- ++"Get Optics"++{.green-gui-button}: Opens [the optics analysis dialog](#do-optics-dialog) which can trigger an external python script to compute the optics functions from the harmonic analysis data of the selected files.
 
 <figure>
   <center>
@@ -109,5 +111,26 @@ This will call an external python script again, with the results available in th
     Include a screenshot of the frequency panel.
 
   [sklearn_IF]: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html
+
+## Do Optics Dialog
+
+
+=== "Closed Settings"
+
+    <figure>
+    <center>
+    <img src="../../assets/images/betabeat_gui/do_optics_dialog.png" width="100%" alt="The 'Do Optics' Dialog"/>
+    <figcaption>The "Do Optics" Dialog.</figcaption>
+    </center>
+    </figure>
+
+=== "Open Settings"
+
+    <figure>
+    <center>
+    <img src="../../assets/images/betabeat_gui/do_analysis_dialog_open_settings.png" width="100%" alt="The 'Do Optics' Dialog with open settings"/>
+    <figcaption>The "Do Optics" Dialog with open settings.</figcaption>
+    </center>
+    </figure>
 
 [bpm_panel_analyse]: bpm_panel.md#start-analysis
