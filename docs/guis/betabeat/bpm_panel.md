@@ -60,11 +60,11 @@ The GUI will then call the [`omc3.tbt_converter`][tbt_converter] to convert the 
 All formats that can be read by the [`turn-by-turn` package][tbt_package] are supported.
 If you choose the **"DO NOT CONVERT"** option, the files are simply copied into the current `Measurements` directory.
 
-!!! tip "LHC ASCII files"
+!!! tip "ASCII files"
     The old ASCII format (for SPS and LHC), which is still in use in some older conversion scripts and MAD-X tracking scripts,
     are identified automatically by the converter when choosing `lhc` or `sps` as the file type to be opened.
-    Use then **the same format** for the conversion, i.e. `lhc` or `sps` respectively.
-    This looks weird, but the converter will output the data in binary format.
+    You can use **the same format** for the conversion, i.e. `lhc` or `sps` respectively, and the converter will output the data in binary format.
+    You may also choose the `ascii` input format directly.
 
 ## Table of Loaded Files
 
@@ -77,7 +77,6 @@ If you choose the **"DO NOT CONVERT"** option, the files are simply copied into 
 
 The table at the top of the panel shows the files that are currently opened in the GUI.
 These are not necessarily all files present in the `Measurement` directory, as they need to be explicitly opened!
-
 
 - **File**:
 Name of the file, without the path.
@@ -145,11 +144,77 @@ The buttons on the top left side of the pane provide some features to handle the
 
 ## Start Analysis
 
-The ++"Analyse Spectra"++{.green-gui-button} button spawns [the configuration dialog][do_analysis_dialog] for the harmonic analysis.
-This will call an external program to perform a frequency analysis of the BPM data **of the selected files**, in order to compute tunes and similar beam properties.
-The results from the analysis can be seen in the [Analysis Panel](analysis_panel.md), in which also the settings are discussed in detail.
+The ++"Analyse Spectra"++{.green-gui-button} button spawns [the configuration dialog](#do-analysis-dialog) for the analysis.
+This will call an external program to perform a frequency analysis of the BPM data [**of the selected files**](#table-of-loaded-files), in order to compute tunes and similar beam properties and (optionally) to get the optics functions from that spectrum.
+The **"Run optics as well"** checkbox will define whether the [_"Optics Analysis"_ in the _"Do analysis Dialog"_](#do-analysis-dialog) is automatically pre-checked.
 
-The **"Run optics as well"** checkbox will define whether the _"Optics Analysis"_ in the _["Do analysis Dialog"][do_analysis_dialog]_ is automatically pre-checked.
+### Do-Analysis Dialog
+
+=== "Closed Settings"
+
+    <figure>
+    <center>
+    <img src="../../assets/images/betabeat_gui/do_analysis_dialog.png" width="100%" alt="The Do-Analysis Dialog"/>
+    <figcaption>The Do-Analysis Dialog.</figcaption>
+    </center>
+    </figure>
+
+=== "Open Settings"
+
+    <figure>
+    <center>
+    <img src="../../assets/images/betabeat_gui/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialog with open settings"/>
+    <figcaption>The Do-Analysis Dialog with open settings.</figcaption>
+    </center>
+    </figure>
+
+This dialog allows you to specify the settings and output for the analysis run
+on the currently selected files in the BPM-Panel.
+Click the ++"Run"++ button to start the analysis.
+
+!!! warning "Parallelization"
+    Parallelization of the analysis is only implemented on the GUI side,
+    possibly starting multiple python processes.
+    Check the caveats of the _"Run Per-File Tasks in Parallel"_
+    setting in the _[GUI-Settings Tab](settings.md#gui-tab)_.
+
+### Harmonic Analysis
+
+Keeping the _Optics Analysis_ checkbox unchecked will only perform the harmonic analysis.
+
+In this case, you will **not be able to specify an output name** for the results, as the resulting files will be **automatically** put into subfolders of the `Measurements` folder, based on the name of the `.sdds` files.
+They therefore usually appear within the same folder as the turn-by-turn data.
+
+The analysis results are automatically loaded into the [Analysis Panel](analysis_panel.md).
+
+### Optics
+
+In case the _Optics Analysis_ checkbox is checked, also the optics are calculated.
+You have the choice to combine the analysis of all files into a single optics, using the individual measurements for statistics, in which case you need to **specify a descriptive output name** for the analysis, the prefix of which will already be provided.
+If you don't check the _Combine Analysis_ checkbox, the results are stored in a subfolder of the `Results` folder, based on the name of the `.sdds` files.
+
+The analysis results are loaded automatically into the [Optics Panel](optics_panel.md).
+If you want to take a look at the spectrum, it needs to be loaded **manually**
+into the [Analysis Panel](analysis_panel.md) from the `Results/<Optics Output Name>/lin_files`
+subfolder.
+
+!!! warning "Loading the `lin_files` subfolder"
+    If the analysis files are loaded from the `lin_files` subfolder,
+    this folder is **copied** into the `Measurements` folder,
+    keeping the `lin_files` name.
+    If you want to open another set of analyzed files from an `lin_files` folder, the GUI will **complain that the folder already exists**.
+
+### Settings and Suffixes
+
+By expanding the _Settings_ section at the bottom of the dialog
+you can optionally change the [settings](settings.md) for the harmonic analysis in the _[Tunes](settings.md#tunes-tab)_, _[Harpy](settings.md#harpy-tab)_, _[Cleaning](settings.md#cleaning-tab)_ and _[Accelerator](settings.md#accelerator-tab)_ tabs, as well as for the optics analysis in the _[Optics](settings.md#optics-tab)_ tab if the _Optics Analysis_ checkbox is checked.
+
+The _Suffix_-field will be automatically set from your suffix-choices in the [_Harpy_ settings tab](settings.md#harpy-tab) and is only applied to the harmonic analysis output files (i.e. `.lin[xy]`, `.amps[xy]`, `.freqs[xy]`), **not to the folder names**.
+
+!!! warning "Changing the Settings"
+    This will **change the global settings** for all subsequent analysis runs,
+    not just for the current one!
+    You need to click the ++"Apply"++ button to actually apply these settings before the run.
 
 [tbt_converter]: https://github.com/pylhc/omc3/blob/master/omc3/tbt_converter.py
 [tbt_package]: https://github.com/pylhc/turn_by_turn
