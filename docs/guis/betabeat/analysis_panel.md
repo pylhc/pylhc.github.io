@@ -1,11 +1,26 @@
 # The Analysis Panel
 
-The analysis panel provides graphical interface to visualize results from harmonic analysis performed on measured data.
+The analysis panel provides graphical interface to visualize results from harmonic analysis performed on the given data.
 
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel.png" width="100%" alt="The Analysis Panel"/>
   <figcaption>The Analysis Panel.</figcaption>
+  </center>
+</figure>
+
+
+## Loaded Files
+
+- ++"Open Files"++{.green-gui-button}: Opens a dialog to select files to be loaded.
+- ++"Attach Files"++{.yellow-gui-button}: Opens a dialog to select files to be attached to the currently loaded files.
+- ++"Delete Files"++{.red-gui-button}: Deletes the selected files from the analysis table.
+- ++"Get Optics"++{.green-gui-button}: Triggers an external python script which computes the optics functions from the harmonic analysis data.
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_table.png" width="100%" alt="Table of loaded files."/>
+  <figcaption>The table of currently loaded files.</figcaption>
   </center>
 </figure>
 
@@ -38,10 +53,34 @@ After cleaning is finished, the optics function can be computed from the harmoni
 
 <figure>
   <center>
-  <img src="../../assets/images/analysis_panel_cleaning.png" width="65%" alt="Cleaning before optics analysis" />
+  <img src="../../assets/images/betabeat_gui/analysis_panel_time_space_clean.png" width="100%" alt="Cleaning before optics analysis" />
   <figcaption> Cleaning before optics analysis </figcaption>
   </center>
 </figure>
+
+=== "Before Cleaning"
+
+    <figure>
+    <center>
+    <img src="../../assets/images/betabeat_gui/analysis_panel_time_space_manual_clean_before.png" width="100%" alt="Natural Tune before cleaning." />
+    <figcaption>Identified natural tunes per BPM with outliers. </figcaption>
+    </center>
+    </figure>
+
+=== "After Cleaning"
+
+    <figure>
+    <center>
+    <img src="../../assets/images/betabeat_gui/analysis_panel_time_space_manual_clean_after.png" width="100%" alt="Natural Tune after cleaning." />
+    <figcaption>Identified natural tunes per BPM after cleaning outliers.</figcaption>
+    </center>
+    </figure>
+
+
+!!! tip "Keep BPMs"
+    Some BPMs, e.g. the AC-Dipole BPMs, are required for the optics analysis and **the analysis will fail** if they are not found in the data.
+    You can therefore specify to **keep these BPMs** in the [GUI Cleaning section of the Cleaning Settings Tab](settings.md#gui-cleaning) and they will be kept,
+    even if they are outside the given cut-offs or identified as outliers.
 
 ### Additional cleaning based on the tune
 
