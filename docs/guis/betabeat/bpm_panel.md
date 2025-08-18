@@ -60,11 +60,11 @@ The GUI will then call the [`omc3.tbt_converter`][tbt_converter] to convert the 
 All formats that can be read by the [`turn-by-turn` package][tbt_package] are supported.
 If you choose the **"DO NOT CONVERT"** option, the files are simply copied into the current `Measurements` directory.
 
-!!! tip "LHC ASCII files"
+!!! tip "ASCII files"
     The old ASCII format (for SPS and LHC), which is still in use in some older conversion scripts and MAD-X tracking scripts,
     are identified automatically by the converter when choosing `lhc` or `sps` as the file type to be opened.
-    Use then **the same format** for the conversion, i.e. `lhc` or `sps` respectively.
-    This looks weird, but the converter will output the data in binary format.
+    You can use **the same format** for the conversion, i.e. `lhc` or `sps` respectively, and the converter will output the data in binary format.
+    You may also choose the `ascii` input format directly.
 
 ## Table of Loaded Files
 
@@ -77,7 +77,6 @@ If you choose the **"DO NOT CONVERT"** option, the files are simply copied into 
 
 The table at the top of the panel shows the files that are currently opened in the GUI.
 These are not necessarily all files present in the `Measurement` directory, as they need to be explicitly opened!
-
 
 - **File**:
 Name of the file, without the path.
@@ -172,7 +171,6 @@ The **"Run optics as well"** checkbox will define whether the [_"Optics Analysis
 This dialog allows you to specify the settings and output for the analysis run
 on the currently selected files in the BPM-Panel.
 Click the ++"Run"++ button to start the analysis.
-
 
 ### Harmonic Analysis
 
