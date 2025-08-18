@@ -1,9 +1,14 @@
-# The Beta-Beat GUI Analysis Panel
+# The Analysis Panel
 
 The analysis panel provides graphical interface to visualize results from harmonic analysis performed on measured data.
-The results are given in the [`tfs`](https://pylhc.github.io/tfs/tfsformat.html){target=_blank} format.
 
-In the analysis panel one can edit the `dp/p` value in the corresponding column, and see the changes applied.
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel.png" width="100%" alt="The Analysis Panel"/>
+  <figcaption>The Analysis Panel.</figcaption>
+  </center>
+</figure>
+
 
 ## The Time / Space Tab
 
@@ -65,3 +70,5 @@ This will call an external python script again, with the results available in th
     Include a screenshot of the frequency panel.
 
   [sklearn_IF]: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html
+
+[bpm_panel_analyse]: bpm_panel.md#start-analysis
