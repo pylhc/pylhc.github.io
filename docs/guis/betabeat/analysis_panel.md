@@ -29,15 +29,27 @@ The buttons at the top of the panel provide functionality to load and remove fil
 
 ## The Time / Space Tab
 
-In the `Time / Space` tab one can examine the phases and amplitudes, and can clean the values if needed (only `TUNEX` and `TUNEY` or `NATTUNEX` and `NATTUNEY`).
+In the `Time / Space` tab one can examine the phases and amplitudes over the length of the accelerator,
+and can clean the calues if needed.
 
-If some values are obviously not inside a given bound, the 2 marker lines (see screenshot below) can be used to set the boundaries and to remove all data outside those boundaries.
-The GUI will check if the removal is inside some predefined bounds to prevent accidental removal of too much data.
 
-!!! todo
-    Include a screenshot of the time / space panel with relevant info highlighted (see twiki)
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_time_space.png" width="100%" alt="Time and Space tab."/>
+  <figcaption>The Time / Space tab.</figcaption>
+  </center>
+</figure>
 
-### Cleaning of harmonic analysis output data
+
+!!! warning "Default Bounds"
+    The cleaning will check if the ratio of remaining data-points is inside predefined bounds to **prevent accidental removal of too much data**.
+    This ratio, as well as the default value for the `sigmas` and `limit` parameter can be changed by [giving them through the `bbgui_user.properties` file][additional_defaults].
+
+!!! tip "Deselection"
+    In case you only want to see the data of one plane, you can deselcect the other plane by either chosing `None` at the bottom of the list
+    or by right-clicking into the respective list.
+
+### Cleaning
 
 The harmonic analysis data used to obtain the optics functions can be cleaned using [Isolation Forest algorithm][sklearn_IF].
 It should prevent the appearance of unphysical spikes in the optics functions which are caused by the faulty BPMs remaining in the data after the TbT-data cleaning.
@@ -60,6 +72,13 @@ After cleaning is finished, the optics function can be computed from the harmoni
   </center>
 </figure>
 
+#### Clean
+
+#### Auto Clean
+
+#### Undo Cleaning
+
+
 === "Before Cleaning"
 
     <figure>
@@ -78,7 +97,6 @@ After cleaning is finished, the optics function can be computed from the harmoni
     </center>
     </figure>
 
-
 !!! tip "Keep BPMs"
     Some BPMs, e.g. the AC-Dipole BPMs, are required for the optics analysis and **the analysis will fail** if they are not found in the data.
     You can therefore specify to **keep these BPMs** in the [GUI Cleaning section of the Cleaning Settings Tab](settings.md#gui-cleaning) and they will be kept,
@@ -88,18 +106,21 @@ After cleaning is finished, the optics function can be computed from the harmoni
 
 Additionally, BPMs can be cleaned based on the tune values computed by harmonic analysis. The chart displaying the selected columns of harmonic analysis data has interactive cursors. These cursors can be moved manually to set the thresholds for tune-based cleaning - all BPMs having tune values outside of the set range will be removed. The cursors can be also automatically set to e.g. 4 sigmas deviation from the average tune values over all BPMs.
 
-### Summary of cleaning steps before optics analysis
-
-- [ ] Before loading tbt-files: check SVD settings and signal cuts in the global settings panel
-- [ ] After harmonic analysis: Detect bad BPMs with Isolation Forest
-- [ ] If neccessary: check tunes in the chart, set cursors, clean tune outliers.
 
 ## The Frequency Tab
 
-The `Frequency` tab displays the computed frequencies for every BPM.
+The `Frequency` tab displays the computed spectrum for every BPM.
 
-A `Get Optics` button can be used to start the optics calculation.
-This will call an external python script again, with the results available in the [Optics Panel](optics_panel.md).
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_frequency.png" width="100%" alt="Frequency tab."/>
+  <figcaption>The Frequency tab.</figcaption>
+  </center>
+</figure>
+
+!!! tip "Deselection"
+    In case you only want to see the frequency data of one plane, you can deselcect the other plane by either chosing `None` at the bottom of the list of BPMs
+    or by right-clicking into the respective list.
 
 ### Nattune Updater
 
@@ -134,3 +155,4 @@ This will call an external python script again, with the results available in th
     </figure>
 
 [bpm_panel_analyse]: bpm_panel.md#start-analysis
+[additional_defaults]: defaults.md#additional-gui-defaults
