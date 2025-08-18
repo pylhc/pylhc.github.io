@@ -199,10 +199,10 @@ into the [Analysis Panel](analysis_panel.md) from the `Results/<Optics Output Na
 subfolder.
 
 !!! warning "Loading the `lin_files` subfolder"
-    If the analysis files are loaded from the `lin_files` subfolder,
-    this folder is **copied** into the `Measurements` folder,
-    keeping the `lin_files` name.
+    If the analysis files are loaded via [++"Open Files"++{.green-gui-button} in the Analysis Panel](analysis_panel.md) from the `lin_files` subfolder,
+    this folder is **copied** into the `Measurements` folder, keeping the `lin_files` name.
     If you want to open another set of analyzed files from an `lin_files` folder, the GUI will **complain that the folder already exists**.
+    To avoid this, use the ++"Attach Files"++{.yellow-gui-button} button instead.
 
 ### Settings and Suffixes
 
