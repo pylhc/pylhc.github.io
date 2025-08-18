@@ -172,6 +172,12 @@ This dialog allows you to specify the settings and output for the analysis run
 on the currently selected files in the BPM-Panel.
 Click the ++"Run"++ button to start the analysis.
 
+!!! warning "Parallelization"
+    Parallelization of the analysis is only implemented on the GUI side,
+    possibly starting multiple python processes.
+    Check the caveats of the _"Run Per-File Tasks in Parallel"_
+    setting in the _[GUI-Settings Tab](settings.md#gui-tab)_.
+
 ### Harmonic Analysis
 
 Keeping the _Optics Analysis_ checkbox unchecked will only perform the harmonic analysis.
