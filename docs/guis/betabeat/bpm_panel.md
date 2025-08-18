@@ -145,11 +145,34 @@ The buttons on the top left side of the pane provide some features to handle the
 
 ## Start Analysis
 
-The ++"Analyse Spectra"++{.green-gui-button} button spawns [the configuration dialog][do_analysis_dialog] for the harmonic analysis.
+The ++"Analyse Spectra"++{.green-gui-button} button spawns [the configuration dialog](#do-analysis-dialog) for the harmonic analysis.
 This will call an external program to perform a frequency analysis of the BPM data **of the selected files**, in order to compute tunes and similar beam properties.
 The results from the analysis can be seen in the [Analysis Panel](analysis_panel.md), in which also the settings are discussed in detail.
 
-The **"Run optics as well"** checkbox will define whether the _"Optics Analysis"_ in the _["Do analysis Dialog"][do_analysis_dialog]_ is automatically pre-checked.
+The **"Run optics as well"** checkbox will define whether the _"Optics Analysis"_ in the _["Do analysis Dialog"](#do-analysis-dialog)_ is automatically pre-checked.
+
+### Do-Analysis Dialog
+
+=== "Closed Settings"
+
+    <figure>
+    <center>
+    <img src="../../assets/images/betabeat_gui/do_analysis_dialog.png" width="100%" alt="The Do-Analysis Dialog"/>
+    <figcaption>The Do-Analysis Dialog.</figcaption>
+    </center>
+    </figure>
+
+=== "Open Settings"
+
+    <figure>
+    <center>
+    <img src="../../assets/images/betabeat_gui/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialog with open settings"/>
+    <figcaption>The Do-Analysis Dialog with open settings.</figcaption>
+    </center>
+    </figure>
+
+This dialog allows you to specify the settings and output for the analysis run
+on the currently selected files in the BPM-Panel.
 
 [tbt_converter]: https://github.com/pylhc/omc3/blob/master/omc3/tbt_converter.py
 [tbt_package]: https://github.com/pylhc/turn_by_turn
