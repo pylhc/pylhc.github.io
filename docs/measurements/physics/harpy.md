@@ -16,5 +16,4 @@ If you want to know how to use the `harpy` module, refer to the [`omc3` analysis
     - BPM cleaning
     - Line identification
 
-
 [omc3_analysis]: ../../packages/omc3/analysis.md

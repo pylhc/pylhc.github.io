@@ -15,7 +15,7 @@ and select the data to be analyzed further.
 ### Measurement Groups aka Kick Groups
 
 !!! warning "Not yet implemented"
-    The GUI does [not yet support loading of measurement groups][issue282] (i.e. kick groups).
+    The GUI does [not yet support loading of measurement groups][issue282]{target=_blank .cern_login} (i.e. kick groups).
     The idea is to load all data from a single [kick-group, as defined in the Multiturn GUI](../multiturn/excitation.html#kick-groups) at once
     or monitor a currently active kick-group and load the files as they are created.
 
@@ -33,7 +33,7 @@ Use the ++"Open Files"++{.green-gui-button} button to open turn-by-turn data.
 !!! warning "Model Required"
     To be able to load files, you need to first need to have a [model loaded](model_creation.md#model-selection-window).
     The name of the model will appear at the top of the GUI.
-    This is required, as the BPMs are checked vs the model and sorted by longitunial location.
+    This is required, as the BPMs are checked vs the model and sorted by longitudinal location.
 
 !!! tip "Naming Filter"
     For the LHC, the displayed files in the file-dialog are automatically filtered to show only `@BunchTurn` files of the currently selected beam.
@@ -46,25 +46,25 @@ If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, 
 
 !!! tip "Reopening Files"
     - If you are opening a file with the same filename as an already opened file, an error will be thrown.
-    - If you want to open a new file with the same name as an previously opened file, i.e. one with the same name in the `Measurements` directory,
+    - If you want to open a new file with the same name as a previously opened file, i.e. one with the same name in the `Measurements` directory,
     a popup will ask if the old file should be overwritten or simply opened instead (without running the converter).
     - If you restart the GUI and select the ["Load Data" option in the beam selection window](beam_selection.md#load-data),
-      all files in the `Measurements` directory will be reloaded (without running the converter).
+      all files in the `Measurements` directory in the selected _Output Path_ will be reloaded (without running the converter).
 
 #### Supported File Formats
 
 The GUI itself only supports the opening of LHC-type (dual plane BPMs) or SPS-type (single plane BPMs) binary `.sdds` files.
 You can choose in the [gui tab of the settings](settings.md#gui-tab) which format your turn-by-turn data is and if you want
 to convert it into one of the supported formats.
-The GUI will then call the [`omc3.tbt_converter`][tbt_converter] to convert the file.
-All formats that can be read by the [`turn-by-turn` package][tbt_package] are supported.
+The GUI will then call the [`omc3.tbt_converter`][tbt_converter]{target=_blank} to convert the file.
+All formats that can be read by the [`turn-by-turn` package][tbt_package]{target=_blank} are supported.
 If you choose the **"DO NOT CONVERT"** option, the files are simply copied into the current `Measurements` directory.
 
 !!! tip "ASCII files"
     The old ASCII format (for SPS and LHC), which is still in use in some older conversion scripts and MAD-X tracking scripts,
-    are identified automatically by the converter when choosing `lhc` or `sps` as the file type to be opened.
-    You can use **the same format** for the conversion, i.e. `lhc` or `sps` respectively, and the converter will output the data in binary format.
-    You may also choose the `ascii` input format directly.
+    is identified automatically by the converter when choosing `lhc` or `sps` as the file type to be opened.
+    One can use **the same format** for the conversion, i.e. `lhc` or `sps` respectively, and the converter will output the data in binary format.
+    The `ascii` input format can also be chosen directly.
 
 ## Table of Loaded Files
 
@@ -77,6 +77,7 @@ If you choose the **"DO NOT CONVERT"** option, the files are simply copied into 
 
 The table at the top of the panel shows the files that are currently opened in the GUI.
 These are not necessarily all files present in the `Measurement` directory, as they need to be explicitly opened!
+Each column in the table provides information regarding the opened measurement:
 
 - **File**:
 Name of the file, without the path.
@@ -84,11 +85,11 @@ Name of the file, without the path.
 The ID of the bunch within the file.
 If the file contains multiple bunches, multiple entries with the same _File_ name, but different _Bunch IDs_ will be created.
 - **Analysis Done**:
-Idicator if the analysis has been performed on this file.
-_(:fontawesome-solid-triangle-exclamation:{.warning-colored} [Currently not working.][issue285])_
+Indicator stating whether the analysis has been performed on this file.
+_(:fontawesome-solid-triangle-exclamation:{.warning-colored} [Currently not working.][issue285]{target=_blank .cern_login})_
 - **Kick Group**:
 Name of the [Kick Group](#measurement-groups-aka-kick-groups) this file belongs to.
-_(:fontawesome-solid-triangle-exclamation:{.warning-colored} [Currently not working.][issue282])_
+_(:fontawesome-solid-triangle-exclamation:{.warning-colored} [Currently not working.][issue282]{target=_blank .cern_login})_
 - **No. of bad BPMs**:
 Number of [bad BPMs][bpm_filtering] identified in this file as a sum between the two planes.
 This value is `0` upon loading the file and will be updated when the harmonic analysis is done, which also performs the BPM filtering if [cleaning](settings.md#cleaning-tab) is active.
@@ -133,7 +134,6 @@ You can select multiple measurements at once to compare them, but only one BPM p
 
 After [harmonic-analysis](#start-analysis) has been performed, the [bad BPMs][bpm_filtering] will be marked in red in the lists.
 Hovering the BPM name will show a tooltip with the reason the BPM was deemed bad.
-_(To be checked: This feature might only work if you re-load the data after the analysis.)_
 
 ### Averages, Removal of Turns and Splitting Files
 

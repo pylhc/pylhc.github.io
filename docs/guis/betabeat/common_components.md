@@ -134,7 +134,7 @@ As long as any task is running, there will also be a small animation on the righ
 ## File Opening Dialogs
 
 To make navigating between different folders easier, especially considering the deeply nested paths of `afs` and `nfs`,
-some shortcuts have been implemented into the file opening dialogs, which become available for all relavant dialogs **after [the beam selection window](beam_selection.md)**.
+some shortcuts have been implemented into the file opening dialogs, which become available for all relevant dialogs **after [the beam selection window](beam_selection.md)**.
 They can be found at the top right of the dialog, and hovering them will show their functionality:
 
 <figure>
