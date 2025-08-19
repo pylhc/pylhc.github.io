@@ -25,10 +25,16 @@ mkdir ~/mnt/eos && ln -nfs ~/mnt/eos /eos
 ### Mount network resources (repeat after timeouts and restarts)
 
 ```bash
-sshfs username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user
-sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs
-sshfs username@lxplus.cern.ch:/eos/ ~/mnt/eos
+sshfs -o follow_symlinks username@cs-ccr-dev3.cern.ch:/user/ ~/mnt/user
+sshfs -o follow_symlinks username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs
+sshfs -o follow_symlinks username@lxplus.cern.ch:/eos/ ~/mnt/eos
 ```
+
+??? info "Follow Symlinks"
+    When mounting to a different location than `/nfs` or `/user` **locally**, one has to set the `follow_symlinks` option
+    so that symlinks e.g. pointing to a folder somewhere in `/nfs/` (which locally does not exist) are followed correctly, i.e. to the path on the remote machine.
+    This is not needed when mounting to `/nfs` or `/user` as the symlinks would point to these locations anyway,
+    but that comes with its own problems, as the mount needs to be done as **root** in these cases and might not be valid for other users.
 
 ### If outside of the GPN, jump through `lxplus` to mount `dev3`-folders
 
