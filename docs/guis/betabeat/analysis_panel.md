@@ -31,13 +31,17 @@ The buttons at the top of the panel provide functionality to load and remove fil
 
 In the `Time / Space` tab one can examine the phases and amplitudes over the length of the accelerator (per BPM), and can clean the values if needed.
 
-
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_time_space.png" width="100%" alt="Time and Space tab."/>
   <figcaption>The Time / Space tab.</figcaption>
   </center>
 </figure>
+
+In the lists on the left-hand side, you can select from the resulting values of the [`harpy` analysis].
+These correspond to the columns in the `.lin[xy]` files and are separate per plane.
+In here you can find phase (`PHASE`), frequency (`FREQ`) and amplitude ratio (`AMP`) of the lines identified by the number in the column name, where underscores represent a minus sign.
+
 
 !!! tip "Deselection"
     In case you only want to see the data of one plane, you can deselcect the other plane by either chosing `None` at the bottom of the list
@@ -155,6 +159,7 @@ The `Frequency` tab displays the computed spectrum for every BPM.
 
 [bpm_panel_analyse]: bpm_panel.md#start-analysis
 [additional_defaults]: defaults.md#additional-gui-defaults
+[harpy_analysis]: ../../measurements/physics/harpy.md
 
 *[LHC]: Large Hadron Collider
 *[SPS]: Super Proton Synchrotron
