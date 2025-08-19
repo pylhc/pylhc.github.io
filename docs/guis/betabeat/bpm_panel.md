@@ -49,7 +49,7 @@ If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, 
     - If you want to open a new file with the same name as a previously opened file, i.e. one with the same name in the `Measurements` directory,
     a popup will ask if the old file should be overwritten or simply opened instead (without running the converter).
     - If you restart the GUI and select the ["Load Data" option in the beam selection window](beam_selection.md#load-data),
-      all files in the `Measurements` directory of the current file-structure will be reloaded (without running the converter).
+      all files in the `Measurements` directory in the selected _Output Path_ will be reloaded (without running the converter).
 
 #### Supported File Formats
 
