@@ -111,23 +111,27 @@ After selecting one or more files in the table of loaded files, the turn-by-turn
 The charts are [interactive](common_components.md#plotting) and can display either the measured amplitude values over turns for every BPM from the list or display the phase space, which is calculated by two consecutive BPMs.
 You can select multiple measurements at once to compare them, but only one BPM per plane at a time.
 
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_turn_by_turn_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
-  <figcaption>Turn-by-Turn view of BPM data with two measurements selected.</figcaption>
-  </center>
-</figure>
+=== "Turn-by-Turn view"
 
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_data_phase_space.png" width="100%" alt="Phase space view of BPM data"/>
-  <figcaption>Phase space view of BPM data.</figcaption>
-  </center>
-</figure>
+    <figure>
+    <center>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_turn_by_turn_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
+    <figcaption>Turn-by-Turn view of BPM data with two measurements selected.</figcaption>
+    </center>
+    </figure>
+
+=== "Phase space view"
+
+    <figure>
+    <center>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_data_phase_space.png" width="100%" alt="Phase space view of BPM data"/>
+    <figcaption>Phase space view of BPM data.</figcaption>
+    </center>
+    </figure>
 
 ### Bad BPMs
 
-After [harmonic-analysis](#start-analysis) has been performed, the [bad BPMS][bpm_filtering] will be marked in red in the lists.
+After [harmonic-analysis](#start-analysis) has been performed, the [bad BPMs][bpm_filtering] will be marked in red in the lists.
 Hovering the BPM name will show a tooltip with the reason the BPM was deemed bad.
 _(To be checked: This feature might only work if you re-load the data after the analysis.)_
 
@@ -223,3 +227,9 @@ The _Suffix_-field will be automatically set from your suffix-choices in the [_H
 [issue285]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/285
 [bpm_filtering]: ../../measurements/physics/bpm_filtering.md
 [do_analysis_dialog]: analysis_panel.md#do-analysis-dialog
+
+*[LHC]: Large Hadron Collider
+*[SPS]: Super Proton Synchrotron
+*[PS]:  Proton Synchrotron
+*[PSB]: Proton Synchrotron Booster
+*[BPM]: Beam Position Monitor
