@@ -89,8 +89,9 @@ This is in contrast to the other settings tabs, which control the settings passe
 - **Run Per-File Tasks in Parallel**:
   If active, tasks that are started together but can run independently per file will be run in individual tasks in parallel,
   e.g. the `harpy` analysis will be run in parallel for each turn-by-turn file, even if started with multiple files selected at once.
-  When running `optics analysis`, with _combine analysis_ deactivated, the analysis will be run in parallel for each file.
-  Conversely, if opting to also run the `optics analysis` directly from the BPM-Panel with _combine analysis_ activated, the `harpy` analysis will be run sequentially per file, as it is not explicitely parallelized on the python side.
+  When running `optics analysis` with _"combine analysis"_ **deactivated** the analysis will be run in parallel for each file.
+  Conversely, if opting to run the `optics analysis` directly from the BPM-Panel with _"combine analysis"_ **activated**,
+  the `harpy` analysis of the selected files will be run sequentially per file, as it is not explicitely parallelized on the python side.
 
 ## Tunes Tab
 
