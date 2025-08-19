@@ -88,10 +88,10 @@ This is in contrast to the other settings tabs, which control the settings passe
 
 - **Run Per-File Tasks in Parallel**:
   If active, tasks that are started together but can run independently per file will be run in individual tasks in parallel,
-  e.g. the `harpy` analysis will be run in parallel for each turn-by-turn file, even if started with multiple files selected.
-  Also, when running multiple optics analysis, but clicking the `Run per file` button, the analysis will be run in parallel for each file.
-  Conversely, if `Also run optics analysis` is selected, the first step of the `harpy` analsysis will be run sequentially per file,
-  as coordination between multiple tasks is not implemented.
+  e.g. the `harpy` analysis will be run in parallel for each turn-by-turn file, even if started with multiple files selected at once.
+  When running `optics analysis` with _"combine analysis"_ **deactivated** the analysis will be run in parallel for each file.
+  Conversely, if opting to run the `optics analysis` directly from the BPM-Panel with _"combine analysis"_ **activated**,
+  the `harpy` analysis of the selected files will be run sequentially per file, as it is not explicitely parallelized on the python side.
 
 ## Tunes Tab
 
@@ -156,7 +156,7 @@ The fields are non-editable when it does not make sense in the current settings 
   </center>
 </figure>
 
-The Harpy tab contains the settings for the harmonic `harpy` analysis.
+The Harpy tab contains the settings for the [harmonic `harpy` analysis][harpy_analysis].
 
 - **Files**:
   This field is not editable and automatically set when selecting TbT files in the [BPM Panel](bpm_panel.md) and running the analysis.
@@ -244,7 +244,7 @@ The `python` default is `""`, i.e. no suffix.
   </center>
 </figure>
 
-Most of the cleaning, for which the settings can be changed here, are part of the harmonic analysis module `harpy` in `omc3`
+Most of the cleaning, for which the settings can be changed here, are part of the [harmonic analysis module `harpy` in `omc3`][harpy_analysis]
 and will be executed during the "Analyse Spectrum" phase.
 Some of this procedure is also described on the [BPM filtering page][bpm_filtering].
 
@@ -254,12 +254,12 @@ Some of this procedure is also described on the [BPM filtering page][bpm_filteri
     is done within the cleaning module (see below).
 
 ??? info "Why is cleaning part of the harmonic analysis?"
-    Cleaning is part of the harmonic analysis in `harpy` as the [frequency analysis is done on the v-matrix of the SVD][harpy_ipac]:
+    Cleaning is part of the harmonic analysis in `harpy` as the [frequency analysis is done on the v-matrix of the SVD][harpy_analysis]:
     SVD is used to reduce the noise in the BPM data by selecting only the most important modes and in the same step also to detect bad bpms.
     As this decomposition is a linear transformation, the frequency analysis can be run directly on decomposed v-matrix, without
     having to re-compose the data into the time-domain, saving time and memory.
     The disadvantage is that, as we do not save the SVD matrices, there is no way to only run _cleaning_ without frequency analysis at the moment.
-    For more details, see [doi:10.18429/JACoW-IPAC2022-WEPOMS035][harpy_ipac].
+    For more details, see [this documentation][harpy_analysis] and [doi:10.18429/JACoW-IPAC2022-WEPOMS035][harpy_ipac].
 
 - **Active**:
   If active, the cleaning module is run during the "Analyse Spectrum" phase.
@@ -487,7 +487,6 @@ which is the `python`-internal representation of the accelerator and its setting
 
 [python-docs]: https://pylhc.github.io/omc3/
 [multiturn]: ../multiturn/gui.md
-[harpy_ipac]: https://accelconf.web.cern.ch/ipac2022/papers/wepoms035.pdf
 [bpm_filtering]: ../../measurements/physics/bpm_filtering.md
 [bad_bpms]: ../../measurements/physics/bpm_filtering.md#manual
 [isolation_forest_cleaning]: ../../measurements/physics/bpm_filtering.md#isolation-forest
@@ -497,3 +496,5 @@ which is the `python`-internal representation of the accelerator and its setting
 [n_bpm_method]: https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.20.111002
 [three_bpm_method]: https://repository.cern/records/eny2v-4y338
 [isolation_forest_issue]: https://github.com/pylhc/omc3/issues/184
+[harpy_ipac]: https://accelconf.web.cern.ch/ipac2022/papers/wepoms035.pdf
+[harpy_analysis]: ../../measurements/physics/harpy.md
