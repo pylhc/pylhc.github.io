@@ -56,7 +56,7 @@ A window will open to select a time to extract the MQTs from, which default to t
     !!! warning "Updating MQTs"
         This only **updates** the MQTs, which means they need to have been extracted before.
         It checks in the model folder if the `extracted_mqts.str` file is present, which it updates,
-        and if `job.create_model_best_knowledge.madx` exists, which is then reused tore-run.
+        and if `job.create_model_best_knowledge.madx` exists, which is then reused to re-run.
 
     !!! warning "Updating MQTs to re-use model"
         It is **heavily discouraged** to update the MQTs to re-use a model later during a shift,
@@ -68,7 +68,7 @@ A window will open to select a time to extract the MQTs from, which default to t
 
 After clicking on ++"Create New"++ in the [model selection window](#model-selection-window), _model creation window_ opens.
 
-Currently model creation is only implemented in the GUI for the [LHC](#lhc-model-creation), [SPS](#sps-model-creation), [PS](#ps-model-creation), and [PSB](#psb-model-creation) accelerators.
+Currently model creation is only implemented in the GUI for the [LHC](#lhc-model-creation), [SPS](#sps-model-creation), [PS](#ps-model-creation), and [PSB](#psbooster-model-creation) accelerators.
 
 ### General
 
