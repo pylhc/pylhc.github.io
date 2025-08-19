@@ -29,8 +29,7 @@ The buttons at the top of the panel provide functionality to load and remove fil
 
 ## The Time / Space Tab
 
-In the `Time / Space` tab one can examine the phases and amplitudes over the length of the accelerator,
-and can clean the calues if needed.
+In the `Time / Space` tab one can examine the phases and amplitudes over the length of the accelerator (per BPM), and can clean the values if needed.
 
 
 <figure>
@@ -40,16 +39,16 @@ and can clean the calues if needed.
   </center>
 </figure>
 
-
-!!! warning "Default Bounds"
-    The cleaning will check if the ratio of remaining data-points is inside predefined bounds to **prevent accidental removal of too much data**.
-    This ratio, as well as the default value for the `sigmas` and `limit` parameter can be changed by [giving them through the `bbgui_user.properties` file][additional_defaults].
-
 !!! tip "Deselection"
     In case you only want to see the data of one plane, you can deselcect the other plane by either chosing `None` at the bottom of the list
     or by right-clicking into the respective list.
 
 ### Cleaning
+
+!!! warning "Default Bounds"
+    The cleaning will check if the ratio of remaining data-points is inside predefined bounds to **prevent accidental removal of too much data**.
+    This ratio, as well as the default value for the `sigmas` and `limit` parameter can be changed by [giving them through the `bbgui_user.properties` file][additional_defaults].
+
 
 The harmonic analysis data used to obtain the optics functions can be cleaned using [Isolation Forest algorithm][sklearn_IF].
 It should prevent the appearance of unphysical spikes in the optics functions which are caused by the faulty BPMs remaining in the data after the TbT-data cleaning.
@@ -156,3 +155,10 @@ The `Frequency` tab displays the computed spectrum for every BPM.
 
 [bpm_panel_analyse]: bpm_panel.md#start-analysis
 [additional_defaults]: defaults.md#additional-gui-defaults
+
+*[LHC]: Large Hadron Collider
+*[SPS]: Super Proton Synchrotron
+*[PS]:  Proton Synchrotron
+*[PSB]: Proton Synchrotron Booster
+*[OMC]: Optics Measurement and Correction
+*[BPM]: Beam Position Monitor
