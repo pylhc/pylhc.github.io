@@ -208,6 +208,7 @@ nav:
       - Error Propagation: measurements/physics/error_propagation.md
       - BPM-Calibration: measurements/physics/bpm_calibration.md
       - BPM-Filtering: measurements/physics/bpm_filtering.md
+      - Harmonic Analysis: measurements/physics/harpy.md
       - Coupling: measurements/physics/coupling.md
       - K-Mod: measurements/physics/kmod.md
       - Linear IR Optics: measurements/physics/ir_linear_optics.md

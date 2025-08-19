@@ -184,7 +184,7 @@ Click the ++"Run"++ button to start the analysis.
 
 ### Harmonic Analysis
 
-Keeping the _Optics Analysis_ checkbox unchecked will only perform the harmonic analysis.
+Keeping the _Optics Analysis_ checkbox unchecked will only perform the [harmonic analysis][harpy_analysis].
 
 In this case, you will **not be able to specify an output name** for the results, as the resulting files will be **automatically** put into subfolders of the `Measurements` folder, based on the name of the `.sdds` files.
 They therefore usually appear within the same folder as the turn-by-turn data.
@@ -227,6 +227,7 @@ The _Suffix_-field will be automatically set from your suffix-choices in the [_H
 [issue285]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/285
 [bpm_filtering]: ../../measurements/physics/bpm_filtering.md
 [do_analysis_dialog]: analysis_panel.md#do-analysis-dialog
+[harpy_analysis]: ../../measurements/physics/harpy.md
 
 *[LHC]: Large Hadron Collider
 *[SPS]: Super Proton Synchrotron
