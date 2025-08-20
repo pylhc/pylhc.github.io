@@ -9,7 +9,6 @@ The analysis panel provides graphical interface to visualize results from harmon
   </center>
 </figure>
 
-
 ## Loading Files
 
 The buttons at the top of the panel provide functionality to load and remove files from the analysis table as well as to start the [optics analysis](#do-optics-dialog).
@@ -25,7 +24,6 @@ The buttons at the top of the panel provide functionality to load and remove fil
   <figcaption>The table of currently loaded files.</figcaption>
   </center>
 </figure>
-
 
 ## The Time / Space Tab
 
@@ -73,17 +71,12 @@ which trigger the python [`linfile_clean` script][omc3_linfile_clean]{target="_b
   </center>
 </figure>
 
-!!! warning "Default Bounds"
-    The cleaning script will check if the ratio of remaining data-points is inside predefined bounds to **prevent accidental removal of too much data**.
-    This ratio, as well as the GUI-default value for the `sigmas` and `limit` parameter can be changed [through the `bbgui_user.properties` file][additional_defaults].
+!!! tip "Keep BPMs"
+    Some BPMs, e.g. the AC-Dipole BPMs, are required for the optics analysis and **the analysis will fail** if they are not found in the data.
+    You can therefore specify to **keep these BPMs** in the [GUI Cleaning section of the Cleaning Settings Tab](settings.md#gui-cleaning) and they will be kept,
+    even if they are outside the given [cut-offs](#clean) or identified as [outliers](#auto-clean).
 
 #### Clean
-
-This section allows for the most manual cleaning of the data:
-
-#### Auto Clean
-
-#### Undo Cleaning
 
 === "Before Cleaning"
 
@@ -103,15 +96,41 @@ This section allows for the most manual cleaning of the data:
     </center>
     </figure>
 
-!!! tip "Keep BPMs"
-    Some BPMs, e.g. the AC-Dipole BPMs, are required for the optics analysis and **the analysis will fail** if they are not found in the data.
-    You can therefore specify to **keep these BPMs** in the [GUI Cleaning section of the Cleaning Settings Tab](settings.md#gui-cleaning) and they will be kept,
-    even if they are outside the given cut-offs or identified as outliers.
+This section allows for the most manual cleaning of the data: You can set the cursors (lines) around the data that you want to keep,
+either manually by dragging their markers on the right-hand-side of the chart, or by using the ++"Set Cursors"++ button,
+which will set them at the position corresponding to the _Sigmas_, i.e. the number of standard deviations away from the mean **of all data currently shown in the chart**.
+Then press ++"Clean"++{.red-gui-button} to remove the data outside of the selected area, as shown in the images above.
 
-### Additional cleaning based on the tune
+!!! info "Automatic Data Selection"
+    The order of the cursors does not matter, and neither does the selection of data: The GUI will automatically determine the area between the cursors and check
+    which of the selected data sources, columns and/or files, has most (default: more than 70% of the data; see the warning admonition below) of its data in that area.
 
-Additionally, BPMs can be cleaned based on the tune values computed by harmonic analysis. The chart displaying the selected columns of harmonic analysis data has interactive cursors. These cursors can be moved manually to set the thresholds for tune-based cleaning - all BPMs having tune values outside of the set range will be removed. The cursors can be also automatically set to e.g. 4 sigmas deviation from the average tune values over all BPMs.
+!!! warning "Default Bounds"
+    Before cleaning, the GUI will check if the ratio of remaining data-points is inside predefined bounds (default: `0.7`, i.e. keep at least 70%) to **prevent accidental removal of too much data**.
+    This ratio, as well as the GUI-default value for the `sigmas` and `limit` parameter can be changed [through the `bbgui_user.properties` file][additional_defaults].
 
+#### Auto Clean
+
+A more automated cleaning approach can be utilized with the help of the _outlier filter_ (see Section 3.2.3 in [Malina2018][malina2018]
+or Section II.E.1 in [Dilly2023][dilly2023]), which iteratively removes points in the tails of the data until the distribution of the remaining data is close to a normal distribution.
+The _limit_ parameter defines a "save zone" in standard deviations around the mean, in which data will not be removed (default: `0.0`, i.e. any datapoint could be removed).
+This cleaning can be run by simply pressing the ++"Auto"++{.red-gui-button} button and is then applied to **all data currently shown in the chart**, individually per column, plane and `sdds`-file.
+
+#### Undo Cleaning
+
+The [`linfile_clean`][omc3_linfile_clean]{target="_blank"} function automatically creates a backup of the data before cleaning,
+which can be restored by pressing the buttons in this section.
+Use ++"X"++ to restore the latest backup for the X-plane and ++"Y"++ for the Y-plane,
+ or press ++"Both"++ to restore the latest backup for both planes.
+
+!!! warning "Backup History"
+    At each cleaning run a **separate backup per file** will be created.
+    The undo-functionality always restores the latest backup file found and then deletes it.
+    You can therefore undo multiple cleaning steps by pressing the buttons multiple times.
+    The latest backup is chosen **per `lin`-file** independently, i.e. you can go back to different states for the X and Y planes,
+    but **not for different columns** if you have cleaned them in the same step, as they are in the same file.
+    Conversely, if you cleaned another column than the currently visible one in the same file, **restoring the backup might restore the wrong column**.
+    If no backup was found, a warning will be logged in the [console](common_components.md#console).
 
 ## The Frequency Tab
 
@@ -162,6 +181,8 @@ The `Frequency` tab displays the computed spectrum for every BPM.
 [bad_bpms]: ../../measurements/physics/bpm_filtering.md
 
 [omc3_linfile_clean]: https://pylhc.github.io/omc3/entrypoints/scripts.html#linfile-cleaning
+[malina2018]: https://repository.cern/records/bxyez-pt407
+[dilly2023]: http://cds.cern.ch/record/2883681/
 
 *[LHC]: Large Hadron Collider
 *[SPS]: Super Proton Synchrotron
