@@ -147,6 +147,12 @@ The `Frequency` tab displays the computed spectrum for every BPM.
     In case you only want to see the frequency data of one plane, you can deselcect the other plane by either chosing `None` at the bottom of the list of BPMs
     or by right-clicking into the respective list.
 
+!!! tip "Find BPMs"
+    The BPMs in the list are sorted alphabetically.
+    Use the text field and the ++"Find BPM"++ button to quickly find BPMs in the list and **automatically select them**.
+    The text input is based on regular expressions and **all BPMs that match the pattern** in both planes will be selected.
+    Note that `^.*` and `.*$` will be added automatically to the string to look for your pattern **anywhere** in the BPM name.
+
 ### Nattune Updater
 
 - You can set a frequency range and it does not redo the analysis but just picks the highest peak in that range and assigns it to `NATTUNE` in the lin-file.
@@ -190,3 +196,4 @@ The `Frequency` tab displays the computed spectrum for every BPM.
 *[PSB]: Proton Synchrotron Booster
 *[OMC]: Optics Measurement and Correction
 *[BPM]: Beam Position Monitor
+*[BPMs]: Beam Position Monitors
