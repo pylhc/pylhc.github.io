@@ -70,7 +70,7 @@ This is in contrast to the other settings tabs, which control the settings passe
 
 - **Analyse TbT Files on Opening**:
   If active and you open a turn-by-turn file, via the ++"Open Files"++{.green-gui-button} in the [BPM Panel](bpm_panel.md),
-  `harpy` analysis will be automatically started (for now: the user will be prompted with the ["Do analysis Dialog"](bpm_panel.md#do-analysis) directly after TbT import).
+  `harpy` analysis will be automatically started (for now: the user will be prompted with the ["Do analysis Dialog"](bpm_panel.md#do-analysis-dialog) directly after TbT import).
 
 - **Python Path**:
   Change the location of the `python` executable to be used to run the python scripts.
@@ -345,12 +345,12 @@ introduced by the AC-Dipole and if they are not found in the data, the optics an
   Files to to use for the optics analysis.
   These are the output files from `harpy`.
   This field is not editable and is only shown here, as `files` is an argument to `optics_measurement` and an attribute on the internal `OpticsSettings` class.
-  The actual files to use are chosen from the [Analysis Panel](analysis_panel.md), after which this field is automatically filled in when shown in the [Run Optics](analysis_panel.md#run-optics) popup window.
+  The actual files to use are chosen from the [Analysis Panel](analysis_panel.md), after which this field is automatically filled in when shown in the [Run Optics](analysis_panel.md#do-optics-dialog) popup window.
 
 - **Outputdir**:
   Directory to place to output of the optics analysis.
   The field is not editable and is only shown here, as `outputdir` is an argument to `optics_measurement` and an attribute on the internal `OpticsSettings` class.
-  The actual directory is chosen by the user per analysis, when setting an analysis name in the [Run Optics](analysis_panel.md#run-optics) popup window.
+  The actual directory is chosen by the user per analysis, when setting an analysis name in the [Run Optics](analysis_panel.md#do-optics-dialog) popup window.
 
 - **Calibrationdir**:
   Path to the directory containing the [calibration][bpm_calibration] files, used to rescale the BPM amplitudes and amplitude errors.

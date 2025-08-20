@@ -39,9 +39,21 @@ In the `Time / Space` tab one can examine the phases and amplitudes over the len
 </figure>
 
 In the lists on the left-hand side, you can select from the resulting values of the [`harpy` analysis].
-These correspond to the columns in the `.lin[xy]` files and are separate per plane.
-In here you can find phase (`PHASE`), frequency (`FREQ`) and amplitude ratio (`AMP`) of the lines identified by the number in the column name, where underscores represent a minus sign.
+These correspond to the columns in the `.lin[xy]` files and are separated by plane.
+In here you can find phase (`PHASE`), frequency (`FREQ`) and amplitude (`AMP`) of the lines identified by `harpy` and their respective errors (`ERR`).
+The lines are multiples of the found tunes (`TUNE`) and can be identified by the two numbers in their name,
+which correspond to the multiples of the horizontal and vertical tune, respectively, using underscores to represent a minus sign.
+In addition to these lines, you also find additional data, such as:
 
+- `TUNE`: (driven) tune
+- `NATTUNE`: natural tune (if available)
+- `MU`: phase advance
+- `CO`: closed orbit
+- `BPM_RES`: BPM resolution
+- `PK2PK`: peak-to-peak oscillation value
+- `NOISE`: estimated cleaned noise
+
+You can select multiple files (++ctrl++ / ++shift++) at once to compare the same value between them and also multiple entries, e.g. to compare the amplitudes of different lines.
 
 !!! tip "Deselection"
     In case you only want to see the data of one plane, you can deselcect the other plane by either chosing `None` at the bottom of the list
@@ -49,38 +61,29 @@ In here you can find phase (`PHASE`), frequency (`FREQ`) and amplitude ratio (`A
 
 ### Cleaning
 
-!!! warning "Default Bounds"
-    The cleaning will check if the ratio of remaining data-points is inside predefined bounds to **prevent accidental removal of too much data**.
-    This ratio, as well as the default value for the `sigmas` and `limit` parameter can be changed by [giving them through the `bbgui_user.properties` file][additional_defaults].
-
-
-The harmonic analysis data used to obtain the optics functions can be cleaned using [Isolation Forest algorithm][sklearn_IF].
-It should prevent the appearance of unphysical spikes in the optics functions which are caused by the faulty BPMs remaining in the data after the TbT-data cleaning.
-
-Isolation Forest perfroms anomaly detection on the whole set of selected measurements data.
-Clicking on "Detect and remove bad BPMs"-button triggers an external python script which analyses the selected files.
-The output file is written in the TFS format and contains the list of detected bad BPMs is written to the folder of the first selected measurement in the analysis table.
-
-The output can be found in:  `Measurements/.../bad_bpms_iforest_{x,y}`.
-
-During IF-cleaning, the lines corresponding to detected faulty BPMs will be removed from the lin-files.
-Cleaning can be reverted (the original lin files will be restored) by clicking <kbd>Revert</kbd>.
-
-After cleaning is finished, the optics function can be computed from the harmonic analysis data by clicking <kbd>Get optics</kbd>.
+Even though extensive cleaning is done automatically in the [harmonic analysis][harpy_analysis], there can still be outliers in the data,
+e.g. due to undetected [faulty BPMs][bad_bpms].
+To prevent the appearance of unphysical spikes in the optics functions, manual cleaning can be performed using the controls at the bottom left of the `Time / Space` tab,
+which trigger the python [`linfile_clean` script][omc3_linfile_clean]{target="_blank"}.
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/analysis_panel_time_space_clean.png" width="100%" alt="Cleaning before optics analysis" />
-  <figcaption> Cleaning before optics analysis </figcaption>
+  <img src="../../assets/images/betabeat_gui/analysis_panel_time_space_clean.png" width="80%" alt="Cleaning before optics analysis" />
+  <figcaption> Cleaning controls to clean data before optics analysis </figcaption>
   </center>
 </figure>
 
+!!! warning "Default Bounds"
+    The cleaning script will check if the ratio of remaining data-points is inside predefined bounds to **prevent accidental removal of too much data**.
+    This ratio, as well as the GUI-default value for the `sigmas` and `limit` parameter can be changed [through the `bbgui_user.properties` file][additional_defaults].
+
 #### Clean
+
+This section allows for the most manual cleaning of the data:
 
 #### Auto Clean
 
 #### Undo Cleaning
-
 
 === "Before Cleaning"
 
@@ -134,10 +137,7 @@ The `Frequency` tab displays the computed spectrum for every BPM.
 !!! todo
     Include a screenshot of the frequency panel.
 
-  [sklearn_IF]: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html
-
 ## Do Optics Dialog
-
 
 === "Closed Settings"
 
@@ -157,9 +157,11 @@ The `Frequency` tab displays the computed spectrum for every BPM.
     </center>
     </figure>
 
-[bpm_panel_analyse]: bpm_panel.md#start-analysis
 [additional_defaults]: defaults.md#additional-gui-defaults
 [harpy_analysis]: ../../measurements/physics/harpy.md
+[bad_bpms]: ../../measurements/physics/bpm_filtering.md
+
+[omc3_linfile_clean]: https://pylhc.github.io/omc3/entrypoints/scripts.html#linfile-cleaning
 
 *[LHC]: Large Hadron Collider
 *[SPS]: Super Proton Synchrotron
