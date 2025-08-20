@@ -25,6 +25,10 @@ The buttons at the top of the panel provide functionality to load and remove fil
   </center>
 </figure>
 
+!!! warning "Memory Usage"
+    File that are opened in this panel are stored in memory.
+    If your computer is running low on memory, you might want to close some of the open files.
+
 ## The Time / Space Tab
 
 In the `Time / Space` tab one can examine the phases and amplitudes over the length of the accelerator (per BPM), and can clean the values if needed.
@@ -51,7 +55,7 @@ In addition to these lines, you also find additional data, such as:
 - `PK2PK`: peak-to-peak oscillation value
 - `NOISE`: estimated cleaned noise
 
-You can select multiple files (++ctrl++ / ++shift++) at once to compare the same value between them and also multiple entries, e.g. to compare the amplitudes of different lines.
+It is possible to select multiple files (++ctrl++ / ++shift++) at once to compare the same value between them and also multiple entries, e.g. to compare the amplitudes of different lines.
 
 !!! tip "Deselection"
     In case you only want to see the data of one plane, you can deselcect the other plane by either chosing `None` at the bottom of the list
@@ -134,14 +138,18 @@ Use ++"X"++ to restore the latest backup for the X-plane and ++"Y"++ for the Y-p
 
 ## The Frequency Tab
 
-The `Frequency` tab displays the computed spectrum for every BPM.
-
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_frequency.png" width="100%" alt="Frequency tab."/>
   <figcaption>The Frequency tab.</figcaption>
   </center>
 </figure>
+
+The `Frequency` tab displays the computed spectrum for every BPM.
+Here, one can visually check the quality of the data, identify resonance lines, and perform some additional (natural-) tune windowing.
+
+It is possible to select multiple files (++ctrl++ / ++shift++) as well as multiple BPMs (++ctrl++ / ++shift++) at once to compare the frequency data between them.
+Depending on the number of selected files and BPMs as well as the frequency resolution of the spectra, the GUI may take a few seconds to display all data.
 
 !!! tip "Deselection"
     In case you only want to see the frequency data of one plane, you can deselcect the other plane by either chosing `None` at the bottom of the list of BPMs
@@ -153,14 +161,121 @@ The `Frequency` tab displays the computed spectrum for every BPM.
     The text input is based on regular expressions and **all BPMs that match the pattern** in both planes will be selected.
     Note that `^.*` and `.*$` will be added automatically to the string to look for your pattern **anywhere** in the BPM name.
 
-### Nattune Updater
+Use the controls at the bottom left of the panel for the additional functionality, which is described below.
+
+
+### Resonance Lines
+
+<figure>
+  <center>
+  <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_controls_resonance_lines.png" width="70%" alt="Frequency tab resonance lines controls."/>
+  <figcaption>Resonance lines controls at the bottom of the Frequency tab.</figcaption>
+  </center>
+</figure>
+
+Activate these controls to mark the location of resonance lines in the spectrum with dashed vertical lines and bars.
+Choose from the dropdown menu which tune values should be used for the calculation of the lines:
+
+- **Nat. Tune (Model)**: The natural tune set in the currently loaded model.
+- **ACD Tune (Model)**: The ac-dipole tune set in the currently loaded model _(if available)_.
+- **ADT Tune (Model)**: The adt-tune set in the currently loaded model _(if available)_.
+- **Nat. Tune (Measured)**: The average natural tune of all measured BPMs.
+- **Driven Tune (Measured)**: The average driven tune of all measured BPMs.
+- **Nat. Tune (Gui)**: The currently set natural tune in the [tunes settings](settings.md#tunes-tab) _(usually same as model)_.
+- **Driven Tune (Gui)**: The currently set driven tune in the [tunes settings](settings.md#tunes-tab) _(usually same as model)_.
+
+The range of orders of the resonance lines to be shown can be chosen by changing the values in the text fields,
+where the order `n` is defined as the sum of absolute multiples of the horizontal and vertical tune of the line, e.g. the order of the `2Qy - Qx` line is `n = 2 + 1 = 3`.
+Different orders will be shown in different colors.
+Hovering the resonance line towards the top of the chart will show a tooltip with the tune multiples of that line and its frequency.
+
+Clicking the ++"Custom"++ button will open a dialog to manually enter frequency and labels of additional vertical bars to be shown in red in the chart.
+
+<figure>
+<center>
+<img src="../../assets/images/betabeat_gui/analysis_panel_frequency_manual_line.png" width="60%"alt="Custom lines dialog." />
+<figcaption>The custom lines dialog to manually add lines.</figcaption>
+</center>
+</figure>
+
+Use ++"Add Line"++{.green-gui-button} to add a new line based on your input to the table and ++"Remove"++{.red-gui-button} to remove the currently selected line.
+The lines in the charts will only update after clicking t++"Approve"++.
+
+
+=== "Natural Tune Line"
+
+    <figure>
+    <center>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_frequency_nattune.png" alt="Natural tune line." style="height: 650px" />
+    <figcaption>The spectrum showing a tooltip at the natural tune line.</figcaption>
+    </center>
+    </figure>
+
+=== "2Qy - Qx Line"
+
+    <figure>
+    <center>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_frequency_m1Qx_p2Qy_line.png" alt="2Qy - Qx line." style="height: 650px" />
+    <figcaption>The spectrum showing a tooltip at the 2Qy - Qx line.</figcaption>
+    </center>
+    </figure>
+
+=== "Manual Line"
+
+    <figure>
+    <center>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_frequency_manual_line_show.png" alt="Manual line." style="height: 650px"/>
+    <figcaption>The spectrum showing a tooltip at a manually added marker at 0.265.</figcaption>
+    </center>
+    </figure>
+
+
+### Natural Tune Window
+
+<figure>
+  <center>
+  <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_controls_nattune.png" width="70%" alt="Frequency tab natural tune window controls."/>
+  <figcaption>Naturl tune window controls at the bottom of the Frequency tab.</figcaption>
+  </center>
+</figure>
 
 - You can set a frequency range and it does not redo the analysis but just picks the highest peak in that range and assigns it to `NATTUNE` in the lin-file.
 - This should be very helpful for amplitude detuning analysis.
 - Do NOT use the Nattune-Updater if you have free kicks (it adds a `NATTUNE`-Column to the lin-file).
 
-!!! todo
-    Include a screenshot of the frequency panel.
+<figure>
+<center>
+<img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_frequency_nattune.png" alt="Natural tune line." style="height: 650px" />
+<figcaption>The spectrum showing a tooltip at the natural tune line.</figcaption>
+</center>
+</figure>
+
+### Chart Options
+
+<figure>
+  <center>
+  <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_controls_chart_options.png" width="70%" alt="Frequency tab chart controls."/>
+  <figcaption>Chart options controls at the bottom of the Frequency tab.</figcaption>
+  </center>
+</figure>
+
+Use the first drop-down in the chart options to select the display type of the chart:
+
+- **Stem** _(default)_:
+This shows the spectrum in a stem plot, i.e. as thin vertical lines for each measured frequency, starting at the bottom of the chart and ending in a marker at the amplitude value.
+- **Bars**:
+This also shows the spectrum in a stem-like plot, but with wider stems and no markers at the top.
+This was the default in GUI versions pre 2019 and comes with a warning: When plotting multiple files/BPMs the bars are "stacked" next to each other, which makes it hard to see which frequency they actually belong to.
+- **Points**:
+This shows the spectrum in a scatter plot, i.e. as markers for each frequency set at the corresponding amplitude.
+These are the markers of the _Stems_ plot, but without the actual stems.
+- **Lines**:
+This shows the spectrum in a scatter plot, i.e. as markers for each frequency set at the corresponding amplitude connected by lines.
+So this is the same as _Points_ but with additional lines between the markers.
+
+++"GUI"++
++"PDF"++
+
 
 ## Do Optics Dialog
 
