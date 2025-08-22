@@ -199,7 +199,7 @@ Clicking the ++"Custom"++ button will open a dialog to manually enter frequency 
 </figure>
 
 Use ++"Add Line"++{.green-gui-button} to add a new line based on your input to the table and ++"Remove"++{.red-gui-button} to remove the currently selected line.
-The lines in the charts will only update after clicking t++"Approve"++.
+The lines in the charts will only update after clicking ++"Approve"++.
 
 
 === "Natural Tune Line"
@@ -232,16 +232,37 @@ The lines in the charts will only update after clicking t++"Approve"++.
 
 ### Natural Tune Window
 
+The natural tune window controls help you, to correctly identify the natural tune in the spectrum and assign it to the `NATTUNE`-column in the lin-file
+using the [`update_nattune_in_linfile` script][omc3_update_nattune]{target="_blank"} and
+helps to avoid re-running the `harpy` analysis with different tolerance windows and natural tunes settings.
+Accurate identification of the natural tune is important e.g. for [amplitude detuning analysis][amplitude_detuning_analysis].
+
+There are two main reasons, why the natural tune line might be misidentified in the spectrum by the `harpy` analysis,
+even when the natural tune and tolerance window are set "correctly" in the [`Tune Settings`](settings.md#tunes-tab):
+
+- Due to detuning, the natural tune line can be shifted and might not be any longer within the tolerance window.
+This can in particular happen during a wide range of amplitude detuning scans, for which you do not want to change the tolerance window at every kick,
+or cannot easily make it larger as it would include the driven tune line.
+- Large resonances can appear within the tolerance window, e.g. excited by the approach of the natural tune due to detuning effects,
+and might be misidentified as the natural tune line when their amplitude is higher than the amplitude of the natural tune line.
+
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_controls_nattune.png" width="70%" alt="Frequency tab natural tune window controls."/>
-  <figcaption>Naturl tune window controls at the bottom of the Frequency tab.</figcaption>
+  <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_controls_nattune.png" width="65%" alt="Frequency tab natural tune window controls."/>
+  <figcaption>Natural tune window controls at the bottom of the Frequency tab.</figcaption>
   </center>
 </figure>
 
-- You can set a frequency range and it does not redo the analysis but just picks the highest peak in that range and assigns it to `NATTUNE` in the lin-file.
-- This should be very helpful for amplitude detuning analysis.
-- Do NOT use the Nattune-Updater if you have free kicks (it adds a `NATTUNE`-Column to the lin-file).
+To update the natural tune in the lin-file, first activate the vertical cursors at the top of the chart by setting a tick in the **Show** checkbox,
+they will appear at their last set position or at 0 if they have not been set yet.
+
+!!! tip "Cursors for each plane"
+    If you have BPMs from both planes selected, two sets of cursors will appear: Blue for the horizonal spectrum and red for the vertical spectrum.
+    In case only one plane is selected, only one set of cursors will appear.
+    To update the amount of cursors shown, you need to select BPMs in the planes you want and then de- and re-activate the **Show** checkbox.
+
+Click ++"Set Window"++ to set the markers around the model natural tune with a spacing given by the _Tolerance_,
+both of which are taken from the [`Tune Settings`](settings.md#tunes-tab).
 
 <figure>
 <center>
@@ -249,6 +270,35 @@ The lines in the charts will only update after clicking t++"Approve"++.
 <figcaption>The spectrum showing a tooltip at the natural tune line.</figcaption>
 </center>
 </figure>
+
+You can now adapt the cursors to your liking, such that the natural tune line is the highest line between them,
+avoiding resonances and the driven tune line.
+For measurements with many BPMs not showing a clear natural tune line, tightening the window can also help reducing the errorbar on the tune.
+
+!!! tip "Identifying the Natural Tune"
+    If you are unsure which of the shown lines is the natural tune, it often helps to look at the spectrum of other kicks,
+    e.g. the ones with similar kick-amplitude in an amplitude detuning scan.
+    The natural tune line in this measurement is usually the line closest to the natural tune in the other measurements,
+    as the detuning effect is usually very small between similar kick amplitudes.
+
+A ticked _"All BPMs"_ checkbox will update the `NATTUNE`-column for all BPMs, while an unticked on will only update the currently selected BPMs.
+If you have it unticked and no BPMs in one plane selected, this plane will be skipped,
+but if _"All BPMs"_ is active, both planes will be updated, even if no BPM is selected in that plane as long as a window is set for that plane (see tip above).
+If there is no window set for a plane, this plane will be skipped.
+
+Click ++"Update Lin-Files"++{.green-gui-button} to update the `NATTUNE`-column in the lin-files of the currently selected measurements, with the window defined by the currently set cursors.
+
+!!! tip "The `Empty` dropdown"
+    In rare cases, e.g. if you are using a large frequency spacing (low number of [output bits](settings.md#harpy-tab)) or a very small tolerance window,
+    it can happen that for some BPMs no frequency line lies between the cursors.
+    In this case, the action taken in the `Empty` dropdown menu is applied:
+
+    - **error** _(default)_: The `NATTUNE`-column is not updated and an error is raised.
+    - **ignore**: The BPM is ignored and the value in the `NATTUNE`-column is not updated.
+    - **remove**: The BPM is removed from the lin-file.
+
+!!! bug "Free Kicks"
+    Do **NOT** use the Natural Tune Updater if you have free kicks, as the script will add a `NATTUNE`-Column to the lin-file!
 
 ### Chart Options
 
@@ -273,9 +323,35 @@ These are the markers of the _Stems_ plot, but without the actual stems.
 This shows the spectrum in a scatter plot, i.e. as markers for each frequency set at the corresponding amplitude connected by lines.
 So this is the same as _Points_ but with additional lines between the markers.
 
-++"GUI"++
-+"PDF"++
+Two methods are available to save the chart to file:
 
+- ++"GUI"++:
+This button will open a dialog asking you where to save the **chart component directly from java** as a **PNG file**.
+The output will look exactly like the chart in the GUI, as it is rendered directly from `java`.
+- ++"PDF"++:
+This button allows you pass the currently selected data to the [`plot_spectrum` script][omc3_plot_spectrum] to save the spectrum as a **PDF file**.
+As the spectrum is completely rendered in `python` the output will look different from the chart in the GUI, but will show in general the same information, with some important caveats listed below.
+
+    - Clicking the button you will be requested to select an output **directory**.
+      As multiple files might be created, the filenames are determined automatically.
+      Then a dialog will pop up, in which you can change the path again, but also define which data should be plotted in the same file:
+
+        <figure>
+        <center>
+        <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_export.png" width="60%" alt="Export Spectrum Dialog."/>
+        <figcaption>The export spectrum dialog.</figcaption>
+        </center>
+        </figure>
+
+    - In any case, the spectrum of horizontal and vertical BPMs will be split into separate plots on the top and bottom of the same file.
+        Which also means, that no matter in which plane you have selected a BPM - if it has a horizontal and a vertical spectrum they will both be plotted.
+    - _"Combine Plots by BPMs"_: Will plot all selected BPMs into the same plots in the same file, with the BPM name in the legend.
+        If this is deactivated, there will be separate files per BPM with the BPM name in the filename.
+    - _"Combine Plots by Measurements"_: Will plot all selected Mesurements into the same plots in the same file,  with the Measurement name in the legend.
+        If this is deactivated, there will be separate files per Measurement with the Measurement name in the filename.
+    - Having both _"BPMs"_ and _"Measurements"_ activated will therefore lead to a single output file, with two charts (for the horizontal and vertical planes) and a combination of BPM-names and Measurement-names as legend.
+    - Having both _"BPMs"_ and _"Measurements"_ deactivated will lead to `N = No. of selected BPMs x No. of selected Measurements` files, containing two charts for the planes with each showing only a single spectrum.
+        Both, BPM name and Measurement name will be in the filename.
 
 ## Do Optics Dialog
 
@@ -300,8 +376,11 @@ So this is the same as _Points_ but with additional lines between the markers.
 [additional_defaults]: defaults.md#additional-gui-defaults
 [harpy_analysis]: ../../measurements/physics/harpy.md
 [bad_bpms]: ../../measurements/physics/bpm_filtering.md
+[amplitude_detuning_analysis]: ../../measurements/procedures/ampdet.md
 
 [omc3_linfile_clean]: https://pylhc.github.io/omc3/entrypoints/scripts.html#linfile-cleaning
+[omc3_update_nattune]: https://pylhc.github.io/omc3/entrypoints/scripts.html#update-natural-tune-in-lin-files
+[omc3_plot_spectrum]: https://pylhc.github.io/omc3/entrypoints/plotting.html#plot-spectrum
 [malina2018]: https://repository.cern/records/bxyez-pt407
 [dilly2023]: http://cds.cern.ch/record/2883681/
 
