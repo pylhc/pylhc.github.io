@@ -26,7 +26,7 @@ The buttons at the top of the panel provide functionality to load and remove fil
 </figure>
 
 !!! warning "Memory Usage"
-    File that are opened in this panel are stored in memory.
+    Files that are opened in this panel are stored in memory.
     If your computer is running low on memory, you might want to close some of the open files.
 
 ## The Time / Space Tab
@@ -40,12 +40,12 @@ In the `Time / Space` tab one can examine the phases and amplitudes over the len
   </center>
 </figure>
 
-In the lists on the left-hand side, you can select from the resulting values of the [`harpy` analysis].
+In the lists on the left-hand side, one can select from the resulting values of the [`harpy` analysis].
 These correspond to the columns in the `.lin[xy]` files and are separated by plane.
 In here you can find phase (`PHASE`), frequency (`FREQ`) and amplitude (`AMP`) of the lines identified by `harpy` and their respective errors (`ERR`).
 The lines are multiples of the found tunes (`TUNE`) and can be identified by the two numbers in their name,
 which correspond to the multiples of the horizontal and vertical tune, respectively, using underscores to represent a minus sign.
-In addition to these lines, you also find additional data, such as:
+In addition to these lines additional data from the harmonic analysis is available, such as:
 
 - `TUNE`: (driven) tune
 - `NATTUNE`: natural tune (if available)
@@ -58,7 +58,7 @@ In addition to these lines, you also find additional data, such as:
 It is possible to select multiple files (++ctrl++ / ++shift++) at once to compare the same value between them and also multiple entries, e.g. to compare the amplitudes of different lines.
 
 !!! tip "Deselection"
-    In case you only want to see the data of one plane, you can deselcect the other plane by either chosing `None` at the bottom of the list
+    To see the data of one plane only, one can deselect the other plane by either chosing `None` at the bottom of the list
     or by right-clicking into the respective list.
 
 ### Cleaning
@@ -66,7 +66,7 @@ It is possible to select multiple files (++ctrl++ / ++shift++) at once to compar
 Even though extensive cleaning is done automatically in the [harmonic analysis][harpy_analysis], there can still be outliers in the data,
 e.g. due to undetected [faulty BPMs][bad_bpms].
 To prevent the appearance of unphysical spikes in the optics functions, manual cleaning can be performed using the controls at the bottom left of the `Time / Space` tab,
-which trigger the python [`linfile_clean` script][omc3_linfile_clean]{target="_blank"}.
+which trigger the python [`linfile_clean` script][omc3_linfile_clean]{target=_blank}.
 
 <figure>
   <center>
@@ -122,7 +122,7 @@ This cleaning can be run by simply pressing the ++"Auto"++{.red-gui-button} butt
 
 #### Undo Cleaning
 
-The [`linfile_clean`][omc3_linfile_clean]{target="_blank"} function automatically creates a backup of the data before cleaning,
+The [`linfile_clean`][omc3_linfile_clean]{target=_blank} function automatically creates a backup of the data before cleaning,
 which can be restored by pressing the buttons in this section.
 Use ++"X"++ to restore the latest backup for the X-plane and ++"Y"++ for the Y-plane,
  or press ++"Both"++ to restore the latest backup for both planes.
@@ -152,7 +152,7 @@ It is possible to select multiple files (++ctrl++ / ++shift++) as well as multip
 Depending on the number of selected files and BPMs as well as the frequency resolution of the spectra, the GUI may take a few seconds to display all data.
 
 !!! tip "Deselection"
-    In case you only want to see the frequency data of one plane, you can deselcect the other plane by either chosing `None` at the bottom of the list of BPMs
+    To see the frequency data of one plane only, one can deselect the other plane by either chosing `None` at the bottom of the list of BPMs
     or by right-clicking into the respective list.
 
 !!! tip "Find BPMs"
@@ -233,7 +233,7 @@ The lines in the charts will only update after clicking ++"Approve"++.
 ### Natural Tune Window
 
 The natural tune window controls help you, to correctly identify the natural tune in the spectrum and assign it to the `NATTUNE`-column in the lin-file
-using the [`update_nattune_in_linfile` script][omc3_update_nattune]{target="_blank"} and
+using the [`update_nattune_in_linfile` script][omc3_update_nattune]{target=_blank} and
 helps to avoid re-running the `harpy` analysis with different tolerance windows and natural tunes settings.
 Accurate identification of the natural tune is important e.g. for [amplitude detuning analysis][amplitude_detuning_analysis].
 
@@ -241,10 +241,10 @@ There are two main reasons, why the natural tune line might be misidentified in 
 even when the natural tune and tolerance window are set "correctly" in the [`Tune Settings`](settings.md#tunes-tab):
 
 - Due to detuning, the natural tune line can be shifted and might not be any longer within the tolerance window.
-This can in particular happen during a wide range of amplitude detuning scans, for which you do not want to change the tolerance window at every kick,
+This can in particular happen during a wide range of amplitude detuning scans, for which one does not want to change the tolerance window at every kick,
 or cannot easily make it larger as it would include the driven tune line.
 - Large resonances can appear within the tolerance window, e.g. excited by the approach of the natural tune due to detuning effects,
-and might be misidentified as the natural tune line when their amplitude is higher than the amplitude of the natural tune line.
+and might be misidentified as the natural tune line when their amplitude is higher than that of the natural tune line itself.
 
 <figure>
   <center>
@@ -257,9 +257,9 @@ To update the natural tune in the lin-file, first activate the vertical cursors 
 they will appear at their last set position or at 0 if they have not been set yet.
 
 !!! tip "Cursors for each plane"
-    If you have BPMs from both planes selected, two sets of cursors will appear: Blue for the horizonal spectrum and red for the vertical spectrum.
+    If BPMs from both planes are selected, two sets of cursors will appear: blue for the horizonal spectrum and red for the vertical spectrum.
     In case only one plane is selected, only one set of cursors will appear.
-    To update the amount of cursors shown, you need to select BPMs in the planes you want and then de- and re-activate the **Show** checkbox.
+    To update the amount of cursors shown, select BPMs in the desired planes, then untick and re-activate the **Show** checkbox.
 
 Click ++"Set Window"++ to set the markers around the model natural tune with a spacing given by the _Tolerance_,
 both of which are taken from the [`Tune Settings`](settings.md#tunes-tab).
@@ -276,20 +276,20 @@ avoiding resonances and the driven tune line.
 For measurements with many BPMs not showing a clear natural tune line, tightening the window can also help reducing the errorbar on the tune.
 
 !!! tip "Identifying the Natural Tune"
-    If you are unsure which of the shown lines is the natural tune, it often helps to look at the spectrum of other kicks,
+    If unsure which of the shown lines is the natural tune, it often helps to look at the spectrum of other kicks,
     e.g. the ones with similar kick-amplitude in an amplitude detuning scan.
     The natural tune line in this measurement is usually the line closest to the natural tune in the other measurements,
     as the detuning effect is usually very small between similar kick amplitudes.
 
-A ticked _"All BPMs"_ checkbox will update the `NATTUNE`-column for all BPMs, while an unticked on will only update the currently selected BPMs.
-If you have it unticked and no BPMs in one plane selected, this plane will be skipped,
-but if _"All BPMs"_ is active, both planes will be updated, even if no BPM is selected in that plane as long as a window is set for that plane (see tip above).
-If there is no window set for a plane, this plane will be skipped.
+A ticked _"All BPMs"_ checkbox will update the `NATTUNE`-column for all BPMs, while an unticked one will only update the currently selected BPMs.
+If unticked and no BPMs are selected in a given plane that plane will be skipped,
+but if _"All BPMs"_ is active, both planes will be updated as long as a window is set for each (see tip above).
+If there is no window set for a plane, it will be skipped.
 
 Click ++"Update Lin-Files"++{.green-gui-button} to update the `NATTUNE`-column in the lin-files of the currently selected measurements, with the window defined by the currently set cursors.
 
 !!! tip "The `Empty` dropdown"
-    In rare cases, e.g. if you are using a large frequency spacing (low number of [output bits](settings.md#harpy-tab)) or a very small tolerance window,
+    In rare cases, e.g. when using a large frequency spacing (low number of [output bits](settings.md#harpy-tab)) or a very small tolerance window,
     it can happen that for some BPMs no frequency line lies between the cursors.
     In this case, the action taken in the `Empty` dropdown menu is applied:
 
@@ -298,7 +298,7 @@ Click ++"Update Lin-Files"++{.green-gui-button} to update the `NATTUNE`-column i
     - **remove**: The BPM is removed from the lin-file.
 
 !!! bug "Free Kicks"
-    Do **NOT** use the Natural Tune Updater if you have free kicks, as the script will add a `NATTUNE`-Column to the lin-file!
+    Do **NOT** use the Natural Tune Updater when working with free kicks, as the script will add a `NATTUNE`-Column to the lin-file!
 
 ### Chart Options
 
@@ -315,7 +315,7 @@ Use the first drop-down in the chart options to select the display type of the c
 This shows the spectrum in a stem plot, i.e. as thin vertical lines for each measured frequency, starting at the bottom of the chart and ending in a marker at the amplitude value.
 - **Bars**:
 This also shows the spectrum in a stem-like plot, but with wider stems and no markers at the top.
-This was the default in GUI versions pre 2019 and comes with a warning: When plotting multiple files/BPMs the bars are "stacked" next to each other, which makes it hard to see which frequency they actually belong to.
+This was the default in GUI versions pre 2019 and comes with a warning: When plotting multiple files/BPMs the bars are "stacked" **next** to each other, which makes it hard to see which frequency they actually belong to.
 - **Points**:
 This shows the spectrum in a scatter plot, i.e. as markers for each frequency set at the corresponding amplitude.
 These are the markers of the _Stems_ plot, but without the actual stems.
@@ -326,11 +326,11 @@ So this is the same as _Points_ but with additional lines between the markers.
 Two methods are available to save the chart to file:
 
 - ++"GUI"++ :
-This button will open a dialog asking you where to save the **chart component directly from java** as a **PNG file**.
+This button will open a dialog asking where to save the **chart component directly from java** as a **PNG file**.
 The output will look exactly like the chart in the GUI, as it is rendered directly from `java`.
 - ++"PDF"++ :
-This button allows you pass the currently selected data to the [`plot_spectrum` script][omc3_plot_spectrum] to save the spectrum as a **PDF file**.
-As the spectrum is completely rendered in `python` the output will look different from the chart in the GUI, but will show in general the same information, with some important caveats listed below.
+This button allows passing the currently selected data to the [`plot_spectrum` script][omc3_plot_spectrum]{target=_blank} to save the spectrum as a **PDF file**.
+As the spectrum is completely rendered by the `python` script, the output will look different from the chart in the GUI but will show in general the same information, with some important caveats listed below.
 
     - Clicking the button you will be requested to select an output **directory**.
       As multiple files might be created, the filenames are determined automatically.
@@ -346,9 +346,9 @@ As the spectrum is completely rendered in `python` the output will look differen
     - In any case, the spectrum of horizontal and vertical BPMs will be split into separate plots on the top and bottom of the same file.
         Which also means, that no matter in which plane you have selected a BPM - if it has a horizontal and a vertical spectrum they will both be plotted.
     - _"Combine Plots by BPMs"_: Will plot all selected BPMs into the same plots in the same file, with the BPM name in the legend.
-        If this is deactivated, there will be separate files per BPM with the BPM name in the filename.
+        If deactivated, there will be separate files per BPM with the BPM name in the filename.
     - _"Combine Plots by Measurements"_: Will plot all selected Mesurements into the same plots in the same file,  with the Measurement name in the legend.
-        If this is deactivated, there will be separate files per Measurement with the Measurement name in the filename.
+        If deactivated, there will be separate files per Measurement with the Measurement name in the filename.
     - Having both _"BPMs"_ and _"Measurements"_ activated will therefore lead to a single output file, with two charts (for the horizontal and vertical planes) and a combination of BPM-names and Measurement-names as legend.
     - Having both _"BPMs"_ and _"Measurements"_ deactivated will lead to `N = No. of selected BPMs x No. of selected Measurements` files, containing two charts for the planes with each showing only a single spectrum.
         Both, BPM name and Measurement name will be in the filename.
@@ -376,14 +376,15 @@ which will calculate the optics parameters based on the spectra of the [currentl
     </center>
     </figure>
 
-You have the choice to combine the analysis of all files into a single optics, using the individual measurements for statistics, in which case you need to **specify a descriptive output name** for the analysis, the prefix of which will already be provided.
-If you don't check the _Combine Analysis_ checkbox, based on the name of the `harpy` output files as seen in the table.
-In any case, the results are stored in the `Results` folder, and will be automatically loaded into the [Optics Panel](optics_panel.md).
+It is possible to combine all selected files into a single optics analysis, using the individual measurements for statistics.
+In this case **a descriptive output name** should be specified for the analysis, the prefix of which will already be provided as a suggestion.
+When unchecking the _Combine Analysis_ option, each open file will produce an optics analysis named based on the name of the `harpy` output files, as displayed in the table at the top of this panel.
+All optics analysis results are stored in the `Results` folder, and will be automatically loaded into the [Optics Panel](optics_panel.md).
 
 ### Settings
 
 By expanding the _Settings_ section at the bottom of the dialog
-you can optionally change the [settings](settings.md) of the _[Optics tab](settings.md#optics-tab)_.
+one can change the [settings](settings.md) of the _[Optics tab](settings.md#optics-tab)_.
 
 !!! warning "Changing the Settings"
     This will **change the global settings** for all subsequent analysis runs,
