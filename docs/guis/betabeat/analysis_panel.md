@@ -325,10 +325,10 @@ So this is the same as _Points_ but with additional lines between the markers.
 
 Two methods are available to save the chart to file:
 
-- ++"GUI"++:
+- ++"GUI"++ :
 This button will open a dialog asking you where to save the **chart component directly from java** as a **PNG file**.
 The output will look exactly like the chart in the GUI, as it is rendered directly from `java`.
-- ++"PDF"++:
+- ++"PDF"++ :
 This button allows you pass the currently selected data to the [`plot_spectrum` script][omc3_plot_spectrum] to save the spectrum as a **PDF file**.
 As the spectrum is completely rendered in `python` the output will look different from the chart in the GUI, but will show in general the same information, with some important caveats listed below.
 
@@ -355,6 +355,9 @@ As the spectrum is completely rendered in `python` the output will look differen
 
 ## Do Optics Dialog
 
+The ++"Get Optics"++{.green-gui-button} button opens a dialog that allows you to select the settings for the [optics analysis][optics_analysis],
+which will calculate the optics parameters based on the spectra of the [currently selected files](#loading-files).
+
 === "Closed Settings"
 
     <figure>
@@ -368,15 +371,30 @@ As the spectrum is completely rendered in `python` the output will look differen
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/do_analysis_dialog_open_settings.png" width="100%" alt="The 'Do Optics' Dialog with open settings"/>
+    <img src="../../assets/images/betabeat_gui/do_optics_dialog_settings.png" width="100%" alt="The 'Do Optics' Dialog with open settings"/>
     <figcaption>The "Do Optics" Dialog with open settings.</figcaption>
     </center>
     </figure>
+
+You have the choice to combine the analysis of all files into a single optics, using the individual measurements for statistics, in which case you need to **specify a descriptive output name** for the analysis, the prefix of which will already be provided.
+If you don't check the _Combine Analysis_ checkbox, based on the name of the `harpy` output files as seen in the table.
+In any case, the results are stored in the `Results` folder, and will be automatically loaded into the [Optics Panel](optics_panel.md).
+
+### Settings
+
+By expanding the _Settings_ section at the bottom of the dialog
+you can optionally change the [settings](settings.md) of the _[Optics tab](settings.md#optics-tab)_.
+
+!!! warning "Changing the Settings"
+    This will **change the global settings** for all subsequent analysis runs,
+    not just for the current one!
+    You need to click the ++"Apply"++ button to actually apply these settings before the run.
 
 [additional_defaults]: defaults.md#additional-gui-defaults
 [harpy_analysis]: ../../measurements/physics/harpy.md
 [bad_bpms]: ../../measurements/physics/bpm_filtering.md
 [amplitude_detuning_analysis]: ../../measurements/procedures/ampdet.md
+[optics_analysis]: ../../measurements/physics/optics.md
 
 [omc3_linfile_clean]: https://pylhc.github.io/omc3/entrypoints/scripts.html#linfile-cleaning
 [omc3_update_nattune]: https://pylhc.github.io/omc3/entrypoints/scripts.html#update-natural-tune-in-lin-files
