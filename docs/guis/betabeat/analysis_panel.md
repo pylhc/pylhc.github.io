@@ -11,11 +11,15 @@ The analysis panel provides graphical interface to visualize results from harmon
 
 ## Loading Files
 
-The buttons at the top of the panel provide functionality to load and remove files from the analysis table as well as to start the [optics analysis](#do-optics-dialog).
+When the `harpy` analysis is started from the [BPM-Panel](bpm_panel.md), the results are automatically loaded when the analysis task has finished.
+The buttons at the top of the panel provide functionality to manually load files and remove entries from the analysis table,
+as well as to start the [optics analysis](#do-optics-dialog).
 
 - ++"Open Files"++{.green-gui-button}: Opens a dialog to select files to be loaded. The files will be **copied** into the `Measurements` folder and opened from there.
 - ++"Attach Files"++{.yellow-gui-button}: Opens a dialog to select files to be loaded. The files will be **opened from their current location**.
 - ++"Delete Files"++{.red-gui-button}: Removes the selected files from the analysis table.
+  A dialog will pop up, asking if the files should only be removed from this table, i.e. from being loaded in memory (see admonition below), or if they should also be deleted from disk.<br>
+  :fontawesome-solid-triangle-exclamation:{.warning-colored} Due to [an unresolved issue][issue268]{target=_blank} it is currently **not advised** to delete files from disk.
 - ++"Get Optics"++{.green-gui-button}: Opens [the optics analysis dialog](#do-optics-dialog) which can trigger an external python script to compute the optics functions from the harmonic analysis data of the selected files.
 
 <figure>
@@ -31,7 +35,7 @@ The buttons at the top of the panel provide functionality to load and remove fil
 
 ## The Time / Space Tab
 
-In the `Time / Space` tab one can examine the phases and amplitudes over the length of the accelerator (per BPM), and can clean the values if needed.
+In the `Time / Space` tab one can examine the phases and amplitudes of different spectral lines over the length of the accelerator (per BPM), and perform cleaning procedures if needed.
 
 <figure>
   <center>
@@ -42,10 +46,11 @@ In the `Time / Space` tab one can examine the phases and amplitudes over the len
 
 In the lists on the left-hand side, one can select from the resulting values of the [`harpy` analysis].
 These correspond to the columns in the `.lin[xy]` files and are separated by plane.
-In here you can find phase (`PHASE`), frequency (`FREQ`) and amplitude (`AMP`) of the lines identified by `harpy` and their respective errors (`ERR`).
+These include phase (`PHASE`), frequency (`FREQ`) and amplitude (`AMP`) of the lines identified by `harpy` as well as their respective errors (`ERR`).
 The lines are multiples of the found tunes (`TUNE`) and can be identified by the two numbers in their name,
-which correspond to the multiples of the horizontal and vertical tune, respectively, using underscores to represent a minus sign.
-In addition to these lines additional data from the harmonic analysis is available, such as:
+which correspond to the multiples of the horizontal and vertical tune, respectively, using underscores to represent a minus sign;
+e.g. `PHASE1_2`, as seen in the screenshot above, corresponds to the phase of the line at frequency `Qx - 2Qy`.
+In addtion, further data from the harmonic analysis is available, such as:
 
 - `TUNE`: (driven) tune
 - `NATTUNE`: natural tune (if available)
@@ -55,7 +60,7 @@ In addition to these lines additional data from the harmonic analysis is availab
 - `PK2PK`: peak-to-peak oscillation value
 - `NOISE`: estimated cleaned noise
 
-It is possible to select multiple files (++ctrl++ / ++shift++) at once to compare the same value between them and also multiple entries, e.g. to compare the amplitudes of different lines.
+It is possible to select multiple files (++ctrl++ / ++shift++) at once, to compare the same quantities between measurements, and also multiple entries, e.g. to compare the amplitudes of different lines.
 
 !!! tip "Deselection"
     To see the data of one plane only, one can deselect the other plane by either chosing `None` at the bottom of the list
@@ -100,9 +105,11 @@ which trigger the python [`linfile_clean` script][omc3_linfile_clean]{target=_bl
     </center>
     </figure>
 
-This section allows for the most manual cleaning of the data: You can set the cursors (lines) around the data that you want to keep,
-either manually by dragging their markers on the right-hand-side of the chart, or by using the ++"Set Cursors"++ button,
-which will set them at the position corresponding to the _Sigmas_, i.e. the number of standard deviations away from the mean **of all data currently shown in the chart**.
+This section allows for the most manual cleaning of the data by setting the cursors (lines) around the data to keep.
+This can be done manually by dragging their markers on the right-hand-side of the chart.
+They can also be set automatically at the position corresponding to the _Sigmas_,
+i.e. the number of standard deviations away from the mean **of all data currently shown in the chart**,
+by using the ++"Set Cursors"++ button.
 Then press ++"Clean"++{.red-gui-button} to remove the data outside of the selected area, as shown in the images above.
 
 !!! info "Automatic Data Selection"
@@ -115,8 +122,8 @@ Then press ++"Clean"++{.red-gui-button} to remove the data outside of the select
 
 #### Auto Clean
 
-A more automated cleaning approach can be utilized with the help of the _outlier filter_ (see Section 3.2.3 in [Malina2018][malina2018]
-or Section II.E.1 in [Dilly2023][dilly2023]), which iteratively removes points in the tails of the data until the distribution of the remaining data is close to a normal distribution.
+A more automated cleaning approach can be utilized with the help of the _outlier filter_ (see Section 3.2.3 in [Malina2018][malina2018]{target=_blank}
+or Section II.E.1 in [Dilly2023][dilly2023]{target=_blank}), which iteratively removes points in the tails of the data until the distribution of the remaining data is close to a normal distribution.
 The _limit_ parameter defines a "save zone" in standard deviations around the mean, in which data will not be removed (default: `0.0`, i.e. any datapoint could be removed).
 This cleaning can be run by simply pressing the ++"Auto"++{.red-gui-button} button and is then applied to **all data currently shown in the chart**, individually per column, plane and `sdds`-file.
 
@@ -229,16 +236,15 @@ The lines in the charts will only update after clicking ++"Approve"++.
     </center>
     </figure>
 
-
 ### Natural Tune Window
 
-The natural tune window controls help you, to correctly identify the natural tune in the spectrum and assign it to the `NATTUNE`-column in the lin-file
-using the [`update_nattune_in_linfile` script][omc3_update_nattune]{target=_blank} and
-helps to avoid re-running the `harpy` analysis with different tolerance windows and natural tunes settings.
+The natural tune window controls help to correctly identify the natural tune in the spectrum and assign it to the `NATTUNE`-column in the lin-file
+using the [`update_nattune_in_linfile` script][omc3_update_nattune]{target=_blank}.
+This avoids having to re-run the `harpy` analysis with different tolerance windows and natural tunes settings.
 Accurate identification of the natural tune is important e.g. for [amplitude detuning analysis][amplitude_detuning_analysis].
 
-There are two main reasons, why the natural tune line might be misidentified in the spectrum by the `harpy` analysis,
-even when the natural tune and tolerance window are set "correctly" in the [`Tune Settings`](settings.md#tunes-tab):
+There are two main reasons for a possible misidentification of the natural tune line in the spectrum by the `harpy` analysis,
+even when the values are set "correctly" (in accordance with the model) in the [`Tune Settings`](settings.md#tunes-tab):
 
 - Due to detuning, the natural tune line can be shifted and might not be any longer within the tolerance window.
 This can in particular happen during a wide range of amplitude detuning scans, for which one does not want to change the tolerance window at every kick,
@@ -271,7 +277,7 @@ both of which are taken from the [`Tune Settings`](settings.md#tunes-tab).
 </center>
 </figure>
 
-You can now adapt the cursors to your liking, such that the natural tune line is the highest line between them,
+Adapt the cursors such that the natural tune line is the highest line between them,
 avoiding resonances and the driven tune line.
 For measurements with many BPMs not showing a clear natural tune line, tightening the window can also help reducing the errorbar on the tune.
 
@@ -315,7 +321,8 @@ Use the first drop-down in the chart options to select the display type of the c
 This shows the spectrum in a stem plot, i.e. as thin vertical lines for each measured frequency, starting at the bottom of the chart and ending in a marker at the amplitude value.
 - **Bars**:
 This also shows the spectrum in a stem-like plot, but with wider stems and no markers at the top.
-This was the default in GUI versions pre 2019 and comes with a warning: When plotting multiple files/BPMs the bars are "stacked" **next** to each other, which makes it hard to see which frequency they actually belong to.
+This was the default in GUI versions pre 2019 and comes with a warning: When plotting multiple files/BPMs the bars are "stacked" **next** to each other,
+which makes it hard to see which frequency they actually belong to.
 - **Points**:
 This shows the spectrum in a scatter plot, i.e. as markers for each frequency set at the corresponding amplitude.
 These are the markers of the _Stems_ plot, but without the actual stems.
@@ -332,9 +339,10 @@ The output will look exactly like the chart in the GUI, as it is rendered direct
 This button allows passing the currently selected data to the [`plot_spectrum` script][omc3_plot_spectrum]{target=_blank} to save the spectrum as a **PDF file**.
 As the spectrum is completely rendered by the `python` script, the output will look different from the chart in the GUI but will show in general the same information, with some important caveats listed below.
 
-    - Clicking the button you will be requested to select an output **directory**.
+    - Clicking the button will open a dialog to select an output **directory**.
       As multiple files might be created, the filenames are determined automatically.
-      Then a dialog will pop up, in which you can change the path again, but also define which data should be plotted in the same file:
+      Subsequently, a second dialog will appear, displaying the selected path (modifiable if required).
+      In this window, the data to be grouped within the same plots/files can be defined:
 
         <figure>
         <center>
@@ -344,18 +352,18 @@ As the spectrum is completely rendered by the `python` script, the output will l
         </figure>
 
     - In any case, the spectrum of horizontal and vertical BPMs will be split into separate plots on the top and bottom of the same file.
-        Which also means, that no matter in which plane you have selected a BPM - if it has a horizontal and a vertical spectrum they will both be plotted.
+      Which also means, that no matter in which plane you have selected a BPM - if it has a horizontal and a vertical spectrum they will both be plotted.
     - _"Combine Plots by BPMs"_: Will plot all selected BPMs into the same plots in the same file, with the BPM name in the legend.
-        If deactivated, there will be separate files per BPM with the BPM name in the filename.
+      If deactivated, there will be separate files per BPM with the BPM name in the filename.
     - _"Combine Plots by Measurements"_: Will plot all selected Mesurements into the same plots in the same file,  with the Measurement name in the legend.
-        If deactivated, there will be separate files per Measurement with the Measurement name in the filename.
-    - Having both _"BPMs"_ and _"Measurements"_ activated will therefore lead to a single output file, with two charts (for the horizontal and vertical planes) and a combination of BPM-names and Measurement-names as legend.
+      If deactivated, there will be separate files per Measurement with the Measurement name in the filename.
+    - Having both _"BPMs"_ and _"Measurements"_ activated will therefore lead to a single output file, with a chart for each plane and a combination of BPM and Measurement names as legend.
     - Having both _"BPMs"_ and _"Measurements"_ deactivated will lead to `N = No. of selected BPMs x No. of selected Measurements` files, containing two charts for the planes with each showing only a single spectrum.
-        Both, BPM name and Measurement name will be in the filename.
+      Both, BPM and Measurement name will be in the filename.
 
 ## Do Optics Dialog
 
-The ++"Get Optics"++{.green-gui-button} button opens a dialog that allows you to select the settings for the [optics analysis][optics_analysis],
+The ++"Get Optics"++{.green-gui-button} button opens a dialog to select the settings and run the [optics analysis][optics_analysis],
 which will calculate the optics parameters based on the spectra of the [currently selected files](#loading-files).
 
 === "Closed Settings"
@@ -402,6 +410,7 @@ one can change the [settings](settings.md) of the _[Optics tab](settings.md#opti
 [omc3_plot_spectrum]: https://pylhc.github.io/omc3/entrypoints/plotting.html#plot-spectrum
 [malina2018]: https://repository.cern/records/bxyez-pt407
 [dilly2023]: http://cds.cern.ch/record/2883681/
+[issue268]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/268
 
 *[LHC]: Large Hadron Collider
 *[SPS]: Super Proton Synchrotron

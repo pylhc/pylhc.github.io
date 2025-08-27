@@ -12,7 +12,7 @@ The settings window can be initialized by the gear icon <span class="settings-ic
 
 !!! info "Defaults"
     The "Default" values given here are the defaults used in `python`,
-    These might not be up-to-date, check the [omc3 python documentation][python-docs]{:target="_blank"} for more information.
+    These might not be up-to-date, check the [omc3 python documentation][python-docs]{target=_blank} for more information.
     They might also be different from the defaults used in the GUI, as there are some defaults set upon startup determined by the selected machine.
     These GUI defaults are directly visible in the settings, while the `python` defaults are used when no value is given.
 
@@ -22,7 +22,7 @@ There is some general behaviour, that is true for all settings-tabs:
 
 - **Empty** text-fields are treated as _"Not given"_ and the **`python` defaults** will be used.
 - **Hovering the mouse over the label** of a setting will give additional information.
-  This is often the `help` provided by the corresponding `python` argument. Check the [omc3 python documentation][python-docs]{:target="_blank"} for more information.
+  This is often the `help` provided by the corresponding `python` argument. Check the [omc3 python documentation][python-docs]{target=_blank} for more information.
 - Entries in the settings that are lists (e.g. _Turns_, which will be `STARTTURN ENDTURN`) are given as **space-separated** values, NOT comma separated.
 - Of the buttons at the bottom, the top row refers to the current tab, the bottom row to all tabs.
 - Settings that have been changed since the last ++"Apply"++ / ++"Apply All"++ are <span style="color: red">highlighted in red</span> and can be reverted with the ++"Reset"++ button.
