@@ -85,6 +85,10 @@ which trigger the python [`linfile_clean` script][omc3_linfile_clean]{target=_bl
     You can therefore specify to **keep these BPMs** in the [GUI Cleaning section of the Cleaning Settings Tab](settings.md#gui-cleaning) and they will be kept,
     even if they are outside the given [cut-offs](#clean) or identified as [outliers](#auto-clean).
 
+!!! tip "Always remove BPMs"
+    If BPMs show up regularly as outliers in the data, independent of machine configuration, it is likely that they are [faulty BPMs][bad_bpms].
+    You can specify to **always clean these BPMs** during the cleaning of the data in the `harpy` analysis via the `Bad BPMs` field in the [Cleaning Settings Tab](settings.md#cleaning-tab).
+
 #### Clean
 
 === "Before Cleaning"
@@ -122,8 +126,9 @@ Then press ++"Clean"++{.red-gui-button} to remove the data outside of the select
 
 #### Auto Clean
 
-A more automated cleaning approach can be utilized with the help of the _outlier filter_ (see Section 3.2.3 in [Malina2018][malina2018]{target=_blank}
-or Section II.E.1 in [Dilly2023][dilly2023]{target=_blank}), which iteratively removes points in the tails of the data until the distribution of the remaining data is close to a normal distribution.
+A more automated cleaning approach can be utilized with the help of the _outlier filter_
+(see Section 3.2.3 in [Malina2018][malina2018]
+or Section II.E.1 in [Dilly2023][dilly2023]), which iteratively removes points in the tails of the data until the distribution of the remaining data is close to a normal distribution.
 The _limit_ parameter defines a "save zone" in standard deviations around the mean, in which data will not be removed (default: `0.0`, i.e. any datapoint could be removed).
 This cleaning can be run by simply pressing the ++"Auto"++{.red-gui-button} button and is then applied to **all data currently shown in the chart**, individually per column, plane and `sdds`-file.
 
@@ -170,7 +175,6 @@ Depending on the number of selected files and BPMs as well as the frequency reso
 
 Use the controls at the bottom left of the panel for the additional functionality, which is described below.
 
-
 ### Resonance Lines
 
 <figure>
@@ -207,7 +211,6 @@ Clicking the ++"Custom"++ button will open a dialog to manually enter frequency 
 
 Use ++"Add Line"++{.green-gui-button} to add a new line based on your input to the table and ++"Remove"++{.red-gui-button} to remove the currently selected line.
 The lines in the charts will only update after clicking ++"Approve"++.
-
 
 === "Natural Tune Line"
 
@@ -355,7 +358,7 @@ As the spectrum is completely rendered by the `python` script, the output will l
       Which also means, that no matter in which plane you have selected a BPM - if it has a horizontal and a vertical spectrum they will both be plotted.
     - _"Combine Plots by BPMs"_: Will plot all selected BPMs into the same plots in the same file, with the BPM name in the legend.
       If deactivated, there will be separate files per BPM with the BPM name in the filename.
-    - _"Combine Plots by Measurements"_: Will plot all selected Mesurements into the same plots in the same file,  with the Measurement name in the legend.
+    - _"Combine Plots by Measurements"_: Will plot all selected Measurements into the same plots in the same file,  with the Measurement name in the legend.
       If deactivated, there will be separate files per Measurement with the Measurement name in the filename.
     - Having both _"BPMs"_ and _"Measurements"_ activated will therefore lead to a single output file, with a chart for each plane and a combination of BPM and Measurement names as legend.
     - Having both _"BPMs"_ and _"Measurements"_ deactivated will lead to `N = No. of selected BPMs x No. of selected Measurements` files, containing two charts for the planes with each showing only a single spectrum.
