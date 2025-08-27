@@ -42,7 +42,7 @@ Use the ++"Open Files"++{.green-gui-button} button to open turn-by-turn data.
 Multiple files can be opened at once and are added to the current `Measurements` directory, as well as to the table of loaded files in the panel.
 If the file contained multiple bunches, they are added as separate entries (see [below](#table-of-loaded-files)).
 
-If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, a window will open to prompt the user with the ["Do analysis Dialog"](#do-analysis-dialog)
+If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, a window will open to prompt the user with the ["Do analysis Dialog"](#do-analysis-dialog).
 
 !!! tip "Reopening Files"
     - If you are opening a file with the same filename as an already opened file, an error will be thrown.
