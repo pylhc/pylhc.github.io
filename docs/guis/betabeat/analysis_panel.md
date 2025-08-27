@@ -171,7 +171,8 @@ Depending on the number of selected files and BPMs as well as the frequency reso
     The BPMs in the list are sorted alphabetically.
     Use the text field and the ++"Find BPM"++ button to quickly find BPMs in the list and **automatically select them**.
     The text input is based on regular expressions and **all BPMs that match the pattern** in both planes will be selected.
-    Note that `^.*` and `.*$` will be added automatically to the string to look for your pattern **anywhere** in the BPM name.
+    Note that `^.*` and `.*$` will be added automatically to start and end of the string respectively,
+    to look for your pattern **anywhere** in the BPM name.
 
 Use the controls at the bottom left of the panel for the additional functionality, which is described below.
 

@@ -134,7 +134,8 @@ You can select multiple measurements at once to compare them, but only one BPM p
     The BPMs in the list are sorted by longitudinal position in model loaded when the file was opened.
     Use the text field and the ++"Find BPM"++ button to quickly find BPMs in the list and **automatically select them**.
     The text input is based on regular expressions and **the first BPM matching the pattern** will be selected.
-    Note that `^.*` and `.*$` will be added automatically to the string to look for your pattern **anywhere** in the BPM name.
+    Note that `^.*` and `.*$` will be added automatically to start and end of the string respectively,
+    to look for your pattern **anywhere** in the BPM name.
 
 ### Bad BPMs
 
