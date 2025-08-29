@@ -101,30 +101,20 @@ a.cern_internal {
   cursor: pointer;
 }
 
-.guilabel {
-    white-space: nowrap;
-    padding: 0.5px 6px;
-    width: fit-content;
-    border-radius: 4px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.guilabel {
+.rdtfeeddown_guilabel {
     white-space: nowrap;
     padding: 0.5px 12px;
     width: fit-content;
     border-radius: 0px;
     font-weight: bold;
     display: inline-block;
-    background: var(--guilabel-bg, #3c3c3c);
-    color: var(--guilabel-fg, #ffffff);
+    background: var(--rdtfeeddown_guilabel-bg, #3c3c3c);
+    color: var(--rdtfeeddown_guilabel-fg, #ffffff);
     box-shadow: 0 1px 2px rgba(0,0,0,0.12);
-    border: white;
     font-size: 1em;
 }
 
-a.tab-link {
+a.rdtfeeddown_tab-link {
     display: inline-block;
     padding: 0.15em 0.7em;
     border-radius: 0px;
@@ -139,7 +129,7 @@ a.tab-link {
     box-shadow: 0 2px 6px rgba(21,101,192,0.08);
     transition: background 0.2s, color 0.2s, border-bottom 0.2s;
 }
-a.tab-link:hover, a.tab-link:focus {
+a.rdtfeeddown_tab-link:hover, a.rdtfeeddown_tab-link:focus {
     background: #484848;
     color: #ffffff;
 }
