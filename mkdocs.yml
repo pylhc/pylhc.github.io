@@ -191,6 +191,9 @@ nav:
       - About: guis/chroma/gui.md
     - RDT Feeddown GUI:
       - About: guis/rdt_feeddown/gui.md
+      - Input Tab: guis/rdt_feeddown/input.md
+      - Validation Tab: guis/rdt_feeddown/validation.md
+      - Correction Tab: guis/rdt_feeddown/correction.md
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
         - Safety Checks: guis/multiturn/safety.md
