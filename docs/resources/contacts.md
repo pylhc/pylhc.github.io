@@ -75,7 +75,9 @@ Michi Hostettler!
 
 [Mattermost: NXCals][mm_nxcals]
 
-- Rafal Mucha
+- Jakub Wozniak
+- Piotr Sowinski
+- Vito Baggiolini
 - Michi Hostettler
 
 ### Acc-Models
