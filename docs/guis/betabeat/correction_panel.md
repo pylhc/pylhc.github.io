@@ -4,7 +4,9 @@ The `Correction` panel displays the corrections computed from the `Optics` panel
 
 It provides an `Open Knob Panel` button to access the LHC beam process list.
 
-## The Knob Panel
+## Knob Creation
+
+### The Knob Panel
 
 Through the `Knob Panel`, corrections can be provided directly inside the LHC beam system.
 
@@ -31,3 +33,5 @@ By selecting one, the user can examine or visualize the values attributed to eac
 
 !!! todo
     Include a screenshot of the Knob Panel view knobs chart
+
+## Correction Checks

@@ -209,6 +209,7 @@ nav:
       - BPM-Calibration: measurements/physics/bpm_calibration.md
       - BPM-Filtering: measurements/physics/bpm_filtering.md
       - Harmonic Analysis: measurements/physics/harpy.md
+      - Optics Analysis: measurements/physics/optics.md
       - Coupling: measurements/physics/coupling.md
       - K-Mod: measurements/physics/kmod.md
       - Linear IR Optics: measurements/physics/ir_linear_optics.md
