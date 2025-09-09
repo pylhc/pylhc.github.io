@@ -60,7 +60,7 @@ In theory, any kind of mask is possible, given the correct `executable` is provi
     twiss;
     sixtrack, cavall, radius=0.017;
     ```
-    
+
     Python masks using `cpymad` can do the same task with:
     ```python
     from cpymad.madx import Madx

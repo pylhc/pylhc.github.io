@@ -5,6 +5,10 @@
 Here are a few checks to perform before starting measurements.
 These are updated as much as possible for Run 3 values.
 
+!!! tip "Multiturn Application"
+    Measurements are performed using the Multiturn application.
+    [See here](../../guis/multiturn/gui.md) for a full section about this GUI and how to use it.
+
 - [ ] <details class="nodeco"><summary>Make Sure Intensity Is below $10^{10}$ppb until Local Corrections Are In</summary>
       <p> After local corrections, we can move to having 3 bunches (each below $10^{10}$ppb) evenly spaced along the ring.
       </p></details>
@@ -14,7 +18,7 @@ These are updated as much as possible for Run 3 values.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Mask the Appropriate BLMs</summary>
-      <p> It is possible tp "mask" some of the BLMs, which means making sure they won't trigger any beam dump. They are essentially ignored in the interlocked system when masked.
+      <p> It is possible to "mask" some of the BLMs, which means making sure they won't trigger any beam dump. They are essentially ignored in the interlocked system when masked.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Turn Off the Landau Octupoles</summary>
@@ -38,6 +42,10 @@ These are updated as much as possible for Run 3 values.
 
 - [ ] <details class="nodeco"><summary>Make Sure the Collimators Are Open</summary>
       <p> There should be a pre-made setting for this.
+      </p></details>
+
+- [ ] <details class="nodeco"><summary>Deactivate Injection Protection</summary>
+      <p> Only if measuring at injection, ask the EIC to deactivate this setting.
       </p></details>
 
 !!! note "Timing Tables"
@@ -89,7 +97,7 @@ Here are some general checks on should always keep in mind when performing measu
 ## General Corrections Caveats
 
 - [ ] <details class="nodeco"><summary>Beware of the Corrections Signs</summary>
-      For a quick (but rough) reference see [this old note][polarity_acc_note] [this 2022 presentation][riccardo_lhc_polarity] by Riccardo. 
+      For a quick (but rough) reference see [this old note][polarity_acc_note]{target=_blank} and [this 2022 presentation][riccardo_lhc_polarity]{target=_blank} by Riccardo.
       - [ ] <details class="nodeco"><summary>Calculated Global Corrections</summary>
             <p> The calculated global correction are really corrections and should be trimmed in with a positive sign.
             </p></details>

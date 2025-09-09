@@ -5,18 +5,18 @@ We welcome contributions, but before you do, please read the following guideline
 
 ## Submission context
 
-#### Got a question or problem?
+### Got a question or problem?
 
 If you have questions on some of the packages' functionality, and the available documentation does not provide answers, you can submit them as new issues on GitHub.
-If you spot missing parts in the documentation, feel free to report it in an issue and open a Pull Request that fixes it. 
+If you spot missing parts in the documentation, feel free to report it in an issue and open a Pull Request that fixes it.
 
-#### Found a bug?
+### Found a bug?
 
 If you found a bug in the source code, you can help us by submitting a bug report in a new issue on GitHub.
 If you wish to contribute a solution, you can submit a Pull Request with a fix.
 However, before doing so, please read the submission guidelines bellow.
 
-#### Missing a feature?
+### Missing a feature?
 
 You can request a new feature by opening an issue on GitHub.
 If you would like to implement a new feature, please submit an issue with a proposal first, to be sure that it is necessary and appropriate to the package, and to discuss implementation details.
@@ -29,13 +29,13 @@ This will also allow us to better coordinate our efforts, prevent duplication of
 
 ## Submission guidelines
 
-#### Submitting an issue
+### Submitting an issue
 
 Before you submit an issue, please search the issue tracker, maybe an issue for your problem already exists and the discussion might inform you of fixes or workarounds readily available.
 
 If you are submitting a bug report, please also provide a minimal scenario to reproduce it.
 
-#### Submitting a Pull Request (PR)
+### Submitting a Pull Request (PR)
 
 First, search GitHub for an open or closed PR that relates to your submission.
 If you do not find a related issue or PR, or if your PR is the implementation for an issue you open, go ahead.
@@ -51,7 +51,7 @@ If you do not find a related issue or PR, or if your PR is the implementation fo
   If new changes are suggested, make the required updates and push the changes again.
   Please do not require a review until all the quality checks pass.
 
-#### Quality checks
+### Quality checks
 
 - Unit and accuracy tests are run automatically through CI [Github Actions][gh_actions]{target=_blank}.
   A `README.md` file in the `.github/workflows` directory details our CI jobs.
@@ -70,18 +70,18 @@ In case you want to contribute to a package's development, you should install it
 
 ```bash
 git clone https://github.com/pylhc/package_name
-pip install --editable package_name
+python -m pip install --editable package_name
 ```
 
 ??? tip "Installing Extras"
     You can install extra dependencies (as defined in `setup.py`) suited to your use case with the following commands:
 
     ```bash
-    pip install --editable package_name[test]
-    pip install --editable package_name[test,doc]
-    pip install --editable package_name[all]
+    python -m pip install --editable package_name[test]
+    python -m pip install --editable package_name[test,doc]
+    python -m pip install --editable package_name[all]
     ```
-    
+
     For development purposes, we recommend using the `all` extra to be fully set up.
 
 ### Naming Conventions

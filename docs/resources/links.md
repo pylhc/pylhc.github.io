@@ -38,7 +38,6 @@
 
 The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_internal} webpage.
 
-
 !!! warning
     All of these are <span class="cern_internal"> only accessible from CERN Network </span>.
 
@@ -53,7 +52,7 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
     ```bash
     jws https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
     ```
-    
+
 === "Beta-Beat-OMC3"
 
     _PRO_
@@ -117,7 +116,7 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 * [Setup HTCondor for local use][htcondor_local]{target=_blank}
 * [More HTCondor hints in the Python wrapper][htcondor_python]{target=_blank}
 
-## CERN 
+## CERN
 
 ### Webtools
 
