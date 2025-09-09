@@ -9,6 +9,10 @@
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
+         <loc>https://pylhc.github.io/guis/betabeat/ampdet.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
          <loc>https://pylhc.github.io/guis/betabeat/analysis_panel.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
@@ -17,7 +21,15 @@
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
+         <loc>https://pylhc.github.io/guis/betabeat/betabeatsource.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
          <loc>https://pylhc.github.io/guis/betabeat/bpm_panel.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://pylhc.github.io/guis/betabeat/common_components.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
@@ -25,11 +37,15 @@
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
+         <loc>https://pylhc.github.io/guis/betabeat/defaults.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
          <loc>https://pylhc.github.io/guis/betabeat/gui.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/guis/betabeat/omc3.html</loc>
+         <loc>https://pylhc.github.io/guis/betabeat/model_creation.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
@@ -37,23 +53,15 @@
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/guis/developing/ide_install.html</loc>
+         <loc>https://pylhc.github.io/guis/betabeat/settings.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/guis/developing/kmod_special.html</loc>
+         <loc>https://pylhc.github.io/guis/chroma/gui.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/guis/developing/releases.html</loc>
-         <lastmod>2025-09-09</lastmod>
-    </url>
-    <url>
-         <loc>https://pylhc.github.io/guis/kmod/autotrim.html</loc>
-         <lastmod>2025-09-09</lastmod>
-    </url>
-    <url>
-         <loc>https://pylhc.github.io/guis/kmod/full_ip_trim.html</loc>
+         <loc>https://pylhc.github.io/guis/kmod/analyzing.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
@@ -61,15 +69,11 @@
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/guis/kmod/individual_modulation.html</loc>
+         <loc>https://pylhc.github.io/guis/kmod/modulating.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/guis/kmod/load_model.html</loc>
-         <lastmod>2025-09-09</lastmod>
-    </url>
-    <url>
-         <loc>https://pylhc.github.io/guis/kmod/trim_analysis.html</loc>
+         <loc>https://pylhc.github.io/guis/multiturn/excitation.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
@@ -77,27 +81,35 @@
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/howto/about.html</loc>
+         <loc>https://pylhc.github.io/guis/multiturn/safety.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/howto/setup/git.html</loc>
+         <loc>https://pylhc.github.io/guis/multiturn/scheduler.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/howto/setup/guis.html</loc>
+         <loc>https://pylhc.github.io/guis/rdt_feeddown/gui.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/howto/setup/shared_filesystems.html</loc>
+         <loc>https://pylhc.github.io/guis/segment_by_segment/gui.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/howto/teleworking/access.html</loc>
+         <loc>https://pylhc.github.io/guis/usage/guidelines.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
-         <loc>https://pylhc.github.io/howto/wiki/editing.html</loc>
+         <loc>https://pylhc.github.io/guis/usage/ide_install.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://pylhc.github.io/guis/usage/releases.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://pylhc.github.io/guis/usage/remote.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
@@ -197,6 +209,10 @@
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
+         <loc>https://pylhc.github.io/measurements/physics/harpy.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
          <loc>https://pylhc.github.io/measurements/physics/ir_linear_optics.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
@@ -206,6 +222,10 @@
     </url>
     <url>
          <loc>https://pylhc.github.io/measurements/physics/kmod.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://pylhc.github.io/measurements/physics/optics.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
@@ -265,6 +285,14 @@
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
+         <loc>https://pylhc.github.io/packages/development/ide_setup.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://pylhc.github.io/packages/development/managing.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
          <loc>https://pylhc.github.io/packages/irnl/about.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
@@ -282,10 +310,6 @@
     </url>
     <url>
          <loc>https://pylhc.github.io/packages/omc3/getting_started.html</loc>
-         <lastmod>2025-09-09</lastmod>
-    </url>
-    <url>
-         <loc>https://pylhc.github.io/packages/omc3/know_how.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
@@ -333,6 +357,10 @@
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
+         <loc>https://pylhc.github.io/resources/git_setup.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
          <loc>https://pylhc.github.io/resources/links.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
@@ -345,7 +373,19 @@
          <lastmod>2025-09-09</lastmod>
     </url>
     <url>
+         <loc>https://pylhc.github.io/resources/remote_access.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://pylhc.github.io/resources/shared_filesystems.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
          <loc>https://pylhc.github.io/resources/templates.html</loc>
+         <lastmod>2025-09-09</lastmod>
+    </url>
+    <url>
+         <loc>https://pylhc.github.io/resources/wiki.html</loc>
          <lastmod>2025-09-09</lastmod>
     </url>
 </urlset>
