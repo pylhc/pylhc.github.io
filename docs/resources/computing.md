@@ -1,6 +1,6 @@
 # Computing Resources for ABP and OMC Members
 
-This page combines information and links to computing resources for OMC members. 
+This page combines information and links to computing resources for OMC members.
 
 ## The Dev & Optics Servers
 
@@ -43,7 +43,7 @@ The servers are hooked on to the Technical Network and can only be ssh into from
 ## HTCondor
 
 CERN provides a batch service based on [HTCondor][htcondor]{target=_blank}.
-Computing jobs that run on individual nodes with up to 32 CPU cores per node can be submitted to the CERN batch service. 
+Computing jobs that run on individual nodes with up to 32 CPU cores per node can be submitted to the CERN batch service.
 A good documentation can be found on the [batch docs website][cern_htcondor_docs]{target=_blank}.
 The OMC team maintains a python package, [pylhc_submitter](../packages/pylhcsubmitter/about.md), that can be used to submit jobs to the `HTCondor` batch service.
 

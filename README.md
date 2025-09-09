@@ -18,7 +18,7 @@ Get a local copy of this repository, set up a `Python3.6+` environment and insta
 
 ```bash
 git clone https://github.com/pylhc/pylhc.github.io
-pip install mkdocs mkdocs-material mkdocs-minify-plugin
+python -m pip install mkdocs mkdocs-material mkdocs-minify-plugin
 ```
 
 Create a branch (from master) and make your changes.

@@ -6,7 +6,7 @@ Knowledge of calibration factors can be used to increase the accuracy of measure
 
 There are currently two methods to determine BPM calibration factors, using either the ratio between the dispersion or the $\beta$-functions computed from phase and from amplitude.
 A special type of optics called _Ballistic Optics_ have been designed for the measurement of calibration factors.
-The most efficient way to get those factors is via an undisturbed function, i.e. in a drift by turning off quadrupoles, creating a standard drift space between BPMs.  
+The most efficient way to get those factors is via an undisturbed function, i.e. in a drift by turning off quadrupoles, creating a standard drift space between BPMs.
 
 !!! warning "Calibration for Ballistic Optics"
     The computation of BPM calibration factors is only done for ballistic optics and their related BPMs because the $\beta$-function and dispersion are known in such drifts.
@@ -58,7 +58,7 @@ $$
 [^RamaDispersionCalibration]:
     ??? abstract "BPM Calibration Independent LHC Optics Correction, `R. Calaga, and R. Tomás, and F. Zimmermann`, [IEEE Particle Accelerator Conference, 2007](https://ieeexplore.ieee.org/document/4440536){target=_blank}"
         ```
-        @inproceedings{Calaga:4440536,  
+        @inproceedings{Calaga:4440536,
           author={Calaga, R. and Tomas, R. and Zimmermann, F.},
           booktitle={2007 IEEE Particle Accelerator Conference (PAC)},
           title={BPM calibration independent LHC optics correction},
