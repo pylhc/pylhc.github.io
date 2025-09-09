@@ -11,10 +11,9 @@ This section pertains to the measurement and reconstruction of coupling resonanc
     and - for the full mathematical details - to the papers of [Bazzani][bazzani_normal_form]{target=\_blank}
     and [Bartolini][bartolini_normal_form]{target=\_blank}.
 
-
 ## The 2-BPM-Method
 
-One possible method to calculate coupling used for LHC - which is independent of BPM calibration errors - makes use of two nearby BPMs in order to cancel out calibration factors. 
+One possible method to calculate coupling used for LHC - which is independent of BPM calibration errors - makes use of two nearby BPMs in order to cancel out calibration factors.
 It is therefore called the _two BPM method_.
 
 Under the assumption that no other perturbations than linear transverse coupling are present in the lattice, the Courant-Snyder coordinates $h_{x/y}^\pm$ read:
@@ -29,7 +28,7 @@ $$
 \end{align}
 $$
 
-where $\zeta_{x/y}^\pm$ denotes normal form coordinates and $f_{1001}$ and $f_{1010}$ are the coupling RDTs. 
+where $\zeta_{x/y}^\pm$ denotes normal form coordinates and $f_{1001}$ and $f_{1010}$ are the coupling RDTs.
 A calculation of the relations above can be found in Franchi's paper about emittance sharing: [10.1103/PhysRevSTAB.10.064003][franchi_emittance_sharing]{target=\_blank}.
 
 By the term _spectral lines_, we usually denote the Fourier transforms of the turn-by-turn spectrum:
@@ -37,7 +36,7 @@ By the term _spectral lines_, we usually denote the Fourier transforms of the tu
 $$
 \begin{align}
     H^\pm(n_x,n_y) &= \mathcal{F}\{h_x^\pm\}(n_xQ_x+n_yQ_y) \\
-    V^\pm(n_x,n_y) &= \mathcal{F}\{h_y^\pm\}(n_xQ_x+n_yQ_y) 
+    V^\pm(n_x,n_y) &= \mathcal{F}\{h_y^\pm\}(n_xQ_x+n_yQ_y)
 \end{align}
 $$
 
@@ -56,7 +55,7 @@ The calibration factors $C_{x/y}$ cancel out if one divides the spectral line by
 $$
 \begin{align}
     A_{0,n_y} &= \frac{H^+(0,n_y)}{\left|H^+(1,0)\right|} \\
-    B_{n_x,0} &= \frac{V^+(n_x,0)}{\left|V^+(0,1)\right|} 
+    B_{n_x,0} &= \frac{V^+(n_x,0)}{\left|V^+(0,1)\right|}
 \end{align}
 $$
 
@@ -98,7 +97,7 @@ $$
 $$
 
 The normalised spectral lines $A_{0,n_y}$ and $B_{n_x,0}$ are the Fourier components of the complex coordinates.
-However, only the projections onto the real axis can be measured. 
+However, only the projections onto the real axis can be measured.
 The next step is to calculate the complex coordinates from the measured ones.
 
 Since $h_z^\pm = z \pm ip_z$, the complex coordinate can be obtained from position and momentum.
@@ -159,7 +158,7 @@ This allows to express the real normalised spectral lines as:
 $$
 \begin{align}
     A(0,n_y)_a &= \frac{H(0,n_y)_a}{\left| H(1,0)_a \right|} = \frac{H(0,n_y)_a}{\left| H(1,0)_b \right|} \\
-    B(n_x,0)_a &= \frac{V(n_x,0)_a}{\left| V(0,1)_a \right|} = \frac{V(n_x,0)_a}{\left| V(0,1)_b \right|} 
+    B(n_x,0)_a &= \frac{V(n_x,0)_a}{\left| V(0,1)_a \right|} = \frac{V(n_x,0)_a}{\left| V(0,1)_b \right|}
 \end{align}
 $$
 

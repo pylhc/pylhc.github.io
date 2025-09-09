@@ -31,12 +31,11 @@ In such a case, we get the famous formula:
 
 $$
 \begin{equation}
-\sigma_f^2=\sum_i \left(\frac{\partial f}{\partial x_i}\right)^2 \sigma_i^2  
+\sigma_f^2=\sum_i \left(\frac{\partial f}{\partial x_i}\right)^2 \sigma_i^2
 \end{equation}
 $$
 
 However, sometimes we should not neglect the covariances.
 For details, see the more extensive [Wikipedia article about propagation of uncertainty][wiki_propagation_uncertainty]{target=_blank} or your favourite statistics textbook.
-
 
 [wiki_propagation_uncertainty]: https://en.wikipedia.org/wiki/Propagation_of_uncertainty

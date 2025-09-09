@@ -1,6 +1,3 @@
-# Copyright (c) 2020 Felix Soubelet <felix.soubelet@cern.ch>
-
-
 # Project information
 site_name: OMC Documentation
 site_description: >-
@@ -33,10 +30,25 @@ theme:
     - navigation.tabs
     - navigation.instant
     - content.action.edit  # editing button on the pages is opt-in since v9
+    - content.code.copy  # copy button for code blocks
   palette:
-    scheme: preference
-    primary: indigo
-    accent: amber
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: cern
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   font:
     text: Roboto
     code: Roboto Mono
@@ -67,7 +79,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.keys:
-      key_map: {"okbtn": "OK", "cancelbtn": "Cancel", "mousewheel": "Mouse Wheel"}
+      key_map: {"okbtn": "OK", "cancelbtn": "Cancel", "mousewheel": "&#9881; Mouse Wheel"}
   - pymdownx.mark
   - pymdownx.snippets:
       check_paths: true
@@ -79,6 +91,9 @@ markdown_extensions:
       custom_checkbox: true
       clickable_checkbox: true
   - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 # Customization
 extra:
@@ -119,7 +134,6 @@ nav:
       - About omc3: packages/omc3/about.md
       - Getting Started: packages/omc3/getting_started.md
       - Analysis: packages/omc3/analysis.md
-      - Know-How: packages/omc3/know_how.md
       - ↪ On Github: https://github.com/pylhc/omc3
     - PyLHC:
       - About: packages/pylhc/about.md
@@ -148,31 +162,45 @@ nav:
       - ↪ generic-parser: https://github.com/pylhc/generic_parser
     - Python Development:
       - Contributing: packages/development/contributing.md
-      - Virtual Environments: packages/development/howto_venv.md
       - Releases: packages/development/howto_release.md
+      - IDE Setup: packages/development/ide_setup.md
+      - Virtual Environments: packages/development/howto_venv.md
+      - Managing: packages/development/managing.md
   - GUIs:
     - The OMC GUIs: guis/about.md
     - Beta-Beat GUI:
       - About: guis/betabeat/gui.md
+      - Defaults: guis/betabeat/defaults.md
       - Beam Selection: guis/betabeat/beam_selection.md
+      - Common Components: guis/betabeat/common_components.md
+      - Settings: guis/betabeat/settings.md
+      - Model Creation: guis/betabeat/model_creation.md
       - BPM Panel: guis/betabeat/bpm_panel.md
       - Analysis Panel: guis/betabeat/analysis_panel.md
       - Optics Panel: guis/betabeat/optics_panel.md
       - Correction Panel: guis/betabeat/correction_panel.md
-      - The omc3 branch: guis/betabeat/omc3.md
-    - Kmod GUI:
+      - Amplitude Detuning: guis/betabeat/ampdet.md
+      - BetaBeat.src: guis/betabeat/betabeatsource.md
+    - Segment-by-Segment GUI:
+      - About: guis/segment_by_segment/gui.md
+    - K-Modulation GUI:
       - About: guis/kmod/gui.md
-      - Loading a Model: guis/kmod/load_model.md
-      - Full IP Trim: guis/kmod/full_ip_trim.md
-      - Magnet Modulation: guis/kmod/individual_modulation.md
-      - Analyzing Trim Data: guis/kmod/trim_analysis.md
-      - Using Auto Trim: guis/kmod/autotrim.md
+      - Performing a Modulation: guis/kmod/modulating.md
+      - Analyzing Modulations: guis/kmod/analyzing.md
+    - Chromaticity GUI:
+      - About: guis/chroma/gui.md
+    - RDT Feeddown GUI:
+      - About: guis/rdt_feeddown/gui.md
     - Multiturn GUI:
         - About: guis/multiturn/gui.md
-    - Developing the GUIs:
-      - IDE Setup: guis/developing/ide_install.md
-      - Releases: guis/developing/releases.md
-      - KMod GUI hints: guis/developing/kmod_special.md
+        - Safety Checks: guis/multiturn/safety.md
+        - Beam Excitation: guis/multiturn/excitation.md
+        - Scheduled Excitations: guis/multiturn/scheduler.md
+    - Usage and Development:
+      - Guidelines: guis/usage/guidelines.md
+      - IDE Setup: guis/usage/ide_install.md
+      - Remote: guis/usage/remote.md
+      - Releases: guis/usage/releases.md
   - Measurements & Corrections:
     - Info: measurements/about.md
     - Physics and Methods:
@@ -180,6 +208,8 @@ nav:
       - Error Propagation: measurements/physics/error_propagation.md
       - BPM-Calibration: measurements/physics/bpm_calibration.md
       - BPM-Filtering: measurements/physics/bpm_filtering.md
+      - Harmonic Analysis: measurements/physics/harpy.md
+      - Optics Analysis: measurements/physics/optics.md
       - Coupling: measurements/physics/coupling.md
       - K-Mod: measurements/physics/kmod.md
       - Linear IR Optics: measurements/physics/ir_linear_optics.md
@@ -192,27 +222,23 @@ nav:
         - Rigid Waist Shift: measurements/procedures/rigid_waist_shift.md
         - Amplitude Detuning: measurements/procedures/ampdet.md
         - Crossing Angle Scan: measurements/procedures/xing_scan.md
-  - How To's:
-    - Info: howto/about.md
-    - General Setup:
-      - Git: howto/setup/git.md
-      - GUIs: howto/setup/guis.md
-      - Shared Filesystems: howto/setup/shared_filesystems.md
-      - ↪ Virtual CentOS Machine: https://abpcomputing.web.cern.ch/guides/openstackCS8/
-    - Teleworking:
-      - Remote Access: howto/teleworking/access.md
-      - ↪ Tricks from IT: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
-    - Wiki Pages:
-      - Editing this Wiki: howto/wiki/editing.md
-      - ↪ CERN Docs: https://how-to.docs.cern.ch/
-    - Other Relevant How To's:
-      - ↪ ABPComputing: https://abpcomputing.web.cern.ch/
-      - ↪ BBLumi: http://bblumi.web.cern.ch/utilities_tricks/
   - Resources:
       - Useful Links: resources/links.md
-      - Computing: resources/computing.md
+      - Computing:
+        - Git: resources/git_setup.md
+        - Resources: resources/computing.md
+        - Remote Access: resources/remote_access.md
+        - Shared Filesystems: resources/shared_filesystems.md
+        - ↪ TW tricks from IT: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
+      - How To's:
+        - Editing this Wiki: resources/wiki.md
+        - ↪ CERN Docs: https://how-to.docs.cern.ch/
+        - ↪ Virtual CentOS Machine: https://abpcomputing.web.cern.ch/guides/openstackCS8/
+        - ↪ ABPComputing: https://abpcomputing.web.cern.ch/
+        - ↪ BBLumi: http://bblumi.web.cern.ch/utilities_tricks/
       - Publications: resources/publications.md
       - Presentations: resources/presentations.md
+      - Templates: resources/templates.md
       - Logbook: &logbook
         - About: logbook/about.md
         - AD:
@@ -238,6 +264,5 @@ nav:
           - 2023: logbook/SPS/2023_sps.md
           - 2024: logbook/SPS/2024_sps.md
           - 2025: logbook/SPS/2025_sps.md
-      - Templates: resources/templates.md
       - FAQ: resources/faqs.md
   - Logbook: *logbook
