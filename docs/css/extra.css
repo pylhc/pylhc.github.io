@@ -72,7 +72,7 @@ a.cern_internal {
 
 .md-typeset .nodeco .leftFigure,
 .md-typeset .nodeco .rightFigure {
-    width:45%; 
+    width:45%;
     margin: 0 0 0 0;
     display: inline-block;
 }
@@ -83,6 +83,11 @@ a.cern_internal {
     border-left: none;
 }
 
+/* Specific style for warning admonitions */
+.md-typeset .admonition.warning {
+    font-size: 0.74rem !important; /* make warning text larger, default: 0.64 */
+}
+
 .md-typeset .nodeco > .admonition-title::before,
 .md-typeset .nodeco > summary::before {
   height: 0;  /* hides icon */
@@ -91,12 +96,6 @@ a.cern_internal {
 }
 
 
-/* Not used but I'll leave it here in case someone wants to test it. Just put `cern` as primary in mkdocs.yml (jdilly) */
-[data-md-color-primary="cern"] {
-  --md-primary-fg-color: #0033a0;
-  --md-primary-fg-color--light: #9BAEDB;
-  --md-primary-fg-color--dark:  #0033A0;
-}
 
 /* Fix the Mathjax scrolling boxes issue */
 .md-typeset div.arithmatex {

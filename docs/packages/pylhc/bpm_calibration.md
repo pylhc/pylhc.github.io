@@ -3,7 +3,8 @@
 The `bpm_calibration` module of `PyLHC` can be used to compute [BPM calibration factors][bpm_calibration].
 Only one entrypoints exists for both methods, the argument `method` can be used to select it, and defaults to `beta`.
 Using the script to make compute calibration factors through $\beta$-functions for instance from IP1 and IP5 goes as:
-```bash         
+
+```bash
 python -m pylhc.bpm_calibration \
     --input <measurements directory> \
     --output <output directory> \

@@ -2,8 +2,7 @@
 
 [See the docs][documentation] for a detailed code description.
 
-Prints an overview over the machine settings at a provided given time, or the current settings if
-no time is given.
+Prints an overview over the machine settings at a provided given time, or the current settings if no time is given.
 
 Can be run from command line, parameters as given in `machine_settings_info.main`.
 
@@ -31,7 +30,6 @@ optional arguments:
 --log                 Write summary into log
                       (automatically done if no output path is given).
 ```
-
 
 !!! tip "Usage Examples"
     Displaying basic summary information (beam process, fill, optics etc.), right now:
