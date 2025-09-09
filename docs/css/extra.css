@@ -83,6 +83,11 @@ a.cern_internal {
     border-left: none;
 }
 
+/* Specific style for warning admonitions */
+.md-typeset .admonition.warning {
+    font-size: 0.74rem !important; /* make warning text larger, default: 0.64 */
+}
+
 .md-typeset .nodeco > .admonition-title::before,
 .md-typeset .nodeco > summary::before {
   height: 0;  /* hides icon */

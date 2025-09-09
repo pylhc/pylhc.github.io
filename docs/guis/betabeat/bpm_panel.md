@@ -16,7 +16,7 @@ and select the data to be analyzed further.
 
 !!! warning "Not yet implemented"
     The GUI does [not yet support loading of measurement groups][issue282]{target=_blank .cern_login} (i.e. kick groups).
-    The idea is to load all data from a single [kick-group, as defined in the Multiturn GUI](../multiturn/excitation.html#kick-groups) at once
+    The idea is to load all data from a single [kick-group, as defined in the Multiturn GUI][kick_groups] at once
     or monitor a currently active kick-group and load the files as they are created.
 
 ### Open Files
@@ -42,7 +42,7 @@ Use the ++"Open Files"++{.green-gui-button} button to open turn-by-turn data.
 Multiple files can be opened at once and are added to the current `Measurements` directory, as well as to the table of loaded files in the panel.
 If the file contained multiple bunches, they are added as separate entries (see [below](#table-of-loaded-files)).
 
-If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, a window will open to prompt the user with the ["Do analysis Dialog"][do_analysis_dialog].
+If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, a window will open to prompt the user with the ["Do analysis Dialog"](#do-analysis-dialog).
 
 !!! tip "Reopening Files"
     - If you are opening a file with the same filename as an already opened file, an error will be thrown.
@@ -129,6 +129,13 @@ You can select multiple measurements at once to compare them, but only one BPM p
     <figcaption>Phase space view of BPM data.</figcaption>
     </center>
     </figure>
+
+!!! tip "Find BPMs"
+    The BPMs in the list are sorted by longitudinal position in model loaded when the file was opened.
+    Use the text field and the ++"Find BPM"++ button to quickly find BPMs in the list and **automatically select them**.
+    The text input is based on regular expressions and **the first BPM matching the pattern** will be selected.
+    Note that `^.*` and `.*$` will be added automatically to start and end of the string respectively,
+    to look for your pattern **anywhere** in the BPM name.
 
 ### Bad BPMs
 
@@ -226,11 +233,12 @@ The _Suffix_-field will be automatically set from your suffix-choices in the [_H
 [issue283]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/283
 [issue285]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/285
 [bpm_filtering]: ../../measurements/physics/bpm_filtering.md
-[do_analysis_dialog]: analysis_panel.md#do-analysis-dialog
 [harpy_analysis]: ../../measurements/physics/harpy.md
+[kick_groups]: ../multiturn/excitation.md#kick-groups
 
 *[LHC]: Large Hadron Collider
 *[SPS]: Super Proton Synchrotron
 *[PS]:  Proton Synchrotron
 *[PSB]: Proton Synchrotron Booster
 *[BPM]: Beam Position Monitor
+*[BPMs]: Beam Position Monitors
