@@ -1,4 +1,8 @@
-# The Beta-Beat GUI Correction Panel
+# The Correction Panel
+
+!!! warning "Incomplete"
+    This page is a placeholder and is not yet complete.
+    Information here is outdated and needs to be revised for the `omc3` version of the Beta-Beat GUI.
 
 The `Correction` panel displays the corrections computed from the `Optics` panel to bring back the measured machine to nominal model conditions.
 

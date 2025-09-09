@@ -1,4 +1,8 @@
-# The Beta-Beat GUI Optics Panel
+# The Optics Panel
+
+!!! warning "Incomplete"
+    This page is a placeholder and is not yet complete.
+    Information here is outdated and needs to be revised for the `omc3` version of the Beta-Beat GUI.
 
 The `Optics Panel` provides graphical interface to compare the computed optics to the nominal model.
 There are in total three main tabs for the optics panel:
