@@ -25,10 +25,10 @@ When asked for a location, it make sense to give it an easily identifiable name,
 The file should be placed in `~/.ssh/`, unless you are on `afs`, in which case the `~/private/` directory should be used.
 
 ```text
-~/.ssh/github_sshkey
+~/.ssh/github_authenticate
 ```
 
-This will create two files: `github_sshkey` and `github_sshkey.pub`.
+This will create two files: `github_authenticate` and `github_authenticate.pub`.
 The `.pub` is your public key that you can share with others,
 while the other file is your private key and **should never be shared with anyone!**
 
@@ -53,7 +53,7 @@ For that, add the following lines to your `~/.ssh/config` file:
 Host github.com
   HostName github.com
   User git
-  IdentityFile ~/.ssh/github_sshkey
+  IdentityFile ~/.ssh/github_authenticate
 ```
 
 or the path to your key you chose earlier.
