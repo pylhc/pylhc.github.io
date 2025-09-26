@@ -28,6 +28,12 @@ The file should be placed in `~/.ssh/`, unless you are on `afs`, in which case t
 ~/.ssh/github_authenticate
 ```
 
+!!! tip "Passphrase"
+    You can optionally provide a passphrase for the key, which will make it more secure.
+    This way, even if someone else gets a hold of the private key file, they will not be able to access it.
+    On the downside, you will be asked to enter the passphrase every time you want to use the key.
+    **It recommended, to use a passphrase** but as it is just an extra layer of security, you can keep it short and simple.
+
 This will create two files: `github_authenticate` and `github_authenticate.pub`.
 The `.pub` is your public key that you can share with others,
 while the other file is your private key and **should never be shared with anyone!**
