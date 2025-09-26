@@ -1,27 +1,28 @@
 # Git
 
-How to's concerning  `git` in general,  [`gitlab`][cern_gitlab], [`github`][github] and CI.
+How to's concerning  `git` in general,  [`gitlab`][cern_gitlab], [`GitHub`][github] and CI.
 
 ## Github Commandline Access Quickstart
 
-This section explains the basic steps to get started with `github`.
-Since a few years, github has disabled access via password only for security reasons,
-so you need to cre
-This aims to be as short and concise as possible, for more extenive information, [see the github security documentation][github_security].
+This section explains the basic steps to get started with GitHub.
+Since HTTP access via password only has been disabled by GitHub for security reasons, it is necessary to activate a secure method.
+
+This aims to be as short and concise as possible, for more extensive information, [see the GitHub security documentation][github_security]{target=_blank}.
 
 ### Setup SSH Access
 
-An easy way to access github securely is to use SSH.
+An easy way to access GitHub securely is to use SSH.
+This guides you through the basic steps, but [details can be found in the GitHub documentation][github_ssh].
 
 #### Create SSH Key
 
-For this, you first need to create a SSH key pair on your computer using the email address of your github account.
+For this, create an SSH key pair locally using the email address associated with your GitHub account:
 
 ```bash
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 
-When asked for a location, it make sense to give it an easily identifiable name, so you will know what the key is for.
+When asked for a location, it makes sense to give it an easily identifiable name, to remember what the key is for.
 The file should be placed in `~/.ssh/`, unless you are on `afs`, in which case the `~/private/` directory should be used.
 
 ```text
@@ -32,7 +33,7 @@ The file should be placed in `~/.ssh/`, unless you are on `afs`, in which case t
     You can optionally provide a passphrase for the key, which will make it more secure.
     This way, even if someone else gets a hold of the private key file, they will not be able to access it.
     On the downside, you will be asked to enter the passphrase every time you want to use the key.
-    **It recommended, to use a passphrase** but as it is just an extra layer of security, you can keep it short and simple.
+    **It is recommended, to use a passphrase** but as it is just an extra layer of security, you can keep it short and simple.
 
 This will create two files: `github_authenticate` and `github_authenticate.pub`.
 The `.pub` is your public key that you can share with others,
@@ -41,19 +42,19 @@ while the other file is your private key and **should never be shared with anyon
 !!! quote "Keep it secret, keep it safe!"
     _Gandalf_, about private SSH keys (probably).
 
-#### Add SSH Key to Github
+#### Add the Public SSH Key to GitHub
 
-After creating the key, you need to add it to your github account.
-For this you need to log into your github account, click on your avatar and go to `Settings` &rarr; `SSH and GPG keys`.
+After creating the key, you need to add it to your GitHub account.
+Log into your GitHub account, click on your avatar and go to `Settings` &rarr; `SSH and GPG keys`.
 Then click on [++"New SSH key"++{.green-gui-button}][github_new_ssh_key]{target=_blank} and paste the contents of the `.pub` file into the `Key` field.
 
-Give it a resonable name in the `Title` field and leave the `Key type` as `Authentication key`.
+Give it a resonable name in the `Title` field (which it will appear as in the GitHub interface) and leave the `Key type` as `Authentication key`.
 Then click on `Add SSH key` and you are done.
 
 #### Configure SSH to use the key
 
-Next, you need to tell your local SSH client to use the key you created to connect to github.
-For that, add the following lines to your `~/.ssh/config` file:
+Next, you need to tell your local SSH client to use the key you created to connect to GitHub.
+For that, add the following lines to your `ssh` configuration file (typically at `~/.ssh/config` on UNIX systems):
 
 ```bash
 Host github.com
@@ -62,11 +63,11 @@ Host github.com
   IdentityFile ~/.ssh/github_authenticate
 ```
 
-or the path to your key you chose earlier.
+or use for the `IdentityFile` field the path you chose earlier for the ssh key file.
 
 !!! warning "Username"
     It is important that the `User` is `git` and **not your git-username**!
-    Github will identify you automatically based on the email address you used to create the SSH key.
+    GitHub will identify you automatically based on the email address you used to create the SSH key.
 
 #### Test Access
 
@@ -90,7 +91,7 @@ When you clone a new repository, always use the SSH url
 git clone git@github.com:pylhc/omc3.git
 ```
 
-which you can find from the ++"Clone"++{.green-gui-button} button of the repository page on github.
+which you can find from the ++"Clone"++{.green-gui-button} button of the repository page on GitHub.
 
 
 !!! tip "Changing a Repository URL"
@@ -111,8 +112,8 @@ which you can find from the ++"Clone"++{.green-gui-button} button of the reposit
 You can setup https access by creating and using a personal access token or a password manager.
 
 !!! note "Not yet documented"
-    As I am using SSH access, this is not yet documented.
-    Refer to the [github documentation][github_https] for more information and maybe write up a quick howto.
+    As we use SSH access, this section not yet written.
+    Refer to the [GitHub documentation][github_https] for more information and maybe write up a quick howto.
 
 
 ## Configuring Gitlab CI to Automatically Pull into AFS
