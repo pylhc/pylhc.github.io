@@ -9,11 +9,11 @@ Since a few years, github has disabled access via password only for security rea
 so you need to cre
 This aims to be as short and concise as possible, for more extenive information, [see the github security documentation][github_security].
 
-## Setup SSH Access
+### Setup SSH Access
 
 An easy way to access github securely is to use SSH.
 
-### Create SSH Key
+#### Create SSH Key
 
 For this, you first need to create a SSH key pair on your computer using the email address of your github account.
 
@@ -35,7 +35,7 @@ while the other file is your private key and **should never be shared with anyon
 !!! quote "Keep it secret, keep it safe!"
     _Gandalf_, about private SSH keys (probably).
 
-### Add SSH Key to Github
+#### Add SSH Key to Github
 
 After creating the key, you need to add it to your github account.
 For this you need to log into your github account, click on your avatar and go to `Settings` &rarr; `SSH and GPG keys`.
@@ -44,7 +44,7 @@ Then click on [++"New SSH key"++{.green-gui-button}][github_new_ssh_key]{target=
 Give it a resonable name in the `Title` field and leave the `Key type` as `Authentication key`.
 Then click on `Add SSH key` and you are done.
 
-### Configure SSH to use the key
+#### Configure SSH to use the key
 
 Next, you need to tell your local SSH client to use the key you created to connect to github.
 For that, add the following lines to your `~/.ssh/config` file:
@@ -62,7 +62,7 @@ or the path to your key you chose earlier.
     It is important that the `User` is `git` and **not your git-username**!
     Github will identify you automatically based on the email address you used to create the SSH key.
 
-### Test Access
+#### Test Access
 
 Now you can test that everything works by running the following command:
 
@@ -76,7 +76,7 @@ which should then display
 Hi <Username>! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-### Clone Repository
+#### Clone Repository
 
 When you clone a new repository, always use the SSH url
 
@@ -100,7 +100,7 @@ which you can find from the ++"Clone"++{.green-gui-button} button of the reposit
     git remote -v
     ```
 
-## Setup HTTPS Access
+### Setup HTTPS Access
 
 You can setup https access by creating and using a personal access token or a password manager.
 
