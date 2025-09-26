@@ -2,6 +2,113 @@
 
 How to's concerning  `git` in general,  [`gitlab`][cern_gitlab], [`github`][github] and CI.
 
+## Github Commandline Access Quickstart
+
+This section explains the basic steps to get started with `github`.
+Since a few years, github has disabled access via password only for security reasons,
+so you need to cre
+This aims to be as short and concise as possible, for more extenive information, [see the github security documentation][github_security].
+
+## Setup SSH Access
+
+An easy way to access github securely is to use SSH.
+
+### Create SSH Key
+
+For this, you first need to create a SSH key pair on your computer using the email address of your github account.
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+When asked for a location, it make sense to give it an easily identifiable name, so you will know what the key is for.
+The file should be placed in `~/.ssh/`, unless you are on `afs`, in which case the `~/private/` directory should be used.
+
+```text
+~/.ssh/github_sshkey
+```
+
+This will create two files: `github_sshkey` and `github_sshkey.pub`.
+The `.pub` is your public key that you can share with others,
+while the other file is your private key and **should never be shared with anyone!**
+
+!!! quote "Keep it secret, keep it safe!"
+    _Gandalf_, about private SSH keys (probably).
+
+### Add SSH Key to Github
+
+After creating the key, you need to add it to your github account.
+For this you need to log into your github account, click on your avatar and go to `Settings` &rarr; `SSH and GPG keys`.
+Then click on [++"New SSH key"++{.green-gui-button}][github_new_ssh_key]{target=_blank} and paste the contents of the `.pub` file into the `Key` field.
+
+Give it a resonable name in the `Title` field and leave the `Key type` as `Authentication key`.
+Then click on `Add SSH key` and you are done.
+
+### Configure SSH to use the key
+
+Next, you need to tell your local SSH client to use the key you created to connect to github.
+For that, add the following lines to your `~/.ssh/config` file:
+
+```bash
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/github_sshkey
+```
+
+or the path to your key you chose earlier.
+
+!!! warning "Username"
+    It is important that the `User` is `git` and **not your git-username**!
+    Github will identify you automatically based on the email address you used to create the SSH key.
+
+### Test Access
+
+Now you can test that everything works by running the following command:
+
+```bash
+ssh -T github.com
+```
+
+which should then display
+
+```text
+Hi <Username>! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+### Clone Repository
+
+When you clone a new repository, always use the SSH url
+
+```text
+git clone git@github.com:pylhc/omc3.git
+```
+
+which you can find from the ++"Clone"++{.green-gui-button} button of the repository page on github.
+
+
+!!! tip "Changing a Repository URL"
+    In case you already have a repository cloned with the wrong URL, you can change it with `git remote set-url`, e.g.:
+
+    ```bash
+    git remote set-url origin git@github.com:pylhc/omc3.git
+    ```
+
+    If you are not sure which url is currently set, you can always check it with
+
+    ```bash
+    git remote -v
+    ```
+
+## Setup HTTPS Access
+
+You can setup https access by creating and using a personal access token or a password manager.
+
+!!! note "Not yet documented"
+    As I am using SSH access, this is not yet documented.
+    Refer to the [github documentation][github_https] for more information and maybe write up a quick howto.
+
+
 ## Configuring Gitlab CI to Automatically Pull into AFS
 
 If you are programming locally, but also want to have a copy on AFS, either because your colleges are not comfortable with Gitlab or you need the code for other scripts that you are running on lxplus or similar, here is how:
@@ -120,12 +227,11 @@ Whenever you are pushing now any commits to the `master` branch, the CI/CD will 
 *[CD]: Continuous Delivery
 *[lxplus]: Linux Public Login User Service
 
-[sshuttle]: https://sshuttle.readthedocs.io/en/stable/
 [new_account]: https://account.cern.ch/account/Management/NewAccount.aspx
 [afs_services]: https://resources.web.cern.ch/resources/Manage/AFS/Default.aspx
 [github]: https://github.com/
 [cern_gitlab]: https://gitlab.cern.ch/
-[cern_linux]: https://linux.web.cern.ch/dockerimages/
-[acc_models_repo]: https://gitlab.cern.ch/acc-models/acc-models-lhc/
-[acc_models_yml]: https://gitlab.cern.ch/acc-models/acc-models-lhc/-/blob/2018/.gitlab-ci.yml
-[acc_models_docker]: https://gitlab.cern.ch/acc-models/acc-models-www/-/blob/master/_docker/Dockerfile_cern_cc7_base
+[github_security]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure
+[github_https]: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#https
+[github_ssh]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh
+[github_new_ssh_key]: https://github.com/settings/ssh/new
