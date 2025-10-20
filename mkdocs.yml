@@ -108,6 +108,7 @@ extra:
 # Extras to load
 extra_css:
   - css/extra.css
+  - css/admonitions.css
   - css/custom_colors.css
   - css/hint.min.css
 
@@ -224,7 +225,7 @@ nav:
         - Crossing Angle Scan: measurements/procedures/xing_scan.md
   - Resources:
       - Useful Links: resources/links.md
-      - Contacts: resources/contacts.md
+      - Help & Contacts: resources/contacts.md
       - Computing:
         - Git: resources/git_setup.md
         - Resources: resources/computing.md
