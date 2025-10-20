@@ -1,0 +1,113 @@
+:root {
+  --md-admonition-icon--heart: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="%23fff" d="M462.3 62.6c-54.5-46.4-136-38.3-186.4 13.7L256 96l-19.9-19.7C185.7 24.3 104.2 16.2 49.7 62.6c-62.8 53.5-66.1 149.8-9.9 207.4l193.5 199.8c12 12.4 31.5 12.4 43.5 0l193.5-199.8c56.2-57.6 52.9-153.9-9.9-207.4z"/></svg>');
+}
+
+/***************************
+Heart Admonition Definition
+***************************/
+
+/* Heart Admonition Container */
+.md-typeset .admonition.heart,
+.md-typeset details.heart {
+  border-color: rgb(200, 50, 70);
+}
+
+/* Title background */
+.md-typeset .heart > .admonition-title,
+.md-typeset .heart > summary {
+  background-color: rgba(200, 50, 70, 0.08);
+}
+
+/* Icon styling */
+.md-typeset .heart > .admonition-title::before,
+.md-typeset .heart > summary::before {
+  background-color: rgb(200, 50, 70);
+  -webkit-mask-image: var(--md-admonition-icon--heart);
+          mask-image: var(--md-admonition-icon--heart);
+}
+
+/* Optional — subtle hover effect for the title when open */
+.md-typeset details.heart[open] > summary:hover {
+  background-color: rgba(200, 50, 70, 0.12);
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Optional — slightly rounder border and shadow for elegance */
+.md-typeset .admonition.heart,
+.md-typeset details.heart {
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(200, 50, 70, 0.15);
+}
+
+
+/**************************************
+Collapsible Admonitions for Procedures
+**************************************/
+
+.md-typeset .admonition.nodeco,
+.md-typeset details.nodeco {
+  background-color: var(--md-default-bg-color);
+  box-shadow: none;
+  border: none;
+  border-left: 0;
+  font-size: medium;
+  font-weight: lighter;
+  margin: 0 0 0 0;
+}
+
+.md-typeset .nodeco > .admonition-title,
+.md-typeset .nodeco > summary {
+    background-color: var(--md-default-bg-color);
+    padding: 0 0 0 0;
+    border-left: 0;
+    margin: 0 0 0 -0.5rem;
+    font-weight: normal;
+    font-size: 0.8rem;
+    padding-left: 0.2rem !important;
+}
+
+.md-typeset .nodeco > summary code {
+    background-color: var(--md-code-bg-color);
+}
+
+/* margin for the element after <summary> which is the first child */
+.md-typeset .nodeco > :nth-child(2) {
+    margin: 0.3rem 1.5rem 0 0;
+}
+
+.md-typeset .nodeco > p,
+.md-typeset .nodeco > ul,
+.md-typeset .nodeco > figure {
+    background-color: var(--md-default-bg-color);
+    padding: 0.2rem 0 0 0.5rem;
+    margin: 0 1.5rem 0 0 !important;
+    font-weight: lighter;
+    border-left: .2rem solid var(--md-default-fg-color--lighter);
+}
+
+.md-typeset .nodeco .leftFigure,
+.md-typeset .nodeco .rightFigure {
+    width:45%;
+    margin: 0 0 0 0;
+    display: inline-block;
+}
+
+.md-typeset .nodeco .rightFigure {
+    padding: 0 0.2rem 0 0.5rem;
+    margin: 0 1.5rem 0 0;
+    border-left: none;
+}
+
+.md-typeset .nodeco > .admonition-title::before,
+.md-typeset .nodeco > summary::before {
+  height: 0;  /* hides icon */
+  margin: 0 0 0 0;
+
+}
+
+/**************************************
+Specific style for Warning Admonitions
+**************************************/
+.md-typeset .admonition.warning {
+    font-size: 0.74rem !important; /* make warning text larger, default: 0.64 */
+}
