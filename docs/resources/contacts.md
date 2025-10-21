@@ -70,7 +70,7 @@ As OP is lead by **Jörg** he is of course also a good contact for general OP qu
 
 - Matteo Solfaroli
 - Michi Hostettler
-- Jörg Wenniger
+- Jörg Wenninger
 
 #### AC-Dipole
 
@@ -129,7 +129,7 @@ and we can use their expertise for BPM related issues and shortcomings, improvin
 
 As described in the sections on [our python environments][python_prod_env]  and [virtual environments][python_venvs],
 we use the [Acc-Py][acc-py]{target=_blank} distribution as our main Python environment.
-This package is maintained by the Acc-Py team at CERN,
+This distribution system is maintained by the Acc-Py team at CERN,
 who can be contacted for questions regarding its usage, installation or development.
 
 - [Mattermost: acc-py][mm_acc_py]
@@ -158,7 +158,7 @@ at CERN in general, but also for each individual section - as they might have ve
 They regularly organize meetings to gather feedback and discuss new features,
 so feel free to reach out to the contacts below to be added to the mailing list.
 
-While not directly invovled in the development of NXCals (as far as I understand),
+While not directly invovled in the development of NXCals,
 he is taking care of some of the data collection and organization for the LHC,
 which is stored using the NXCals framework and is therefore a good contact for questions regarding that.
 
@@ -186,6 +186,7 @@ which is stored using the NXCals framework and is therefore a good contact for q
 ### Xsuite
 
 - Giovanni Iadarola
+- Szymon Lopaciuk
 
 [acc-py]: https://confluence.cern.ch/pages/viewpage.action?spaceKey=ACCPY&title=Getting+started+with+Acc-Py
 [cern_htcondor_docs]: https://batchdocs.web.cern.ch/index.html
