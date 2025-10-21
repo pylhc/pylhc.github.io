@@ -76,7 +76,7 @@ As OP is lead by **Jörg** he is of course also a good contact for general OP qu
 
 **Contact(s):**
 
-- ???
+- Nicolas Magnin
 
 ### SPS
 
