@@ -109,7 +109,7 @@ To use the environment's Python, one can either:
 *[PyPi]: Default Python Package Index
 
 [virtual_env_primer]: https://realpython.com/python-virtual-environments-a-primer/
-[acc-py]: https://wikis.cern.ch/display/ACCPY/Accelerating+Python+Home
-[acc_py_standalone_doc]: https://wikis.cern.ch/display/ACCPY/Acc-Py+base#Acc-Pybase-Installingthebasedistributiononanothermachine
+[acc-py]: https://confluence.cern.ch/pages/viewpage.action?spaceKey=ACCPY&title=Getting+started+with+Acc-Py
+[acc_py_standalone_doc]: https://confluence.cern.ch/display/ACCPY/Acc-Py+base+installers
 [venv_module]: https://docs.python.org/3/library/venv.html
 [pip_installs]: https://pip.pypa.io/en/stable/reference/pip_install/#examples
