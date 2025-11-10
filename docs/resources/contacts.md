@@ -1,6 +1,6 @@
 # CERN Help and Contacts
 
-On this page, you can find the contact information for various services and support related to accelerator operations, hardware, and software.
+On this page, you can find the contact information for various services and support related to accelerator operations, hardware, and software outside of the OMC-Team.
 For privacy reasons, only their names are listed here, but you can find their contact details in the [CERN phonebook][phonebook]{target=_blank .cern_login}.
 Most of them are also very active on [Mattermost][mattermost]{target=_blank .cern_login} and you can contact them there as well.
 
@@ -158,9 +158,9 @@ at CERN in general, but also for each individual section - as they might have ve
 They regularly organize meetings to gather feedback and discuss new features,
 so feel free to reach out to the contacts below to be added to the mailing list.
 
-While not directly invovled in the development of NXCals,
-he is taking care of some of the data collection and organization for the LHC,
-which is stored using the NXCals framework and is therefore a good contact for questions regarding that.
+While not directly involved in the development of NXCals, Michi Hostettler is taking care of data collection
+and organization for the LHC, which is stored using the NXCals framework and is therefore a good contact for
+questions with regards to that topic.
 
 - [Mattermost: NXCals][mm_nxcals]
 
@@ -182,6 +182,8 @@ which is stored using the NXCals framework and is therefore a good contact for q
 ### MAD-NG
 
 - Laurent Deniau
+- Joshua Gray (python interface)
+- Bernardo Abreu Figueiredo (Xsuite interface)
 
 ### Xsuite
 
