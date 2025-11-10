@@ -10,12 +10,15 @@ Heart Admonition Definition
 .md-typeset .admonition.heart,
 .md-typeset details.heart {
   border-color: rgb(200, 50, 70);
+  background-color: rgba(0, 0 ,0, 0);  /* transparent */
 }
 
 /* Title background */
 .md-typeset .heart > .admonition-title,
 .md-typeset .heart > summary {
   background-color: rgba(200, 50, 70, 0.08);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 /* Icon styling */

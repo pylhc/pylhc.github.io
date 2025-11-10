@@ -174,21 +174,25 @@ questions with regards to that topic.
 ### Acc-Models
 
 - Riccardo de Maria
+- [Gitlab][acc_models_gitlab]{target=_blank} / [Issues][acc_models_gitlab_issues]{target=_blank}
 
 ### MAD-X
 
 - Riccardo de Maria
+- [Website][madx_web]{target=_blank} / [GitHub][madx_github]{target=_blank} / [Issues][madx_github_issues]{target=_blank}
 
 ### MAD-NG
 
 - Laurent Deniau
 - Joshua Gray (python interface)
 - Bernardo Abreu Figueiredo (Xsuite interface)
+- [GitHub][madng_github]{target=_blank} / [Issues][madng_github_issues]{target=_blank}
 
 ### Xsuite
 
 - Giovanni Iadarola
 - Szymon Lopaciuk
+- [GitHub][xsuite_github]{target=_blank} / [Issues][xsuite_github_issues]{target=_blank}
 
 [acc-py]: https://confluence.cern.ch/pages/viewpage.action?spaceKey=ACCPY&title=Getting+started+with+Acc-Py
 [cern_htcondor_docs]: https://batchdocs.web.cern.ch/index.html
@@ -215,6 +219,19 @@ questions with regards to that topic.
 
 [snow_lxplus]: https://cern.service-now.com/service-portal?id=sc_cat_item&name=request&fe=LXPLUS
 [mm_lxplus]: https://mattermost.web.cern.ch/it-dep/channels/lxplus
+
+[madx_web]: https://madx.web.cern.ch/
+[madx_github]: https://github.com/MethodicalAcceleratorDesign/MAD-X
+[madx_github_issues]: https://github.com/MethodicalAcceleratorDesign/MAD-X/issues
+
+[madng_github]: https://github.com/MethodicalAcceleratorDesign/MAD-NG
+[madng_github_issues]: https://github.com/MethodicalAcceleratorDesign/MAD-NG/issues
+
+[xsuite_github]: https://github.com/xsuite/xsuite
+[xsuite_github_issues]: https://github.com/xsuite/xsuite/issues
+
+[acc_models_gitlab_issues]: https://gitlab.cern.ch/groups/acc-models/-/issues/
+[acc_models_gitlab]: https://gitlab.cern.ch/acc-models
 
 [python_prod_env]: ../packages/about.md#the-omc-production-environments
 [python_venvs]: ../packages/development/howto_venv.md
