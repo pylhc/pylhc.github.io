@@ -238,6 +238,7 @@ nav:
         - ↪ Virtual CentOS Machine: https://abpcomputing.web.cern.ch/guides/openstackCS8/
         - ↪ ABPComputing: https://abpcomputing.web.cern.ch/
         - ↪ BBLumi: http://bblumi.web.cern.ch/utilities_tricks/
+      - Accelerator Timeline: resources/accelerator_timeline.md
       - Publications: resources/publications.md
       - Presentations: resources/presentations.md
       - Templates: resources/templates.md
