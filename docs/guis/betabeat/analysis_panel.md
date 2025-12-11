@@ -50,7 +50,7 @@ These include phase (`PHASE`), frequency (`FREQ`) and amplitude (`AMP`) of the l
 The lines are multiples of the found tunes (`TUNE`) and can be identified by the two numbers in their name,
 which correspond to the multiples of the horizontal and vertical tune, respectively, using underscores to represent a minus sign;
 e.g. `PHASE1_2`, as seen in the screenshot above, corresponds to the phase of the line at frequency `Qx - 2Qy`.
-In addtion, further data from the harmonic analysis is available, such as:
+In addition, further data from the harmonic analysis is available, such as:
 
 - `TUNE`: (driven) tune
 - `NATTUNE`: natural tune (if available)
@@ -63,7 +63,7 @@ In addtion, further data from the harmonic analysis is available, such as:
 It is possible to select multiple files (++ctrl++ / ++shift++) at once, to compare the same quantities between measurements, and also multiple entries, e.g. to compare the amplitudes of different lines.
 
 !!! tip "Deselection"
-    To see the data of one plane only, one can deselect the other plane by either chosing `None` at the bottom of the list
+    To see the data of one plane only, one can deselect the other plane by either choosing `None` at the bottom of the list
     or by right-clicking into the respective list.
 
 ### Cleaning
@@ -164,7 +164,7 @@ It is possible to select multiple files (++ctrl++ / ++shift++) as well as multip
 Depending on the number of selected files and BPMs as well as the frequency resolution of the spectra, the GUI may take a few seconds to display all data.
 
 !!! tip "Deselection"
-    To see the frequency data of one plane only, one can deselect the other plane by either chosing `None` at the bottom of the list of BPMs
+    To see the frequency data of one plane only, one can deselect the other plane by either choosing `None` at the bottom of the list of BPMs
     or by right-clicking into the respective list.
 
 !!! tip "Find BPMs"
@@ -267,7 +267,7 @@ To update the natural tune in the lin-file, first activate the vertical cursors 
 they will appear at their last set position or at 0 if they have not been set yet.
 
 !!! tip "Cursors for each plane"
-    If BPMs from both planes are selected, two sets of cursors will appear: blue for the horizonal spectrum and red for the vertical spectrum.
+    If BPMs from both planes are selected, two sets of cursors will appear: blue for the horizontal spectrum and red for the vertical spectrum.
     In case only one plane is selected, only one set of cursors will appear.
     To update the amount of cursors shown, select BPMs in the desired planes, then untick and re-activate the **Show** checkbox.
 

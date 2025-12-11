@@ -34,7 +34,7 @@ Parameters in the template script (see below) are indicated in the `%(PARAMETER)
     ! ----- Set up Lattice ----- !
     call, file="optics2018/lhc_as-built.seq";  ! LHC machine definition
 
-    ! -----  Definine the optics ----- !
+    ! -----  Define the optics ----- !
     call, file="optics2018/PROTON/opticsfile.22_ctpps2";  ! Optics to Round 30cm collision optics
 
     ! ----- Create Beams ----- !
@@ -195,7 +195,7 @@ The output should look something like this:
 </figure>
 
 When all jobs are done running, the `htcondor.<jobid>.err`, `htcondor.<jobid>.log` and `htcondor.<jobid>.out` files for the respective job are transferred back to the appropriate directories.
-Finally, for each job the `job_output_dir`, here containing the **.twiss.tfs** file, will be transfered back as well, ready for post-processing.
+Finally, for each job the `job_output_dir`, here containing the **.twiss.tfs** file, will be transferred back as well, ready for post-processing.
 
 ## Checking for and Resubmitting Failed Jobs
 

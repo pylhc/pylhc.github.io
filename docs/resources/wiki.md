@@ -97,7 +97,7 @@ To create:
 
     >The specifier `{target=_blank}` is added to ensure pages open in a new tab.
     In the specifier, additional information on the accessibility can be added.
-    Links accessable only with a CERN login can be marked like `{target=_blank .cern_login}` or from the CERN network like `{target=_blank .cern_internal}`.
+    Links accessible only with a CERN login can be marked like `{target=_blank .cern_login}` or from the CERN network like `{target=_blank .cern_internal}`.
 
 - a quote such as the one just above:
 
