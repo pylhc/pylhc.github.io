@@ -11,7 +11,7 @@
 !!! tip "Preparation"
     - Add new features to the [changelog][bbgui_changelog]{target=_blank .cern_login}:<br>
       To track changes and easily identify breaking changes, please add them to the [CHANGELOG.md][bbgui_changelog]{target=_blank .cern_login}.
-      Preferrably, this should be done already before merging the changes into the master branch, but should at least ensured to be **up-to-date during release**.
+      Preferably, this should be done already before merging the changes into the master branch, but should at least ensured to be **up-to-date during release**.
     - Update version in [product.xml][bbgui_product_xml]{target=_blank .cern_login}:<br>
       The version number needs to be updated in the [product.xml][bbgui_product_xml]{target=_blank .cern_login} file.
       **If an already used version number/identifier is used, the release procedure will fail.**
@@ -42,7 +42,7 @@ The release is also [automatically tagged][bbgui_tags]{target=_blank .cern_login
 !!! warning "Breaking Things"
     In contrast to our `python` backend development, there is no real CI and testing for the GUIs.
     This means, that you **need to make sure** manually, that everything works as expected and no functionality is broken, before release.
-    In case of major bugs occuring online, you can always revert to using a previous version from the [CAS][cas_cern]{target=_blank .cern_internal}  (search for `omc3` or `beta-beating`).
+    In case of major bugs occurring online, you can always revert to using a previous version from the [CAS][cas_cern]{target=_blank .cern_internal}  (search for `omc3` or `beta-beating`).
 
 ## Dev-Release
 

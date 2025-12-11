@@ -696,7 +696,7 @@ python -m omc3.model_creator \
     --outputdir lhc_model
 ```
 
-Some of these options belong to the `model_creator` itself, while others depend explicitely on the chosen machine, here the LHC.
+Some of these options belong to the `model_creator` itself, while others depend explicitly on the chosen machine, here the LHC.
 Refer to the [model creator's API documentation][model_creator] for the list of options.
 
 The model creation runs a `MAD-X` scenario and outputs the relevant twiss results to the desired directory.

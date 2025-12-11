@@ -48,7 +48,7 @@ After creating the key, you need to add it to your GitHub account.
 Log into your GitHub account, click on your avatar and go to `Settings` &rarr; `SSH and GPG keys`.
 Then click on [++"New SSH key"++{.green-gui-button}][github_new_ssh_key]{target=_blank} and paste the contents of the `.pub` file into the `Key` field.
 
-Give it a resonable name in the `Title` field (which it will appear as in the GitHub interface) and leave the `Key type` as `Authentication key`.
+Give it a reasonable name in the `Title` field (which it will appear as in the GitHub interface) and leave the `Key type` as `Authentication key`.
 Then click on `Add SSH key` and you are done.
 
 #### Configure SSH to use the key
@@ -158,7 +158,7 @@ _Steps to be done on AFS:_
 
     A possible other way would be to create an empty folder and give writing rights to that one to the service account and then login to lxplus with the service account and clone the repository directly with that account.
     The latter is a good test to see if everything worked correctly anyway.
-    Do not forget, if you have set up the repository with Kerberos authentification, to adapt your `.ssh/config` to delegate the credentials.
+    Do not forget, if you have set up the repository with Kerberos authentication, to adapt your `.ssh/config` to delegate the credentials.
     <br>Repeated for easy copying:
     ```bash
     find . -type d -exec fs sa {} ACCOUNTNAME rlidw \;
@@ -218,7 +218,7 @@ _Steps to be done on your [Gitlab][cern_gitlab]{target=_blank} repository:_
         This is used, because it has Kerberos already set up and configured.
         The [acc-models yaml][acc_models_yml]{target=_blank} was using [their own docker image][acc_models_docker], of which the only additional functionality we need is `openssh`, hence it is installed manually instead.
         - **echo lxplus ssh-rsa** line: This line adds the public key of the lxplus server to the ssh `known_hosts` file, so it connects to lxplus without user interaction about this topic (do not touch).
-        - **echo -e Host** line: Here the ssh `config` is adapted to use Kerberos as authetication method to any server (do not touch).
+        - **echo -e Host** line: Here the ssh `config` is adapted to use Kerberos as authentication method to any server (do not touch).
         - **only master**: Only the commits to `master` trigger the CI. Omit this part if you want the repo to be pulled on every commit, or change it to limit upon which commits this happens (as is done in the [acc-models yml][acc_models_yml]{target=_blank}).
 
 ### Done

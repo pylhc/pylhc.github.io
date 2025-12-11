@@ -13,7 +13,7 @@ The content of this page has been converted from the presentation given as ["OMC
 ## OMC-Analysis
 
 * To get <span class="omc-emph">reliable</span> and <span class="omc-emph">reproducible</span> optics measurements, we cannot trust all BPM data that we are getting.
-* At <span class="omc-emph">different stages</span> of the code, we try to determine the "trustworthyness".
+* At <span class="omc-emph">different stages</span> of the code, we try to determine the "trustworthiness".
 * Some BPMs are fully <span class="omc-emph">excluded</span>, others are getting <span class="omc-emph">errorbars</span> based on their <span class="omc-emph">noise-level</span> (which are often used as *weights*, e.g. for correction calculations).
 
 ## Automatic

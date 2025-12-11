@@ -21,7 +21,7 @@ One can compensate for this deviation in different ways, which is why there are 
     | :---------------- | :------------------------------------------------------------------------------------------------------------- |
     | `get_*.out`       | The optics functions **without** compensation, from the driven excitation data.                                |
     | `get_*_free.out`  | The optics functions compensated **analytically** using an equation[^MiyamotoMeasurementCouplingRDTsACDipole]. |
-    | `get_*_free2.out` | The optics functions compensated **the other way**, see bellow.                                                |
+    | `get_*_free2.out` | The optics functions compensated **the other way**, see below.                                                |
 
     In the case of the `get_*_free2.out` files, the compensation is done differently depending on the computed quantity.
     For some quantities (for instance for $\beta$ from phase) this uses the model values, for others (for instance the coupling RDTs $f_{1001}$ and $f_{1010}$) it is a rescaling in which the model values are used *indirectly*.

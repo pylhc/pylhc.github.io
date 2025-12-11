@@ -14,7 +14,7 @@ If you spot missing parts in the documentation, feel free to report it in an iss
 
 If you found a bug in the source code, you can help us by submitting a bug report in a new issue on GitHub.
 If you wish to contribute a solution, you can submit a Pull Request with a fix.
-However, before doing so, please read the submission guidelines bellow.
+However, before doing so, please read the submission guidelines below.
 
 ### Missing a feature?
 
