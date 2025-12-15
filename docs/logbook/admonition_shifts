@@ -1,0 +1,10 @@
+!!! info "Shift Categorization"
+
+    The letters in the **shifts** column have the following meaning:
+
+    - W = Weekdays (Day)
+    - WN = Weekdays (Night)
+    - H = Holidays or weekend (Day)
+    - HN = Holidays or weekend (Night)
+
+    Hovering the column name will show a tooltip with more information.
