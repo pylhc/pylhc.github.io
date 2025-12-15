@@ -1,6 +1,6 @@
 # IDE Setup
 
-There are multiple IDEs that have been used in the past to delevop the GUI.
+There are multiple IDEs that have been used in the past to develop the GUI.
 While editing the code itself can be done with any IDE, running the application comes with some pitfalls,
 due to the usage of [Common Build Next Generation (CBNG)][cbng_wiki]{target=_blank .cern_login} to resolve dependencies.
 CBNG is only available in the Technical Network and one needs to either run the development tools from somewhere in the TN (e.g. from the `dev-server`) or [mount the required paths via `sshfs`][mounting_tn].
@@ -48,7 +48,7 @@ If everything worked correctly, the CBNG specific tasks and dependencies should 
   </center>
 </figure>
 
-??? note "Lauch Configuration"
+??? note "Launch Configuration"
     To create a launch configuration for the main class, add the following to the `launch.json` file:
     ```json
       {
@@ -118,7 +118,7 @@ The full path to `bob` is:
 The project can be imported using the git-integrations of the IDEs (Eclipse and IntelliJ) directly, using the Gitlab paths below.
 This should be straightforward, but you are giving up some control.
 
-It is recommended to import a project manually, follwing the steps below:
+It is recommended to import a project manually, following the steps below:
 Firstly, you should clone the desired repository to an adequate location on your hard-drive, depending on which project you want to work on:
 
 === "Beta-Beat GUI"

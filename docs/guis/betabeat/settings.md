@@ -33,7 +33,7 @@ There is some general behaviour, that is true for all settings-tabs:
   Entries in the file, that are not recognized as settings will be ignored.
 
 !!! info "Some Background on the Internals"
-    To "apply" settings simply means that the current values in the UI are assinged to the corresponding settings class,
+    To "apply" settings simply means that the current values in the UI are assigned to the corresponding settings class,
     each an internal representation of a settings tab,
     which is used to persistently store the settings in memory and pass them between different parts of the application.
     To "reset" the settings, the stored values are reloaded from this internal representation to the UI.
@@ -80,7 +80,7 @@ This is in contrast to the other settings tabs, which control the settings passe
   If active, the GUI will run the `python` script with the `-d` flag, which initializes the logging level in our scripts automatically to `DEBUG`.
 
 - **Use Server for Analysis**:
-  When set, all `python` tasks requireing lots of memory and processing power (e.g. `hole-in-one` for `harpy` and `optics`) will be run on that server.
+  When set, all `python` tasks requiring lots of memory and processing power (e.g. `hole-in-one` for `harpy` and `optics`) will be run on that server.
   If you click the ++"Test"++ button, file creation and reading of the created files from the local machine will be tested and you will be prompted with the results after a few seconds.
 
 - **Always use Server**:
@@ -91,7 +91,7 @@ This is in contrast to the other settings tabs, which control the settings passe
   e.g. the `harpy` analysis will be run in parallel for each turn-by-turn file, even if started with multiple files selected at once.
   When running `optics analysis` with _"combine analysis"_ **deactivated** the analysis will be run in parallel for each file.
   Conversely, if opting to run the `optics analysis` directly from the BPM-Panel with _"combine analysis"_ **activated**,
-  the `harpy` analysis of the selected files will be run sequentially per file, as it is not explicitely parallelized on the python side.
+  the `harpy` analysis of the selected files will be run sequentially per file, as it is not explicitly parallelized on the python side.
 
 ## Tunes Tab
 
@@ -140,7 +140,7 @@ The fields are non-editable when it does not make sense in the current settings 
   Otherwise the main tune is defined as the highest peak in the spectrum around the tunes given in the first row &plusmn; the tolerance.
 
 - **Clean Limit**:
-  When cleaning is active, BPM outliers are detemined as those that are further away than others from the average.
+  When cleaning is active, BPM outliers are determined as those that are further away than others from the average.
   This limit sets a hard border to the cleaning, where **outliers closer than the given limit to the average tune will not be removed**.
 
 - **Tolerance**:
@@ -375,7 +375,7 @@ introduced by the AC-Dipole and if they are not found in the data, the optics an
   Default: `False`.
 
 - **Calculate only coupling**:
-  When active, skips most of the optics calcualtions and calculates only phases and coupling RDTs.
+  When active, skips most of the optics calculations and calculates only phases and coupling RDTs.
   Useful for quick analysis or machines that do not support (e.g. not enough BPMs) some of the other analysis methods.
   Default: `False`.
 
@@ -471,7 +471,7 @@ which is the `python`-internal representation of the accelerator and its setting
     In `model/settings`:
 
     - add a **descriptive attritbute** to the respective settings class.
-    - add your vlaue to the **constructor** of the class, with default values.
+    - add your value to the **constructor** of the class, with default values.
     - add your value to the **copy-constructor** of the class.
     - add a nice **tooltip** to the label (e.g. the help text from the corresponding `python` argument).
     - use `getProperty()` to automatically **extract** the value from the property file in a unified way and set the attribute on the class.
