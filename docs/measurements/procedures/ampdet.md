@@ -271,8 +271,8 @@ on how to optimize the analysis and only need to be applied where necessary.
         is to activate the `Resonance Lines` and select `Nat. Tune (Measured)`, which shows the average natural tunes of all BPMs (of the first selected analysis data).
         <figure>
           <center>
-          <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/freq_nattune.gif" alt="GIF showing the natural tune in the frequency spectum">
-          <figcaption>Show the natural tune in the frequency spectum.</figcaption>
+          <img class="clickImg" src="../../assets/images/amplitude_detuning_procedure/freq_nattune.gif" alt="GIF showing the natural tune in the frequency spectrum">
+          <figcaption>Show the natural tune in the frequency spectrum.</figcaption>
           </center>
         </figure>
         </p>
@@ -367,7 +367,7 @@ on how to optimize the analysis and only need to be applied where necessary.
         As this data is very noisy (and contains the outliers from the AC-Dipole excitation), it needs to be cleaned first.
         A moving average of the given `Window length` is used determining a tune estimation over the kick timerange.
         This data is extracted from timber and saved into a `bbq_ampdet.tfs` file in the optics results folder.
-        So in case you run the same detuning analysis again, but maybe want to modify the BBQ cleaning parameters, this data can be re-used by ticking `Use previous BBQ`.
+        So in case you run the same detuning analysis again, but maybe want to modify the BBQ cleaning parameters, this data can be reused by ticking `Use previous BBQ`.
         The first cleaning method `outliers` is using the same algorithm as `Auto Clean`, and requires an `outlier limit` to be set.
         BBQ data deviating less than this limit from the moving average are never cleaned.
         The moving average is then calculated on the cleaned data and the closest value to the kick time subtracted from the natural tune measured during the kick.

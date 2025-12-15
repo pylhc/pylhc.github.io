@@ -22,7 +22,7 @@ To run the scripts, [MAD-X][madx] is required. If not otherwise stated, all scri
 
 - The main scripts should be named ``job.madx`` and placed in an accordingly named directory in the directory tree.
 - Supporting files should be uploaded in the script directory. Links to external afs directories should be avoided as files might be modified there or removed.
-- Running with the minimum amount of unavoidable MAD-X errors is prefered.
+- Running with the minimum amount of unavoidable MAD-X errors is preferred.
 
 ## Studies
 

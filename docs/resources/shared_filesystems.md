@@ -55,7 +55,7 @@ sshfs username@cs-ccr-dev3.cern.ch:/nfs/ ~/mnt/nfs -o ssh_command='ssh -t userna
     ```
 
 *[AFS]: Andrew File System
-*[WSL]: Windows Subsytem Linux
+*[WSL]: Windows Subsystem Linux
 
 [eos_csp]: https://cern.service-now.com/service-portal-old/article.do?n=KB0003846
 [gist_wsl]: https://gist.github.com/JoschD/194b3f6c6fcc408684a481fd4a2ff4e5

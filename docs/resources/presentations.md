@@ -16,7 +16,7 @@ External presentations and seminars are collected on EOS and can be reached eith
 !!! Note "Contribution"
     If you like to contribute to the collection, please upload your slides to EOS and link them here.
     The source material of the slides (*.tex* files, images, etc.) is also very welcome, as it makes
-    it easier for other people to re-use (if you allow for that).
+    it easier for other people to reuse (if you allow for that).
 
     **Always cite your sources!**
 
