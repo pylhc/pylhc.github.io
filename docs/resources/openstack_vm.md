@@ -12,7 +12,7 @@ and is based on the [OpenStack CS8 guide for ABP members][openstackCS8]{target=_
 
 For more details, see both the [CERN OpenStack][cern_openstack]{target=_blank .cern_login} website and its [documentation][cern_openstack_doc]{target=_blank} pages.
 
-## What to expect
+### What to expect
 
 After following this guide you will have your own virtual machine running on CERN OpenStack.
 This machine will be similar to your office desktop or the `lxplus` machines,
@@ -36,7 +36,7 @@ with access to `afs`, `eos` and `htcondor` yet come with some advatages and disa
 - No external access, only via CERN network or lxplus-tunneling.
 - Not a high-performace machine (compared to dev/optics servers and HPC clusters), especially when not part of a [project](#projects).
 
-## Projects
+### Projects
 
 CERN OpenStack allows users to create virtual machines either as individuals or as part of a [project][cern_openstack_doc_projects]{target=_blank}.
 Within a project more flavours and larger resource quotas are available, making it possible to create more powerful virtual machines.
@@ -548,7 +548,7 @@ sudo dnf install http://galaxy4.net/repo/galaxy4-release-9-current.noarch.rpm -y
 sudo dnf install tmux -y
 ```
 
-#### For pyQT:
+#### For pyQT
 
 ```bash
 sudo dnf install -y libxkbcommon-x11 xcb-util-cursor xcb-util-keysyms xcb-util-wm
