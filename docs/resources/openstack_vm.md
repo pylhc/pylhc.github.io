@@ -324,27 +324,27 @@ sudo usermod -aG wheel your-cern-user-name
 
 In case you want to create a different user than your CERN user (e.g. to create a different admin-account), follow these steps:
 
-- Create user:
+Create user:
 
-  ```bash
-  export USERNAME=your-desired-username
-  adduser $USERNAME
-  passwd $USERNAME
-  ```
+```bash
+export USERNAME=your-desired-username
+adduser $USERNAME
+passwd $USERNAME
+```
 
-- Give sudo rights to this user _(optional)_:
+Give sudo rights to this user _(optional)_:
 
-  ```bash
-  usermod -aG wheel $USERNAME
-  ```
+```bash
+usermod -aG wheel $USERNAME
+```
 
-- Allow ssh-authorization for this user for the same ssh-keys as current user, e.g. `root` _(optional)_:
+Allow ssh-authorization for this user for the same ssh-keys as current user, e.g. `root` _(optional)_:
 
-  ```bash
-  mkdir /home/$USERNAME/.ssh
-  cp ~/.ssh/authorized_keys /home/$USERNAME/.ssh/
-  chown -R $USERNAME:$USERNAME /home/$USERNAME/.ssh/
-  ```
+```bash
+mkdir /home/$USERNAME/.ssh
+cp ~/.ssh/authorized_keys /home/$USERNAME/.ssh/
+chown -R $USERNAME:$USERNAME /home/$USERNAME/.ssh/
+```
 
 And you should now be able to login as:
 
