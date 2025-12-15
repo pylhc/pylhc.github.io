@@ -19,7 +19,7 @@
 
 ## The OMC Python Ecosystem
 
-This section of the website goes over our Python computing and analysis softwares and environments.
+This section of the website goes over our Python computing and analysis software and environments.
 Our main software for optics analysis exists in two versions: a legacy Python 2 version, `Beta-Beat.src`, and its Python 3 successor `omc3`.
 Development of `Beta-Beat.src` is limited to bug fixes while new features are reserved for `omc3`.
 

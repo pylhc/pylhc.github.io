@@ -48,7 +48,7 @@ if __name__ == "__main__":
 ```
 
 AutoSix is not only able to run MAD-X masks, but also Python scripts using `cpymad`.
-Requirement for the latter is to provide the as `executable` the path to a Python binary with `cpymad` and all relevant packages installed in the appropiate environment.
+Requirement for the latter is to provide the as `executable` the path to a Python binary with `cpymad` and all relevant packages installed in the appropriate environment.
 In theory, any kind of mask is possible, given the correct `executable` is provided and the `Sixtrack` output files created.
 
 !!! info "Necessary Input Files"

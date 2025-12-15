@@ -101,7 +101,7 @@ If you encounter a complaint about `Java` being too old, try using `/mcr/bin/jws
     ```bash
     javaws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating-omc3/PRO/BetaBeatingOMC3-Control-3t.jnlp
     ```
-    :material-arrow-right-bold: Disabling Java as it is too old and likely to be insecure. To reenable use jcontrol utility
+    :material-arrow-right-bold: Disabling Java as it is too old and likely to be insecure. To re-enable use jcontrol utility
 
 !!! success
     ```bash
