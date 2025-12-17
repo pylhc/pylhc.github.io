@@ -218,11 +218,11 @@ The AC Dipole will arm, then kick the beam.
 
     <!-- TODO: insert a picture of the BLM display? -->
 
-    In this case it is recommended to kick a couple times at this amplitude or just below to see if the losses reduce or are consistent.
+    In case large losses are observed, it is recommended to kick a couple times at the current amplitude or just below to see if the losses reduce or are consistent.
     While doing so, also keep an eye on the beam intensity as can be seen on the vistars.
 
-    Should they reduce the beam might have just needed cleaning and one can increase the kick amplitude further.
-    Otherwise, stop increasing unless a beam dump is affordable.
+    Should losses reduce, the beam might have just needed cleaning and one can increase the kick amplitude further.
+    Otherwise stop increasing unless a beam dump is affordable (hint: it **rarely** is).
     Refer to the experts on shift if unsure about the losses, and whether the kick amplitude can be increased further.
 
 After the kick is done, a new tab will open at the very top of the GUI to display the BPM measurements, which can be checked: a menu list lets one select any BPM from each beam, and view the recorded bunch centroid turn-by-turn data through the acquisition.
