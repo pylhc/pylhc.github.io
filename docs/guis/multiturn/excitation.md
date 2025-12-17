@@ -211,17 +211,20 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
 
 Trigger an acquisition by clicking the yellow ++"Acquire with ACDipole excitation"++ button at the bottom left of the GUI.
 The AC Dipole will arm, then kick the beam.
-Make sure to have a `BLM Display` application open and to monitor the losses during that time.
 
-Afterwards, a new tab will open at the very top of the GUI to display the BPM measurements, which can be checked: a menu list lets one select any BPM from each beam, and view the recorded bunch centroid turn-by-turn data through the acquisition.
+!!! tip "Watch for Losses on Kicks"
+    Make sure to have a `BLM Display` application open and to monitor the losses right after clicking to acquire.
 
-??? info "Losses on Kicks"
+    TODO: insert a picture of the BLM display?
+
     Sometimes when increasing the kick amplitude, one will notice large losses.
     In this case it is recommended to kick a couple times at this amplitude or just below to see if the losses reduce or are consistent.
 
     Should they reduce the beam might have just needed cleaning and one can increase the kick amplitude further.
     Otherwise, stop increasing unless a beam dump is affordable.
     Refer to the experts on shift if unsure about the losses, and whether the kick amplitude can be increased further.
+
+After the kick is done, a new tab will open at the very top of the GUI to display the BPM measurements, which can be checked: a menu list lets one select any BPM from each beam, and view the recorded bunch centroid turn-by-turn data through the acquisition.
 
 !!! danger "Do not Kick Both Beams Simultaneously"
 
