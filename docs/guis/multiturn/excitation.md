@@ -253,6 +253,7 @@ This deficit can be overcome in improving the signal-to-noise ratio through incr
 Refer to the [AC Dipole Excitation](#ac-dipole-excitation) section above for the settings and steps.
 
 Trigger an acquisition by clicking the yellow ++"Acquire with ADT/AC excitation"++ button at the bottom left of the GUI.
+Just as with the AC Dipole, make sure to keep an eye on the losses (via BLM display) during the acquisition.
 
 *[AC Dipole]: Alternating Current Dipole
 *[ADT]: LHC Transverse Damper
