@@ -213,11 +213,11 @@ Trigger an acquisition by clicking the yellow ++"Acquire with ACDipole excitatio
 The AC Dipole will arm, then kick the beam.
 
 !!! tip "Watch for Losses on Kicks"
-    Make sure to have a `BLM Display` application open and to monitor the losses right after clicking to acquire.
+    Make sure to have a `BLM Display` application open and to monitor the losses right after clicking to acquire, and watch out for large losses and spikes close to thresholds.
+    This is especially important to do when increasing the kick amplitude btween kicks.
 
     TODO: insert a picture of the BLM display?
 
-    Sometimes when increasing the kick amplitude, one will notice large losses.
     In this case it is recommended to kick a couple times at this amplitude or just below to see if the losses reduce or are consistent.
     While doing so, also keep an eye on the beam intensity as can be seen on the vistars.
 
