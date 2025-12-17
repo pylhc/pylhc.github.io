@@ -216,7 +216,7 @@ The AC Dipole will arm, then kick the beam.
     Make sure to have a `BLM Fixed Display` application open and to monitor the losses right after clicking to acquire, and watch out for large losses and spikes close to thresholds.
     This is especially important to do when increasing the kick amplitude btween kicks.
 
-    TODO: insert a picture of the BLM display?
+    <!-- TODO: insert a picture of the BLM display? -->
 
     In this case it is recommended to kick a couple times at this amplitude or just below to see if the losses reduce or are consistent.
     While doing so, also keep an eye on the beam intensity as can be seen on the vistars.
