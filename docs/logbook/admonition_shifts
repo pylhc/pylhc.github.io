@@ -7,4 +7,5 @@
     - H = Holidays or weekend (Day)
     - HN = Holidays or weekend (Night)
 
+    A shift consists of an 8h period.
     Hovering the column name will show a tooltip with more information.
