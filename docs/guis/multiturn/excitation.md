@@ -219,6 +219,7 @@ The AC Dipole will arm, then kick the beam.
 
     Sometimes when increasing the kick amplitude, one will notice large losses.
     In this case it is recommended to kick a couple times at this amplitude or just below to see if the losses reduce or are consistent.
+    While doing so, also keep an eye on the beam intensity as can be seen on the vistars.
 
     Should they reduce the beam might have just needed cleaning and one can increase the kick amplitude further.
     Otherwise, stop increasing unless a beam dump is affordable.
