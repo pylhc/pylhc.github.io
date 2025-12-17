@@ -213,7 +213,7 @@ Trigger an acquisition by clicking the yellow ++"Acquire with ACDipole excitatio
 The AC Dipole will arm, then kick the beam.
 
 !!! tip "Watch for Losses on Kicks"
-    Make sure to have a `BLM Display` application open and to monitor the losses right after clicking to acquire, and watch out for large losses and spikes close to thresholds.
+    Make sure to have a `BLM Fixed Display` application open and to monitor the losses right after clicking to acquire, and watch out for large losses and spikes close to thresholds.
     This is especially important to do when increasing the kick amplitude btween kicks.
 
     TODO: insert a picture of the BLM display?
@@ -254,7 +254,7 @@ This deficit can be overcome in improving the signal-to-noise ratio through incr
 Refer to the [AC Dipole Excitation](#ac-dipole-excitation) section above for the settings and steps.
 
 Trigger an acquisition by clicking the yellow ++"Acquire with ADT/AC excitation"++ button at the bottom left of the GUI.
-Just as with the AC Dipole, make sure to keep an eye on the losses (via BLM display) during the acquisition.
+Just as with the AC Dipole, make sure to keep an eye on the losses (via the `BLM Fixed Display` and beam intensities) during the acquisition.
 
 *[AC Dipole]: Alternating Current Dipole
 *[ADT]: LHC Transverse Damper
