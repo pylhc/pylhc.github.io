@@ -7,5 +7,10 @@
     - H = Holidays or weekend (Day)
     - HN = Holidays or weekend (Night)
 
-    A shift consists of an 8h period.
+    1 shift consists of an 8h period, so e.g. 0.5W means a 4h shift on a weekday during daytime.
+
+    We consider only the "productive" time for these shifts,
+    i.e. time where the machine is in a stable state suitable for measurements,
+    this is why the number might be lower than the time difference between start and end.
+
     Hovering the column name will show a tooltip with more information.
