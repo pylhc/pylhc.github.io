@@ -72,7 +72,7 @@ Here are some general checks on should always keep in mind when performing measu
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Have the Losses Applications Open</summary>
-      <p> When kicking from Multiturn, keep an eye on the losses application for unexpected spikes.
+      <p> When kicking from Multiturn, keep an eye on the losses application (`BLM Fixed Display`) for unexpected spikes.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Make Sure to Log All Info</summary>
