@@ -8,7 +8,7 @@
 The following is the LS3 plan for the OMC team.
 This is a living document and will be updated as plans evolve.
 A preliminary version was presented in the ABP-OP bilateral meeting
-and can be foun [on the indico page][ABPOPMeetingPresentation]{target=_blank}.
+and can be found [on the indico page][ABPOPMeetingPresentation]{target=_blank}.
 
 <iframe src="https://codimd.web.cern.ch/s/QnZCDVRes"
     width="100%"
