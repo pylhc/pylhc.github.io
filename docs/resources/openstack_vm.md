@@ -3,7 +3,7 @@
 ## Introduction
 
 CERN provides an Infrastructure-as-a-Service as part of their private cloud, which any member can access.
-Through [OpenStack][openstack]{target=_blank} CERN allows users to create virtual machines on their computing infrastructure.
+Through [OpenStack][cern_openstack]{target=_blank .cern_login} CERN allows users to create virtual machines on their computing infrastructure.
 Using self-service portals one can rapidly request virtual machines for production, testing and development purposes, accessible through an ssh connection.
 
 The machines can be of different capacities and run a variety of Windows or Linux operating systems.
@@ -16,12 +16,12 @@ For more details, see both the [CERN OpenStack][cern_openstack]{target=_blank .c
 
 After following this guide you will have your own virtual machine running on CERN OpenStack.
 This machine will be similar to your office desktop or the `lxplus` machines,
-with access to `afs`, `eos` and `htcondor` yet come with some advatages and disadvantages:
+with access to `afs`, `eos` and `htcondor` yet come with some advantages and disadvantages:
 
 **Advantages:**
 
 - Full root access to your machine.
-- Independence from Building 6/9/10 powercuts (in comparison to your office desktop machine).
+- Independence from local powercuts (in comparison to your office desktop machine).
 - Customizable hardware (RAM, Disk, CPU).
 - Persistent storage (your machine will stay alive until you delete it).
 - No interference from other users (your machine is yours alone).
@@ -43,13 +43,13 @@ Within a project more flavours and larger resource quotas are available, making 
 
 !!! warning "Project Request"
     You need to request a project through the CERN IT department directly from the [OpenStack portal][cern_openstack]{target=_blank}
-    **after confirming that you are allowed to do so with the person responsible for computing resources in your group** (currently _G. Iadarola_ for ABP).
+    **after confirming that you are allowed to do so with the person responsible for computing resources in your group** (currently *G. Iadarola* for ABP).
 
 !!! tip "OMC Project"
     OMC members can request to join the existing **OMC OpenStack project** (`omc.cern.ch` and `omc1.cern.ch`) instead of creating a new one.
     This way the resource usage can be shared among all OMC members.
     Members can be added by the administrators of the project upon request.
-    To become an administrator of the OMC project yourself, please request to be added to the [omc-openstack-admins group][omc_openstack_admins]{target=_blank} by _E. Maclean_.
+    To become an administrator of the OMC project yourself, please request to be added to the [omc-openstack-admins group][omc_openstack_admins]{target=_blank} by *E. Maclean*.
 
 ## Virtual Machine Setup
 
@@ -61,21 +61,23 @@ you need to adapt the installation steps, e.g. replacing `dnf`/`yum` with `apt` 
 
 ### Create SSH Key pair
 
+!!! note "Operating System Specific"
+    This step assumes you are using a Unix-like operating system (Linux, MacOS).
+    If you are using Windows, you might need to use a different tool to create the ssh-key pair.
+
 Create an ssh-public-private-key pair for authentication.
 
 ```bash
-ssh-keygen -t rsa -f your-key-name
+ssh-keygen -t ed25519 -f ~/.ssh/your-key-name
 ```
 
 where `your-key-name` is the name you want to give your key, e.g. `openstackkey`.
-The keys will be saved in `~/.ssh/`.
+The keys should be saved in `~/.ssh/` for `ssh` to find them easily.
 
-### Create virtual machine
+Go to [CERN Openstack][cern_openstack]{target=_blank}: `Project -> Compute -> Instances -> Launch Instance`
 
-Go to [CERN Openstack][cern_openstack]: `Project -> Compute -> Instaces -> Launch Instance`
-
-- On **Details** choose a cern-unique name for your instance.
-It will be available under `your-instance-name@cern.ch`
+- On **Details** choose a CERN-unique name for your instance.
+It will be available under `your-machine-name@cern.ch`
 ![launch details](../assets/images/openstack_vm/LaunchDetails.png)
 
 - On **Source** select your desired image, e.g. `rhel9` or `alma9` etc.
@@ -87,15 +89,17 @@ It will be available under `your-instance-name@cern.ch`
 - On **Key Pair** select _Import Key Pair_ and choose as `ssh-key` the [previously created **Public Key**](#create-ssh-key-pair), e.g. `openstackkey.pub`.
 ![launch key-pair](../assets/images/openstack_vm/LaunchKeyPair.png)
 
-Now you have to wait until your instance is created, you can see the progress in
+Now wait until the instance is created. The progress can be seen in
 
 ```text
 Project -> Compute -> Instances
 ```
 
-When the **Power State** reads _Running_ your machine is ready.
+When the **Power State** reads *Running* the machine is ready.
 
-**:fontawesome-solid-rocket: Congratulations! You have created your own virtual machine on CERN OpenStack.**
+!!! success "Machine Ready"
+    **:fontawesome-solid-rocket: Congratulations!**<br>
+    You have created your own virtual machine on CERN OpenStack.
 
 #### Accessing your virtual machine
 
@@ -106,7 +110,7 @@ ssh -i your-key-name root@your-machine-name.cern.ch
 ```
 
 where `your-key-name` from the examples above would be `openstackkey` and
-`your-machine-name` would be `myopenstackvm`.
+`your-machine-name` would be whatever you decided above.
 
 There is also the option to access the machine via the OpenStack web console:
 
@@ -120,14 +124,16 @@ If you want to have additional persistent storage for your machine, you can crea
 
 ##### Request Volume
 
-Go to `Project -> Compute -> Volumes -> Create Volume`
+Go to `Project -> Volumes -> Volumes -> Create Volume`.
+
+Adapt the settings as desired (e.g. size in GB) and create an **empty volume**.
 
 You will need to attach it to your virtual machine after creating it,
 which will provide you with a new disk (e.g. `/dev/vdb`).
 
 ##### Create new partition
 
-_skip if partition already exists on volume_
+*Note: Skip if you have a pre-partioned volume.*
 
 On your virtual machine:
 
@@ -138,9 +144,9 @@ fdisk /dev/vdb
 Inside `fdisk` do:
 
 ```text
- n (create new) -> as primary -> follow steps
- p (display new partition table)
- w (write to disk)
+n (create new) -> as primary -> follow steps
+p (display new partition table)
+w (write to disk)
 ```
 
 Verify new partition:
@@ -222,13 +228,13 @@ or more selectively:
 for module in afs eosclient chrony cvmfs kerberos lpadmin postfix ssh sudo; do sudo locmap --enable $module; done
 ```
 
-Then configure them:
+Then configure the enabled modules:
 
 ```bash
 sudo locmap --configure all
 ```
 
-Now you should have access to `afs`, `eos` and `kerberos` (`kinit` and `aklog`).
+Now you should have access to `AFS`, `EOS` and `Kerberos` (for the `kinit` and `aklog` commands).
 
 !!! tip "CVMFS Update Issues"
     In case you have issues with `cvmfs` updates, e.g when running a `dnf update` you get errors like:
@@ -249,10 +255,10 @@ Now you should have access to `afs`, `eos` and `kerberos` (`kinit` and `aklog`).
 
 #### Add CERN User(s)
 
-You can use the `addusercern` command to allow CERN user-accounts to login to the new machine,
+You can use the `addusercern` command to allow CERN user accounts to login to the new machine,
 either just for yourself or for multiple users.
 
-Use the `--directory` flag to use the `afs`-home directory as the home directory, as in lxplus.
+Use the `--directory` flag to use the `AFS` home directory as the home directory, as in lxplus.
 Omitting this flag will use the local `/home/<username>` directory instead.
 
 ```bash
@@ -294,8 +300,8 @@ sudo usermod -aG wheel your-cern-user-name
 #### Disable `root` SSH-Login
 
 !!! warning "Disable `root` ssh-login"
-    For security reasons it might make sense now to **deactivate ssh-login via root-user account**.
-    Before you do this, **make sure you can login as your-cern-user-name and you have root-rights** (e.g. `sudo su` works).
+    For security reasons it might make sense now to **deactivate ssh login via root user account**.
+    Before you do this, **make sure you can login as your-cern-user-name and you have root rights** (e.g. `sudo su` works).
     You can now disallow login as root by modifying (with `sudo`) the line in `/etc/ssh/sshd_config`<br>
 
     ```bash
@@ -332,13 +338,13 @@ adduser $USERNAME
 passwd $USERNAME
 ```
 
-Give sudo rights to this user _(optional)_:
+Give sudo rights to this user *(optional)*:
 
 ```bash
 usermod -aG wheel $USERNAME
 ```
 
-Allow ssh-authorization for this user for the same ssh-keys as current user, e.g. `root` _(optional)_:
+Allow ssh-authorization for this user for the same ssh-keys as current user, e.g. `root` *(optional)*:
 
 ```bash
 mkdir /home/$USERNAME/.ssh
@@ -353,7 +359,7 @@ ssh -i your-key-name your-user-name@your-machine-name.cern.ch
 ```
 
 !!! note "SSH Config"
-    To make your life easier you can add the following lines to your ssh-config `~/.ssh/config`:
+    To make your life easier you can add the following lines to your ssh config `~/.ssh/config` **on your local machine**:
 
     ```bash
     # connect to virtual machine from inside GPN
@@ -386,7 +392,7 @@ ssh -i your-key-name your-user-name@your-machine-name.cern.ch
 
 This is adapted from the [HTCondor installation guide][abp_htcondor] on this webpage, but with some modifications.
 First of all we don't need to install the `kerberos` packages, as this is done by `locmap`.
-Be sure to also check the [CERN HTCondor Documentation][cern_batchdocs]{target=_blank},
+Be sure to also check the [CERN HTCondor Documentation][cern_batchdocs]{target=_blank}.
 
 #### Configure KERBEROS
 
@@ -452,7 +458,7 @@ sudo dnf install condor-all
 
 #### Configure `HTCondor`
 
-The configuration is then as in the [default HTCondor guide](htcondor.md#configure-htcondor).
+The configuration is then as in the [ABPComputing HTCondor guide][abp_htcondor]{target=_blank}:
 
 Create the config file `/etc/condor/config.d/10-local.config`.
 
@@ -509,8 +515,10 @@ sudo dnf install xdg-utils evince htop wget zsh gcc-c++ sshfs git ImageMagick -y
     If you prefer the default version, you can just run:
 
     ```bash
-    sudo dnf texlive texlive-*
+    sudo dnf install texlive texlive-*
     ```
+
+One way to **manually install** (and will require to also update manually) the latest TeXLive version is:
 
 ```bash
 wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz --no-check-certificate
@@ -519,10 +527,12 @@ rm install-tl-unx.tar.gz
 cd install-tl-*
 sudo dnf install perl-Digest-MD5 -y
 perl ./install-tl --no-interaction
-sudo dnf python3-pygments -y
+sudo dnf install python3-pygments -y
 ```
 
 #### Java
+
+For example java 11 with development tools:
 
 ```bash
 sudo dnf install java-11-openjdk-devel java-11-openjdk
@@ -531,7 +541,7 @@ sudo dnf install java-11-openjdk-devel java-11-openjdk
 #### X11 (for forwarding)
 
 !!! note "Check sshd_config"
-    Please make sure 'X11Forwarding yes' in '/etc/ssh/sshd_config'.
+    Please make sure to have set `X11Forwarding yes` in your `/etc/ssh/sshd_config`.
     This should be active by default.
 
 ```bash
@@ -541,7 +551,7 @@ sudo dnf install -y libXdamage libXrandr libXcursor
 
 #### TMux
 
-See [Wiki][tmux_wiki]{target=_blank} for more information about `tmux` on `rhel`.
+See [the tmux wiki][tmux_wiki]{target=_blank} for more information about `tmux` on `rhel`.
 
 ```bash
 sudo dnf install http://galaxy4.net/repo/galaxy4-release-9-current.noarch.rpm -y
@@ -564,29 +574,30 @@ sudo dnf install hdf5 hdf5-devel -y
 
 #### C++ support for gcc
 
-In installing ```pytimber``` with pip from the acc-py repository, the following error was encountered:
+In installing `pytimber` with `pip` from the `acc-py` repository, the following error was encountered:
 
 ```bash
 gcc: error trying to exec 'cc1plus': execvp: No such file or directory
 error: command '/usr/bin/gcc' failed with exit code 1
 ```
 
-This can be fixed by enabling C++ support for gcc as it does not come installed by default. To do so you can run:
+This can be fixed by enabling C++ support for `gcc` as it does not come installed by default.
+To do so you can run:
 
 ```bash
 sudo dnf install gcc-c++
 ```
 
-#### Krb5 authentification module installation
+#### Krb5 authentication module installation
 
-While debugging your HTCondor installation, you may struggle with installing the Krb5 authentification module.
+While debugging your HTCondor installation, you may struggle with installing the Krb5 authentication module.
 Instead of installing it through CPAN as suggested, you can install it directly through dnf:
 
 ```bash
 sudo dnf install perl-Authen-Krb5
 ```
 
-In particular, this may help with errors regarding the C++ compiler being not found or linked, although it is already properly installed.
+In particular, this may help with errors regarding the C++ compiler not being found or linked, although it is already properly installed.
 
 ### TL;DR
 
@@ -594,12 +605,18 @@ Below is a script that automates most of the steps described above.
 It will ask for your CERN username to copy the necessary files for `kerberos` configuration,
 but the users to add have to be modified manually in the script!
 
-!!! warning "Use at your own risk!"
+!!! danger "Use at your own risk!"
     Please make sure to customize the script below to your needs before running it,
     or copy and paste the commands one-by-one manually.
 
 ```bash
-#!bin/bash
+#!/bin/bash
+
+set -euo pipefail  # script will fail on errors
+
+# Run this script in a temporary working directory
+WORKDIR=$(mktemp -d)
+cd "$WORKDIR"
 
 # Configure locmap
 sudo dnf install locmap-release
