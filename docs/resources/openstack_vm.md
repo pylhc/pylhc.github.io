@@ -619,27 +619,27 @@ WORKDIR=$(mktemp -d)
 cd "$WORKDIR"
 
 # Configure locmap
-sudo dnf install locmap-release
-sudo  dnf install locmap
+sudo dnf install -y locmap-release
+sudo  dnf install -y locmap
 #for module in afs eosclient chrony cvmfs kerberos lpadmin postfix ssh sudo; do sudo locmap --enable $module; done
 sudo locmap --enable all
 sudo locmap --configure all
 
-# Install useful packages
-sudo dnf install xdg-utils evince htop wget zsh gcc-c++ sshfs git ImageMagick -y
+# Install useful packages. !! customize this list !!
+sudo dnf install -y xdg-utils evince htop wget zsh gcc-c++ sshfs git ImageMagick
 
 # Install LaTeX
-# sudo dnf texlive texlive-*  # outdated
+# sudo dnf install -y texlive texlive-*  # outdated
 wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz --no-check-certificate
 zcat < install-tl-unx.tar.gz | tar xf -
 rm install-tl-unx.tar.gz
 cd install-tl-*
-sudo dnf install perl-Digest-MD5 -y
+sudo dnf install -y perl-Digest-MD5
 perl ./install-tl --no-interaction
-sudo dnf python3-pygments -y
+sudo dnf install -y python3-pygments
 
-# Install Java
-sudo dnf install java-11-openjdk-devel java-11-openjdk
+# Install Java 11  !! customize to your preference !!
+sudo dnf install -y java-11-openjdk-devel java-11-openjdk
 
 # Install X11 (for forwarding)
 # make sure 'X11Forwarding yes' in '/etc/ssh/sshd_config' (should be by default)
@@ -650,7 +650,7 @@ sudo dnf install -y libXdamage libXrandr libXcursor
 sudo dnf install -y libxkbcommon-x11 xcb-util-cursor xcb-util-keysyms xcb-util-wm
 
 # for hdf5
-sudo dnf install hdf5 hdf5-devel -y
+sudo dnf install -y hdf5 hdf5-devel
 
 # Configure Kerberos
 sudo dnf install -y krb5devel
@@ -673,11 +673,11 @@ sudo mv krb5.conf.no_rdns /etc/krb5.conf.no_rdns
 scp $USERNAME@lxplus9.cern.ch:/etc/sysconfig/ngbauth-submit .
 sudo mv ngbauth-submit /etc/sysconfig/
 
-sudo dnf install perl-CPAN perl-Sys-Syslog  # needed for running the script below
-sudo dnf install perl-Authen-Krb5  # should install the perl Authen::Krb5 package
+sudo dnf install -y perl-CPAN perl-Sys-Syslog  # needed for running the script below
+sudo dnf install -y perl-Authen-Krb5  # should install the perl Authen::Krb5 package
 
 echo "Testing the credentials via /usr/bin/batch_krb5_credential."
-echo "If it failes, 'export KRB5CCNAME=/tmp/krb5cc_####' as seen in 'klist'."
+echo "If it fails, 'export KRB5CCNAME=/tmp/krb5cc_####' as seen in 'klist'."
 /usr/bin/batch_krb5_credential
 
 # Install HTCondor
@@ -686,7 +686,7 @@ sudo wget https://research.cs.wisc.edu/htcondor/yum/RPM-GPG-KEY-HTCondor
 sudo rpm --import RPM-GPG-KEY-HTCondor
 
 sudo dnf install -y https://research.cs.wisc.edu/htcondor/repo/current/htcondor-release-current.el9.noarch.rpm
-sudo dnf install condor-all
+sudo dnf install -y condor-all
 echo "HTCondor Installed. Creating config file."
 
 
@@ -716,18 +716,18 @@ condor_q
 
 # Install tmux: https://github.com/tmux/tmux/wiki/Installing#red-hat-enterprise-linux--centos-rpms
 echo "Installing tmux:"
-sudo dnf install http://galaxy4.net/repo/galaxy4-release-9-current.noarch.rpm -y  # enable repo with new tmux versions
-sudo dnf install tmux -y
+sudo dnf install -y http://galaxy4.net/repo/galaxy4-release-9-current.noarch.rpm  # enable repo with new tmux versions
+sudo dnf install -y tmux
 
-# Add Volume (manual)
-#---------------------
+# Add Volume (needs to be done manually)
+#---------------------------------------
 
 # Create new partition (skip if already exist on volume)
 # $ fdisk /dev/vdb
 # n  (create new) -> as primary -> follow steps
 # p (display new partition table)
 # w (write to disk)
-# $ lsblk -p /dev/vdb1  (verify new parition)
+# $ lsblk -p /dev/vdb1  (verify new partition)
 
 # $ mkfs -t ext4 /dev/vdb1 (format partition to ext4)
 # $ mkdir /mnt/volume
@@ -745,7 +745,7 @@ sudo dnf install tmux -y
 # Add OMC Members
 # check /etc/passwd if the home directories are set correctly
 # the VM creates already an account for the main user, which is not on afs!
-for omcuser in user1 user2 user3;  # replace NAMES!!!
+for omcuser in user1 user2 user3;  # !! replace NAMES of users !!
 do
   addusercern --directory $omcuser
   mkdir /home/$omcuser
@@ -757,7 +757,6 @@ done
 sudo locmap --configure all
 ```
 
-[openstack]: https://www.openstack.org/
 [cern_openstack]: https://openstack.cern.ch/
 [cern_openstack_doc]: https://clouddocs.web.cern.ch/index.html
 [cern_openstack_doc_projects]: https://clouddocs.web.cern.ch/projects/index.html
