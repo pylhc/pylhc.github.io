@@ -17,5 +17,4 @@ and can be foun [on the indico page][ABPOPMeetingPresentation]{target=_blank}.
     allowfullscreen>
 </iframe>
 
-
 [ABPOPMeetingPresentation]: https://indico.cern.ch/event/1540018/contributions/6480891/attachments/3062480/5415830/OMC%20automation%20efforts.pdf
