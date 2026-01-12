@@ -74,13 +74,18 @@ ssh-keygen -t ed25519 -f ~/.ssh/your-key-name
 where `your-key-name` is the name you want to give your key, e.g. `openstackkey`.
 The keys should be saved in `~/.ssh/` for `ssh` to find them easily.
 
+!!! tip "Passphrase"
+    You can choose to protect your private key with a passphrase.
+    This adds an additional layer of security in case your private key gets compromised (i.e. someone gains access to the file).
+    However, it also means you will need to enter the passphrase every time you use the key for authentication.
+
 Go to [CERN Openstack][cern_openstack]{target=_blank}: `Project -> Compute -> Instances -> Launch Instance`
 
 - On **Details** choose a CERN-unique name for your instance.
 It will be available under `your-machine-name@cern.ch`
 ![launch details](../assets/images/openstack_vm/LaunchDetails.png)
 
-- On **Source** select your desired image, e.g. `rhel9` or `alma9` etc.
+- On **Source** select your desired image, e.g. `rhel9` or `alma9` etc. (if unsure which one is currently best supported, ask around in OMC).
 ![launch source](../assets/images/openstack_vm/LaunchSource.png)
 
 - On **Flavour** select the Volume and RAM size that you think you will need.
