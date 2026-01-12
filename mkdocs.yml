@@ -126,7 +126,9 @@ nav:
   - OMC Team:
     - About: omc_team/about.md
     - Publications: omc_team/publications.md
-    - Future MD Ideas: omc_team/ideas.md
+    - Planning:
+      - LS3: omc_team/ls3.md
+      - Future MD Ideas: omc_team/ideas.md
     - ↪ On Mattermost: https://mattermost.web.cern.ch/be-dep/channels/omc-team
     - ↪ Meetings (Indico): https://indico.cern.ch/category/5986/
   - Python Ecosystem:
