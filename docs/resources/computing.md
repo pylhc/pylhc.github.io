@@ -61,22 +61,14 @@ Information on ABP-specific resources can be found on the [dedicated website][ab
 
 ## CERN OpenStack Machines
 
-CERN provides an Infrastructure-as-a-Service as part of their private cloud, which any member can access.
-Through [OpenStack][openstack]{target=_blank} CERN allows users to create virtual machines on their computing infrastructure.
-Using self-service portals one can rapidly request virtual machines for production, testing and development purposes, accessible through an ssh connection.
-
-The machines can be of different capacities and run a variety of Windows or Linux operating systems.
-For details, see both the [CERN OpenStack][cern_openstack]{target=_blank .cern_login} website and its [documentation][cern_openstack_doc]{target=_blank} pages.
+See the section on [OpenStack VMs](openstack_vm.md) for more information.
 
 *[ABP]: Accelerator and Beam Physics
 *[CCC]: CERN Control Center
 
 [abpcomputing]: https://abpcomputing.web.cern.ch
 [cern_htcondor_docs]: https://batchdocs.web.cern.ch/index.html
-[cern_openstack]: https://openstack.cern.ch/
-[cern_openstack_doc]: https://clouddocs.web.cern.ch/index.html
 [graphana]: https://grafana.com/
 [graphana_htcondor]: https://monit-grafana.cern.ch
 [htcondor]: https://htcondor.org/
-[openstack]: https://www.openstack.org/
 [user_batch]: https://monit-grafana.cern.ch/d/000000869/user-batch-jobs?from=now-1h&orgId=5&refresh=5m&to=now&var-cluster=cernprod&var-datasource=fifemon-graphite
