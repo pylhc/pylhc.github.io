@@ -1,66 +1,65 @@
-# Editing Wiki pages
+# Editing This Wiki
 
-This page presents an overview of the steps necessary to modify the wiki and add new pages.
+This website is built with [zensical]{target=_blank}, the successor of [mkdocs-material]{target=_blank}, and its content is based on markdown files.
+This page presents an overview of the steps necessary to modify or add pages, and build the website.
 It also contains examples for useful commands and can be used as a template for new pages.
 
-More detailed information can be found here:
+## Making Changes Online
 
-- [markdown guide][markdownsyntax]
-- [mkdocs homepage][mkdocs]
-- [mkdocs material help][mkdocs_material]
+This method is adapted to making small changes, most likely to a single page.
+Go to the [current version of the site][site_address]{target=_blank}, navigate to a page you wish to modify and click the page's modification link at the top right of the page's content.
+You will be taken to the GitHub UI to make your changes, which you can commit directly.
 
-## Setup
-
-### To Make Changes Online
-
-This is a method adapted to making small changes, most likely to a single page.
-Go to the current version of the site [here][site_address], navigate to a page you wish to modify and click the page's modification link :fontawesome-solid-pen:{style="height:0.95em"}.
-You will be taken to the Github GUI to make your changes, which you can later commit.
-
-Even new pages can be added directly online on github, by navigating to the desired location and clicking  on the `Add File` button.
+Even new pages can be added directly online on GitHub, by navigating to the desired location and clicking  on the `Add File` button.
 See [the section about adding pages](#adding-a-page) for more info about what is required for new pages to be accessible from the menu.
+Please note: as a lot of fancy styling is added by [zensical]{target=_blank}, but only the basic markdown formatting is seen in the GitHub preview.
 
-!!! note
-    As a lot of fancy styling is added by the [material theme][mkdocs_material] used, only the basic markdown formatting is seen in the preview.
-
-### To Make Changes Locally
+## Making Changes Locally
 
 For bigger changes, local development is recommended.
-Get a local copy of this repository, set up a `Python3.6+` environment and install the dependencies:
+Get a local copy of this repository, set up a `Python3` environment and install the dependencies:
 
 ```bash
-git clone https://github.com/pylhc/pylhc.github.io
-python -m pip install mkdocs mkdocs-material mkdocs-minify-plugin
+git clone https://github.com/pylhc/pylhc.github.io  && cd pylhc.github.io
+python -m pip install -r requirements.txt
 ```
 
 Create a branch (from master) and make your changes.
-You can run a local server by running
+You can run a local server by running, from the top-level directory:
 
 ```bash
-python -m mkdocs serve
+zensical serve
 ```
 
-from the top-level directory, and see the site rendered locally in your browser at `localhost:8000`.
-The rendered website will automatically reload upon changes to any file located in the `docs` directory.
+!!! tip "Using uv"
 
-Commit your changes to this repository, and open a pull request to get them approved once they are ready.
+    Considering only `zensical` is required to build the site, if using [uv]{target=_blank} one can simply add it as a tool (`uv tool install zensical`) and then run it through `uv` (`uvx zensical serve`). No need to manage environments!
 
-### Adding a page
+The site will be rendered locally in your browser at `localhost:8000`, and the build will automatically re-trigger upon changes to any file located in the `docs` directory.
+Commit your changes, push them to the repository, and open a pull request to get them approved once they are ready.
 
-In order to add a new page, a new `.md` should be created in the appropriate location in the folder structure.
+!!! info "Push Permissions"
+
+    Currently only members of the `PyLHC` organisation on GitHub are allowed to push changes to our repositories.
+    One can always fork the repo, clone their own fork and push to that, then open a PR.
+
+## Adding a Page
+
+<!-- TODO: Adapt this once transition to the zensical.toml config file is done -->
+
+In order to add a page, a new `.md` file should be created in the appropriate location in the folder structure.
 A link to the page then needs to be added in the `nav` section of the `mkdocs.yml` in the root directory, together with an ID.
+The current navigation gives a clear example of how this works.
 
-## Guidelines
+## Content Guidelines
 
-Pages are written in Markdown (file extension `.md`).
-A general overview of the syntax as well as some best practices can be found [here][markdownsyntax]{target=_blank}.
+Pages are written in Markdown, with file extension `.md`.
+A general overview of the syntax as well as some best practices can be found on this [markdown guide][markdownsyntax]{target=_blank}.
 Additionally, to allow for easier comparison between two versions of a file, it is recommended to keep it to one sentence per line.
-Ideally, the line length is kept below 100 characters.
-Following this, it is also recommended to not put links in the text, instead creating an ID at the end of the document and linking to this.
+Following this, it is also recommended to not put links in the text, instead creating an ID at the end of the document and linking to it.
 
 Different blocks of either code or text should be separated by one blank line.
-
-To create blocks of code, use `fenced code blocks`, which are created using `` ``` ``.
+To create blocks of code, use `fenced code blocks`, which are created using triple backticks: `` ``` ``.
 These blocks of code should be separated from the previous and following text by one blank line.
 To allow for syntax highlighting, the language should be specified.
 Below a basic example.
@@ -70,6 +69,10 @@ Below a basic example.
 something code that does something
 ```
 ````
+
+!!! tip "Markdown best practices"
+
+    If using and IDE, extensions such as the great [markdownlint]{target=_blank} extension will catch and fix mistakes for you.
 
 ## Environments
 
@@ -349,8 +352,10 @@ Images should be saved in `assets/images`, in an appropriately named folder.
 
 *[difficult word]: helpful explanation
 
-[mkdocs]: https://www.mkdocs.org/
-[mkdocs_material]: https://squidfunk.github.io/mkdocs-material/
+[zensical]: https://zensical.org/
+[mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
 [site_address]: https://pylhc.github.io/
+[uv]: https://docs.astral.sh/uv/
 [markdownsyntax]: https://www.markdownguide.org/basic-syntax/
+[markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 [bestwiki]: https://pylhc.github.io/
