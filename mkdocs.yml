@@ -32,7 +32,6 @@ theme:
     - content.action.edit  # editing button on the pages is opt-in since v9
     - content.code.copy  # copy button for code blocks
   palette:
-
     # Palette toggle for light mode
     - scheme: default
       primary: indigo
