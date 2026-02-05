@@ -7,7 +7,7 @@ Note: The `zensical` devs currently recommended *not* to switch from the `mkdocs
 ## Content
 
 - [ ] Refresh the `How to edit this wiki page
-- [ ] Transition the logbooks out of the "Resources" tab and into its own
+- [x] Transition the logbooks out of the "Resources" tab and into its own
 
 ## Cosmetic
 
