@@ -341,29 +341,31 @@ It can be created with:
 When creating a table, please ensure that column width is constant and that pipes (`|`) are aligned.
 If using an IDE, this can be easily done with an extensions such as the [markdown table formatter][markdown_table_formatter]{target=_blank}.
 
-#### Images
+### Inserting Images
 
-To paste an image, use the following code.
+To insert an image, use the following:
 
 ```markdown
 ![Image](../assets/images/tricks/placeholder.gif)
 ```
 
-To include a centered image with a caption, use the following code.
+To include a centered image with a caption, deferring to `html` also works:
 
 ```html
 <figure>
-    <img src="../../assets/images/something/image.png" width=90%>
+  <img src="../../assets/images/something/image.png" width=90%>
   <figcaption>Figure: Something really amazing.</figcaption>
 </figure>
 ```
 
+The specified source for the image is a relative path to the markdown file.
 Images should be saved in `assets/images`, in an appropriately named folder.
+
+<!-- Below is acronyms, footnotes and link ids -->
 
 *[acronym]: helpful explanation
 
 [^1]: Some additional content.
-[^name]: fwefwef
 
 [zensical]: https://zensical.org/
 [mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
