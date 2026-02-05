@@ -17,3 +17,4 @@ Note: The `zensical` devs currently recommended *not* to switch from the `mkdocs
 ## Build
 
 - [x] Prepare new GitHub Actions workflows using Zensical
+- [ ] Remove the old dependencies from requirements.txt before merging
