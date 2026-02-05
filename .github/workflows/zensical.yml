@@ -39,7 +39,7 @@ jobs:
         # Note: when it's stable we will want to use --strict on
         # the lintrack builds as they're for internet-less view
         # from the CCC. Just needs to --strict flag to this command
-        run: uvx zensical build
+        run: zensical build
 
       - name: Upload documentation to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
