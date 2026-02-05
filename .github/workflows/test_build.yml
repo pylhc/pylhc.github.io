@@ -1,4 +1,4 @@
-# Build documentation and upload to gh-pages
+# Build documentation and upload artifact for checks
 name: Ensure documentation builds after commits
 
 defaults:
