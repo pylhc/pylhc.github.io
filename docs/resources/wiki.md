@@ -74,49 +74,49 @@ something code that does something
 
     If using and IDE, extensions such as the great [markdownlint]{target=_blank} extension will catch and fix mistakes for you.
 
-## Environments
+## Markdown Elements We Use
 
-### General text formatting
+The following displays markdown commands and tricks we use extensively in this website.
+A more exhaustive list of markdown features is available on the [markdown guide][markdownsyntax]{target=_blank}.
 
-These are basic markdown commands, repeated here for convenience.
-A more exhaustive list is available [here][markdownsyntax].
-To create:
+### General Text Formatting
 
-- **bold** text, surround the text with `**text**`.
+The following are used to format text in various ways:
 
-- _italic_ text, surround the text with `_text_`.
+- For **bold text**, surround the text with `**text**`.
 
-- an internal [link](#general-text-formatting), use `[link](../../resources/wiki.md#general-text-formatting)`
-  > Note that all links are relative to the current document!
-    The `#`-labels are created by headers automatically and can be omitted, in case you want to link to the page itself.
+- For *italic text*, surround the text with `*text*`.
 
-- an external [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.
+- For an [internal link](#general-text-formatting), use `[link](../../resources/wiki.md#general-text-formatting)`.
+  > Note that all links are relative to the current document. The `#`-labels, called "anchors", are automatically created by headers and can be omitted, for instance to link to the page itself.
 
-    >Note that at the bottom of the file, an ID named `bestwiki` should be created, together with the hyperlink to the webpage, like so:
+- For an [external link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.
 
-    >```markdown
-     [bestwiki]: https://pylhc.github.io/
-     ```
-
+    > Note that at the bottom of the file, an ID named `bestwiki` should be created at the bottom of the page, together with the hyperlink to the destination, like so:
+    >
+    ```markdown
+    [bestwiki]: https://pylhc.github.io/
+    ```
+    >
     >The specifier `{target=_blank}` is added to ensure pages open in a new tab.
     In the specifier, additional information on the accessibility can be added.
     Links accessible only with a CERN login can be marked like `{target=_blank .cern_login}` or from the CERN network like `{target=_blank .cern_internal}`.
 
-- a quote such as the one just above:
+- For a quote such as the one just above:
 
     ```markdown
     > to markdown, or not to markdown
     ```
 
-- small hints to a difficult word, which appear on mouse over, add at the bottom of the file:
+- For tooltips appearing when hovering content such as an acronym, which appear on mouse over, add at the bottom of the file:
 
     ```markdown
-    *[difficult word]: helpful explanation
+    *[acronym]: helpful explanation
     ```
 
-- an inline math environment, surround the equation with `$a^2 + b^2 = c^2$`.
+- For an inline math environment, surround the equation with dollar signs: `$a^2 + b^2 = c^2$`.
 
-- a block math environment, use:
+- For a block math environment, use double dollar signs above and below the block's content:
 
     ```markdown
     $$
@@ -124,7 +124,7 @@ To create:
     $$
     ```
 
-- a footnote, use `[^1]` in the text and add at the bottom of the page `[^1]: Lorem ipsum`.
+- For a footnote[^1], use `[^1]` in the text and add at the bottom of the page `[^1]: Lorem ipsum`. The number can be replaced with a word (i.e. `[^name]`).
 
 ### Code listing
 
@@ -350,7 +350,10 @@ To include a centered image with a caption, use the following code.
 
 Images should be saved in `assets/images`, in an appropriately named folder.
 
-*[difficult word]: helpful explanation
+*[acronym]: helpful explanation
+
+[^1]: Some additional content.
+[^name]: fwefwef
 
 [zensical]: https://zensical.org/
 [mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
