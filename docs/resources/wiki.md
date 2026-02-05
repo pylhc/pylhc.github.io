@@ -126,20 +126,23 @@ The following are used to format text in various ways:
 
 - For a footnote[^1], use `[^1]` in the text and add at the bottom of the page `[^1]: Lorem ipsum`. The number can be replaced with a word (i.e. `[^name]`).
 
-### Code listing
+### Code Listing
 
 To highlight `code` inline, surround the text to highlight with `` ` ``.
+To create a code block, surround the code with triple backticks: `` ``` ``.
+Ensure that the code block is separated from text by one blank line, above and below.
 
-For creating a code block, surround the code with `` ``` ``.
-Please make sure that the code block is separated from the text by one blank line.
-Additionally, please specify the language.
+```markdown
+for i in range(3):
+    print(i)
+```
 
-````markdown
+Additionally, specifying the language right after the backticks (here with `` ```python ``) will add syntax highlighting.
+
 ```python
 for i in range(3):
     print(i)
 ```
-````
 
 ### Lists
 
