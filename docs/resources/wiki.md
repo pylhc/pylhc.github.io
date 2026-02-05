@@ -237,29 +237,37 @@ for i in range(3):
         Text 3
     ```
 
-### Text Boxes
+### Admonitions
 
-??? abstract "Paper Box"
-    Textbox for adding papers.
-    Code:
+Styled text boxes, called admonitions, are a convenient way to convey specific relevant or important information.
+To see all supported admonitions types, see directly the [relevant section in zensical's documentation][zensical_admonitions]{target=_blank}.
+
+They are declared with either `!!!` or `???` (for expanded or collapsed), the admonition type (which defines its styling) and optionally a title in quotes.
+This is followed by indented text for the admonition's content.
+The usual markdown formatting applies to the content as well, including all that is presented in this page.
+Admonitions can be nested.
+
+Here are a few examples including the code to create them.
+The collapsed ones can be expanded by clicking on them.
+
+??? abstract "Abstract"
+    Admonition useful for referencing papers.
 
     ```markdown
-    ??? abstract "Paper Box"
-        Textbox for adding papers.
+    ??? abstract "Abstract"
+        Admonition useful for referencing papers.
     ```
 
-??? info "Info Box"
-    Textbox for adding useful information.
-    Code:
+???+ info "Info Box"
+    Appending a `+` to `???` will result in an expanded box by default. It is still collapsible.
 
     ```markdown
-    ??? info "Info Box"
-        Textbox for adding useful information.
+    ???? info "Info Box"
+        Appending a `+` to `???` will result in an expanded box by default. It is still collapsible.
     ```
 
 ??? question "Question Box"
     Textbox for answering commonly asked questions.
-    Code:
 
     ```markdown
     ??? question "Question Box"
@@ -268,18 +276,14 @@ for i in range(3):
 
 ??? tip "Tip Box"
     Textbox for adding useful tips to novice users.
-    Code:
 
     ```markdown
     ??? tip "Tip Box"
         Textbox for adding useful tips to novice users.
     ```
 
-Note that appending a `+` to `???` will result in an expanded box by default.
-
 !!! note "Note Box"
     Textbox for adding small notes.
-    Code:
 
     ```markdown
     !!! note "Note Box"
@@ -288,7 +292,6 @@ Note that appending a `+` to `???` will result in an expanded box by default.
 
 !!! warning "Warning Box"
     Textbox for warning users of common pitfalls.
-    Code:
 
     ```markdown
     !!! warning "Warning Box"
@@ -297,7 +300,6 @@ Note that appending a `+` to `???` will result in an expanded box by default.
 
 !!! danger "Danger Box"
     Textbox for warning users of potential serious consequences if not executed properly.
-    Code:
 
     ```markdown
     !!! danger "Danger Box"
@@ -366,3 +368,4 @@ Images should be saved in `assets/images`, in an appropriately named folder.
 [markdownsyntax]: https://www.markdownguide.org/basic-syntax/
 [markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 [bestwiki]: https://pylhc.github.io/
+[zensical_admonitions]: https://zensical.org/docs/authoring/admonitions/#supported-types
