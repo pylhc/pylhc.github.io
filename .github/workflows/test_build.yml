@@ -37,6 +37,6 @@ jobs:
         uses: actions/upload-artifact@v6
         if: success() && github.event_name == 'pull_request'
         with:
-          name: site-build
+          name: site-build-mkdocs
           path: doc_build
           retention-days: 5

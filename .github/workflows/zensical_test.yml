@@ -43,6 +43,6 @@ jobs:
         uses: actions/upload-artifact@v6
         if: success() && github.event_name == 'pull_request'
         with:
-          name: site-build
+          name: site-build-zensical
           path: site
           retention-days: 5
