@@ -244,8 +244,7 @@ To see all supported admonitions types, see directly the [relevant section in ze
 
 They are declared with either `!!!` or `???` (for expanded or collapsed), the admonition type (which defines its styling) and optionally a title in quotes.
 This is followed by indented text for the admonition's content.
-The usual markdown formatting applies to the content as well, including all that is presented in this page.
-Admonitions can be nested.
+Should the content span multiple lines, it is common to leave a blank line before starting it.
 
 Here are a few examples including the code to create them.
 The collapsed ones can be expanded by clicking on them.
@@ -258,12 +257,12 @@ The collapsed ones can be expanded by clicking on them.
         Admonition useful for referencing papers.
     ```
 
-???+ info "Info Box"
-    Appending a `+` to `???` will result in an expanded box by default. It is still collapsible.
+??? info "Info Box"
+    Textbox for adding useful information.
 
     ```markdown
-    ???? info "Info Box"
-        Appending a `+` to `???` will result in an expanded box by default. It is still collapsible.
+    ??? info "Info Box"
+        Textbox for adding useful information.
     ```
 
 ??? question "Question Box"
@@ -274,12 +273,18 @@ The collapsed ones can be expanded by clicking on them.
         Textbox for answering commonly asked questions.
     ```
 
-??? tip "Tip Box"
-    Textbox for adding useful tips to novice users.
+???+ tip "Tip Box"
+    Appending a `+` to `???` will result in a box expanded by default, but still collapsible.
+
+    !!! info "Amonitions can be nested!"
+        Any content in an admonition is treated as markdown.
 
     ```markdown
-    ??? tip "Tip Box"
-        Textbox for adding useful tips to novice users.
+    ??? tip "Tip Box - Expand Me!"
+        Appending a `+` to `???` will result in a box expanded by default, but still collapsible.
+
+        !!! info "Amonitions can be nested!"
+            Any content in an admonition is treated as markdown.
     ```
 
 !!! note "Note Box"
