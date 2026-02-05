@@ -320,27 +320,26 @@ The collapsed ones can be expanded by clicking on them.
         Textbox for warning users that this webpage is still work in progress.
     ```
 
-### Various other commands
-
-#### Tables
+### Creating Tables
 
 Tables in markdown look like this.
 
-| Column 1      | Column 2    |
-| -----------   | ----------- |
-| Entry 11      | Entry 21    |
-| Entry 12      | Entry 22    |
+| Column 1 | Column 2 |
+|----------|----------|
+| Entry 11 | Entry 21 |
+| Entry 12 | Entry 22 |
 
-It can be created using
+It can be created with:
 
 ```markdown
-| Column 1      | Column 2    |
-| -----------   | ----------- |
-| Entry 11      | Entry 21    |
-| Entry 12      | Entry 22    |
+| Column 1 | Column 2 |
+|----------|----------|
+| Entry 11 | Entry 21 |
+| Entry 12 | Entry 22 |
 ```
 
 When creating a table, please ensure that column width is constant and that pipes (`|`) are aligned.
+If using an IDE, this can be easily done with an extensions such as the [markdown table formatter][markdown_table_formatter]{target=_blank}.
 
 #### Images
 
@@ -374,3 +373,4 @@ Images should be saved in `assets/images`, in an appropriately named folder.
 [markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 [bestwiki]: https://pylhc.github.io/
 [zensical_admonitions]: https://zensical.org/docs/authoring/admonitions/#supported-types
+[markdown_table_formatter]: https://marketplace.visualstudio.com/items?itemName=fcrespo82.markdown-table-formatter
