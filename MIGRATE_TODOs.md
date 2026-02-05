@@ -1,0 +1,17 @@
+# Zensical Migration
+
+This file records the remaining TODOs for the [zensical](https://zensical.org/) migration of the website builder.
+
+Note: The `zensical` devs currently recommended *not* to switch from the `mkdocs.yml` to the `zensical.toml` configuration files for existing projects. Work is done on their side to make sure `zensical` ingests the previous file just fine, and will provide a migration path in a later release.
+
+## Content
+
+- [ ] Refresh the `How to edit this wiki page
+
+## Cosmetic
+
+- [ ] The header color stays white/black despite our specification for a blue that blends with the landing page's content.
+
+## Build
+
+- [x] Prepare new GitHub Actions workflows using Zensical
