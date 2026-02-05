@@ -34,7 +34,7 @@ jobs:
 
       # Upload artifacts if in PR so reviewers can have a quick look without building documentation from the branch locally
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         if: success() && github.event_name == 'pull_request'
         with:
           name: site-build
