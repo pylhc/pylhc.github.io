@@ -147,13 +147,13 @@ for i in range(3):
 ### Lists
 
 === "Unordered list"
-    An unordered list looks like this.
+    An unordered list looks like this:
 
     - First
     - Second
     - Third
 
-    It can be created using
+    It can be created using:
 
     ```markdown
     - First
@@ -162,13 +162,13 @@ for i in range(3):
     ```
 
 === "Ordered list"
-    An ordered list looks like this.
+    An ordered list looks like this:
 
     1. First
     2. Second
     3. Third
 
-    It can be created using
+    It can be created using:
 
     ```markdown
     1. First
@@ -177,13 +177,14 @@ for i in range(3):
     ```
 
 === "Task list"
-    A task list looks like this.
+    A task list looks like this:
 
     - [ ] First
     - [x] Second
     - [ ] Third
 
-    It can be created using
+    Note the boxes can be (un-)ticked by the user.
+    It can be created using:
 
     ```markdown
     - [ ] First
@@ -192,7 +193,7 @@ for i in range(3):
     ```
 
 === "Procedure Task List"
-    Below, a task list with hints, as is used in the procedures, is displayed.
+    Below, a task list with hints, as is used in the procedures:
 
     - [ ] <details class="nodeco"><summary>Task 1 Summary</summary>
         <p> Hints for task 1.
@@ -206,7 +207,7 @@ for i in range(3):
         <p> Hints for task 3.
         </p></details>
 
-    It can be created using the following code.
+    It can be created using the following code:
     ```html
     - [ ] <details class="nodeco"><summary>Task 1 Summary</summary>
         <p> Hints for task 1.
