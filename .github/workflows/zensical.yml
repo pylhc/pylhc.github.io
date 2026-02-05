@@ -1,43 +1,50 @@
 # Build documentation and upload to gh-pages
-# This one is for the new zensical build, see their
-# documentation ('publish your site' section) for more
+# This new workflow uses zensical for the build
 name: Build and upload documentation
+defaults:
+  run:
+    shell: bash
 
-on:
+permissions:
+  contents: write
+
+env:
+  UV_COMPILE_BYTECODE: 1
+
+on:  # Runs on any push event to master
   push:
     branches:
       - master
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+  documentation:
+    name: Build and Publish Static Documentation
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/configure-pages@v5
+      - uses: actions/checkout@v4
 
-      - uses: actions/checkout@v5
-
-      - uses: actions/setup-python@v5
+      - name: Install uv and Python
+        uses: astral-sh/setup-uv@v6
         with:
-          python-version: 3.x
+          python-version: 3.13
+          enable-cache: true
+          activate-environment: true
+          cache-dependency-glob: "requirements.txt"
 
-      - run: pip install zensical
+      - name: Install dependencies
+        run: uv tool install zensical
 
-      - run: zensical build --clean
+      - name: Build documentation
+        # Note: when it's stable we will want to use --strict on
+        # the lintrack builds as they're for internet-less view
+        # from the CCC. Just needs to --strict flag to this command
+        run: uvx zensical build
 
-      - uses: actions/upload-pages-artifact@v4
+      - name: Upload documentation to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: success()
         with:
-          path: site
-
-      - uses: actions/deploy-pages@v4
-        id: deployment
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: site  # zensical does not allow customizing the dir yet
