@@ -21,6 +21,7 @@ copyright: 'Copyright &copy; 2020 PyLHC/OMC-Team'
 # Configuration
 theme:
   name: 'material'
+  # variant: 'classic'  # fixes header issue but prevents zensical modern styling
   custom_dir: overrides/
   logo: assets/logos/OMC_logo_inverse.svg  # top left header logo
   favicon: assets/logos/OMC_logo_inverse.svg  # browser tab logo
