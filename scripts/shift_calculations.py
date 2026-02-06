@@ -1,4 +1,12 @@
-"""Script to calculate the shifts from the first markdown table in a given file.
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#   "matplotlib >= 3.0",
+#   "pandas >= 2.0",
+# ]
+# ///
+"""
+Script to calculate the shifts from the first markdown table in a given file.
 This data can then be plotted with `plot_results`, e.g. for the end-of-year report.
 """
 
