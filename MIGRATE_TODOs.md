@@ -11,8 +11,8 @@ Note: The `zensical` devs currently recommended *not* to switch from the `mkdocs
 
 ## Cosmetic
 
-- [ ] The header color stays white/black despite our specification for a blue that blends with the landing page's content.
-- [ ] Custom heart admonition (in Resources, help & contacts) does not render properly
+- [x] The header color stays white/black despite our specification for a blue that blends with the landing page's content.
+- [x] Custom heart admonition (in Resources, help & contacts) does not render properly
 
 ## Build
 
