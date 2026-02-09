@@ -1,4 +1,1 @@
 zensical
-mkdocs>=1.0,<2.0
-mkdocs-material>=9.0,<10.0
-mkdocs-minify-plugin<1.0
