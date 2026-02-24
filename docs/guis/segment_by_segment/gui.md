@@ -5,6 +5,13 @@
 
 ## General Workflow
 
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/blank_window.png" width="100%" alt="Blank Window"/>
+  <figcaption>Blank window of SbS-GUI as seen when starting the GUI.</figcaption>
+  </center>
+</figure>
+
 - Load optics
 - Define segments
 - Define corrections (optional)
@@ -147,6 +154,7 @@ When opening the [corrections dialog](#corrections) for a new/not yet existing c
   <img class="clickImg" src="../../assets/images/sbs_gui/settings_plotting.png" width="100%" alt="Plot Settings"/>
   <figcaption>The plotting settings.</figcaption>
   </center>
+</figure>
 
 Note: Hints available on hovering over the settings text.
 
@@ -162,6 +170,13 @@ Note: Hints available on hovering over the settings text.
                   When deactivated, the current limits will be kept when changing segments, which can be useful for comparing different segments or optics with the same zoom level.
 - **Same Segment Start**: Plot segments together, even if they have different start BPMs. Not recommended, as it can lead to confusion and misinterpretation of the results, as they will both start at the same point in the plot, even though they represent different locations in the accelerator.
 - **Model Location**: Plot segments relative to the model location, i.e. their position in the accelerator, which allows for easy comparison of segments with different start BPMs. If deactivated, segments will start at a location of zero at their start BPM.
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/view_model_location.png" width="100%" alt="Model Location"/>
+  <figcaption>Example of two segements with different start BPMs when plotted with `Model Location` activated.</figcaption>
+  </center>
+</figure>
 
 ## Side Panel
 
@@ -271,6 +286,12 @@ Warning:
 - This will re-run the analysis for the selected segment and optics, even if the file already exists.
 - When SbS analysis is running in the background, a spinner icon will appear at the bottom right of the GUI.
 - Hovering over the "running tasks" text will show the name of the currently running task (i.e. `SbS for <optics name>`).
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/task_running.png" width="100%" alt="Running Task"/>
+  <figcaption>Running task indicator.</figcaption>
+  </center>
 
 #### New Segment
 
