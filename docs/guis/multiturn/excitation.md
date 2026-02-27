@@ -216,8 +216,15 @@ The AC Dipole will arm, then kick the beam.
     Make sure to have a `BLM Fixed Display` application open and to monitor the losses right after clicking to acquire, and watch out for large losses and spikes close to thresholds.
     This is especially important to do when increasing the kick amplitude between kicks.
 
-    <!-- TODO: insert a picture of the BLM display? -->
+    <figure>
+        <center>
+        <img src="../../assets/images/multiturn_gui/blm_fixed_display.png" width="80%" alt="BLM Fixed Display GUI" />
+        <figcaption>BLM Fixed Display GUI</figcaption>
+        </center>
+    </figure>
 
+    Note the log scale of the registered losses in the default view.
+    In that GUI, the red point indicate the losses thresholds that would trigger a dump in this location.
     In case large losses are observed, it is recommended to kick a couple times at the current amplitude or just below to see if the losses reduce or are consistent.
     While doing so, also keep an eye on the beam intensity as can be seen on the vistars.
 
