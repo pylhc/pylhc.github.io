@@ -1,9 +1,12 @@
 # Build documentation and upload to gh-pages
+# This new workflow uses zensical for the build
 name: Build and upload documentation
-
 defaults:
   run:
     shell: bash
+
+permissions:
+  contents: write
 
 env:
   UV_COMPILE_BYTECODE: 1
@@ -33,7 +36,10 @@ jobs:
         run: uv pip install -r requirements.txt
 
       - name: Build documentation
-        run: python -m mkdocs build -d ./doc_build
+        # Note: when it's stable we will want to use --strict on
+        # the lintrack builds as they're for internet-less view
+        # from the CCC. Just needs to --strict flag to this command
+        run: zensical build
 
       - name: Upload documentation to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
@@ -41,4 +47,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: doc_build
+          folder: site  # zensical does not allow customizing the dir yet

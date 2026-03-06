@@ -20,7 +20,8 @@ copyright: 'Copyright &copy; 2020 PyLHC/OMC-Team'
 
 # Configuration
 theme:
-  name: 'material'
+  name: material
+  variant: classic  # fixes header issue but prevents zensical modern styling
   custom_dir: overrides/
   logo: assets/logos/OMC_logo_inverse.svg  # top left header logo
   favicon: assets/logos/OMC_logo_inverse.svg  # browser tab logo
@@ -32,7 +33,6 @@ theme:
     - content.action.edit  # editing button on the pages is opt-in since v9
     - content.code.copy  # copy button for code blocks
   palette:
-
     # Palette toggle for light mode
     - scheme: default
       primary: indigo
@@ -40,7 +40,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
     # Palette toggle for dark mode
     - scheme: slate
       primary: cern
@@ -244,31 +243,30 @@ nav:
       - Publications: resources/publications.md
       - Presentations: resources/presentations.md
       - Templates: resources/templates.md
-      - Logbook: &logbook
-        - About: logbook/about.md
-        - AD:
+      - FAQ: resources/faqs.md
+  - Logbook:
+      - About: logbook/about.md
+      - AD:
           - 2023: logbook/AD/2023_ad.md
           - 2024: logbook/AD/2024_ad.md
-        - LEIR:
+      - LEIR:
           - 2023: logbook/LEIR/2023_leir.md
           - 2024: logbook/LEIR/2024_leir.md
-        - LHC:
+      - LHC:
           - 2022: logbook/LHC/2022_lhc.md
           - 2023: logbook/LHC/2023_lhc.md
           - 2024: logbook/LHC/2024_lhc.md
           - 2025: logbook/LHC/2025_lhc.md
           - 2026: logbook/LHC/2026_lhc.md
-        - PS:
+      - PS:
           - 2023: logbook/PS/2023_ps.md
           - 2024: logbook/PS/2024_ps.md
           - 2025: logbook/PS/2025_ps.md
-        - PSB:
+      - PSB:
           - 2023: logbook/PSB/2023_psb.md
           - 2024: logbook/PSB/2024_psb.md
           - 2025: logbook/PSB/2025_psb.md
-        - SPS:
+      - SPS:
           - 2023: logbook/SPS/2023_sps.md
           - 2024: logbook/SPS/2024_sps.md
           - 2025: logbook/SPS/2025_sps.md
-      - FAQ: resources/faqs.md
-  - Logbook: *logbook

@@ -1,4 +1,12 @@
-"""Script to calculate the shifts from the first markdown table in a given file.
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#   "matplotlib >= 3.0",
+#   "pandas >= 2.0",
+# ]
+# ///
+"""
+Script to calculate the shifts from the first markdown table in a given file.
 This data can then be plotted with `plot_results`, e.g. for the end-of-year report.
 """
 
@@ -38,7 +46,20 @@ SHIFT_LENGTH: int = 8  # in hours
 DATE_FORMAT: str = r"%Y-%m-%d %H:%M"
 
 CERN_HOLIDAYS: list[datetime] = [
-    # https://home.cern/official-holidays/
+    # For the 2026 year we look at this reference:
+    # https://home.cern/news/official-news/cern/official-holidays-2026-and-end-year-closure-20262027
+    datetime(2026, 1, 1),
+    datetime(2025, 4, 18),
+    datetime(2025, 4, 21),
+    datetime(2025, 5, 1),
+    datetime(2025, 5, 29),
+    datetime(2025, 6, 9),
+    datetime(2025, 9, 11),
+    datetime(2025, 12, 24),
+    datetime(2025, 12, 25),
+    datetime(2025, 12, 31),
+    # For the 2025 year we look at this reference:
+    # https://home.cern/news/official-news/cern/official-holidays-2025-and-end-year-closure-20252026
     datetime(2025, 1, 1),
     datetime(2025, 4, 18),
     datetime(2025, 4, 21),
