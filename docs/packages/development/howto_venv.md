@@ -41,24 +41,29 @@ This *does not have to be an existing directory*, it can be created at install.
 Once the installation root determined (here `dist_location`), call the installer:
 
 ```bash
-bash acc-py-2026.01-installer.sh --installation-root dist_location
+bash acc-py-2026.01-installer.sh --installation-root /path/to/dist_location
 ```
 
-!!! tip "Choosing the Installation Root Location"
-    At post-install, the script will try to create an `apps` folder where it will install built applications, including the `acc-py` command line tool.
-    This `apps` folder is created **two directories up from the given installation location**, which is a place you might not necessarily have access to!
-    Should this be the case, the installation will error.
-    To make sure you do not run into permission issues, it is advised to feed a nested location to the installer.
+??? info "Installation Root Location in Previous Versions"
+    Up to the installers for `Acc-Py` `2023.06`, the behavior was trickier.
+    The caveat is still documented below for safekeeping.
 
-    For instance, instead of providing `dist_location` to the installer, provide `dist_location/base/2026.01`.
+    On those versions, at post-install the script would try to create an `apps` folder (where it will install built applications, including the `acc-py` command line tool).
+    This `apps` folder was created **two directories up from the given installation location**, which is a place you might not necessarily have access to.
+    Should this be the case, the installation would error.
+    To make sure to not run into permission issues, it was advised to feed a nested location to the installer.
+
+    For instance, instead of providing `dist_location` to the installer, provide `dist_location/base/2023.06`.
     This way the `apps` folder will be located at `dist_location/apps` to which you are guaranteed to have rights.
+
+    **Note:** On those versions the `--installation-root` flag did not exist; it would be prompted after simply calling the installer without options.
 
 Wait for the installation script to finish - if you have installed anaconda or miniconda in the past, the process and its output will feel familiar.
 
 !!! success
     You are now done with the installation step.
     A "base" environment has been created and, much like a miniconda distribution, it should not be modified: use virtual environments.
-    Read on for this step.
+    Read below for this step.
 
 ## Creating Virtual Environments with Acc-Py
 
