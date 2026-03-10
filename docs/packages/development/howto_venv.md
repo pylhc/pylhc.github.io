@@ -139,7 +139,7 @@ To use the environment's Python, one can either:
 [cern_internal_websites]: ../../resources/remote_access.md#accessing-cern-internal-websites
 
 *[GPN]: CERN General Public Network
-*[PyPi]: Default Python Package Index
+*[PyPI]: Default Python Package Index
 
 [virtual_env_primer]: https://realpython.com/python-virtual-environments-a-primer/
 [acc-py]: https://confluence.cern.ch/pages/viewpage.action?spaceKey=ACCPY&title=Getting+started+with+Acc-Py
