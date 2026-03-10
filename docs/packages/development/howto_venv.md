@@ -145,4 +145,4 @@ To use the environment's Python, one can either:
 [acc-py]: https://confluence.cern.ch/pages/viewpage.action?spaceKey=ACCPY&title=Getting+started+with+Acc-Py
 [acc_py_standalone_doc]: https://confluence.cern.ch/display/ACCPY/Acc-Py+base+installers
 [venv_module]: https://docs.python.org/3/library/venv.html
-[pip_installs]: https://pip.pypa.io/en/stable/reference/pip_install/#examples
+[pip_installs]: https://pip.pypa.io/en/stable/cli/pip_install/
