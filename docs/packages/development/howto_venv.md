@@ -59,6 +59,26 @@ bash acc-py-2026.01-installer.sh --installation-root /path/to/dist_location
     **Note:** On those versions the `--installation-root` flag did not exist; it would be prompted after simply calling the installer without options.
 
 Wait for the installation script to finish - if you have installed anaconda or miniconda in the past, the process and its output will feel familiar.
+The created structure should look like (obtained with `tree -L 3 dist_location`):
+
+```bash
+dist_location/
+├── apps
+│   └── acc-py-cli
+│       └── latest
+└── base
+    └── 2026.01
+        ├── bin
+        ├── _conda
+        ├── etc
+        ├── include
+        ├── lib
+        ├── man
+        ├── pip.conf
+        ├── setup.sh
+        ├── share
+        └── ssl -> /etc/pki/tls
+```
 
 !!! success
     You are now done with the installation step.
