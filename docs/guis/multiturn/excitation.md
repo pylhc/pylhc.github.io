@@ -184,6 +184,10 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
         </center>
     </figure>
 
+    ??? tip "Missing Energy?"
+        Should the `Energy` information be missing from the table, switch to the `Settings Management` tab (the default one), select your Beam Process, select `MOMENTUM` in the properties list, then the `LHC/MOMENTUM` variable in the rightmost list.
+        The graph below will show the energy through the Beam Process and it is then possible to infer it at the time points from the ramp table.
+
     An __example table__ is shown below, generated for the proton-proton `RAMP-SQUEEZE-6.8TeV-ATS-2m-2025` beam process as in the picture above.
     It is okay to copy-paste a previous table and update it.
 
