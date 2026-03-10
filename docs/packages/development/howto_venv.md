@@ -27,7 +27,7 @@ If you already have one at the ready or plan to use the BE/CO-provided `Acc-Py`,
 ## Installing a Standalone Acc-Py
 
 The `Acc-Py` wiki has [a section][acc_py_standalone_doc]{target=_blank} linking to installers one can download.
-From there download the desired file, `curl` or `wget` will work great.
+From there download the desired file, `curl` or `wget` will work great if you are `ssh`-ed into a server.
 
 A default distribution is recommended but installation is identical for other distributions (pro, devel, rc).
 As of the last update of this walk-through, this corresponds to the `acc-py-2026.01-installer.sh` file.
@@ -38,6 +38,12 @@ You might need to `chmod u+x` the file once downloaded.
 The installer is to be run at the command line, providing the installation root:
 This *does not have to be an existing directory*, it can be created at install.
 
+Once the installation root determined (here `dist_location`), call the installer:
+
+```bash
+bash acc-py-2026.01-installer.sh --installation-root dist_location
+```
+
 !!! tip "Choosing the Installation Root Location"
     At post-install, the script will try to create an `apps` folder where it will install built applications, including the `acc-py` command line tool.
     This `apps` folder is created **two directories up from the given installation location**, which is a place you might not necessarily have access to!
@@ -46,12 +52,6 @@ This *does not have to be an existing directory*, it can be created at install.
 
     For instance, instead of providing `dist_location` to the installer, provide `dist_location/base/2026.01`.
     This way the `apps` folder will be located at `dist_location/apps` to which you are guaranteed to have rights.
-
-Once the installation root determined (here `dist_location/base/2026.01`), call the installer:
-
-```bash
-bash acc-py-2026.01-installer.sh --installation-root dist_location/base/2026.01
-```
 
 Wait for the installation script to finish - if you have installed anaconda or miniconda in the past, the process and its output will feel familiar.
 
