@@ -172,15 +172,15 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
     Typically, we prepare a table various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
     These should follow the various match points for the given energy ramp program, and the kick strengths should scale approximately linearly with the beam energy, starting from safe strength at injection.
 
-    Most of these information can be found by opening a `CCM` then navigating to `LHC Control` -> `LHC Beam Control` -> `Settings` -> `Generation`.
-    Once the app has opened, select the `Edit types` tab then the `Beam Process Type` sub-tab.
-    Search & select the relevant beam process using the `Filter` field on the left, then click the big black ++"Show/Hide optic Table"++.
+    Most of this information can be found by opening a `CCM` then navigating to `LHC Control` -> `LHC Beam Control` -> `Settings` -> `LSA App Suite` (or via the search).
+    Once the app has opened, click the `Applications` menu in the top left, then `contexts` and tick `Edit types`, which will open a new corresponding tab.
+    Search & select the relevant beam process using the `Filter` field on the left, then click the big ++"Show optic table"++ button on the right.
     This will create a popup window displaying the match points during the ramp (if the BP is for a ramp) with their time, energy and optics file.
 
     <figure>
         <center>
-        <img src="../../assets/images/multiturn_gui/lsa_generation_bp_optics_table.png" width="80%" alt="Beam Process Optics Table from LSA Generation App" />
-        <figcaption>Beam Process Optics Table from LSA Generation App</figcaption>
+        <img src="../../assets/images/multiturn_gui/lsa_app_suite_bp_optics_table.png" width="85%" alt="Beam Process Optics Table from LSA App Suite" />
+        <figcaption>Beam Process Optics Table from LSA App Suite</figcaption>
         </center>
     </figure>
 
