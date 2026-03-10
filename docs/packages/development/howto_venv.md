@@ -20,50 +20,57 @@ For this reason, one might want to install a standalone `Acc-Py` distribution so
     The OMC team has a stable Python 3 production environment on `afs`.
     See [this page](../about.md) to find out about it.
 
-The following section goes over installing a standalone `Acc-Py` distribution.
-If you already have one at the ready or plan to use the BE/CO `Acc-Py`, then skip ahead.
+The following section goes over installing a **standalone** `Acc-Py` distribution, which is how we manage the OMC environments.
+If you already have one at the ready or plan to use the BE/CO-provided `Acc-Py`, then skip ahead.
 
 ## Installing a Standalone Acc-Py
 
 The `Acc-Py` wiki has [a section][acc_py_standalone_doc]{target=_blank} linking to installers one can download.
-From there download the appropriate file.
-The default distribution is recommended but installation is identical for other distributions (devel, rc).
-As of writing this walk-through, this corresponds to the `acc-py-2020.11-installer.sh` file.
+From there download the desired file, `curl` or `wget` will work great.
+
+A default distribution is recommended but installation is identical for other distributions (pro, devel, rc).
+As of the last update of this walk-through, this corresponds to the `acc-py-2026.01-installer.sh` file.
+
 The installer itself is an executable to be called from the command line.
-Once the file is downloaded, run it at the command line (you might need to `chmod u+x` the file):
+You might need to `chmod u+x` the file once downloaded.
 
-```bash
-bash acc-py-2020.11-installer.sh
-```
+The installer is to be run at the command line, providing the installation root:
+This *does not have to be an existing directory*, it can be created at install.
 
-The installation script will prompt you to enter the location in which to install the distribution.
-This does not have to be an existing directory, it can be created at install.
-
-!!! tip "Choosing the Installation Location"
-    At post-install, the script will try to create a folder `apps` where it will install built applications, including the `acc-py` command line tool.
-    This `apps` folder is created two directories up from the given installation location, which is a place you might not necessarily have access to.
+!!! tip "Choosing the Installation Root Location"
+    At post-install, the script will try to create an `apps` folder where it will install built applications, including the `acc-py` command line tool.
+    This `apps` folder is created **two directories up from the given installation location**, which is a place you might not necessarily have access to!
     Should this be the case, the installation will error.
     To make sure you do not run into permission issues, it is advised to feed a nested location to the installer.
 
-    For instance, instead of providing `dist_location` to the installer provide `dist_location/base/2020.11`.
+    For instance, instead of providing `dist_location` to the installer, provide `dist_location/base/2026.01`.
     This way the `apps` folder will be located at `dist_location/apps` to which you are guaranteed to have rights.
 
-When prompted by the script, enter the desired installation location (here `dist_location/base/2020.11`) and hit enter, then wait for the installation script to finish.
-If you have installed anaconda or miniconda previously, the process and its output will feel familiar.
-You are now done with the installation step.
+Once the installation root determined (here `dist_location/base/2026.01`), call the installer:
+
+```bash
+bash acc-py-2026.01-installer.sh --installation-root dist_location/base/2026.01
+```
+
+Wait for the installation script to finish - if you have installed anaconda or miniconda in the past, the process and its output will feel familiar.
+
+!!! success
+    You are now done with the installation step.
+    A "base" environment has been created and, much like a miniconda distribution, it should not be modified: use virtual environments.
+    Read on for this step.
 
 ## Creating Virtual Environments with Acc-Py
 
 To make the command line tools available in the current shell, `source` the `setup.sh` script in the installed `Acc-Py` distribution:
 
 ```bash
-source dist_location/base/2020.11/setup.sh
+source dist_location/base/2026.01/setup.sh
 ```
 
 You should see a confirmation message output that reads:
 
 ```bash
-=>  Acc-Py base 2020.11 is now active within this shell.
+=>  Acc-Py base 2026.01 is now active within this shell.
 ```
 
 You now have access to the `acc-py` command line tool, which you can verify by running `acc-py -h` and checking that you get the help command output.
@@ -97,7 +104,7 @@ Different ways to use `pip` for package installations are nicely explained in th
 
 ## Using Your Virtual Environment
 
-When your virtual environment has all the packages you wish, anyone with access to the distribution's `python` executable (because all environments will symlink to there) can use it.
+When your virtual environment has all the packages you wish, anyone with access to the distribution's `python` executable (because all virtual environments will symlink to that) can use it.
 To use the environment's Python, one can either:
 
 - First `source /path/to/environment/bin/activate` then call `python`.
