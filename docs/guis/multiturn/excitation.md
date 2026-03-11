@@ -169,7 +169,7 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
     As the beam energy increases, so does the beam rigidity and hence larger kick amplitudes can be used.
     Nevertheless, careful monitoring of losses during acquisitions and adjusting the kick amplitudes accordingly is crucial.
 
-    Typically, we prepare a table various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
+    Typically, we prepare a table of various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
     These should follow the various match points for the given energy ramp program, and the kick strengths should scale approximately linearly with the beam energy, starting from safe strength at injection.
 
     Most of this information can be found by opening a `CCM` then navigating to `LHC Control` -> `LHC Beam Control` -> `Settings` -> `LSA App Suite` (or via the search).
@@ -186,7 +186,7 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
 
     ??? tip "Missing Energy?"
         Should the `Energy` information be missing from the table, switch to the `Settings Management` tab (the default one), select your Beam Process, select `MOMENTUM` in the properties list, then the `LHC/MOMENTUM` variable in the rightmost list.
-        The graph below will show the energy through the Beam Process and it is then possible to infer it at the time points from the ramp table.
+        The graph in the lower panel will show the energy through the Beam Process, allowing to infer it at the time points from the ramp table.
 
     An __example table__ is shown below, generated for the proton-proton `RAMP-SQUEEZE-6.8TeV-ATS-2m-2025` beam process as in the picture above.
     It is okay to copy-paste a previous table and update it.
