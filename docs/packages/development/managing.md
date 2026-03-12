@@ -75,19 +75,17 @@ The `/afs/cern.ch/eng/sl/lintrack/omc_python3` is activate by default for the `l
 
 ## Github
 
-The settings for the organization `pylhc` should be automatically available to you, if you have been given the right permissions (either `admin` or `code owner`).
+The settings for the `pylhc` organization should be automatically available to you, if you have been given the right permissions (either `admin` or `code owner`).
 
-Our repositories use the [`.github`][pylhc_github_github] configuration repository to manage
+Our repositories use the [`.github`][pylhc_github_github]{target=_blank} configuration repository to manage:
 
 - Issue Templates
 - Workflows
 - Labels
 
-Of these, the workflow to [assign labels to all repositories][pylhc_labels_workflow] is special:
-This workflow is triggered on pushes to the `master` branch of this repository and assigns
-the [defined labels][pylhc_labels_json] to all repositories defined in the workflow.
+Of these, the workflow to [assign labels to all repositories][pylhc_labels_workflow]{target=_blank} is special: it is triggered on pushes to the `master` branch of the `.github` repository and assigns the [defined labels][pylhc_labels_json]{target=_blank} to all repositories defined in the workflow.
 
-While the other workflows are usually triggered directly via workflow inheritance from the other repositories, e.g. via
+While the other workflows are usually triggered directly via workflow inheritance from the other repositories, e.g.
 
 ```yaml
 jobs:
@@ -95,10 +93,9 @@ jobs:
         uses: pylhc/.github/.github/workflows/cron.yml@master
 ```
 
-they automatically inherit the `GITHUB_TOKEN` of that repository and have access to that repositories data.
-The labels-workflow does not have this access and is using a limited personal access token (PTA) instead,
-which is saved as the `ISSUE_WRITE_TOKEN` secret.
-This token is provided by the `pylhctokens` service account and needs to be renewed on a regular basis.
+These automatically inherit the `GITHUB_TOKEN` of the repository and have access to the repository's data.
+The labels-workflow does not have this access and is using a limited personal access token (PTA) instead, which is saved as the `ISSUE_WRITE_TOKEN`.
+It is provided by the `pylhctokens` service account and needs to be renewed on a regular basis.
 
 !!! info "Update Github Actions!"
     Many of the workflows are using pre-defined github actions.<br>
