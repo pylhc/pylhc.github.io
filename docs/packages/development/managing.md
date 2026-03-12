@@ -31,7 +31,7 @@ You will then be greeted with a welcome message and some information about short
 
 ### Repositories
 
-Local copies of the [github repositories][pylhc_github] are kept in `/afs/cern.ch/eng/sl/lintrack/omc_repos/`.
+Local copies of the [GiHhub repositories][pylhc_github]{target=_blank} are kept in `/afs/cern.ch/eng/sl/lintrack/omc_repos/`.
 There is a shortcut available on the `lintrack` welcome screen to update all repositories.
 
 These repositories are used in the `python_edge` environment and might be modified online to test new features
@@ -39,7 +39,7 @@ or fix issues.
 
 !!! warning "Keeping them clean"
     Changes to the repositories should be short lived and patched into the packages properly within a day or two and the repository reset to its original state.
-    In the past, changes made during shifts were often forgotten and after a while no one knew why the changes were made which version was the correct one to use.
+    In the LHC Run 2, changes made during shifts were often forgotten and after a while no one knew why the changes were made which version was the correct one to use.
 
 ### Python Installations
 
@@ -47,7 +47,7 @@ The python installations are located in `/afs/cern.ch/eng/sl/lintrack/omc_acc_py
 In this folder you can also find the `acc-py` installers as well as the `omc_requirements_*.txt` files to easily setup new environments.
 
 - `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/base/` contains the base `acc-py` installations from which the environments are derived.
-- In `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/venv/` contains the environments. These are automatically picked up by the [BetaBeat GUI](../..//guis/betabeat/gui.md).
+- `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/venv/` contains the environments. These are automatically picked up by the [BetaBeat GUI](../..//guis/betabeat/gui.md).
 
 The main environments are:
 
