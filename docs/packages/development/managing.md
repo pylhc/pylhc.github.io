@@ -57,16 +57,21 @@ The two maintained environments are:
 These two environments are also symlinked to `/afs/cern.ch/eng/sl/lintrack/omc_python3` and `/afs/cern.ch/eng/sl/lintrack/omc_python_edge` respectively.
 The `/afs/cern.ch/eng/sl/lintrack/omc_python3` is activate by default for the `lintrack` account and is the default interpreter chosen by the `BetaBeat GUI`.
 
-!!! info "Maintainer TODOs"
-    - Whenever there is a new release for one of the packages, it needs to be manually installed into the `omc_py3xx_releases` environment.
-      Shortcuts are available (see the `lintrack` welcome screen), but for single updates one can use `python -m pip install --upgrade <package>`.
-    - To keep the newest version of a repository in use in `python_edge`, you need to manually pull the changes into the local repository (see also the `lintrack` welcome screen for quick command aliases). Due to the `editable` installs this is enough.
-    - On new `acc-py` releases, a new base environment needs to be created and the `omc_py3xx_releases` and `omc_py3xx_repos` environments derived.
-      See the [Acc-Py installation instructions](./howto_venv.md#installing-a-standalone-acc-py) on the previous page.
-      There is also an `AccPy_Installation_README.md` file in `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/` to guide you through the process, specifically for our filesystem structure.
-      You can use the `omc_requirements_*.txt` files to re-derive the environments.
-      To avoid issues, the former and new bases/environments can be kept in parallel for a while.
-      Don't forget to also update the `omc_python3` and `omc_python_edge` symlinks!
+!!! info "Some regular maintainer TODOs"
+    !!! note "On new releases"
+        Whenever there is a new release for one of the packages, it needs to be manually installed into the `omc_py3xx_releases` environment.
+        Shortcuts are available (see the `lintrack` welcome screen), but for single updates one can use `python -m pip install --upgrade <package>`.
+
+    !!! note "On new features to `master`"
+        To keep the newest version of a repository in use in `python_edge`, you need to manually pull the changes into the local repository (see also the `lintrack` welcome screen for quick command aliases). Due to the `editable` installs this is enough.
+
+    !!! note "On new `Acc-Py` releases"
+        To upgrade to a new `acc-py` version, a new base environment needs to be created and the `omc_py3xx_releases` and `omc_py3xx_repos` environments derived.
+        See the [Acc-Py installation instructions](./howto_venv.md#installing-a-standalone-acc-py) on the previous page.
+        There is also an `AccPy_Installation_README.md` file in `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/` to guide you through the process, specifically for our filesystem structure.
+        You can use the `omc_requirements_*.txt` files to re-derive the environments.
+        To avoid issues, the former and new bases/environments can be kept in parallel for a while.
+        Don't forget to also update the `omc_python3` and `omc_python_edge` symlinks!
 
 ## Github
 
