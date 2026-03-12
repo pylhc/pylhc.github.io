@@ -49,12 +49,13 @@ In this folder you can also find the `acc-py` installers as well as the `omc_req
 - `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/base/` contains the base `acc-py` installations from which the environments are derived.
 - `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/venv/` contains the environments. These are automatically picked up by the [BetaBeat GUI](../..//guis/betabeat/gui.md).
 
-The main environments are:
+The two maintained environments are:
 
-- `omc_py3xx_releases`: The main production environment which is used for the CCC. All packages are installed via their official `pypi` release.
-- `omc_py3xx_repos`: The development environment which is used for the testing of new packages. All packages are installed from the local `git` repositories.
+- `omc_py3xx_releases`: The main production environment which is used for the CCC. All packages are installed via their official `PyPI` releases.
+- `omc_py3xx_repos`: The development environment which is used for testing or quick patches during shifts. All packages are `editable` installs from the local `git` repositories.
 
 These two environments are also symlinked to `/afs/cern.ch/eng/sl/lintrack/omc_python3` and `/afs/cern.ch/eng/sl/lintrack/omc_python_edge` respectively.
+The `/afs/cern.ch/eng/sl/lintrack/omc_python3` is activate by default for the `lintrack` account and is the default interpreter chosen by the `BetaBeat GUI`.
 
 !!! info "TODO"
     - If you want the newest version of a repository to be used in `python_edge` you need to pull the changes into the local repository manually (see also the `lintrack` welcome screen).
