@@ -1,4 +1,4 @@
-# Build documentation and upload artifact for checks
+# Build documentation and upload to gh-pages
 name: Ensure documentation builds after commits
 
 defaults:
@@ -14,6 +14,8 @@ jobs:
   documentation:
     name: Build Static Documentation
     runs-on: ubuntu-latest
+    env:
+        python-version: "3.14"
 
     steps:
       - uses: actions/checkout@v6
@@ -21,7 +23,7 @@ jobs:
       - name: Install uv and Python
         uses: astral-sh/setup-uv@v7
         with:
-          python-version: 3.14
+          python-version: ${{ env.python-version }}
           enable-cache: true
           activate-environment: true
           cache-dependency-glob: "requirements.txt"
@@ -34,9 +36,9 @@ jobs:
 
       # Upload artifacts if in PR so reviewers can have a quick look without building documentation from the branch locally
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         if: success() && github.event_name == 'pull_request'
         with:
-          name: site-build-mkdocs
+          name: site-build
           path: doc_build
           retention-days: 5

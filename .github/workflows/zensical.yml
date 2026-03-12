@@ -20,6 +20,8 @@ jobs:
   documentation:
     name: Build and Publish Static Documentation
     runs-on: ubuntu-latest
+    env:
+        python-version: "3.14"
 
     steps:
       - uses: actions/checkout@v6
@@ -27,7 +29,7 @@ jobs:
       - name: Install uv and Python
         uses: astral-sh/setup-uv@v7
         with:
-          python-version: 3.14
+          python-version: ${{ env.python-version }}
           enable-cache: true
           activate-environment: true
           cache-dependency-glob: "requirements.txt"
