@@ -131,16 +131,16 @@ These are usually inherited from each of the repos publishing workflows.
 
 ## Zenodo
 
-There is no special account for [Zenodo][zenodo] access.
-Zenodo should be able to be reached with your normal account, preferably your `github`,
-which, if linked correctly, will allow Zenodo to also reach the `pylhc`-Organization repositories.
+There is no special account for [Zenodo][zenodo]{target=_blank} access.
+Zenodo should be able to be reached with your normal account, preferably your `GitHub` account which, if linked correctly, will allow Zenodo to also reach the `pylhc` organization's repositories.
 
-To add a new repository to Zenodo, you need to make sure that the `.zenodo.json` file is correct (examples can be found in our repositories).
-**Before making your first release**, you need to go into the [Zenodo github settings][zenodo_github] (down-arrow on your user on the top right) and follow the instructions there:
+To add a new repository to Zenodo, make sure the `.zenodo.json` file is correct.
+Examples can be found in our repositories.
+**Before making your first release**, go into the [Zenodo github settings][zenodo_github]{target=_blank} (down-arrow on your user on the top right) and follow these instructions:
 
 - Flip the switch to `On`
-- Create a release on `github` -> The page for your repo should now be visible on Zenodo!
-- Add the `badge` to your `README.md`
+- Create a release on `GiHhub` -> The page for your repo should now be visible on Zenodo!
+- (Optional) Add the `badge` to your `README.md`
 
 [pypi]: https://pypi.org
 [zenodo]: https://zenodo.org
