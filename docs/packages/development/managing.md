@@ -119,15 +119,15 @@ For more details, see the [official documentation][github_codeowners]{target=_bl
 
 ## PyPI
 
-The access to [PyPI][pypi] is provided by the `pylhc` service account, for which you will need password and 2FA authentication.
+The access to [PyPI][pypi]{target=_blank} is provided by the `pylhc` service account, for which you will need password and 2FA authentication.
 
-Publishing access is given to the github workflows via [API-Token][pypi_apitoken] (Settings -> Account Settings -> API Tokens) to all repositories of the `pylhc` organization.
-This is done by using the [publish workflow][pylhc_publish] and passing the token as secret:
+Publishing access is given to the github workflows via [API-Token][pypi_apitoken]{target=_blank} (`Settings` -> `Account Settings` -> `API Tokens`) to all repositories of the `pylhc` organization.
+This is done by using the [publish workflow][pylhc_publish]{target=_blank} and passing the token as secret:
 
 - `PYPI_USERNAME` : `__token__` (literal string)
 - `PYPI_PASSWORD` : the token value, including the pypi- prefix
 
-which are usually inherited from each of the repos publishing workflows.
+These are usually inherited from each of the repos publishing workflows.
 
 ## Zenodo
 
