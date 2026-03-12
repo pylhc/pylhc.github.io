@@ -52,7 +52,7 @@ In this folder you can also find the `acc-py` installers as well as the `omc_req
 The two maintained environments are:
 
 - `omc_py3xx_releases`: The main production environment which is used for the CCC. All packages are installed via their official `PyPI` releases.
-- `omc_py3xx_repos`: The development environment which is used for testing or quick patches during shifts. All packages are `editable` installs from the local `git` repositories.
+- `omc_py3xx_repos`: The development environment which is used for the latest un-releases features or quick patches during shifts. All packages are `editable` installs from the local `git` repositories.
 
 These two environments are also symlinked to `/afs/cern.ch/eng/sl/lintrack/omc_python3` and `/afs/cern.ch/eng/sl/lintrack/omc_python_edge` respectively.
 The `/afs/cern.ch/eng/sl/lintrack/omc_python3` is activate by default for the `lintrack` account and is the default interpreter chosen by the `BetaBeat GUI`.
