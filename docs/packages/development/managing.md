@@ -98,26 +98,24 @@ The labels-workflow does not have this access and is using a limited personal ac
 It is provided by the `pylhctokens` service account and needs to be renewed on a regular basis.
 
 !!! info "Update Github Actions!"
-    Many of the workflows are using pre-defined github actions.<br>
+    Many of the workflows are using pre-defined github actions.
     Check them sometimes for updates and try to keep their versions up-to-date!
 
 ### pylhctokens
 
-This service account was originally created to give workflows access to the repos, until github introduced the automatically generated `GITHUB_TOKEN`.
+This service account was originally created to give workflows access to the repos, until GitHub introduced the automatically generated `GITHUB_TOKEN`.
 Nowadays we only use it to assign labels to all repositories.
 
 To log into the `pylhctokens` account you need password and 2FA authentication.
 
 ### CODEOWNERS
 
-To avoid malicious or accidental changes to the repositories, the `master` branches are locked (Repo -> Settings -> Branch protection)
-and reviews are required before pull requests can be merged.
+To avoid malicious or accidental changes to the repositories, the `master` branches are locked (`Repo` -> `Settings` -> `Branch protection`) and reviews are required before pull requests can be merged.
 
-The approved reviewers are handled via the `approved-reviewers` group in the `pylhc` organization's teams
-which are assigned as code owners to each repository.
+The approved reviewers are handled via the `approved-reviewers` group in the `pylhc` organization's teams which are assigned as code owners to each repository.
 For that purpose, each repository has a `CODEOWNERS` file, which can be found in the `.github` folder of the repository.
 
-For more details, see the [official documentation][github_codeowners].
+For more details, see the [official documentation][github_codeowners]{target=_blank}.
 
 ## PyPI
 
