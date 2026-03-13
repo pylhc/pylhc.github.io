@@ -12,10 +12,8 @@ Maybe also check the [Service Status Board][status_board]{target=_blank} to see 
 
 This section lists general services that are not specific to a certain hardware or software component.
 
-Normally, each service has a specific [ServiceNow form][service_tickets]{target=_blank}, that you should use to open a ticket,
-but sometimes it is not obvious which one to use.
-Remember to that you can always open a [general SNOW ticket][snow_general]{target=_blank .cern_login} for any issue,
-which will be routed to the appropriate service - but this can take longer than opening a specific form.
+Normally, each service has a specific [ServiceNow form][service_tickets]{target=_blank}, that you should use to open a ticket, but sometimes it is not obvious which one to use.
+Remember to that you can always open a [general SNOW ticket][snow_general]{target=_blank .cern_login} for any issue, which will be routed to the appropriate service - but this can take longer than opening a specific form.
 
 ### HTCondor
 
@@ -31,14 +29,10 @@ For questions/issues regarding LxBatch/HTCondor the following help is available:
 
 ### LxPlus/AFS/EOS
 
-For questions/issues regarding the LxPlus environment in general or
-the AFS and EOS file systems multiple contact options are available,
-but as these commonly experience issues/updates, please first check the
-[Status Board][status_board]{target=_blank} first.
+For questions/issues regarding the LxPlus environment in general or the AFS and EOS file systems multiple contact options are available.
+As these commonly experience issues/updates, please first check the [Status Board][status_board]{target=_blank} first.
 
-In case you have issues with the file systems, you can also check the
-[Services Portal][services]{target=_blank .cern_login} first, to
-see if your account is correctly configured.
+In case you have issues with the file systems, you can also check the [Services Portal][services]{target=_blank .cern_login} first, to see if your account is correctly configured.
 In particular, when running out of AFS quota, you might need to [adjust your settings][afs_settings]{target=_blank .cern_login} there.
 
 - [AFS Settings][afs_settings]{target=_blank .cern_login}
@@ -58,11 +52,9 @@ In particular, when running out of AFS quota, you might need to [adjust your set
 
 #### OP
 
-If you are planning an MD session or you have operational questions regarding commissioning,
-the first person to contact is the **EIC during your shift**.
+If you are planning an MD session or you have operational questions regarding commissioning, the first person to contact is the **EIC during your shift**.
 
-That being said, **Matteo** has always been a close contact for optics related topics in OP,
-and **Michi** is also very knowledgeable and involved in this area (see also [Software](#software)).
+That being said, **Matteo** has always been a close contact for optics related topics in OP, and **Michi** is also very knowledgeable and involved in this area (see also [Software](#software)).
 
 As OP is lead by **Jörg** he is of course also a good contact for general OP questions.
 
@@ -100,9 +92,7 @@ As OP is lead by **Jörg** he is of course also a good contact for general OP qu
 
 ### BPMs (LHC, SPS)
 
-In recent years, cooperation between the BI BPM teams and OMC has increased significantly,
-as they can profit for our measurements and [statistical analysis of BPM data quality][bad_bpms],
-and we can use their expertise for BPM related issues and shortcomings, improving the quality of measurements.
+In recent years, cooperation between the BI BPM teams and OMC has increased significantly, as they can profit for our measurements and [statistical analysis of BPM data quality][bad_bpms], and we can use their expertise for BPM related issues and shortcomings, improving the quality of measurements.
 
 **Contact(s):**
 
@@ -121,10 +111,8 @@ and we can use their expertise for BPM related issues and shortcomings, improvin
 
 ### Acc-Py
 
-As described in the sections on [our python environments][python_prod_env]  and [virtual environments][python_venvs],
-we use the [Acc-Py][acc-py]{target=_blank} distribution as our main Python environment.
-This distribution system is maintained by the Acc-Py team at CERN,
-who can be contacted for questions regarding its usage, installation or development.
+As described in the sections on [our python environments][python_prod_env]  and [virtual environments][python_venvs], we use the [Acc-Py][acc-py]{target=_blank} distribution as our main Python environment.
+This distribution system is maintained by the Acc-Py team at CERN, who can be contacted for questions regarding its usage, installation or development.
 
 - [Mattermost: acc-py][mm_acc_py]
 
@@ -135,8 +123,7 @@ who can be contacted for questions regarding its usage, installation or developm
 
 ### Java
 
-Questions regarding the Java infrastructure we are using, like deployment of applications,
-the CBNG build system or the Acc-Java libraries our software depends on, can be directed to:
+Questions regarding the Java infrastructure we are using, like deployment of applications, the CBNG build system or the Acc-Java libraries our software depends on, can be directed to:
 
 - [Mattermost: acc-java][mm_acc_java]
 
@@ -146,15 +133,11 @@ the CBNG build system or the Acc-Java libraries our software depends on, can be 
 
 ### NXCals
 
-The NXCals team is always interested in feedback regarding the user experience and use-cases of NXCals,
-at CERN in general, but also for each individual section - as they might have very different needs.
+The NXCals team is always interested in feedback regarding the user experience and use-cases of NXCals, at CERN in general, but also for each individual section - as they might have very different needs.
 
-They regularly organize meetings to gather feedback and discuss new features,
-so feel free to reach out to the contacts below to be added to the mailing list.
+They regularly organize meetings to gather feedback and discuss new features, so feel free to reach out to the contacts below to be added to the mailing list.
 
-While not directly involved in the development of NXCals, Michi Hostettler is taking care of data collection
-and organization for the LHC, which is stored using the NXCals framework and is therefore a good contact for
-questions with regards to that topic.
+While not directly involved in the development of NXCals, Michi Hostettler is taking care of data collection and organization for the LHC, which is stored using the NXCals framework and is therefore a good contact for questions with regards to that topic.
 
 - [Mattermost: NXCals][mm_nxcals]
 
