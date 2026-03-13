@@ -1,66 +1,65 @@
-# Editing Wiki pages
+# Editing This Wiki
 
-This page presents an overview of the steps necessary to modify the wiki and add new pages.
+This website is built with [zensical]{target=_blank}, the successor of [mkdocs-material]{target=_blank}, and its content is based on markdown files.
+This page presents an overview of the steps necessary to modify or add pages, and build the website.
 It also contains examples for useful commands and can be used as a template for new pages.
 
-More detailed information can be found here:
+## Making Changes Online
 
-- [markdown guide][markdownsyntax]
-- [mkdocs homepage][mkdocs]
-- [mkdocs material help][mkdocs_material]
+This method is adapted to making small changes, most likely to a single page.
+Go to the [current version of the site][site_address]{target=_blank}, navigate to a page you wish to modify and click the page's modification link at the top right of the page's content.
+You will be taken to the GitHub UI to make your changes, which you can commit directly.
 
-## Setup
-
-### To Make Changes Online
-
-This is a method adapted to making small changes, most likely to a single page.
-Go to the current version of the site [here][site_address], navigate to a page you wish to modify and click the page's modification link :fontawesome-solid-pen:{style="height:0.95em"}.
-You will be taken to the Github GUI to make your changes, which you can later commit.
-
-Even new pages can be added directly online on github, by navigating to the desired location and clicking  on the `Add File` button.
+Even new pages can be added directly online on GitHub, by navigating to the desired location and clicking  on the `Add File` button.
 See [the section about adding pages](#adding-a-page) for more info about what is required for new pages to be accessible from the menu.
+Please note: as a lot of fancy styling is added by [zensical]{target=_blank}, but only the basic markdown formatting is seen in the GitHub preview.
 
-!!! note
-    As a lot of fancy styling is added by the [material theme][mkdocs_material] used, only the basic markdown formatting is seen in the preview.
-
-### To Make Changes Locally
+## Making Changes Locally
 
 For bigger changes, local development is recommended.
-Get a local copy of this repository, set up a `Python3.6+` environment and install the dependencies:
+Get a local copy of this repository, set up a `Python3` environment and install the dependencies:
 
 ```bash
-git clone https://github.com/pylhc/pylhc.github.io
-python -m pip install mkdocs mkdocs-material mkdocs-minify-plugin
+git clone https://github.com/pylhc/pylhc.github.io  && cd pylhc.github.io
+python -m pip install -r requirements.txt
 ```
 
 Create a branch (from master) and make your changes.
-You can run a local server by running
+You can run a local server by running, from the top-level directory:
 
 ```bash
-python -m mkdocs serve
+zensical serve
 ```
 
-from the top-level directory, and see the site rendered locally in your browser at `localhost:8000`.
-The rendered website will automatically reload upon changes to any file located in the `docs` directory.
+!!! tip "Using uv"
 
-Commit your changes to this repository, and open a pull request to get them approved once they are ready.
+    Considering only `zensical` is required to build the site, if using [uv]{target=_blank} one can simply add it as a tool (`uv tool install zensical`) and then run it through `uv` (`uvx zensical serve`). No need to manage environments!
 
-### Adding a page
+The site will be rendered locally in your browser at `localhost:8000`, and the build will automatically re-trigger upon changes to any file located in the `docs` directory.
+Commit your changes, push them to the repository, and open a pull request to get them approved once they are ready.
 
-In order to add a new page, a new `.md` should be created in the appropriate location in the folder structure.
+!!! info "Push Permissions"
+
+    Currently only members of the `PyLHC` organisation on GitHub are allowed to push changes to our repositories.
+    One can always fork the repo, clone their own fork and push to that, then open a PR.
+
+## Adding a Page
+
+<!-- TODO: Adapt this once transition to the zensical.toml config file is done -->
+
+In order to add a page, a new `.md` file should be created in the appropriate location in the folder structure.
 A link to the page then needs to be added in the `nav` section of the `mkdocs.yml` in the root directory, together with an ID.
+The current navigation gives a clear example of how this works.
 
-## Guidelines
+## Content Guidelines
 
-Pages are written in Markdown (file extension `.md`).
-A general overview of the syntax as well as some best practices can be found [here][markdownsyntax]{target=_blank}.
+Pages are written in Markdown, with file extension `.md`.
+A general overview of the syntax as well as some best practices can be found on this [markdown guide][markdownsyntax]{target=_blank}.
 Additionally, to allow for easier comparison between two versions of a file, it is recommended to keep it to one sentence per line.
-Ideally, the line length is kept below 100 characters.
-Following this, it is also recommended to not put links in the text, instead creating an ID at the end of the document and linking to this.
+Following this, it is also recommended to not put links in the text, instead creating an ID at the end of the document and linking to it.
 
 Different blocks of either code or text should be separated by one blank line.
-
-To create blocks of code, use `fenced code blocks`, which are created using `` ``` ``.
+To create blocks of code, use `fenced code blocks`, which are created using triple backticks: `` ``` ``.
 These blocks of code should be separated from the previous and following text by one blank line.
 To allow for syntax highlighting, the language should be specified.
 Below a basic example.
@@ -71,49 +70,53 @@ something code that does something
 ```
 ````
 
-## Environments
+!!! tip "Markdown best practices"
 
-### General text formatting
+    If using and IDE, extensions such as the great [markdownlint]{target=_blank} extension will catch and fix mistakes for you.
 
-These are basic markdown commands, repeated here for convenience.
-A more exhaustive list is available [here][markdownsyntax].
-To create:
+## Markdown Elements We Use
 
-- **bold** text, surround the text with `**text**`.
+The following displays markdown commands and tricks we use extensively in this website.
+A more exhaustive list of markdown features is available on the [markdown guide][markdownsyntax]{target=_blank}.
 
-- _italic_ text, surround the text with `_text_`.
+### General Text Formatting
 
-- an internal [link](#general-text-formatting), use `[link](../../resources/wiki.md#general-text-formatting)`
-  > Note that all links are relative to the current document!
-    The `#`-labels are created by headers automatically and can be omitted, in case you want to link to the page itself.
+The following are used to format text in various ways:
 
-- an external [link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.
+- For **bold text**, surround the text with `**text**`.
 
-    >Note that at the bottom of the file, an ID named `bestwiki` should be created, together with the hyperlink to the webpage, like so:
+- For *italic text*, surround the text with `*text*`.
 
-    >```markdown
-     [bestwiki]: https://pylhc.github.io/
-     ```
+- For an [internal link](#general-text-formatting), use `[link](../../resources/wiki.md#general-text-formatting)`.
+  > Note that all links are relative to the current document. The `#`-labels, called "anchors", are automatically created by headers and can be omitted, for instance to link to the page itself.
 
+- For an [external link][bestwiki]{target=_blank}, use `[link][bestwiki]{target=_blank}`.
+
+    > Note that at the bottom of the file, an ID named `bestwiki` should be created at the bottom of the page, together with the hyperlink to the destination, like so:
+    >
+    ```markdown
+    [bestwiki]: https://pylhc.github.io/
+    ```
+    >
     >The specifier `{target=_blank}` is added to ensure pages open in a new tab.
     In the specifier, additional information on the accessibility can be added.
     Links accessible only with a CERN login can be marked like `{target=_blank .cern_login}` or from the CERN network like `{target=_blank .cern_internal}`.
 
-- a quote such as the one just above:
+- For a quote such as the one just above:
 
     ```markdown
     > to markdown, or not to markdown
     ```
 
-- small hints to a difficult word, which appear on mouse over, add at the bottom of the file:
+- For tooltips appearing when hovering content such as an acronym, which appear on mouse over, add at the bottom of the file:
 
     ```markdown
-    *[difficult word]: helpful explanation
+    *[acronym]: helpful explanation
     ```
 
-- an inline math environment, surround the equation with `$a^2 + b^2 = c^2$`.
+- For an inline math environment, surround the equation with dollar signs: `$a^2 + b^2 = c^2$`.
 
-- a block math environment, use:
+- For a block math environment, use double dollar signs above and below the block's content:
 
     ```markdown
     $$
@@ -121,33 +124,36 @@ To create:
     $$
     ```
 
-- a footnote, use `[^1]` in the text and add at the bottom of the page `[^1]: Lorem ipsum`.
+- For a footnote[^1], use `[^1]` in the text and add at the bottom of the page `[^1]: Lorem ipsum`. The number can be replaced with a word (i.e. `[^name]`).
 
-### Code listing
+### Code Listing
 
 To highlight `code` inline, surround the text to highlight with `` ` ``.
+To create a code block, surround the code with triple backticks: `` ``` ``.
+Ensure that the code block is separated from text by one blank line, above and below.
 
-For creating a code block, surround the code with `` ``` ``.
-Please make sure that the code block is separated from the text by one blank line.
-Additionally, please specify the language.
+```markdown
+for i in range(3):
+    print(i)
+```
 
-````markdown
+Additionally, specifying the language right after the backticks (here with `` ```python ``) will add syntax highlighting.
+
 ```python
 for i in range(3):
     print(i)
 ```
-````
 
 ### Lists
 
 === "Unordered list"
-    An unordered list looks like this.
+    An unordered list looks like this:
 
     - First
     - Second
     - Third
 
-    It can be created using
+    It can be created using:
 
     ```markdown
     - First
@@ -156,13 +162,13 @@ for i in range(3):
     ```
 
 === "Ordered list"
-    An ordered list looks like this.
+    An ordered list looks like this:
 
     1. First
     2. Second
     3. Third
 
-    It can be created using
+    It can be created using:
 
     ```markdown
     1. First
@@ -171,13 +177,14 @@ for i in range(3):
     ```
 
 === "Task list"
-    A task list looks like this.
+    A task list looks like this:
 
     - [ ] First
     - [x] Second
     - [ ] Third
 
-    It can be created using
+    Note the boxes can be (un-)ticked by the user.
+    It can be created using:
 
     ```markdown
     - [ ] First
@@ -186,7 +193,7 @@ for i in range(3):
     ```
 
 === "Procedure Task List"
-    Below, a task list with hints, as is used in the procedures, is displayed.
+    Below, a task list with hints, as is used in the procedures:
 
     - [ ] <details class="nodeco"><summary>Task 1 Summary</summary>
         <p> Hints for task 1.
@@ -200,7 +207,7 @@ for i in range(3):
         <p> Hints for task 3.
         </p></details>
 
-    It can be created using the following code.
+    It can be created using the following code:
     ```html
     - [ ] <details class="nodeco"><summary>Task 1 Summary</summary>
         <p> Hints for task 1.
@@ -230,20 +237,28 @@ for i in range(3):
         Text 3
     ```
 
-### Text Boxes
+### Admonitions
 
-??? abstract "Paper Box"
-    Textbox for adding papers.
-    Code:
+Styled text boxes, called admonitions, are a convenient way to convey specific relevant or important information.
+To see all supported admonitions types, see directly the [relevant section in zensical's documentation][zensical_admonitions]{target=_blank}.
+
+They are declared with either `!!!` or `???` (for expanded or collapsed), the admonition type (which defines its styling) and optionally a title in quotes.
+This is followed by indented text for the admonition's content.
+Should the content span multiple lines, it is common to leave a blank line before starting it.
+
+Here are a few examples including the code to create them.
+The collapsed ones can be expanded by clicking on them.
+
+??? abstract "Abstract"
+    Admonition useful for referencing papers.
 
     ```markdown
-    ??? abstract "Paper Box"
-        Textbox for adding papers.
+    ??? abstract "Abstract"
+        Admonition useful for referencing papers.
     ```
 
 ??? info "Info Box"
     Textbox for adding useful information.
-    Code:
 
     ```markdown
     ??? info "Info Box"
@@ -252,27 +267,28 @@ for i in range(3):
 
 ??? question "Question Box"
     Textbox for answering commonly asked questions.
-    Code:
 
     ```markdown
     ??? question "Question Box"
         Textbox for answering commonly asked questions.
     ```
 
-??? tip "Tip Box"
-    Textbox for adding useful tips to novice users.
-    Code:
+???+ tip "Tip Box"
+    Appending a `+` to `???` will result in a box expanded by default, but still collapsible.
+
+    !!! info "Amonitions can be nested!"
+        Any content in an admonition is treated as markdown.
 
     ```markdown
-    ??? tip "Tip Box"
-        Textbox for adding useful tips to novice users.
-    ```
+    ??? tip "Tip Box - Expand Me!"
+        Appending a `+` to `???` will result in a box expanded by default, but still collapsible.
 
-Note that appending a `+` to `???` will result in an expanded box by default.
+        !!! info "Amonitions can be nested!"
+            Any content in an admonition is treated as markdown.
+    ```
 
 !!! note "Note Box"
     Textbox for adding small notes.
-    Code:
 
     ```markdown
     !!! note "Note Box"
@@ -281,7 +297,6 @@ Note that appending a `+` to `???` will result in an expanded box by default.
 
 !!! warning "Warning Box"
     Textbox for warning users of common pitfalls.
-    Code:
 
     ```markdown
     !!! warning "Warning Box"
@@ -290,7 +305,6 @@ Note that appending a `+` to `???` will result in an expanded box by default.
 
 !!! danger "Danger Box"
     Textbox for warning users of potential serious consequences if not executed properly.
-    Code:
 
     ```markdown
     !!! danger "Danger Box"
@@ -306,51 +320,59 @@ Note that appending a `+` to `???` will result in an expanded box by default.
         Textbox for warning users that this webpage is still work in progress.
     ```
 
-### Various other commands
-
-#### Tables
+### Creating Tables
 
 Tables in markdown look like this.
 
-| Column 1      | Column 2    |
-| -----------   | ----------- |
-| Entry 11      | Entry 21    |
-| Entry 12      | Entry 22    |
+| Column 1 | Column 2 |
+|----------|----------|
+| Entry 11 | Entry 21 |
+| Entry 12 | Entry 22 |
 
-It can be created using
+It can be created with:
 
 ```markdown
-| Column 1      | Column 2    |
-| -----------   | ----------- |
-| Entry 11      | Entry 21    |
-| Entry 12      | Entry 22    |
+| Column 1 | Column 2 |
+|----------|----------|
+| Entry 11 | Entry 21 |
+| Entry 12 | Entry 22 |
 ```
 
 When creating a table, please ensure that column width is constant and that pipes (`|`) are aligned.
+If using an IDE, this can be easily done with an extensions such as the [markdown table formatter][markdown_table_formatter]{target=_blank}.
 
-#### Images
+### Inserting Images
 
-To paste an image, use the following code.
+To insert an image, use the following:
 
 ```markdown
 ![Image](../assets/images/tricks/placeholder.gif)
 ```
 
-To include a centered image with a caption, use the following code.
+To include a centered image with a caption, deferring to `html` also works:
 
 ```html
 <figure>
-    <img src="../../assets/images/something/image.png" width=90%>
+  <img src="../../assets/images/something/image.png" width=90%>
   <figcaption>Figure: Something really amazing.</figcaption>
 </figure>
 ```
 
+The specified source for the image is a relative path to the markdown file.
 Images should be saved in `assets/images`, in an appropriately named folder.
 
-*[difficult word]: helpful explanation
+<!-- Below is acronyms, footnotes and link ids -->
 
-[mkdocs]: https://www.mkdocs.org/
-[mkdocs_material]: https://squidfunk.github.io/mkdocs-material/
+*[acronym]: helpful explanation
+
+[^1]: Some additional content.
+
+[zensical]: https://zensical.org/
+[mkdocs-material]: https://squidfunk.github.io/mkdocs-material/
 [site_address]: https://pylhc.github.io/
+[uv]: https://docs.astral.sh/uv/
 [markdownsyntax]: https://www.markdownguide.org/basic-syntax/
+[markdownlint]: https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint
 [bestwiki]: https://pylhc.github.io/
+[zensical_admonitions]: https://zensical.org/docs/authoring/admonitions/#supported-types
+[markdown_table_formatter]: https://marketplace.visualstudio.com/items?itemName=fcrespo82.markdown-table-formatter
