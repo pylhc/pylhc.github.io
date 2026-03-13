@@ -60,7 +60,6 @@ Collapsible Admonitions for Procedures
 .md-typeset .nodeco > summary::before {
   height: 0;  /* hides icon */
   margin: 0 0 0 0;
-
 }
 
 /**************************************
