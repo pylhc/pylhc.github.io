@@ -111,17 +111,11 @@ and we can use their expertise for BPM related issues and shortcomings, improvin
 
 ## Software
 
-!!! heart "A Special Thanks to Michi Hostettler"
-    While not the official support for software, due to his experience,
-    involvement in development and regular use of different tools,
-    **Michi Hostettler** is incredibly knowledgeable and
-    can very often help with questions/issues regarding various
-    software packages used in accelerator operations.
-    If you run into an issue, it is likely he has already encountered it before,
-    and most likely has a solution.
+!!! info "A Special Thanks to Michi Hostettler :heart:"
+    While not the official support for software, due to his experience, involvement in development and regular use of different tools, **Michi Hostettler** is incredibly knowledgeable and can very often help with questions/issues regarding various software packages used in accelerator operations.
+    If you run into an issue, it is likely he has already encountered it before, and most likely has a solution.
 
-    That is to say, if you are reading this, **THANK YOU MICHI FOR ALL YOUR HELP** in the past,
-    it has been invaluable!
+    That is to say, if you are reading this, **THANK YOU MICHI FOR ALL YOUR HELP** in the past, it has been invaluable!
 
      -- Joschua
 
