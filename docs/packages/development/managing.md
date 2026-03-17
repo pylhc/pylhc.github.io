@@ -31,7 +31,7 @@ You will then be greeted with a welcome message and some information about short
 
 ### Repositories
 
-Local copies of the [github repositories][pylhc_github] are kept in `/afs/cern.ch/eng/sl/lintrack/omc_repos/`.
+Local copies of the [GiHhub repositories][pylhc_github]{target=_blank} are kept in `/afs/cern.ch/eng/sl/lintrack/omc_repos/`.
 There is a shortcut available on the `lintrack` welcome screen to update all repositories.
 
 These repositories are used in the `python_edge` environment and might be modified online to test new features
@@ -39,7 +39,7 @@ or fix issues.
 
 !!! warning "Keeping them clean"
     Changes to the repositories should be short lived and patched into the packages properly within a day or two and the repository reset to its original state.
-    In the past, changes made during shifts were often forgotten and after a while no one knew why the changes were made which version was the correct one to use.
+    In the LHC Run 2, changes made during shifts were often forgotten and after a while no one knew why the changes were made which version was the correct one to use.
 
 ### Python Installations
 
@@ -47,39 +47,45 @@ The python installations are located in `/afs/cern.ch/eng/sl/lintrack/omc_acc_py
 In this folder you can also find the `acc-py` installers as well as the `omc_requirements_*.txt` files to easily setup new environments.
 
 - `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/base/` contains the base `acc-py` installations from which the environments are derived.
-- In `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/venv/` contains the environments. These are automatically picked up by the [BetaBeat GUI](../..//guis/betabeat/gui.md).
+- `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/venv/` contains the environments. These are automatically picked up by the [BetaBeat GUI](../..//guis/betabeat/gui.md).
 
-The main environments are:
+The two maintained environments are:
 
-- `omc_py3xx_releases`: The main production environment which is used for the CCC. All packages are installed via their official `pypi` release.
-- `omc_py3xx_repos`: The development environment which is used for the testing of new packages. All packages are installed from the local `git` repositories.
+- `omc_py3xx_releases`: The main production environment which is used for the CCC. All packages are installed via their official `PyPI` releases.
+- `omc_py3xx_repos`: The development environment which is used for the latest un-releases features or quick patches during shifts. All packages are `editable` installs from the local `git` repositories.
 
 These two environments are also symlinked to `/afs/cern.ch/eng/sl/lintrack/omc_python3` and `/afs/cern.ch/eng/sl/lintrack/omc_python_edge` respectively.
+The `/afs/cern.ch/eng/sl/lintrack/omc_python3` is activate by default for the `lintrack` account and is the default interpreter chosen by the `BetaBeat GUI`.
 
-!!! info "TODO"
-    - If you want the newest version of a repository to be used in `python_edge` you need to pull the changes into the local repository manually (see also the `lintrack` welcome screen).
-    - Whenever there is a new release for one of the packages, it needs to be manually installed into the `omc_py3xx_releases` environment.
-      Shortcuts are available (see the `lintrack` welcome screen), but for single updates one can use `python -m pip install -U <package>`.
-    - On new `acc-py` releases, a new base environment needs to be created and the `omc_py3xx_releases` and `omc_py3xx_repos` environments derived.
-      You can use the `omc_requirements_*.txt` files for this process.
-      To avoid issues, the former and new bases/environments can be kept in parallel for a while.
-      Don't forget to also update the symlinks.
+!!! info "Some regular maintainer TODOs"
+    !!! note "On new releases"
+        Whenever there is a new release for one of the packages, it needs to be manually installed into the `omc_py3xx_releases` environment.
+        Shortcuts are available (see the `lintrack` welcome screen), but for single updates one can use `python -m pip install --upgrade <package>`.
+
+    !!! note "On new features to `master`"
+        To keep the newest version of a repository in use in `python_edge`, you need to manually pull the changes into the local repository (see also the `lintrack` welcome screen for quick command aliases). Due to the `editable` installs this is enough.
+
+    !!! note "On new `Acc-Py` releases"
+        To upgrade to a new `acc-py` version, a new base environment needs to be created and the `omc_py3xx_releases` and `omc_py3xx_repos` environments derived.
+        See the [Acc-Py installation instructions](./howto_venv.md#installing-a-standalone-acc-py) on the previous page.
+        There is also an `AccPy_Installation_README.md` file in `/afs/cern.ch/eng/sl/lintrack/omc_acc_py/` to guide you through the process, specifically for our filesystem structure.
+        You can use the `omc_requirements_*.txt` files to re-derive the environments.
+        To avoid issues, the former and new bases/environments can be kept in parallel for a while.
+        Don't forget to also update the `omc_python3` and `omc_python_edge` symlinks!
 
 ## Github
 
-The settings for the organization `pylhc` should be automatically available to you, if you have been given the right permissions (either `admin` or `code owner`).
+The settings for the `pylhc` organization should be automatically available to you, if you have been given the right permissions (either `admin` or `code owner`).
 
-Our repositories use the [`.github`][pylhc_github_github] configuration repository to manage
+Our repositories use the [`.github`][pylhc_github_github]{target=_blank} configuration repository to manage:
 
 - Issue Templates
 - Workflows
 - Labels
 
-Of these, the workflow to [assign labels to all repositories][pylhc_labels_workflow] is special:
-This workflow is triggered on pushes to the `master` branch of this repository and assigns
-the [defined labels][pylhc_labels_json] to all repositories defined in the workflow.
+Of these, the workflow to [assign labels to all repositories][pylhc_labels_workflow]{target=_blank} is special: it is triggered on pushes to the `master` branch of the `.github` repository and assigns the [defined labels][pylhc_labels_json]{target=_blank} to all repositories defined in the workflow.
 
-While the other workflows are usually triggered directly via workflow inheritance from the other repositories, e.g. via
+While the other workflows are usually triggered directly via workflow inheritance from the other repositories, e.g.
 
 ```yaml
 jobs:
@@ -87,57 +93,54 @@ jobs:
         uses: pylhc/.github/.github/workflows/cron.yml@master
 ```
 
-they automatically inherit the `GITHUB_TOKEN` of that repository and have access to that repositories data.
-The labels-workflow does not have this access and is using a limited personal access token (PTA) instead,
-which is saved as the `ISSUE_WRITE_TOKEN` secret.
-This token is provided by the `pylhctokens` service account and needs to be renewed on a regular basis.
+These automatically inherit the `GITHUB_TOKEN` of the repository and have access to the repository's data.
+The labels-workflow does not have this access and is using a limited personal access token (PTA) instead, which is saved as the `ISSUE_WRITE_TOKEN`.
+It is provided by the `pylhctokens` service account and needs to be renewed on a regular basis.
 
 !!! info "Update Github Actions!"
-    Many of the workflows are using pre-defined github actions.<br>
+    Many of the workflows are using pre-defined github actions.
     Check them sometimes for updates and try to keep their versions up-to-date!
 
 ### pylhctokens
 
-This service account was originally created to give workflows access to the repos, until github introduced the automatically generated `GITHUB_TOKEN`.
+This service account was originally created to give workflows access to the repos, until GitHub introduced the automatically generated `GITHUB_TOKEN`.
 Nowadays we only use it to assign labels to all repositories.
 
 To log into the `pylhctokens` account you need password and 2FA authentication.
 
 ### CODEOWNERS
 
-To avoid malicious or accidental changes to the repositories, the `master` branches are locked (Repo -> Settings -> Branch protection)
-and reviews are required before pull requests can be merged.
+To avoid malicious or accidental changes to the repositories, the `master` branches are locked (`Repo` -> `Settings` -> `Branch protection`) and reviews are required before pull requests can be merged.
 
-The approved reviewers are handled via the `approved-reviewers` group in the `pylhc` organization's teams
-which are assigned as code owners to each repository.
+The approved reviewers are handled via the `approved-reviewers` group in the `pylhc` organization's teams which are assigned as code owners to each repository.
 For that purpose, each repository has a `CODEOWNERS` file, which can be found in the `.github` folder of the repository.
 
-For more details, see the [official documentation][github_codeowners].
+For more details, see the [official documentation][github_codeowners]{target=_blank}.
 
 ## PyPI
 
-The access to [PyPI][pypi] is provided by the `pylhc` service account, for which you will need password and 2FA authentication.
+The access to [PyPI][pypi]{target=_blank} is provided by the `pylhc` service account, for which you will need password and 2FA authentication.
 
-Publishing access is given to the github workflows via [API-Token][pypi_apitoken] (Settings -> Account Settings -> API Tokens) to all repositories of the `pylhc` organization.
-This is done by using the [publish workflow][pylhc_publish] and passing the token as secret:
+Publishing access is given to the github workflows via [API-Token][pypi_apitoken]{target=_blank} (`Settings` -> `Account Settings` -> `API Tokens`) to all repositories of the `pylhc` organization.
+This is done by using the [publish workflow][pylhc_publish]{target=_blank} and passing the token as secret:
 
 - `PYPI_USERNAME` : `__token__` (literal string)
 - `PYPI_PASSWORD` : the token value, including the pypi- prefix
 
-which are usually inherited from each of the repos publishing workflows.
+These are usually inherited from each of the repos publishing workflows.
 
 ## Zenodo
 
-There is no special account for [Zenodo][zenodo] access.
-Zenodo should be able to be reached with your normal account, preferably your `github`,
-which, if linked correctly, will allow Zenodo to also reach the `pylhc`-Organization repositories.
+There is no special account for [Zenodo][zenodo]{target=_blank} access.
+Zenodo should be able to be reached with your normal account, preferably your `GitHub` account which, if linked correctly, will allow Zenodo to also reach the `pylhc` organization's repositories.
 
-To add a new repository to Zenodo, you need to make sure that the `.zenodo.json` file is correct (examples can be found in our repositories).
-**Before making your first release**, you need to go into the [Zenodo github settings][zenodo_github] (down-arrow on your user on the top right) and follow the instructions there:
+To add a new repository to Zenodo, make sure the `.zenodo.json` file is correct.
+Examples can be found in our repositories.
+**Before making your first release**, go into the [Zenodo github settings][zenodo_github]{target=_blank} (down-arrow on your user on the top right) and follow these instructions:
 
 - Flip the switch to `On`
-- Create a release on `github` -> The page for your repo should now be visible on Zenodo!
-- Add the `badge` to your `README.md`
+- Create a release on `GiHhub` -> The page for your repo should now be visible on Zenodo!
+- (Optional) Add the `badge` to your `README.md`
 
 [pypi]: https://pypi.org
 [zenodo]: https://zenodo.org
