@@ -42,6 +42,7 @@ Commit your changes, push them to the repository, and open a pull request to get
 
     Currently only members of the `PyLHC` organisation on GitHub are allowed to push changes to our repositories.
     One can always fork the repo, clone their own fork and push to that, then open a PR.
+    In this case, automated CI builds might need explicit permission from maintainers to trigger.
 
 ## Adding a Page
 
