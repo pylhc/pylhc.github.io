@@ -169,20 +169,24 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
     As the beam energy increases, so does the beam rigidity and hence larger kick amplitudes can be used.
     Nevertheless, careful monitoring of losses during acquisitions and adjusting the kick amplitudes accordingly is crucial.
 
-    Typically, we prepare a table various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
+    Typically, we prepare a table of various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
     These should follow the various match points for the given energy ramp program, and the kick strengths should scale approximately linearly with the beam energy, starting from safe strength at injection.
 
-    Most of these information can be found by opening a `CCM` then navigating to `LHC Control` -> `LHC Beam Control` -> `Settings` -> `Generation`.
-    Once the app has opened, select the `Edit types` tab then the `Beam Process Type` sub-tab.
-    Search & select the relevant beam process using the `Filter` field on the left, then click the big black ++"Show/Hide optic Table"++.
+    Most of this information can be found by opening a `CCM` then navigating to `LHC Control` -> `LHC Beam Control` -> `Settings` -> `LSA App Suite` (or via the search).
+    Once the app has opened, click the `Applications` menu in the top left, then `contexts` and tick `Edit types`, which will open a new corresponding tab.
+    Search & select the relevant beam process using the `Filter` field on the left, then click the big ++"Show optic table"++ button on the right.
     This will create a popup window displaying the match points during the ramp (if the BP is for a ramp) with their time, energy and optics file.
 
     <figure>
         <center>
-        <img src="../../assets/images/multiturn_gui/lsa_generation_bp_optics_table.png" width="80%" alt="Beam Process Optics Table from LSA Generation App" />
-        <figcaption>Beam Process Optics Table from LSA Generation App</figcaption>
+        <img src="../../assets/images/multiturn_gui/lsa_app_suite_bp_optics_table.png" width="85%" alt="Beam Process Optics Table from LSA App Suite" />
+        <figcaption>Beam Process Optics Table from LSA App Suite</figcaption>
         </center>
     </figure>
+
+    ??? tip "Missing Energy?"
+        Should the `Energy` information be missing from the table, switch to the `Settings Management` tab (the default one), select your Beam Process, select `MOMENTUM` in the properties list, then the `LHC/MOMENTUM` variable in the rightmost list.
+        The graph in the lower panel will show the energy through the Beam Process, allowing to infer it at the time points from the ramp table.
 
     An __example table__ is shown below, generated for the proton-proton `RAMP-SQUEEZE-6.8TeV-ATS-2m-2025` beam process as in the picture above.
     It is okay to copy-paste a previous table and update it.
@@ -216,8 +220,15 @@ The AC Dipole will arm, then kick the beam.
     Make sure to have a `BLM Fixed Display` application open and to monitor the losses right after clicking to acquire, and watch out for large losses and spikes close to thresholds.
     This is especially important to do when increasing the kick amplitude between kicks.
 
-    <!-- TODO: insert a picture of the BLM display? -->
+    <figure>
+        <center>
+        <img src="../../assets/images/multiturn_gui/blm_fixed_display.png" width="80%" alt="BLM Fixed Display GUI" />
+        <figcaption>BLM Fixed Display GUI</figcaption>
+        </center>
+    </figure>
 
+    Note the log scale of the registered losses in the default view.
+    In that GUI, the red point indicate the losses thresholds that would trigger a dump in this location.
     In case large losses are observed, it is recommended to kick a couple times at the current amplitude or just below to see if the losses reduce or are consistent.
     While doing so, also keep an eye on the beam intensity as can be seen on the vistars.
 
