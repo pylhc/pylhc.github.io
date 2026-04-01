@@ -30,7 +30,7 @@ The `Acc-Py` wiki has [a section][acc_py_standalone_doc]{target=_blank} linking 
 From there download the desired file, `curl` or `wget` will work great if you are `ssh`-ed into a server.
 
 A default distribution is recommended but installation is identical for other distributions (pro, devel, rc).
-As of the last update of this walk-through, this corresponds to the `acc-py-2026.01-installer.sh` file.
+As of the last update of this walk-through, this corresponds to the `acc-py-2026.01-installer.sh` file, for a distribution based on `Python 3.14`.
 
 The installer itself is an executable to be called from the command line.
 You might need to `chmod u+x` the file once downloaded.
