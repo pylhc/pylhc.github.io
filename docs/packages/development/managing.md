@@ -59,7 +59,7 @@ The `/afs/cern.ch/eng/sl/lintrack/omc_python3` is activate by default for the `l
 
 !!! info "Some regular maintainer TODOs"
     !!! note "On new releases"
-        Whenever there is a new release for one of the packages, it needs to be manually installed into the `omc_py3xx_releases` environment.
+        Whenever there is a new release for one our packages, it needs to be manually installed into the `omc_py3xx_releases` environment.
         Shortcuts are available (see the `lintrack` welcome screen), but for single updates one can use `python -m pip install --upgrade <package>`.
 
     !!! note "On new features to `master`"
