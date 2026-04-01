@@ -31,7 +31,7 @@ You will then be greeted with a welcome message and some information about short
 
 ### Repositories
 
-Local copies of the [GiHhub repositories][pylhc_github]{target=_blank} are kept in `/afs/cern.ch/eng/sl/lintrack/omc_repos/`.
+Local copies of the [GitHub repositories][pylhc_github]{target=_blank} are kept in `/afs/cern.ch/eng/sl/lintrack/omc_repos/`.
 There is a shortcut available on the `lintrack` welcome screen to update all repositories.
 
 These repositories are used in the `python_edge` environment and might be modified online to test new features
