@@ -132,7 +132,7 @@ These are usually inherited from each of the repos publishing workflows.
 ## Zenodo
 
 There is no special account for [Zenodo][zenodo]{target=_blank} access.
-Zenodo should be able to be reached with your normal account, preferably your `GitHub` account which, if linked correctly, will allow Zenodo to also reach the `pylhc` organization's repositories.
+Zenodo should be able to be reached with your normal account, preferably your `GitHub` account which, if linked correctly, will allow Zenodo to also reach the `pylhc` organization's repositories for accounts with admin permissions.
 
 To add a new repository to Zenodo, make sure the `.zenodo.json` file is correct.
 Examples can be found in our repositories.
