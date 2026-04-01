@@ -35,7 +35,7 @@ As of the last update of this walk-through, this corresponds to the `acc-py-2026
 The installer itself is an executable to be called from the command line.
 You might need to `chmod u+x` the file once downloaded.
 
-The installer is to be run at the command line, providing the installation root:
+The installer needs to be run on the command line, providing the installation root:
 This *does not have to be an existing directory*, it can be created at install.
 
 Once the installation root determined (here `dist_location`), call the installer:
