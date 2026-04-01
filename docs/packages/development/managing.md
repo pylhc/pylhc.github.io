@@ -139,7 +139,7 @@ Examples can be found in our repositories.
 **Before making your first release**, go into the [Zenodo github settings][zenodo_github]{target=_blank} (down-arrow on your user on the top right) and follow these instructions:
 
 - Flip the switch to `On`
-- Create a release on `GiHhub` -> The page for your repo should now be visible on Zenodo!
+- Create a release on `GitHub` -> The page for your repo should now be visible on Zenodo!
 - (Optional) Add the `badge` to your `README.md`
 
 [pypi]: https://pypi.org
