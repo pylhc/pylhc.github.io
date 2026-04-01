@@ -95,7 +95,7 @@ jobs:
 
 These automatically inherit the `GITHUB_TOKEN` of the repository and have access to the repository's data.
 The labels-workflow does not have this access and is using a limited personal access token (PTA) instead, which is saved as the `ISSUE_WRITE_TOKEN`.
-It is provided by the `pylhctokens` service account and needs to be renewed on a regular basis.
+It is provided by the `pylhctokens` service account and needs to be renewed on a yearly basis.
 
 !!! info "Update Github Actions!"
     Many of the workflows are using pre-defined github actions.
