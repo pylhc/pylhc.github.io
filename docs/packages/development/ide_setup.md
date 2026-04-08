@@ -3,7 +3,6 @@
 While a proper IDE is not strictly needed to develop python code,
 its usage will make the development process easier and more efficient, allowing the programmer to interact with the code in ways not possible with a text editor.
 
-
 ## VSCode
 
 We recommend the usage of [VSCode][vscode_webpage]{target=_blank} for Python development, while other excellent IDEs exist,
