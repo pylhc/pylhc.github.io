@@ -8,6 +8,7 @@ Note: The `zensical` devs currently recommended *not* to switch from the `mkdocs
 
 - [x] Refresh the `How to edit this wiki page`
 - [x] Transition the logbooks out of the "Resources" tab and into its own
+- [x] Update the README
 
 ## Cosmetic
 
