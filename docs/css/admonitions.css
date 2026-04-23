@@ -61,10 +61,3 @@ Collapsible Admonitions for Procedures
   height: 0;  /* hides icon */
   margin: 0 0 0 0;
 }
-
-/**************************************
-Specific style for Warning Admonitions
-**************************************/
-.md-typeset .admonition.warning {
-    font-size: 0.74rem !important; /* make warning text larger, default: 0.64 */
-}
