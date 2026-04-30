@@ -214,7 +214,7 @@ _Steps to be done on your [Gitlab][cern_gitlab]{target=_blank} repository:_
         With this token it is now possible to `ssh` to lxplus as the service account, go into the desired directory and checkout the repository.
         `git checkout master` is only performed in case someone changed the branch on AFS (which should not happen, do not touch).
 
-        - **Image**: The image `gitlab-registry.cern.ch/linuxsupport/cc7-base` used is the default Cern Centos 7 docker image, provided by [Linux @ CERN][cern_linux]{target=_blank}.
+        - **Image**: The image `gitlab-registry.cern.ch/linuxsupport/cc7-base` used is the default Cern Centos 7 docker image, maintained for acc-models CIs.
         This is used, because it has Kerberos already set up and configured.
         The acc-models yaml was using their own docker image, of which the only additional functionality we need is `openssh`, hence it is installed manually instead.
         - **echo lxplus ssh-rsa** line: This line adds the public key of the lxplus server to the ssh `known_hosts` file, so it connects to lxplus without user interaction about this topic (do not touch).
