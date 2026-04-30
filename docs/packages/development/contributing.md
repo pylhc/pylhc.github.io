@@ -116,7 +116,6 @@ We use [PyCharm][pycharm]{target=_blank} as IDE in the team.
 
 To be compatible with our automatic API documentation generator, please respect [Sphinx][sphinx]{target=_blank} conventions.
 
-[omc3_issues]: https://github.com/pylhc/omc3/issues/new
 [gh_actions]: https://github.com/features/actions
 [codeclimate]: https://codeclimate.com/
 [pep8]: https://www.python.org/dev/peps/pep-0008/

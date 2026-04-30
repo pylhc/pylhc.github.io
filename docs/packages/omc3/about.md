@@ -44,6 +44,5 @@ Contributions are welcome, but tightly controlled, see the [guidelines](../devel
 
 [omc3_gh]: https://github.com/pylhc/omc3
 [omc3_doc]: https://pylhc.github.io/omc3/
-[omc3_changelog]: https://github.com/pylhc/omc3/blob/master/CHANGELOG.md
 [license]: https://github.com/pylhc/omc3/blob/master/LICENSE
 [omc_team]: https://github.com/orgs/pylhc/teams/omc-team
