@@ -209,14 +209,14 @@ _Steps to be done on your [Gitlab][cern_gitlab]{target=_blank} repository:_
 
 
     ??? note "More Info on the YAML"
-        The `.yml` was copied and adapted from the [acc-models-lhc repository][acc_models_repo]{target=_blank} with some changes.
+        The `.yml` was copied and adapted from the [acc-models-lhc repository][acc_models_lhc]{target=_blank} with some changes.
         In general, a Docker image is loaded, `openssh` is installed and a Kerberos token is created.
         With this token it is now possible to `ssh` to lxplus as the service account, go into the desired directory and checkout the repository.
         `git checkout master` is only performed in case someone changed the branch on AFS (which should not happen, do not touch).
 
         - **Image**: The image `gitlab-registry.cern.ch/linuxsupport/cc7-base` used is the default Cern Centos 7 docker image, provided by [Linux @ CERN][cern_linux]{target=_blank}.
         This is used, because it has Kerberos already set up and configured.
-        The [acc-models yaml][acc_models_yml]{target=_blank} was using [their own docker image][acc_models_docker], of which the only additional functionality we need is `openssh`, hence it is installed manually instead.
+        The acc-models yaml was using their own docker image, of which the only additional functionality we need is `openssh`, hence it is installed manually instead.
         - **echo lxplus ssh-rsa** line: This line adds the public key of the lxplus server to the ssh `known_hosts` file, so it connects to lxplus without user interaction about this topic (do not touch).
         - **echo -e Host** line: Here the ssh `config` is adapted to use Kerberos as authentication method to any server (do not touch).
         - **only master**: Only the commits to `master` trigger the CI. Omit this part if you want the repo to be pulled on every commit, or change it to limit upon which commits this happens (as is done in the [acc-models yml][acc_models_yml]{target=_blank}).
@@ -235,6 +235,7 @@ Whenever you are pushing now any commits to the `master` branch, the CI/CD will 
 *[lxplus]: Linux Public Login User Service
 
 [new_account]: https://account.cern.ch/account/Management/NewAccount.aspx
+[acc_models_lhc]: https://gitlab.cern.ch/acc-models/acc-models-lhc
 [afs_services]: https://resources.web.cern.ch/resources/Manage/AFS/Default.aspx
 [github]: https://github.com/
 [cern_gitlab]: https://gitlab.cern.ch/
