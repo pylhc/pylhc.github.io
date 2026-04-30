@@ -219,7 +219,7 @@ _Steps to be done on your [Gitlab][cern_gitlab]{target=_blank} repository:_
         The acc-models yaml was using their own docker image, of which the only additional functionality we need is `openssh`, hence it is installed manually instead.
         - **echo lxplus ssh-rsa** line: This line adds the public key of the lxplus server to the ssh `known_hosts` file, so it connects to lxplus without user interaction about this topic (do not touch).
         - **echo -e Host** line: Here the ssh `config` is adapted to use Kerberos as authentication method to any server (do not touch).
-        - **only master**: Only the commits to `master` trigger the CI. Omit this part if you want the repo to be pulled on every commit, or change it to limit upon which commits this happens (as is done in the [acc-models yml][acc_models_yml]{target=_blank}).
+        - **only master**: Only the commits to `master` trigger the CI. Omit this part if you want the repo to be pulled on every commit, or change it to limit upon which commits this happens (as is done in the acc-models-lhc yml.
 
 ### Done
 
