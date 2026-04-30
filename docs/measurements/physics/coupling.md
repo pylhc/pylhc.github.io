@@ -19,12 +19,11 @@ It is therefore called the _two BPM method_.
 Under the assumption that no other perturbations than linear transverse coupling are present in the lattice, the Courant-Snyder coordinates $h_{x/y}^\pm$ read:
 
 $$
-\newcommand{\conj}[1]{#1^*}
 \begin{align}
- h_x^+ &= \zeta_x^+ + 2i\conj{f_{1010}} \zeta_y^- + 2i\conj{f_{1001}}\zeta_y^+  \\
-    h_y^+ &= \zeta_y^+ + 2i\conj{f_{1010}} \zeta_x^- + 2i{f_{1001}}\zeta_x^+  \\
-    h_x^- &= \zeta_x^- - 2i{f_{1010}} \zeta_y^+ - 2i{f_{1001}}\zeta_y^-   \\
-    h_y^- &= \zeta_y^- - 2i{f_{1010}} \zeta_x^+ - 2i\conj{f_{1001}}\zeta_x^-
+    h_x^+ &= \zeta_x^+ + 2i f_{1010}^* \zeta_y^- + 2i f_{1001}^* \zeta_y^+  \\
+    h_y^+ &= \zeta_y^+ + 2i f_{1010}^* \zeta_x^- + 2i{f_{1001}} \zeta_x^+  \\
+    h_x^- &= \zeta_x^- - 2i{f_{1010}} \zeta_y^+ - 2i{f_{1001}} \zeta_y^-   \\
+    h_y^- &= \zeta_y^- - 2i{f_{1010}} \zeta_x^+ - 2i f_{1001}^* \zeta_x^-
 \end{align}
 $$
 
