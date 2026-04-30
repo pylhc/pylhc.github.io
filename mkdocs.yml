@@ -212,7 +212,7 @@ nav:
       - Harmonic Analysis: measurements/physics/harpy.md
       - Optics Analysis: measurements/physics/optics.md
       - Coupling: measurements/physics/coupling.md
-      - K-Mod: measurements/physics/kmod.md
+      - K-Modulation: measurements/physics/kmod.md
       - Linear IR Optics: measurements/physics/ir_linear_optics.md
       - Nonlinear IR Optics: measurements/physics/ir_nonlinear_optics.md
       - 3D-Kicks: measurements/physics/threedkicks.md
