@@ -133,9 +133,6 @@ Either fix the permissions on `afs` or ask someone to do so for you.
 [dev_mtgui]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-multiturn/PRO/lhc-multiturn-lhc-multiturn.jnlp
 [releases_mtgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-multiturn/
 
-[dev_kmodgui]: https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-kmod/PRO/lhc-app-kmod-lhc-app-kmod.jnlp
-[releases_kmodgui]: https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-kmod/
-
 [jws_confluence]: https://wikis.cern.ch/display/DVTLS/jws+-+a+replacement+for+javaws
 [jws]: https://wikis.cern.ch/display/DVTLS/jws+-+a+replacement+for+javaws
 
