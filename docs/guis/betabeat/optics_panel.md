@@ -68,7 +68,7 @@ The following methods implement different correction algorithms:
 ??? note
     The `Iterative correction` method is currently not compatible and thus disabled.
 
-The results are outputted in the `changeparameters` files.
+The results are output in the `changeparameters` files.
 These files store the magnet names and corresponding correction strengths.
 
 They are also displayed in the [Correction Panel](correction_panel.md).
