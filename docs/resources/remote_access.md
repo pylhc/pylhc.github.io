@@ -21,6 +21,4 @@ See this [website][ezproxy_website]{target=_blank} for a list.
 *[GPN]: General Purpose Network, the main CERN network
 
 [codi_teleworking]: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
-[plugin_firefox]: https://addons.mozilla.org/en-US/firefox/addon/switchyomega/
-[plugin_chrome]: https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif
 [ezproxy_website]: https://login.ezproxy.cern.ch/
