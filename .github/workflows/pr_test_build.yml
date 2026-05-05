@@ -1,18 +1,23 @@
-# Build documentation and upload to gh-pages
+# Build documentation and upload artifact for checks
 name: Ensure documentation builds after commits
 
 defaults:
   run:
     shell: bash
 
+permissions:
+  contents: write
+
 env:
   UV_COMPILE_BYTECODE: 1
 
-on: [push, pull_request]  # Runs on all push events to any branch
+# Runs on the following conditions:
+# - Any push to a branch linked to a pull request
+on: [push, pull_request]
 
 jobs:
   documentation:
-    name: Build Static Documentation
+    name: Build and Upload Static Documentation
     runs-on: ubuntu-latest
     env:
         python-version: "3.14"
@@ -32,13 +37,16 @@ jobs:
         run: uv pip install -r requirements.txt
 
       - name: Build documentation
-        run: python -m mkdocs build -d ./doc_build
+        # Note: when it's stable we will want to use --strict on
+        # the lintrack builds as they're for internet-less view
+        # from the CCC. Just needs to --strict flag to this command
+        run: zensical build
 
       # Upload artifacts if in PR so reviewers can have a quick look without building documentation from the branch locally
       - name: Upload build artifacts
         uses: actions/upload-artifact@v7
         if: success() && github.event_name == 'pull_request'
         with:
-          name: site-build
-          path: doc_build
+          name: site-build-zensical
+          path: site
           retention-days: 5

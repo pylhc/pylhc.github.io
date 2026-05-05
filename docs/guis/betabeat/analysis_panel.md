@@ -44,7 +44,7 @@ In the `Time / Space` tab one can examine the phases and amplitudes of different
   </center>
 </figure>
 
-In the lists on the left-hand side, one can select from the resulting values of the [`harpy` analysis].
+In the lists on the left-hand side, one can select from the resulting values of the `harpy` analysis.
 These correspond to the columns in the `.lin[xy]` files and are separated by plane.
 These include phase (`PHASE`), frequency (`FREQ`) and amplitude (`AMP`) of the lines identified by `harpy` as well as their respective errors (`ERR`).
 The lines are multiples of the found tunes (`TUNE`) and can be identified by the two numbers in their name,

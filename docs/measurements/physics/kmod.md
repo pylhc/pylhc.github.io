@@ -12,7 +12,7 @@ K-Modulation is a complementary optics measurement method which consists in chan
 The average $\beta$-function in the modulated quadrupole is linked to the gradient change $\Delta K$ and tune change $\Delta Q_{x,y}$ via[^MintyZimmermann]:
 
 $$
-\beta_{x,y} = \pm 2 \Delta K^{-1}\Big[ cot(2 \pi Q_{x,y}) [ 1 - cos(2 \pi \Delta Q_{x,y}) ] + sin(2 \pi \Delta Q_{x,y}) \Big]
+\beta_{x,y} = \pm 2 \Delta K^{-1}\Big( cot(2 \pi Q_{x,y}) ( 1 - cos(2 \pi \Delta Q_{x,y}) ) + sin(2 \pi \Delta Q_{x,y}) \Big)
 $$
 
 If these measurements are conducted for two adjacent quadrupoles, the evolution of the $\beta$-function in-between the modulated quadrupoles can also be inferred[^FelixCarlierKmodPaper].
