@@ -58,6 +58,7 @@ Pages are written in Markdown, with file extension `.md`.
 A general overview of the syntax as well as some best practices can be found on this [markdown guide][markdownsyntax]{target=_blank}.
 Additionally, to allow for easier comparison between two versions of a file, it is recommended to keep it to one sentence per line.
 Following this, it is also recommended to not put links in the text, instead creating an ID at the end of the document and linking to it.
+See the [formatting section](#general-text-formatting) below.
 
 Different blocks of either code or text should be separated by one blank line.
 To create blocks of code, use `fenced code blocks`, which are created using triple backticks: `` ``` ``.
