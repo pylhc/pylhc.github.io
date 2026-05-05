@@ -11,7 +11,9 @@ permissions:
 env:
   UV_COMPILE_BYTECODE: 1
 
-on: [push, pull_request]  # Runs on all push events to any branch
+# Runs on the following conditions:
+# - Any push to a branch linked to a pull request
+on: [push, pull_request]
 
 jobs:
   documentation:

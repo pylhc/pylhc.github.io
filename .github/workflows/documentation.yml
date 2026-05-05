@@ -11,7 +11,9 @@ permissions:
 env:
   UV_COMPILE_BYTECODE: 1
 
-on:  # Runs on any push event to master
+# Runs on the following conditions:
+# - Any push to master branch (which requires merging a PR)
+on:
   push:
     branches:
       - master
