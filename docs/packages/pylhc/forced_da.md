@@ -12,14 +12,14 @@ Arguments:
 *--Required--*
 
 - **beam** *(int)*: Beam to use.
-  Flags: **['-b', '--beam']**
+  Flags: **'-b', '--beam'**
   Choices: ``[1, 2]``
 - **energy** *(MultiClass)*: Beam energy in GeV.
-  Flags: **['-e', '--energy']**
+  Flags: **'-e', '--energy'**
 - **kick_directory** *(MultiClass)*: Analysis kick_directory containing kick files.
-  Flags: **['-k', '--kickdir']**
+  Flags: **'-k', '--kickdir'**
 - **plane** *(str)*: Plane of the kicks.
-  Flags: **['-p', '--plane']**
+  Flags: **'-p', '--plane'**
   Choices: ``['X', 'Y']``
 
 *--Optional--*
@@ -33,7 +33,7 @@ Arguments:
 - **emittance_window_length** *(int)*: Length of the moving average window. (# data points).
   Default: ``100``
 - **fill** *(int)*: Fill that was used. If not given, check out time_around_kicks.
-  Flags: **['-f', '--fill']**
+  Flags: **'-f', '--fill'**
 - **fit** *(str)*: Fitting function to use (rearranges parameters to make sense).
   Choices: ``['exponential', 'linear']``
   Default: ``exponential``
@@ -45,7 +45,7 @@ Arguments:
 - **normalized_emittance** *(float)*: Assumed NORMALIZED nominal emittance for the machine.
   Default: ``3.7499999999999997e-06``
 - **output_directory** *(MultiClass)*: Output kick_directory, if not given subfolder in kick kick_directory
-  Flags: **['-o', '--outdir']**
+  Flags: **'-o', '--outdir'**
 - **pagestore_db** *(MultiClass)*: (Path to-) presaved timber database
 - **show**: Show plots.
   Action: ``store_true``
