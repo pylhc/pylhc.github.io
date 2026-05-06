@@ -95,7 +95,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 * [LHC Data Sources][lhc_data_sources]{target=_blank}
 * [HTCondor Batch Docs][batch_docs]{target=_blank}
 * [Setup HTCondor for local use][htcondor_local]{target=_blank}
-* [More HTCondor hints in the Python wrapper][htcondor_python]{target=_blank}
 
 ## CERN
 
@@ -172,7 +171,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 [lhc_data_sources]: https://twiki.cern.ch/twiki/bin/view/ABPComputing/LhcDataStorage
 [batch_docs]: https://batchdocs.web.cern.ch/index.html
 [htcondor_local]: https://twiki.cern.ch/twiki/bin/view/ABPComputing/LxbatchHTCondor
-[htcondor_python]: http://pylhc.github.io/Beta-Beat.src/utils/index.html#module-utils.htcondor_wrapper
 
 [codimd_teleworking]: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
 [cern_computing_blog]: https://computing-blog.web.cern.ch/2020/03/useful-tools-for-teleworking/
