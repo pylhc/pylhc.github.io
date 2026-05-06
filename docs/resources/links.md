@@ -120,6 +120,8 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 
 ## Development Guidelines and How-To's
 
+### Markdown
+
 * [Markdown Cheatsheet][markdown_cheatsheet]{target=_blank}
 
 ### Git
