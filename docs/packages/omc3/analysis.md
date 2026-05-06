@@ -92,7 +92,7 @@ python -m omc3.model_creator \
     --beam 1 \
     --energy 6.5 \
     --nat_tunes 62.31 60.32 \
-    --modifiers /afs/cern.ch/eng/lhc/optics/runII/2018/PROTON/opticsfile.22 \
+    --modifiers opticsfile.22 \
     --outputdir lhc_model
 ```
 
