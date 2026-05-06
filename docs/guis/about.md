@@ -75,7 +75,7 @@ The following are required to run the GUIs:
 
 You may encounter the following errors:
 
-### Running in the CCC in 2025
+### Running in the CCC in 2026
 
 On the CCC terminals, there are some issues related to finding the correct java path,
 which affects `NXCals` extraction.

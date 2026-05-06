@@ -47,7 +47,7 @@
 
 ## GUIs
 
-- [ ] Main page, running in the CCC in 2025 -> 2026?
+- [x] Main page, running in the CCC in 2025 -> 2026?
 
 ## Measurements and Corrections
 
