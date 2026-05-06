@@ -15,7 +15,8 @@ A typical workflow with `omc3` consists in performing analysis of measurement or
 While `omc3` provides python modules to handle the different aspects of these tasks, it also provides entrypoint scripts to be called from the commandline.
 
 The first step in the workflow consists in a harmonic frequency analysis performed with the `harpy` module, while the second one is an optics analysis performed with the `measure_optics` module.
-The table below shows a general analysis workflow from BPM turn-by-turn measurements or simulation file to results, as well as the corresponding files at each step:
+The table below shows a general analysis workflow from BPM turn-by-turn measurements or simulation file to results, as well as the corresponding files at each step.
+Output files are written in the [TFS format][tfs_format]{target=_blank}.
 
 | Workflow & Files      |                        |                        |                        |                                   |
 | :-------------------- | :--------------------: | :--------------------: | :--------------------: | --------------------------------: |
@@ -23,7 +24,7 @@ The table below shows a general analysis workflow from BPM turn-by-turn measurem
 | SDDS files:  `*.sdds` | :material-arrow-right: | TFS files: `*.lin[xy]` | :material-arrow-right: |                TFS files: `*.tfs` |
 
 In this page, we will go through the essential steps in preparing and performing an analysis, by going from start to finish with a simple example.
-In this walk-through, we will cover the use of the different entrypoints available to perform necessary steps.
+We will cover the use of the different entrypoints available to perform necessary steps.
 
 !!! example
     For our walk-through example, we will start from data obtained in `MAD-X` with the `TRACK` command for the 1023 turns in the LHC machine, with a scenario adapted from the 2018 configuration.
@@ -878,6 +879,7 @@ interaction_point_y.tfs     phase_x.tfs
 From the optics output files, in particular the `kick_[xy].tfs` files, one can perform amplitude detuning analysis.
 The detailed steps to run this from the GUI are described in [the amplitude detuning analysis procedure](../../measurements/procedures/ampdet.md#analysis).
 
+[tfs_format]:https://pylhc.github.io/tfs/tfsformat.html
 [mess]: https://github.com/pylhc/MESS
 [sdds]: https://ops.aps.anl.gov/SDDSIntroTalk/slides.html
 [tbt_converter]: https://pylhc.github.io/omc3/entrypoints/other.html#tbt-converter

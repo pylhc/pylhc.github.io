@@ -14,6 +14,7 @@
 - [x] OMC3 Getting started, installation method outdated
 - [x] OMC3 Getting started, update scripts with readme from the repo
 - [x] OMC3 analysis, BIG admonition that the command line use is discouraged because of complexity of the tasks and using the GUIs is the preferred way
+- [x] OMC3 analysis, insert a link to TFS format definition from tfspandas doc.
 - [ ] OMC3 analysis, model creation, update supported machines admonition
 - [ ] OMC# analysis, optics analysis the error definitions should be provided by the model not simulation. Can link to the paper.
 - [ ] omc3 directly, update choices in https://pylhc.github.io/omc3/entrypoints/other.html#model-creator
