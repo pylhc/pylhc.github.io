@@ -5,6 +5,10 @@
 Note that the full functionality is only available under Linux with `HTCondor` configured, e.g. on CERN's `lxplus` service.
 Currently, due to lack of htcondor Python bindings on `PypI` for `Windows` and `macOS`, only local job execution is possible for these platforms.
 
+!!! note "A Quick Overview"
+    A presentation was made some time ago by Felix to showcase the purpose and capabilities of the job submitter.
+    It is a condensed version of this page, and is accessible [at the following link][pylhc_submitter_presentation]{target=_blank}.
+
 ## Using the Job Submitter
 
 In the following examples, we will perform a tune sweep using a `MAD-X` mask.
@@ -228,3 +232,4 @@ To resubmit the failed jobs to `HTCondor`, simply rerun the call and omit the `d
     The `num_processes` option allows to specify how many concurrent processes will run, by default 4.
 
 [documentation]: https://pylhc.github.io/submitter/entrypoints/job_submitter.html
+[pylhc_submitter_presentation]: https://slides.com/fsoubelet/pylhc-submitter-presentation/fullscreen

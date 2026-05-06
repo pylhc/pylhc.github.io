@@ -30,7 +30,7 @@
 - [ ] PyLHC kick groups page, example or info?
 - [ ] PyLHC etc do we need to duplicate what is in their documentations?
 - [x] pylhcsubmitter, study from command line add line breaks to command
-- [ ] pylhcsubmitter add a link to my presentation
+- [x] pylhcsubmitter add a link to my presentation
 - [ ] pylhcsubmitter max number of jobs (in njobs admonition) add link to the HTCondor documentation?
 - [ ] pylhcsubmitter resubmitting, explain why job_outputdir is indicator
 - [ ] Move IRNL correction to "links to other package"
