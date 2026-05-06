@@ -38,7 +38,7 @@
 - [x] developping, there are no makefiles anymore
 - [x] developping, make a step for the tests
 - [x] developping, we don't use codeclimate anymore
-- [ ] developping, recommend test + doc extras. In all we might have CERN-network stuff
+- [x] developping, recommend test + doc extras. In all we might have CERN-network stuff
 - [ ] releasing, create new tag should be in point 2
 - [ ] IDE setup, add ty as recommended extension
 - [ ] virtual environments, maybe update with the next refresh? (names etc)

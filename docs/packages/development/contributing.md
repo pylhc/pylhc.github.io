@@ -85,7 +85,8 @@ python -m pip install --editable package_name
     python -m pip install --editable package_name[all]
     ```
 
-    For development purposes, we recommend using the `all` extra to be fully set up.
+    For development purposes, we recommend using the `[test,doc]` extras for a regular set up.
+    If required use the `[all]` extra to add CERN-related things, which usually require access to the CERN general network.
 
 ### Naming Conventions
 
