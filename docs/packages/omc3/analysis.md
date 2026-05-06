@@ -170,11 +170,11 @@ trackone.sdds.bad_bpms_y trackone.sdds.liny
     To use these, refer to the [Plot Spectrum][plot_spectrum]{target=_blank} API documentation.
 
 ??? question "Column Nomenclature"
-    The `*.amps[xy]`, `*.freqs[xy]` and `*.lin[xy]` files in the harmonic analysis output are **TFS** files.
+    The `*.amps[xy]`, `*.freqs[xy]` and `*.lin[xy]` files in the harmonic analysis output are [TFS files][tfs_format]{target=_blank}.
 
     The `*.freqs[xy]` files contain for each BPM in column format the frequencies of the resonance lines detected in the spectrum, for respectively the horizontal (`.freqsx`) and vertical (`.freqsy`) planes while the `*.amps[xy]` files contain the amplitudes of said resonance lines.
     This means in the column of a given BPM, the `nth` row in the `.amps[xy]` file corresponds to the amplitude of the resonance line located at the frequency given by the `nth` row in the column of the same name in the `.freqs[xy]` file.
-    For illustration purposes, simplistic plotting of the horizontal spectrum (without the spectrum plotter mentioned above) from these files would go as:
+    For illustration purposes, *simplistic plotting* of the horizontal spectrum (without the spectrum plotter mentioned above) from these files would go as:
     ```python
     import tfs
     import matplotlib.pyplot as plt
@@ -185,9 +185,10 @@ trackone.sdds.bad_bpms_y trackone.sdds.liny
     for bpm in ampsx.columns:
         if bpm in freqsx.columns:  # safety check but no reason it wouldn't be there
             plt.plot(freqsx[bpm], ampsx[bpm], ".-")
-            # plt.stem(freqsx[bpm], ampsx[bpm])  # would be more accurate but might stress your system
+            # plt.stem(freqsx[bpm], ampsx[bpm])  # would be more accurate but might stress your system!
 
     plt.setp(plt.gca(), xlabel=r"$Q_x$", ylabel="Amplitude", title="Horizontal Spectrum", xlim=(0, 0.5))
+    plt.show()
     ```
 
     The `*.lin[xy]` files contain various data (in columns) computed for each BPM (in rows) as some summary information.
