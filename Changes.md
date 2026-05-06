@@ -2,7 +2,7 @@
 
 ## Theming
 
-- [ ] The html footer template should mention we're powered by Zensical and not mkdocs + mkdocs-material
+- [x] The html footer template should mention we're powered by Zensical and not mkdocs + mkdocs-material
 
 ## OMC Team
 
