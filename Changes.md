@@ -41,7 +41,7 @@
 - [x] developping, recommend test + doc extras. In all we might have CERN-network stuff
 - [x] releasing, create new tag should be in point 2
 - [x] IDE setup, add ty as recommended extension
-- [ ] virtual environments, maybe update with the next refresh? (names etc)
+- [x] virtual environments, maybe update with the next refresh? (names etc)
 - [ ] managing, explain TN means Technical Network when talking about lintrack
 - [ ] managing, the TODO admonition should be renamed "Checks" or something for when making changes
 
