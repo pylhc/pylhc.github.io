@@ -50,11 +50,11 @@ The content of this page has been converted from the presentation given as ["OMC
 
 ## Isolation Forest
 
+!!! warning "Under Re-evaluation"
+    This functionality is currently under re-evaluation and has only been used on a small amount of data in 2021-2024.
+
 * Using <span class="iforest-related">machine learning techniques</span> to identify Bad-BPMs.
     * <span class="iforest-related">IFOREST</span>: Identified BPM, due to being an <span class="iforest-related">outlier in Tune, Noise and/or Amplitude</span>
-
-!!! warning "Under Re-evaluation"
-    This functionality is currently under re-evaluation and has only been used on a small amount of data in 2021-2024!
 
 <figure>
   <center>
