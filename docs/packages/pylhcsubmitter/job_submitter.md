@@ -194,8 +194,9 @@ A folder structure is created in the given `working directory`, in which one wil
 
 ??? warning "Number of Jobs"
     As `job_submitter` creates a job for each combination in the inner product of the `replace_dict` parameters, the number of jobs can easily get high.
-    In our example case, we are submitting `beam * tunex * tuney = 2 * 11 * 11 = 242` jobs.
-    It is worth noting that currently the maximum number of jobs to be submitted to `HTCondor` is set to `100k`.
+    In our example case, we are submitting `beam * tunex * tuney = 2 * 11 * 11 = 242` jobs., but with an additional parameter to scan this number gets exponentially higher.
+
+    It is worth noting that currently the `HTCondor` system at CERN does not have a maximum number submissions, but there is a [limit on the number of concurrent jobs][htcondor_limits]{target=_blank} for a given scheduler.
 
 After submitting our tune sweep studies, we can check the status of our jobs via the `condor_q` (unless running locally).
 The output should look something like this:
@@ -233,3 +234,4 @@ To resubmit the failed jobs to `HTCondor`, simply rerun the call and omit the `d
 
 [documentation]: https://pylhc.github.io/submitter/entrypoints/job_submitter.html
 [pylhc_submitter_presentation]: https://slides.com/fsoubelet/pylhc-submitter-presentation/fullscreen
+[htcondor_limits]: https://batchdocs.web.cern.ch/concepts/service-limits.html
