@@ -40,13 +40,17 @@ If you are submitting a bug report, please also provide a minimal scenario to re
 First, search GitHub for an open or closed PR that relates to your submission.
 If you do not find a related issue or PR, or if your PR is the implementation for an issue you open, go ahead.
 
-1. **Development**: Clone the project, set up your branch and development environment, make your changes, and add descriptive messages to your commits.
+1. **Develop**: Clone the project, set up your branch and development environment, make your changes, and add descriptive messages to your commits.
   Please reference the issue number in your commit header messages so that your commits appear on the issue tracker.
 
-2. **Build**: Before submitting changes, please make sure tests pass and that the package properly installs.
-  Most projects come with a Makefile to help with this, and you can get an overview of the available targets with `make help`.
+2. **Build**: After applying changes, please make sure the package properly installs.
+  For our python packages configuration is already made, and a simple `python -m pip install .` should build.
 
-3. **Pull Request**: After having worked on your changes and pushed them to Github, open a Pull Request to the master branch.
+3. **Test**: Before submitting changes, please ensure all tests pass.
+  For most of our packages a `pytest` configuration is also provided and running `python -m pytest` is enough to trigger the test suite.
+  Specific options might need to be provided depending on the affected functionality but this is a good start.
+
+4. **Pull Request**: After having worked on your changes and pushed them to Github, open a Pull Request to the master branch.
   Review and approval by at least one of our team members is required before accepting changes.
   If new changes are suggested, make the required updates and push the changes again.
   Please do not require a review until all the quality checks pass.

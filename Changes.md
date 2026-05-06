@@ -35,6 +35,8 @@
 - [ ] pylhcsubmitter resubmitting, explain why job_outputdir is indicator
 - [x] Move IRNL correction to "links to other package"
 - [x] REMOVE MESS COMPLETELY
+- [x] developping, there are no makefiles anymore
+- [x] developping, make a step for the tests
 - [ ] developping, we don't use codeclimate anymore
 - [ ] developping, recommend test + doc extras. In all we might have CERN-network stuff
 - [ ] releasing, create new tag should be in point 2
