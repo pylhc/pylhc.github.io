@@ -279,7 +279,7 @@ The detailed steps to run this from the GUI are described in [the amplitude detu
 ## Determining Corrections
 
 From the results of an optics analysis, it is possible with `omc3` to compute corrections in order to try and bring chosen parameters closer to the model values.
-However, due to the complexity of this worfklow we will not provide a CLI walkthrough, and instead direct the user to [use this functionality through the dedicated GUI](../../guis/betabeat/correction_panel.md).
+However, due to the complexity of this workflow we will not provide a CLI walkthrough, and instead direct the user to [use this functionality through the dedicated GUI](../../guis/betabeat/correction_panel.md).
 
 <!-- Links in 'analysis workflow' section -->
 [tfs_format]:https://pylhc.github.io/tfs/tfsformat.html
