@@ -149,9 +149,6 @@ nav:
       - Job Submitter: packages/pylhcsubmitter/job_submitter.md
       - AutoSix: packages/pylhcsubmitter/autosix.md
       - ↪ On Github: https://github.com/pylhc/submitter
-    - MESS:
-      - About: packages/mess/about.md
-      - ↪ On Github: https://github.com/pylhc/MESS
     - Links to other Packages:
       - ↪ optics-functions: https://github.com/pylhc/optics_functions
       - ↪ Beta-Beat.src: https://github.com/pylhc/Beta-Beat.src
@@ -159,6 +156,7 @@ nav:
       - ↪ sdds: https://github.com/pylhc/sdds
       - ↪ generic-parser: https://github.com/pylhc/generic_parser
       - ↪ irnl-corrections: https://github.com/pylhc/irnl_rdt_correction
+      - ↪ madx-scripts: https://github.com/pylhc/MESS
     - Python Development:
       - Contributing: packages/development/contributing.md
       - Releases: packages/development/howto_release.md

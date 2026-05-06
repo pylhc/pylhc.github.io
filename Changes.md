@@ -34,7 +34,7 @@
 - [x] pylhcsubmitter max number of jobs (in njobs admonition) add link to the HTCondor documentation?
 - [ ] pylhcsubmitter resubmitting, explain why job_outputdir is indicator
 - [x] Move IRNL correction to "links to other package"
-- [ ] REMOVE MESS COMPLETELY
+- [x] REMOVE MESS COMPLETELY
 - [ ] developping, we don't use codeclimate anymore
 - [ ] developping, recommend test + doc extras. In all we might have CERN-network stuff
 - [ ] releasing, create new tag should be in point 2
