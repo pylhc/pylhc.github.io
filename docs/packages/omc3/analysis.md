@@ -109,11 +109,12 @@ b2_settings.madx job.create_model.madx twiss.dat
 
 !!! question "What is a Model?"
     As one can see, a "model" is essentially one or more TFS files with optics functions at BPMs (`twiss.dat`) and elements (`twiss_elements.dat`), other files being here for the user to understand or reproduce the result.
-    Had we created a driven model, then an additional `twiss_ac.dat` or `twiss_adt.dat` file would have been created, with optics functions at BPMs while driving the beam.
+    Had we created a driven model (with beam excitation), then an additional `twiss_ac.dat` or `twiss_adt.dat` file would have been created, with optics functions at BPMs while exciting the beam.
     One can create their own models without the `model_creator` should they want to, as it only acts as a convenience wrapper.
 
     A `driven model` is the same as above, with also a `TWISS` taking into account the exciting effect of an AC dipole or ADT onto the optics.
     Creating this is easiest done with the `model_creator`, but can also be done individually with the a script installing the appropriate element into your sequence.
+    See for instance [this setup][mess_acd_twiss]{target=_blank} which provides a `TWISS` with the effect of an AC Dipole.
 
 ## Frequency Analysis
 
@@ -275,10 +276,14 @@ The detailed steps to run this from the GUI are described in [the amplitude detu
 
 [tfs_format]:https://pylhc.github.io/tfs/tfsformat.html
 [mess_example]: https://github.com/pylhc/MESS/tree/master/LHC/Website_Example
+
 [sdds]: https://ops.aps.anl.gov/SDDSIntroTalk/slides.html
 [tbt_doc]: https://pylhc.github.io/turn_by_turn/
 [tbt_converter]: https://pylhc.github.io/omc3/entrypoints/other.html#tbt-converter
+
+[mess_acd_twiss]: https://github.com/pylhc/MESS/tree/master/LHC/AC_Dipole_Model
+
+[hole_in_one]: https://pylhc.github.io/omc3/entrypoints/analysis.html#omc3.hole_in_one.hole_in_one_entrypoint
 [plot_spectrum]: https://pylhc.github.io/omc3/entrypoints/plotting.html#plot-spectrum
 [normal_forms]: https://cds.cern.ch/record/333077/files/p93.pdf
-[hole_in_one]: https://pylhc.github.io/omc3/entrypoints/analysis.html#omc3.hole_in_one.hole_in_one_entrypoint
 [model_creator]: https://pylhc.github.io/omc3/entrypoints/other.html#model-creator
