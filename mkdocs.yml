@@ -31,6 +31,7 @@ theme:
     - navigation.instant
     - content.action.edit  # editing button on the pages is opt-in since v9
     - content.code.copy  # copy button for code blocks
+    - search.highlight  # clicking a search result has zensical highlight all results in the page
   palette:
     # Palette toggle for light mode
     - scheme: default
