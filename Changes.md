@@ -26,7 +26,7 @@
 - [x] OMC3 analysis, optics analysis the error definitions should be provided by the model not simulation. Can link to the paper.
 - [x] OMC3 analysis, mention that for correction you should use the GUI or that we build later, create a last section like ampdet and point to the GUI page?
 - [x] PyLHC main page, update the scripts present
-- [ ] PyLHC main page, admonition to say this is mostly little things and the important stuff moved to omc3
+- [x] PyLHC main page, dont explicitely mention python 3.7
 - [ ] PyLHC kick groups page, example or info?
 - [ ] PyLHC etc do we need to duplicate what is in their documentations?
 - [ ] pylhcsubmitter, study from command line add line breaks to command

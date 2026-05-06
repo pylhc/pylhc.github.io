@@ -17,7 +17,7 @@ It provides tools which can be useful for working with accelerators, but are not
 
 ## Getting Started
 
-This  package is `Python 3.7+` compatible, and can be installed through `pip`:
+This  package is `Python 3` compatible, and can be installed through `pip`:
 
 ```bash
 python -m pip install pylhc
