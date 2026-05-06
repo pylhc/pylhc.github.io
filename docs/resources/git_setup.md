@@ -92,7 +92,6 @@ git clone git@github.com:pylhc/omc3.git
 
 which you can find from the ++"Clone"++{.green-gui-button} button of the repository page on GitHub.
 
-
 !!! tip "Changing a Repository URL"
     In case you already have a repository cloned with the wrong URL, you can change it with `git remote set-url`, e.g.:
 
@@ -113,7 +112,6 @@ You can setup https access by creating and using a personal access token or a pa
 !!! note "Not yet documented"
     As we use SSH access, this section not yet written.
     Refer to the [GitHub documentation][github_https] for more information and maybe write up a quick howto.
-
 
 ## Configuring Gitlab CI to Automatically Pull into AFS
 
