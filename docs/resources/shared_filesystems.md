@@ -1,14 +1,14 @@
 # Shared Filesystems
 
-All things related to `afs`, `eos` etc.
+All things related to `AFS`, `EOS` etc.
 
 ## Setup AFS on WSL2
 
-Follow [this gist][gist_wsl] to set-up AFS with Kerberos on your WSL.
+Follow [this gist][gist_wsl]{target=_blank} to set-up AFS with Kerberos on your WSL.
 
-## Mounting EOS and CERNBox via FUSE on an unmanged CentOS machine
+## Mounting EOS and CERNBox via FUSE on an unmanaged CentOS machine
 
-The CERN Service Portal has [a guide for that][eos_csp].
+The CERN Service Portal has [a guide for that][eos_csp]{target=_blank}.
 
 ## Mounting TN Resources on GPN and Other Machines
 
