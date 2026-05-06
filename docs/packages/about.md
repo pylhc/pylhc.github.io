@@ -1,5 +1,12 @@
 # The OMC Python Packages
 
+This section of the website goes over our Python computing and analysis software and environments.
+Our main software for optics analysis exists in two versions: a legacy Python 2 version, `Beta-Beat.src`, and its Python 3 successor `omc3`.
+Development of `Beta-Beat.src` is limited to bug fixes while new features are reserved for `omc3`.
+
+Our other packages provide useful tools and scripts for our day-to-day work as well as specific I/O functionality and entrypoint utilities for our codes.
+All our Python codes, including legacy repositories, can be found on the [PyLHC organisation][pylhc_github]{target=_blank}'s page on Github.
+
 | Package                                                                       | Description                                                                                                  | Version                                                                                                                                                                         | Documentation                                                         | Wiki                                                                     |
 |-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|--------------------------------------------------------------------------|
 | [**OMC3**][omc3]{target=\_blank}                                              | Frequency analysis, optics computation from turn-by-turn data, corrections calculations and results plotting | [![PyPI version for OMC3](https://img.shields.io/pypi/v/omc3.svg)][omc3_pypi]{target=\_blank}                                                                                   | [:fontawesome-solid-book:][omc3_doc]{target=\_blank}                  | [:fontawesome-solid-circle-question:](omc3/about.md)                     |
@@ -16,15 +23,6 @@
 | [**Example Study Scripts**][mess]{target=\_blank}                             | Collection of example MAD-X studies                                                                          | [![GitHub release for MESS](https://img.shields.io/github/v/release/pylhc/MESS?color=orange&label=Release&logo=Github)][mess_releases]{target=\_blank}                          |                                                                       | [:fontawesome-solid-circle-question:](mess/about.md)                     |
 | [**Beta-Beat.src**][betabeatsrc]{target=\_blank}                              | Frequency analysis, optics computation from turn-by-turn data and corrections calculations                   | [![GitHub release for Beta-Beat.src](https://img.shields.io/github/v/release/pylhc/Beta-Beat.src?color=orange&label=Release&logo=Github)][betabeatsrc_releases]{target=\_blank} | [:fontawesome-solid-book:][betabeatsrc_doc]{target=\_blank}           |                                                                          |
 | [**Accelerator Timeline**][betabeatsrc]{target=\_blank}                       | Frequency analysis, optics computation from turn-by-turn data and corrections calculations                   | [![GitHub release for Beta-Beat.src](https://img.shields.io/github/v/release/pylhc/Beta-Beat.src?color=orange&label=Release&logo=Github)][betabeatsrc_releases]{target=\_blank} | [:fontawesome-solid-book:][betabeatsrc_doc]{target=\_blank}           |                                                                          |
-
-## The OMC Python Ecosystem
-
-This section of the website goes over our Python computing and analysis software and environments.
-Our main software for optics analysis exists in two versions: a legacy Python 2 version, `Beta-Beat.src`, and its Python 3 successor `omc3`.
-Development of `Beta-Beat.src` is limited to bug fixes while new features are reserved for `omc3`.
-
-Our other packages provide useful tools and scripts for our day-to-day work as well as specific I/O functionality and entrypoint utilities for our codes.
-All our Python codes, including legacy repositories, can be found on the [PyLHC organisation][pylhc_github]{target=_blank}'s page on Github.
 
 ## The OMC Production Environments
 
