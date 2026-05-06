@@ -52,12 +52,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
     jws https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-beta-beating-omc3/PRO/BetaBeatingOMC3-Control-3t.jnlp
     ```
 
-=== "Kmod"
-
-    ```bash
-    jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-kmod/PRO/lhc-app-kmod-lhc-app-kmod.jnlp
-    ```
-
 === "Multiturn"
 
     ```bash
