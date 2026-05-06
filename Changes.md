@@ -67,7 +67,7 @@
 
 - [x] main page, links, the lhc app kmod link is outdated.
 - [x] main page, links, the multiturn link is outdated. Follow it and use the recommended new path given by gitlab instead
-- [ ] main page, jws programs, beta-beat and beta-beat omc3 are just one now, figure out what to put. Ask Josch?
+- [x] main page, jws programs, beta-beat and beta-beat omc3 are just one now, figure out what to put. Ask Josch?
 - [ ] main page, jws programs, remove kmod app as it's outdated
 - [ ] main page, review all the links one by one
 - [ ] Computing, git, very end of the page when expanding point 8 and yaml admonition the links do not render
