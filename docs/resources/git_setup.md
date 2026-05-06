@@ -1,12 +1,11 @@
 # Git
 
-How to's concerning  `git` in general,  [`gitlab`][cern_gitlab], [`GitHub`][github] and CI.
+How to's concerning  `git` in general,  [`GitLab`][cern_gitlab]{target=_blank .cern_login}, [`GitHub`][github]{target=_blank} and CI/CD.
 
 ## Github Commandline Access Quickstart
 
 This section explains the basic steps to get started with GitHub.
 Since HTTP access via password only has been disabled by GitHub for security reasons, it is necessary to activate a secure method.
-
 This aims to be as short and concise as possible, for more extensive information, [see the GitHub security documentation][github_security]{target=_blank}.
 
 ### Setup SSH Access
