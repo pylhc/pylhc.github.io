@@ -13,7 +13,7 @@
 - [x] Main page, move "The OMC Python Ecosystem" up
 - [x] Main page, rewrite "The OMC Python Ecosystem" to not really talk about BBsrc as a viable thing
 - [x] Main page, mention BBsrc in last admonition
-- [ ] Main page, split table in "main packages" and "dummy useful little ones"
+- [x] Main page, split table in "main packages" and "dummy useful little ones"
 - [x] OMC3 main page, do not hardcode Python3.7+ just mention Python 3
 - [x] OMC3 Getting started, installation method outdated
 - [x] OMC3 Getting started, update scripts with readme from the repo
