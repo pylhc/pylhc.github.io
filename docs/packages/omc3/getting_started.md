@@ -1,22 +1,19 @@
 # Getting Started with OMC3
 
-## Quick start
-
-The `omc3` package is `Python 3.7+` compatible, but not yet deployed to PyPI.
-The best way to install is though python -m pip and VCS:
+The `omc3` package is `Python 3` compatible and deployed to `PyPI`.
+The easiest way to install is though `pip`:
 
 ```bash
-git clone https://github.com/pylhc/omc3
-python -m pip install /path/to/omc3
+python -m pip install omc3
 ```
 
-Or simply from the online master branch, which is stable:
+One can use a VCS install from the online master branch to get the latest version, which is stable but might not yet be deployed to `PyPI`:
 
 ```bash
 python -m pip install git+https://github.com/pylhc/omc3.git
 ```
 
-After installing, codes can be run with either `python -m omc3.SCRIPT --FLAG ARGUMENT` or calling path to the `.py` file directly.
+After installing, codes can be run with either `python -m omc3.SCRIPT --FLAG ARGUMENT` or calling path to the `.py` file directly if available locally.
 
 ## Functionality
 
