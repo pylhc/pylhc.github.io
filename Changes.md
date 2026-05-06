@@ -25,7 +25,7 @@
 - [x] OMC3 analysis, frequency analysis, make link blank target.
 - [x] OMC3 analysis, optics analysis the error definitions should be provided by the model not simulation. Can link to the paper.
 - [x] OMC3 analysis, mention that for correction you should use the GUI or that we build later, create a last section like ampdet and point to the GUI page?
-- [ ] PyLHC main page, update the scripts present
+- [x] PyLHC main page, update the scripts present
 - [ ] PyLHC main page, admonition to say this is mostly little things and the important stuff moved to omc3
 - [ ] PyLHC kick groups page, example or info?
 - [ ] PyLHC etc do we need to duplicate what is in their documentations?

@@ -7,9 +7,9 @@ It provides tools which can be useful for working with accelerators, but are not
 
 - [*Forced DA Analysis*](forced_da.md) - Script to analyse forced DA.
 - [*Machine Settings Info*](machine_settings_info.md) - Prints an overview over the machine settings at a given time.
+- [*Kickgroup Information*](kickgroups.md) - Script to load kick groups and display relevant information.
 - [*BSRT Logger* and *BSRT Analysis*](bsrt.md) - Saves data coming straight from LHC BSRT FESA class and allows subsequent analysis.
-- [*BPM Calibration*](bpm_calibration.md) - Script to compute the calibration factors for the LHC BPMs.
-- [*Display Kickgroups*](kickgroups.md) - Script to load kick groups and display relevant information.
+- [*BPM Calibration*](bpm_calibration.md) - Script to compute the calibration factors for the LHC BPMs using ballistic optics.
 
 ## Documentation
 
