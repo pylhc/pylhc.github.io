@@ -1,8 +1,13 @@
 # OMC3 Optics Analysis Workflow
 
-This page contains a walk-through of a typical but simple analysis workflow with the `omc3` codes.
-To follow along, the reader needs to [have installed](getting_started.md) the `omc3` package and to have measurement or simulation data to use the codes on.
-In case the reader does not have appropriate data to follow along with, a script is provided below to create some.
+This page contains a walk-through of a typical but simple analysis workflow with the `omc3` package.
+To follow along, the reader needs to [have installed](getting_started.md) the package and to have measurement or simulation data to use the codes on.
+In case the reader does not have appropriate data to follow along with, an old `MAD-X` script is provided below to create some.
+
+!!! info "Using omc3 at the Command Line"
+    Please note that using `omc3` via the command line can be tricky and is discouraged, especially to newcomers.
+    Regular users typically use the codes via the [Beta-Beat GUI](../../guis/betabeat/gui.md) which provides an graphical interface to `omc3` functionality, and more.
+    This quick walkthrough sticks to the command line for illustration purposes.
 
 ## The Analysis Workflow
 
