@@ -142,7 +142,7 @@ python -m omc3.hole_in_one --harpy \
     During frequency analysis, `harpy` makes use of zero padding (with by default $2^{20}$ zeros) to improve the accuracy of results.
     In turn, the padded arrays become consequent and, coupled with a high number of observation points, processing will require a substantial amount of RAM - well into the few GBs range for our example.
 
-    When running on limiting hardware, one can change the amount of zero padding with the `--turn_bits` flag for `harpy`.
+    When running on limited hardware, one can change the amount of zero padding with the `--turn_bits` flag for `harpy`.
     It is important however to remember that decreasing this number will reduce the accuracy of the results, since it increases the range between detected frequencies.
     Refer to the [hole_in_one API documentation][hole_in_one] for details that could help in determining which number to use.
 
@@ -153,7 +153,7 @@ The filenames are determined by appending the appropriate suffixes to the entry 
     If given `bpm_summary` for the `--to_write` flag (which is the case by default), `harpy` will output the `.bad_bpms_[xy]` files.
     BPMs are determined as bad or not depending on several options from the cleaning phase.
     While these are given sensible defaults, one might need to tweak them manually depending on their measurement.
-    Additionally, known bad BPMs can be given with the `--bad_bpms` flag.
+    Additionally, any known bad BPMs can be provided with the `--bad_bpms` flag.
 
 In the output files, various properties are given in column form for each observation point.
 Running `ls harpy_output/` yields the following result:
@@ -167,7 +167,7 @@ trackone.sdds.bad_bpms_y trackone.sdds.liny
 
 !!! tip "Plotting the Spectra"
     The `omc3` package provides scripts and modules to quickly plot the spectra obtained from frequency analysis.
-    To use these, refer to the [Plot Spectrum][plot_spectrum] API documentation.
+    To use these, refer to the [Plot Spectrum][plot_spectrum]{target=_blank} API documentation.
 
 ??? question "Column Nomenclature"
     The `*.amps[xy]`, `*.freqs[xy]` and `*.lin[xy]` files in the harmonic analysis output are **TFS** files.
