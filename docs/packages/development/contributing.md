@@ -59,7 +59,6 @@ If you do not find a related issue or PR, or if your PR is the implementation fo
 
 - Unit and accuracy tests are run automatically through CI [Github Actions][gh_actions]{target=_blank}.
   A `README.md` file in the `.github/workflows` directory details our CI jobs.
-- Additional checks for code-complexity, design-rules, test-coverage and duplication are made through [CodeClimate][codeclimate]{target=_blank}.
 - Pull requests implementing functionality or fixes are merged into the master branch after passing CI, and a reviewer's approval.
 
 After your PR is accepted by a team member, please select **`squash and merge`** to merge into master.
@@ -121,7 +120,6 @@ We use [PyCharm][pycharm]{target=_blank} as IDE in the team.
 To be compatible with our automatic API documentation generator, please respect [Sphinx][sphinx]{target=_blank} conventions.
 
 [gh_actions]: https://github.com/features/actions
-[codeclimate]: https://codeclimate.com/
 [pep8]: https://www.python.org/dev/peps/pep-0008/
 [pure_functions]: https://en.wikipedia.org/wiki/Pure_function
 [zen_python]: https://www.python.org/dev/peps/pep-0020/
