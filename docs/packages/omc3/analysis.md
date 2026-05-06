@@ -97,7 +97,7 @@ python -m omc3.model_creator \
 ```
 
 Some of these options belong to the `model_creator` itself, while others depend explicitly on the chosen machine, here the LHC.
-Refer to the [model creator's API documentation][model_creator] for the list of options.
+Refer to the [model creator's API documentation][model_creator]{target=_blank} for the list of options.
 
 The model creation runs a `MAD-X` scenario and outputs the relevant twiss results to the desired directory.
 Running `ls lhc_model/` yields:
@@ -144,7 +144,7 @@ python -m omc3.hole_in_one --harpy \
 
     When running on limited hardware, one can change the amount of zero padding with the `--turn_bits` flag for `harpy`.
     It is important however to remember that decreasing this number will reduce the accuracy of the results, since it increases the range between detected frequencies.
-    Refer to the [hole_in_one API documentation][hole_in_one] for details that could help in determining which number to use.
+    Refer to the [hole_in_one API documentation][hole_in_one]{target=_blank} for details that could help in determining which number to use.
 
 In the output directory, `harpy` will create TFS files with the results of the analysis for both good BPMs and identified bad BPMs.
 The filenames are determined by appending the appropriate suffixes to the entry files.
@@ -207,7 +207,7 @@ trackone.sdds.bad_bpms_y trackone.sdds.liny
 Once harmonic analysis has been performed, one can move on to the reconstruction of optics quantities from computed spectra and phases.
 To do so, `omc3` provides the `hole_in_one` entrypoint, to be used this time with the `--optics` flag.
 
-In our example we will ask to use the `three_bpm_method` when reconstructing beta functions from phase advances, as the default `n_bpm_method` requires providing an error definition file which our simulation did not implement.
+In our example we will ask to use the `three_bpm_method` when reconstructing beta functions from phase advances, as the default `n_bpm_method` (which is more accurate) requires providing a systematic errors definition file which our simulation does not provide (see the [analytical n-bpm paper][analytical_nbpm]{target=_blank}).
 Calling the entrypoint to perform optics analysis goes as:
 
 ```bash
@@ -229,18 +229,18 @@ python -m omc3.hole_in_one --optics \
     In our example, this means entering `harpy_output/trackone.sdds`.
 
 Like other entrypoints, the optics analysis provides many options on methods to use and quantities to compute.
-To use these, refer to the `Optics Kwargs` section of the [hole_in_one API documentation][hole_in_one].
+To use these, refer to the `Optics Kwargs` section of the [hole_in_one API documentation][hole_in_one]{target=_blank}.
 
 In the output files, various properties are given in column form for each observation point.
 Running `ls measured_optics/` yields the following result:
 
 ```bash
-beta_amplitude_x.tfs     kick_x.tfs          phase_y.tfs
-beta_amplitude_y.tfs     kick_y.tfs          special_phase_x.tfs
-beta_phase_x.tfs         measure_optics.log     special_phase_y.tfs
-beta_phase_y.tfs         orbit_x.tfs          total_phase_x.tfs
-interaction_point_x.tfs     orbit_y.tfs          total_phase_y.tfs
-interaction_point_y.tfs     phase_x.tfs
+beta_amplitude_x.tfs      kick_x.tfs           phase_y.tfs
+beta_amplitude_y.tfs      kick_y.tfs           special_phase_x.tfs
+beta_phase_x.tfs          measure_optics.log   special_phase_y.tfs
+beta_phase_y.tfs          orbit_x.tfs          total_phase_x.tfs
+interaction_point_x.tfs   orbit_y.tfs          total_phase_y.tfs
+interaction_point_y.tfs   phase_x.tfs
 ```
 
 ---
@@ -275,16 +275,19 @@ interaction_point_y.tfs     phase_x.tfs
 From the optics output files, in particular the `kick_[xy].tfs` files, one can perform amplitude detuning analysis.
 The detailed steps to run this from the GUI are described in [the amplitude detuning analysis procedure](../../measurements/procedures/ampdet.md#analysis).
 
+<!-- Links in 'analysis workflow' section -->
 [tfs_format]:https://pylhc.github.io/tfs/tfsformat.html
 [mess_example]: https://github.com/pylhc/MESS/tree/master/LHC/Website_Example
-
+<!-- Links in 'preparing data' section -->
 [sdds]: https://ops.aps.anl.gov/SDDSIntroTalk/slides.html
 [tbt_doc]: https://pylhc.github.io/turn_by_turn/
 [tbt_converter]: https://pylhc.github.io/omc3/entrypoints/other.html#tbt-converter
-
+<!-- Links in 'creating a model' section -->
+[model_creator]: https://pylhc.github.io/omc3/entrypoints/other.html#model-creator
 [mess_acd_twiss]: https://github.com/pylhc/MESS/tree/master/LHC/AC_Dipole_Model
-
+<!-- Links in 'frequency analysis' section -->
 [hole_in_one]: https://pylhc.github.io/omc3/entrypoints/analysis.html#omc3.hole_in_one.hole_in_one_entrypoint
 [plot_spectrum]: https://pylhc.github.io/omc3/entrypoints/plotting.html#plot-spectrum
 [normal_forms]: https://cds.cern.ch/record/333077/files/p93.pdf
-[model_creator]: https://pylhc.github.io/omc3/entrypoints/other.html#model-creator
+<!-- Links in 'optics analysis' section -->
+[analytical_nbpm]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111002
