@@ -57,7 +57,7 @@ The two maintained environments are:
 These two environments are also symlinked to `/afs/cern.ch/eng/sl/lintrack/omc_python3` and `/afs/cern.ch/eng/sl/lintrack/omc_python_edge` respectively.
 The `/afs/cern.ch/eng/sl/lintrack/omc_python3` is activate by default for the `lintrack` account and is the default interpreter chosen by the `BetaBeat GUI`.
 
-!!! info "Some regular maintainer TODOs"
+!!! info "Some regular maintainer checks"
     !!! note "On new releases"
         Whenever there is a new release for one our packages, it needs to be manually installed into the `omc_py3xx_releases` environment.
         Shortcuts are available (see the `lintrack` welcome screen), but for single updates one can use `python -m pip install --upgrade <package>`.
