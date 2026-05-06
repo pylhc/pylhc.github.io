@@ -29,7 +29,7 @@
 - [x] PyLHC main page, dont explicitely mention python 3.7
 - [ ] PyLHC kick groups page, example or info?
 - [ ] PyLHC etc do we need to duplicate what is in their documentations?
-- [ ] pylhcsubmitter, study from command line add line breaks to command
+- [x] pylhcsubmitter, study from command line add line breaks to command
 - [ ] pylhcsubmitter add a link to my presentation
 - [ ] pylhcsubmitter max number of jobs (in njobs admonition) add link to the HTCondor documentation?
 - [ ] pylhcsubmitter resubmitting, explain why job_outputdir is indicator

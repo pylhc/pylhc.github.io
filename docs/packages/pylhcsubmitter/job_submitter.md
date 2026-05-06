@@ -5,7 +5,7 @@
 Note that the full functionality is only available under Linux with `HTCondor` configured, e.g. on CERN's `lxplus` service.
 Currently, due to lack of htcondor Python bindings on `PypI` for `Windows` and `macOS`, only local job execution is possible for these platforms.
 
-## Using the Job Submitter:
+## Using the Job Submitter
 
 In the following examples, we will perform a tune sweep using a `MAD-X` mask.
 The simulations will be parametrized for both beams over a range of tunes in each plane.
@@ -71,6 +71,7 @@ Parameters in the template script (see below) are indicated in the `%(PARAMETER)
 
 The parametrizing of simulations and submission to `HTCondor` through Python is as simple as calling the `main` function of the submitter with the desired parameters.
 See below:
+
 ```python
 import numpy as np
 from pylhc_submitter.job_submitter import main as htcondor_submit
@@ -90,13 +91,13 @@ if __name__ == "__main__":
     )
 ```
 
----
 ### Starting Studies from a Config File
 
 The same can also be achieved by specifying the previously called parameters in a **config.ini** file.
 It is worth noting that with any submission, the `job_submitter` will create such a file.
 See below the equivalent **config.ini** of the above Python example:
-```
+
+```bash
 [DEFAULT]
 executable="madx"
 mask="my_madx.mask"
@@ -111,11 +112,11 @@ jobflavour="workday"
 ```
 
 The jobs are then started by calling the submitter on this file from the command line:
+
 ```bash
 python -m pylhc_submitter.job_submitter --entry_cfg config.ini
 ```
 
----
 ### Starting Studies from the Command Line
 
 !!! warning "Users Beware"
@@ -124,18 +125,25 @@ python -m pylhc_submitter.job_submitter --entry_cfg config.ini
 
 It is possible to skip the creation of a Python or a **config.ini** file completely when submitting, by providing parameters through the `replace_dict` flag at the command line.
 The above examples would be done through a (very lengthy) command line call as below:
+
 ```bash
-python -m pylhc_submitter.job_submitter --executable madx --mask my_madx.mask --working_directory /afs/cern.ch/work/u/username/study.tune_sweep --replace_dict "{'BEAM': [1, 2], 'TUNEX': [62.3, 62.302, 62.304, 62.306, 62.308, 62.31, 62.312, 62.314, 62.316, 62.318, 62.32], 'TUNEY': [60.31, 60.312, 60.314, 60.316, 60.318, 60.32, 60.322, 60.324, 60.326, 60.328, 60.33]}" --jobid_mask b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s --jobflavour workday
+python -m pylhc_submitter.job_submitter \
+    --executable madx \
+    --mask my_madx.mask \
+    --working_directory /afs/cern.ch/work/u/username/study.tune_sweep \
+    --replace_dict "{'BEAM': [1, 2], 'TUNEX': [62.3, 62.302, 62.304, 62.306, 62.308, 62.31, 62.312, 62.314, 62.316, 62.318, 62.32], 'TUNEY': [60.31, 60.312, 60.314, 60.316, 60.318, 60.32, 60.322, 60.324, 60.326, 60.328, 60.33]}" \
+    --jobid_mask b%(BEAM)d.qx%(TUNEX)s.qy%(TUNEY)s \
+    --jobflavour workday
 ```
 
----
 ### Starting Studies with Mask Strings
 
 Instead of using a mask file, `job_submitter` can also use a string as input for the executable.
 This can prove useful if the executable has a number of variable input parameters, i.e. `executable --param1 X --param2 Y`.
 
 A simple mask string call using the **config.ini** input to the pylhc-submitter would look like this:
-```
+
+```bash
 [DEFAULT]
 executable="expr"
 mask="%(SUMMAND1)s + %(SUMMAND2)s > Outputdata/result.txt"
@@ -149,7 +157,7 @@ Note that again, the user has to take care that the required results are saved i
 The `mask` string can be a more complicated multiline string, executing multiple commands.
 
 ??? example "Example Multiline Config File"
-    ```
+    ```bash
     [DEFAULT]
     executable=None
     mask="madx < Job%(SEED)s.madx\n
@@ -160,7 +168,6 @@ The `mask` string can be a more complicated multiline string, executing multiple
     num_processes=4
     ```
 
----
 ## What Happens After Submitting
 
 When submitting, the `job_submitter` determines jobs to be submitted to `HTCondor` through the inner product of the `replace_dict`: in our example each possible combination of the 3 given parameters.
