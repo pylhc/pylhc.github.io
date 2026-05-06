@@ -69,12 +69,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
     jws 'http://bewww.cern.ch/ap/deployments/applications/cern/lsa/lsa-app-suite/PRO/lsa-app-suite-lhc.jnlpx?accelerator=LHC&lsa.server=lhc&lsa.contextfamily=BP&arg0=lsa-app-settings-management'
     ```
 
-=== "Timber"
-
-    ```bash
-    jws http://bewww.cern.ch/ap/deployments/applications/cern/accsoft/cals/accsoft-cals-extr-app/PRO/timber.jnlpx
-    ```
-
 ## Computer Setup at CERN
 
 * [Computing Accounts Management][accounts_cern]{target=_blank .cern_login}
