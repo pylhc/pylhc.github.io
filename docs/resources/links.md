@@ -121,7 +121,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 ## Development Guidelines and How-To's
 
 * [Markdown Cheatsheet][markdown_cheatsheet]{target=_blank}
-* [Jira Text Formatting Notation][jira_formatting]{target=_blank}
 
 ### Git
 
@@ -191,7 +190,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 
 [github_markdown]: https://help.github.com/articles/github-flavored-markdown
 [markdown_cheatsheet]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-[jira_formatting]: https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all
 [git_configs]: http://stackoverflow.com/questions/954560/what-does-git-do-to-files-that-are-a-symbolic-link
 [python_docs]: http://docs.python.org/
 
