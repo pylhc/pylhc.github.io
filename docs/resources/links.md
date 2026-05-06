@@ -176,7 +176,7 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 [betabeat_gui_gitlab_issues]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues
 [betabeat_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-app-beta-beating
 
-[kmod_gui_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-kmod
+[kmod_gui_gitlab]: https://gitlab.cern.ch/gtrad/pyKmodLHC
 [kmod_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-app-kmod
 
 [multiturn_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-multiturn
