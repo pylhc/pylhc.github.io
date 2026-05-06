@@ -41,10 +41,7 @@ While `omc3` codes can read data from many machine formats, we will for demonstr
 
 For this `omc3` provides the `tbt_converter` entrypoint.
 A typical use consists in specifying the location of your turn-by-turn measurement files, the data type of said files and the location in which to write the converted `SDDS` data.
-The formats supported by the converter are:
-
-- Machine formats: `lhc`, `iota` and `esrf`, or any machine using one of these.
-- Simulation formats: the `trackone` and `ptc` formats from tracking data from `MAD-X` or `PTC`.
+All formats handled by our [turn-by-turn][tbt_doc]{target=_blank} package are supported.
 
 ??? info "The `trackone` and `ptc` formats"
     What is referred to here as the `trackone` or `ptc` format is obtained by giving the `DUMP` and `ONETABLE` options to the `TRACK` or `PTC_TRACK` commands, respectively, in `MAD-X`.
@@ -279,6 +276,7 @@ The detailed steps to run this from the GUI are described in [the amplitude detu
 [tfs_format]:https://pylhc.github.io/tfs/tfsformat.html
 [mess_example]: https://github.com/pylhc/MESS/tree/master/LHC/Website_Example
 [sdds]: https://ops.aps.anl.gov/SDDSIntroTalk/slides.html
+[tbt_doc]: https://pylhc.github.io/turn_by_turn/
 [tbt_converter]: https://pylhc.github.io/omc3/entrypoints/other.html#tbt-converter
 [plot_spectrum]: https://pylhc.github.io/omc3/entrypoints/plotting.html#plot-spectrum
 [normal_forms]: https://cds.cern.ch/record/333077/files/p93.pdf
