@@ -10,7 +10,7 @@
 - [x] Main page, rewrite "The OMC Python Ecosystem" to not really talk about BBsrc as a viable thing
 - [x] Main page, mention BBsrc in last admonition
 - [ ] Main page, split table in "main packages" and "dummy useful little ones"
-- [ ] OMC3 main page, do not hardcode Python3.7+ just mention Python 3
+- [x] OMC3 main page, do not hardcode Python3.7+ just mention Python 3
 - [ ] OMC3 Getting started, installation method outdated
 - [ ] OMC3 Getting started, update scripts with readme from the repo
 - [ ] OMC3 analysis, BIG admonition that the command line use is discouraged because of complexity of the tasks and using the GUIs is the preferred way
