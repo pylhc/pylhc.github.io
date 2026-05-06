@@ -8,8 +8,8 @@ Our meetings can be found on our [Indico page][omc_indico]{target=_blank}.
 For a more personal contact, ask for access to our [Mattermost channel][omc_mattermost]{target=_blank .cern_login} (invite only).
 
 !!! note "Note - Documentation Status"
-    This site is currently under construction, and subject to constant change.
-    A previous (but poor) documentation used to be the [OMC twiki][omc_twiki]{target=_blank}, and its relevant contents have been transferred here.
+    This site is constantly updated and subject to change.
+    Don't hesitate to raise an issue on our repository, or directly [submit changes](../resources/wiki.md).
 
 *[CERN]: Conseil Européen pour la Recherche Nucléaire
 *[ABP]: Accelerator and Beams Physics

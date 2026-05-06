@@ -2,7 +2,7 @@
 
 ## OMC Team
 
-- [ ] Admonition should not read like we just made the new site, just that it is constantly being updated.
+- [x] Admonition should not read like we just made the new site, just that it is constantly being updated.
 
 ## Python Ecosystem
 
