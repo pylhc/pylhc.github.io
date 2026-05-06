@@ -51,6 +51,7 @@
 
 ## Measurements and Corrections
 
+- [ ] main page could use a little more content
 - [x] main page should be named "about" like in other places.
 - [x] main page, wrong capitalized word
 - [ ] Physics, introduction, add links to various PhD theses?
