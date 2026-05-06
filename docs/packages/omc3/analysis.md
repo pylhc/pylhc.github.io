@@ -269,11 +269,17 @@ interaction_point_y.tfs   phase_x.tfs
     ```
     In this case, the output files from `harpy` are automatically handled and put into a subfolder named `lin_files` inside of the specified `outputdir`.
     The rest is done and output as seen above.
+    Again, we recommend using all this functionality [through the GUI](../../guis/betabeat/gui.md) instead.
 
 ## Amplitude Detuning Analysis
 
 From the optics output files, in particular the `kick_[xy].tfs` files, one can perform amplitude detuning analysis.
 The detailed steps to run this from the GUI are described in [the amplitude detuning analysis procedure](../../measurements/procedures/ampdet.md#analysis).
+
+## Determining Corrections
+
+From the results of an optics analysis, it is possible with `omc3` to compute corrections in order to try and bring chosen parameters closer to the model values.
+However, due to the complexity of this worfklow we will not provide a CLI walkthrough, and instead direct the user to [use this functionality through the dedicated GUI](../../guis/betabeat/correction_panel.md).
 
 <!-- Links in 'analysis workflow' section -->
 [tfs_format]:https://pylhc.github.io/tfs/tfsformat.html
