@@ -5,15 +5,15 @@ You will need access to the service accounts to make use of the information cont
 
 ## Lintrack
 
-`lintrack` refers to the location of the codebase in the TN
+Here `lintrack` refers to the location of the codebase in the TN.
+It is located at:
 
 ```bash
 /afs/cern.ch/eng/sl/lintrack/
 ```
 
-as well as the service account handling the access to it.
-
-The service account was created as in the past direct access to these repositories lead to
+There is an eponymous service account to handle access to it.
+It was created as in the past direct access to these repositories lead to
 accidental changes that affected all users.
 Limiting access to the service account ensures an active decision to make modifications and thus avoids unwanted changes and binary or data loss,
 which can be especially troublesome if only detected online during CCC measurements.
@@ -141,6 +141,8 @@ Examples can be found in our repositories.
 - Flip the switch to `On`
 - Create a release on `GitHub` -> The page for your repo should now be visible on Zenodo!
 - (Optional) Add the `badge` to your `README.md`
+
+*[TN]: Technical Network
 
 [pypi]: https://pypi.org
 [zenodo]: https://zenodo.org
