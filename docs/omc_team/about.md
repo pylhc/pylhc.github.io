@@ -18,5 +18,4 @@ For a more personal contact, ask for access to our [Mattermost channel][omc_matt
 
 [lhc]: https://home.cern/science/accelerators/large-hadron-collider
 [omc_indico]: https://indico.cern.ch/category/5986/
-[omc_twiki]: https://twiki.cern.ch/twiki/bin/view/BEABP/OMC
 [omc_mattermost]: https://mattermost.web.cern.ch/be-dep/channels/omc-team
