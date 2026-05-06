@@ -213,7 +213,7 @@ nav:
       # - Nonlinear IR Optics: measurements/physics/ir_nonlinear_optics.md
       # - 3D-Kicks: measurements/physics/threedkicks.md
     - Procedures:
-        - Info: measurements/procedures/about.md
+        - Introduction: measurements/procedures/about.md
         - General Checks: measurements/procedures/general_checks.md
         - K Modulation: measurements/procedures/kmod.md
         - Rigid Waist Shift: measurements/procedures/rigid_waist_shift.md
