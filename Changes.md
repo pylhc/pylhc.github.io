@@ -17,6 +17,8 @@
 - [x] OMC3 analysis, insert a link to TFS format definition from tfspandas doc.
 - [x] OMC3 analysis, make MESS link point to a self contained example folder in MESS.
 - [x] OMC3 analysis, model creation, update supported machines admonition
+- [x] OMC3 analysis, model creation, update command to omit afs, fodmat output files, point to ACD model MESS.
+- [x] OMC3 analysis, frequency analysis, make link blank target.
 - [ ] OMC3 analysis, optics analysis the error definitions should be provided by the model not simulation. Can link to the paper.
 - [ ] omc3 directly, update choices in https://pylhc.github.io/omc3/entrypoints/other.html#model-creator
 - [ ] OMC3 analysis, mention that for correction you should use the GUI or that we build later, create a last section like ampdet and point to the GUI page?

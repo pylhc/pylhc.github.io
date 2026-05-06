@@ -122,7 +122,7 @@ Once measurement or simulation is in the appropriate format, the first step as s
 To do so, `omc3` provides the `hole_in_one` entrypoint, which will perform frequency analysis of the data when provided with the `--harpy` flag.
 
 The script provides options involved in both data cleaning and parameter tweaking for the harmonic analysis, which is useful when you have relevant information about your measurements.
-To use these, refer to the `Harpy Kwargs` section of the [hole_in_one API documentation][hole_in_one].
+To use these, refer to the `Harpy Kwargs` section of the [hole_in_one API documentation][hole_in_one]{target=_blank}.
 
 In our example we will leave most of these to their default values to keep the analysis simple, but ask from `harpy` to output all computed results.
 We will input `lhc` for the `--tbt_datatype` flag, but if you skipped the use of the `tbt_converter` you should input the type of your machine there.
