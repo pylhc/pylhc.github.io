@@ -51,7 +51,7 @@
 
 ## Measurements and Corrections
 
-- [ ] main page, wrong capitalized word
+- [x] main page, wrong capitalized word
 - [ ] Physics, introduction, add links to various PhD theses?
 - [ ] Physics, BPM filtering -> remove all the colors? Don't want all that CSS... Also move admonition a little up in Isolation Forest
 - [ ] Physics, optics analysis is not written
