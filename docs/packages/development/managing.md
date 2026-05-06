@@ -99,7 +99,7 @@ It is provided by the `pylhctokens` service account and needs to be renewed on a
 
 !!! info "Update Github Actions!"
     Many of the workflows are using pre-defined github actions.
-    Check them sometimes for updates and try to keep their versions up-to-date!
+    Check them regularly and try to keep the pinned versions up-to-date!
 
 ### pylhctokens
 
