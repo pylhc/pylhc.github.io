@@ -177,7 +177,8 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 
 [kmod_gui_gitlab]: https://gitlab.cern.ch/gtrad/pyKmodLHC
 
-[multiturn_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-multiturn
+<!-- Yes the multiturn gitlab says "sps" but this is the app for all machines -->
+[multiturn_gitlab]: https://gitlab.cern.ch/acc-co/sps/instrumentation/sps-multiturn/
 [multiturn_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-multiturn
 
 [vscode_lxplus]: https://cern.service-now.com/service-portal?id=kb_article&n=KB0008901
