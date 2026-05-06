@@ -77,4 +77,4 @@
 
 ## Logbook
 
-- [ ] Some LHC pages have an admonition pointing to a commissioning folder on lintrack but that might not exist since they stopped doing it after I left. Remove admonitions.
+- [x] Some LHC pages have an admonition pointing to a commissioning folder on lintrack but that might not exist since they stopped doing it after I left. Remove admonitions.
