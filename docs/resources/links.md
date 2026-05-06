@@ -99,7 +99,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 * [OP Webtools Page][op_webtools]{target=_blank}
 * [Timber][timber_cern]{target=_blank .cern_internal}
 * [INCA and LSA Applications][inca_lsa_apps]{target=_blank .cern_internal}
-* [LHC MD webpage][lhc_md_page]{target=_blank}
 * [Beam Performance Tracking Site][bpt_site]{target=_blank}
 * [SWAN][swan]{target=_blank .cern_login} (Jupyter Notebooks in CERN Cloud)
 * [CERN OpenStack][cern_openstack]{target=_blank .cern_login} (Virtual Machines in Cloud)
@@ -189,8 +188,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 [inca_lsa_apps]: https://wikis.cern.ch/pages/viewpage.action?pageId=80977620
 [cbng_manual]: https://wikis.cern.ch/display/DVTLS/CBNG
 [lsa_wiki]: https://wikis.cern.ch/display/LSA/Home
-
-[lhc_md_page]: https://espace.cern.ch/lhc-md/default.aspx
 
 [github_markdown]: https://help.github.com/articles/github-flavored-markdown
 [markdown_cheatsheet]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
