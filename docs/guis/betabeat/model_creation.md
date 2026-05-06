@@ -344,7 +344,7 @@ Activate and set the energy at which the accelerator is running in GeV, if neede
 [global_correction_omc3]: https://pylhc.github.io/omc3/entrypoints/correction.html#global-correction
 [fidel_webpage]: https://lhc-div-mms.web.cern.ch/tests/MAG/Fidel
 [langner2016]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.092803
-[running_in_the_ccc]: ../about.md#running-in-the-ccc-in-2025
+[running_in_the_ccc]: ../about.md#running-in-the-ccc-in-2026
 
 *[CCC]: Cern Control Center
 *[MQTs]: Tuning Trim Quadrupole Magnets of the LHC
