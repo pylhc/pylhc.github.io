@@ -62,6 +62,7 @@
 
 ## Resources
 
+- [x] main page should be named "about" like in other places.
 - [ ] main page, links, the lhc app kmod link is outdated. Use the one from the GUI pages
 - [ ] main page, links, the multiturn link is outdated. Follow it and use the recommended new path given by gitlab instead
 - [ ] main page, jws programs, beta-beat and beta-beat omc3 are just one now, figure out what to put. Ask Josch?

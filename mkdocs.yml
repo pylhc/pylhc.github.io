@@ -199,7 +199,7 @@ nav:
       - Remote: guis/usage/remote.md
       - Releases: guis/usage/releases.md
   - Measurements & Corrections:
-    - Info: measurements/about.md
+    - About: measurements/about.md
     - Physics and Methods:
       - Introduction: measurements/physics/about.md
       - Error Propagation: measurements/physics/error_propagation.md
