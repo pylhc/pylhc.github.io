@@ -1,11 +1,11 @@
 # The OMC Python Packages
 
 This section of the website goes over our Python computing and analysis software and environments.
-Our main software for optics analysis exists in two versions: a legacy Python 2 version, `Beta-Beat.src`, and its Python 3 successor `omc3`.
-Development of `Beta-Beat.src` is limited to bug fixes while new features are reserved for `omc3`.
+Our main software for optics analysis is the `omc3` package.
 
 Our other packages provide useful tools and scripts for our day-to-day work as well as specific I/O functionality and entrypoint utilities for our codes.
 All our Python codes, including legacy repositories, can be found on the [PyLHC organisation][pylhc_github]{target=_blank}'s page on Github.
+An overview of our maintained packages and relevant links can be found in the table below.
 
 | Package                                                                       | Description                                                                                                  | Version                                                                                                                                                                         | Documentation                                                         | Wiki                                                                     |
 |-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -39,7 +39,10 @@ The environment is located at `/afs/cern.ch/eng/sl/lintrack/omc_python3/` and ca
     Should you need specific packages, reach out to us or consider [setting up your own environment](development/howto_venv.md#creating-virtual-environments-with-acc-py) from our `Acc-Py` distribution.
 
 ??? question "Python 2 Environment"
-    We do have a `miniconda2` installation in `lintrack` for legacy Python2 codes.
+    A legacy Python 2 version of our optics software exists: `Beta-Beat.src`.
+    Its development has ended, but it is kept for anyone trying to rerun old analyses.
+
+    We do have a `miniconda2` installation in `lintrack` for such legacy Python 2 codes.
     This distribution is frozen and the use of Python 2 codes should be avoided as much as possible.
 
 [accpy_docs]: https://wikis.cern.ch/display/ACCPY/Accelerating+Python+Home
