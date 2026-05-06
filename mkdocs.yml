@@ -161,6 +161,7 @@ nav:
       - ↪ tfs-pandas: https://github.com/pylhc/tfs
       - ↪ sdds: https://github.com/pylhc/sdds
       - ↪ generic-parser: https://github.com/pylhc/generic_parser
+      - ↪ irnl-corrections: https://github.com/pylhc/irnl_rdt_correction
     - Python Development:
       - Contributing: packages/development/contributing.md
       - Releases: packages/development/howto_release.md
