@@ -1,4 +1,4 @@
-# Accelarator Timeline
+# Accelerator Timeline
 
 The [accelerator timeline][github] is an OMC-maintained resource providing an overview of different parameters
 of major accelerators in a simple csv table.
