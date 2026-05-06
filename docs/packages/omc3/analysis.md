@@ -103,7 +103,7 @@ The model creation runs a `MAD-X` scenario and outputs the relevant twiss result
 Running `ls lhc_model/` yields:
 
 ```bash
-b2_errors.tfs  error_deffs.txt      macros   twiss_elements.dat
+b2_errors.tfs    error_deffs.txt       macros    twiss_elements.dat
 b2_settings.madx job.create_model.madx twiss.dat
 ```
 
