@@ -27,7 +27,6 @@
 === "Kmod"
 
     * [Kmod Gitlab][kmod_gui_gitlab]{target=_blank .cern_login}
-    * [Artifactory][kmod_artifactory]{target=_blank .cern_internal}
 
 === "Multiturn"
 
@@ -177,7 +176,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 [betabeat_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-app-beta-beating
 
 [kmod_gui_gitlab]: https://gitlab.cern.ch/gtrad/pyKmodLHC
-[kmod_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-app-kmod
 
 [multiturn_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-multiturn
 [multiturn_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-multiturn
