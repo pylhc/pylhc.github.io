@@ -149,9 +149,6 @@ nav:
       - Job Submitter: packages/pylhcsubmitter/job_submitter.md
       - AutoSix: packages/pylhcsubmitter/autosix.md
       - ↪ On Github: https://github.com/pylhc/submitter
-    - IRNL Corrections:
-      - About: packages/irnl/about.md
-      - ↪ On Github: https://github.com/pylhc/irnl_rdt_correction
     - MESS:
       - About: packages/mess/about.md
       - ↪ On Github: https://github.com/pylhc/MESS
