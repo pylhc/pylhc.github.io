@@ -143,6 +143,19 @@ where $2\mathcal{P} = \sqrt{|2f_{1010}|^2 - |2f_{1001}|^2}$ and ${}^*$ denotes c
 Their practical advantage is that they can be reconstructed directly from transverse position coordinates alone.
 The impact of the combined coupling RDTs into position parametrization is found in this [paper by M. Hofer][mhofer_local_coupling]{target=_blank}.
 
+### Chromatic Coupling
+
+Chromatic coupling describes the variation of the global coupling quantity $|C^{-}|$ with momentum offset $\delta$.
+It arises from sextupolar errors in the magnets, in combination with dispersion
+An off-momentum particle will experience a skew quadrupolar field from a sextupole in dispersive regions (vertical dispersion and normal sextupole, or horizontal dispersion and skew sextupole). Since there is larger horizontal dispersion in a ring, skew sextupolar components are the dominant source of chromatic coupling.
+
+It is measured by repeating optics measurements at several RF frequency settings (each corresponding to a different $\delta$) and fitting the resulting $|C^{-}|$ as a polynomial in $\delta$.
+It has been defined by the coefficient:
+
+$$\left| \frac{d C^{-}}{d\delta} \right| \approx 4 \Delta Q \left| \frac{d f_{1001}}{d \delta} \right|$$
+
+A study of chromatic coupling in the LHC and its correction can be found in this paper by [Persson et al.][person_chromatic_coupling]{target=_blank}.
+
 *[BPM]: Beam Position Monitor
 *[BPMs]: Beam Position Monitors
 *[TbT]: Turn-by-Turn
@@ -152,9 +165,10 @@ The impact of the combined coupling RDTs into position parametrization is found 
 *[CRDTs]: Combined Resonance Driving Terms
 *[SVD]: Singular Value Decomposition
 
+[omc3_analysis]: ../../packages/omc3/analysis.md
 [analytical_nbpm]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111002
 [soubelet_thesis]: https://repository.cern/records/jey15-71v76
 [tomas_rdt]: https://inspirehep.net/literature/680877
 [franchi_rdts]: https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.17.074001
 [mhofer_local_coupling]: https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.094001
-[omc3_analysis]: ../../packages/omc3/analysis.md
+[person_chromatic_coupling]: https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.16.081003
