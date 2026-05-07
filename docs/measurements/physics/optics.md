@@ -2,6 +2,7 @@
 # Optics Analysis
 
 This page summarizes how the optics analysis is performed with our `omc3` software, from the physics point of view.
+Please note that this page is meant as a gentle introduction including references rather than a comprehension treatment of the topics therein.
 
 !!! info "A practical walkthrough"
     To see how to **use** the `omc3` package to do so, refer to the [`omc3` analysis workflow][omc3_analysis] page.
