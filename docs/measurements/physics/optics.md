@@ -11,7 +11,7 @@ The preceding spectral analysis step, in which the tune, amplitude and phase of 
 
 ## Linear Optics
 
-### Phase, Phase Advance and Special Phases
+### Phase Advances
 
 The betatron phase $\phi_{x,y}(s)$ at the curvilinear coordinate $s$ is defined by the integral:
 
@@ -40,6 +40,27 @@ Combinations with phase separations well away from $0$ and $\pi$ are preferred, 
     When the beam is driven by an AC dipole, the measured *driven* phase advances differs from the free phase advances since the AC dipole modifies the effective $\beta$-function throughout the ring.
     This can be compensated analytically, which `omc3` does before performing optics reconstruction.
 
-The **special phases** correspond to the phase advances between specific machine elements of interest, usually the AC Dipole kicker magnet to tertiary collimators in the IRs for the LHC.
+!!! info "Special phases"
+    The special phases correspond to the phase advances between specific machine elements of interest, usually the AC Dipole kicker magnet to tertiary collimators in the IRs for the LHC.
+
+### Action
+
+The Courant-Snyder action $J_z$ is the conserved invariant of free betatron motion, related to the oscillation amplitude by $J_{x,y} = A_{x,y}^2(s)/(2\beta_{x,y}(s))$ at any location $s$.
+Since it cannot be read off from a single BPM without knowing $\beta_{x,y}(s)$, a calibration-dependent estimate is formed by averaging over $N$ BPMs:
+
+$$2J_{x,y} = \frac{1}{N} \sum_{n=1}^N \frac{\left(\text{peak-to-peak}/2\right)_n^2}{\beta_{x,y}^m(s_n)} .$$
+
+For an AC dipole excitation, $J_{x,y}$ is modulated during the ramp-up and ramp-down phases but is constant on the flat-top plateau; only plateau turns enter the analysis.
+
+### Beta from Amplitude
+
+The $\beta$-function can be estimated from the oscillation amplitude $A_{x,y}$ recorded at each BPM.
+From the Courant-Snyder parameterisation, the oscillation amplitude is $A_{x,y}(s) = \sqrt{2J_{x,y}\,\beta_z(s)}$, giving:
+
+$$\beta_{x,y}^\text{amp}(s_i) = \frac{A_{x,y}^2(s_i)}{2 J_{x,y}} .$$
+
+Because the action $J$ must itself be estimated from the peak-to-peak amplitudes and model $\beta$-functions (see above), this method is sensitive to BPM calibration errors and is generally less accurate than $\beta$ from phase.
+It is used as a cross-check and as a diagnostic for BPM calibration.
+
 
 [omc3_analysis]: ../../packages/omc3/analysis.md
