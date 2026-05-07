@@ -102,7 +102,23 @@ The resulting mean orbit change at each BPM, plotted versus $\delta$, yields $D_
 
 The **normalized dispersion**, written as $D_{x,y} / \sqrt{\beta_{x,y}}$, is independent of both the model $\beta$-function and BPM calibration factors, making it a more robust observable of the sensitivity to energy deviations.
 
+### Coupling
 
+Linear betatron coupling mixes the motions of horizontal and vertical planes.
+It is parameterised by the [resonance driving terms](#resonance-driving-terms) $f_{1001}$ and $f_{1010}$.
+
+These are reconstructed from the cross-plane spectral lines of the same TbT data used for the linear optics.
+A dedicated page on reconstructing the [coupling](coupling.md) terms is available.
+
+
+*[BPM]: Beam Position Monitor
+*[BPMs]: Beam Position Monitors
+*[TbT]: Turn-by-Turn
+*[RDT]: Resonance Driving Term
+*[RDTs]: Resonance Driving Terms
+*[CRDT]: Combined Resonance Driving Term
+*[CRDTs]: Combined Resonance Driving Terms
+*[SVD]: Singular Value Decomposition
 
 [analytical_nbpm]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111002
 [soubelet_thesis]: https://repository.cern/records/jey15-71v76
