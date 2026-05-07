@@ -36,10 +36,6 @@ The phase advance between two BPMs is extracted from TbT data as the difference 
 In the N-BPM method (see [Beta from Phase](#beta-from-phase)), the relevant inputs are phase advances between non-consecutive BPMs.
 Combinations with phase separations well away from $0$ and $\pi$ are preferred, as these minimise the sensitivity of the cotangent terms to measurement noise.
 
-!!! tip "AC dipole phase advances"
-    When the beam is driven by an AC dipole, the measured *driven* phase advances differs from the free phase advances since the AC dipole modifies the effective $\beta$-function throughout the ring.
-    This can be compensated analytically, which `omc3` does before performing optics reconstruction.
-
 !!! info "Special phases"
     The special phases correspond to the phase advances between specific machine elements of interest, usually the AC Dipole kicker magnet to tertiary collimators in the IRs for the LHC.
 
@@ -62,5 +58,37 @@ $$\beta_{x,y}^\text{amp}(s_i) = \frac{A_{x,y}^2(s_i)}{2 J_{x,y}} .$$
 Because the action $J$ must itself be estimated from the peak-to-peak amplitudes and model $\beta$-functions (see above), this method is sensitive to BPM calibration errors and is generally less accurate than $\beta$ from phase.
 It is used as a cross-check and as a diagnostic for BPM calibration.
 
+### Beta from Phase
 
+The $\beta$-function at BPM $i$ can be determined from the measured phase advances to two other BPMs $j$ and $k$, with normalisation using model values.
+The three-BPM combination formula reads:
+
+$$
+    \beta_{x,y}^\text{phase}(s_i) = \frac{\cot\!\left(\phi_{x,y}(i \to j)\right) + \cot\!\left(\phi_{x,y}(i \to k)\right)}
+    {\cot\!\left(\phi_{x,y}^m(i \to j)\right) + \cot\!\left(\phi_{x,y}^m(i \to k)\right)}
+    \, \beta_{x,y}^m(s_i) ,
+$$
+
+where superscript $m$ denotes model values.
+
+!!! tip "The analytical N-BPM method"
+    The [analytical N-BPM method][analytical_nbpm]{target=_blank} (Wegscheider et al., Phys. Rev. Accel. Beams **20**, 111002, 2017) extends this calculation by averaging over $N$ specifically chosen BPM combinations which remove unfavorable phase advances.
+    The method also includes the known statistical uncertainties of various elements for error estimation.
+
+When the beam is driven by an AC dipole, the measured *driven* beta functions differs from the *free* ones since the AC dipole modifies the parametrization of the particle coordinates.
+Details on this effect can be found in [F. Soubelet's PhD Thesis][soubelet_thesis]{target=_blank}.
+This effect can be compensated analytically.
+
+### Beta-Beating
+
+The very commonly looked at $\beta$-beating, the deviation from model values, goes as:
+
+$$\frac{\Delta\beta_z}{\beta_z}(s) = \frac{\beta_z^\text{phase}(s) - \beta_z^m(s)}{\beta_z^m(s)} .$$
+
+It is a primary value of interest for the quantification of the optics' quality throughout the machine.
+
+
+[analytical_nbpm]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111002
+[soubelet_thesis]: https://repository.cern/records/jey15-71v76
+[tomas_rdt]: https://inspirehep.net/literature/680877
 [omc3_analysis]: ../../packages/omc3/analysis.md
