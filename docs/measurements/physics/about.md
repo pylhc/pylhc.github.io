@@ -7,6 +7,7 @@ The connecting thread across all methods is the extraction of optics quantities 
 
 For readers new to the field, or in need of a refresher before exploring the sub-pages, the following resources are recommended.
 References for specific methods are also given on the individual sub-pages.
+One can have a look at this [page providing a list of our published works](../../omc_team/publications.md).
 
 ### General
 
