@@ -34,7 +34,7 @@ $$
 
 If any $\mathbf{U}$ matrix element exceeds `svd_dominance_limit` (by default 0.925) and is the maximum in its column, it is zeroed and the column renormalised.
 This is repeated up to `num_svd_iterations` (by default 3) times.
-BPMs flagged in this step are labelled `SVD_PEAK` bad BPMs (see [BPM Cleaning](#bpm-cleaning)).
+BPMs flagged in this step are labelled `SVD_PEAK` bad BPMs (see [BPM Filtering](bpm_filtering.md)).
 
 Cleaned Tbt data is recomposed in a matrix $\mathbf{C}$ using only the first $N_\text{modes}$ modes with the largest singular values (after rescaling):
 
@@ -100,7 +100,7 @@ The amplitude and phase are extracted from the complex coefficient: $A = |C_{jm}
 
     See the [BPM filtering page](bpm_filtering.md) for the full list of criteria.
 
-## Error Propagation
+## Accuracy and Error
 
 The phase and relative amplitude uncertainty at a spectral line of amplitude $A$ are:
 
