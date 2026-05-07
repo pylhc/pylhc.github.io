@@ -42,7 +42,7 @@ Combinations with phase separations well away from $0$ and $\pi$ are preferred, 
 
 ### Action
 
-The Courant-Snyder action $J_z$ is the conserved invariant of free betatron motion, related to the oscillation amplitude by $J_{x,y} = A_{x,y}^2(s)/(2\beta_{x,y}(s))$ at any location $s$.
+The Courant-Snyder action $J_{x,y}$ is the conserved invariant of free betatron motion, related to the oscillation amplitude by $J_{x,y} = A_{x,y}^2(s)/(2\beta_{x,y}(s))$ at any location $s$.
 Since it cannot be read off from a single BPM without knowing $\beta_{x,y}(s)$, a calibration-dependent estimate is formed by averaging over $N$ BPMs:
 
 $$
@@ -80,7 +80,7 @@ where superscript $m$ denotes model values.
     The [analytical N-BPM method][analytical_nbpm]{target=_blank} (Wegscheider et al., Phys. Rev. Accel. Beams **20**, 111002, 2017) extends this calculation by averaging over $N$ specifically chosen BPM combinations which remove unfavorable phase advances.
     The method also includes the known statistical uncertainties of various elements for error estimation.
 
-When the beam is driven by an AC dipole, the measured *driven* beta functions differs from the *free* ones since the AC dipole modifies the parametrization of the particle coordinates.
+When the beam is driven by an AC dipole, the measured *driven* beta functions differ from the *free* ones since the AC dipole modifies the parametrization of the particle coordinates.
 Details on this effect can be found in [F. Soubelet's PhD Thesis][soubelet_thesis]{target=_blank}.
 This effect can be compensated analytically.
 
@@ -127,8 +127,8 @@ Nonlinear multipole errors in the lattice excite resonance lines in the betatron
 From normal form theory, the RDT $f_{jklm}$, associated with resonance $(j-k, l-m)$, drives a spectral line in the horizontal TbT spectrum at frequency $f_\text{res} = (j - k)\,Q_x + (l - m)\,Q_y$.
 
 !!! info "Some References"
-    An explanation of the emergence of the $f_{jkml}$ terms from nonlinearities' treatment via normal forms can be found in [F. Soubelet's PhD Thesis][soubelet_thesis]{target=_blank}, including references.
-    A complete parametrization of the RDT terms in found in the [paper by R. Tomás][tomas_rdt]{target=_blank}.
+    An explanation of the emergence of the $f_{jklm}$ terms from nonlinearities' treatment via normal forms can be found in [F. Soubelet's PhD Thesis][soubelet_thesis]{target=_blank}, including references.
+    A complete parametrization of the RDT terms is found in the [paper by R. Tomás][tomas_rdt]{target=_blank}.
     This [detailed paper by Franchi et al.][franchi_rdts]{target=_blank} provides tables of spectral lines to RDTs correspondence.
 
 The complex value of the RDT at each BPM is encoded in the amplitude and phase of the complex Courant-Snyder spectral line $H^+(j{-}k,\, l{-}m)$ at this frequency.
