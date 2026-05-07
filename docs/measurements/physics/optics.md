@@ -2,7 +2,7 @@
 # Optics Analysis
 
 This page summarizes how the optics analysis is performed with our `omc3` software, from the physics point of view.
-Please note that this page is meant as a gentle introduction including references rather than a comprehension treatment of the topics therein.
+Please note that this page is meant as a gentle introduction including references rather than a comprehensive treatment of the topics therein.
 
 !!! info "A practical walkthrough"
     To see how to **use** the `omc3` package to do so, refer to the [`omc3` analysis workflow][omc3_analysis] page.
@@ -45,16 +45,20 @@ Combinations with phase separations well away from $0$ and $\pi$ are preferred, 
 The Courant-Snyder action $J_z$ is the conserved invariant of free betatron motion, related to the oscillation amplitude by $J_{x,y} = A_{x,y}^2(s)/(2\beta_{x,y}(s))$ at any location $s$.
 Since it cannot be read off from a single BPM without knowing $\beta_{x,y}(s)$, a calibration-dependent estimate is formed by averaging over $N$ BPMs:
 
-$$2J_{x,y} = \frac{1}{N} \sum_{n=1}^N \frac{\left(\text{peak-to-peak}/2\right)_n^2}{\beta_{x,y}^m(s_n)} .$$
+$$
+    2J_{x,y} = \frac{1}{N} \sum_{n=1}^N \frac{\left(\text{peak-to-peak}/2\right)_n^2}{\beta_{x,y}^m(s_n)} .
+$$
 
 For an AC dipole excitation, $J_{x,y}$ is modulated during the ramp-up and ramp-down phases but is constant on the flat-top plateau; only plateau turns enter the analysis.
 
 ### Beta from Amplitude
 
 The $\beta$-function can be estimated from the oscillation amplitude $A_{x,y}$ recorded at each BPM.
-From the Courant-Snyder parameterisation, the oscillation amplitude is $A_{x,y}(s) = \sqrt{2J_{x,y}\,\beta_z(s)}$, giving:
+From the Courant-Snyder parameterisation, the oscillation amplitude is $A_{x,y}(s) = \sqrt{2J_{x,y} \beta_{x,y}(s)}$, giving:
 
-$$\beta_{x,y}^\text{amp}(s_i) = \frac{A_{x,y}^2(s_i)}{2 J_{x,y}} .$$
+$$
+    \beta_{x,y}^\text{amp}(s_i) = \frac{A_{x,y}^2(s_i)}{2 J_{x,y}} .
+$$
 
 Because the action $J$ must itself be estimated from the peak-to-peak amplitudes and model $\beta$-functions (see above), this method is sensitive to BPM calibration errors and is generally less accurate than $\beta$ from phase.
 It is used as a cross-check and as a diagnostic for BPM calibration.
@@ -67,7 +71,7 @@ The three-BPM combination formula reads:
 $$
     \beta_{x,y}^\text{phase}(s_i) = \frac{\cot\!\left(\phi_{x,y}(i \to j)\right) + \cot\!\left(\phi_{x,y}(i \to k)\right)}
     {\cot\!\left(\phi_{x,y}^m(i \to j)\right) + \cot\!\left(\phi_{x,y}^m(i \to k)\right)}
-    \, \beta_{x,y}^m(s_i) ,
+    \beta_{x,y}^m(s_i) ,
 $$
 
 where superscript $m$ denotes model values.
@@ -84,7 +88,9 @@ This effect can be compensated analytically.
 
 The very commonly looked at $\beta$-beating, the deviation from model values, goes as:
 
-$$\frac{\Delta\beta_{x,y}(s)}{\beta_{x,y}(s)} = \frac{\beta_{x,y}^\text{phase}(s) - \beta_{x,y}^m(s)}{\beta_{x,y}^m(s)} .$$
+$$
+    \frac{\Delta\beta_{x,y}(s)}{\beta_{x,y}(s)} = \frac{\beta_{x,y}^\text{phase}(s) - \beta_{x,y}^m(s)}{\beta_{x,y}^m(s)} .
+$$
 
 It is a primary value of interest for the quantification of the optics' quality throughout the machine.
 
@@ -92,7 +98,9 @@ It is a primary value of interest for the quantification of the optics' quality 
 
 The dispersion function $D_{x,y}(s)$ quantifies the sensitivity of the closed orbit to a relative momentum offset $\delta = \Delta p / p_0$:
 
-$${x,y}_\text{co}(s,\,\delta) = {x,y}_{\text{co},0}(s) + D_{x,y}(s)\,\delta + \mathcal{O}(\delta^2) .$$
+$$
+    z_\text{co}(s,\,\delta) = z_{\text{co},0}(s) + D_z(s)\,\delta + \mathcal{O}(\delta^2) ,  z = x, y ,
+$$
 
 To determine dispersion in practice, $\delta$ is varied by adjusting the RF frequency away from its nominal value, which shifts the beam energy.
 The resulting mean orbit change at each BPM, plotted versus $\delta$, yields $D_{x,y}(s)$ as the slope.
@@ -120,7 +128,7 @@ From normal form theory, the RDT $f_{jklm}$, associated with resonance $(j-k, l-
 
 !!! info "Some References"
     An explanation of the emergence of the $f_{jkml}$ terms from nonlinearities' treatment via normal forms can be found in [F. Soubelet's PhD Thesis][soubelet_thesis]{target=_blank}, including references.
-    An complete parametrization of the RDT terms in found in the [paper by R. Tomás][tomas_rdt]{target=_blank}.
+    A complete parametrization of the RDT terms in found in the [paper by R. Tomás][tomas_rdt]{target=_blank}.
     This [detailed paper by Franchi et al.][franchi_rdts]{target=_blank} provides tables of spectral lines to RDTs correspondence.
 
 The complex value of the RDT at each BPM is encoded in the amplitude and phase of the complex Courant-Snyder spectral line $H^+(j{-}k,\, l{-}m)$ at this frequency.
@@ -147,13 +155,15 @@ The impact of the combined coupling RDTs into position parametrization is found 
 ### Chromatic Coupling
 
 Chromatic coupling describes the variation of the global coupling quantity $|C^{-}|$ with momentum offset $\delta$.
-It arises from sextupolar errors in the magnets, in combination with dispersion
+It arises from sextupolar errors in the magnets in combination with dispersion.
 An off-momentum particle will experience a skew quadrupolar field from a sextupole in dispersive regions (vertical dispersion and normal sextupole, or horizontal dispersion and skew sextupole). Since there is larger horizontal dispersion in a ring, skew sextupolar components are the dominant source of chromatic coupling.
 
 It is measured by repeating optics measurements at several RF frequency settings (each corresponding to a different $\delta$) and fitting the resulting $|C^{-}|$ as a polynomial in $\delta$.
 It has been defined by the coefficient:
 
-$$\left| \frac{d C^{-}}{d\delta} \right| \approx 4 \Delta Q \left| \frac{d f_{1001}}{d \delta} \right|$$
+$$
+    \left| \frac{d C^{-}}{d\delta} \right| \approx 4 \Delta Q \left| \frac{d f_{1001}}{d \delta} \right|
+$$
 
 A study of chromatic coupling in the LHC and its correction can be found in this paper by [Persson et al.][person_chromatic_coupling]{target=_blank}.
 
@@ -164,7 +174,6 @@ A study of chromatic coupling in the LHC and its correction can be found in this
 *[RDTs]: Resonance Driving Terms
 *[CRDT]: Combined Resonance Driving Term
 *[CRDTs]: Combined Resonance Driving Terms
-*[SVD]: Singular Value Decomposition
 
 [omc3_analysis]: ../../packages/omc3/analysis.md
 [analytical_nbpm]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111002
