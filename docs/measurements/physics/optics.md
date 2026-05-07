@@ -83,9 +83,25 @@ This effect can be compensated analytically.
 
 The very commonly looked at $\beta$-beating, the deviation from model values, goes as:
 
-$$\frac{\Delta\beta_z}{\beta_z}(s) = \frac{\beta_z^\text{phase}(s) - \beta_z^m(s)}{\beta_z^m(s)} .$$
+$$\frac{\Delta\beta_{x,y}(s)}{\beta_{x,y}(s)} = \frac{\beta_{x,y}^\text{phase}(s) - \beta_{x,y}^m(s)}{\beta_{x,y}^m(s)} .$$
 
 It is a primary value of interest for the quantification of the optics' quality throughout the machine.
+
+### Dispersion and Normalized Dispersion
+
+The dispersion function $D_{x,y}(s)$ quantifies the sensitivity of the closed orbit to a relative momentum offset $\delta = \Delta p / p_0$:
+
+$${x,y}_\text{co}(s,\,\delta) = {x,y}_{\text{co},0}(s) + D_{x,y}(s)\,\delta + \mathcal{O}(\delta^2) .$$
+
+To determine dispersion in practice, $\delta$ is varied by adjusting the RF frequency away from its nominal value, which shifts the beam energy.
+The resulting mean orbit change at each BPM, plotted versus $\delta$, yields $D_{x,y}(s)$ as the slope.
+
+!!! note "3D Excitation"
+    A more efficient approach is to perform measurements with AC dipole excitation in which the RF frequency is simultaneously modulated, providing an "excitation" of the three degrees of freedom at once.
+    This method was explored but is not currently actively used.
+
+The **normalized dispersion**, written as $D_{x,y} / \sqrt{\beta_{x,y}}$, is independent of both the model $\beta$-function and BPM calibration factors, making it a more robust observable of the sensitivity to energy deviations.
+
 
 
 [analytical_nbpm]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111002
