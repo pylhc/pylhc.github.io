@@ -110,6 +110,21 @@ It is parameterised by the [resonance driving terms](#resonance-driving-terms) $
 These are reconstructed from the cross-plane spectral lines of the same TbT data used for the linear optics.
 A dedicated page on reconstructing the [coupling](coupling.md) terms is available.
 
+## Nonlinear Optics
+
+### Resonance Driving Terms
+
+Nonlinear multipole errors in the lattice excite resonance lines in the betatron spectrum.
+From normal form theory, the RDT $f_{jklm}$, associated with resonance $(j-k, l-m)$, drives a spectral line in the horizontal TbT spectrum at frequency $f_\text{res} = (j - k)\,Q_x + (l - m)\,Q_y$.
+
+!!! info "Some References"
+    An explanation of the emergence of the $f_{jkml}$ terms from nonlinearities' treatment via normal forms can be found in [F. Soubelet's PhD Thesis][soubelet_thesis]{target=_blank}, including references.
+    An complete parametrization of the RDT terms in found in the [paper by R. Tomás][tomas_rdt]{target=_blank}.
+    This [detailed paper by Franchi et al.][franchi_rdts]{target=_blank} provides tables of spectral lines to RDTs correspondence.
+
+The complex value of the RDT at each BPM is encoded in the amplitude and phase of the complex Courant-Snyder spectral line $H^+(j{-}k,\, l{-}m)$ at this frequency.
+<!-- Common examples include the sextupolar terms $f_{3000}$ (at $3Q_x$) and $f_{1002}$ (at $Q_x - 2Q_y$), as well as the linear coupling RDTs $f_{1001}$ and $f_{1010}$ described in the [coupling page](coupling.md). -->
+
 
 *[BPM]: Beam Position Monitor
 *[BPMs]: Beam Position Monitors
@@ -123,4 +138,5 @@ A dedicated page on reconstructing the [coupling](coupling.md) terms is availabl
 [analytical_nbpm]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111002
 [soubelet_thesis]: https://repository.cern/records/jey15-71v76
 [tomas_rdt]: https://inspirehep.net/literature/680877
+[franchi_rdts]: https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.17.074001
 [omc3_analysis]: ../../packages/omc3/analysis.md
