@@ -62,6 +62,7 @@
 - [x] Physics, LHC IR nonlinear optics not written
 - [x] Physics, 3D kicks not written
 - [ ] Procedures, crossing angle scan not written. Ask Ewen?
+- [x] Procedures, point to the `omc3` version of the machine_settings_info script.
 
 ## Resources
 
