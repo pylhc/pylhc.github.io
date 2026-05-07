@@ -100,6 +100,27 @@ The amplitude and phase are extracted from the complex coefficient: $A = |C_{jm}
 
     See the [BPM filtering page](bpm_filtering.md) for the full list of criteria.
 
+## Error Propagation
+
+The phase and relative amplitude uncertainty at a spectral line of amplitude $A$ are:
+
+$$
+    \sigma_{\varphi,\, \text{rel. amp}} \approx \sqrt{\frac{2}{N_\text{turns}}}\, \frac{\sigma_\text{orbit}}{A} ,
+$$
+
+where $\sigma_\text{orbit}$ is the per-BPM orbit resolution estimated from the SVD residual.
+
+In practice $\sigma$ the spectral noise entering error propagation, the phase error is:
+
+$$
+    \sigma_\varphi = \frac{\sigma}{A \cdot 2\pi} .
+$$
+
+When the signal-to-noise ratio is very low ($\sigma_\varphi > 0.25$), the phase distribution is approximated as uniform and $\sigma_\varphi$ is capped at $0.3$.
+The amplitude error for normalised secondary lines propagates through the ratio as $\sigma_{A,\text{norm}} = \sigma \sqrt{1 + A_\text{norm}^2}$.
+
+For more details on accuracy and error estimates please consult the reference paper linked at the top of this page.
+
 *[BPM]: Beam Position Monitor
 *[BPMs]: Beam Position Monitors
 *[TbT]: Turn-by-Turn
