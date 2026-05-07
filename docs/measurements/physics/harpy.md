@@ -90,6 +90,15 @@ The tolerance scales with resonance order as $\mathrm{tol} \propto (|j-k| + |l-m
 
 The amplitude and phase are extracted from the complex coefficient: $A = |C_{jm}|$ and $\varphi = \arg(C_{jm}) / 2\pi$ (converted to fractional turns and realigned to $[-0.5,\, 0.5]$).
 
+!!! info "BPM Cleaning"
+
+    BPM data is filtered in several stages throughout the above process.
+    In harpy's approach,
+
+    - **SVD-based**: BPMs whose $\mathbf{U}$-matrix element exceeds `svd_dominance_limit` are excluded. In output files, they are labelled with `SVD_PEAK`.
+    - **Tune-based** (post-FFT): BPMs whose measured tune deviates from the mean by more than `tune_clean_limit` (default: $10^{-5}$) are removed. Those with no tune result are also removed.
+
+    See the [BPM filtering page](bpm_filtering.md) for the full list of criteria.
 
 *[BPM]: Beam Position Monitor
 *[BPMs]: Beam Position Monitors
