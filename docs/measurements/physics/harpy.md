@@ -69,6 +69,27 @@ Within each bin the frequency with the highest amplitude is retained.
     The rectangle window is forced in this mode.
     This is distinct from AC dipole excitation, where the amplitude is constant on the flat-top plateau.
 
+## Harmonic Analysis of Decomposed Data
+
+Rather than applying the FFT independently to each BPM, harpy FFTs the $N_\text{modes}$ rows of $\mathbf{S}\mathbf{V}^\mathsf{T}$ and recombines with $\mathbf{U}$.
+The complex spectral coefficient at BPM $j$ and frequency $m / N_\text{padded}$ is:
+
+$$
+    C_{jm} = \sum_{k=1}^{N_\text{modes}} u_{jk} \sum_{n=1}^{N_\text{turns}} s_{kk}\, v_{nk}\, w_n\, e^{-2i\pi m (n-1) / N_\text{padded}} .
+$$
+
+This separates the transform cost ($N_\text{modes}$ FFTs of $N_\text{turns}$ points) from the recombination cost (a single matrix multiplication), and allows restricting computation to frequency ranges of interest.
+Frequency windows of width `tolerance` are retained around multiples of the driven and natural tunes and the synchrotron tune; all other frequency content is discarded before binning.
+
+Unless provided by the user, the tune is estimated from the mean row of the cleaned $\mathbf{S}\mathbf{V}^\mathsf{T}$ matrix: the row is windowed, FFT'd, and the dominant peak located.
+
+Beam-related harmonics are identified as the strongest spectral line in given frequency intervals around multiples of the driven or natural tunes in the BPM frequency spectra.
+
+The tolerance scales with resonance order as $\mathrm{tol} \propto (|j-k| + |l-m|) \times \max(10^{-4},\, 1/N_\text{turns})$, giving wider search windows for higher-order resonances.
+<!-- Resonances up to order `resonances` (by default 4, allows up to 8) are searched using the RDT framework from `optics_functions`. -->
+
+The amplitude and phase are extracted from the complex coefficient: $A = |C_{jm}|$ and $\varphi = \arg(C_{jm}) / 2\pi$ (converted to fractional turns and realigned to $[-0.5,\, 0.5]$).
+
 
 *[BPM]: Beam Position Monitor
 *[BPMs]: Beam Position Monitors
