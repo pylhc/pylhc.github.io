@@ -19,7 +19,7 @@ The spectral analysis at the core of our measurement pipeline is described in th
 
 ### Phase Advances and Optics Functions
 
-A good reference for the reconstruction of optics functions from phase advances, as implemented in `omc3`, is the [analytical N-BPM method paper][persson_nbpm]{target=_blank} by Wegscheider et al. (Phys. Rev. Accel. Beams 20, 2017).
+A good reference for the reconstruction of optics functions from phase advances, as implemented in `omc3`, is the [analytical N-BPM method paper][analytical_nbpm]{target=_blank} by Wegscheider et al. (Phys. Rev. Accel. Beams 20, 2017).
 For more references see the dedicated section.
 
 ### Coupling and Resonance Driving Terms
@@ -41,7 +41,7 @@ The K-modulation method, as implemented in `omc3` and performed when using the [
 [maclean_goettingen_2019]: https://indico.cern.ch/event/788195/contributions/3364867/attachments/1886006/3109100/2019_07_25_HASCO_lcomp.pdf
 [minty_zimmermann]: https://link.springer.com/book/10.1007%2F978-3-662-08581-3
 [malina_harpy]: https://accelconf.web.cern.ch/ipac2022/doi/JACoW-IPAC2022-WEPOMS035.html
-[persson_nbpm]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111002
+[analytical_nbpm]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111002
 [herr_cas]: https://cds.cern.ch/record/1507631
 [herr_forest_nf]: https://cds.cern.ch/record/2743949/files/Herr-Forest2020_Chapter_Non-linearDynamicsInAccelerato%20(1).pdf
 [tomas_rdt]: https://inspirehep.net/literature/680877
