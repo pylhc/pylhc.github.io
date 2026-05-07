@@ -45,6 +45,30 @@ $$
 The per-BPM noise level is estimated as $\sigma_\text{res} = \mathrm{std}(\mathbf{A} - \mathbf{C})$, with $\mathbf{C}$ the reconstructed matrix defined above.
 This residual is used for downstream error propagation.
 
+## Zero-Padded RFFT
+
+For a real signal $x$ of $N_\text{turns}$ samples, the DFT gives $N_\text{turns}/2$ positive-frequency coefficients with frequency resolution $1/N_\text{turns}$.
+To increase this resolution without additional data, the signal is zero-padded to $N_\text{padded} = 2^{\texttt{turn_bits}}$ (by default $2^{20} \approx 10^6$) samples before the transform.
+
+A normalizing windowing function $w_n$ is applied to the signal prior to zero-padding.
+Harpy uses the output of RFFT of zero-padded signal $x$:
+
+$$
+    X_m = \sum_{n=0}^{N_\text{turns}-1} x_n\, w_n\, e^{-2i\pi  m n / N_\text{padded}} .
+$$
+
+The available window functions — `rectangle`, `welch`, `triangle`, `hann` (default), `hamming`, `nuttal3`, `nuttal4` — are ordered by increasing main-lobe width and decreasing spectral leakage.
+The Hann window provides a good balance between frequency resolution and leakage suppression.
+
+In practice the RFFT is computed at $2 \times N_\text{padded}$ points to further suppress leakage, then the output is binned to $2^{\texttt{output_bits}}$ (by default $2^{12} = 4096$) frequency bins.
+Within each bin the frequency with the highest amplitude is retained.
+
+!!! note "Free-kick measurements"
+    Free kick measurements produce decaying oscillations where the bunch centroid amplitude decreases each turn due to beam decoherence.
+    In this scenario harpy fits an exponential damping envelope per BPM and corrects the signal before the FFT step (via the `kicker` module).
+    The rectangle window is forced in this mode.
+    This is distinct from AC dipole excitation, where the amplitude is constant on the flat-top plateau.
+
 
 *[BPM]: Beam Position Monitor
 *[BPMs]: Beam Position Monitors
