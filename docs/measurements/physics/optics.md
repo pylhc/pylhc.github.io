@@ -40,4 +40,6 @@ Combinations with phase separations well away from $0$ and $\pi$ are preferred, 
     When the beam is driven by an AC dipole, the measured *driven* phase advances differs from the free phase advances since the AC dipole modifies the effective $\beta$-function throughout the ring.
     This can be compensated analytically, which `omc3` does before performing optics reconstruction.
 
+The **special phases** correspond to the phase advances between specific machine elements of interest, usually the AC Dipole kicker magnet to tertiary collimators in the IRs for the LHC.
+
 [omc3_analysis]: ../../packages/omc3/analysis.md
