@@ -125,6 +125,23 @@ From normal form theory, the RDT $f_{jklm}$, associated with resonance $(j-k, l-
 The complex value of the RDT at each BPM is encoded in the amplitude and phase of the complex Courant-Snyder spectral line $H^+(j{-}k,\, l{-}m)$ at this frequency.
 <!-- Common examples include the sextupolar terms $f_{3000}$ (at $3Q_x$) and $f_{1002}$ (at $Q_x - 2Q_y$), as well as the linear coupling RDTs $f_{1001}$ and $f_{1010}$ described in the [coupling page](coupling.md). -->
 
+### Combined Resonance Driving Terms
+
+The combined RDTs, denoted with capital $F$ terms, are particular linear combinations of existing RDTs.
+A table is provided in the [paper by Franchi et al.][franchi_rdts]{target=_blank}.
+
+For instance, the combined coupling RDTs $F_{xy}$ and $F_{yx}$ are expressed as:
+
+$$
+\begin{align}
+    F_{xy} &= \frac{\sinh 2 \mathcal{P}}{\mathcal{P}} \bigl( f_{1001} - f_{1010}^* \bigr) , \\
+    F_{yx} &= \frac{\sinh 2 \mathcal{P}}{\mathcal{P}} \bigl( f_{1001}^* + f_{1010}^* \bigr) ,
+\end{align}
+$$
+
+where $2\mathcal{P} = \sqrt{|2f_{1010}|^2 - |2f_{1001}|^2}$ and ${}^*$ denotes complex conjugation.
+Their practical advantage is that they can be reconstructed directly from transverse position coordinates alone.
+The impact of the combined coupling RDTs into position parametrization is found in this [paper by M. Hofer][mhofer_local_coupling]{target=_blank}.
 
 *[BPM]: Beam Position Monitor
 *[BPMs]: Beam Position Monitors
@@ -139,4 +156,5 @@ The complex value of the RDT at each BPM is encoded in the amplitude and phase o
 [soubelet_thesis]: https://repository.cern/records/jey15-71v76
 [tomas_rdt]: https://inspirehep.net/literature/680877
 [franchi_rdts]: https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.17.074001
+[mhofer_local_coupling]: https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.23.094001
 [omc3_analysis]: ../../packages/omc3/analysis.md
