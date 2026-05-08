@@ -27,7 +27,7 @@
 - [x] OMC3 analysis, mention that for correction you should use the GUI or that we build later, create a last section like ampdet and point to the GUI page?
 - [x] PyLHC main page, update the scripts present
 - [x] PyLHC main page, dont explicitely mention python 3.7
-- [ ] PyLHC kick groups page, example or info?
+- [x] PyLHC kick groups page, example or info?
 - [ ] PyLHC etc do we need to duplicate what is in their documentations?
 - [x] pylhcsubmitter, study from command line add line breaks to command
 - [x] pylhcsubmitter add a link to my presentation
