@@ -57,7 +57,7 @@
 - [x] Physics, introduction, add links to various PhD theses?
 - [ ] Physics, BPM filtering -> remove all the colors? Don't want all that CSS...
 - [x] Physics, BPM filtering, move admonition a little up in Isolation Forest
-- [ ] Physics, optics analysis is not written
+- [x] Physics, optics analysis is not written
 - [x] Physics, LHC IR linear optics not written
 - [x] Physics, LHC IR nonlinear optics not written
 - [x] Physics, 3D kicks not written
