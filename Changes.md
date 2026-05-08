@@ -54,7 +54,7 @@
 - [x] main page could use a little more content
 - [x] main page should be named "about" like in other places.
 - [x] main page, wrong capitalized word
-- [ ] Physics, introduction, add links to various PhD theses?
+- [x] Physics, introduction, add links to various PhD theses?
 - [ ] Physics, BPM filtering -> remove all the colors? Don't want all that CSS...
 - [x] Physics, BPM filtering, move admonition a little up in Isolation Forest
 - [ ] Physics, optics analysis is not written
