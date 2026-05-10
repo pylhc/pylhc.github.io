@@ -33,7 +33,7 @@
 - [x] pylhcsubmitter, study from command line add line breaks to command
 - [x] pylhcsubmitter add a link to my presentation
 - [x] pylhcsubmitter max number of jobs (in njobs admonition) add link to the HTCondor documentation?
-- [ ] pylhcsubmitter resubmitting, explain why job_outputdir is indicator
+- [x] pylhcsubmitter resubmitting, explain why job_outputdir is indicator
 - [x] Move IRNL correction to "links to other package"
 - [x] REMOVE MESS COMPLETELY
 - [x] developping, there are no makefiles anymore

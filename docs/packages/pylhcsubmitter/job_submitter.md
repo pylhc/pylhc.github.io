@@ -6,7 +6,7 @@ Note that the full functionality is only available under Linux with `HTCondor` c
 Currently, due to lack of htcondor Python bindings on `PypI` for `Windows` and `macOS`, only local job execution is possible for these platforms.
 
 !!! note "A Quick Overview"
-    A presentation was made some time ago by Felix to showcase the purpose and capabilities of the job submitter.
+    A presentation was made some time ago by F. Soubelet to showcase the purpose and capabilities of the job submitter.
     It is a condensed version of this page, and is accessible [at the following link][pylhc_submitter_presentation]{target=_blank}.
 
 ## Using the Job Submitter
@@ -212,7 +212,7 @@ Finally, for each job the `job_output_dir`, here containing the **.twiss.tfs** f
 ## Checking for and Resubmitting Failed Jobs
 
 To see if and which Jobs have failed, the same command as above can be rerun using `resume_jobs` and `dryrun` flags (or use them as parameters set to `True`).
-By default, Jobs are classified as successful if the specified `job_output_dir` is present.
+By default, jobs are classified as successful if the specified `job_output_dir` is present, since `HTCondor` only transfers the `job_output_dir` back to the working directory upon successful job completion.
 <!-- TODO add example script output -->
 
 To resubmit the failed jobs to `HTCondor`, simply rerun the call and omit the `dryrun` flag or set its parameter to `False`.
