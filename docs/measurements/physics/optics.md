@@ -128,7 +128,7 @@ Nonlinear multipole errors in the lattice excite resonance lines in the betatron
 From normal form theory, the RDT $f_{jklm}$, associated with resonance $(j-k, l-m)$, drives a spectral line in the horizontal TbT spectrum at frequency $f_\text{res} = (j - k)\,Q_x + (l - m)\,Q_y$.
 
 !!! info "Some References"
-    An explanation of the emergence of the $f_{jklm}$ terms from nonlinearities' treatment via normal forms can be found in [F. Soubelet's PhD Thesis][soubelet_thesis]{target=_blank}, including references.
+    An explanation of the emergence of the $f_{jklm}$ terms from nonlinearities' treatment via normal forms can be found in the PhD theses of [F. Carlier][carlier_thesis] and [F. Soubelet][soubelet_thesis]{target=_blank}, including references.
     A complete parametrization of the RDT terms is found in the [paper by R. Tomás][tomas_rdt]{target=_blank}.
     This [detailed paper by Franchi et al.][franchi_rdts]{target=_blank} provides tables of spectral lines to RDTs correspondence.
 
@@ -178,6 +178,7 @@ A study of chromatic coupling in the LHC and its correction can be found in this
 
 [omc3_analysis]: ../../packages/omc3/analysis.md
 [analytical_nbpm]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111002
+[carlier_thesis]: https://repository.cern/records/gk9zh-93c93
 [soubelet_thesis]: https://repository.cern/records/jey15-71v76
 [tomas_rdt]: https://inspirehep.net/literature/680877
 [franchi_rdts]: https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.17.074001
