@@ -36,6 +36,7 @@ The phase advance between two BPMs is extracted from TbT data as the difference 
 
 In the N-BPM method (see [Beta from Phase](#beta-from-phase)), the relevant inputs are phase advances between non-consecutive BPMs.
 Combinations with phase separations well away from $0$ and $\pi$ are preferred, as these minimise the sensitivity of the cotangent terms to measurement noise.
+Specifically, $\pi/2$ and $3 \pi/2$ are ideal.
 
 !!! info "Special phases"
     The special phases correspond to the phase advances between specific machine elements of interest, usually the AC Dipole kicker magnet to tertiary collimators in the IRs for the LHC.
