@@ -110,7 +110,7 @@ The resulting mean orbit change at each BPM, plotted versus $\delta$, yields $D_
     A more efficient approach is to perform measurements with AC dipole excitation in which the RF frequency is simultaneously modulated, providing an "excitation" of the three degrees of freedom at once.
     This method was explored but is not currently actively used.
 
-The **normalized dispersion**, written as $D_{x,y} / \sqrt{\beta_{x,y}}$, is independent of both the model $\beta$-function and BPM calibration factors, making it a more robust observable of the sensitivity to energy deviations.
+The **normalized dispersion**, written as $D_{x,y} / \sqrt{\beta_{x,y}}$, is independent of BPM calibration factors, making it a more robust observable of the sensitivity to energy deviations.
 
 ### Coupling
 
