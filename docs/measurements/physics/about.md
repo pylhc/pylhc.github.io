@@ -27,7 +27,7 @@ For more references see the dedicated section.
 
 The [coupling page](coupling.md) make heavy use of normal form theory and resonance driving terms.
 The [CAS lectures given in Trondheim][herr_cas]{target=_blank} by W. Herr provide an illustrative entry point into these topics, while the chapter by [Herr and Forest][herr_forest_nf]{target=_blank} covers the same material with full mathematical rigour.
-Another good dive in the topic can be found in [F. Carlier's PhD thesis](https://repository.cern/records/gk9zh-93c93/preview/CERN-THESIS-2020-025.pdf){target=_blank}.
+Another good dive in the topic can be found in [F. Carlier's PhD thesis][carlier_thesis]{target=_blank}.
 The spectral-line approach to measuring the coupling RDTs that underlies our analysis is derived in [R. Tomás' paper on RDTs][tomas_rdt]{target=_blank}.
 
 ### K-Modulation
@@ -46,5 +46,6 @@ The K-modulation method, as implemented in `omc3` and performed when using the [
 [analytical_nbpm]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.111002
 [herr_cas]: https://cds.cern.ch/record/1507631
 [herr_forest_nf]: https://cds.cern.ch/record/2743949/files/Herr-Forest2020_Chapter_Non-linearDynamicsInAccelerato%20(1).pdf
+[carlier_thesis]: https://repository.cern/records/gk9zh-93c93/preview/CERN-THESIS-2020-025.pdf
 [tomas_rdt]: https://inspirehep.net/literature/680877
 [carlier_kmod]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.20.011005
