@@ -83,7 +83,7 @@ where superscript $m$ denotes model values.
 
 When the beam is driven by an AC dipole, the measured *driven* beta functions differ from the *free* ones since the AC dipole modifies the parametrization of the particle coordinates.
 Details on this effect can be found in [F. Soubelet's PhD Thesis][soubelet_thesis]{target=_blank}.
-This effect can be compensated analytically.
+This effect can be compensated analytically (see information for instance in the [output files meaning](../../guis/betabeat/betabeatsource.md#meaning-of-the-beta-beatsrc-output-files) section's admonition).
 
 ### Beta-Beating
 
