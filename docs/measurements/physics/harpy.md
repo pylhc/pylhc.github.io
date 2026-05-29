@@ -48,7 +48,14 @@ This residual is used for downstream error propagation.
 ## Zero-Padded RFFT
 
 For a real signal $x$ of $N_\text{turns}$ samples, the DFT gives $N_\text{turns}/2$ positive-frequency coefficients with frequency resolution $1/N_\text{turns}$.
-To increase this resolution without additional data, the signal is zero-padded to $N_\text{padded} = 2^{\texttt{turn_bits}}$ (by default $2^{20} \approx 10^6$) samples before the transform.
+To increase this resolution without additional data, the signal is zero-padded to $N_\text{padded} = 2^{\texttt{turn_bits}}$ samples before the transform.
+
+!!! tip "Resolution Tips"
+    By default in `omc3.harpy`, $\texttt{turn_bits} = 20$ which means the padding is done to $2^{20} \approx 10^6$ samples (turns).
+    This zero-padding has a cost in memory and computing power (see the [frequency analysis](../../packages/omc3/analysis.md#frequency-analysis) section of the `omc3` walkthrough for details).
+
+    For anything related to **linear optics**, that value is overkill and a lower number is fine, usually $\texttt{turn_bits} = 15$ is enough.
+    For anything related to **nonlinear optics**, for the detection of high order RDTs etc keeping a high number is recommended, at least $\texttt{turn_bits} = 18$ as is the default in the [GUI settings](../../guis/betabeat/settings.md#harpy-tab).
 
 A normalizing windowing function $w_n$ is applied to the signal prior to zero-padding.
 Harpy uses the output of RFFT of zero-padded signal $x$:
