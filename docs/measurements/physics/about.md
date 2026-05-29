@@ -27,6 +27,7 @@ For more references see the dedicated section.
 
 The [coupling page](coupling.md) make heavy use of normal form theory and resonance driving terms.
 The [CAS lectures given in Trondheim][herr_cas]{target=_blank} by W. Herr provide an illustrative entry point into these topics, while the chapter by [Herr and Forest][herr_forest_nf]{target=_blank} covers the same material with full mathematical rigour.
+Another good dive in the topic can be found in [F. Carlier's PhD thesis](https://repository.cern/records/gk9zh-93c93/preview/CERN-THESIS-2020-025.pdf){target=_blank}.
 The spectral-line approach to measuring the coupling RDTs that underlies our analysis is derived in [R. Tomás' paper on RDTs][tomas_rdt]{target=_blank}.
 
 ### K-Modulation
