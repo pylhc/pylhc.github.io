@@ -92,7 +92,7 @@ Unless provided by the user, the tune is estimated from the mean row of the clea
 
 Beam-related harmonics are identified as the strongest spectral line in given frequency intervals around multiples of the driven or natural tunes in the BPM frequency spectra.
 
-The tolerance scales with resonance order as $\mathrm{tol} \propto (|j-k| + |l-m|) \times \max(10^{-4},\, 1/N_\text{turns})$, giving wider search windows for higher-order resonances.
+The tolerance scales with resonance order as $\mathrm{tolerance} \propto (|j-k| + |l-m|) \times \max(10^{-4},\, 1/N_\text{turns})$, giving wider search windows for higher-order resonances.
 <!-- Resonances up to order `resonances` (by default 4, allows up to 8) are searched using the RDT framework from `optics_functions`. -->
 
 The amplitude and phase are extracted from the complex coefficient: $A = |C_{jm}|$ and $\varphi = \arg(C_{jm}) / 2\pi$ (converted to fractional turns and realigned to $[-0.5,\, 0.5]$).
@@ -100,12 +100,16 @@ The amplitude and phase are extracted from the complex coefficient: $A = |C_{jm}
 !!! info "BPM Cleaning"
 
     BPM data is filtered in several stages throughout the above process.
-    In harpy's approach,
+    In harpy's approach, the following cleaning steps are optional and can be skipped:
 
-    - **SVD-based**: BPMs whose $\mathbf{U}$-matrix element exceeds `svd_dominance_limit` are excluded. In output files, they are labelled with `SVD_PEAK`.
-    - **Tune-based** (post-FFT): BPMs whose measured tune deviates from the mean by more than `tune_clean_limit` (default: $10^{-5}$) are removed. Those with no tune result are also removed.
+    - **SVD based**: BPMs whose $\mathbf{U}$-matrix element exceeds `svd_dominance_limit` are excluded. In output files, they are labelled with `SVD_PEAK`.
+    - **Cut based**: Known bad BPMs, flat signal BPMs, as well as BPMs with exact zeros, NaNs or spiky data are removed.
 
-    See the [BPM filtering page](bpm_filtering.md) for the full list of criteria.
+    The following is always performed:
+
+    - **Tune based** (post-FFT): BPMs for which the main line hasn't been found (no tune result) and BPMs whose measured tune deviates from the mean by more than `tune_clean_limit` (default: $10^{-5}$) are removed.
+
+    See the [BPM filtering page](bpm_filtering.md) for the full list of criteria and additional details.
 
 ## Accuracy and Error
 
