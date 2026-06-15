@@ -55,12 +55,6 @@
         <loc>https://pylhc.github.io/packages/pylhcsubmitter/autosix.html</loc>
       </url>
       <url>
-        <loc>https://pylhc.github.io/packages/irnl/about.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/mess/about.html</loc>
-      </url>
-      <url>
         <loc>https://pylhc.github.io/packages/development/contributing.html</loc>
       </url>
       <url>
@@ -182,15 +176,6 @@
       </url>
       <url>
         <loc>https://pylhc.github.io/measurements/physics/kmod.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/physics/ir_linear_optics.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/physics/ir_nonlinear_optics.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/physics/threedkicks.html</loc>
       </url>
       <url>
         <loc>https://pylhc.github.io/measurements/procedures/about.html</loc>
