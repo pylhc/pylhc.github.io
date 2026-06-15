@@ -31,6 +31,7 @@ theme:
     - navigation.instant
     - content.action.edit  # editing button on the pages is opt-in since v9
     - content.code.copy  # copy button for code blocks
+    - search.highlight  # clicking a search result has zensical highlight all results in the page
   palette:
     # Palette toggle for light mode
     - scheme: default
@@ -149,18 +150,14 @@ nav:
       - Job Submitter: packages/pylhcsubmitter/job_submitter.md
       - AutoSix: packages/pylhcsubmitter/autosix.md
       - ↪ On Github: https://github.com/pylhc/submitter
-    - IRNL Corrections:
-      - About: packages/irnl/about.md
-      - ↪ On Github: https://github.com/pylhc/irnl_rdt_correction
-    - MESS:
-      - About: packages/mess/about.md
-      - ↪ On Github: https://github.com/pylhc/MESS
     - Links to other Packages:
       - ↪ optics-functions: https://github.com/pylhc/optics_functions
       - ↪ Beta-Beat.src: https://github.com/pylhc/Beta-Beat.src
       - ↪ tfs-pandas: https://github.com/pylhc/tfs
       - ↪ sdds: https://github.com/pylhc/sdds
       - ↪ generic-parser: https://github.com/pylhc/generic_parser
+      - ↪ irnl-corrections: https://github.com/pylhc/irnl_rdt_correction
+      - ↪ madx-scripts: https://github.com/pylhc/MESS
     - Python Development:
       - Contributing: packages/development/contributing.md
       - Releases: packages/development/howto_release.md
@@ -203,21 +200,21 @@ nav:
       - Remote: guis/usage/remote.md
       - Releases: guis/usage/releases.md
   - Measurements & Corrections:
-    - Info: measurements/about.md
+    - About: measurements/about.md
     - Physics and Methods:
       - Introduction: measurements/physics/about.md
       - Error Propagation: measurements/physics/error_propagation.md
-      - BPM-Calibration: measurements/physics/bpm_calibration.md
-      - BPM-Filtering: measurements/physics/bpm_filtering.md
+      - BPM Calibration: measurements/physics/bpm_calibration.md
+      - BPM Filtering: measurements/physics/bpm_filtering.md
       - Harmonic Analysis: measurements/physics/harpy.md
       - Optics Analysis: measurements/physics/optics.md
       - Coupling: measurements/physics/coupling.md
       - K-Modulation: measurements/physics/kmod.md
-      - Linear IR Optics: measurements/physics/ir_linear_optics.md
-      - Nonlinear IR Optics: measurements/physics/ir_nonlinear_optics.md
-      - 3D-Kicks: measurements/physics/threedkicks.md
+      # - Linear IR Optics: measurements/physics/ir_linear_optics.md
+      # - Nonlinear IR Optics: measurements/physics/ir_nonlinear_optics.md
+      # - 3D-Kicks: measurements/physics/threedkicks.md
     - Procedures:
-        - Info: measurements/procedures/about.md
+        - Introduction: measurements/procedures/about.md
         - General Checks: measurements/procedures/general_checks.md
         - K Modulation: measurements/procedures/kmod.md
         - Rigid Waist Shift: measurements/procedures/rigid_waist_shift.md

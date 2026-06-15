@@ -1,9 +1,9 @@
-# Checklists
+# Procedure Checklists
 
 In this section there are multiple checklists for procedures, that can be used as guidance during measurements.
 To mark a task as finished, just click on the checkbox next to it!
 
-!!! warning "Non-Persistance"
+!!! info "Non-Persistance"
     The checked-boxes stay checked only as long as you stay on that page!
     Any reload will reset the ticks.
 
@@ -58,7 +58,7 @@ To mark a task as finished, just click on the checkbox next to it!
     There is in `pylhc` a callable module to extract the machine settings at a given time, which one can use to find the relevant information to enter into the logbook.
     A simple call would be, for instance here to get settings at call time:
     ```bash
-    /afs/cern.ch/eng/sl/lintrack/omc_python3/bin/python -m pylhc.machine_settings_info
+    /afs/cern.ch/eng/sl/lintrack/omc_python3/bin/python -m omc3.scripts.machine_settings_info
     ```
 
     Note that this needs to be run from a machine that has access to the technical network.

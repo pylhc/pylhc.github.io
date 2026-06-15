@@ -1,12 +1,11 @@
 # Git
 
-How to's concerning  `git` in general,  [`gitlab`][cern_gitlab], [`GitHub`][github] and CI.
+How to's concerning  `git` in general,  [`GitLab`][cern_gitlab]{target=_blank .cern_login}, [`GitHub`][github]{target=_blank} and CI/CD.
 
 ## Github Commandline Access Quickstart
 
 This section explains the basic steps to get started with GitHub.
 Since HTTP access via password only has been disabled by GitHub for security reasons, it is necessary to activate a secure method.
-
 This aims to be as short and concise as possible, for more extensive information, [see the GitHub security documentation][github_security]{target=_blank}.
 
 ### Setup SSH Access
@@ -93,7 +92,6 @@ git clone git@github.com:pylhc/omc3.git
 
 which you can find from the ++"Clone"++{.green-gui-button} button of the repository page on GitHub.
 
-
 !!! tip "Changing a Repository URL"
     In case you already have a repository cloned with the wrong URL, you can change it with `git remote set-url`, e.g.:
 
@@ -114,7 +112,6 @@ You can setup https access by creating and using a personal access token or a pa
 !!! note "Not yet documented"
     As we use SSH access, this section not yet written.
     Refer to the [GitHub documentation][github_https] for more information and maybe write up a quick howto.
-
 
 ## Configuring Gitlab CI to Automatically Pull into AFS
 

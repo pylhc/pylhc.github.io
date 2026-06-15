@@ -37,6 +37,7 @@ Main:
 Additional:
 
 - [Ruff][vscode_ruff]{target=_blank}: A fast Python linter.
+- [Ty][vscode_ty]{target=_blank}: A fast Python type checker and language server.
 - [Github Pull Requests][vscode_github]{target=_blank}: Interact with Github pull requests directly from VSCode.
 - [Markdown Table Formatter][vscode_markdown_tables]{target=_blank}: Format tables in markdown files.
 
@@ -52,6 +53,7 @@ Additional:
 [vscode_jupyter]: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter
 [vscode_python_extension]: https://marketplace.visualstudio.com/items?itemName=ms-python.python
 [vscode_ruff]: https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
+[vscode_ty]: https://marketplace.visualstudio.com/items?itemName=astral-sh.ty
 [vscode_github]: https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github
 [vscode_markdown_tables]: https://marketplace.visualstudio.com/items?itemName=fcrespo82.markdown-table-formatter
 [vscode_remote_ssh_extension]: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh

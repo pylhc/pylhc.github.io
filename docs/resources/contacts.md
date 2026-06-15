@@ -103,7 +103,7 @@ In recent years, cooperation between the BI BPM teams and OMC has increased sign
 
 !!! info "A Special Thanks to Michi Hostettler :heart:"
     While not the official support for software *Michi Hostettler* is incredibly knowledgeable and can very often help with questions or issues regarding various software packages used in accelerator operations.
-    Shoud you run into an issue, it is likely he has already encountered it before, and most likely that he has a solution.
+    Should you run into an issue, it is likely he has already encountered it before, and most likely that he has a solution.
 
     That is to say, if you are reading this, **thank you Michi for all your help** in the past, it has been invaluable!
 
