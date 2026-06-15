@@ -1,7 +1,6 @@
 # The OMC3 Software Documentation
 
-The `omc3` package is the python tool of the Optics Measurements and Corrections team at CERN.
-The `omc3` repository is the new version of our codes, refactored and rewritten for `Python 3.7+`.
+The `omc3` package the main Python 3 tool of the Optics Measurements and Corrections team at CERN.
 
 !!! info
     This section acts as a general documentation and guide to using the `omc3` package.
@@ -16,7 +15,7 @@ python -m pip install omc3
 ```
 
 Additionally, some features require access to the CERN Technical Network and require CERN-specific dependencies.
-Those are installable from the CERN `Acc-Py` index through the `cern` extra, and can be installed from the CERN network or by providing the `index-url`:
+Those are installable from the CERN [Acc-Py][accpy_docs]{target=_blank .cern_internal} index through the `cern` extra, and can be installed from the CERN network or by providing the `index-url`:
 
 ```bash
 python -m pip install --index-url http://acc-py-repo.cern.ch:8081/repository/vr-py-releases/simple --trusted-host acc-py-repo.cern.ch "omc3[cern]"
@@ -44,5 +43,7 @@ Contributions are welcome, but tightly controlled, see the [guidelines](../devel
 
 [omc3_gh]: https://github.com/pylhc/omc3
 [omc3_doc]: https://pylhc.github.io/omc3/
+
+[accpy_docs]: https://wikis.cern.ch/display/ACCPY/Accelerating+Python+Home
 [license]: https://github.com/pylhc/omc3/blob/master/LICENSE
 [omc_team]: https://github.com/orgs/pylhc/teams/omc-team

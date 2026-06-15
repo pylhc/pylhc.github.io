@@ -5,7 +5,7 @@ The GUI can be ran locally, provided you have access to `afs`, but most importan
 This section provides a short overview for the main features.
 
 !!! info
-    The gitlab CI automatically generates an [API documentation page][bbgui_doc_omc3]{target=_blank} based on the source code.<br>
+    The GitLab CI automatically generates an [API documentation page][bbgui_doc_omc3]{target=_blank} based on the source code.<br>
     (A legacy version for the `BetaBeat.src` branch is [also available][bbgui_doc_bbsrc]{target=_blank}.)
 
 One would usually start with setting up the GUI via:
@@ -22,7 +22,7 @@ The GUI provides several panels, each for a defined use and with a set of option
 - [The Correction Panel](correction_panel.md) to display the computed necessary corrections to reach the nominal model.
 - [The Amplitude Detuning Panel](ampdet.md) for amplitude detuning analysis.
 
-some GUI elements are shared between different panels, and are described in the [Common Components](common_components.md) section,
+Some GUI elements are shared between different panels, and are described in the [Common Components](common_components.md) section,
 in particular, information with regards to the shared [plotting backend](common_components.md#plotting) can be found there.
 
 This site will guide you through the GUI's layout and functionality.

@@ -37,4 +37,4 @@ The following pages are available:
 *[ADT]: LHC Transverse Damper
 *[BPM]: Beam Position Monitor
 
-[gui_basics]: ../about.md#running-in-the-ccc-in-2025
+[gui_basics]: ../about.md#running-in-the-ccc-in-2026

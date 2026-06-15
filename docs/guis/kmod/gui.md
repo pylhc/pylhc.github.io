@@ -35,7 +35,7 @@ The following pages are available:
 - [Performing a Modulation](modulating.md) for how to select circuits and settings and running modulations.
 - [Analyzing Data](analyzing.md) for how to retrieve previous modulations from `NXCALS`, analyze any modulation data and export results.
 
-[gui_basics]: ../about.md#running-in-the-ccc-in-2025
+[gui_basics]: ../about.md#running-in-the-ccc-in-2026
 [kmod_method]: ../../measurements/physics/kmod.md
 [kmod_measurements]: ../../measurements/procedures/kmod.md
 
