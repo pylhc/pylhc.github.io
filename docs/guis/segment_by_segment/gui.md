@@ -23,7 +23,7 @@ The interface allows users to easily input data, configure settings, run segment
     - Differences to the measurements are computed
     - Errors from the original BPM are also propagated and added to the measurement error
 
-!!! tip "Choosing the First BPM"
+!!! tip "Choice of First and Last BPMs"
     The measurement values and errors at the location of the first BPM in the segment are the ones used for the propagation.
     Depending on the quality of the measurement at said BPM, the propagation might yield low quality data.
     It can sometimes be a good idea to attempt the segment with a different start BPM (and end BPM for reverse propagation) if encountering this issue.
