@@ -39,17 +39,16 @@ test multiple correction schemes without having to make actual copies of the dat
 ### Grouping of Segments
 
 - Selecting multiple optics:
-  - Identically defined segments (name, start/end bpm) are grouped together and will be plotted in the same plot.
-  - Hovering over a segment in the table shows the optics it belongs to and if it has been run or not for that measuremnt (i.e. if the file exists).
-  - If the segment has been run for multiple optics, the plot will show the results for all those optics, allowing for easy comparison between different measurements or corrections for the same segment.
-  - Segments with different start/end BPMs are not grouped together, even if they have the same name, as they represent different segments in the accelerator and thus different analyses.
+    - Identically defined segments (name, start/end bpm) are grouped together and will be plotted in the same plot.
+    - Hovering over a segment in the table shows the optics it belongs to and if it has been run or not for that measuremnt (i.e. if the file exists).
+    - If the segment has been run for multiple optics, the plot will show the results for all those optics, allowing for easy comparison between different measurements or corrections for the same segment.
+    - Segments with different start/end BPMs are not grouped together, even if they have the same name, as they represent different segments in the accelerator and thus different analyses.
 
 - Selecting multiple segments:
     - By default, only segments with the same start BPMs are plotted together,
     as the position is relative to the start BPM. This can be changed in the settings (`Same segment start`), but it is not recommended to plot segments with different start BPMs together, as it can lead to confusion and misinterpretation of the results.
     - If `Model Location` is activated also segments with different start BPMs are plotted together,
     as they are now plotted relative to the model location, i.e. their position in the accelerator, which allows for easy comparison of segments with different start BPMs.
-
 
 ## Plotting
 
@@ -146,7 +145,6 @@ Automatically add default segments when loading a new measurement optics directo
 - **Suggest Correctors**:
 When opening the [corrections dialog](#corrections) for a new/not yet existing correction file, suggest correctors based on the optics and measurement data.
 
-
 ### Plot Settings
 
 <figure>
@@ -203,7 +201,6 @@ useful for [virtual copies](#virtual-copies) or if you had used a different outp
 - Tries to automatically asses which accelerator and beam. Tries to find correct model folder. If not successful needs to be [set manually](#edit-optics).
 - SbS analysis output is stored in sub-directories of the optics folder, by default in the `sbs` folder.
 - If activated in the settings, the GUI will automatically look for existing segments in the `sbs` folder and load them into the segments table.
-
 
 #### Virtual Copies
 
@@ -278,7 +275,6 @@ Warning:
   The SbS analysis will find then the next BPM in the measurement data and use that as the start and end of the segment.
   WARNING: This can lead to different start BPMs for different measuremens, even if the defined segment here has the same start element (the GUI checks only the segment definition, not the actual sbs output), depending on if the BPMs are filtered in the measurement data. This in turn can lead to confusion when plotting multiple segments together, as they will start at the same point in the plot, even though they represent different locations in the accelerator.
   This can be avoided by plotting the "Model Location" (see [settings](#plot-settings)).
-
 
 #### Run Segment-by-Segment Analysis
 
