@@ -1,7 +1,8 @@
 # The Segment-by-Segment GUI
 
-- provides a graphical user interface for the segment-by-segment method
-- allows users to easily input data, configure settings, and visualize results
+<!-- TODO: Add a link to an SbS page in "Physics and Methods" -->
+The Segment-by-Segment GUI provides a graphical user interface for the application of the segment-by-segment method
+The interface allows users to easily input data, configure settings, run segments and visualize results for various observables.
 
 ## General Workflow
 
