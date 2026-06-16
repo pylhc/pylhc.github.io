@@ -17,10 +17,17 @@ The interface allows users to easily input data, configure settings, run segment
 - Define segments
 - Define corrections (optional)
     - Corrections applied to the model
+
 - Run segment-by-segment analysis:
     - Optics parameters are propagated from the start and end through the segment
     - Differences to the measurements are computed
     - Errors from the original BPM are also propagated and added to the measurement error
+
+!!! tip "Choosing the First BPM"
+    The measurement values and errors at the location of the first BPM in the segment are the ones used for the propagation.
+    Depending on the quality of the measurement at said BPM, the propagation might yield low quality data.
+    It can sometimes be a good idea to attempt the segment with a different start BPM (and end BPM for reverse propagation) if encountering this issue.
+
 - Visualize results:
     - Difference between propagated model and measurement (solid line), i.e. how the measurement compares to the model, assuming they start with the same value at the start BPM (or end BPM for backward propagation).
     - Tells you where there are differences between model and actual machine, i.e. where errors are located.
