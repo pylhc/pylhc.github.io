@@ -181,6 +181,7 @@ nav:
       - BetaBeat.src: guis/betabeat/betabeatsource.md
     - Segment-by-Segment GUI:
       - About: guis/segment_by_segment/gui.md
+      - Settings: guis/segment_by_segment/settings.md
     - K-Modulation GUI:
       - About: guis/kmod/gui.md
       - Performing a Modulation: guis/kmod/modulating.md
