@@ -1,10 +1,13 @@
 # The Segment-by-Segment GUI
 
 <!-- TODO: Add a link to an SbS page in "Physics and Methods" -->
-The Segment-by-Segment GUI provides a graphical user interface for the application of the segment-by-segment method
+The Segment-by-Segment GUI provides a graphical interface to run the segment-by-segment method on various parts of the machine.
 The interface allows users to easily input data, configure settings, run segments and visualize results for various observables.
 
-## General Workflow
+The GUI is triggered from the Beta-Beat GUI's [Optics Panel](../betabeat/optics_panel.md) after running a full optics analysis.
+With an analysis selected, clicking the ++"Segment-by-Segment"++ button will trigger the GUI to start.
+<!-- TODO: check button name -->
+
 
 <figure>
   <center>
@@ -13,25 +16,25 @@ The interface allows users to easily input data, configure settings, run segment
   </center>
 </figure>
 
-- Load optics
-- Define segments
-- Define corrections (optional)
-    - Corrections applied to the model
+## General Workflow
 
-- Run segment-by-segment analysis:
-    - Optics parameters are propagated from the start and end through the segment
-    - Differences to the measurements are computed
-    - Errors from the original BPM are also propagated and added to the measurement error
+The typical workflow begins by loading the optics measurement data into the GUI, then defining the segments of the accelerator that you wish to analyse.
+Optionally, corrections can also be defined at this stage; these are applied to the model before the analysis is run.
+
+Once the setup is complete, the segment-by-segment analysis can be launched.
+During the analysis, optics parameters are propagated from the start and end BPMs through each defined segment.
+The propagated values are then compared against the measured data to compute the differences.
+Errors from the original BPMs are also propagated through the segment and added in quadrature to the measurement uncertainty.
 
 !!! tip "Choice of First and Last BPMs"
     The measurement values and errors at the location of the first BPM in the segment are the ones used for the propagation.
     Depending on the quality of the measurement at said BPM, the propagation might yield low quality data.
     It can sometimes be a good idea to attempt the segment with a different start BPM (and end BPM for reverse propagation) if encountering this issue.
 
-- Visualize results:
-    - Difference between propagated model and measurement (solid line), i.e. how the measurement compares to the model, assuming they start with the same value at the start BPM (or end BPM for backward propagation).
-    - Tells you where there are differences between model and actual machine, i.e. where errors are located.
-    - Check forward (arrows to the right) and backward propagation (arrows to the left), whether the deviations start to occur after same location.
+After the analysis has completed, the results can be visualised directly in the GUI.
+The solid line in the plot represents the difference between the propagated model and the measurement, showing how the measurement compares to the model under the assumption that both start with the same value at the start BPM (or the end BPM, for backward propagation).
+This allows you to identify where discrepancies between the model and the actual machine exist, effectively pinpointing the locations of optics errors.
+It is useful to inspect both forward propagation (indicated by rightward arrows) and backward propagation (indicated by leftward arrows) to check whether deviations begin to appear after the same location from both directions, which helps confirm the error source.
 
 ### Correction Idea
 
@@ -39,7 +42,7 @@ The interface allows users to easily input data, configure settings, run segment
 - Create multiple "virtual" copies of the measurement (same input data, different output folder) to
 test multiple correction schemes without having to make actual copies of the data.
 - Create multiple segments with different start BPMs to test the effect of the starting point on the results.
-- Choose in the settings between plotting the matched value or the expected value of the corrected data (dashed line):
+- Choose in the [settings](settings.md#plot-settings) between plotting the matched value or the expected value of the corrected data (dashed line):
     - Matched value (corr): the difference between the propagated model after applying the correction to the nominal propagated model. This should ideally be close to the measurement.
     - Expected value (expct): the difference of the measured values to the corrected propagated model.
       This is the expected result of the SbS analysis (i.e. difference between propagated model and measurement) after applying the correction to the machine, and thus should be close to zero.
@@ -54,7 +57,7 @@ test multiple correction schemes without having to make actual copies of the dat
 
 - Selecting multiple segments:
     - By default, only segments with the same start BPMs are plotted together,
-    as the position is relative to the start BPM. This can be changed in the settings (`Same segment start`), but it is not recommended to plot segments with different start BPMs together, as it can lead to confusion and misinterpretation of the results.
+    as the position is relative to the start BPM. This can be changed in the [settings](settings.md#plot-settings) (`Same segment start`), but it is not recommended to plot segments with different start BPMs together, as it can lead to confusion and misinterpretation of the results.
     - If `Model Location` is activated also segments with different start BPMs are plotted together,
     as they are now plotted relative to the model location, i.e. their position in the accelerator, which allows for easy comparison of segments with different start BPMs.
 
@@ -62,7 +65,7 @@ test multiple correction schemes without having to make actual copies of the dat
 
 - Solid line: difference between propagated model and measurement, i.e. how the measurement compares to the model, assuming they start with the same value at the start BPM (or end BPM for backward propagation).
 
-- Dashed line (if corrections are applied): Either corrected model diff (corr) or expected measurement diff (expct) depending on the settings. See above for details.
+- Dashed line (if corrections are applied): Either corrected model diff (corr) or expected measurement diff (expct) depending on the [settings](settings.md#plot-settings). See above for details.
 
 - Arrow Markers: direction of propagation (right for forward, left for backward).
 
@@ -96,7 +99,7 @@ In the plot, you can use the following shortcuts:
   </center>
 </figure>
 
-- **Settings**: Open the [settings dialog](#settings).
+- **Settings**: Open the [settings dialog](settings.md).
 - **Exit**: Close the GUI.
 
 ### View
@@ -109,7 +112,7 @@ In the plot, you can use the following shortcuts:
 </figure>
 
 - **Full Screen**: Toggle full-screen mode.
-- **Plotting Settings**: Quick access to the checkboxes of the [plotting settings dialog](#plot-settings). For details, see the [plotting settings section](#plot-settings).
+- **Plotting Settings**: Quick access to the checkboxes of the [plotting settings dialog](settings.md#plot-settings). For details, see the [plotting settings section](settings.md#plot-settings).
 - **Log Console**: Show or hide the [log console](#log-console) at the bottom of the GUI.
 
 ### Help
@@ -127,62 +130,8 @@ In the plot, you can use the following shortcuts:
 
 ## Settings
 
-### Main Settings
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/settings_main.png" width="100%" alt="Main Settings"/>
-  <figcaption>The main settings.</figcaption>
-  </center>
-</figure>
-
-Note: Hints available on hovering over the settings text.
-
-- **Working Directory**:
-The directory where the input files are located.
-The GUI will use this directory as the default directory when opening file dialogs for loading optics and measurement data.
-
-- **Autoload Segments**:
-Automatically load existing segements when loading a new measurement optics directory.
-This looks for files created by the GUI in earlier runs and for now only works if the segment has actually been run.
-(Future implementation: also check for json files - see `Save` and `Load` buttons.)
-
-- **Auto-Add Default Segments**:
-Automatically add default segments when loading a new measurement optics directory.
-
-- **Suggest Correctors**:
-When opening the [corrections dialog](#corrections) for a new/not yet existing correction file, suggest correctors based on the optics and measurement data.
-
-### Plot Settings
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/settings_plotting.png" width="100%" alt="Plot Settings"/>
-  <figcaption>The plotting settings.</figcaption>
-  </center>
-</figure>
-
-Note: Hints available on hovering over the settings text.
-
-- **Show Model**: Adds markers for the location of elements in the model to the plots.
-- **Show Legend**: Show legends in the plots.
-- **Marker Size**: Size of the markers in the plots.
-- **Expectation**: If run with corrections, show the expected measurement difference instead of the corrected model difference (details above).
-- **Forward Propagation**: Show forward propagation results (arrows to the right).
-- **Backward Propagation**: Show backward propagation results (arrows to the left).
-- **Connect X**: Keep the same X-Axis limits for both charts when zooming.
-- **Connect Y**: Keep the same Y-Axis limits for both charts when zooming.
-- **Reset Zoom**: When chaning segments, reset the zoom to the original view.
-                  When deactivated, the current limits will be kept when changing segments, which can be useful for comparing different segments or optics with the same zoom level.
-- **Same Segment Start**: Plot segments together, even if they have different start BPMs. Not recommended, as it can lead to confusion and misinterpretation of the results, as they will both start at the same point in the plot, even though they represent different locations in the accelerator.
-- **Model Location**: Plot segments relative to the model location, i.e. their position in the accelerator, which allows for easy comparison of segments with different start BPMs. If deactivated, segments will start at a location of zero at their start BPM.
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/view_model_location.png" width="100%" alt="Model Location"/>
-  <figcaption>Example of two segements with different start BPMs when plotted with `Model Location` activated.</figcaption>
-  </center>
-</figure>
+The GUI's settings are accessible from the SbS-Gui menu and are documented on the dedicated [Settings](settings.md) page.
+This includes the [main settings](settings.md#main-settings) (working directory, autoload behaviour, corrector suggestions) and the [plot settings](settings.md#plot-settings) (visibility toggles, zoom behaviour, segment grouping options).
 
 ## Side Panel
 
@@ -208,7 +157,7 @@ useful for [virtual copies](#virtual-copies) or if you had used a different outp
 
 - Tries to automatically asses which accelerator and beam. Tries to find correct model folder. If not successful needs to be [set manually](#edit-optics).
 - SbS analysis output is stored in sub-directories of the optics folder, by default in the `sbs` folder.
-- If activated in the settings, the GUI will automatically look for existing segments in the `sbs` folder and load them into the segments table.
+- If activated in the [settings](settings.md#main-settings), the GUI will automatically look for existing segments in the `sbs` folder and load them into the segments table.
 
 #### Virtual Copies
 
@@ -255,7 +204,7 @@ Note: The parameters will be checked for validity when clicking `OK`. Which para
 
 - Click `Corrections` button to open the corrections dialog, where you can load or create a correction file to apply to the model.
 - If a correction file is already loaded, the dialog will show the content of the file and allow you to edit it.
-- If no correction file is loaded, the dialog may suggest correctors based on the optics and measurement data, if so activated in the settings.
+- If no correction file is loaded, the dialog may suggest correctors based on the optics and measurement data, if so activated in the [settings](settings.md#main-settings).
 - The path to the corrections file is applied to all currently selected optics and can also be edited in the [edit optics dialog](#edit-optics).
 - If some of the selected measurements already have the same correction file loaded, but some have none, a dialog will ask you whether you want to use the same correction file for all selected optics.
 - If there is a conflict between multiple correction files in the selected optics measurements, an error message will be shown.
@@ -282,7 +231,7 @@ Warning:
 - Start and End of a Segment as given here do not need to be BPMs but could be any element of the model.
   The SbS analysis will find then the next BPM in the measurement data and use that as the start and end of the segment.
   WARNING: This can lead to different start BPMs for different measuremens, even if the defined segment here has the same start element (the GUI checks only the segment definition, not the actual sbs output), depending on if the BPMs are filtered in the measurement data. This in turn can lead to confusion when plotting multiple segments together, as they will start at the same point in the plot, even though they represent different locations in the accelerator.
-  This can be avoided by plotting the "Model Location" (see [settings](#plot-settings)).
+  This can be avoided by plotting the "Model Location" (see [settings](settings.md#plot-settings)).
 
 #### Run Segment-by-Segment Analysis
 
@@ -315,7 +264,7 @@ Warning:
 E.g. for the lhc these are the segments
 IP1, IP2, IP5 and IP8 starting from BPM.L12 to BPM.R12, which contain the main interaction points of the LHC and thus of particular interest for the SbS analysis.
 
-- If activated in the settings, the GUI will automatically add these default segments when loading a new measurement optics directory.
+- If activated in the [settings](settings.md#main-settings), the GUI will automatically add these default segments when loading a new measurement optics directory.
 
 #### Copy Segment
 
