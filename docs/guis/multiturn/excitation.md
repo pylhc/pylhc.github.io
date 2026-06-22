@@ -264,6 +264,11 @@ Currently ADT AC-dipole measurements are almost identical to the AC Dipole measu
 This deficit can be overcome in improving the signal-to-noise ratio through increased measurement lengths, i.e. up to __40,000 turns__.
 Refer to the [AC Dipole Excitation](#ac-dipole-excitation) section above for the settings and steps.
 
+!!! info "Kick Amplitudes"
+    When used in coupling mode, a maximum kick amplitude of 30% can be used, although this depends on the working point and tune deltas used.
+    It is recommended to start around 10% and go up in small steps while watching the losses.
+    In any other configuration, please refer to the EIC on shift.
+
 Trigger an acquisition by clicking the yellow ++"Acquire with ADT/AC excitation"++ button at the bottom left of the GUI.
 Just as with the AC Dipole, make sure to keep an eye on the losses (via the `BLM Fixed Display` and beam intensities) during the acquisition.
 
