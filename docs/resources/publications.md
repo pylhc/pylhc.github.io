@@ -57,6 +57,21 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
+??? abstract "New Analytical Formulas for the Rank of Farey Fractions and Estimates of the Local Discrepancy, `R. Tomás`, [Mathematics 2025, 13, 140](https://www.mdpi.com/2227-7390/13/1/140){target=_blank}"
+    ```
+    @article{TomasNewAnalyticalFormuylasRankFareyFractions,
+      title   = {New Analytical Formulas for the Rank of Farey Fractions and Estimates of the Local Discrepancy},
+      author  = {Tomás García, Rogelio},
+      doi     = {10.3390/math13010140},
+      journal = {Mathematics},
+      month   = {jan},
+      number  = {1},
+      issn    = {2227-7390},
+      url     = {https://www.mdpi.com/2227-7390/13/1/140},
+      volume  = {13},
+      year    = {2025},
+    }
+    ```
 
 ### 2024 Papers
 
