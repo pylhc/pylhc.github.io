@@ -18,6 +18,36 @@ This page compiles various published papers, reports, and MD notes from OMC team
 
 ## Journal Publications
 
+### 2026 Papers
+
+### 2025 Papers
+
+??? abstract "Resonance Gaps, Discrepancies, and Lines, `R. Tomás`, [Phys. Rev. Accel. Beams 28, 114001, 2025](https://journals.aps.org/prab/abstract/10.1103/2gfw-xckn){target=_blank}"
+    ```
+    @article{TomasResonanceGapLines,
+    title = {Resonance Gaps, Discrepancies, and Lines},
+    author = {Tom\'as Garc\'{\i}a, Rogelio},
+    year = {2025},
+    month = {Nov},
+    journaltitle = {Physical Review Accelerators and Beams},
+    shortjournal = {Phys. Rev. Accel. Beams},
+    volume = {28},
+    number = {12},
+    pages = {114001},
+    publisher = {American Physical Society},
+    doi = {10.1103/2gfw-xckn},
+    url = {https://link.aps.org/doi/10.1103/2gfw-xckn}
+    }
+    ```
+@article{2gfw-xckn,
+
+
+
+
+
+
+}
+
 ### 2024 Papers
 
 ### 2023 Papers
