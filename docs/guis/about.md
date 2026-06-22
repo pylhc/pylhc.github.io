@@ -21,6 +21,10 @@ The GUIs can be started from your development environment or via deployed `.jnlp
     - Latest [Beta-Beating development version][dev_bbgui_omc3]{target=_blank}.
     - Complete [list of releases][releases_bbgui_omc3]{target=_blank}.
 
+=== "Segment-by-Segment"
+
+    The SbS GUI is a Python process started from within the Beta-Beat GUI's optics panel.
+
 === "Beta-Beat (Legacy)"
 
     - Latest [Beta-Beating production version][prod_bbgui]{target=_blank}.
@@ -60,7 +64,7 @@ Open the `.jnlp` executable inside a browser, or [call it with `jws` from the co
 
 ## Requirements
 
-The following are required to run the GUIs:
+The following are required to run the Java-based GUIs:
 
 - A version of `Java>=8`.
 - The [`jws`][jws]{target=_blank .cern_internal} replacement for `javaws` (in case of errors, [see below](#problems-with-execution-due-to-disabled-java)).
@@ -70,7 +74,7 @@ The following are required to run the GUIs:
     To do so, either `ssh -X` to the `cs-ccr-dev` machines or use [the sshuttle method][sshuttle_method].
 
 !!! tip "Kick Groups"
-    To make use of the Kick-Groups, your machine [needs to have `/nfs` and `/user` mounted][mounting_resources], like the `cs-ccr-dev`  and `cs-ccr-optics` machines.
+    To make use of the Kick Groups, your machine [needs to have `/nfs` and `/user` mounted][mounting_resources], like the `cs-ccr-dev`  and `cs-ccr-optics` machines.
 
 ## Troubleshooting
 
