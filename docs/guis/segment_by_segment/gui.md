@@ -1,13 +1,12 @@
 # The Segment-by-Segment GUI
 
-<!-- TODO: Add a link to an SbS page in "Physics and Methods" -->
 The Segment-by-Segment GUI provides a graphical interface to run the segment-by-segment method on various parts of the machine.
 The interface allows users to easily input data, configure settings, run segments and visualize results for various observables.
+For information about the Segment-by-Segment method, see its dedicated [explanatory page](../../measurements/physics/sbs.md).
 
-The GUI is triggered from the Beta-Beat GUI's [Optics Panel](../betabeat/optics_panel.md) after running a full optics analysis.
+The GUI is launched from the Beta-Beat GUI's [Optics Panel](../betabeat/optics_panel.md) after running a full optics analysis.
 With an analysis selected, clicking the ++"Segment-by-Segment"++ button will trigger the GUI to start.
 <!-- TODO: check button name -->
-
 
 <figure>
   <center>
