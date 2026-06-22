@@ -3,6 +3,7 @@
 The OMC team uses several GUIs to help running data acquisition and analysis codes, each for a defined use:
 
 - [The Beta-Beat GUI](betabeat/gui.md) to perform analysis of measurement files and compute corrections.
+- [The Segment-by-Segment GUI](segment_by_segment/gui.md) to determine local linear optics corrections in specific machine segments.
 - [The Kmod GUI](kmod/gui.md) to perform K-modulation, analyse data and export results.
 - [The Multiturn GUI](multiturn/gui.md) to perform beam excitation and data acquisition.
 - [The Chroma GUI](chroma/gui.md) to determine chromaticity from RF scan analysis and compute corrections.
@@ -117,6 +118,7 @@ If so, check that you can import `numpy` from the `OMC` production Python enviro
 If this leads to the previously raised error, then the permissions are broken.
 Either fix the permissions on `afs` or ask someone to do so for you.
 
+*[SbS]: Segment-by-Segment
 *[TN]: Technical Network
 *[LSA]: LHC Software Architecture
 *[GPN]: General Purpose Network
