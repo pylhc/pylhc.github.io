@@ -92,6 +92,23 @@ This page compiles various published papers, reports, and MD notes from OMC team
     }
     ```
 
+??? abstract "Impact of Two-Dimensional Decoherence on the Measurement of Resonance Driving Terms, `M. Hofer and R. Tomás`, [. Phys.: Conf. Ser. 2687 062006](https://iopscience.iop.org/article/10.1088/1742-6596/2687/6/062006){target=_blank}"
+    ```
+    @article{HoferTwoDDecoherenceMeasurementRDTs,
+      title     = {Impact of Two-Dimensional Decoherence on the Measurement of Resonance Driving Terms},
+      author    = {Hofer, M. and Tomás, R.},
+      doi       = {10.1088/1742-6596/2687/6/062006},
+      journal   = {Journal of Physics: Conference Series},
+      month     = {jan},
+      number    = {6},
+      publisher = {IOP Publishing},
+      pages     = {062006},
+      url       = {https://doi.org/10.1088/1742-6596/2687/6/062006},
+      volume    = {2687},
+      year      = {2024},
+    }
+    ```
+
 ### 2023 Papers
 
 ??? abstract "First Operational Dodecapole Correction in the LHC, `J. Dilly et al.`, [Phys. Rev. Accel. Beams 26, 121001, 2023](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.121001){target=_blank}"
