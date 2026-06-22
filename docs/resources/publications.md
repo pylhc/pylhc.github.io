@@ -75,6 +75,23 @@ This page compiles various published papers, reports, and MD notes from OMC team
 
 ### 2024 Papers
 
+??? abstract "Optics for Landau Damping with Minimized Octupolar Resonances in the LHC, `R. Tomás et. al.`, [JINST 19 T05010](https://iopscience.iop.org/article/10.1088/1748-0221/19/05/T05010){target=_blank}"
+    ```
+    @article{TomasLandauDampingMinimizedOctupolarResonances,
+      title     = {Optics for Landau Damping with Minimized Octupolar Resonances in the LHC},
+      author    = {Tomás, R. and Carlier, F. and Chudoba, F. and Deniau, L. and Dilly, J. and Ferrentino, V. and Horney, S. and Hostettler, M. and Keintzel, J. and Kostoglou, S. and Le Garrec, M. and Maclean, E.H. and Nissinen, T. and Paraschou, K. and Persson, T. and Solfaroli, M. and Soubelet, F. and Wegscheider, A. and Wenninger, J.},
+      doi       = {10.1088/1748-0221/19/05/T05010},
+      journal   = {Journal of Instrumentation},
+      month     = {may},
+      number    = {05},
+      publisher = {IOP Publishing},
+      pages     = {T05010},
+      url       = {https://doi.org/10.1088/1748-0221/19/05/T05010},
+      volume    = {19},
+      year      = {2024},
+    }
+    ```
+
 ### 2023 Papers
 
 ??? abstract "First Operational Dodecapole Correction in the LHC, `J. Dilly et al.`, [Phys. Rev. Accel. Beams 26, 121001, 2023](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.121001){target=_blank}"
