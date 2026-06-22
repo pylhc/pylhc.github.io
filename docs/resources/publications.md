@@ -18,24 +18,113 @@ This page compiles various published papers, reports, and MD notes from OMC team
 
 ## Journal Publications
 
+### 2026 Papers
+
+### 2025 Papers
+
+??? abstract "Resonance Gaps, Discrepancies, and Lines, `R. Tomás`, [Phys. Rev. Accel. Beams 28, 114001, 2025](https://journals.aps.org/prab/abstract/10.1103/2gfw-xckn){target=_blank}"
+    ```
+    @article{TomasResonanceGapLines,
+      title        = {Resonance Gaps, Discrepancies, and Lines},
+      author       = {Tom\'as Garc\'{\i}a, Rogelio},
+      year         = {2025},
+      month        = {Nov},
+      journaltitle = {Physical Review Accelerators and Beams},
+      shortjournal = {Phys. Rev. Accel. Beams},
+      volume       = {28},
+      number       = {12},
+      pages        = {114001},
+      publisher    = {American Physical Society},
+      doi          = {10.1103/2gfw-xckn},
+      url          = {https://link.aps.org/doi/10.1103/2gfw-xckn}
+    }
+    ```
+
+??? abstract "First Measurement of Resonance Driving Terms from Head-on Beam-Beam interaction in the LHC, `F.S. Carlier, R. Tomás and X. Buffat`, [JINST 20 P10005](https://iopscience.iop.org/article/10.1088/1748-0221/20/10/P10005){target=_blank}"
+    ```
+    @article{CarlierFirstMeasurementLRBBRDTs,
+      title     = {First measurement of resonance driving terms from head-on beam-beam interaction in the LHC},
+      author    = {Carlier, F. and Tomás, R. and Buffat, X.},
+      doi       = {10.1088/1748-0221/20/10/P10005},
+      journal   = {Journal of Instrumentation},
+      month     = {oct},
+      number    = {10},
+      publisher = {IOP Publishing},
+      pages     = {P10005},
+      url       = {https://doi.org/10.1088/1748-0221/20/10/P10005},
+      volume    = {20},
+      year      = {2025},
+    }
+    ```
+
+??? abstract "New Analytical Formulas for the Rank of Farey Fractions and Estimates of the Local Discrepancy, `R. Tomás`, [Mathematics 2025, 13, 140](https://www.mdpi.com/2227-7390/13/1/140){target=_blank}"
+    ```
+    @article{TomasNewAnalyticalFormuylasRankFareyFractions,
+      title   = {New Analytical Formulas for the Rank of Farey Fractions and Estimates of the Local Discrepancy},
+      author  = {Tomás García, Rogelio},
+      doi     = {10.3390/math13010140},
+      journal = {Mathematics},
+      month   = {jan},
+      number  = {1},
+      issn    = {2227-7390},
+      url     = {https://www.mdpi.com/2227-7390/13/1/140},
+      volume  = {13},
+      year    = {2025},
+    }
+    ```
+
 ### 2024 Papers
+
+??? abstract "Optics for Landau Damping with Minimized Octupolar Resonances in the LHC, `R. Tomás et. al.`, [JINST 19 T05010](https://iopscience.iop.org/article/10.1088/1748-0221/19/05/T05010){target=_blank}"
+    ```
+    @article{TomasLandauDampingMinimizedOctupolarResonances,
+      title     = {Optics for Landau Damping with Minimized Octupolar Resonances in the LHC},
+      author    = {Tomás, R. and Carlier, F. and Chudoba, F. and Deniau, L. and Dilly, J. and Ferrentino, V. and Horney, S. and Hostettler, M. and Keintzel, J. and Kostoglou, S. and Le Garrec, M. and Maclean, E.H. and Nissinen, T. and Paraschou, K. and Persson, T. and Solfaroli, M. and Soubelet, F. and Wegscheider, A. and Wenninger, J.},
+      doi       = {10.1088/1748-0221/19/05/T05010},
+      journal   = {Journal of Instrumentation},
+      month     = {may},
+      number    = {05},
+      publisher = {IOP Publishing},
+      pages     = {T05010},
+      url       = {https://doi.org/10.1088/1748-0221/19/05/T05010},
+      volume    = {19},
+      year      = {2024},
+    }
+    ```
+
+??? abstract "Impact of Two-Dimensional Decoherence on the Measurement of Resonance Driving Terms, `M. Hofer and R. Tomás`, [. Phys.: Conf. Ser. 2687 062006](https://iopscience.iop.org/article/10.1088/1742-6596/2687/6/062006){target=_blank}"
+    ```
+    @article{HoferTwoDDecoherenceMeasurementRDTs,
+      title     = {Impact of Two-Dimensional Decoherence on the Measurement of Resonance Driving Terms},
+      author    = {Hofer, M. and Tomás, R.},
+      doi       = {10.1088/1742-6596/2687/6/062006},
+      journal   = {Journal of Physics: Conference Series},
+      month     = {jan},
+      number    = {6},
+      publisher = {IOP Publishing},
+      pages     = {062006},
+      url       = {https://doi.org/10.1088/1742-6596/2687/6/062006},
+      volume    = {2687},
+      year      = {2024},
+    }
+    ```
 
 ### 2023 Papers
 
 ??? abstract "First Operational Dodecapole Correction in the LHC, `J. Dilly et al.`, [Phys. Rev. Accel. Beams 26, 121001, 2023](https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.121001){target=_blank}"
     ```
     @article{DillyFirstOperationalDodecapole2023,
-    title = {First Operational Dodecapole Correction in the {{LHC}}},
-    author = {Dilly, J. and Ferrentino, V. and Le Garrec, M. and Maclean, E. H. and Malina, L. and Persson, T. and Pugnat, T. and van Riesen-Haupt, L. and Soubelet, F. and Tomás, R.},
-    date = {2023-12-05},
-    journaltitle = {Physical Review Accelerators and Beams},
-    shortjournal = {Phys. Rev. Accel. Beams},
-    volume = {26},
-    number = {12},
-    pages = {121001},
-    publisher = {American Physical Society},
-    doi = {10.1103/PhysRevAccelBeams.26.121001},
-    url = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.121001},
+      title = {First Operational Dodecapole Correction in the {{LHC}}},
+      author = {Dilly, J. and Ferrentino, V. and Le Garrec, M. and Maclean, E. H. and Malina, L. and Persson, T. and   Pugnat, T. and van Riesen-Haupt, L. and Soubelet, F. and Tomás, R.},
+      date = {2023-12-05},
+      journaltitle = {Physical Review Accelerators and Beams},
+      shortjournal = {Phys. Rev. Accel. Beams},
+      volume = {26},
+      number = {12},
+      pages = {121001},
+      publisher = {American Physical Society},
+      doi = {10.1103/PhysRevAccelBeams.26.121001},
+      url = {https://link.aps.org/doi/10.1103/PhysRevAccelBeams.26.121001},
     }
     ```
 
