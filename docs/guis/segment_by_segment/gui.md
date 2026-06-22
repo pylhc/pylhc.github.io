@@ -192,7 +192,7 @@ NOTE: Button maybe better in placed in the segments? As it needs to know which s
 - **Output**: Path to the output folder, where the SbS analysis output is stored.
 - **Corrections**:
 Path to the corrections file, which needs to contain all corrections to be applied to the model.
-The corrections are exectuted by MAD-X as is, to correct the model, so they need to be written in the MAD-X syntax and be the "inverse" of the corrections applied in the machine (MAD-X/LSA sign conventions apply).
+The corrections are executed by MAD-X as is, to correct the model, so they need to be written in the MAD-X syntax and be the "inverse" of the corrections applied in the machine (MAD-X/LSA sign conventions apply).
 - **Year**: Year of the accelerator optics to use (i.e. the acc-models branch to use to create the appropriate model. See `omc3` model creators).
 - **Ring**: Ring to use if applicable (for PSB)
 - **Beam**: LHC beam to use if applicable, e.g. `1` or `2`.
@@ -234,7 +234,7 @@ Warning:
 
 #### Run Segment-by-Segment Analysis
 
-- Click `Run Segement(s)` button to run the segment-by-segment analysis for the currently selected segment and optics.
+- Click `Run Segment(s)` button to run the segment-by-segment analysis for the currently selected segment and optics.
 - This will re-run the analysis for the selected segment and optics, even if the file already exists.
 - When SbS analysis is running in the background, a spinner icon will appear at the bottom right of the GUI.
 - Hovering over the "running tasks" text will show the name of the currently running task (i.e. `SbS for <optics name>`).
@@ -292,7 +292,7 @@ FUTURE: Save the segment definition (name, start, end) in a json file in the out
 
 - Logging output from GUI actions.
 - Logging output from called python modules.
-- Expandable and collapsable via arrow.
+- Expandable and collapsible via arrow.
 - Close with the "X" button on the right (re-enable through the [`View` menu](#view)).
 - Movable and resizable.
 - Right-click in the console to open the context menu, which also allows to to access the preferences.

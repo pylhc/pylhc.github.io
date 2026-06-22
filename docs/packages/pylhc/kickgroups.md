@@ -2,7 +2,7 @@
 
 When [performing beam measurements](../../guis/multiturn/gui.md), we typically create *kick groups* to gather specific kicks all relating to the same measurements into a same structure.
 
-When coming back to specific measurements, instead of looking at the list of corresponding files in a kickgroup via the logbook, it can be done programatically.
+When coming back to specific measurements, instead of looking at the list of corresponding files in a kickgroup via the logbook, it can be done programmatically.
 The `pylhc` package provides a script to query the list of kickgroups as well as the various files in a kickgroup.
 
 Fetching the available kickgroups goes as `python -m pylhc.kickgroups list`.
