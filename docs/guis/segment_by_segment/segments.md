@@ -13,7 +13,7 @@ It is possible to directly point to an existing SbS output folder, which is usef
 
 !!! info "Corresponding Models"
     At load time, the GUI will attempt to determine the accelerator type, beam and the appropriate model folder.
-    Should this automatic detection fail, these parameters need to be set manually via the `Edit` button (see **Edit Optics** below).
+    Should this automatic detection fail, these parameters need to be set manually via the `Edit` button (see **Editing Optics** below).
 
 Once loaded the optics entries will appear in the side panel, color-coded by beam.
 Hovering over an optics name displays a tooltip with a summary of its associated paths and accelerator parameters.
@@ -28,7 +28,15 @@ Hovering over an optics name displays a tooltip with a summary of its associated
 The SbS analysis output is by default stored in folder named `sbs` within the corresponding optics folder.
 If the corresponding option is activated in the [settings](settings.md#main-settings), the GUI will automatically scan the `sbs` folder for existing segment results and load them into the segments table when loading the data.
 
-??? info "Edit Optics"
+??? info "Editing Optics"
+
+    The `edit` dialog can be opened by clicking the ++"Edit"++ button or by double-clicking the optics name in the side panel.
+    It allows one to modify the paths and accelerator parameters associated with the loaded optics.
+
+    Note that the measurement path itself cannot be changed from this dialog.
+    To use a different measurement directory, load a new measurement folder instead.
+
+    The edit window will look like so.
 
     <figure>
       <center>
@@ -37,23 +45,21 @@ If the corresponding option is activated in the [settings](settings.md#main-sett
       </center>
     </figure>
 
-    The edit dialog can be opened by clicking the `Edit` button or by double-clicking the optics name in the side panel.
-    It allows you to modify the paths and accelerator parameters associated with the loaded optics.
-    Note that the measurement path itself cannot be changed from this dialog; to use a different measurement directory, load a new measurement folder instead.
-
     The available fields are:
 
     - **Model**: Path to the model folder, which should contain the optics files for the model.
     - **Accelerator**: Accelerator name, e.g. `lhc`, `sps`, `ps`, `psbooster`.
-    - **Output**: Path to the output folder where the SbS analysis results are stored.
-    - **Corrections**: Path to the corrections file containing all corrections to be applied to the model. The corrections are executed by MAD-X as-is to correct the model, so they must be written in MAD-X syntax and represent the "inverse" of the corrections applied in the machine (MAD-X/LSA sign conventions apply).
-    - **Year**: Year of the accelerator optics to use, corresponding to the `acc-models` branch from which the appropriate model is created (see the `omc3` model creators).
+    - **Output**: Path to the output folder where the SbS analysis results are stored. Defaults to `sbs` within the measurement folder.
+    - **Corrections**: Path to the corrections file containing all corrections to be applied to the model. The corrections are executed by `MAD-X` as-is to correct the model, so they must be written in `MAD-X` syntax and represent the "inverse" of the corrections applied in the machine (`MAD-X`/`LSA` sign conventions apply).
+    - **Year**: Year of the accelerator optics to use, corresponding to the `acc-models` branch from which the appropriate model is created. See the [omc3 model creation](../betabeat/model_creation.md).
     - **Ring**: Ring to use, if applicable (relevant for PSB).
     - **Beam**: LHC beam to use, if applicable, e.g. `1` or `2`.
 
-    The parameters are validated when clicking `OK`. Which parameters are required depends on the selected accelerator.
+    The parameters are validated when clicking `OK`.
+    Which parameters are required depends on the selected accelerator.
 
-To remove an optics entry from the GUI, select it and click the `Remove` button — this only unloads it from the interface and does not delete any files from disk.
+To remove an optics entry from the GUI, select it and click the ++"Remove"++ button.
+This only unloads it from the interface and does not delete any files from disk.
 
 ## Defining Segments
 
