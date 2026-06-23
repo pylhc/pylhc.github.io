@@ -1,12 +1,25 @@
 # The Segment-by-Segment GUI
 
 The Segment-by-Segment GUI provides a graphical interface to run the segment-by-segment method on various parts of the machine.
-The interface allows users to easily input data, configure settings, run segments and visualize results for various observables.
+The interface allows users to input data, configure settings, run segments, determine corrections and visualise results for various observables.
 For information about the Segment-by-Segment method, see its dedicated [explanatory page](../../measurements/physics/sbs.md).
 
 The GUI is launched from the Beta-Beat GUI's [Optics Panel](../betabeat/optics_panel.md) after running a full optics analysis.
 With an analysis selected, clicking the ++"Segment-by-Segment"++ button will trigger the GUI to start.
 <!-- TODO: check button name -->
+
+??? info "Running from the Command Line"
+    The Sbs GUI is a Python program and part of the `omc3_gui` package.
+    It can be started from the command line with by providing desired arguments to the following call:
+
+    ```bash
+    python -m omc3_gui.sbs_gui # args here
+    ```
+
+    Note that this GUI requires the `omc3` package, a QT recent bindings (`PyQT` / `PySide`) and the `accwidgets` package which is quite CERN specific.
+    It is recommended to run it from the BetaBeat GUI as instructed above.
+
+The default main GUI window should open to this view:
 
 <figure>
   <center>
@@ -15,130 +28,9 @@ With an analysis selected, clicking the ++"Segment-by-Segment"++ button will tri
   </center>
 </figure>
 
-## General Workflow
+For details on the menu bar, configurable settings and the log console, see the [Menu & Settings](settings.md) page.
 
-The typical workflow begins by loading the optics measurement data into the GUI, then defining the segments of the accelerator that you wish to analyse.
-Optionally, corrections can also be defined at this stage; these are applied to the model before the analysis is run.
-
-Once the setup is complete, the segment-by-segment analysis can be launched.
-During the analysis, optics parameters are propagated from the start and end BPMs through each defined segment.
-The propagated values are then compared against the measured data to compute the differences.
-Errors from the original BPMs are also propagated through the segment and added in quadrature to the measurement uncertainty.
-
-!!! tip "Choice of First and Last BPMs"
-    The measurement values and errors at the location of the first BPM in the segment are the ones used for the propagation.
-    Depending on the quality of the measurement at said BPM, the propagation might yield low quality data.
-    It can sometimes be a good idea to attempt the segment with a different start BPM (and end BPM for reverse propagation) if encountering this issue.
-
-After the analysis has completed, the results can be visualised directly in the GUI.
-The plot shows the difference between the propagated model and the measurement for each segment, allowing you to identify where discrepancies exist and pinpoint the locations of optics errors.
-Inspecting both forward and backward propagation helps confirm the error source: if deviations appear after the same location from both directions, that location is likely where the error originates.
-See [Understanding the Plot](#understanding-the-plot) for a detailed description of the plot elements.
-
-### Finding Corrections
-
-The corrections applied in the GUI modify the model to match the measurement.
-It is important to understand that, in order to actually correct the machine, these corrections generally need to be inverted: the GUI finds what error in the model would reproduce the observed measurement deviation, and the opposite of that error is what should be applied operationally.
-Be aware that sign conventions may differ between MAD-X and LSA, so care must be taken when translating correction values from the GUI to the control system.
-
-A practical approach to testing correction schemes is to create multiple [virtual copies](#virtual-copies) of the same measurement.
-Virtual copies share the same input data but write their output to separate directories, allowing you to try different correction strategies side by side without duplicating files on disk.
-Similarly, creating multiple segments with different start BPMs for the same region of the accelerator lets you evaluate how sensitive the results are to the choice of starting point and whether the correction holds regardless of which BPM anchors the propagation.
-
-When corrections have been applied, the plot shows a dashed line in addition to the solid measurement line.
-The [plot settings](settings.md#plot-settings) let you choose what this dashed line represents:
-
-- **Matched value (corr)**: the difference between the propagated corrected model and the nominal propagated model.
-  If the correction successfully reproduces the measured errors, this dashed line should lie close to the solid measurement line.
-- **Expected value (expct)**: the difference between the measured values and the propagated corrected model.
-  This represents the expected outcome of the SbS analysis after the correction has been applied to the machine, and should therefore be close to zero if the correction is effective.
-
-### Segment Grouping and Comparison
-
-When multiple optics are loaded simultaneously, identically defined segments — those sharing the same name, start BPM and end BPM — are automatically grouped together and overlaid on the same plot.
-This makes it straightforward to compare results from different measurements or different correction schemes for the same region of the accelerator.
-Hovering over a segment entry in the table displays a tooltip showing which loaded optics it belongs to and whether the analysis has been run for each one (i.e. whether the output file exists).
-Note that segments with different start or end BPMs are never grouped together, even if they share the same name, because they represent physically different analyses.
-
-When multiple segments are selected, the default behaviour is to only plot together those that share the same start BPM, since the horizontal axis position is relative to the start of the segment.
-This constraint can be relaxed via the `Same segment start` option in the [plot settings](settings.md#plot-settings), although doing so is generally not recommended as it can lead to confusion when comparing positions.
-Activating the `Model Location` option changes the horizontal axis to show absolute positions in the accelerator rather than positions relative to the segment start, which makes it meaningful to overlay segments with different start BPMs and compare their results directly.
-
-## Understanding the Plot
-
-The main plot area displays the results of the segment-by-segment analysis for the selected segments.
-The solid line represents the difference between the propagated model and the measurement: it shows how the measurement compares to the model under the assumption that both share the same value at the start BPM (or the end BPM for backward propagation).
-Arrow markers indicate the direction of propagation — rightward arrows for forward propagation and leftward arrows for backward propagation.
-
-If corrections have been applied, a dashed line also appears.
-Depending on the [plot settings](settings.md#plot-settings), this shows either the corrected model difference or the expected measurement difference after correction; see the [Finding Corrections](#finding-corrections) section for a detailed explanation of both modes.
-
-When multiple segments or optics are selected, multiple traces can appear in the same plot; see [Segment Grouping and Comparison](#segment-grouping-and-comparison) for details on how they are overlaid.
-Each combination of segment and optics is assigned a consistent color, while different markers and line styles distinguish forward propagation, backward propagation, corrected and expected traces.
-When plotting many segments at once, it is advisable not to activate all trace types simultaneously, as the plot can become very crowded and difficult to read.
-
-The tabs above the plot area allow switching between the different optics parameters that are propagated through the segments, such as the phase advance, the $\beta$-function or coupling RDTs.
-
-### Shortcuts
-
-The plot supports the following keyboard and mouse shortcuts for navigation and inspection:
-
-- **Hover**: Show Optics name, BPM name and the value of the point in the plot.
-- **Double Click** / **Right Click**: Zoom history back one step (only works for rectangle zoom).
-- **Shift + Right Click**: Reset zoom to the original view.
-- **Alt + Right Click**: Open the pyqtgraph context menu.
-- **Click and Drag**: Draw a rectangle to zoom into a specific area of the plot.
-- **Scroll in Graph**: Zoom in and out of the plot, both axis.
-- **Scroll over one axis**: Zoom in and out of the plot, only the axis you are scrolling over.
-
-## Menu
-
-### SbS-Gui
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/menu_sbs_gui.png" width="100%" alt="Menu SbS-Gui"/>
-  <figcaption>The SbS-Gui menu.</figcaption>
-  </center>
-</figure>
-
-- **Settings**: Open the [settings dialog](settings.md).
-- **Exit**: Close the GUI.
-
-### View
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/menu_view.png" width="100%" alt="Menu View"/>
-  <figcaption>The View menu.</figcaption>
-  </center>
-</figure>
-
-- **Full Screen**: Toggle full-screen mode.
-- **Plotting Settings**: Quick access to the checkboxes of the [plotting settings dialog](settings.md#plot-settings). For details, see the [plotting settings section](settings.md#plot-settings).
-- **Log Console**: Show or hide the [log console](#log-console) at the bottom of the GUI.
-
-### Help
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/menu_help.png" width="100%" alt="Menu Help"/>
-  <figcaption>The Help menu.</figcaption>
-  </center>
-</figure>
-
-- **Reload Data**: Reload the data from the input files. This is useful if you have made changes to the input files and want to see the updated results without restarting the GUI.
-- **Show Help**: Open the help dialog with some main instructions on how to use the GUI.
-- **About**: Opens the about dialog, which displays some information about the GUI, e.g. the version.
-
-## Settings
-
-The GUI's settings are accessible from the SbS-Gui menu and are documented on the dedicated [Settings](settings.md) page.
-This includes the [main settings](settings.md#main-settings) (working directory, autoload behaviour, corrector suggestions) and the [plot settings](settings.md#plot-settings) (visibility toggles, zoom behaviour, segment grouping options).
-
-## Side Panel
-
-### Loaded Optics
+## Loading Measurement Data
 
 <figure>
   <center>
