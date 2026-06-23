@@ -25,7 +25,7 @@ It can be run either from the Beta-Beat GUI's [Optics Panel][bbgui_optics_panel]
     Note that this GUI requires the `omc3` package, recent QT bindings (`PyQT` / `PySide`) and the `accwidgets` package which is quite CERN specific.
     It is recommended to run it from the Beta-Beat GUI.
 
-After opening, the GUI should open to the main window:
+After opening, the GUI displays the main window:
 
 <figure>
   <center>
