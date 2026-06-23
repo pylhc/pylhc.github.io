@@ -1,6 +1,6 @@
 # Loading Data and Running Segments
 
-The first step in a [segment-by-segment](../../measurements/physics/sbs.md) analysis is loading data and running a segment to propagate the measured properties through the machine's model.
+The first step in a [segment-by-segment][sbs_method] analysis is loading data and running a segment to propagate the measured properties through the machine's model.
 This page will showcase the interface and workflow to do so.
 
 ## Loading Measurement Data
@@ -26,7 +26,7 @@ Hovering over an optics name displays a tooltip with a summary of its associated
 </figure>
 
 The SbS analysis output is by default stored in folder named `sbs` within the corresponding optics folder.
-If the corresponding option is activated in the [settings](settings.md#main-settings), the GUI will automatically scan the `sbs` folder for existing segment results and load them into the segments table when loading the data.
+If the corresponding option is activated in the [settings][sbs_settings], the GUI will automatically scan the `sbs` folder for existing segment results and load them into the segments table when loading the data.
 
 ??? info "Editing Optics"
 
@@ -91,29 +91,34 @@ This opens the segment editor dialog, as shown below.
 </figure>
 
 In the dialog, enter the segment name along with the start element and end element.
-The `start` and `end` fields are optional: if either one is left empty, both are ignored and only the segment name is used.
-In that case, the SbS analysis will automatically find the closest BPMs before and after the named element to use as the propagation boundaries.
-
-The `Copy` button creates a duplicate of the currently selected segment with a different name, which is useful for quickly creating variants — for instance with different start BPMs — to evaluate how the choice of starting point affects the results.
-The `Remove` button deletes the selected segment from the table; this only removes the definition from the GUI and does not delete any output files from disk.
+The SbS GUI will automatically find the closest BPMs before and after the named element to use as the propagation boundaries.
 
 !!! warning "Start and End Elements vs. Actual BPMs"
-    The start and end elements specified here do not need to be BPMs — they can be any element in the model.
-    The SbS analysis will locate the nearest BPM in the measurement data and use that as the actual start or end of the segment.
-    This means that for different measurements, the actual start BPM may differ even if the defined segment uses the same start element, depending on which BPMs are present or filtered in the measurement data.
+    The above means that, for different measurements, the actual start BPM may differ even if the defined segment uses the same start element; depending on which BPMs are present or filtered in the measurement data.
+
     Since the GUI checks only the segment definition and not the actual SbS output, this can lead to confusion when plotting multiple segments together: they will appear to start at the same point in the plot despite corresponding to different physical locations.
-    Activating the `Model Location` option in the [plot settings](settings.md#plot-settings) avoids this issue by plotting positions in the accelerator frame rather than relative to the segment start.
+    Activating the [`Model Location` option in the plot settings](settings.md#plot-settings) avoids this issue by plotting positions in the accelerator frame rather than relative to the segment start.
+
+The ++"Copy"++ button creates a duplicate of the currently selected segment with a different name, which is useful for quickly creating variants, for instance with different start BPMs, to evaluate how the choice of starting point affects the results.
+
+The ++"Remove"++ button deletes the selected segment from the table.
+This only removes the definition from the GUI and does not delete any output files from disk.
+
+New segments will display in the segments table, as shown below.
+
+<!-- TODO: Better quality picture? -->
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/side_panel.png" width="100%" alt="Side Panel with Segments"/>
+  <figcaption>The side panel with added segments for the measurement_b1 loaded optics.</figcaption>
+  </center>
+</figure>
+
+It is possible at any time to edit a given segment's properties by double clicking either the `Segment`, `Start` or `End` entry in the table and changing its content.
 
 !!! warning "Save/Load Segments — Not Implemented"
-    In the future, segment definitions (name, start, end) will be saved as a JSON file in the output directory of the optics (e.g. `sbs/segments.json`) and reloaded automatically when the optics are loaded.
-    This will allow segment definitions to persist even if the analysis has not been run yet and will make it easy to share segment configurations between different measurements by copying the JSON file.
-
-<!-- <figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/side_panel.png" width="100%" alt="Side Panel"/>
-  <figcaption>The side panel.</figcaption>
-  </center>
-</figure> -->
+    In the future, segment definitions (name, start, end) will be saved to disk in the output directory of the optics (e.g. a `sbs/segments.json` file) and reloaded automatically as the optics are loaded.
+    Doing so will allow segment definitions to persist even without running propagation, and will make it easy to share segment configurations between different measurements by copying the file.
 
 ## Running Segments
 
@@ -179,3 +184,6 @@ When plotting many segments at once, it is advisable not to activate all trace t
     - **Scroll over one axis**: Zoom in and out of the plot, only the axis you are scrolling over.
 
 *[SbS]: Segment-by-Segment
+
+[sbs_method]: ../../measurements/physics/sbs.md
+[sbs_settings]: settings.md#main-settings
