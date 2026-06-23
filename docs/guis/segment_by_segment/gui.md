@@ -93,9 +93,9 @@ The GUI window is made up of the following main components.
 
 The following pages are available:
 
+- [Menus & Settings](settings.md) for the available menus and the meaning of various options.
 - [Loading Data and Running Segments](segments.md) for how to load measurement data, define and run segments, and interpret the plots.
 - [Determining Corrections](corrections.md) for how to attempt determining corrections and testing their effect through the segments.
-- [Menus & Settings](settings.md) for the available menus and the meaning of various options.
 
 *[SbS]: Segment-by-Segment
 
