@@ -55,7 +55,7 @@ The GUI window is made up of the following main components.
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/sbs_gui/segments_panel.png" width="100%" alt="Optics Panel"/>
+      <img class="clickImg" src="../../assets/images/sbs_gui/segments_panel.png" width="100%" alt="Segments Panel"/>
       <figcaption>The segments panel and associated buttons.</figcaption>
       </center>
     </figure>
