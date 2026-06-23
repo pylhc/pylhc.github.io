@@ -68,7 +68,7 @@ The GUI window is made up of the following main components.
     <figure>
       <center>
       <img class="clickImg" src="../../assets/images/sbs_gui/plot_panel.png" width="100%" alt="Plot Panel"/>
-      <figcaption>The main plot panel</figcaption>
+      <figcaption>The main plot panel.</figcaption>
       </center>
     </figure>
 
