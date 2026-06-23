@@ -1,7 +1,7 @@
 # Determining Corrections
 
-This page covers how to apply corrections in the GUI, test different correction schemes and interpret the corrected plots.
-For how to run the analysis and inspect the uncorrected results, see [Running Segments](segments.md).
+This page covers how to apply corrections in the GUI, test different correction schemes and interpret the resulting plots.
+For how to run the propagation and inspect the uncorrected results, see [Running Segments](segments.md).
 
 ## Applying Corrections
 
