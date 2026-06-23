@@ -28,10 +28,12 @@ Be aware that sign conventions may differ between MAD-X and LSA, so care must be
 ## Testing Multiple Correction Schemes
 
 A practical approach to testing different correction strategies is to create virtual copies of the same measurement.
-Click the `Copy` button in the loaded optics section to create a virtual copy: it references the same input measurement data but writes its output to a separate directory, making it possible to try multiple correction schemes side by side without duplicating files on disk.
+Click the `Copy` button in the loaded optics section to create a virtual copy.
+It references the same input measurement data but writes its output to a separate directory, making it possible to try multiple correction schemes side by side without duplicating files on disk.
 In the side panel, virtual copies are displayed as `NAME -> OUTPUT_DIR_NAME` to distinguish them from the original optics entry.
 
-Similarly, creating multiple segments with different start BPMs for the same region of the accelerator lets you evaluate how sensitive the results are to the choice of starting point and whether the correction holds regardless of which BPM anchors the propagation.
+Similarly, creating multiple segments with different start BPMs for the same region lets you evaluate sensitivity to the starting point.
+This helps confirm whether the correction holds regardless of which BPM anchors the propagation.
 
 ## Corrected and Expected Plots
 
