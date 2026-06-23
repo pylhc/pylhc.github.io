@@ -1,8 +1,8 @@
-# Menu & Settings
+# Menus & Settings
 
 This page documents the menu bar, configurable settings, and log console of the Segment-by-Segment GUI.
 
-## Menu
+## Menus
 
 ### SbS-Gui
 
@@ -69,7 +69,7 @@ This looks for files created by the GUI in earlier runs and for now only works i
 Automatically add default segments when loading a new measurement optics directory.
 
 - **Suggest Correctors**:
-When opening the [corrections dialog](gui.md#finding-corrections) for a new/not yet existing correction file, suggest correctors based on the optics and measurement data.
+When opening the [corrections dialog](corrections.md#corrected-and-expected-plots) for a new/not yet existing correction file, suggest correctors based on the optics and measurement data.
 
 ### Plot Settings
 
@@ -83,7 +83,7 @@ When opening the [corrections dialog](gui.md#finding-corrections) for a new/not 
 - **Show Model**: Adds markers for the location of elements in the model to the plots.
 - **Show Legend**: Show legends in the plots.
 - **Marker Size**: Size of the markers in the plots.
-- **Expectation**: If run with corrections, show the expected measurement difference instead of the corrected model difference (details in [Finding Corrections](gui.md#finding-corrections)).
+- **Expectation**: If run with corrections, show the expected measurement difference instead of the corrected model difference (details in [Finding Corrections](corrections.md#corrected-and-expected-plots)).
 - **Forward Propagation**: Show forward propagation results (arrows to the right).
 - **Backward Propagation**: Show backward propagation results (arrows to the left).
 - **Connect X**: Keep the same X-Axis limits for both charts when zooming.
