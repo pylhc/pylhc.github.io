@@ -63,21 +63,32 @@ This only unloads it from the interface and does not delete any files from disk.
 
 ## Defining Segments
 
-<figure>
+Before running any propagation it is necessary to define segments.
+Each segment is defined by a name, a start element and an end element.
+Segments can be added by first selecting a loaded optics measurement.
+
+### Default Segments
+
+The quickest way to get started is to click the ++"Add Defaults"++ button, which populates a predefined set of segments appropriate for the currently selected accelerator.
+
+<!-- <figure>
   <center>
   <img class="clickImg" src="../../assets/images/sbs_gui/side_panel.png" width="100%" alt="Side Panel"/>
   <figcaption>The side panel.</figcaption>
   </center>
-</figure>
+</figure> -->
 
-With measurement data loaded, the next step is to define the segments of the accelerator to analyse.
-Each segment is defined by a name, a start element and an end element.
+For instance, in the LHC the default segments cover IP1, IP2, IP5 and IP8.
+Each spans from `BPM.L12` to `BPM.R12` and contains a main interaction points.
+They are therefore of particular interest for the LHC analysis.
 
-The quickest way to get started is to click the `Add Defaults` button, which populates the segments table with a predefined set of segments appropriate for the currently selected accelerator.
-For example, in the LHC the default segments cover IP1, IP2, IP5 and IP8 — spanning from `BPM.L12` to `BPM.R12` — which contain the main interaction points and are therefore of particular interest for the SbS analysis.
-If the corresponding option is activated in the [settings](settings.md#main-settings), these default segments are automatically added whenever a new measurement optics directory is loaded.
+!!! tip "Auto Defaults"
+    If the corresponding option is activated in the [settings](settings.md#main-settings), default segments are automatically added whenever a new measurement optics directory is loaded.
 
-To create a custom segment, click the `New` button to open the segment editor dialog.
+### Custom Segments
+
+It is possible to create arbitrary custom segment by clicking the ++"New"++ button.
+This opens the segment editor dialog, as shown below.
 
 <figure>
   <center>
@@ -104,7 +115,7 @@ The `Remove` button deletes the selected segment from the table; this only remov
     In the future, segment definitions (name, start, end) will be saved as a JSON file in the output directory of the optics (e.g. `sbs/segments.json`) and reloaded automatically when the optics are loaded.
     This will allow segment definitions to persist even if the analysis has not been run yet and will make it easy to share segment configurations between different measurements by copying the JSON file.
 
-## Running the Analysis
+## Running Segments
 
 Once segments are defined, select the segments and optics you want to analyse, then click the `Run Segment(s)` button.
 If the output file already exists for a given combination, it will be overwritten by the new run.

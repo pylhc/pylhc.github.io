@@ -14,7 +14,7 @@ The correction file path is applied to all currently selected optics.
 If some of the selected measurements already have the same correction file loaded while others have none, a dialog will ask whether you want to apply the same correction file to all of them.
 If there is a conflict between different correction files across the selected optics, an error message is shown.
 
-After applying a correction file, [re-run the analysis](segments.md#running-the-analysis) to see the corrected results as dashed lines in the plot.
+After applying a correction file, [re-run the analysis](segments.md#running-segments) to see the corrected results as dashed lines in the plot.
 
 !!! warning "Run Matcher — Not Implemented"
     In the future, the `Run Matcher` button is intended to launch the automated matcher for the currently selected optics, which would calculate the correction and produce a correction file that can then be loaded in the corrections dialog.
