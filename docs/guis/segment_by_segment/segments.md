@@ -15,7 +15,7 @@ It is possible to directly point to an existing SbS output folder, which is usef
     At load time, the GUI will attempt to determine the accelerator type, beam and the appropriate model folder.
     Should this automatic detection fail, these parameters need to be set manually via the `Edit` button (see **Editing Optics** below).
 
-Once loaded the optics entries will appear in the side panel, color-coded by beam.
+Once loaded, the optics entries will appear in the side panel, color-coded by beam.
 Hovering over an optics name displays a tooltip with a summary of its associated paths and accelerator parameters.
 
 <figure>
@@ -25,7 +25,7 @@ Hovering over an optics name displays a tooltip with a summary of its associated
   </center>
 </figure>
 
-The SbS analysis output is by default stored in folder named `sbs` within the corresponding optics folder.
+The SbS analysis output is by default stored in a folder named `sbs` within the corresponding optics folder.
 If the corresponding option is activated in the [settings][sbs_settings], the GUI will automatically scan the `sbs` folder for existing segment results and load them into the segments table when loading the data.
 
 ??? info "Editing Optics"
@@ -72,7 +72,7 @@ Segments can be added by first selecting a loaded optics measurement.
 The quickest way to get started is to click the ++"Add Defaults"++ button, which populates a predefined set of segments appropriate for the currently selected accelerator.
 
 For instance, in the LHC the default segments cover IP1, IP2, IP5 and IP8.
-Each spans from `BPM.L12` to `BPM.R12` and contains a main interaction points.
+Each spans from `BPM.L12` to `BPM.R12` and contains one of the main interaction points.
 They are therefore of particular interest for the LHC analysis.
 
 !!! tip "Auto Defaults"
@@ -80,7 +80,7 @@ They are therefore of particular interest for the LHC analysis.
 
 ### Custom Segments
 
-It is possible to create arbitrary custom segment by clicking the ++"New"++ button.
+It is possible to create an arbitrary custom segment by clicking the ++"New"++ button.
 This opens the segment editor dialog, as shown below.
 
 <figure>
@@ -127,7 +127,7 @@ Once segments are defined, for a given optics select the segments to propagate m
 !!! info "Output Persistence"
     Please note that (re-)running a segment will overwrite any previous run with the most recent results.
 
-In the background, optics parameters from the measurement are propagated through the model from the `start` and `end` BPMs, through each defined segment, using `MAD-X`.
+The GUI calls `MAD-X` to propagate optics parameters from the `start` and `end` BPMs through each defined segment.
 The propagated values are then compared against the measured data and deviations are computed.
 
 Measured errors are also propagated through the segment, although analytically, and added in quadrature to the measurement uncertainty.
