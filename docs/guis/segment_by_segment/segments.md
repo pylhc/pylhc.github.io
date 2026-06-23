@@ -6,19 +6,17 @@ This page will showcase the interface and workflow to do so.
 ## Loading Measurement Data
 
 If started from the Beta-Beat GUI with an optics analysis selected, the corresponding optics data and associated model will be automatically loaded.
+
 Otherwise, or to load additional measurements, click the `Load` button in the side panel to open a file dialog and select the measurement folder corresponding to the optics analysis to be loaded.
-It is also possible to directly point to an existing SbS output folder, which is useful when resuming previous work or when a different output directory name than the default `sbs` was used.
+
+It is possible to directly point to an existing SbS output folder, which is useful when resuming previous work or when a different output directory name than the default `sbs` was used.
 
 !!! info "Corresponding Models"
     At load time, the GUI will attempt to determine the accelerator type, beam and the appropriate model folder.
-    Should this automatic detection fail, these parameters need to be set manually via the `Edit` button (see _Edit Optics_ below).
+    Should this automatic detection fail, these parameters need to be set manually via the `Edit` button (see **Edit Optics** below).
 
-The SbS analysis output is stored in sub-directories of the relevant optics folder, by default in a folder named `sbs`.
-If the corresponding option is activated in the [settings](settings.md#main-settings), the GUI will automatically scan the `sbs` folder for existing segment results and load them into the segments table.
-
-Once loaded, optics entries appear in the side panel, color-coded by beam.
+Once loaded the optics entries will appear in the side panel, color-coded by beam.
 Hovering over an optics name displays a tooltip with a summary of its associated paths and accelerator parameters.
-To remove an optics entry from the GUI, select it and click the `Remove` button — this only unloads it from the interface and does not delete any files from disk.
 
 <figure>
   <center>
@@ -26,6 +24,9 @@ To remove an optics entry from the GUI, select it and click the `Remove` button 
   <figcaption>The loaded optics section in the left side panel.</figcaption>
   </center>
 </figure>
+
+The SbS analysis output is by default stored in folder named `sbs` within the corresponding optics folder.
+If the corresponding option is activated in the [settings](settings.md#main-settings), the GUI will automatically scan the `sbs` folder for existing segment results and load them into the segments table when loading the data.
 
 ??? info "Edit Optics"
 
@@ -51,6 +52,8 @@ To remove an optics entry from the GUI, select it and click the `Remove` button 
     - **Beam**: LHC beam to use, if applicable, e.g. `1` or `2`.
 
     The parameters are validated when clicking `OK`. Which parameters are required depends on the selected accelerator.
+
+To remove an optics entry from the GUI, select it and click the `Remove` button — this only unloads it from the interface and does not delete any files from disk.
 
 ## Defining Segments
 
