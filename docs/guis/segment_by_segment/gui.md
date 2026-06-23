@@ -34,6 +34,63 @@ After opening, the GUI should open to the main window:
   </center>
 </figure>
 
+The GUI window is made up of the following main components.
+
+=== "Optics Panel"
+
+    The top left panel displays the loaded measurement data as well as various actions related to data.
+    <!-- TODO: Take better quality screenshot -->
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/sbs_gui/optics_panel.png" width="100%" alt="Optics Panel"/>
+      <figcaption>The optics panel and associated buttons.</figcaption>
+      </center>
+    </figure>
+
+=== "Segments Panel"
+
+    The lower left panel displays the defined segments and buttons to perform actions with those segments.
+    <!-- TODO: Take better quality screenshot -->
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/sbs_gui/segments_panel.png" width="100%" alt="Optics Panel"/>
+      <figcaption>The segments panel and associated buttons.</figcaption>
+      </center>
+    </figure>
+
+=== "Main Plot Area"
+
+    The main part of the window, to the right of the previous two panels, displays the quantities propagated through the selected segment.
+    <!-- TODO: Take better quality screenshot -->
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/sbs_gui/plot_panel.png" width="100%" alt="Plot Panel"/>
+      <figcaption>The main plot panel</figcaption>
+      </center>
+    </figure>
+
+    The various tabs in the top part allow the user to select which quantity to plot.
+
+=== "Log Console"
+
+    At the very bottom of the window is the log console, which displays logging output from both GUI actions and the underlying Python modules called during the analysis.
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/sbs_gui/log_console.png" width="100%" alt="Log Console"/>
+      <figcaption>The log console, expanded.</figcaption>
+      </center>
+    </figure>
+
+    It can be expanded or collapsed using the arrow control and closed entirely with the ++"X"++ button on its right side.
+    If closed, it can be re-enabled through the [View menu](settings.md#view).
+
+    The console panel is also movable and resizable within the GUI window.
+    Right-clicking inside the console opens a context menu that provides access to additional preferences.
+
 The following pages are available:
 
 - [Loading Data and Running Segments](segments.md) for how to load measurement data, define and run segments, and interpret the plots.
