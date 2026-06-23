@@ -1,4 +1,4 @@
-# Menus & Settings
+# Menus and Settings
 
 This page documents the menu bar, configurable settings, and log console of the Segment-by-Segment GUI.
 
