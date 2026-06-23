@@ -1,5 +1,8 @@
 # Settings
 
+This page is complementary to the other one.
+Settings open in the top left of the window.
+
 ## Main Settings
 
 <figure>
@@ -40,7 +43,7 @@ Note: Hints available on hovering over the settings text.
 - **Show Model**: Adds markers for the location of elements in the model to the plots.
 - **Show Legend**: Show legends in the plots.
 - **Marker Size**: Size of the markers in the plots.
-- **Expectation**: If run with corrections, show the expected measurement difference instead of the corrected model difference (details in [Correction Idea](gui.md#correction-idea)).
+- **Expectation**: If run with corrections, show the expected measurement difference instead of the corrected model difference (details in [Finding Corrections](gui.md#finding-corrections)).
 - **Forward Propagation**: Show forward propagation results (arrows to the right).
 - **Backward Propagation**: Show backward propagation results (arrows to the left).
 - **Connect X**: Keep the same X-Axis limits for both charts when zooming.

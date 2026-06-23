@@ -31,53 +31,57 @@ Errors from the original BPMs are also propagated through the segment and added 
     It can sometimes be a good idea to attempt the segment with a different start BPM (and end BPM for reverse propagation) if encountering this issue.
 
 After the analysis has completed, the results can be visualised directly in the GUI.
-The solid line in the plot represents the difference between the propagated model and the measurement, showing how the measurement compares to the model under the assumption that both start with the same value at the start BPM (or the end BPM, for backward propagation).
-This allows you to identify where discrepancies between the model and the actual machine exist, effectively pinpointing the locations of optics errors.
-It is useful to inspect both forward propagation (indicated by rightward arrows) and backward propagation (indicated by leftward arrows) to check whether deviations begin to appear after the same location from both directions, which helps confirm the error source.
+The plot shows the difference between the propagated model and the measurement for each segment, allowing you to identify where discrepancies exist and pinpoint the locations of optics errors.
+Inspecting both forward and backward propagation helps confirm the error source: if deviations appear after the same location from both directions, that location is likely where the error originates.
+See [Understanding the Plot](#understanding-the-plot) for a detailed description of the plot elements.
 
-### Correction Idea
+### Finding Corrections
 
-- Corrections are applied to match the model to the measuremnt, i.e. to actually correct the machine, you generally need to invert them (beware of some sign conventions between MAD-X and LSA).
-- Create multiple "virtual" copies of the measurement (same input data, different output folder) to
-test multiple correction schemes without having to make actual copies of the data.
-- Create multiple segments with different start BPMs to test the effect of the starting point on the results.
-- Choose in the [settings](settings.md#plot-settings) between plotting the matched value or the expected value of the corrected data (dashed line):
-    - Matched value (corr): the difference between the propagated model after applying the correction to the nominal propagated model. This should ideally be close to the measurement.
-    - Expected value (expct): the difference of the measured values to the corrected propagated model.
-      This is the expected result of the SbS analysis (i.e. difference between propagated model and measurement) after applying the correction to the machine, and thus should be close to zero.
+The corrections applied in the GUI modify the model to match the measurement.
+It is important to understand that, in order to actually correct the machine, these corrections generally need to be inverted: the GUI finds what error in the model would reproduce the observed measurement deviation, and the opposite of that error is what should be applied operationally.
+Be aware that sign conventions may differ between MAD-X and LSA, so care must be taken when translating correction values from the GUI to the control system.
 
-### Grouping of Segments
+A practical approach to testing correction schemes is to create multiple [virtual copies](#virtual-copies) of the same measurement.
+Virtual copies share the same input data but write their output to separate directories, allowing you to try different correction strategies side by side without duplicating files on disk.
+Similarly, creating multiple segments with different start BPMs for the same region of the accelerator lets you evaluate how sensitive the results are to the choice of starting point and whether the correction holds regardless of which BPM anchors the propagation.
 
-- Selecting multiple optics:
-    - Identically defined segments (name, start/end bpm) are grouped together and will be plotted in the same plot.
-    - Hovering over a segment in the table shows the optics it belongs to and if it has been run or not for that measuremnt (i.e. if the file exists).
-    - If the segment has been run for multiple optics, the plot will show the results for all those optics, allowing for easy comparison between different measurements or corrections for the same segment.
-    - Segments with different start/end BPMs are not grouped together, even if they have the same name, as they represent different segments in the accelerator and thus different analyses.
+When corrections have been applied, the plot shows a dashed line in addition to the solid measurement line.
+The [plot settings](settings.md#plot-settings) let you choose what this dashed line represents:
 
-- Selecting multiple segments:
-    - By default, only segments with the same start BPMs are plotted together,
-    as the position is relative to the start BPM. This can be changed in the [settings](settings.md#plot-settings) (`Same segment start`), but it is not recommended to plot segments with different start BPMs together, as it can lead to confusion and misinterpretation of the results.
-    - If `Model Location` is activated also segments with different start BPMs are plotted together,
-    as they are now plotted relative to the model location, i.e. their position in the accelerator, which allows for easy comparison of segments with different start BPMs.
+- **Matched value (corr)**: the difference between the propagated corrected model and the nominal propagated model.
+  If the correction successfully reproduces the measured errors, this dashed line should lie close to the solid measurement line.
+- **Expected value (expct)**: the difference between the measured values and the propagated corrected model.
+  This represents the expected outcome of the SbS analysis after the correction has been applied to the machine, and should therefore be close to zero if the correction is effective.
 
-## Plotting
+### Segment Grouping and Comparison
 
-- Solid line: difference between propagated model and measurement, i.e. how the measurement compares to the model, assuming they start with the same value at the start BPM (or end BPM for backward propagation).
+When multiple optics are loaded simultaneously, identically defined segments — those sharing the same name, start BPM and end BPM — are automatically grouped together and overlaid on the same plot.
+This makes it straightforward to compare results from different measurements or different correction schemes for the same region of the accelerator.
+Hovering over a segment entry in the table displays a tooltip showing which loaded optics it belongs to and whether the analysis has been run for each one (i.e. whether the output file exists).
+Note that segments with different start or end BPMs are never grouped together, even if they share the same name, because they represent physically different analyses.
 
-- Dashed line (if corrections are applied): Either corrected model diff (corr) or expected measurement diff (expct) depending on the [settings](settings.md#plot-settings). See above for details.
+When multiple segments are selected, the default behaviour is to only plot together those that share the same start BPM, since the horizontal axis position is relative to the start of the segment.
+This constraint can be relaxed via the `Same segment start` option in the [plot settings](settings.md#plot-settings), although doing so is generally not recommended as it can lead to confusion when comparing positions.
+Activating the `Model Location` option changes the horizontal axis to show absolute positions in the accelerator rather than positions relative to the segment start, which makes it meaningful to overlay segments with different start BPMs and compare their results directly.
 
-- Arrow Markers: direction of propagation (right for forward, left for backward).
+## Understanding the Plot
 
-- Multiple plots possible, see grouping of segments above.
+The main plot area displays the results of the segment-by-segment analysis for the selected segments.
+The solid line represents the difference between the propagated model and the measurement: it shows how the measurement compares to the model under the assumption that both share the same value at the start BPM (or the end BPM for backward propagation).
+Arrow markers indicate the direction of propagation — rightward arrows for forward propagation and leftward arrows for backward propagation.
 
-- Same color per segment and optics, different markers/line style for forward/backward/corrected/expected.
-  Better not to activate everything when plotting multiple segments, as it can get very crowded.
+If corrections have been applied, a dashed line also appears.
+Depending on the [plot settings](settings.md#plot-settings), this shows either the corrected model difference or the expected measurement difference after correction; see the [Finding Corrections](#finding-corrections) section for a detailed explanation of both modes.
 
-- Tabs: Different optics parameters that are propagaret through the segments.
+When multiple segments or optics are selected, multiple traces can appear in the same plot; see [Segment Grouping and Comparison](#segment-grouping-and-comparison) for details on how they are overlaid.
+Each combination of segment and optics is assigned a consistent color, while different markers and line styles distinguish forward propagation, backward propagation, corrected and expected traces.
+When plotting many segments at once, it is advisable not to activate all trace types simultaneously, as the plot can become very crowded and difficult to read.
+
+The tabs above the plot area allow switching between the different optics parameters that are propagated through the segments, such as the phase advance, the $\beta$-function or coupling RDTs.
 
 ### Shortcuts
 
-In the plot, you can use the following shortcuts:
+The plot supports the following keyboard and mouse shortcuts for navigation and inspection:
 
 - **Hover**: Show Optics name, BPM name and the value of the point in the plot.
 - **Double Click** / **Right Click**: Zoom history back one step (only works for rectangle zoom).
@@ -143,70 +147,72 @@ This includes the [main settings](settings.md#main-settings) (working directory,
   </center>
 </figure>
 
-- Shows the currently loaded optics.
-- Different colors for different beams.
-- Hovering over the optics name gives short summary of paths and accelerator parameters.
+This section displays the list of currently loaded optics measurements.
+Each entry is color-coded by beam for quick identification.
+Hovering over an optics name displays a tooltip with a summary of its associated paths and accelerator parameters.
 
 #### Load Optics
 
-- Click `Load` button to load new optics.
-- Opens file dialog to select the measuremnt folder to load.
-- Alternatively, you can also select a previous SbS output folder directly,
-useful for [virtual copies](#virtual-copies) or if you had used a different output directory name, than the default `sbs`.
+Clicking the `Load` button opens a file dialog where you can select the measurement folder to load.
+Alternatively, you can point directly to a previous SbS output folder, which is useful when working with [virtual copies](#virtual-copies) or when you had previously used a different output directory name than the default `sbs`.
 
-- Tries to automatically asses which accelerator and beam. Tries to find correct model folder. If not successful needs to be [set manually](#edit-optics).
-- SbS analysis output is stored in sub-directories of the optics folder, by default in the `sbs` folder.
-- If activated in the [settings](settings.md#main-settings), the GUI will automatically look for existing segments in the `sbs` folder and load them into the segments table.
+Upon loading, the GUI attempts to automatically determine the accelerator type, beam and the appropriate model folder.
+If the automatic detection is not successful, these parameters need to be set manually via the `Edit` button (see the _Edit Optics_ details below).
+The SbS analysis output is stored in sub-directories of the optics folder, by default in a folder named `sbs`.
+If the corresponding option is activated in the [settings](settings.md#main-settings), the GUI will automatically scan the `sbs` folder for existing segment results and load them into the segments table.
 
 #### Virtual Copies
 
-- Click `Copy` button to create a virtual copy of the optics.
-- Uses the same input data, but different output folder, which allows to test multiple correction schemes without having to make actual copies of the data.
-- Shown in the side panel as `NAME -> OUTPUT_DIR_NAME` to distinguish them from the original optics.
+Clicking the `Copy` button creates a virtual copy of the currently selected optics.
+A virtual copy references the same input measurement data but writes its output to a separate directory, making it possible to test multiple correction schemes side by side without duplicating files on disk.
+In the side panel, virtual copies are displayed as `NAME -> OUTPUT_DIR_NAME` to distinguish them from the original optics entry.
 
 #### Remove Optics
 
-- Click `Remove` button to remove the currently selected optics. Only removes it from the GUI, but does not delete any files.
+Clicking the `Remove` button removes the currently selected optics from the GUI.
+This only unloads it from the interface and does not delete any files from disk.
 
 #### Run Matcher
 
-NOT IMPLEMENTED.
+!!! warning "Not Implemented"
+    This feature is not yet implemented.
+    In the future, the `Run Matcher` button is intended to launch the automated matcher for the currently selected optics, which would calculate the correction and produce a correction file.
+    That file could then be loaded in the [corrections dialog](#corrections) and applied to the model.
 
-FUTURE: should run the automated matcher for the currently selected optics which will calculate the correction and create the correction file, which can then be loaded in the corrections dialog and applied to the model.
-NOTE: Button maybe better in placed in the segments? As it needs to know which segments to run.
+??? info "Edit Optics"
 
-#### Edit Optics
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/sbs_gui/optics_measurement.png" width="100%" alt="Edit Optics Measurement"/>
+      <figcaption>The edit optics measurement dialog.</figcaption>
+      </center>
+    </figure>
 
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/optics_measurement.png" width="100%" alt="Edit Optics Measurement"/>
-  <figcaption>The edit optics measurement dialog.</figcaption>
-  </center>
-</figure>
+    The edit dialog can be opened by clicking the `Edit` button or by double-clicking the optics name in the side panel.
+    It allows you to modify the paths and accelerator parameters associated with the loaded optics.
+    Note that the measurement path itself cannot be changed from this dialog; to use a different measurement directory, load a new measurement folder instead.
 
-- Click `Edit` button or double click the optics name in the side panel to edit the optics paths and parameters.
-- Does not allow to change the measurement path (you need to load a new measurement folder for that).
+    The available fields are:
 
-- **Model**: Path to the model folder, which should contain the optics files for the model.
-- **Accelerator**: Accelerator name, e.g. `lhc`, `sps`, `ps`, `psbooster`.
-- **Output**: Path to the output folder, where the SbS analysis output is stored.
-- **Corrections**:
-Path to the corrections file, which needs to contain all corrections to be applied to the model.
-The corrections are executed by MAD-X as is, to correct the model, so they need to be written in the MAD-X syntax and be the "inverse" of the corrections applied in the machine (MAD-X/LSA sign conventions apply).
-- **Year**: Year of the accelerator optics to use (i.e. the acc-models branch to use to create the appropriate model. See `omc3` model creators).
-- **Ring**: Ring to use if applicable (for PSB)
-- **Beam**: LHC beam to use if applicable, e.g. `1` or `2`.
+    - **Model**: Path to the model folder, which should contain the optics files for the model.
+    - **Accelerator**: Accelerator name, e.g. `lhc`, `sps`, `ps`, `psbooster`.
+    - **Output**: Path to the output folder where the SbS analysis results are stored.
+    - **Corrections**: Path to the corrections file containing all corrections to be applied to the model. The corrections are executed by MAD-X as-is to correct the model, so they must be written in MAD-X syntax and represent the "inverse" of the corrections applied in the machine (MAD-X/LSA sign conventions apply).
+    - **Year**: Year of the accelerator optics to use, corresponding to the `acc-models` branch from which the appropriate model is created (see the `omc3` model creators).
+    - **Ring**: Ring to use, if applicable (relevant for PSB).
+    - **Beam**: LHC beam to use, if applicable, e.g. `1` or `2`.
 
-Note: The parameters will be checked for validity when clicking `OK`. Which parameters are required depends on the accelerator.
+    The parameters are validated when clicking `OK`. Which parameters are required depends on the selected accelerator.
 
 #### Corrections
 
-- Click `Corrections` button to open the corrections dialog, where you can load or create a correction file to apply to the model.
-- If a correction file is already loaded, the dialog will show the content of the file and allow you to edit it.
-- If no correction file is loaded, the dialog may suggest correctors based on the optics and measurement data, if so activated in the [settings](settings.md#main-settings).
-- The path to the corrections file is applied to all currently selected optics and can also be edited in the [edit optics dialog](#edit-optics).
-- If some of the selected measurements already have the same correction file loaded, but some have none, a dialog will ask you whether you want to use the same correction file for all selected optics.
-- If there is a conflict between multiple correction files in the selected optics measurements, an error message will be shown.
+Clicking the `Corrections` button opens the corrections dialog, where you can load or create a correction file to apply to the model.
+If a correction file is already associated with the selected optics, the dialog displays its contents and allows you to edit them directly.
+When no correction file is loaded, the dialog may suggest correctors based on the optics and measurement data, provided this feature is activated in the [settings](settings.md#main-settings).
+
+The correction file path is applied to all currently selected optics and can also be edited from the edit optics dialog (see the _Edit Optics_ details above).
+If some of the selected measurements already have the same correction file loaded while others have none, a dialog will ask whether you want to apply the same correction file to all of them.
+If there is a conflict between different correction files across the selected optics, an error message is shown.
 
 ### Segments
 
@@ -217,33 +223,35 @@ Note: The parameters will be checked for validity when clicking `OK`. Which para
   </center>
 </figure>
 
-- Shows the defined segments for the currently selected optics.
-- Segment name, start, end.
-- `start` and `end` are optional. If either one is not given, BOTH are ignored and only the name is used to define the segment.
-  The SbS analysis will then find the closest BPMs before and after the given element to perform the propagation.
-- Hovering over the segment name shows the optics it belongs to and if it has been run or not for that measuremnt (i.e. if the file exists).
-- Click on the segment name to select it and show the results in the plot, if it has been run already (i.e. if the output file exists).
-- Check ["Grouping of Segments"](#grouping-of-segments) for details on how segments are plotted together.
+This section displays the defined segments for the currently selected optics.
+Each segment is shown with its name, start element and end element.
+The `start` and `end` fields are optional: if either one is left empty, both are ignored and only the segment name is used.
+In that case, the SbS analysis will automatically find the closest BPMs before and after the named element to use as the propagation boundaries.
 
-Warning:
+Hovering over a segment entry in the table displays a tooltip indicating which loaded optics it belongs to and whether the analysis has been run for each one (i.e. whether the output file exists).
+Clicking on a segment name selects it and displays the corresponding results in the plot, provided the analysis has already been performed.
+See ["Segment Grouping and Comparison"](#segment-grouping-and-comparison) for details on how segments from multiple optics or selections are overlaid.
 
-- Start and End of a Segment as given here do not need to be BPMs but could be any element of the model.
-  The SbS analysis will find then the next BPM in the measurement data and use that as the start and end of the segment.
-  WARNING: This can lead to different start BPMs for different measuremens, even if the defined segment here has the same start element (the GUI checks only the segment definition, not the actual sbs output), depending on if the BPMs are filtered in the measurement data. This in turn can lead to confusion when plotting multiple segments together, as they will start at the same point in the plot, even though they represent different locations in the accelerator.
-  This can be avoided by plotting the "Model Location" (see [settings](settings.md#plot-settings)).
+!!! warning "Start and End Elements vs. Actual BPMs"
+    The start and end elements specified here do not need to be BPMs — they can be any element in the model.
+    The SbS analysis will locate the nearest BPM in the measurement data and use that as the actual start or end of the segment.
+    This means that for different measurements, the actual start BPM may differ even if the defined segment uses the same start element, depending on which BPMs are present or filtered in the measurement data.
+    Since the GUI checks only the segment definition and not the actual SbS output, this can lead to confusion when plotting multiple segments together: they will appear to start at the same point in the plot despite corresponding to different physical locations.
+    Activating the `Model Location` option in the [plot settings](settings.md#plot-settings) avoids this issue by plotting positions in the accelerator frame rather than relative to the segment start.
 
 #### Run Segment-by-Segment Analysis
 
-- Click `Run Segment(s)` button to run the segment-by-segment analysis for the currently selected segment and optics.
-- This will re-run the analysis for the selected segment and optics, even if the file already exists.
-- When SbS analysis is running in the background, a spinner icon will appear at the bottom right of the GUI.
-- Hovering over the "running tasks" text will show the name of the currently running task (i.e. `SbS for <optics name>`).
+Clicking the `Run Segment(s)` button launches the segment-by-segment analysis for the currently selected segments and optics.
+If the output file already exists for a given combination, it will be overwritten by the new run.
+While the analysis is running in the background, a spinner icon appears at the bottom right of the GUI.
+Hovering over the "running tasks" text next to the spinner displays the name of the currently running task (e.g. `SbS for <optics name>`).
 
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/sbs_gui/task_running.png" width="100%" alt="Running Task"/>
   <figcaption>Running task indicator.</figcaption>
   </center>
+</figure>
 
 #### New Segment
 
@@ -254,32 +262,34 @@ Warning:
   </center>
 </figure>
 
-- Click `New` button to create a new segment for the currently selected optics.
-- Enter segment name, start Element and end Element. If either start and end if not given, BOTH are ignored and only the name is used to define the element-segment.
+Clicking the `New` button opens the segment editor dialog for the currently selected optics.
+In the dialog, you enter the segment name along with the start element and end element.
+If either the start or end element is left empty, both are ignored and only the segment name is used to define the segment; the analysis will then automatically determine the nearest BPMs.
 
 #### Default Segments
 
-- Click `Add Defaults` button to add default segments for the currently selected optics.
-E.g. for the lhc these are the segments
-IP1, IP2, IP5 and IP8 starting from BPM.L12 to BPM.R12, which contain the main interaction points of the LHC and thus of particular interest for the SbS analysis.
+Clicking the `Add Defaults` button populates the segments table with a predefined set of segments appropriate for the currently selected accelerator.
+For example, in the LHC the default segments cover IP1, IP2, IP5 and IP8 — spanning from `BPM.L12` to `BPM.R12` — which contain the main interaction points and are therefore of particular interest for the SbS analysis.
 
-- If activated in the [settings](settings.md#main-settings), the GUI will automatically add these default segments when loading a new measurement optics directory.
+If the corresponding option is activated in the [settings](settings.md#main-settings), these default segments are automatically added whenever a new measurement optics directory is loaded.
 
 #### Copy Segment
 
-- Click `Copy` button to create a copy of the currently selected segment for the currently selected optics.
-- The copied segment will have the same start and end BPMs, but a different name.
-- Makes it easy to quickly create similar segments, e.g. with different start BPMs, to test the effect of the starting point on the results.
+Clicking the `Copy` button creates a duplicate of the currently selected segment for the currently selected optics.
+The copy retains the same start and end elements but is given a different name.
+This is particularly useful for quickly creating variants of a segment — for instance with different start BPMs — to evaluate how the choice of starting point affects the results.
 
 #### Remove Segment
 
-- Click `Remove` button to delete the currently selected segment for the currently selected optics.
+Clicking the `Remove` button deletes the currently selected segment from the segments table for the currently selected optics.
+This only removes the segment definition from the GUI; it does not delete any output files from disk.
 
 #### Save/Load Segment
 
-NOT IMPLEMENTED.
-
-FUTURE: Save the segment definition (name, start, end) in a json file in the output directory of the optics, e.g. `sbs/segments.json`, and load it when loading the optics or clicking the `Load` button. This way, the segments will be saved even if they have not been run yet (i.e. no output file exists) and can be easily shared between different measurements or optics by copying the json file.
+!!! warning "Not Implemented"
+    This feature is not yet implemented.
+    In the future, segment definitions (name, start, end) will be saved as a JSON file in the output directory of the optics (e.g. `sbs/segments.json`) and reloaded automatically when the optics are loaded or when the user clicks the `Load` button.
+    This will allow segment definitions to persist even if the analysis has not been run yet and will make it easy to share segment configurations between different measurements by copying the JSON file.
 
 ## Log Console
 
@@ -290,11 +300,11 @@ FUTURE: Save the segment definition (name, start, end) in a json file in the out
   </center>
 </figure>
 
-- Logging output from GUI actions.
-- Logging output from called python modules.
-- Expandable and collapsible via arrow.
-- Close with the "X" button on the right (re-enable through the [`View` menu](#view)).
-- Movable and resizable.
-- Right-click in the console to open the context menu, which also allows to to access the preferences.
+The log console displays logging output from both GUI actions and the underlying Python modules called during the analysis.
+It can be expanded or collapsed using the arrow control and closed entirely with the "X" button on its right side; if closed, it can be re-enabled through the [`View` menu](#view).
+The console panel is also movable and resizable within the GUI window.
+Right-clicking inside the console opens a context menu that provides access to additional preferences.
 
-Hint:  initialized with log level `INFO`, call GUI with `python -d` to set log level to `DEBUG` and get more detailed logging output, e.g. for debugging purposes.
+!!! tip "Debug Logging"
+    By default, the log console is initialized with log level `INFO`.
+    To enable more detailed output for debugging purposes, launch the GUI with the `-d` flag (e.g. `python -d`), which sets the log level to `DEBUG`.
