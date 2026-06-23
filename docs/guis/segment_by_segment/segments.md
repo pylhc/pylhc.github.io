@@ -172,7 +172,7 @@ When multiple optics are loaded simultaneously, identically defined segments (sh
 This grouping makes it straightforward to compare results from different measurements or different correction schemes for the same segment of the accelerator.
 Hovering over a segment entry in the table displays a tooltip showing which loaded optics it belongs to and whether propagation has been run.
 
-!!! warning "Indentical Only"
+!!! warning "Identical Only"
     Note that segments with different start or end BPMs are never grouped together, even when sharing a name.
     This is because they are, well, different segments.
 
