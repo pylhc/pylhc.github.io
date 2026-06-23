@@ -167,29 +167,34 @@ Once optics errors have been identified, see [determining corrections](correctio
 
 ### Comparing Multiple Segments or Optics
 
-When multiple optics are loaded simultaneously, identically defined segments — those sharing the same name, start BPM and end BPM — are automatically grouped together and overlaid on the same plot.
-This makes it straightforward to compare results from different measurements or different correction schemes for the same region of the accelerator.
-Hovering over a segment entry in the table displays a tooltip showing which loaded optics it belongs to and whether the analysis has been run for each one.
-Note that segments with different start or end BPMs are never grouped together, even if they share the same name, because they represent physically different analyses.
+When multiple optics are loaded simultaneously, identically defined segments (sharing the same name, start BPM and end BPM) are automatically grouped together and overlaid on the same plot when selected together.
+
+This grouping makes it straightforward to compare results from different measurements or different correction schemes for the same segment of the accelerator.
+Hovering over a segment entry in the table displays a tooltip showing which loaded optics it belongs to and whether propagation has been run.
+
+!!! warning "Indentical Only"
+    Note that segments with different start or end BPMs are never grouped together, even when sharing a name.
+    This is because they are, well, different segments.
 
 When multiple segments are selected, the default behaviour is to only plot together those that share the same start BPM, since the horizontal axis position is relative to the start of the segment.
+
 This constraint can be relaxed via the `Same segment start` option in the [plot settings](settings.md#plot-settings), although doing so is generally not recommended as it can lead to confusion when comparing positions.
 Activating the `Model Location` option changes the horizontal axis to show absolute positions in the accelerator rather than positions relative to the segment start, which makes it meaningful to overlay segments with different start BPMs and compare their results directly.
 
-Each combination of segment and optics is assigned a consistent color, while different markers and line styles distinguish forward propagation, backward propagation, corrected and expected traces.
-When plotting many segments at once, it is advisable not to activate all trace types simultaneously, as the plot can become very crowded and difficult to read.
+Each combination of segment and optics is assigned a consistent color, while different markers and line styles distinguish forward propagation, backward propagation, corrected and expected traces (see the next page for the meaning of the former two).
+When plotting many segments at once, it is advised not to activate all trace types simultaneously, as the plot can become very crowded and difficult to read.
 
-???+ tip "Plot Shortcuts"
+??? tip "Some Plot Shortcuts"
 
     The plot supports the following keyboard and mouse shortcuts for navigation and inspection:
 
-    - **Hover**: Show Optics name, BPM name and the value of the point in the plot.
+    - **On Hover**: Show optics name, BPM name and the value of the point in the plot.
     - **Double Click** / **Right Click**: Zoom history back one step (only works for rectangle zoom).
     - **Shift + Right Click**: Reset zoom to the original view.
-    - **Alt + Right Click**: Open the pyqtgraph context menu.
+    - **Alt + Right Click**: Open the `pyqtgraph` context menu.
     - **Click and Drag**: Draw a rectangle to zoom into a specific area of the plot.
-    - **Scroll in Graph**: Zoom in and out of the plot, both axis.
-    - **Scroll over one axis**: Zoom in and out of the plot, only the axis you are scrolling over.
+    - **Scroll in Graph**: Zoom in and out of the plot, both axes.
+    - **Scroll over one axis**: Zoom in and out of the plot, only for the axis scrolled over.
 
 *[SbS]: Segment-by-Segment
 *[RDT]: Resonance Driving Term
