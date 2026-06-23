@@ -149,16 +149,21 @@ Hovering over the `running tasks` text next to the spinner displays the name of 
 
 ## Inspecting Results
 
-After the analysis has completed, click on a segment name in the table to display its results in the main plot area.
-The plot shows the difference between the propagated model and the measurement, allowing you to identify where discrepancies exist and pinpoint the locations of optics errors.
+After the propagation has completed for a segment, selecting it in the segments table will display its results in the main plot area.
+By default the plot shows the difference between the propagated model and the measurement.
+This view allows one to identify where discrepancies exist and pinpoint the locations of optics errors.
 
-The solid line represents this difference under the assumption that the model and measurement share the same value at the start BPM (or the end BPM for backward propagation).
-Arrow markers indicate the direction of propagation — rightward arrows for forward propagation and leftward arrows for backward propagation.
+<!-- TODO: Add a propagation result screenshot here -->
+
+The solid line represents said difference under the assumption that the model and measurement share the same value at the start BPM (or end BPM for backward propagation).
+Arrow markers indicate the direction of the propagation: rightward arrows for forward propagation and leftward arrows for backward propagation.
+
 Inspecting both directions helps confirm the error source: if deviations appear after the same location from both sides, that location is likely where the error originates.
+<!-- TODO: Have an example pointing at the screenshot above? -->
 
-The tabs above the plot area allow switching between the different optics parameters that are propagated through the segments, such as the phase advance, the $\beta$-function or coupling RDTs.
+The tabs above the plot area allow switching between the different optics parameters propagated through the segments, such as the phase advance, the $\beta$-function or coupling RDTs.
 
-Once you have identified optics errors, see [Determining Corrections](corrections.md) for how to apply and test corrections.
+Once optics errors have been identified, see [determining corrections](corrections.md) on the next page for how to test corrections.
 
 ### Comparing Multiple Segments or Optics
 
@@ -187,6 +192,7 @@ When plotting many segments at once, it is advisable not to activate all trace t
     - **Scroll over one axis**: Zoom in and out of the plot, only the axis you are scrolling over.
 
 *[SbS]: Segment-by-Segment
+*[RDT]: Resonance Driving Term
 
 [sbs_method]: ../../measurements/physics/sbs.md
 [sbs_settings]: settings.md#main-settings
