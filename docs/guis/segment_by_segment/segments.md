@@ -109,7 +109,7 @@ New segments will display in the segments table, as shown below.
 <!-- TODO: Better quality picture? -->
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/side_panel.png" width="100%" alt="Side Panel with Segments"/>
+  <img class="clickImg" src="../../assets/images/sbs_gui/side_panel.png" width="85%" alt="Side Panel with Segments"/>
   <figcaption>The side panel with added segments for the measurement_b1 loaded optics.</figcaption>
   </center>
 </figure>
