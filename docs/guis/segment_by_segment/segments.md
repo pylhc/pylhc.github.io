@@ -71,13 +71,6 @@ Segments can be added by first selecting a loaded optics measurement.
 
 The quickest way to get started is to click the ++"Add Defaults"++ button, which populates a predefined set of segments appropriate for the currently selected accelerator.
 
-<!-- <figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/side_panel.png" width="100%" alt="Side Panel"/>
-  <figcaption>The side panel.</figcaption>
-  </center>
-</figure> -->
-
 For instance, in the LHC the default segments cover IP1, IP2, IP5 and IP8.
 Each spans from `BPM.L12` to `BPM.R12` and contains a main interaction points.
 They are therefore of particular interest for the LHC analysis.
@@ -114,6 +107,13 @@ The `Remove` button deletes the selected segment from the table; this only remov
 !!! warning "Save/Load Segments — Not Implemented"
     In the future, segment definitions (name, start, end) will be saved as a JSON file in the output directory of the optics (e.g. `sbs/segments.json`) and reloaded automatically when the optics are loaded.
     This will allow segment definitions to persist even if the analysis has not been run yet and will make it easy to share segment configurations between different measurements by copying the JSON file.
+
+<!-- <figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/side_panel.png" width="100%" alt="Side Panel"/>
+  <figcaption>The side panel.</figcaption>
+  </center>
+</figure> -->
 
 ## Running Segments
 
