@@ -122,20 +122,23 @@ It is possible at any time to edit a given segment's properties by double clicki
 
 ## Running Segments
 
-Once segments are defined, select the segments and optics you want to analyse, then click the `Run Segment(s)` button.
-If the output file already exists for a given combination, it will be overwritten by the new run.
+Once segments are defined, for a given optics select the segments to propagate measured properties through, then click the ++"Run Segment(s)"++ button.
 
-During the analysis, optics parameters are propagated from the start and end BPMs through each defined segment using MAD-X.
-The propagated values are then compared against the measured data to compute the differences.
-Errors from the original BPMs are also propagated through the segment and added in quadrature to the measurement uncertainty.
+!!! info "Output Persistence"
+    Please note that (re-)running a segment will overwrite any previous run with the most recent results.
+
+In the background, optics parameters from the measurement are propagated through the model from the `start` and `end` BPMs, through each defined segment, using `MAD-X`.
+The propagated values are then compared against the measured data and deviations are computed.
+
+Measured errors are also propagated through the segment, although analytically, and added in quadrature to the measurement uncertainty.
 
 !!! tip "Choice of First and Last BPMs"
     The measurement values and errors at the location of the first BPM in the segment are the ones used for the propagation.
     Depending on the quality of the measurement at said BPM, the propagation might yield low quality data.
-    It can sometimes be a good idea to attempt the segment with a different start BPM (and end BPM for reverse propagation) if encountering this issue.
+    It can sometimes be a good idea to attempt the segment with a different start BPM (and end BPM for backwards propagation) in such a case.
 
-While the analysis is running in the background, a spinner icon appears at the bottom right of the GUI.
-Hovering over the "running tasks" text next to the spinner displays the name of the currently running task (e.g. `SbS for <optics name>`).
+While the propagation is running in the background, a spinner icon appears at the bottom right of the GUI.
+Hovering over the `running tasks` text next to the spinner displays the name of the currently running task (e.g. `SbS for <optics name>`).
 
 <figure>
   <center>
