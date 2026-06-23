@@ -1,9 +1,53 @@
-# Settings
+# Menu & Settings
 
-This page is complementary to the other one.
-Settings open in the top left of the window.
+This page documents the menu bar, configurable settings, and log console of the Segment-by-Segment GUI.
 
-## Main Settings
+## Menu
+
+### SbS-Gui
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/menu_sbs_gui.png" width="100%" alt="Menu SbS-Gui"/>
+  <figcaption>The SbS-Gui menu.</figcaption>
+  </center>
+</figure>
+
+- **Settings**: Open the [settings dialog](#settings).
+- **Exit**: Close the GUI.
+
+### View
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/menu_view.png" width="100%" alt="Menu View"/>
+  <figcaption>The View menu.</figcaption>
+  </center>
+</figure>
+
+- **Full Screen**: Toggle full-screen mode.
+- **Plotting Settings**: Quick access to the checkboxes of the [plot settings](#plot-settings).
+- **Log Console**: Show or hide the [log console](#log-console) at the bottom of the GUI.
+
+### Help
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/menu_help.png" width="100%" alt="Menu Help"/>
+  <figcaption>The Help menu.</figcaption>
+  </center>
+</figure>
+
+- **Reload Data**: Reload the data from the input files. This is useful if you have made changes to the input files and want to see the updated results without restarting the GUI.
+- **Show Help**: Open the help dialog with some main instructions on how to use the GUI.
+- **About**: Opens the about dialog, which displays some information about the GUI, e.g. the version.
+
+## Settings
+
+The settings dialog is accessible from the `SbS-Gui` menu.
+Hints are available on hovering over each setting's text.
+
+### Main Settings
 
 <figure>
   <center>
@@ -11,8 +55,6 @@ Settings open in the top left of the window.
   <figcaption>The main settings.</figcaption>
   </center>
 </figure>
-
-Note: Hints available on hovering over the settings text.
 
 - **Working Directory**:
 The directory where the input files are located.
@@ -27,9 +69,9 @@ This looks for files created by the GUI in earlier runs and for now only works i
 Automatically add default segments when loading a new measurement optics directory.
 
 - **Suggest Correctors**:
-When opening the [corrections dialog](gui.md#corrections) for a new/not yet existing correction file, suggest correctors based on the optics and measurement data.
+When opening the [corrections dialog](gui.md#finding-corrections) for a new/not yet existing correction file, suggest correctors based on the optics and measurement data.
 
-## Plot Settings
+### Plot Settings
 
 <figure>
   <center>
@@ -37,8 +79,6 @@ When opening the [corrections dialog](gui.md#corrections) for a new/not yet exis
   <figcaption>The plotting settings.</figcaption>
   </center>
 </figure>
-
-Note: Hints available on hovering over the settings text.
 
 - **Show Model**: Adds markers for the location of elements in the model to the plots.
 - **Show Legend**: Show legends in the plots.
@@ -59,3 +99,21 @@ Note: Hints available on hovering over the settings text.
   <figcaption>Example of two segments with different start BPMs when plotted with `Model Location` activated.</figcaption>
   </center>
 </figure>
+
+## Log Console
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/log_console.png" width="100%" alt="Log Console"/>
+  <figcaption>The log console.</figcaption>
+  </center>
+</figure>
+
+The log console displays logging output from both GUI actions and the underlying Python modules called during the analysis.
+It can be expanded or collapsed using the arrow control and closed entirely with the "X" button on its right side; if closed, it can be re-enabled through the [View menu](#view).
+The console panel is also movable and resizable within the GUI window.
+Right-clicking inside the console opens a context menu that provides access to additional preferences.
+
+!!! tip "Debug Logging"
+    By default, the log console is initialized with log level `INFO`.
+    To enable more detailed output for debugging purposes, launch the GUI with the `-d` flag (e.g. `python -d`), which sets the log level to `DEBUG`.
