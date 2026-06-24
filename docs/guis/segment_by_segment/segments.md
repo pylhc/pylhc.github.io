@@ -1,7 +1,7 @@
 # Loading Data and Running Segments
 
 The first step in a [segment-by-segment][sbs_method] analysis is loading data and running a segment to propagate the measured properties through the machine's model.
-This page will showcase the interface and workflow to do so.
+This page showcases the interface and workflow to do so.
 
 ## Loading Measurement Data
 
