@@ -53,10 +53,12 @@ The help menu provides options for reloading data, accessing help, and viewing i
 
 ## Settings
 
-The settings dialog is accessible from the `SbS-Gui` menu.
-Hints are available on hovering over each setting's text.
+The settings window is accessible from the [`SbS-GUI` menu](#sbs-gui-menu), and is split into two tabs.
+Note that contextual hints are available on hovering over each setting's text.
 
 ### Main Settings
+
+The main settings tab allows configuring the working directory for the GUI as well as various automatic behaviours.
 
 <figure>
   <center>
@@ -65,20 +67,15 @@ Hints are available on hovering over each setting's text.
   </center>
 </figure>
 
-- **Working Directory**:
-The directory where the input files are located.
+- **Working Directory**: The directory where the input files are located.
 The GUI will use this directory as the default directory when opening file dialogs for loading optics and measurement data.
 
-- **Autoload Segments**:
-Automatically load existing segments when loading a new measurement optics directory.
-This looks for files created by the GUI in earlier runs and for now only works if the segment has actually been run.
-(Future implementation: also check for json files - see `Save` and `Load` buttons.)
+- **Autoload Segments**: Automatically load existing segments when loading a new measurement optics directory.
+This looks for files created by the GUI in earlier runs and for now only works for a segment if it has actually been run.
 
-- **Auto-Add Default Segments**:
-Automatically add default segments when loading a new measurement optics directory.
+- **Auto-Add Default Segments**: Automatically add default segments when loading a new measurement optics directory, if applicable.
 
-- **Suggest Correctors**:
-When opening the [corrections dialog](corrections.md#corrected-and-expected-plots) for a new/not yet existing correction file, suggest correctors based on the optics and measurement data.
+- **Suggest Correctors**: When opening the [corrections dialog](corrections.md#applying-corrections) for a new correction file, suggest correctors based on the optics and measurement data.
 
 ### Plot Settings
 
