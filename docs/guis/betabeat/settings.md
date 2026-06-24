@@ -8,7 +8,7 @@
 </figure>
 
 Great care has been taken to create a user friendly and easy to find interface for all settings.
-The settings window can be initialized by the gear icon <span class="settings-icon">&#9881;</span> in the top left corner of the GUI.
+The settings window can be initialised by the gear icon <span class="settings-icon">&#9881;</span> in the top left corner of the GUI.
 
 !!! info "Defaults"
     The "Default" values given here are the defaults used in `python`,
@@ -30,7 +30,7 @@ There is some general behaviour, that is true for all settings-tabs:
 - Settings are **reset** to last applied on ++cancelbtn++.
 - ++"Save to File"++: When saving the settings to file, a file `settings_xxx.properties` is created, containing entries for **ALL** settings, even those not set in the GUI.
 - ++"Load from File"++: When loading settings from file, not all possible entries need to be present in that file and **only present ones will be modified** in the UI.
-  Entries in the file, that are not recognized as settings will be ignored.
+  Entries in the file, that are not recognised as settings will be ignored.
 
 !!! info "Some Background on the Internals"
     To "apply" settings simply means that the current values in the UI are assigned to the corresponding settings class,
@@ -70,14 +70,14 @@ This is in contrast to the other settings tabs, which control the settings passe
 
 - **Analyse TbT Files on Opening**:
   If active and you open a turn-by-turn file, via the ++"Open Files"++{.green-gui-button} in the [BPM Panel](bpm_panel.md),
-  `harpy` analysis will be automatically started (for now: the user will be prompted with the ["Do analysis Dialog"](bpm_panel.md#do-analysis-dialog) directly after TbT import).
+  `harpy` analysis will be automatically started (for now: the user will be prompted with the ["Do analysis Dialogue"](bpm_panel.md#do-analysis-dialogue) directly after TbT import).
 
 - **Python Path**:
   Change the location of the `python` executable to be used to run the python scripts.
   After a change here, the GUI will check which versions of `omc3` and `pylhc` are installed in the selected environment and update the [entry at the top](common_components.md#top-of-the-gui).
 
 - **Python Debugging**:
-  If active, the GUI will run the `python` script with the `-d` flag, which initializes the logging level in our scripts automatically to `DEBUG`.
+  If active, the GUI will run the `python` script with the `-d` flag, which initialises the logging level in our scripts automatically to `DEBUG`.
 
 - **Use Server for Analysis**:
   When set, all `python` tasks requiring lots of memory and processing power (e.g. `hole-in-one` for `harpy` and `optics`) will be run on that server.
@@ -204,7 +204,7 @@ The Harpy tab contains the settings for the [harmonic `harpy` analysis][harpy_an
   This parameter determines which output files are written out.
   Each file has usually a `x` and `y` version for each per plane.
   The following options are available:
-    - `lin`: Write out the `.lin`-file, which contain a table of BPMs and summarize their main and resonance lines, as well as additional information, e.g. noise.
+    - `lin`: Write out the `.lin`-file, which contain a table of BPMs and summarise their main and resonance lines, as well as additional information, e.g. noise.
     - `spectra`: Write out the `.amps` and `.freqs`-files, which contain the amplitudes and frequencies within the given `Tolerance` (see [Tunes Tab](#tunes-tab)) around the main and resonance lines.
     - `full_spectra`: This setting overrides the `spectra`-setting and writes out **all** amplitudes and frequencies of the binned spectrum in the same file-format.
     - `bpm_summary`: Write out the `.bad_bpms`-file, which contains a summary of BPMs that are determined as bad or not.
@@ -345,12 +345,12 @@ introduced by the AC-Dipole and if they are not found in the data, the optics an
   Files to to use for the optics analysis.
   These are the output files from `harpy`.
   This field is not editable and is only shown here, as `files` is an argument to `optics_measurement` and an attribute on the internal `OpticsSettings` class.
-  The actual files to use are chosen from the [Analysis Panel](analysis_panel.md), after which this field is automatically filled in when shown in the [Run Optics](analysis_panel.md#do-optics-dialog) popup window.
+  The actual files to use are chosen from the [Analysis Panel](analysis_panel.md), after which this field is automatically filled in when shown in the [Run Optics](analysis_panel.md#do-optics-dialogue) popup window.
 
 - **Outputdir**:
   Directory to place to output of the optics analysis.
   The field is not editable and is only shown here, as `outputdir` is an argument to `optics_measurement` and an attribute on the internal `OpticsSettings` class.
-  The actual directory is chosen by the user per analysis, when setting an analysis name in the [Run Optics](analysis_panel.md#do-optics-dialog) popup window.
+  The actual directory is chosen by the user per analysis, when setting an analysis name in the [Run Optics](analysis_panel.md#do-optics-dialogue) popup window.
 
 - **Calibrationdir**:
   Path to the directory containing the [calibration][bpm_calibration] files, used to rescale the BPM amplitudes and amplitude errors.
@@ -483,7 +483,7 @@ which is the `python`-internal representation of the accelerator and its setting
     - add the **label** and appropriate user **interface element**.
     - use `getComponentValue()` to automatically **extract** the value from the UI in a unified way and set the attribute on the class.
     - use `setComponentValue()` to automatically **set** the value in the UI in a unified way from the current value of the class.
-    - use `addColorActionListener()` on the new label to **automatically set the color on changes**.
+    - use `addColorActionListener()` on the new label to **automatically set the colour on changes**.
 
 [python-docs]: https://pylhc.github.io/omc3/
 [multiturn]: ../multiturn/gui.md

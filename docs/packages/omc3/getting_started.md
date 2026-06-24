@@ -55,7 +55,7 @@ Other general utility scripts are in `/omc3/scripts` module:
 - `kmod_average.py` to calculate the average of multiple K-modulation measurements.
 - `kmod_import.py` to import a K-modulation measurement into an optics-measurement directory.
 - `kmod_lumi_imbalace.py` to calculate the luminosity imbalance between two IPs from averaged K-modulation files.
-- `bad_bpms_summary.py` to collect and summarize the bad BPMs from GUI runs.
+- `bad_bpms_summary.py` to collect and summarise the bad BPMs from GUI runs.
 - `resync_bpms.py` to perform re-synchronisation of SuperKEKB BPMs data after a first optics analysis.
 
 A typical analysis workflow with `omc3` is described in the [next page](analysis.md).

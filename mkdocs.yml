@@ -94,7 +94,7 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-# Customization
+# Customisation
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -184,7 +184,7 @@ nav:
     - K-Modulation GUI:
       - About: guis/kmod/gui.md
       - Performing a Modulation: guis/kmod/modulating.md
-      - Analyzing Modulations: guis/kmod/analyzing.md
+      - Analysing Modulations: guis/kmod/analyzing.md
     - Chromaticity GUI:
       - About: guis/chroma/gui.md
     - RDT Feeddown GUI:

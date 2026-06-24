@@ -69,7 +69,7 @@ The content of this page has been converted from the presentation given as ["OMC
 ## Bad BPMs Summary Script
 
 * Bad-BPMs are written out in files <span class="omc-emph">per analysed TbT-Data</span>.
-* Script available to <span class="omc-emph">gather, summarize and make statistics</span>.
+* Script available to <span class="omc-emph">gather, summarise and make statistics</span>.
 
 ```bash
 usage: bad_bpms_summary.py [-h] --dates DATES [DATES ...] [--root ROOT] [--outfile OUTFILE]

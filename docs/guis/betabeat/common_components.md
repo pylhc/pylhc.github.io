@@ -29,8 +29,8 @@ All plots are running with the same back-end classes, which allows additional co
 - ++shift+rbutton++ : Undo all steps (reset plot).
 - ++mousewheel++ : Zoom relative to mouse position.
 - ++shift+mousewheel++ : Zoom y-axis relative to mouse position.
-- ++alt+mousewheel++ : Zoom relative to plot center.
-- ++shift+alt+mousewheel++ : Zoom y-axis relative to plot center.
+- ++alt+mousewheel++ : Zoom relative to plot centre.
+- ++shift+alt+mousewheel++ : Zoom y-axis relative to plot centre.
 
 ## Top of the GUI
 
@@ -52,7 +52,7 @@ currently selected `python` environment  and which ones are recommended by the c
 If you are using an older version than recommended, a lot of the functionality might still work, but some
 features might be missing or not work with the arguments the GUI provides.
 
-The colored button and dropdown menu that follows is the **RBAC** (Role Based Access Control) menu,
+The coloured button and dropdown menu that follows is the **RBAC** (Role Based Access Control) menu,
 which shows you the current status of, and allows you to acquire, an access token,
 e.g. for the [creation of knobs](correction_panel.md#knob-creation).
 
@@ -96,7 +96,7 @@ the [tasks](#running-tasks) started from the GUI.
 This information is much more detailed than the [console](#console), and should be consulted whenever
 an error is reported.
 
-By default the `python` logging is initialized at the `INFO` level.
+By default the `python` logging is initialised at the `INFO` level.
 To enable a more detailed output, you can change the logging level to `DEBUG` for all tasks in the [settings window](settings.md#gui-tab).
 
 ### Terminal
@@ -131,16 +131,16 @@ As long as any task is running, there will also be a small animation on the righ
     but the actual task will keep running in the background.
     This needs to be implemented in the future.
 
-## File Opening Dialogs
+## File Opening Dialogues
 
 To make navigating between different folders easier, especially considering the deeply nested paths of `afs` and `nfs`,
-some shortcuts have been implemented into the file opening dialogs, which become available for all relevant dialogs **after [the beam selection window](beam_selection.md)**.
-They can be found at the top right of the dialog, and hovering them will show their functionality:
+some shortcuts have been implemented into the file opening dialogues, which become available for all relevant dialogues **after [the beam selection window](beam_selection.md)**.
+They can be found at the top right of the dialogue, and hovering them will show their functionality:
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/open_files_folders.png" width="30%" alt="Special links in the file opening dialogs." />
-  <figcaption>Special links in the file opening dialogs.</figcaption>
+  <img src="../../assets/images/betabeat_gui/open_files_folders.png" width="30%" alt="Special links in the file opening dialogues." />
+  <figcaption>Special links in the file opening dialogues.</figcaption>
   </center>
 </figure>
 

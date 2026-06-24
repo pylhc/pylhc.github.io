@@ -1,6 +1,6 @@
 # The Analysis Panel
 
-The analysis panel provides graphical interface to visualize results from harmonic analysis performed on the given data.
+The analysis panel provides graphical interface to visualise results from harmonic analysis performed on the given data.
 
 <figure>
   <center>
@@ -13,14 +13,14 @@ The analysis panel provides graphical interface to visualize results from harmon
 
 When the `harpy` analysis is started from the [BPM-Panel](bpm_panel.md), the results are automatically loaded when the analysis task has finished.
 The buttons at the top of the panel provide functionality to manually load files and remove entries from the analysis table,
-as well as to start the [optics analysis](#do-optics-dialog).
+as well as to start the [optics analysis](#do-optics-dialogue).
 
-- ++"Open Files"++{.green-gui-button}: Opens a dialog to select files to be loaded. The files will be **copied** into the `Measurements` folder and opened from there.
-- ++"Attach Files"++{.yellow-gui-button}: Opens a dialog to select files to be loaded. The files will be **opened from their current location**.
+- ++"Open Files"++{.green-gui-button}: Opens a dialogue to select files to be loaded. The files will be **copied** into the `Measurements` folder and opened from there.
+- ++"Attach Files"++{.yellow-gui-button}: Opens a dialogue to select files to be loaded. The files will be **opened from their current location**.
 - ++"Delete Files"++{.red-gui-button}: Removes the selected files from the analysis table.
-  A dialog will pop up, asking if the files should only be removed from this table, i.e. from being loaded in memory (see admonition below), or if they should also be deleted from disk.<br>
+  A dialogue will pop up, asking if the files should only be removed from this table, i.e. from being loaded in memory (see admonition below), or if they should also be deleted from disk.<br>
   :fontawesome-solid-triangle-exclamation:{.warning-colored} Due to [an unresolved issue][issue268]{target=_blank} it is currently **not advised** to delete files from disk.
-- ++"Get Optics"++{.green-gui-button}: Opens [the optics analysis dialog](#do-optics-dialog) which can trigger an external python script to compute the optics functions from the harmonic analysis data of the selected files.
+- ++"Get Optics"++{.green-gui-button}: Opens [the optics analysis dialogue](#do-optics-dialogue) which can trigger an external python script to compute the optics functions from the harmonic analysis data of the selected files.
 
 <figure>
   <center>
@@ -198,15 +198,15 @@ Choose from the dropdown menu which tune values should be used for the calculati
 
 The range of orders of the resonance lines to be shown can be chosen by changing the values in the text fields,
 where the order `n` is defined as the sum of absolute multiples of the horizontal and vertical tune of the line, e.g. the order of the `2Qy - Qx` line is `n = 2 + 1 = 3`.
-Different orders will be shown in different colors.
+Different orders will be shown in different colours.
 Hovering the resonance line towards the top of the chart will show a tooltip with the tune multiples of that line and its frequency.
 
-Clicking the ++"Custom"++ button will open a dialog to manually enter frequency and labels of additional vertical bars to be shown in red in the chart.
+Clicking the ++"Custom"++ button will open a dialogue to manually enter frequency and labels of additional vertical bars to be shown in red in the chart.
 
 <figure>
 <center>
-<img src="../../assets/images/betabeat_gui/analysis_panel_frequency_manual_line.png" width="60%"alt="Custom lines dialog." />
-<figcaption>The custom lines dialog to manually add lines.</figcaption>
+<img src="../../assets/images/betabeat_gui/analysis_panel_frequency_manual_line.png" width="60%"alt="Custom lines dialogue." />
+<figcaption>The custom lines dialogue to manually add lines.</figcaption>
 </center>
 </figure>
 
@@ -337,21 +337,21 @@ So this is the same as _Points_ but with additional lines between the markers.
 Two methods are available to save the chart to file:
 
 - ++"GUI"++ :
-This button will open a dialog asking where to save the **chart component directly from java** as a **PNG file**.
+This button will open a dialogue asking where to save the **chart component directly from java** as a **PNG file**.
 The output will look exactly like the chart in the GUI, as it is rendered directly from `java`.
 - ++"PDF"++ :
 This button allows passing the currently selected data to the [`plot_spectrum` script][omc3_plot_spectrum]{target=_blank} to save the spectrum as a **PDF file**.
 As the spectrum is completely rendered by the `python` script, the output will look different from the chart in the GUI but will show in general the same information, with some important caveats listed below.
 
-    - Clicking the button will open a dialog to select an output **directory**.
+    - Clicking the button will open a dialogue to select an output **directory**.
       As multiple files might be created, the filenames are determined automatically.
-      Subsequently, a second dialog will appear, displaying the selected path (modifiable if required).
+      Subsequently, a second dialogue will appear, displaying the selected path (modifiable if required).
       In this window, the data to be grouped within the same plots/files can be defined:
 
         <figure>
         <center>
-        <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_export.png" width="60%" alt="Export Spectrum Dialog."/>
-        <figcaption>The export spectrum dialog.</figcaption>
+        <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_export.png" width="60%" alt="Export Spectrum Dialogue."/>
+        <figcaption>The export spectrum dialogue.</figcaption>
         </center>
         </figure>
 
@@ -365,17 +365,17 @@ As the spectrum is completely rendered by the `python` script, the output will l
     - Having both _"BPMs"_ and _"Measurements"_ deactivated will lead to `N = No. of selected BPMs x No. of selected Measurements` files, containing two charts for the planes with each showing only a single spectrum.
       Both, BPM and Measurement name will be in the filename.
 
-## Do Optics Dialog
+## Do Optics Dialogue
 
-The ++"Get Optics"++{.green-gui-button} button opens a dialog to select the settings and run the [optics analysis][optics_analysis],
+The ++"Get Optics"++{.green-gui-button} button opens a dialogue to select the settings and run the [optics analysis][optics_analysis],
 which will calculate the optics parameters based on the spectra of the [currently selected files](#loading-files).
 
 === "Closed Settings"
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/do_optics_dialog.png" width="100%" alt="The 'Do Optics' Dialog"/>
-    <figcaption>The "Do Optics" Dialog.</figcaption>
+    <img src="../../assets/images/betabeat_gui/do_optics_dialog.png" width="100%" alt="The 'Do Optics' Dialogue"/>
+    <figcaption>The "Do Optics" Dialogue.</figcaption>
     </center>
     </figure>
 
@@ -383,8 +383,8 @@ which will calculate the optics parameters based on the spectra of the [currentl
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/do_optics_dialog_settings.png" width="100%" alt="The 'Do Optics' Dialog with open settings"/>
-    <figcaption>The "Do Optics" Dialog with open settings.</figcaption>
+    <img src="../../assets/images/betabeat_gui/do_optics_dialog_settings.png" width="100%" alt="The 'Do Optics' Dialogue with open settings"/>
+    <figcaption>The "Do Optics" Dialogue with open settings.</figcaption>
     </center>
     </figure>
 
@@ -395,7 +395,7 @@ All optics analysis results are stored in the `Results` folder, and will be auto
 
 ### Settings
 
-By expanding the _Settings_ section at the bottom of the dialog
+By expanding the _Settings_ section at the bottom of the dialogue
 one can change the [settings](settings.md) of the _[Optics tab](settings.md#optics-tab)_.
 
 !!! warning "Changing the Settings"

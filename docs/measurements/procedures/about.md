@@ -74,7 +74,7 @@ To mark a task as finished, just click on the checkbox next to it!
     Note that this needs to be run from a machine that has access to the technical network *and* `NFS` (such as `dev2`, optics servers and CCC machines).
     For the full usage details of this module, see the [package's documentation][pylhc_doc].
 
-*[CCC]: CERN Control Center
+*[CCC]: CERN Control Centre
 
 [op_webtools]: https://op-webtools.web.cern.ch/index.html
 [pylhc_doc]: https://pylhc.github.io/PyLHC

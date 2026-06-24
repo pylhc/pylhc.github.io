@@ -21,7 +21,7 @@ After opening, the GUI should look like this:
 After opening, select at the top of the GUI either the `Acquisition BEAM1` or `Acquisition BEAM2` tab, depending on the beam you plan on measuring.
 
 !!! warning
-    It is recommended to not kick both beams from the same GUI, as it can lead to crashes and unexpected behavior.
+    It is recommended to not kick both beams from the same GUI, as it can lead to crashes and unexpected behaviour.
     Open a separate GUI for each beam.
 
 !!! tip "Closing Tabs"

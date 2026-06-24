@@ -38,7 +38,7 @@ which opens a putty-terminal connected to `lxplus` and starts a `X-Server` in th
   </center>
 </figure>
 
-Executing any graphical software from this terminal will ask for connection authorization, which you need to approve.
+Executing any graphical software from this terminal will ask for connection authorisation, which you need to approve.
 
 <figure>
   <center>

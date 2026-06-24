@@ -64,7 +64,7 @@ Information on ABP-specific resources can be found on the [dedicated website][ab
 See the section on [OpenStack VMs](openstack_vm.md) for more information.
 
 *[ABP]: Accelerator and Beam Physics
-*[CCC]: CERN Control Center
+*[CCC]: CERN Control Centre
 
 [abpcomputing]: https://abpcomputing.web.cern.ch
 [cern_htcondor_docs]: https://batchdocs.web.cern.ch/index.html
