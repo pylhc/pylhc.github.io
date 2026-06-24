@@ -168,7 +168,7 @@ Below is such an example from the LHC 2026 commissioning: forward and backward p
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/phase_forward_backward_propagated_Q5_issue.png" width="95%" alt="Forward Propagated Phase"/>
+  <img class="clickImg" src="../../assets/images/sbs_gui/phase_forward_backward_propagated_Q5_issue.png" width="95%" alt="Forward and Backward Propagated Phase"/>
   <figcaption>Forward and backward propagated phase deviation through IR5.</figcaption>
   </center>
 </figure>
