@@ -1,6 +1,7 @@
 # Menus and Settings
 
-This page documents the menu bar, configurable settings, and log console of the Segment-by-Segment GUI.
+As mentioned in the previous pages, various behaviours and display options can be selected.
+This page documents the menu bar and configurable settings of the Segment-by-Segment GUI.
 
 ## Menus
 
