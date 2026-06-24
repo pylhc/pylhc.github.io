@@ -107,7 +107,6 @@ This only removes the definition from the GUI and does not delete any output fil
 
 New segments will display in the segments table, as shown below.
 
-<!-- TODO: Better quality picture? -->
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/sbs_gui/side_panel.png" width="85%" alt="Side Panel with Segments"/>
