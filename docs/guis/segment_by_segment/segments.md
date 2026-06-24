@@ -100,6 +100,7 @@ The SbS GUI will automatically find the closest BPMs before and after the named 
     Activating the [`Model Location` option in the plot settings][sbs_plot_settings] avoids this issue by plotting positions in the accelerator frame rather than relative to the segment start.
 
 The ++"Copy"++ button creates a duplicate of the currently selected segment with a different name, which is useful for quickly creating variants, for instance with different start BPMs, to evaluate how the choice of starting point affects the results.
+This can also be used to compare corrections: see [testing multiple correction schemes](corrections.md#testing-multiple-correction-schemes).
 
 The ++"Remove"++ button deletes the selected segment from the table.
 This only removes the definition from the GUI and does not delete any output files from disk.
