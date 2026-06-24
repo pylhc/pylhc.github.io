@@ -38,7 +38,6 @@ The GUI window is made up of the following main components.
 === "Optics Panel"
 
     The top left panel displays the loaded measurement data as well as various actions related to data.
-    <!-- TODO: Take better quality screenshot -->
 
     <figure>
       <center>
@@ -50,7 +49,6 @@ The GUI window is made up of the following main components.
 === "Segments Panel"
 
     The lower left panel displays the defined segments and buttons to perform actions with those segments.
-    <!-- TODO: Take better quality screenshot -->
 
     <figure>
       <center>
@@ -62,7 +60,6 @@ The GUI window is made up of the following main components.
 === "Main Plot Area"
 
     The main part of the window, to the right of the previous two panels, displays the quantities propagated through the selected segment.
-    <!-- TODO: Take better quality screenshot -->
 
     <figure>
       <center>
