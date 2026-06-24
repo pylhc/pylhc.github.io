@@ -5,36 +5,44 @@ This page documents the menu bar and configurable settings of the Segment-by-Seg
 
 ## Menus
 
-### SbS-Gui
+The SbS GUI offers three menus, all located in the top bar of the GUI.
+
+### SbS-GUI Menu
+
+The SbS-GUI menu is very succinct.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/menu_sbs_gui.png" width="100%" alt="Menu SbS-Gui"/>
-  <figcaption>The SbS-Gui menu.</figcaption>
+  <img class="clickImg" src="../../assets/images/sbs_gui/menu_sbs_gui.png" width="100%" alt="SbS-GUI Menu"/>
+  <figcaption>The SbS-GUI menu.</figcaption>
   </center>
 </figure>
 
 - **Settings**: Open the [settings dialog](#settings).
 - **Exit**: Close the GUI.
 
-### View
+### View Menu
+
+The view menu is split into three sections, separated by horizontal lines.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/menu_view.png" width="100%" alt="Menu View"/>
+  <img class="clickImg" src="../../assets/images/sbs_gui/menu_view.png" width="100%" alt="View Menu"/>
   <figcaption>The View menu.</figcaption>
   </center>
 </figure>
 
 - **Full Screen**: Toggle full-screen mode.
-- **Plotting Settings**: Quick access to the checkboxes of the [plot settings](#plot-settings).
-- **Log Console**: Show or hide the [log console](#log-console) at the bottom of the GUI.
+- **Various Plotting Settings**: Quick access to the checkboxes of the [plot settings](#plot-settings).
+- **Log Console**: Show or hide the log console at the bottom of the GUI.
 
-### Help
+### Help Menu
+
+The help menu provides options for reloading data, accessing help, and viewing information about the GUI.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/menu_help.png" width="100%" alt="Menu Help"/>
+  <img class="clickImg" src="../../assets/images/sbs_gui/menu_help.png" width="100%" alt="Help Menu"/>
   <figcaption>The Help menu.</figcaption>
   </center>
 </figure>
@@ -100,3 +108,5 @@ When opening the [corrections dialog](corrections.md#corrected-and-expected-plot
   <figcaption>Example of two segments with different start BPMs when plotted with `Model Location` activated.</figcaption>
   </center>
 </figure>
+
+*[SbS]: Segment-by-Segment
