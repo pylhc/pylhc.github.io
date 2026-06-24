@@ -10,7 +10,7 @@ It can be run either from the Beta-Beat GUI's [Optics Panel][bbgui_optics_panel]
 === "From the Beta-Beat GUI"
 
     After performing an optics analysis, navigate to the optics panel.
-    With an analysis selected, click the ++"Open Segment-by-Segment GUI"++ button to start the GUI.
+    With an analysis selected, click the ++"Open Segment-by-Segment GUI"++ button in the bottom left to start the GUI.
 
 === "From the Command Line"
 
