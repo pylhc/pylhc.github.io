@@ -5,19 +5,24 @@ This page covers how to apply corrections in the GUI, test different correction 
 
 ## Applying Corrections
 
-Once you have inspected the results and identified optics errors, the next step is to determine corrections.
-Clicking the `Corrections` button in the side panel opens the corrections dialog, where you can load or create a correction file to apply to the model.
-If a correction file is already associated with the selected optics, the dialog displays its contents and allows you to edit them directly.
-When no correction file is loaded, the dialog may suggest correctors based on the optics and measurement data, provided this feature is activated in the [settings](settings.md#main-settings).
+<!-- TODO: need correction dialog screenshot -->
+Clicking the ++"Corrections"++ button in the side panel opens the corrections dialog, where you can load or create a correction file to apply to the model.
+If a correction file is already associated with the selected optics, the dialog displays its contents directly and allows you to edit it.
 
-The correction file path is applied to all currently selected optics.
-If some of the selected measurements already have the same correction file loaded while others have none, a dialog will ask whether you want to apply the same correction file to all of them.
-If there is a conflict between different correction files across the selected optics, an error message is shown.
+!!! tip "Corrector Suggestions"
+    When no correction file is loaded, the dialog may suggest correctors based on the optics and measurement data, provided this feature is activated in the [settings](settings.md#main-settings).
 
-After applying a correction file, [re-run the analysis](segments.md#running-segments) to see the corrected results as dashed lines in the plot.
+Note that the correction file path is applied to all currently selected optics.
+
+If some of the selected measurements already have the same correction file loaded while others do not, a dialog will ask whether to apply the same correction file to all of them.
+If there is a conflict between different correction files across the selected optics, an error message will show.
+
+After editing and saving a correction file, [re-run the analysis](segments.md#running-segments) to see the corrected results as dashed lines in the plot.
+<!-- TODO: Show this -->
 
 !!! warning "Run Matcher — Not Implemented"
-    In the future, the `Run Matcher` button is intended to launch the automated matcher for the currently selected optics, which would calculate the correction and produce a correction file that can then be loaded in the corrections dialog.
+    In the future, the ++"Run Matcher"++ button is intended to launch the automated matcher for the currently selected optics and segment.
+    This would calculate the correction and produce a correction file that can then be loaded in the corrections dialog and further modified.
 
 ## Correction Sign Conventions
 
