@@ -1,6 +1,6 @@
 # Determining Corrections
 
-After having identified potential sources of errors through the forward and backward [propagation](segments.md#inspecting-results), the next step is to determine and test corrections.
+After having identified potential sources of errors through the forward and backward [propagation][sbs_inspect_results], the next step is to determine and test corrections.
 This page covers how to apply corrections in the GUI, test different correction schemes and interpret the resulting plots.
 
 !!! warning "Run Matcher — Not Implemented"
@@ -14,14 +14,14 @@ Clicking the ++"Corrections"++ button in the side panel opens the corrections di
 If a correction file is already associated with the selected optics, the dialog displays its contents directly and allows you to edit it.
 
 !!! tip "Corrector Suggestions"
-    When no correction file is loaded, the dialog may suggest correctors based on the optics and measurement data, provided this feature is activated in the [settings](settings.md#main-settings).
+    When no correction file is loaded, the dialog may suggest correctors based on the optics and measurement data, provided this feature is activated in the [settings][sbs_main_settings].
 
 Note that the correction file path is applied to all currently selected optics.
 
 If some of the selected measurements already have the same correction file loaded while others do not, a dialog will ask whether to apply the same correction file to all of them.
 If there is a conflict between different correction files across the selected optics, an error message will show.
 
-After editing and saving a correction file, [re-run the analysis](segments.md#running-segments) to see the corrected results as dashed lines in the plot.
+After editing and saving a correction file, [re-run the analysis][sbs_run_segments] to see the corrected results as dashed lines in the plot.
 <!-- TODO: Show this -->
 
 !!! info "Sign Conventions"
@@ -31,6 +31,16 @@ After editing and saving a correction file, [re-run the analysis](segments.md#ru
 
     In practice for the LHC IRs, using `MQX?->K1` element strengths to reproduce errors requires a sign change when converting to `LSA`, for all triplets.
     However, the `ktqx2` knob (used in `MAD-X`) already carries a sign opposite to `LSA` Q2 (unlike `ktqx1` or `kqx`), so its `LSA` conversion cancels out: no sign change (or rather a double sign change) is needed.
+
+### Corrected and Expected Plots
+
+When corrections have been applied and the segment is re-run, the updated plot shows a dashed line in addition to the solid propagated measurement line.
+The [plot settings][sbs_plot_settings] let you choose what this dashed line represents:
+
+- **Matched value (corr)**: the difference between the propagated corrected model and the nominal propagated model.
+  If the correction successfully reproduces the measured errors, this dashed line should lie close to the solid propagated measurement line.
+- **Expected value (expct)**: the difference between the measured values and the propagated corrected model.
+  This represents the expected outcome after the correction has been applied to the machine, and should therefore be close to zero for the correction to be effective.
 
 ## Testing Multiple Correction Schemes
 
@@ -42,12 +52,9 @@ In the side panel, virtual copies are displayed as `NAME -> OUTPUT_DIR_NAME` to 
 Similarly, creating multiple segments with different start BPMs for the same region lets you evaluate sensitivity to the starting point.
 This helps confirm whether the correction holds regardless of which BPM anchors the propagation.
 
-## Corrected and Expected Plots
+*[SbS]: Segment-by-Segment
 
-When corrections have been applied and the analysis is re-run, the plot shows a dashed line in addition to the solid measurement line.
-The [plot settings](settings.md#plot-settings) let you choose what this dashed line represents:
-
-- **Matched value (corr)**: the difference between the propagated corrected model and the nominal propagated model.
-  If the correction successfully reproduces the measured errors, this dashed line should lie close to the solid measurement line.
-- **Expected value (expct)**: the difference between the measured values and the propagated corrected model.
-  This represents the expected outcome of the SbS analysis after the correction has been applied to the machine, and should therefore be close to zero if the correction is effective.
+[sbs_inspect_results]: segments.md#inspecting-results
+[sbs_main_settings]: settings.md#main-settings
+[sbs_run_segments]: segments.md#running-segments
+[sbs_plot_settings]: segments.md#running-segments
