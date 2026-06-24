@@ -153,7 +153,12 @@ After the propagation has completed for a segment, selecting it in the segments 
 By default the plot shows the difference between the propagated model and the measurement.
 This view allows one to identify where discrepancies exist and pinpoint the locations of optics errors.
 
-<!-- TODO: Add a propagation result screenshot here -->
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/phase_propagated.png" width="95%" alt="Forward Propagated Phase"/>
+  <figcaption>Forward-propagated phase deviation through a segment centered on IP1.</figcaption>
+  </center>
+</figure>
 
 The solid line represents said difference under the assumption that the model and measurement share the same value at the start BPM (or end BPM for backward propagation).
 Arrow markers indicate the direction of the propagation: rightward arrows for forward propagation and leftward arrows for backward propagation.
