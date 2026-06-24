@@ -100,7 +100,7 @@ The SbS GUI will automatically find the closest BPMs before and after the named 
     Activating the [`Model Location` option in the plot settings][sbs_plot_settings] avoids this issue by plotting positions in the accelerator frame rather than relative to the segment start.
 
 The ++"Copy"++ button creates a duplicate of the currently selected segment with a different name, which is useful for quickly creating variants, for instance with different start BPMs, to evaluate how the choice of starting point affects the results.
-This can also be used to compare corrections: see [testing multiple correction schemes](corrections.md#testing-multiple-correction-schemes).
+This can also be used to compare corrections: see [testing multiple correction schemes][sbs_test_multiple_corrections].
 
 The ++"Remove"++ button deletes the selected segment from the table.
 This only removes the definition from the GUI and does not delete any output files from disk.
@@ -164,7 +164,7 @@ Inspecting both directions helps confirm the error source: if deviations appear 
 
 The tabs above the plot area allow switching between the different optics parameters propagated through the segments, such as the phase advance, the $\beta$-function or coupling RDTs.
 
-Once optics errors have been identified, see [determining corrections](corrections.md) on the next page for how to test corrections.
+Once optics errors have been identified, see [determining corrections][sbs_corrections] on the next page for how to test corrections.
 
 ### Comparing Multiple Segments or Optics
 
@@ -182,7 +182,7 @@ When multiple segments are selected, the default behaviour is to only plot toget
 This constraint can be relaxed via the `Same segment start` option in the [plot settings][sbs_plot_settings], although doing so is generally not recommended as it can lead to confusion when comparing positions.
 Activating the `Model Location` option changes the horizontal axis to show absolute positions in the accelerator rather than positions relative to the segment start, which makes it meaningful to overlay segments with different start BPMs and compare their results directly.
 
-Each combination of segment and optics is assigned a consistent color, while different markers and line styles distinguish forward propagation, backward propagation, corrected and expected traces (see [Determining Corrections](corrections.md) for details on these).
+Each combination of segment and optics is assigned a consistent color, while different markers and line styles distinguish forward propagation, backward propagation, corrected and expected traces (see [Determining Corrections][sbs_corrections] for details on these).
 When plotting many segments at once, it is advised not to activate all trace types simultaneously, as the plot can become very crowded and difficult to read.
 
 ??? tip "Some Plot Shortcuts"
@@ -203,3 +203,5 @@ When plotting many segments at once, it is advised not to activate all trace typ
 [sbs_method]: ../../measurements/physics/sbs.md
 [sbs_main_settings]: settings.md#main-settings
 [sbs_plot_settings]: settings.md#plot-settings
+[sbs_test_multiple_corrections]: corrections.md#testing-multiple-correction-schemes
+[sbs_corrections]: corrections.md
