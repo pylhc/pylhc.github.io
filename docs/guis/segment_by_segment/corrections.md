@@ -21,7 +21,7 @@ Note that the correction file path is applied to all currently selected optics.
 If some of the selected measurements already have the same correction file loaded while others do not, a dialog will ask whether to apply the same correction file to all of them.
 If there is a conflict between different correction files across the selected optics, an error message will show.
 
-After editing and saving a correction file, [re-run the analysis][sbs_run_segments] to see the corrected results as dashed lines in the plot.
+After editing and saving a correction file, [run the propagation][sbs_run_segments] again to see the corrected results as dashed lines in the plot.
 <!-- TODO: Show this -->
 
 !!! info "Sign Conventions"
@@ -57,4 +57,4 @@ This helps confirm whether the correction holds regardless of which BPM anchors 
 [sbs_inspect_results]: segments.md#inspecting-results
 [sbs_main_settings]: settings.md#main-settings
 [sbs_run_segments]: segments.md#running-segments
-[sbs_plot_settings]: segments.md#running-segments
+[sbs_plot_settings]: settings.md#plot-settings

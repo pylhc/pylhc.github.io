@@ -86,7 +86,7 @@ The GUI window is made up of the following main components.
     </figure>
 
     It can be expanded or collapsed using the arrow control and closed entirely with the ++"X"++ button on its right side.
-    If closed, it can be re-enabled through the [View menu](settings.md#view).
+    If closed, it can be re-enabled through the [View menu][sbs_view_menu].
 
     The console panel is also movable and resizable within the GUI window.
     Right-clicking inside the console opens a context menu that provides access to additional preferences.
@@ -101,3 +101,4 @@ The following pages are available:
 
 [sbs_method]: ../../measurements/physics/sbs.md
 [bbgui_optics_panel]: ../betabeat/optics_panel.md
+[sbs_view_menu]: settings.md#view

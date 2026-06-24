@@ -26,7 +26,7 @@ Hovering over an optics name displays a tooltip with a summary of its associated
 </figure>
 
 The SbS analysis output is by default stored in a folder named `sbs` within the corresponding optics folder.
-If the corresponding option is activated in the [settings][sbs_settings], the GUI will automatically scan the `sbs` folder for existing segment results and load them into the segments table when loading the data.
+If the corresponding option is activated in the [settings][sbs_main_settings], the GUI will automatically scan the `sbs` folder for existing segment results and load them into the segments table when loading the data.
 
 ??? info "Editing Optics"
 
@@ -76,7 +76,7 @@ Each spans from `BPM.L12` to `BPM.R12` and contains one of the main interaction 
 They are therefore of particular interest for the LHC analysis.
 
 !!! tip "Auto Defaults"
-    If the corresponding option is activated in the [settings](settings.md#main-settings), default segments are automatically added whenever a new measurement optics directory is loaded.
+    If the corresponding option is activated in the [settings][sbs_main_settings], default segments are automatically added whenever a new measurement optics directory is loaded.
 
 ### Custom Segments
 
@@ -97,7 +97,7 @@ The SbS GUI will automatically find the closest BPMs before and after the named 
     The above means that, for different measurements, the actual start BPM may differ even if the defined segment uses the same start element; depending on which BPMs are present or filtered in the measurement data.
 
     Since the GUI checks only the segment definition and not the actual SbS output, this can lead to confusion when plotting multiple segments together: they will appear to start at the same point in the plot despite corresponding to different physical locations.
-    Activating the [`Model Location` option in the plot settings](settings.md#plot-settings) avoids this issue by plotting positions in the accelerator frame rather than relative to the segment start.
+    Activating the [`Model Location` option in the plot settings][sbs_plot_settings] avoids this issue by plotting positions in the accelerator frame rather than relative to the segment start.
 
 The ++"Copy"++ button creates a duplicate of the currently selected segment with a different name, which is useful for quickly creating variants, for instance with different start BPMs, to evaluate how the choice of starting point affects the results.
 
@@ -178,7 +178,7 @@ Hovering over a segment entry in the table displays a tooltip showing which load
 
 When multiple segments are selected, the default behaviour is to only plot together those that share the same start BPM, since the horizontal axis position is relative to the start of the segment.
 
-This constraint can be relaxed via the `Same segment start` option in the [plot settings](settings.md#plot-settings), although doing so is generally not recommended as it can lead to confusion when comparing positions.
+This constraint can be relaxed via the `Same segment start` option in the [plot settings][sbs_plot_settings], although doing so is generally not recommended as it can lead to confusion when comparing positions.
 Activating the `Model Location` option changes the horizontal axis to show absolute positions in the accelerator rather than positions relative to the segment start, which makes it meaningful to overlay segments with different start BPMs and compare their results directly.
 
 Each combination of segment and optics is assigned a consistent color, while different markers and line styles distinguish forward propagation, backward propagation, corrected and expected traces (see [Determining Corrections](corrections.md) for details on these).
@@ -200,4 +200,5 @@ When plotting many segments at once, it is advised not to activate all trace typ
 *[RDT]: Resonance Driving Term
 
 [sbs_method]: ../../measurements/physics/sbs.md
-[sbs_settings]: settings.md#main-settings
+[sbs_main_settings]: settings.md#main-settings
+[sbs_plot_settings]: settings.md#plot-settings
