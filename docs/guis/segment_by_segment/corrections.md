@@ -9,9 +9,16 @@ This page covers how to apply corrections in the GUI, test different correction 
 
 ## Applying Corrections
 
-<!-- TODO: need correction dialog screenshot -->
 Clicking the ++"Corrections"++ button in the side panel opens the corrections dialog, where you can load or create a correction file to apply to the model.
-If a correction file is already associated with the selected optics, the dialog displays its contents directly and allows you to edit it.
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/correction_file_dialog.png" width="60%" alt="Forward Propagated Phase"/>
+  <figcaption>The correction file dialog, prompting to load or create a correction file.</figcaption>
+  </center>
+</figure>
+
+After creating or selecting a correction file, a new window displays its contents directly and allows you to edit it.
 
 !!! tip "Corrector Suggestions"
     When no correction file is loaded, the dialog may suggest correctors based on the optics and measurement data, provided this feature is activated in the [settings][sbs_main_settings].
