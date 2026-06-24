@@ -100,21 +100,3 @@ When opening the [corrections dialog](corrections.md#corrected-and-expected-plot
   <figcaption>Example of two segments with different start BPMs when plotted with `Model Location` activated.</figcaption>
   </center>
 </figure>
-
-## Log Console
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/log_console.png" width="100%" alt="Log Console"/>
-  <figcaption>The log console.</figcaption>
-  </center>
-</figure>
-
-The log console displays logging output from both GUI actions and the underlying Python modules called during the analysis.
-It can be expanded or collapsed using the arrow control and closed entirely with the "X" button on its right side; if closed, it can be re-enabled through the [View menu](#view).
-The console panel is also movable and resizable within the GUI window.
-Right-clicking inside the console opens a context menu that provides access to additional preferences.
-
-!!! tip "Debug Logging"
-    By default, the log console is initialized with log level `INFO`.
-    To enable more detailed output for debugging purposes, launch the GUI with the `-d` flag (e.g. `python -m omc3_gui.sbs_gui -d`), which sets the log level to `DEBUG`.
