@@ -79,6 +79,8 @@ This looks for files created by the GUI in earlier runs and for now only works f
 
 ### Plot Settings
 
+The plotting settings tab controls the visual appearance and behaviour of the segment plots, including marker display, propagation directions, axis linking, and zoom behaviour.
+
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/sbs_gui/settings_plotting.png" width="100%" alt="Plot Settings"/>
@@ -89,14 +91,14 @@ This looks for files created by the GUI in earlier runs and for now only works f
 - **Show Model**: Adds markers for the location of elements in the model to the plots.
 - **Show Legend**: Show legends in the plots.
 - **Marker Size**: Size of the markers in the plots.
-- **Expectation**: If run with corrections, show the expected measurement difference instead of the corrected model difference (details in [Finding Corrections](corrections.md#corrected-and-expected-plots)).
+- **Expectation**: If run with corrections, show the expected measurement difference instead of the corrected model difference (see [corrected and expected plots](corrections.md#corrected-and-expected-plots)).
 - **Forward Propagation**: Show forward propagation results (arrows to the right).
 - **Backward Propagation**: Show backward propagation results (arrows to the left).
 - **Connect X**: Keep the same X-Axis limits for both charts when zooming.
 - **Connect Y**: Keep the same Y-Axis limits for both charts when zooming.
 - **Reset Zoom**: When changing segments, reset the zoom to the original view.
-                  When deactivated, the current limits will be kept when changing segments, which can be useful for comparing different segments or optics with the same zoom level.
-- **Same Segment Start**: Plot segments together, even if they have different start BPMs. Not recommended, as it can lead to confusion and misinterpretation of the results, as they will both start at the same point in the plot, even though they represent different locations in the accelerator.
+When deactivated, the current limits will be kept when changing segments, which can be useful for comparing different segments or optics with the same zoom level.
+- **Same Segment Start**: Plot segments together, even if they have different start BPMs. This is *not recommended* as it can lead to confusion and misinterpretation of the results: different locations in the accelerator can appear at the same location on the plot.
 - **Model Location**: Plot segments relative to the model location, i.e. their position in the accelerator, which allows for easy comparison of segments with different start BPMs. If deactivated, segments will start at a location of zero at their start BPM.
 
 <figure>
