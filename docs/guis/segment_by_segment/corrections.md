@@ -3,6 +3,10 @@
 After having identified potential sources of errors through the forward and backward [propagation](segments.md#inspecting-results), the next step is to determine and test corrections.
 This page covers how to apply corrections in the GUI, test different correction schemes and interpret the resulting plots.
 
+!!! warning "Run Matcher — Not Implemented"
+    In the future, the ++"Run Matcher"++ button is intended to launch an automated matching routine for the currently selected optics and segment.
+    This would calculate corrections and produce a correction file that can then be loaded in the corrections dialog and further modified.
+
 ## Applying Corrections
 
 <!-- TODO: need correction dialog screenshot -->
