@@ -24,15 +24,13 @@ If there is a conflict between different correction files across the selected op
 After editing and saving a correction file, [re-run the analysis](segments.md#running-segments) to see the corrected results as dashed lines in the plot.
 <!-- TODO: Show this -->
 
-!!! warning "Run Matcher — Not Implemented"
-    In the future, the ++"Run Matcher"++ button is intended to launch the automated matcher for the currently selected optics and segment.
-    This would calculate the correction and produce a correction file that can then be loaded in the corrections dialog and further modified.
+!!! info "Sign Conventions"
+    The corrections applied in the GUI should modify the model to match the propagated measurement.
+    In order to *actually correct* the machine, these corrections generally need to be inverted: they represent what error in the model would reproduce the observed measurement deviation, and the opposite of that error is what should be applied operationally.
+    Be aware, however, that sign conventions may differ between `MAD-X` and `LSA` and care must be taken when translating correction values from the GUI to the control system.
 
-## Correction Sign Conventions
-
-The corrections applied in the GUI modify the model to match the measurement.
-In order to actually correct the machine, these corrections generally need to be inverted: the GUI finds what error in the model would reproduce the observed measurement deviation, and the opposite of that error is what should be applied operationally.
-Be aware that sign conventions may differ between MAD-X and LSA, so care must be taken when translating correction values from the GUI to the control system.
+    In practice for the LHC IRs, using `MQX?->K1` element strengths to reproduce errors requires a sign change when converting to `LSA`, for all triplets.
+    However, the `ktqx2` knob (used in `MAD-X`) already carries a sign opposite to `LSA` Q2 (unlike `ktqx1` or `kqx`), so its `LSA` conversion cancels out: no sign change (or rather a double sign change) is needed.
 
 ## Testing Multiple Correction Schemes
 
