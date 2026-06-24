@@ -19,6 +19,7 @@ Clicking the ++"Corrections"++ button in the side panel opens the corrections di
 </figure>
 
 After creating or selecting a correction file, a new window displays its contents directly and allows you to edit it.
+If a correction file has already been associated, clicking the ++"Corrections"++ button will open the editor directly.
 
 !!! tip "Corrector Suggestions"
     When no correction file is loaded, the dialog may suggest correctors based on the optics and measurement data, provided this feature is activated in the [settings][sbs_main_settings].
