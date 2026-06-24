@@ -88,8 +88,14 @@ The GUI window is made up of the following main components.
     It can be expanded or collapsed using the arrow control and closed entirely with the ++"X"++ button on its right side.
     If closed, it can be re-enabled through the [View menu][sbs_view_menu].
 
+    !!! tip "Debug Logging"
+        By default, the log console is initialized with log level `INFO`.
+        To enable more detailed output for debugging purposes, launch the GUI with the `-d` flag (e.g. `python -m omc3_gui.sbs_gui -d`), which sets the log level to `DEBUG`.
+
     The console panel is also movable and resizable within the GUI window.
     Right-clicking inside the console opens a context menu that provides access to additional preferences.
+
+---
 
 The following pages are available:
 
