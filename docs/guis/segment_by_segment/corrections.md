@@ -1,7 +1,7 @@
 # Determining Corrections
 
+After having identified potential sources of errors through the forward and backward [propagation](segments.md#inspecting-results), the next step is to determine and test corrections.
 This page covers how to apply corrections in the GUI, test different correction schemes and interpret the resulting plots.
-For how to run the propagation and inspect the uncorrected results, see [running segments](segments.md).
 
 ## Applying Corrections
 
