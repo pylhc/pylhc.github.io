@@ -164,7 +164,14 @@ The solid line represents said difference under the assumption that the model an
 Arrow markers indicate the direction of the propagation: rightward arrows for forward propagation and leftward arrows for backward propagation.
 
 Inspecting both directions helps confirm the error source: if deviations appear after the same location from both sides, that location is likely where the error originates.
-<!-- TODO: Have an example pointing at the screenshot above? -->
+Below is such an example from the LHC 2026 commissioning: forward and backward propagation helped confirm the issue was located at the `Q5.R5B2` quadrupole, located at around the 700m mark in the segment.
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/phase_forward_backward_propagated_Q5_issue.png" width="95%" alt="Forward Propagated Phase"/>
+  <figcaption>Forward and backward propagated phase deviation through IR5.</figcaption>
+  </center>
+</figure>
 
 The tabs above the plot area allow switching between the different optics parameters propagated through the segments, such as the phase advance, the $\beta$-function or coupling RDTs.
 
