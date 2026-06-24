@@ -107,4 +107,4 @@ The following pages are available:
 
 [sbs_method]: ../../measurements/physics/sbs.md
 [bbgui_optics_panel]: ../betabeat/optics_panel.md
-[sbs_view_menu]: settings.md#view
+[sbs_view_menu]: settings.md#view-menu
