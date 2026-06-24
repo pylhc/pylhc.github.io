@@ -155,8 +155,8 @@ This view allows one to identify where discrepancies exist and pinpoint the loca
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/phase_propagated.png" width="95%" alt="Forward Propagated Phase"/>
-  <figcaption>Forward-propagated phase deviation through a segment centered on IP1.</figcaption>
+  <img class="clickImg" src="../../assets/images/sbs_gui/phase_forward_propagated.png" width="95%" alt="Forward Propagated Phase"/>
+  <figcaption>Forward propagated phase deviation through a segment centered on IP1.</figcaption>
   </center>
 </figure>
 
