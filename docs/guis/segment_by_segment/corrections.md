@@ -30,7 +30,7 @@ If some of the selected measurements already have the same correction file loade
 If there is a conflict between different correction files across the selected optics, an error message will show.
 
 After editing and saving a correction file, [run the propagation][sbs_run_segments] again to see the corrected results as dashed lines in the plot.
-<!-- TODO: Show this -->
+<!-- TODO: Show this? -->
 
 !!! info "Sign Conventions"
     The corrections applied in the GUI should modify the model to match the propagated measurement.

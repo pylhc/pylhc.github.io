@@ -19,7 +19,7 @@ The figure below shows an example of a local correction of the phase advance thr
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/physics/sbs_phase_ip5_example.png" width="100%" alt="Blank Window"/>
+  <img class="clickImg" src="../../assets/images/physics/sbs_phase_ip5_example.png" width="100%" alt="SbS Phase IR5 Example"/>
   <figcaption>Measured and propagated local phase advances through IR5 from the LHC 2022 commissioning.</figcaption>
   </center>
 </figure>
@@ -36,7 +36,7 @@ Below shows an example of a local correction of the coupling RDTs around IP2 fro
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/physics/sbs_coupling_ip2_example.png" width="100%" alt="Blank Window"/>
+  <img class="clickImg" src="../../assets/images/physics/sbs_coupling_ip2_example.png" width="100%" alt="SbS Coupling IR2 Example"/>
   <figcaption>Measured and propagated local coupling RDTs through IR2 from the LHC 2021 beam test.</figcaption>
   </center>
 </figure>
