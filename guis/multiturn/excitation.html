@@ -2451,7 +2451,7 @@
   <span class="md-ellipsis">
     
   
-  Analyzing Modulations
+  Analysing Modulations
 
     
   </span>
@@ -5515,23 +5515,23 @@ A kick group collects measurements under a single name, gathers them in the logb
 <p>Each kick group also has a corresponding <code>.json</code> file in <code>/user/slops/data/LHC_DATA/OP_DATA/Betabeat/KickGroups/MULTITURN_ACQ_GROUPS</code>, in which the paths to the acquired turn-by-turn data and their individual <code>.json</code> files containing information about the excitation parameter is stored.
 See also the <a href="https://pylhc.github.io/PyLHC/entrypoints/kickgroups.html" target="_blank">PyLHC tool for KickGroups</a>.</p>
 </details>
-<p>Creating a new group is done by clicking the <span class="keys"><kbd>Select Active group</kbd></span> button in the top left corner of the GUI, which will open the following dialog:</p>
+<p>Creating a new group is done by clicking the <span class="keys"><kbd>Select Active group</kbd></span> button in the top left corner of the GUI, which will open the following dialogue:</p>
 <figure>
     <center>
-    <img src="../../assets/images/multiturn_gui/select_kick_group.png" width="85%" alt="Select Active Group Dialog" />
-    <figcaption> Select Active Group Dialog </figcaption>
+    <img src="../../assets/images/multiturn_gui/select_kick_group.png" width="85%" alt="Select Active Group Dialogue" />
+    <figcaption> Select Active Group Dialogue </figcaption>
     </center>
 </figure>
 
 <p>Typically one wants to create a new kick group.
 To do so:</p>
 <ul>
-<li>Click the <span class="keys"><kbd>Create new Group</kbd></span> button at the bottom in the centre, which will open the following dialog, with a default naming scheme:</li>
+<li>Click the <span class="keys"><kbd>Create new Group</kbd></span> button at the bottom in the centre, which will open the following dialogue, with a default naming scheme:</li>
 </ul>
 <figure>
     <center>
-    <img src="../../assets/images/multiturn_gui/create_kick_group.png" width="85%" alt="Create New Group Dialog" />
-    <figcaption> Create New Group Dialog </figcaption>
+    <img src="../../assets/images/multiturn_gui/create_kick_group.png" width="85%" alt="Create New Group Dialogue" />
+    <figcaption> Create New Group Dialogue </figcaption>
     </center>
 </figure>
 
@@ -5579,7 +5579,7 @@ The excitation device needs to know which bunches to excite and how long the exc
 
 <h4 id="bunches">Bunches<a class="headerlink" href="#bunches" title="Permanent link">&para;</a></h4>
 <ul>
-<li>To select the bunches, click the <span class="keys"><kbd>Select ...</kbd></span> button under the <code>Bunches</code> section, which opens the following dialog:</li>
+<li>To select the bunches, click the <span class="keys"><kbd>Select ...</kbd></span> button under the <code>Bunches</code> section, which opens the following dialogue:</li>
 </ul>
 <figure>
     <center>
@@ -5651,7 +5651,7 @@ A reasonable starting point is anywhere between <strong>1%</strong> and <strong>
 As the beam energy increases, so does the beam rigidity and hence larger kick amplitudes can be used.
 Nevertheless, careful monitoring of losses during acquisitions and adjusting the kick amplitudes accordingly is crucial.</p>
 <p>Typically, we prepare a table of various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
-These should follow the various match points for the given energy ramp program, and the kick strengths should scale approximately linearly with the beam energy, starting from safe strength at injection.</p>
+These should follow the various match points for the given energy ramp programme, and the kick strengths should scale approximately linearly with the beam energy, starting from safe strength at injection.</p>
 <p>Most of this information can be found by opening a <code>CCM</code> then navigating to <code>LHC Control</code> -&gt; <code>LHC Beam Control</code> -&gt; <code>Settings</code> -&gt; <code>LSA App Suite</code> (or via the search).
 Once the app has opened, click the <code>Applications</code> menu in the top left, then <code>contexts</code> and tick <code>Edit types</code>, which will open a new corresponding tab.
 Search &amp; select the relevant beam process using the <code>Filter</code> field on the left, then click the big <span class="keys"><kbd>Show optic table</kbd></span> button on the right.

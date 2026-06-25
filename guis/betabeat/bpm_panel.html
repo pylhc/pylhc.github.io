@@ -2285,10 +2285,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#do-analysis-dialog" class="md-nav__link">
+  <a href="#do-analysis-dialogue" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Do-Analysis Dialog
+        Do-Analysis Dialogue
       </span>
     </span>
   </a>
@@ -2684,7 +2684,7 @@
   <span class="md-ellipsis">
     
   
-  Analyzing Modulations
+  Analysing Modulations
 
     
   </span>
@@ -5511,10 +5511,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#do-analysis-dialog" class="md-nav__link">
+  <a href="#do-analysis-dialogue" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Do-Analysis Dialog
+        Do-Analysis Dialogue
       </span>
     </span>
   </a>
@@ -5590,8 +5590,8 @@
   </center>
 </figure>
 
-<p>The <abbr title="Beam Position Monitor">BPM</abbr> panel provides a graphical interface to query and visualize information for the <abbr title="Beam Position Monitor">BPM</abbr> data files, i.e. the Turn-by-Turn data
-and select the data to be analyzed further.</p>
+<p>The <abbr title="Beam Position Monitor">BPM</abbr> panel provides a graphical interface to query and visualise information for the <abbr title="Beam Position Monitor">BPM</abbr> data files, i.e. the Turn-by-Turn data
+and select the data to be analysed further.</p>
 <h2 id="loading-data">Loading Data<a class="headerlink" href="#loading-data" title="Permanent link">&para;</a></h2>
 <h3 id="measurement-groups-aka-kick-groups">Measurement Groups aka Kick Groups<a class="headerlink" href="#measurement-groups-aka-kick-groups" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
@@ -5604,8 +5604,8 @@ or monitor a currently active kick-group and load the files as they are created.
 <p>Use the <span class="keys green-gui-button"><kbd>Open Files</kbd></span> button to open turn-by-turn data.</p>
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/open_files.png" width="95%" alt="Open Files Dialog"/>
-  <figcaption>The Open Files Dialog.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/open_files.png" width="95%" alt="Open Files Dialogue"/>
+  <figcaption>The Open Files Dialogue.</figcaption>
   </center>
 </figure>
 
@@ -5617,12 +5617,12 @@ This is required, as the <abbr title="Beam Position Monitors">BPMs</abbr> are ch
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Naming Filter</p>
-<p>For the <abbr title="Large Hadron Collider">LHC</abbr>, the displayed files in the file-dialog are automatically filtered to show only <code>@BunchTurn</code> files of the currently selected beam.
-You can change/deactivate that filter ("Files of Type") at the bottom of the dialog!</p>
+<p>For the <abbr title="Large Hadron Collider">LHC</abbr>, the displayed files in the file dialogue are automatically filtered to show only <code>@BunchTurn</code> files of the currently selected beam.
+You can change/deactivate that filter ("Files of Type") at the bottom of the dialogue!</p>
 </div>
 <p>Multiple files can be opened at once and are added to the current <code>Measurements</code> directory, as well as to the table of loaded files in the panel.
 If the file contained multiple bunches, they are added as separate entries (see <a href="#table-of-loaded-files">below</a>).</p>
-<p>If the <a href="settings.html#gui-tab">"Analyse TbT files on opening" setting</a> is active, a window will open to prompt the user with the <a href="#do-analysis-dialog">"Do analysis Dialog"</a>.</p>
+<p>If the <a href="settings.html#gui-tab">"Analyse TbT files on opening" setting</a> is active, a window will open to prompt the user with the <a href="#do-analysis-dialogue">"Do analysis Dialogue"</a>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Reopening Files</p>
 <ul>
@@ -5686,7 +5686,7 @@ If your computer is running low on memory, you might want to close some of the o
 <p>Clicking on the <span class="keys red-gui-button"><kbd>Remove</kbd></span> button will remove the selected entries from the table of loaded files.<br>
 <span class="twemoji warning-colored"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M256 0c14.7 0 28.2 8.1 35.2 21l216 400c6.7 12.4 6.4 27.4-.8 39.5S486.1 480 472 480H40c-14.1 0-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9 20.5-21 35.2-21m0 352a32 32 0 1 0 0 64 32 32 0 1 0 0-64m0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.5 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z"/></svg></span> This will <strong>not</strong> remove the files from the <code>Measurements</code> directory!</p>
 <h2 id="investigating-turn-by-turn-data">Investigating Turn-by-Turn Data<a class="headerlink" href="#investigating-turn-by-turn-data" title="Permanent link">&para;</a></h2>
-<p>After selecting one or more files in the table of loaded files, the turn-by-turn data is visualized in the two bottom charts, one for each plane.
+<p>After selecting one or more files in the table of loaded files, the turn-by-turn data is visualised in the two bottom charts, one for each plane.
 The charts are <a href="common_components.html#plotting">interactive</a> and can display either the measured amplitude values over turns for every <abbr title="Beam Position Monitor">BPM</abbr> from the list or display the phase space, which is calculated by two consecutive <abbr title="Beam Position Monitors">BPMs</abbr>.
 You can select multiple measurements at once to compare them, but only one <abbr title="Beam Position Monitor">BPM</abbr> per plane at a time.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Turn-by-Turn view</label><label for="__tabbed_1_2">Phase space view</label></div>
@@ -5727,36 +5727,36 @@ Hovering the <abbr title="Beam Position Monitor">BPM</abbr> name will show a too
 </div>
 <p>The buttons on the top left side of the pane provide some features to handle the <abbr title="Beam Position Monitor">BPM</abbr> data.</p>
 <ul>
-<li><span class="keys"><kbd>Create Average</kbd></span> allows loading several data files too visualize their average repesentations on the same graph, which helps detecting differences or reducing noise.</li>
+<li><span class="keys"><kbd>Create Average</kbd></span> allows loading several data files too visualise their average repesentations on the same graph, which helps detecting differences or reducing noise.</li>
 <li><span class="keys"><kbd>Remove Turns</kbd></span> can be used to cut turns from the start or the end, to focus on a specified range of the data.</li>
-<li><span class="keys"><kbd>Split Files</kbd></span> splits the current <abbr title="Beam Position Monitor">BPM</abbr> data file into N files, where N is specified in the dialog and the resulting files will have old-turns/N turns.</li>
+<li><span class="keys"><kbd>Split Files</kbd></span> splits the current <abbr title="Beam Position Monitor">BPM</abbr> data file into N files, where N is specified in the dialogue and the resulting files will have old-turns/N turns.</li>
 </ul>
 <h2 id="start-analysis">Start Analysis<a class="headerlink" href="#start-analysis" title="Permanent link">&para;</a></h2>
-<p>The <span class="keys green-gui-button"><kbd>Analyse Spectra</kbd></span> button spawns <a href="#do-analysis-dialog">the configuration dialog</a> for the analysis.
+<p>The <span class="keys green-gui-button"><kbd>Analyse Spectra</kbd></span> button spawns <a href="#do-analysis-dialogue">the configuration dialogue</a> for the analysis.
 This will call an external program to perform a frequency analysis of the <abbr title="Beam Position Monitor">BPM</abbr> data <a href="#table-of-loaded-files"><strong>of the selected files</strong></a>, in order to compute tunes and similar beam properties and (optionally) to get the optics functions from that spectrum.
-The <strong>"Run optics as well"</strong> checkbox will define whether the <a href="#do-analysis-dialog"><em>"Optics Analysis"</em> in the <em>"Do analysis Dialog"</em></a> is automatically pre-checked.</p>
-<h3 id="do-analysis-dialog">Do-Analysis Dialog<a class="headerlink" href="#do-analysis-dialog" title="Permanent link">&para;</a></h3>
+The <strong>"Run optics as well"</strong> checkbox will define whether the <a href="#do-analysis-dialogue"><em>"Optics Analysis"</em> in the <em>"Do analysis Dialogue"</em></a> is automatically pre-checked.</p>
+<h3 id="do-analysis-dialogue">Do-Analysis Dialogue<a class="headerlink" href="#do-analysis-dialogue" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Closed Settings</label><label for="__tabbed_2_2">Open Settings</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><figure>
 <center>
-<img src="../../assets/images/betabeat_gui/do_analysis_dialog.png" width="100%" alt="The Do-Analysis Dialog"/>
-<figcaption>The Do-Analysis Dialog.</figcaption>
+<img src="../../assets/images/betabeat_gui/do_analysis_dialog.png" width="100%" alt="The Do-Analysis Dialogue"/>
+<figcaption>The Do-Analysis Dialogue.</figcaption>
 </center>
 </figure></p>
 </div>
 <div class="tabbed-block">
 <p><figure>
 <center>
-<img src="../../assets/images/betabeat_gui/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialog with open settings"/>
-<figcaption>The Do-Analysis Dialog with open settings.</figcaption>
+<img src="../../assets/images/betabeat_gui/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialogue with open settings"/>
+<figcaption>The Do-Analysis Dialogue with open settings.</figcaption>
 </center>
 </figure></p>
 </div>
 </div>
 </div>
-<p>This dialog allows you to specify the settings and output for the analysis run
+<p>This dialogue allows you to specify the settings and output for the analysis run
 on the currently selected files in the <abbr title="Beam Position Monitor">BPM</abbr>-Panel.
 Click the <span class="keys"><kbd>Run</kbd></span> button to start the analysis.</p>
 <div class="admonition warning">
@@ -5783,11 +5783,11 @@ subfolder.</p>
 <p class="admonition-title">Loading the <code>lin_files</code> subfolder</p>
 <p>If the analysis files are loaded via <a href="analysis_panel.html"><span class="keys green-gui-button"><kbd>Open Files</kbd></span> in the Analysis Panel</a> from the <code>lin_files</code> subfolder,
 this folder is <strong>copied</strong> into the <code>Measurements</code> folder, keeping the <code>lin_files</code> name.
-If you want to open another set of analyzed files from an <code>lin_files</code> folder, the GUI will <strong>complain that the folder already exists</strong>.
+If you want to open another set of analysed files from an <code>lin_files</code> folder, the GUI will <strong>complain that the folder already exists</strong>.
 To avoid this, use the <span class="keys yellow-gui-button"><kbd>Attach Files</kbd></span> button instead.</p>
 </div>
 <h3 id="settings-and-suffixes">Settings and Suffixes<a class="headerlink" href="#settings-and-suffixes" title="Permanent link">&para;</a></h3>
-<p>By expanding the <em>Settings</em> section at the bottom of the dialog
+<p>By expanding the <em>Settings</em> section at the bottom of the dialogue
 you can optionally change the <a href="settings.html">settings</a> for the harmonic analysis in the <em><a href="settings.html#tunes-tab">Tunes</a></em>, <em><a href="settings.html#harpy-tab">Harpy</a></em>, <em><a href="settings.html#cleaning-tab">Cleaning</a></em> and <em><a href="settings.html#accelerator-tab">Accelerator</a></em> tabs, as well as for the optics analysis in the <em><a href="settings.html#optics-tab">Optics</a></em> tab if the <em>Optics Analysis</em> checkbox is checked.</p>
 <p>The <em>Suffix</em>-field will be automatically set from your suffix-choices in the <a href="settings.html#harpy-tab"><em>Harpy</em> settings tab</a> and is only applied to the harmonic analysis output files (i.e. <code>.lin[xy]</code>, <code>.amps[xy]</code>, <code>.freqs[xy]</code>), <strong>not to the folder names</strong>.</p>
 <div class="admonition warning">

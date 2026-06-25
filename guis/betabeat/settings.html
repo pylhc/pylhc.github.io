@@ -2650,7 +2650,7 @@
   <span class="md-ellipsis">
     
   
-  Analyzing Modulations
+  Analysing Modulations
 
     
   </span>
@@ -5523,7 +5523,7 @@
 </figure>
 
 <p>Great care has been taken to create a user friendly and easy to find interface for all settings.
-The settings window can be initialized by the gear icon <span class="settings-icon">&#9881;</span> in the top left corner of the GUI.</p>
+The settings window can be initialised by the gear icon <span class="settings-icon">&#9881;</span> in the top left corner of the GUI.</p>
 <div class="admonition info">
 <p class="admonition-title">Defaults</p>
 <p>The "Default" values given here are the defaults used in <code>python</code>,
@@ -5544,7 +5544,7 @@ These GUI defaults are directly visible in the settings, while the <code>python<
 <li>Settings are <strong>reset</strong> to last applied on <span class="keys"><kbd class="key-cancelbtn">Cancel</kbd></span>.</li>
 <li><span class="keys"><kbd>Save to File</kbd></span>: When saving the settings to file, a file <code>settings_xxx.properties</code> is created, containing entries for <strong>ALL</strong> settings, even those not set in the GUI.</li>
 <li><span class="keys"><kbd>Load from File</kbd></span>: When loading settings from file, not all possible entries need to be present in that file and <strong>only present ones will be modified</strong> in the UI.
-  Entries in the file, that are not recognized as settings will be ignored.</li>
+  Entries in the file, that are not recognised as settings will be ignored.</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">Some Background on the Internals</p>
@@ -5589,7 +5589,7 @@ This is in contrast to the other settings tabs, which control the settings passe
 <li>
 <p><strong>Analyse TbT Files on Opening</strong>:
   If active and you open a turn-by-turn file, via the <span class="keys green-gui-button"><kbd>Open Files</kbd></span> in the <a href="bpm_panel.html">BPM Panel</a>,
-  <code>harpy</code> analysis will be automatically started (for now: the user will be prompted with the <a href="bpm_panel.html#do-analysis-dialog">"Do analysis Dialog"</a> directly after TbT import).</p>
+  <code>harpy</code> analysis will be automatically started (for now: the user will be prompted with the <a href="bpm_panel.html#do-analysis-dialogue">"Do analysis Dialogue"</a> directly after TbT import).</p>
 </li>
 <li>
 <p><strong>Python Path</strong>:
@@ -5598,7 +5598,7 @@ This is in contrast to the other settings tabs, which control the settings passe
 </li>
 <li>
 <p><strong>Python Debugging</strong>:
-  If active, the GUI will run the <code>python</code> script with the <code>-d</code> flag, which initializes the logging level in our scripts automatically to <code>DEBUG</code>.</p>
+  If active, the GUI will run the <code>python</code> script with the <code>-d</code> flag, which initialises the logging level in our scripts automatically to <code>DEBUG</code>.</p>
 </li>
 <li>
 <p><strong>Use Server for Analysis</strong>:
@@ -5736,7 +5736,7 @@ while the other buttons calculate the tune in the respective row from the other 
   Each file has usually a <code>x</code> and <code>y</code> version for each per plane.
   The following options are available:</p>
 <ul>
-<li><code>lin</code>: Write out the <code>.lin</code>-file, which contain a table of BPMs and summarize their main and resonance lines, as well as additional information, e.g. noise.</li>
+<li><code>lin</code>: Write out the <code>.lin</code>-file, which contain a table of BPMs and summarise their main and resonance lines, as well as additional information, e.g. noise.</li>
 <li><code>spectra</code>: Write out the <code>.amps</code> and <code>.freqs</code>-files, which contain the amplitudes and frequencies within the given <code>Tolerance</code> (see <a href="#tunes-tab">Tunes Tab</a>) around the main and resonance lines.</li>
 <li><code>full_spectra</code>: This setting overrides the <code>spectra</code>-setting and writes out <strong>all</strong> amplitudes and frequencies of the binned spectrum in the same file-format.</li>
 <li><code>bpm_summary</code>: Write out the <code>.bad_bpms</code>-file, which contains a summary of BPMs that are determined as bad or not.</li>
@@ -5893,13 +5893,13 @@ introduced by the AC-Dipole and if they are not found in the data, the optics an
   Files to to use for the optics analysis.
   These are the output files from <code>harpy</code>.
   This field is not editable and is only shown here, as <code>files</code> is an argument to <code>optics_measurement</code> and an attribute on the internal <code>OpticsSettings</code> class.
-  The actual files to use are chosen from the <a href="analysis_panel.html">Analysis Panel</a>, after which this field is automatically filled in when shown in the <a href="analysis_panel.html#do-optics-dialog">Run Optics</a> popup window.</p>
+  The actual files to use are chosen from the <a href="analysis_panel.html">Analysis Panel</a>, after which this field is automatically filled in when shown in the <a href="analysis_panel.html#do-optics-dialogue">Run Optics</a> popup window.</p>
 </li>
 <li>
 <p><strong>Outputdir</strong>:
   Directory to place to output of the optics analysis.
   The field is not editable and is only shown here, as <code>outputdir</code> is an argument to <code>optics_measurement</code> and an attribute on the internal <code>OpticsSettings</code> class.
-  The actual directory is chosen by the user per analysis, when setting an analysis name in the <a href="analysis_panel.html#do-optics-dialog">Run Optics</a> popup window.</p>
+  The actual directory is chosen by the user per analysis, when setting an analysis name in the <a href="analysis_panel.html#do-optics-dialogue">Run Optics</a> popup window.</p>
 </li>
 <li>
 <p><strong>Calibrationdir</strong>:
@@ -6052,7 +6052,7 @@ In short:</p>
 <li>add the <strong>label</strong> and appropriate user <strong>interface element</strong>.</li>
 <li>use <code>getComponentValue()</code> to automatically <strong>extract</strong> the value from the UI in a unified way and set the attribute on the class.</li>
 <li>use <code>setComponentValue()</code> to automatically <strong>set</strong> the value in the UI in a unified way from the current value of the class.</li>
-<li>use <code>addColorActionListener()</code> on the new label to <strong>automatically set the color on changes</strong>.</li>
+<li>use <code>addColorActionListener()</code> on the new label to <strong>automatically set the colour on changes</strong>.</li>
 </ul>
 </div>
 

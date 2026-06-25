@@ -2305,15 +2305,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#do-optics-dialog" class="md-nav__link">
+  <a href="#do-optics-dialogue" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Do Optics Dialog
+        Do Optics Dialogue
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Do Optics Dialog">
+    <nav class="md-nav" aria-label="Do Optics Dialogue">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2656,7 +2656,7 @@
   <span class="md-ellipsis">
     
   
-  Analyzing Modulations
+  Analysing Modulations
 
     
   </span>
@@ -5476,15 +5476,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#do-optics-dialog" class="md-nav__link">
+  <a href="#do-optics-dialogue" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Do Optics Dialog
+        Do Optics Dialogue
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Do Optics Dialog">
+    <nav class="md-nav" aria-label="Do Optics Dialogue">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -5527,7 +5527,7 @@
 
 
 <h1 id="the-analysis-panel">The Analysis Panel<a class="headerlink" href="#the-analysis-panel" title="Permanent link">&para;</a></h1>
-<p>The analysis panel provides graphical interface to visualize results from harmonic analysis performed on the given data.</p>
+<p>The analysis panel provides graphical interface to visualise results from harmonic analysis performed on the given data.</p>
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel.png" width="100%" alt="The Analysis Panel"/>
@@ -5538,14 +5538,14 @@
 <h2 id="loading-files">Loading Files<a class="headerlink" href="#loading-files" title="Permanent link">&para;</a></h2>
 <p>When the <code>harpy</code> analysis is started from the <a href="bpm_panel.html"><abbr title="Beam Position Monitor">BPM</abbr>-Panel</a>, the results are automatically loaded when the analysis task has finished.
 The buttons at the top of the panel provide functionality to manually load files and remove entries from the analysis table,
-as well as to start the <a href="#do-optics-dialog">optics analysis</a>.</p>
+as well as to start the <a href="#do-optics-dialogue">optics analysis</a>.</p>
 <ul>
-<li><span class="keys green-gui-button"><kbd>Open Files</kbd></span>: Opens a dialog to select files to be loaded. The files will be <strong>copied</strong> into the <code>Measurements</code> folder and opened from there.</li>
-<li><span class="keys yellow-gui-button"><kbd>Attach Files</kbd></span>: Opens a dialog to select files to be loaded. The files will be <strong>opened from their current location</strong>.</li>
+<li><span class="keys green-gui-button"><kbd>Open Files</kbd></span>: Opens a dialogue to select files to be loaded. The files will be <strong>copied</strong> into the <code>Measurements</code> folder and opened from there.</li>
+<li><span class="keys yellow-gui-button"><kbd>Attach Files</kbd></span>: Opens a dialogue to select files to be loaded. The files will be <strong>opened from their current location</strong>.</li>
 <li><span class="keys red-gui-button"><kbd>Delete Files</kbd></span>: Removes the selected files from the analysis table.
-  A dialog will pop up, asking if the files should only be removed from this table, i.e. from being loaded in memory (see admonition below), or if they should also be deleted from disk.<br>
+  A dialogue will pop up, asking if the files should only be removed from this table, i.e. from being loaded in memory (see admonition below), or if they should also be deleted from disk.<br>
   <span class="twemoji warning-colored"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M256 0c14.7 0 28.2 8.1 35.2 21l216 400c6.7 12.4 6.4 27.4-.8 39.5S486.1 480 472 480H40c-14.1 0-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9 20.5-21 35.2-21m0 352a32 32 0 1 0 0 64 32 32 0 1 0 0-64m0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.5 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z"/></svg></span> Due to <a href="https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/268" target="_blank">an unresolved issue</a> it is currently <strong>not advised</strong> to delete files from disk.</li>
-<li><span class="keys green-gui-button"><kbd>Get Optics</kbd></span>: Opens <a href="#do-optics-dialog">the optics analysis dialog</a> which can trigger an external python script to compute the optics functions from the harmonic analysis data of the selected files.</li>
+<li><span class="keys green-gui-button"><kbd>Get Optics</kbd></span>: Opens <a href="#do-optics-dialogue">the optics analysis dialogue</a> which can trigger an external python script to compute the optics functions from the harmonic analysis data of the selected files.</li>
 </ul>
 <figure>
   <center>
@@ -5718,13 +5718,13 @@ Choose from the dropdown menu which tune values should be used for the calculati
 </ul>
 <p>The range of orders of the resonance lines to be shown can be chosen by changing the values in the text fields,
 where the order <code>n</code> is defined as the sum of absolute multiples of the horizontal and vertical tune of the line, e.g. the order of the <code>2Qy - Qx</code> line is <code>n = 2 + 1 = 3</code>.
-Different orders will be shown in different colors.
+Different orders will be shown in different colours.
 Hovering the resonance line towards the top of the chart will show a tooltip with the tune multiples of that line and its frequency.</p>
-<p>Clicking the <span class="keys"><kbd>Custom</kbd></span> button will open a dialog to manually enter frequency and labels of additional vertical bars to be shown in red in the chart.</p>
+<p>Clicking the <span class="keys"><kbd>Custom</kbd></span> button will open a dialogue to manually enter frequency and labels of additional vertical bars to be shown in red in the chart.</p>
 <figure>
 <center>
-<img src="../../assets/images/betabeat_gui/analysis_panel_frequency_manual_line.png" width="60%"alt="Custom lines dialog." />
-<figcaption>The custom lines dialog to manually add lines.</figcaption>
+<img src="../../assets/images/betabeat_gui/analysis_panel_frequency_manual_line.png" width="60%"alt="Custom lines dialogue." />
+<figcaption>The custom lines dialogue to manually add lines.</figcaption>
 </center>
 </figure>
 
@@ -5852,7 +5852,7 @@ So this is the same as <em>Points</em> but with additional lines between the mar
 <p>Two methods are available to save the chart to file:</p>
 <ul>
 <li><span class="keys"><kbd>GUI</kbd></span> :
-This button will open a dialog asking where to save the <strong>chart component directly from java</strong> as a <strong>PNG file</strong>.
+This button will open a dialogue asking where to save the <strong>chart component directly from java</strong> as a <strong>PNG file</strong>.
 The output will look exactly like the chart in the GUI, as it is rendered directly from <code>java</code>.</li>
 <li>
 <p><span class="keys"><kbd>PDF</kbd></span> :
@@ -5860,14 +5860,14 @@ This button allows passing the currently selected data to the <a href="https://p
 As the spectrum is completely rendered by the <code>python</code> script, the output will look different from the chart in the GUI but will show in general the same information, with some important caveats listed below.</p>
 <ul>
 <li>
-<p>Clicking the button will open a dialog to select an output <strong>directory</strong>.
+<p>Clicking the button will open a dialogue to select an output <strong>directory</strong>.
   As multiple files might be created, the filenames are determined automatically.
-  Subsequently, a second dialog will appear, displaying the selected path (modifiable if required).
+  Subsequently, a second dialogue will appear, displaying the selected path (modifiable if required).
   In this window, the data to be grouped within the same plots/files can be defined:</p>
 <p><figure>
 <center>
-<img src="../../assets/images/betabeat_gui/analysis_panel_frequency_export.png" width="60%" alt="Export Spectrum Dialog."/>
-<figcaption>The export spectrum dialog.</figcaption>
+<img src="../../assets/images/betabeat_gui/analysis_panel_frequency_export.png" width="60%" alt="Export Spectrum Dialogue."/>
+<figcaption>The export spectrum dialogue.</figcaption>
 </center>
 </figure></p>
 </li>
@@ -5885,24 +5885,24 @@ As the spectrum is completely rendered by the <code>python</code> script, the ou
 </ul>
 </li>
 </ul>
-<h2 id="do-optics-dialog">Do Optics Dialog<a class="headerlink" href="#do-optics-dialog" title="Permanent link">&para;</a></h2>
-<p>The <span class="keys green-gui-button"><kbd>Get Optics</kbd></span> button opens a dialog to select the settings and run the <a href="../../measurements/physics/optics.html">optics analysis</a>,
+<h2 id="do-optics-dialogue">Do Optics Dialogue<a class="headerlink" href="#do-optics-dialogue" title="Permanent link">&para;</a></h2>
+<p>The <span class="keys green-gui-button"><kbd>Get Optics</kbd></span> button opens a dialogue to select the settings and run the <a href="../../measurements/physics/optics.html">optics analysis</a>,
 which will calculate the optics parameters based on the spectra of the <a href="#loading-files">currently selected files</a>.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Closed Settings</label><label for="__tabbed_3_2">Open Settings</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><figure>
 <center>
-<img src="../../assets/images/betabeat_gui/do_optics_dialog.png" width="100%" alt="The 'Do Optics' Dialog"/>
-<figcaption>The "Do Optics" Dialog.</figcaption>
+<img src="../../assets/images/betabeat_gui/do_optics_dialog.png" width="100%" alt="The 'Do Optics' Dialogue"/>
+<figcaption>The "Do Optics" Dialogue.</figcaption>
 </center>
 </figure></p>
 </div>
 <div class="tabbed-block">
 <p><figure>
 <center>
-<img src="../../assets/images/betabeat_gui/do_optics_dialog_settings.png" width="100%" alt="The 'Do Optics' Dialog with open settings"/>
-<figcaption>The "Do Optics" Dialog with open settings.</figcaption>
+<img src="../../assets/images/betabeat_gui/do_optics_dialog_settings.png" width="100%" alt="The 'Do Optics' Dialogue with open settings"/>
+<figcaption>The "Do Optics" Dialogue with open settings.</figcaption>
 </center>
 </figure></p>
 </div>
@@ -5913,7 +5913,7 @@ In this case <strong>a descriptive output name</strong> should be specified for 
 When unchecking the <em>Combine Analysis</em> option, each open file will produce an optics analysis named based on the name of the <code>harpy</code> output files, as displayed in the table at the top of this panel.
 All optics analysis results are stored in the <code>Results</code> folder, and will be automatically loaded into the <a href="optics_panel.html">Optics Panel</a>.</p>
 <h3 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h3>
-<p>By expanding the <em>Settings</em> section at the bottom of the dialog
+<p>By expanding the <em>Settings</em> section at the bottom of the dialogue
 one can change the <a href="settings.html">settings</a> of the <em><a href="settings.html#optics-tab">Optics tab</a></em>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Changing the Settings</p>

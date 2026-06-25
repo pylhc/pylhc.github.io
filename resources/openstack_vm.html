@@ -2446,7 +2446,7 @@
   <span class="md-ellipsis">
     
   
-  Analyzing Modulations
+  Analysing Modulations
 
     
   </span>
@@ -6312,7 +6312,7 @@ passwd<span class="w"> </span><span class="nv">$USERNAME</span>
 <p>Give sudo rights to this user <em>(optional)</em>:</p>
 <div class="highlight"><pre><span></span><code>usermod<span class="w"> </span>-aG<span class="w"> </span>wheel<span class="w"> </span><span class="nv">$USERNAME</span>
 </code></pre></div>
-<p>Allow ssh-authorization for this user for the same ssh-keys as current user, e.g. <code>root</code> <em>(optional)</em>:</p>
+<p>Allow ssh-authorisation for this user for the same ssh-keys as current user, e.g. <code>root</code> <em>(optional)</em>:</p>
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>/home/<span class="nv">$USERNAME</span>/.ssh
 cp<span class="w"> </span>~/.ssh/authorized_keys<span class="w"> </span>/home/<span class="nv">$USERNAME</span>/.ssh/
 chown<span class="w"> </span>-R<span class="w"> </span><span class="nv">$USERNAME</span>:<span class="nv">$USERNAME</span><span class="w"> </span>/home/<span class="nv">$USERNAME</span>/.ssh/
@@ -6494,7 +6494,7 @@ It will ask for your CERN username to copy the necessary files for <code>kerbero
 but the users to add have to be modified manually in the script!</p>
 <div class="admonition danger">
 <p class="admonition-title">Use at your own risk!</p>
-<p>Please make sure to customize the script below to your needs before running it,
+<p>Please make sure to customise the script below to your needs before running it,
 or copy and paste the commands one-by-one manually.</p>
 </div>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
@@ -6512,7 +6512,7 @@ sudo<span class="w">  </span>dnf<span class="w"> </span>install<span class="w"> 
 sudo<span class="w"> </span>locmap<span class="w"> </span>--enable<span class="w"> </span>all
 sudo<span class="w"> </span>locmap<span class="w"> </span>--configure<span class="w"> </span>all
 
-<span class="c1"># Install useful packages. !! customize this list !!</span>
+<span class="c1"># Install useful packages. !! customise this list !!</span>
 sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>xdg-utils<span class="w"> </span>evince<span class="w"> </span>htop<span class="w"> </span>wget<span class="w"> </span>zsh<span class="w"> </span>gcc-c++<span class="w"> </span>sshfs<span class="w"> </span>git<span class="w"> </span>ImageMagick
 
 <span class="c1"># Install LaTeX</span>
@@ -6525,7 +6525,7 @@ sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> <
 perl<span class="w"> </span>./install-tl<span class="w"> </span>--no-interaction
 sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>python3-pygments
 
-<span class="c1"># Install Java 11  !! customize to your preference !!</span>
+<span class="c1"># Install Java 11  !! customise to your preference !!</span>
 sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>java-11-openjdk-devel<span class="w"> </span>java-11-openjdk
 
 <span class="c1"># Install X11 (for forwarding)</span>

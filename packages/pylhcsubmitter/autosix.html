@@ -2522,7 +2522,7 @@
   <span class="md-ellipsis">
     
   
-  Analyzing Modulations
+  Analysing Modulations
 
     
   </span>
@@ -5331,7 +5331,7 @@ In theory, any kind of mask is possible, given the correct <code>executable</cod
 <p>Upon running the script, the <strong>Jobs.tfs</strong> file is created similarly to <code>job_submitter</code>, and the following stages are run per job:</p>
 <ol>
 <li><code>create_jobs</code>: create workspace, fill sysenv, sixdeskenv and mask.</li>
-<li><code>initialize_workspace</code>: initialize workspace from the env-files.</li>
+<li><code>initialize_workspace</code>: initialise workspace from the env-files.</li>
 <li><code>submit_mask</code>: submit job to <code>HTCondor</code> from filled mask. (<em>interrupt</em>)</li>
 <li><code>check_input</code>: check if sixdesk input is complete.</li>
 <li><code>submit_sixtrack</code>: submit sixdesk jobs to <code>HTCondor</code>. (<em>interrupt</em>)</li>
@@ -5354,13 +5354,13 @@ To have <code>AutoSix</code> continue its work, check your scheduler via <code>c
 It will pick up where it left as written in the <strong>stages_completed.txt</strong> file.</p>
 <div class="admonition tip">
 <p class="admonition-title">Custom sixdesk envs</p>
-<p>While most studies should be fine with the input options given, there is the possibility to manually adapt the <strong>sixdeskenv</strong> and <strong>sysenv</strong> files before workspace initialization by using the <code>stop_workspace_init</code> flag.
+<p>While most studies should be fine with the input options given, there is the possibility to manually adapt the <strong>sixdeskenv</strong> and <strong>sysenv</strong> files before workspace initialisation by using the <code>stop_workspace_init</code> flag.
 This will not reset automatically and one will have to remove the switch again to continue.</p>
 </div>
 <details class="example">
 <summary>Polar Plots</summary>
 <p>For the creation of polar plots, the function <code>pylhc_submitter.sixdesk_tools.post_process_da.plot_polar</code> is available.
-It is used for the basic polar plotting in the <code>post_process</code> stage, but provides more customization features if called manually.
+It is used for the basic polar plotting in the <code>post_process</code> stage, but provides more customisation features if called manually.
 Details on its use can be found at the <code>PyLHC Submitter</code> API documentation.</p>
 </details>
 

@@ -2446,7 +2446,7 @@
   <span class="md-ellipsis">
     
   
-  Analyzing Modulations
+  Analysing Modulations
 
     
   </span>
@@ -5368,7 +5368,7 @@ This zero-padding has a cost in memory and computing power (see the <a href="../
 <p>For anything related to <strong>linear optics</strong>, that value is overkill and a lower number is fine, usually <span class="arithmatex">\(\texttt{turn_bits} = 15\)</span> is enough.
 For anything related to <strong>nonlinear optics</strong>, for the detection of high order <abbr title="Resonance Driving Terms">RDTs</abbr> etc keeping a high number is recommended, at least <span class="arithmatex">\(\texttt{turn_bits} = 18\)</span> as is the default in the <a href="../../guis/betabeat/settings.html#harpy-tab">GUI settings</a>.</p>
 </div>
-<p>A normalizing windowing function <span class="arithmatex">\(w_n\)</span> is applied to the signal prior to zero-padding.
+<p>A normalising windowing function <span class="arithmatex">\(w_n\)</span> is applied to the signal prior to zero-padding.
 Harpy uses the output of <abbr title="Real Fast Fourier Transform">RFFT</abbr> of zero-padded signal <span class="arithmatex">\(x\)</span>:</p>
 <div class="arithmatex">\[
     X_m = \sum_{n=0}^{N_\text{turns}-1} x_n\, w_n\, e^{-2i\pi  m n / N_\text{padded}} .

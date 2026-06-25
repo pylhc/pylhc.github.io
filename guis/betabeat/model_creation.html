@@ -2767,7 +2767,7 @@
   <span class="md-ellipsis">
     
   
-  Analyzing Modulations
+  Analysing Modulations
 
     
   </span>
@@ -5799,7 +5799,7 @@ Sets the currently chosen model as "selected model" in the GUI and closes this w
 Deletes the selected model folder <strong>from disk</strong> <span class="twemoji warning-colored"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M256 0c14.7 0 28.2 8.1 35.2 21l216 400c6.7 12.4 6.4 27.4-.8 39.5S486.1 480 472 480H40c-14.1 0-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9 20.5-21 35.2-21m0 352a32 32 0 1 0 0 64 32 32 0 1 0 0-64m0-192c-18.2 0-32.7 15.5-31.4 33.7l7.4 104c.9 12.5 11.4 22.3 23.9 22.3 12.6 0 23-9.7 23.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z"/></svg></span>.</p>
 </li>
 <li><span class="keys yellow-gui-button"><kbd>Import External</kbd></span> :
-Opens a file-dialog
+Opens a file dialogue
 to select a folder with a previously created model at a location outside the current accelerator's <em>Models</em> folder and copies it there.</li>
 <li>
 <p><span class="keys blue-gui-button"><kbd>Update MQTs</kbd></span> <em>(If a model is selected)</em>:
@@ -5814,7 +5814,7 @@ and if <code>job.create_model_best_knowledge.madx</code> exists, which is then r
 <div class="admonition warning">
 <p class="admonition-title">Updating <abbr title="Tuning Trim Quadrupole Magnets of the LHC">MQTs</abbr> to reuse model</p>
 <p>It is <strong>heavily discouraged</strong> to update the <abbr title="Tuning Trim Quadrupole Magnets of the LHC">MQTs</abbr> to reuse a model later during a shift,
-as it will lead to confusion if optics have already been analyzed with this model and someone tries to reproduce the results later.
+as it will lead to confusion if optics have already been analysed with this model and someone tries to reproduce the results later.
 It is therefore usually better to create a new model from scratch and <strong>only use this functionality before doing any analysis</strong>,
 e.g. if you extracted the <abbr title="Tuning Trim Quadrupole Magnets of the LHC">MQTs</abbr> too early, or if you created a copy of an older model.</p>
 </div>
@@ -5912,7 +5912,7 @@ will be identified from tags in the <code>job.nominal.madx</code> file.</p>
 <summary>Deprecated <code>modifiers.madx</code></summary>
 <p>In the past, the modifiers were given as a separate <code>modifiers.madx</code> in the model folder.
 Due to backwards compatibility, the <code>modifiers.madx</code> file is still somewhat supported, but not encouraged.
-So <strong>giving here a file called <code>modifiers.madx</code> within the model folder might lead to unexpected behavior</strong>.</p>
+So <strong>giving here a file called <code>modifiers.madx</code> within the model folder might lead to unexpected behaviour</strong>.</p>
 </details>
 <h4 id="create">Create<a class="headerlink" href="#create" title="Permanent link">&para;</a></h4>
 <p>Clicking on the <span class="keys green-gui-button"><kbd>Create New</kbd></span> button will start the model creation.
@@ -5982,9 +5982,9 @@ This will result in additional <code>*_best_knowledge.dat</code> twiss-output fi
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Java Issues and <abbr title="Role Based Access Control">RBAC</abbr> token</p>
-<p>Due to Java misconfiguration in the <abbr title="Cern Control Center">CCC</abbr> terminals there can be access-issues with the <em>online model extraction</em>,
+<p>Due to Java misconfiguration in the <abbr title="Cern Control Centre">CCC</abbr> terminals there can be access-issues with the <em>online model extraction</em>,
 additional steps might need to be taken <strong>before starting the GUI</strong>.
-For now, follow the <a href="../about.html#running-in-the-ccc-in-2026">running in the <abbr title="Cern Control Center">CCC</abbr> in 2025 instructions</a> and create a valid
+For now, follow the <a href="../about.html#running-in-the-ccc-in-2026">running in the <abbr title="Cern Control Centre">CCC</abbr> in 2025 instructions</a> and create a valid
 <abbr title="Role Based Access Control">RBAC</abbr> token via the button at the top of the GUI:</p>
 <p><figure>
   <center>

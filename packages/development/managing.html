@@ -2600,7 +2600,7 @@
   <span class="md-ellipsis">
     
   
-  Analyzing Modulations
+  Analysing Modulations
 
     
   </span>
@@ -5481,7 +5481,7 @@ Don't forget to also update the <code>omc_python3</code> and <code>omc_python_ed
 </div>
 </div>
 <h2 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h2>
-<p>The settings for the <code>pylhc</code> organization should be automatically available to you, if you have been given the right permissions (either <code>admin</code> or <code>code owner</code>).</p>
+<p>The settings for the <code>pylhc</code> organisation should be automatically available to you, if you have been given the right permissions (either <code>admin</code> or <code>code owner</code>).</p>
 <p>Our repositories use the <a href="https://github.com/pylhc/.github" target="_blank"><code>.github</code></a> configuration repository to manage:</p>
 <ul>
 <li>Issue Templates</li>
@@ -5508,12 +5508,12 @@ Nowadays we only use it to assign labels to all repositories.</p>
 <p>To log into the <code>pylhctokens</code> account you need password and 2FA authentication.</p>
 <h3 id="codeowners">CODEOWNERS<a class="headerlink" href="#codeowners" title="Permanent link">&para;</a></h3>
 <p>To avoid malicious or accidental changes to the repositories, the <code>master</code> branches are locked (<code>Repo</code> -&gt; <code>Settings</code> -&gt; <code>Branch protection</code>) and reviews are required before pull requests can be merged.</p>
-<p>The approved reviewers are handled via the <code>approved-reviewers</code> group in the <code>pylhc</code> organization's teams which are assigned as code owners to each repository.
+<p>The approved reviewers are handled via the <code>approved-reviewers</code> group in the <code>pylhc</code> organisation's teams which are assigned as code owners to each repository.
 For that purpose, each repository has a <code>CODEOWNERS</code> file, which can be found in the <code>.github</code> folder of the repository.</p>
 <p>For more details, see the <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners" target="_blank">official documentation</a>.</p>
 <h2 id="pypi">PyPI<a class="headerlink" href="#pypi" title="Permanent link">&para;</a></h2>
 <p>The access to <a href="https://pypi.org" target="_blank">PyPI</a> is provided by the <code>pylhc</code> service account, for which you will need password and 2FA authentication.</p>
-<p>Publishing access is given to the github workflows via <a href="https://pypi.org/help/#apitoken" target="_blank">API-Token</a> (<code>Settings</code> -&gt; <code>Account Settings</code> -&gt; <code>API Tokens</code>) to all repositories of the <code>pylhc</code> organization.
+<p>Publishing access is given to the github workflows via <a href="https://pypi.org/help/#apitoken" target="_blank">API-Token</a> (<code>Settings</code> -&gt; <code>Account Settings</code> -&gt; <code>API Tokens</code>) to all repositories of the <code>pylhc</code> organisation.
 This is done by using the <a href="https://github.com/pylhc/.github/blob/master/.github/workflows/publish.yml" target="_blank">publish workflow</a> and passing the token as secret:</p>
 <ul>
 <li><code>PYPI_USERNAME</code> : <code>__token__</code> (literal string)</li>
@@ -5522,7 +5522,7 @@ This is done by using the <a href="https://github.com/pylhc/.github/blob/master/
 <p>These are usually inherited from each of the repos publishing workflows.</p>
 <h2 id="zenodo">Zenodo<a class="headerlink" href="#zenodo" title="Permanent link">&para;</a></h2>
 <p>There is no special account for <a href="https://zenodo.org" target="_blank">Zenodo</a> access.
-Zenodo should be able to be reached with your normal account, preferably your <code>GitHub</code> account which, if linked correctly, will allow Zenodo to also reach the <code>pylhc</code> organization's repositories for accounts with admin permissions.</p>
+Zenodo should be able to be reached with your normal account, preferably your <code>GitHub</code> account which, if linked correctly, will allow Zenodo to also reach the <code>pylhc</code> organisation's repositories for accounts with admin permissions.</p>
 <p>To add a new repository to Zenodo, make sure the <code>.zenodo.json</code> file is correct.
 Examples can be found in our repositories.
 <strong>Before making your first release</strong>, go into the <a href="https://zenodo.org/account/settings/github/" target="_blank">Zenodo github settings</a> (down-arrow on your user on the top right) and follow these instructions:</p>
