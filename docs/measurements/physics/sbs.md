@@ -50,7 +50,7 @@ In this case a good rematching at the edges of the segment means the contributio
 To determine SbS corrections, see the dedicated [Segment-by-Segment GUI pages](../../guis/segment_by_segment/gui.md).
 
 [^TomasLHCOMC]:
-    ??? abstract "CERN Large Hadron Collider Optics Model, Measurements, and Corrections, `R. Tomás et. al.`, [Phys. Rev. Accel. Beams **13**, 2010](https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.13.121004){target=_blank}"
+    ??? abstract "CERN Large Hadron Collider Optics Model, Measurements, and Corrections, `R. Tomás et al.`, [Phys. Rev. Accel. Beams **13**, 2010](https://journals.aps.org/prab/abstract/10.1103/PhysRevSTAB.13.121004){target=_blank}"
         ```
         @article{PhysRevSTAB.13.121004,
           title = {CERN Large Hadron Collider optics model, measurements, and corrections},
@@ -67,7 +67,7 @@ To determine SbS corrections, see the dedicated [Segment-by-Segment GUI pages](.
         ```
 
 [^TomasReviewOMC]:
-    ??? abstract "Review of Linear Optics Measurement and Correction for Charged Particle Accelerators, `R. Tomás et. al.`, [Phys. Rev. Accel. Beams **20**, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.20.054801){target=_blank}"
+    ??? abstract "Review of Linear Optics Measurement and Correction for Charged Particle Accelerators, `R. Tomás et al.`, [Phys. Rev. Accel. Beams **20**, 2020](https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.20.054801){target=_blank}"
         ```
         @article{PhysRevAccelBeams.20.054801,
           title = {Review of Linear Optics Measurement and Correction for Charged Particle Accelerators},

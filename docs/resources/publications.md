@@ -75,7 +75,7 @@ This page compiles various published papers, reports, and MD notes from OMC team
 
 ### 2024 Papers
 
-??? abstract "Optics for Landau Damping with Minimized Octupolar Resonances in the LHC, `R. Tomás et. al.`, [JINST 19 T05010](https://iopscience.iop.org/article/10.1088/1748-0221/19/05/T05010){target=_blank}"
+??? abstract "Optics for Landau Damping with Minimized Octupolar Resonances in the LHC, `R. Tomás et al.`, [JINST 19 T05010](https://iopscience.iop.org/article/10.1088/1748-0221/19/05/T05010){target=_blank}"
     ```
     @article{TomasLandauDampingMinimizedOctupolarResonances,
       title     = {Optics for Landau Damping with Minimized Octupolar Resonances in the LHC},
