@@ -1,7 +1,7 @@
 
 # Optics Analysis
 
-This page summarizes how the optics analysis is performed with our `omc3` software, from the physics point of view.
+This page summarises how the optics analysis is performed with our `omc3` software, from the physics point of view.
 Please note that this page is meant as a gentle introduction including references rather than a comprehensive treatment of the topics therein.
 
 !!! info "A practical walkthrough"
@@ -95,7 +95,7 @@ $$
 
 It is a primary value of interest for the quantification of the optics' quality throughout the machine.
 
-### Dispersion and Normalized Dispersion
+### Dispersion and Normalised Dispersion
 
 The dispersion function $D_{x,y}(s)$ quantifies the sensitivity of the closed orbit to a relative momentum offset $\delta = \Delta p / p_0$:
 
@@ -110,7 +110,7 @@ The resulting mean orbit change at each BPM, plotted versus $\delta$, yields $D_
     A more efficient approach is to perform measurements with AC dipole excitation in which the RF frequency is simultaneously modulated, providing an "excitation" of the three degrees of freedom at once.
     This method was explored but is not currently actively used.
 
-The **normalized dispersion**, written as $D_{x,y} / \sqrt{\beta_{x,y}}$, is independent of BPM calibration factors, making it a more robust observable of the sensitivity to energy deviations.
+The **normalised dispersion**, written as $D_{x,y} / \sqrt{\beta_{x,y}}$, is independent of BPM calibration factors, making it a more robust observable of the sensitivity to energy deviations.
 
 ### Coupling
 

@@ -135,9 +135,9 @@ Questions regarding the Java infrastructure we are using, like deployment of app
 
 The NXCals team is always interested in feedback regarding the user experience and use-cases of NXCals, at CERN in general, but also for each individual section - as they might have very different needs.
 
-They regularly organize meetings to gather feedback and discuss new features, so feel free to reach out to the contacts below to be added to the mailing list.
+They regularly organise meetings to gather feedback and discuss new features, so feel free to reach out to the contacts below to be added to the mailing list.
 
-While not directly involved in the development of NXCals, Michi Hostettler is taking care of data collection and organization for the LHC, which is stored using the NXCals framework and is therefore a good contact for questions with regards to that topic.
+While not directly involved in the development of NXCals, Michi Hostettler is taking care of data collection and organisation for the LHC, which is stored using the NXCals framework and is therefore a good contact for questions with regards to that topic.
 
 - [Mattermost: NXCals][mm_nxcals]
 

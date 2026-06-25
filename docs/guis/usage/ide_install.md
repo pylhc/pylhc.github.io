@@ -133,7 +133,7 @@ Depending on your IDE, this might be run automatically (VSCode) or you should ru
 Running `clean` and/or`dependencies` can also help.
 
 !!! warning
-    No one in the OMC-Team is a `CBNG` expert, and sometimes running these commands leads to the desired outcome (of a runnable project) or not depending on the color of the DG's clothing.
+    No one in the OMC-Team is a `CBNG` expert, and sometimes running these commands leads to the desired outcome (of a runnable project) or not depending on the colour of the DG's clothing.
 
 ## Useful Links
 

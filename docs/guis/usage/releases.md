@@ -97,7 +97,7 @@ To achieve this, a new task has been implemented in the [`build.gradle`][bbgui_b
 [cas_cern]: https://cas.cern.ch
 [jws_programs]: ../../resources/links.md#jws-programs
 
-*[CCC]: CERN Control Center
+*[CCC]: CERN Control Centre
 *[CCM]: Common Console Manager
 *[CBNG]: Common Build Next Generation
 *[GUI]: Graphical User Interface

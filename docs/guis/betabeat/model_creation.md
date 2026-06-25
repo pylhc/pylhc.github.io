@@ -47,7 +47,7 @@ Sets the currently chosen model as "selected model" in the GUI and closes this w
 - ++"Delete"++{.red-gui-button} _(If a model is selected)_:
 Deletes the selected model folder **from disk** :fontawesome-solid-triangle-exclamation:{.warning-colored}.
 - ++"Import External"++{.yellow-gui-button} :
-Opens a file-dialog
+Opens a file dialogue
 to select a folder with a previously created model at a location outside the current accelerator's _Models_ folder and copies it there.
 - ++"Update MQTs"++{.blue-gui-button} _(If a model is selected)_:
 Updates the values of the MQTs (which are saved in a separate file) in the currently selected model via extraction from `NXCals`.
@@ -60,7 +60,7 @@ A window will open to select a time to extract the MQTs from, which default to t
 
     !!! warning "Updating MQTs to reuse model"
         It is **heavily discouraged** to update the MQTs to reuse a model later during a shift,
-        as it will lead to confusion if optics have already been analyzed with this model and someone tries to reproduce the results later.
+        as it will lead to confusion if optics have already been analysed with this model and someone tries to reproduce the results later.
         It is therefore usually better to create a new model from scratch and **only use this functionality before doing any analysis**,
         e.g. if you extracted the MQTs too early, or if you created a copy of an older model.
 
@@ -151,7 +151,7 @@ This can be used to install your own optics modifications.
 ??? warning "Deprecated `modifiers.madx`"
     In the past, the modifiers were given as a separate `modifiers.madx` in the model folder.
     Due to backwards compatibility, the `modifiers.madx` file is still somewhat supported, but not encouraged.
-    So **giving here a file called `modifiers.madx` within the model folder might lead to unexpected behavior**.
+    So **giving here a file called `modifiers.madx` within the model folder might lead to unexpected behaviour**.
 
 #### Create
 
@@ -346,7 +346,7 @@ Activate and set the energy at which the accelerator is running in GeV, if neede
 [langner2016]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.092803
 [running_in_the_ccc]: ../about.md#running-in-the-ccc-in-2026
 
-*[CCC]: Cern Control Center
+*[CCC]: Cern Control Centre
 *[MQTs]: Tuning Trim Quadrupole Magnets of the LHC
 *[RBAC]: Role Based Access Control
 *[LHC]: Large Hadron Collider

@@ -7,8 +7,8 @@
   </center>
 </figure>
 
-The BPM panel provides a graphical interface to query and visualize information for the BPM data files, i.e. the Turn-by-Turn data
-and select the data to be analyzed further.
+The BPM panel provides a graphical interface to query and visualise information for the BPM data files, i.e. the Turn-by-Turn data
+and select the data to be analysed further.
 
 ## Loading Data
 
@@ -25,8 +25,8 @@ Use the ++"Open Files"++{.green-gui-button} button to open turn-by-turn data.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/open_files.png" width="95%" alt="Open Files Dialog"/>
-  <figcaption>The Open Files Dialog.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/open_files.png" width="95%" alt="Open Files Dialogue"/>
+  <figcaption>The Open Files Dialogue.</figcaption>
   </center>
 </figure>
 
@@ -36,13 +36,13 @@ Use the ++"Open Files"++{.green-gui-button} button to open turn-by-turn data.
     This is required, as the BPMs are checked vs the model and sorted by longitudinal location.
 
 !!! tip "Naming Filter"
-    For the LHC, the displayed files in the file-dialog are automatically filtered to show only `@BunchTurn` files of the currently selected beam.
-    You can change/deactivate that filter ("Files of Type") at the bottom of the dialog!
+    For the LHC, the displayed files in the file dialogue are automatically filtered to show only `@BunchTurn` files of the currently selected beam.
+    You can change/deactivate that filter ("Files of Type") at the bottom of the dialogue!
 
 Multiple files can be opened at once and are added to the current `Measurements` directory, as well as to the table of loaded files in the panel.
 If the file contained multiple bunches, they are added as separate entries (see [below](#table-of-loaded-files)).
 
-If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, a window will open to prompt the user with the ["Do analysis Dialog"](#do-analysis-dialog).
+If the ["Analyse TbT files on opening" setting](settings.md#gui-tab) is active, a window will open to prompt the user with the ["Do analysis Dialogue"](#do-analysis-dialogue).
 
 !!! tip "Reopening Files"
     - If you are opening a file with the same filename as an already opened file, an error will be thrown.
@@ -108,7 +108,7 @@ Clicking on the ++"Remove"++{.red-gui-button} button will remove the selected en
 
 ## Investigating Turn-by-Turn Data
 
-After selecting one or more files in the table of loaded files, the turn-by-turn data is visualized in the two bottom charts, one for each plane.
+After selecting one or more files in the table of loaded files, the turn-by-turn data is visualised in the two bottom charts, one for each plane.
 The charts are [interactive](common_components.md#plotting) and can display either the measured amplitude values over turns for every BPM from the list or display the phase space, which is calculated by two consecutive BPMs.
 You can select multiple measurements at once to compare them, but only one BPM per plane at a time.
 
@@ -149,24 +149,24 @@ Hovering the BPM name will show a tooltip with the reason the BPM was deemed bad
 
 The buttons on the top left side of the pane provide some features to handle the BPM data.
 
-- ++"Create Average"++ allows loading several data files too visualize their average repesentations on the same graph, which helps detecting differences or reducing noise.
+- ++"Create Average"++ allows loading several data files too visualise their average repesentations on the same graph, which helps detecting differences or reducing noise.
 - ++"Remove Turns"++ can be used to cut turns from the start or the end, to focus on a specified range of the data.
-- ++"Split Files"++ splits the current BPM data file into N files, where N is specified in the dialog and the resulting files will have old-turns/N turns.
+- ++"Split Files"++ splits the current BPM data file into N files, where N is specified in the dialogue and the resulting files will have old-turns/N turns.
 
 ## Start Analysis
 
-The ++"Analyse Spectra"++{.green-gui-button} button spawns [the configuration dialog](#do-analysis-dialog) for the analysis.
+The ++"Analyse Spectra"++{.green-gui-button} button spawns [the configuration dialogue](#do-analysis-dialogue) for the analysis.
 This will call an external program to perform a frequency analysis of the BPM data [**of the selected files**](#table-of-loaded-files), in order to compute tunes and similar beam properties and (optionally) to get the optics functions from that spectrum.
-The **"Run optics as well"** checkbox will define whether the [_"Optics Analysis"_ in the _"Do analysis Dialog"_](#do-analysis-dialog) is automatically pre-checked.
+The **"Run optics as well"** checkbox will define whether the [_"Optics Analysis"_ in the _"Do analysis Dialogue"_](#do-analysis-dialogue) is automatically pre-checked.
 
-### Do-Analysis Dialog
+### Do-Analysis Dialogue
 
 === "Closed Settings"
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/do_analysis_dialog.png" width="100%" alt="The Do-Analysis Dialog"/>
-    <figcaption>The Do-Analysis Dialog.</figcaption>
+    <img src="../../assets/images/betabeat_gui/do_analysis_dialog.png" width="100%" alt="The Do-Analysis Dialogue"/>
+    <figcaption>The Do-Analysis Dialogue.</figcaption>
     </center>
     </figure>
 
@@ -174,12 +174,12 @@ The **"Run optics as well"** checkbox will define whether the [_"Optics Analysis
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialog with open settings"/>
-    <figcaption>The Do-Analysis Dialog with open settings.</figcaption>
+    <img src="../../assets/images/betabeat_gui/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialogue with open settings"/>
+    <figcaption>The Do-Analysis Dialogue with open settings.</figcaption>
     </center>
     </figure>
 
-This dialog allows you to specify the settings and output for the analysis run
+This dialogue allows you to specify the settings and output for the analysis run
 on the currently selected files in the BPM-Panel.
 Click the ++"Run"++ button to start the analysis.
 
@@ -212,12 +212,12 @@ subfolder.
 !!! warning "Loading the `lin_files` subfolder"
     If the analysis files are loaded via [++"Open Files"++{.green-gui-button} in the Analysis Panel](analysis_panel.md) from the `lin_files` subfolder,
     this folder is **copied** into the `Measurements` folder, keeping the `lin_files` name.
-    If you want to open another set of analyzed files from an `lin_files` folder, the GUI will **complain that the folder already exists**.
+    If you want to open another set of analysed files from an `lin_files` folder, the GUI will **complain that the folder already exists**.
     To avoid this, use the ++"Attach Files"++{.yellow-gui-button} button instead.
 
 ### Settings and Suffixes
 
-By expanding the _Settings_ section at the bottom of the dialog
+By expanding the _Settings_ section at the bottom of the dialogue
 you can optionally change the [settings](settings.md) for the harmonic analysis in the _[Tunes](settings.md#tunes-tab)_, _[Harpy](settings.md#harpy-tab)_, _[Cleaning](settings.md#cleaning-tab)_ and _[Accelerator](settings.md#accelerator-tab)_ tabs, as well as for the optics analysis in the _[Optics](settings.md#optics-tab)_ tab if the _Optics Analysis_ checkbox is checked.
 
 The _Suffix_-field will be automatically set from your suffix-choices in the [_Harpy_ settings tab](settings.md#harpy-tab) and is only applied to the harmonic analysis output files (i.e. `.lin[xy]`, `.amps[xy]`, `.freqs[xy]`), **not to the folder names**.

@@ -1,7 +1,7 @@
 # The Kmod GUI
 
 The Kmod GUI provides functionality to perform [K-Modulation][kmod_method] in the LHC.
-It also has the ability to extract and analyze data from previous trims.
+It also has the ability to extract and analyse data from previous trims.
 
 This section will guide you through the GUI's layout and functionality.
 We also provide a procedure page for [performing K-modulation in the CCC][kmod_measurements].
@@ -33,10 +33,10 @@ After opening, the GUI should look like this:
 The following pages are available:
 
 - [Performing a Modulation](modulating.md) for how to select circuits and settings and running modulations.
-- [Analyzing Data](analyzing.md) for how to retrieve previous modulations from `NXCALS`, analyze any modulation data and export results.
+- [Analysing Data](analyzing.md) for how to retrieve previous modulations from `NXCALS`, analyse any modulation data and export results.
 
 [gui_basics]: ../about.md#running-in-the-ccc-in-2026
 [kmod_method]: ../../measurements/physics/kmod.md
 [kmod_measurements]: ../../measurements/procedures/kmod.md
 
-*[CCC]: CERN Control Center
+*[CCC]: CERN Control Centre
