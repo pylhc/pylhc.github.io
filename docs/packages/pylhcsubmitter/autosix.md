@@ -78,7 +78,7 @@ In theory, any kind of mask is possible, given the correct `executable` is provi
 Upon running the script, the **Jobs.tfs** file is created similarly to `job_submitter`, and the following stages are run per job:
 
 1. `create_jobs`: create workspace, fill sysenv, sixdeskenv and mask.
-2. `initialize_workspace`: initialize workspace from the env-files.
+2. `initialize_workspace`: initialise workspace from the env-files.
 3. `submit_mask`: submit job to `HTCondor` from filled mask. (*interrupt*)
 4. `check_input`: check if sixdesk input is complete.
 5. `submit_sixtrack`: submit sixdesk jobs to `HTCondor`. (*interrupt*)
@@ -101,12 +101,12 @@ To have `AutoSix` continue its work, check your scheduler via `condor_q` and run
 It will pick up where it left as written in the **stages\_completed.txt** file.
 
 !!! tip "Custom sixdesk envs"
-    While most studies should be fine with the input options given, there is the possibility to manually adapt the **sixdeskenv** and **sysenv** files before workspace initialization by using the `stop_workspace_init` flag.
+    While most studies should be fine with the input options given, there is the possibility to manually adapt the **sixdeskenv** and **sysenv** files before workspace initialisation by using the `stop_workspace_init` flag.
     This will not reset automatically and one will have to remove the switch again to continue.
 
 ??? example "Polar Plots"
     For the creation of polar plots, the function `pylhc_submitter.sixdesk_tools.post_process_da.plot_polar` is available.
-    It is used for the basic polar plotting in the `post_process` stage, but provides more customization features if called manually.
+    It is used for the basic polar plotting in the `post_process` stage, but provides more customisation features if called manually.
     Details on its use can be found at the `PyLHC Submitter` API documentation.
 
 [documentation]: https://pylhc.github.io/submitter/entrypoints/submitter.html#autosix

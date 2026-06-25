@@ -13,7 +13,7 @@ This is for three reasons:
 
 While not strictly enforced, our GUIs follow the [Model-View-Controller][mvc_wiki]{target=_blank} architecture,
 as it is a very useful and therefore also very common GUI pattern.
-[A better explanation can be found here][mvc_geeks]{target=_blank}, but this section summarizes a few key points relevant to our usecase.
+[A better explanation can be found here][mvc_geeks]{target=_blank}, but this section summarises a few key points relevant to our usecase.
 
 The main philosophy of the MVC architecture is to separate the actual GUI elements, the _View_, from the underlying data, stored in the _Model_,
 and let the _Controller_ handle the communication between the two and with the user.

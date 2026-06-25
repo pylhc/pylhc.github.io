@@ -351,7 +351,7 @@ To insert an image, use the following:
 ![Image](../assets/images/tricks/placeholder.gif)
 ```
 
-To include a centered image with a caption, deferring to `html` also works:
+To include a centred image with a caption, deferring to `html` also works:
 
 ```html
 <figure>

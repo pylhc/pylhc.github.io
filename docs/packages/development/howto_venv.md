@@ -45,7 +45,7 @@ bash acc-py-2026.01-installer.sh --installation-root /path/to/dist_location
 ```
 
 ??? info "Installation Root Location in Previous Versions"
-    Up to the installers for `Acc-Py` `2023.06`, the behavior was trickier.
+    Up to the installers for `Acc-Py` `2023.06`, the behaviour was trickier.
     The caveat is still documented below for safekeeping.
 
     On those versions, at post-install the script would try to create an `apps` folder (where it will install built applications, including the `acc-py` command line tool).

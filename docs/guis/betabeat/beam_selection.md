@@ -35,7 +35,7 @@ Depending on your choice of `Beam` a default is already preselected for you.
 #### Special Entries
 
 - _LHC-Betabeat_: `/user/slops/data/LHC_DATA/OP_DATA/Betabeat/`
-- _Other_: Lets you choose your own path, starting from your default (usually `home`) folder for file dialogs.
+- _Other_: Lets you choose your own path, starting from your default (usually `home`) folder for file dialogues.
 - _Other (Last Selected)_: Lets you choose your own path, starting from the last selected folder in this dropdown.
 - _Other (Accel)_: Lets you choose your own path, starting from default of the selected beam/accelerator.
 
@@ -106,7 +106,7 @@ LHC-Betabeat
 ## Input
 
 This field lets you choose the default input folder for the GUI,
-meaning that file dialogs will usually start from that folder.
+meaning that file dialogues will usually start from that folder.
 
 !!! warning "Read Access"
     The GUI needs to be able to read from the selected folder.
@@ -117,7 +117,7 @@ Special Entries:
 - _LHC-Fill Latest_: `/user/slops/data/LHC_DATA/OP_DATA/Fill_DATA/FILL_DIR/BPM/`, where `FILL_DIR` is a symlink pointing to the latest fill directory.
 - _LHC-Fill_: `/user/slops/data/LHC_DATA/OP_DATA/Fill_DATA/`
 - _(Same as Output)_: Uses the same path as selected in the `Output` field.
-- _Other_: Lets you choose your own path, starting from your default (usually `home`) folder for file dialogs.
+- _Other_: Lets you choose your own path, starting from your default (usually `home`) folder for file dialogues.
 - _Other (Last Selected)_: Lets you choose your own path, starting from the last selected folder in this dropdown.
 - _Other (Accel)_: Lets you choose your own path, starting from default of the selected beam/acceelerator.
 

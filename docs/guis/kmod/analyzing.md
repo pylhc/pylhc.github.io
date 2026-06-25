@@ -2,11 +2,11 @@
 
 Any modulation's data is automatically saved in `NXCALS` and can be retrieved later for analysis.
 We will briefly go over how to retrieve a previous modulation's data.
-To see how to perform analysis on the data, jump to the [Analyzing Modulations](#analyzing-modulations) section.
+To see how to perform analysis on the data, jump to the [Analysing Modulations](#analysing-modulations) section.
 
 ## Retrieving Modulations
 
-One can load a modulation from the `MODULATIONS` tab of the lower center part the GUI window, by clicking the big green `+` button, as shown below.
+One can load a modulation from the `MODULATIONS` tab of the lower centre part the GUI window, by clicking the big green `+` button, as shown below.
 
 <figure>
   <center>
@@ -28,9 +28,9 @@ Select the desired modulations and click the `Extract` button.
   </center>
 </figure>
 
-## Analyzing Modulations
+## Analysing Modulations
 
-After performing or retrieving a modulation, the measured data will be available in the `MODULATIONS` tab of the lower center part of the GUI.
+After performing or retrieving a modulation, the measured data will be available in the `MODULATIONS` tab of the lower centre part of the GUI.
 A graph shows the measured tunes for each beam, as well as the modulated currents for the time of the modulation.
 
 !!! note

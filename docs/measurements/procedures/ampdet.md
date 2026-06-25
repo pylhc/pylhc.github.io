@@ -160,7 +160,7 @@ which can be hard to find if they get lost in the BPM noise or when they are clo
 Multiple features have been implemented in python and GUI to ease the detuning analysis.
 
 As the main steps follow the standard optics analysis, the entries described here are mostly hints and tricks
-on how to optimize the analysis and only need to be applied where necessary.
+on how to optimise the analysis and only need to be applied where necessary.
 
 - [ ] <details class="nodeco"><summary>Load Data</summary>
       <p>

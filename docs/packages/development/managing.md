@@ -75,7 +75,7 @@ The `/afs/cern.ch/eng/sl/lintrack/omc_python3` is activate by default for the `l
 
 ## Github
 
-The settings for the `pylhc` organization should be automatically available to you, if you have been given the right permissions (either `admin` or `code owner`).
+The settings for the `pylhc` organisation should be automatically available to you, if you have been given the right permissions (either `admin` or `code owner`).
 
 Our repositories use the [`.github`][pylhc_github_github]{target=_blank} configuration repository to manage:
 
@@ -112,7 +112,7 @@ To log into the `pylhctokens` account you need password and 2FA authentication.
 
 To avoid malicious or accidental changes to the repositories, the `master` branches are locked (`Repo` -> `Settings` -> `Branch protection`) and reviews are required before pull requests can be merged.
 
-The approved reviewers are handled via the `approved-reviewers` group in the `pylhc` organization's teams which are assigned as code owners to each repository.
+The approved reviewers are handled via the `approved-reviewers` group in the `pylhc` organisation's teams which are assigned as code owners to each repository.
 For that purpose, each repository has a `CODEOWNERS` file, which can be found in the `.github` folder of the repository.
 
 For more details, see the [official documentation][github_codeowners]{target=_blank}.
@@ -121,7 +121,7 @@ For more details, see the [official documentation][github_codeowners]{target=_bl
 
 The access to [PyPI][pypi]{target=_blank} is provided by the `pylhc` service account, for which you will need password and 2FA authentication.
 
-Publishing access is given to the github workflows via [API-Token][pypi_apitoken]{target=_blank} (`Settings` -> `Account Settings` -> `API Tokens`) to all repositories of the `pylhc` organization.
+Publishing access is given to the github workflows via [API-Token][pypi_apitoken]{target=_blank} (`Settings` -> `Account Settings` -> `API Tokens`) to all repositories of the `pylhc` organisation.
 This is done by using the [publish workflow][pylhc_publish]{target=_blank} and passing the token as secret:
 
 - `PYPI_USERNAME` : `__token__` (literal string)
@@ -132,7 +132,7 @@ These are usually inherited from each of the repos publishing workflows.
 ## Zenodo
 
 There is no special account for [Zenodo][zenodo]{target=_blank} access.
-Zenodo should be able to be reached with your normal account, preferably your `GitHub` account which, if linked correctly, will allow Zenodo to also reach the `pylhc` organization's repositories for accounts with admin permissions.
+Zenodo should be able to be reached with your normal account, preferably your `GitHub` account which, if linked correctly, will allow Zenodo to also reach the `pylhc` organisation's repositories for accounts with admin permissions.
 
 To add a new repository to Zenodo, make sure the `.zenodo.json` file is correct.
 Examples can be found in our repositories.

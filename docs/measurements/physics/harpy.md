@@ -57,7 +57,7 @@ To increase this resolution without additional data, the signal is zero-padded t
     For anything related to **linear optics**, that value is overkill and a lower number is fine, usually $\texttt{turn_bits} = 15$ is enough.
     For anything related to **nonlinear optics**, for the detection of high order RDTs etc keeping a high number is recommended, at least $\texttt{turn_bits} = 18$ as is the default in the [GUI settings](../../guis/betabeat/settings.md#harpy-tab).
 
-A normalizing windowing function $w_n$ is applied to the signal prior to zero-padding.
+A normalising windowing function $w_n$ is applied to the signal prior to zero-padding.
 Harpy uses the output of RFFT of zero-padded signal $x$:
 
 $$

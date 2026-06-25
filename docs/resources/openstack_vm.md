@@ -349,7 +349,7 @@ Give sudo rights to this user *(optional)*:
 usermod -aG wheel $USERNAME
 ```
 
-Allow ssh-authorization for this user for the same ssh-keys as current user, e.g. `root` *(optional)*:
+Allow ssh-authorisation for this user for the same ssh-keys as current user, e.g. `root` *(optional)*:
 
 ```bash
 mkdir /home/$USERNAME/.ssh
@@ -611,7 +611,7 @@ It will ask for your CERN username to copy the necessary files for `kerberos` co
 but the users to add have to be modified manually in the script!
 
 !!! danger "Use at your own risk!"
-    Please make sure to customize the script below to your needs before running it,
+    Please make sure to customise the script below to your needs before running it,
     or copy and paste the commands one-by-one manually.
 
 ```bash
@@ -630,7 +630,7 @@ sudo  dnf install -y locmap
 sudo locmap --enable all
 sudo locmap --configure all
 
-# Install useful packages. !! customize this list !!
+# Install useful packages. !! customise this list !!
 sudo dnf install -y xdg-utils evince htop wget zsh gcc-c++ sshfs git ImageMagick
 
 # Install LaTeX
@@ -643,7 +643,7 @@ sudo dnf install -y perl-Digest-MD5
 perl ./install-tl --no-interaction
 sudo dnf install -y python3-pygments
 
-# Install Java 11  !! customize to your preference !!
+# Install Java 11  !! customise to your preference !!
 sudo dnf install -y java-11-openjdk-devel java-11-openjdk
 
 # Install X11 (for forwarding)

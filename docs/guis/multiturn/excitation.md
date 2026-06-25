@@ -26,24 +26,24 @@ A kick group collects measurements under a single name, gathers them in the logb
     Each kick group also has a corresponding `.json` file in `/user/slops/data/LHC_DATA/OP_DATA/Betabeat/KickGroups/MULTITURN_ACQ_GROUPS`, in which the paths to the acquired turn-by-turn data and their individual `.json` files containing information about the excitation parameter is stored.
     See also the [PyLHC tool for KickGroups][pylhc_kickgroups]{target=_blank}.
 
-Creating a new group is done by clicking the ++"Select Active group"++ button in the top left corner of the GUI, which will open the following dialog:
+Creating a new group is done by clicking the ++"Select Active group"++ button in the top left corner of the GUI, which will open the following dialogue:
 
 <figure>
     <center>
-    <img src="../../assets/images/multiturn_gui/select_kick_group.png" width="85%" alt="Select Active Group Dialog" />
-    <figcaption> Select Active Group Dialog </figcaption>
+    <img src="../../assets/images/multiturn_gui/select_kick_group.png" width="85%" alt="Select Active Group Dialogue" />
+    <figcaption> Select Active Group Dialogue </figcaption>
     </center>
 </figure>
 
 Typically one wants to create a new kick group.
 To do so:
 
-- Click the ++"Create new Group"++ button at the bottom in the centre, which will open the following dialog, with a default naming scheme:
+- Click the ++"Create new Group"++ button at the bottom in the centre, which will open the following dialogue, with a default naming scheme:
 
 <figure>
     <center>
-    <img src="../../assets/images/multiturn_gui/create_kick_group.png" width="85%" alt="Create New Group Dialog" />
-    <figcaption> Create New Group Dialog </figcaption>
+    <img src="../../assets/images/multiturn_gui/create_kick_group.png" width="85%" alt="Create New Group Dialogue" />
+    <figcaption> Create New Group Dialogue </figcaption>
     </center>
 </figure>
 
@@ -91,7 +91,7 @@ The excitation device needs to know which bunches to excite and how long the exc
 
 #### Bunches
 
-- To select the bunches, click the ++"Select ..."++ button under the `Bunches` section, which opens the following dialog:
+- To select the bunches, click the ++"Select ..."++ button under the `Bunches` section, which opens the following dialogue:
 
 <figure>
     <center>
@@ -170,7 +170,7 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
     Nevertheless, careful monitoring of losses during acquisitions and adjusting the kick amplitudes accordingly is crucial.
 
     Typically, we prepare a table of various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
-    These should follow the various match points for the given energy ramp program, and the kick strengths should scale approximately linearly with the beam energy, starting from safe strength at injection.
+    These should follow the various match points for the given energy ramp programme, and the kick strengths should scale approximately linearly with the beam energy, starting from safe strength at injection.
 
     Most of this information can be found by opening a `CCM` then navigating to `LHC Control` -> `LHC Beam Control` -> `Settings` -> `LSA App Suite` (or via the search).
     Once the app has opened, click the `Applications` menu in the top left, then `contexts` and tick `Edit types`, which will open a new corresponding tab.
