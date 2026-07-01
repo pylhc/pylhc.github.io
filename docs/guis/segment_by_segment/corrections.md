@@ -40,31 +40,8 @@ If some of the selected measurements already have the same correction file loade
 If there is a conflict between different correction files across the selected optics, an error message will show.
 
 After editing the correction file, click ++"OK"++ then [run the propagation][sbs_run_segments] again (with ++"Run Segment(s)"++) to compute the effect of the attempted correction.
-After running the segment, the plots will update and show the corrected results (or expectation, depending on [plot settings][sbs_plot_settings]) as dashed lines, as below — switch tabs to compare the matched and expected views.
-
-=== "Matched (`corr` setting)"
-
-    In this mode the effect of the correction (setting change) is shown.
-    A good correction is found by reproducing best the effect observed in the machine.
-
-    <figure>
-      <center>
-      <img class="clickImg" src="../../assets/images/sbs_gui/correction_effect_corr.png" width="100%" alt="Matched Correction Effect (corr)"/>
-      <figcaption>Matched value: the dashed line shows the corrected model's deviation, close to the solid propagated measurement when the correction reproduces the measured errors.</figcaption>
-      </center>
-    </figure>
-
-=== "Expected (`expct` setting)"
-
-    In this mode the effect of the correction (setting change) is shown.
-    A good correction is found by bringing the dashed line closest to 0.
-
-    <figure>
-      <center>
-      <img class="clickImg" src="../../assets/images/sbs_gui/correction_effect_expct.png" width="100%" alt="Expected Correction Effect (expct)"/>
-      <figcaption>Expected value: the dashed line shows the residual after applying the correction, close to zero when the correction is effective.</figcaption>
-      </center>
-    </figure>
+After running the segment, the plots update to show the corrected results as dashed lines, in addition to the solid propagated measurement line.
+What these dashed lines represent depends on the [plot settings][sbs_plot_settings], as detailed in [Corrected and Expected Plots](#corrected-and-expected-plots) below.
 
 !!! info "Sign Conventions"
     The corrections applied in the GUI should modify the model to match the propagated measurement.
@@ -83,6 +60,26 @@ The [plot settings][sbs_plot_settings] let you choose what this dashed line repr
   If the correction successfully reproduces the measured errors, this dashed line should lie close to the solid propagated measurement line.
 - **Expected value (expct)**: the difference between the measured values and the propagated corrected model.
   This represents the expected outcome after the correction has been applied to the machine, and should therefore be close to zero for the correction to be effective.
+
+The tabs below illustrate each setting for the same correction:
+
+=== "Matched (**corr** setting)"
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/sbs_gui/correction_effect_corr.png" width="100%" alt="Matched Correction Effect (corr)"/>
+      <figcaption>A good correction reproduces the effect observed in the machine, so the dashed line lies close to the solid propagated measurement.</figcaption>
+      </center>
+    </figure>
+
+=== "Expected (**expct** setting)"
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/sbs_gui/correction_effect_expct.png" width="100%" alt="Expected Correction Effect (expct)"/>
+      <figcaption>A good correction brings the dashed residual line close to zero.</figcaption>
+      </center>
+    </figure>
 
 ## Testing Multiple Correction Schemes
 
