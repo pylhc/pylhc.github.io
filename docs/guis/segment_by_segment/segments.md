@@ -15,7 +15,7 @@ It is possible to directly point to an existing SbS output folder, which is usef
     At load time, the GUI will attempt to determine the accelerator type, beam and the appropriate model folder.
     If this automatic detection fails, these parameters need to be set manually via the `Edit` button (see **Editing Optics** below).
 
-Once loaded, the optics entries will appear in the side panel, color-coded by beam.
+Once loaded, the optics entries will appear in the side panel, colour-coded by beam.
 Hovering over an optics name displays a tooltip with a summary of its associated paths and accelerator parameters.
 
 <figure>
@@ -193,7 +193,7 @@ When multiple segments are selected, the default behaviour is to only plot toget
 This constraint can be relaxed via the `Same segment start` option in the [plot settings][sbs_plot_settings], although doing so is generally not recommended as it can lead to confusion when comparing positions.
 Activating the `Model Location` option changes the horizontal axis to show absolute positions in the accelerator rather than positions relative to the segment start, which makes it meaningful to overlay segments with different start BPMs and compare their results directly.
 
-Each combination of segment and optics is assigned a consistent color, while different markers and line styles distinguish forward propagation, backward propagation, corrected and expected traces (see [Determining Corrections][sbs_corrections] for details on these).
+Each combination of segment and optics is assigned a consistent colour, while different markers and line styles distinguish forward propagation, backward propagation, corrected and expected traces (see [Determining Corrections][sbs_corrections] for details on these).
 When plotting many segments at once, it is advised not to activate all trace types simultaneously, as the plot can become very crowded and difficult to read.
 
 ??? tip "Some Plot Shortcuts"
