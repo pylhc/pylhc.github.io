@@ -7,7 +7,7 @@ This page showcases the interface and workflow to do so.
 
 If started from the Beta-Beat GUI with an optics analysis selected, the corresponding optics data and associated model will be automatically loaded.
 
-Otherwise, or to load additional measurements, click the `Load` button in the side panel to open a file dialog and select the measurement folder corresponding to the optics analysis to be loaded.
+To load (additional) measurements, click the `Load` button in the side panel to open a file dialog and select the measurement folder corresponding to the optics analysis to be loaded.
 
 It is possible to directly point to an existing SbS output folder, which is useful when resuming previous work or when a different output directory name than the default `sbs` was used.
 
