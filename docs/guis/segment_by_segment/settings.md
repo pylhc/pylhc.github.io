@@ -109,7 +109,7 @@ When deactivated, the current limits will be kept when changing segments, which 
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/sbs_gui/view_model_location.png" width="100%" alt="Model Location"/>
-  <figcaption>Example of two segments with different start BPMs when plotted with `Model Location` activated.</figcaption>
+  <figcaption>Example of two segments with different start BPMs when plotted with Model Location activated.</figcaption>
   </center>
 </figure>
 
