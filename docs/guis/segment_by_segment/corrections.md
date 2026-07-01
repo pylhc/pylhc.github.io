@@ -5,18 +5,18 @@ This page covers how to apply corrections in the GUI, test different correction 
 
 !!! warning "++"Run Matcher"++ — Not Implemented"
     In the future, the ++"Run Matcher"++ button is intended to launch an automated matching routine for the currently selected optics and segment.
-    This would calculate corrections and produce a correction file that can then be loaded in the corrections dialog and further modified.
+    This would calculate corrections and produce a correction file that can then be loaded in the corrections dialogue and further modified.
 
 ## Applying Corrections
 
-Clicking the ++"Corrections"++ button in the side panel opens the corrections dialog, where you can load or create a correction file to apply to the model.
+Clicking the ++"Corrections"++ button in the side panel opens the corrections dialogue, where you can load or create a correction file to apply to the model.
 To create a file, simply type a name (e.g. `corrections.madx`) in the `File name` field and press the ++"Open"++ button to the right.
 See the screenshot below.
 
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/sbs_gui/correction_file_dialog.png" width="60%" alt="Correction File Dialog"/>
-  <figcaption>The correction file dialog, prompting to load or create a correction file. Creating a new file works by entering a name.</figcaption>
+  <figcaption>The correction file dialogue, prompting to load or create a correction file. Creating a new file works by entering a name.</figcaption>
   </center>
 </figure>
 
@@ -36,7 +36,7 @@ If a correction file has already been associated, clicking the ++"Corrections"++
 
 Note that the correction file path is applied to all currently selected optics.
 
-If some of the selected measurements already have the same correction file loaded while others do not, a dialog will ask whether to apply the same correction file to all of them.
+If some of the selected measurements already have the same correction file loaded while others do not, a dialogue will ask whether to apply the same correction file to all of them.
 If there is a conflict between different correction files across the selected optics, an error message will show.
 
 After editing the correction file, click ++"OK"++ then [run the propagation][sbs_run_segments] again (with ++"Run Segment(s)"++) to compute the effect of the attempted correction.
