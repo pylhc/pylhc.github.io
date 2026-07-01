@@ -50,7 +50,7 @@ If the corresponding option is activated in the [settings][sbs_main_settings], t
     - **Model**: Path to the model folder, which should contain the optics files for the model.
     - **Accelerator**: Accelerator name, e.g. `lhc`, `sps`, `ps`, `psbooster`.
     - **Output**: Path to the output folder where the SbS analysis results are stored. Defaults to `sbs` within the measurement folder.
-    - **Corrections**: Path to the corrections file containing all corrections to be applied to the model. The corrections are executed by `MAD-X` as-is to correct the model, so they must be written in `MAD-X` syntax and represent the "inverse" of the corrections applied in the machine (`MAD-X`/`LSA` sign conventions apply).
+    - **Corrections**: Path to the correction file containing all corrections to be applied to the model. The corrections are executed by `MAD-X` as-is to correct the model, so they must be written in `MAD-X` syntax and represent the "inverse" of the corrections applied in the machine (`MAD-X`/`LSA` sign conventions apply).
     - **Year**: Year of the accelerator optics to use, corresponding to the `acc-models` branch from which the appropriate model is created. See the [omc3 model creation](../betabeat/model_creation.md).
     - **Ring**: Ring to use, if applicable (relevant for PSB).
     - **Beam**: LHC beam to use, if applicable, e.g. `1` or `2`.
@@ -99,8 +99,8 @@ The SbS GUI will automatically find the closest BPMs before and after the named 
     Since the GUI checks only the segment definition and not the actual SbS output, this can lead to confusion when plotting multiple segments together: they will appear to start at the same point in the plot despite corresponding to different physical locations.
     Activating the [`Model Location` option in the plot settings][sbs_plot_settings] avoids this issue by plotting positions in the accelerator frame rather than relative to the segment start.
 
-The ++"Copy"++ button creates a duplicate of the currently selected segment with a different name, which is useful for quickly creating variants, for instance with different start BPMs, to evaluate how the choice of starting point affects the results.
-This can also be used to compare corrections: see [testing multiple correction schemes][sbs_test_multiple_corrections].
+The ++"Copy"++ button here duplicates the currently selected segment under a new name, which is useful for quickly creating variants, for instance with different start BPMs, to evaluate how the choice of starting point affects the results.
+A separate ++"Copy"++ button in the loaded optics section instead duplicates an entire measurement, used when [testing multiple correction schemes][sbs_test_multiple_corrections].
 
 The ++"Remove"++ button deletes the selected segment from the table.
 This only removes the definition from the GUI and does not delete any output files from disk.
@@ -130,7 +130,7 @@ Once segments are defined, for a given optics select the segments to propagate m
 The GUI calls `MAD-X` to propagate optics parameters from the `start` and `end` BPMs through each defined segment.
 The propagated values are then compared against the measured data and deviations are computed.
 
-Measured errors are also propagated through the segment, although analytically, and added in quadrature to the measurement uncertainty.
+Measured errors are also propagated through the segment analytically, and added in quadrature to the measurement uncertainty.
 
 !!! tip "Choice of First and Last BPMs"
     The measurement values and errors at the location of the first BPM in the segment are the ones used for the propagation.
