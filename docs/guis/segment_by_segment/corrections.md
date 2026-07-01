@@ -24,16 +24,15 @@ After creating or selecting a correction file, a new window displays its content
 If a correction file has already been associated, clicking the ++"Corrections"++ button will open the editor directly.
 
 !!! tip "Corrector Suggestions"
-    When a default correction file created and [default segments][sbs_default_segments] were added, correctors may be suggested provided this feature is activated in the [settings][sbs_main_settings].
-    Below shows the correction file editor with suggested correctors for the LHC's default segments.
+    When a default correction file is created and [default segments][sbs_default_segments] were added, correctors may be suggested provided this feature is activated in the [settings][sbs_main_settings].
+    The screenshot below shows the correction file editor with suggested correctors for the LHC's default segments.
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/sbs_gui/corrections_editor.png" width="90%" alt="Corrections Editor with Defaults"/>
-      <figcaption>The corrections file editor, here showing suggested correctors for LHC default segments.</figcaption>
+      <img class="clickImg" src="../../assets/images/sbs_gui/corrections_editor.png" width="90%" alt="Correction File Editor with Defaults"/>
+      <figcaption>The correction file editor, here showing suggested correctors for LHC default segments.</figcaption>
       </center>
     </figure>
-
 
 Note that the correction file path is applied to all currently selected optics.
 
