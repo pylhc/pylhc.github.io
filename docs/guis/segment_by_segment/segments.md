@@ -37,7 +37,7 @@ If the corresponding option is activated in the [settings][sbs_main_settings], t
     To use a different measurement directory, load a new measurement folder instead.
 
     The edit window will look like so.
-
+<!-- TODO: update this with no jdilly stuff -->
     <figure>
       <center>
       <img class="clickImg" src="../../assets/images/sbs_gui/optics_measurement.png" width="100%" alt="Edit Optics Measurement"/>
