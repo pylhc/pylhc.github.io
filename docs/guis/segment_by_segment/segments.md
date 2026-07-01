@@ -36,8 +36,6 @@ If the corresponding option is activated in the [settings][sbs_main_settings], t
     Note that the measurement path itself cannot be changed from this dialogue.
     To use a different measurement directory, load a new measurement folder instead.
 
-    The edit window will look like so.
-
     <figure>
       <center>
       <img class="clickImg" src="../../assets/images/sbs_gui/edit_optics_dialog.png" width="100%" alt="Edit Optics Measurement"/>
