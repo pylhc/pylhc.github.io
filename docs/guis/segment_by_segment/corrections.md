@@ -77,7 +77,7 @@ The tabs below illustrate each setting for the same correction:
     <figure>
       <center>
       <img class="clickImg" src="../../assets/images/sbs_gui/correction_effect_expct.png" width="100%" alt="Expected Correction Effect (expct)"/>
-      <figcaption>A good correction brings the dashed residual line close to zero.</figcaption>
+      <figcaption>A good correction compensates the observed deviation, so the dashed residual line lies close to zero.</figcaption>
       </center>
     </figure>
 
