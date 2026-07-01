@@ -24,7 +24,7 @@ After creating or selecting a correction file, a new window displays its content
 If a correction file has already been associated, clicking the ++"Corrections"++ button will open the editor directly.
 
 ???+ tip "Corrector Suggestions"
-    When a default correction file is created and [default segments][sbs_default_segments] were added, correctors may be suggested provided this feature is activated in the [settings][sbs_main_settings].
+    When a default correction file is created and [default segments][sbs_default_segments] have been added, correctors may be suggested provided this feature is activated in the [settings][sbs_main_settings].
     The screenshot below shows the correction file editor with suggested correctors for the LHC's default segments.
 
     <figure>
@@ -53,8 +53,7 @@ What these dashed lines represent depends on the [plot settings][sbs_plot_settin
 
 ### Corrected and Expected Plots
 
-When corrections have been applied and the segment is re-run, the updated plot shows a dashed line in addition to the solid propagated measurement line.
-The [plot settings][sbs_plot_settings] let you choose what this dashed line represents:
+The [plot settings][sbs_plot_settings] let you choose what the dashed line represents:
 
 - **Matched value (corr)**: the difference between the propagated corrected model and the nominal propagated model.
   If the correction successfully reproduces the measured errors, this dashed line should lie close to the solid propagated measurement line.
