@@ -24,7 +24,15 @@ After creating or selecting a correction file, a new window displays its content
 If a correction file has already been associated, clicking the ++"Corrections"++ button will open the editor directly.
 
 !!! tip "Corrector Suggestions"
-    When no correction file is loaded, the dialog may suggest correctors based on the optics and measurement data, provided this feature is activated in the [settings][sbs_main_settings].
+    When a default correction file created and [default segments][sbs_default_segments] were added, correctors may be suggested provided this feature is activated in the [settings][sbs_main_settings].
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/sbs_gui/correction_file_dialog.png" width="60%" alt="Forward Propagated Phase"/>
+      <figcaption>The correction file dialog, prompting to load or create a correction file. Creating a new file works by entering a name.</figcaption>
+      </center>
+    </figure>
+
 
 Note that the correction file path is applied to all currently selected optics.
 
@@ -67,6 +75,7 @@ This helps confirm whether the correction holds regardless of which BPM anchors 
 *[SbS]: Segment-by-Segment
 
 [sbs_inspect_results]: segments.md#inspecting-results
+[sbs_default_segments]: segments.md#default-segments
 [sbs_main_settings]: settings.md#main-settings
 [sbs_run_segments]: segments.md#running-segments
 [sbs_plot_settings]: settings.md#plot-settings
