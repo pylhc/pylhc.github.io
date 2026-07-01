@@ -50,7 +50,7 @@ If the corresponding option is activated in the [settings][sbs_main_settings], t
     - **Model**: Path to the model folder, which should contain the optics files for the model.
     - **Accelerator**: Accelerator name, e.g. `lhc`, `sps`, `ps`, `psbooster`.
     - **Output**: Path to the output folder where the SbS analysis results are stored. Defaults to `sbs` within the measurement folder.
-    - **Corrections**: Path to the correction file containing all corrections to be applied to the model. The corrections are executed by `MAD-X` as-is to correct the model, so they must be written in `MAD-X` syntax and represent the "inverse" of the corrections applied in the machine (`MAD-X`/`LSA` sign conventions apply).
+    - **Corrections**: Path to the correction file containing all corrections to be applied to the model. The corrections are executed by `MAD-X` as-is to correct the model, so they must be written in `MAD-X` syntax and represent the "inverse" of the corrections applied in the machine (`MAD-X`/`LSA` sign conventions apply). See [determining corrections](corrections.md).
     - **Year**: Year of the accelerator optics to use, corresponding to the `acc-models` branch from which the appropriate model is created. See the [omc3 model creation](../betabeat/model_creation.md).
     - **Ring**: Ring to use, if applicable (relevant for PSB).
     - **Beam**: LHC beam to use, if applicable, e.g. `1` or `2`.
