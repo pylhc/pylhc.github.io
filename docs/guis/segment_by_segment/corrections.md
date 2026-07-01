@@ -23,7 +23,7 @@ See the screenshot below.
 After creating or selecting a correction file, a new window displays its contents directly and allows you to edit it.
 If a correction file has already been associated, clicking the ++"Corrections"++ button will open the editor directly.
 
-!!! tip "Corrector Suggestions"
+???+ tip "Corrector Suggestions"
     When a default correction file is created and [default segments][sbs_default_segments] were added, correctors may be suggested provided this feature is activated in the [settings][sbs_main_settings].
     The screenshot below shows the correction file editor with suggested correctors for the LHC's default segments.
 
