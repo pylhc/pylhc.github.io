@@ -40,7 +40,8 @@ Note that the correction file path is applied to all currently selected optics.
 If some of the selected measurements already have the same correction file loaded while others do not, a dialog will ask whether to apply the same correction file to all of them.
 If there is a conflict between different correction files across the selected optics, an error message will show.
 
-After editing and saving a correction file, [run the propagation][sbs_run_segments] again to see the corrected results as dashed lines in the plot.
+After editing the correction file, click ++"OK"++ then [run the propagation][sbs_run_segments] again (with ++"Run Segment(s)"++) to compute the effect of the attempted correction.
+After running the segment, the plots will update and show the corrected results (or expectation, depending on settings) as dashed lines in the plot.
 <!-- TODO: Show this? -->
 
 !!! info "Sign Conventions"
