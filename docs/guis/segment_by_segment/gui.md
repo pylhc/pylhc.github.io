@@ -4,7 +4,7 @@ The Segment-by-Segment GUI provides a graphical interface to run the [segment-by
 It allows users to input data, configure settings, run segments, determine corrections and visualise results for various observables.
 This section will guide you through the GUI's layout and functionality.
 
-The GUI is a Python application built on `acc-widgets`.
+The GUI is a Python application built on `accwidgets`.
 It can be run either from the Beta-Beat GUI's [Optics Panel][bbgui_optics_panel] after running a full optics analysis, or the command line:
 
 === "From the Beta-Beat GUI"
@@ -21,7 +21,7 @@ It can be run either from the Beta-Beat GUI's [Optics Panel][bbgui_optics_panel]
     python -m omc3_gui.sbs_gui # args here
     ```
 
-    Note that this GUI requires the `omc3` package, recent QT bindings (`PyQT` / `PySide`) and the `accwidgets` package which is quite CERN specific.
+    Note that this GUI requires the `omc3` package, recent Qt bindings (`PyQt` / `PySide`) and the `accwidgets` package which is quite CERN specific.
     It is recommended to run it from the Beta-Beat GUI.
 
 After opening, the GUI displays the main window:
