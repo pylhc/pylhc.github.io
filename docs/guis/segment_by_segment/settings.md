@@ -21,6 +21,11 @@ The SbS-GUI menu is very succinct.
 - **Settings**: Open the [settings dialog](#settings).
 - **Exit**: Close the GUI.
 
+!!! warning "Exiting the GUI Cleanly"
+    Please use the `Exit` option in this menu to close the SbS GUI.
+    It will signal to the Beta-Beat GUI the process termination and will ensure no dangling processes on the optics servers.
+    Thank you!
+
 ### View Menu
 
 The view menu is split into three sections, separated by horizontal lines.
