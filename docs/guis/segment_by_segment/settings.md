@@ -80,7 +80,7 @@ This looks for files created by the GUI in earlier runs and for now only works f
 
 - **Auto-Add Default Segments**: Automatically add default segments when loading a new measurement optics directory, if applicable.
 
-- **Suggest Correctors**: When opening the [corrections dialog](corrections.md#applying-corrections) for a new correction file, suggest correctors based on the optics and measurement data.
+- **Suggest Correctors**: When creating a new correction file in the [corrections dialog](corrections.md#applying-corrections), suggest correctors for the default segments that have been added.
 
 ### Plot Settings
 
