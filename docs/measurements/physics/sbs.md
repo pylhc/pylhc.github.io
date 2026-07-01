@@ -2,14 +2,14 @@
 
 In the LHC local linear optics errors are determined and corrected using the Segment-by-Segment technique, usually shortened as SbS.
 The technique, introduced in [^TomasLHCOMC] [^TomasReviewOMC] and successfully used in the LHC for many years, treats a section (or segment) of the accelerator as an independent beam line and propagates optics parameters measured at the start of the segment through the line.
-We perform this propagation through the MAD-X code.
+We perform this propagation using the MAD-X code.
 
 The optics parameters propagated according to the model of the corresponding segment in the machine are compared with the measured values.
-One then tries to find correction settings, aka powering changes of selected magnets, that would best reproduce the measured optics in the model-propagated equivalent.
+One then tries to find correction settings, a.k.a. powering changes of selected magnets, that would best reproduce the measured optics in the model-propagated equivalent.
 Inverting these settings and applying the inverted values in the machine corrects the measured deviations, for linear phenomena.
 
 This method is mostly used in the LHC Interaction Regions, where the $\beta$-beating is corrected by compensating for the discrepancies in the betatron phase, which has the same impact as correcting the $\beta$-function  directly but proved to be a more precise and local observable.
-For this, one looks at the $\Delta \Phi$ quantity and tries to minimize it through the segment:
+For this, one looks at the $\Delta \Phi$ quantity and tries to minimise it through the segment:
 
 $$
 \Delta \Phi = \Phi_{model} - \Phi_{measurement}
