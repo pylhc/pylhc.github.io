@@ -13,7 +13,7 @@ It is possible to directly point to an existing SbS output folder, which is usef
 
 !!! info "Corresponding Models"
     At load time, the GUI will attempt to determine the accelerator type, beam and the appropriate model folder.
-    Should this automatic detection fail, these parameters need to be set manually via the `Edit` button (see **Editing Optics** below).
+    If this automatic detection fails, these parameters need to be set manually via the `Edit` button (see **Editing Optics** below).
 
 Once loaded, the optics entries will appear in the side panel, color-coded by beam.
 Hovering over an optics name displays a tooltip with a summary of its associated paths and accelerator parameters.
