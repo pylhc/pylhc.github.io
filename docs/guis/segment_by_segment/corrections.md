@@ -10,12 +10,13 @@ This page covers how to apply corrections in the GUI, test different correction 
 ## Applying Corrections
 
 Clicking the ++"Corrections"++ button in the side panel opens the corrections dialog, where you can load or create a correction file to apply to the model.
-To create a file, simply type a name (e.g. `corrections.madx`) in the `File Name` field (see the screenshot below) and press the ++"Open"++ button to the right.
+To create a file, simply type a name (e.g. `corrections.madx`) in the `File Name` field and press the ++"Open"++ button to the right.
+See the screenshot below.
 
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/sbs_gui/correction_file_dialog.png" width="60%" alt="Forward Propagated Phase"/>
-  <figcaption>The correction file dialog, prompting to load or create a correction file.</figcaption>
+  <figcaption>The correction file dialog, prompting to load or create a correction file. Creating a new file works by entering a name.</figcaption>
   </center>
 </figure>
 
