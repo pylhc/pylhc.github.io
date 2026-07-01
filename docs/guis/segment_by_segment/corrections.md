@@ -15,7 +15,7 @@ See the screenshot below.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/correction_file_dialog.png" width="60%" alt="Forward Propagated Phase"/>
+  <img class="clickImg" src="../../assets/images/sbs_gui/correction_file_dialog.png" width="60%" alt="Correction File Dialog"/>
   <figcaption>The correction file dialog, prompting to load or create a correction file. Creating a new file works by entering a name.</figcaption>
   </center>
 </figure>
@@ -88,7 +88,13 @@ To do so, click the ++"Copy"++ button in the loaded optics section to create a v
 
 This copy references the same input measurement data but writes its output to a separate directory, making it possible to try multiple correction schemes side by side without duplicating files on disk.
 In the side panel, virtual copies are displayed as `NAME -> OUTPUT_DIR_NAME` to distinguish them from the original optics entry.
-<!-- TODO: add a screenshot? -->
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/comparing_corrections.png" width="100%" alt="Two Correction Schemes Compared on the Phase"/>
+  <figcaption>Comparing two correction schemes on the phase, using virtual copies of the same measurement — the dashed blue correction outperforms the dashed orange one.</figcaption>
+  </center>
+</figure>
 
 Similarly, creating multiple segments with different start BPMs for the same region lets you evaluate sensitivity to the starting point.
 This helps confirm whether the correction holds regardless of which BPM anchors the propagation.
