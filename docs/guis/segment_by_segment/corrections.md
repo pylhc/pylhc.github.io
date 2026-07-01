@@ -25,11 +25,12 @@ If a correction file has already been associated, clicking the ++"Corrections"++
 
 !!! tip "Corrector Suggestions"
     When a default correction file created and [default segments][sbs_default_segments] were added, correctors may be suggested provided this feature is activated in the [settings][sbs_main_settings].
+    Below shows the correction file editor with suggested correctors for the LHC's default segments.
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/sbs_gui/correction_file_dialog.png" width="60%" alt="Forward Propagated Phase"/>
-      <figcaption>The correction file dialog, prompting to load or create a correction file. Creating a new file works by entering a name.</figcaption>
+      <img class="clickImg" src="../../assets/images/sbs_gui/corrections_editor.png" width="90%" alt="Corrections Editor with Defaults"/>
+      <figcaption>The corrections file editor, here showing suggested correctors for LHC default segments.</figcaption>
       </center>
     </figure>
 
