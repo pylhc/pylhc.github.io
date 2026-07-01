@@ -18,7 +18,7 @@ The SbS-GUI menu is very succinct.
   </center>
 </figure>
 
-- **Settings**: Open the [settings dialog](#settings).
+- **Settings**: Open the [settings dialogue](#settings).
 - **Exit**: Close the GUI.
 
 !!! warning "Exiting the GUI Cleanly"
@@ -53,8 +53,8 @@ The help menu provides options for reloading data, accessing help, and viewing i
 </figure>
 
 - **Reload Data**: Reload the data from the input files. This is useful if you have made changes to the input files and want to see the updated results without restarting the GUI.
-- **Show Help**: Open the help dialog with some main instructions on how to use the GUI.
-- **About**: Opens the about dialog, which displays some information about the GUI, e.g. the version.
+- **Show Help**: Open the help dialogue with some main instructions on how to use the GUI.
+- **About**: Opens the about dialogue, which displays some information about the GUI, e.g. the version.
 
 ## Settings
 
@@ -73,14 +73,14 @@ The main settings tab allows configuring the working directory for the GUI as we
 </figure>
 
 - **Working Directory**: The directory where the input files are located.
-The GUI will use this directory as the default directory when opening file dialogs for loading optics and measurement data.
+The GUI will use this directory as the default directory when opening file dialogues for loading optics and measurement data.
 
 - **Autoload Segments**: Automatically load existing segments when loading a new measurement optics directory.
 This looks for files created by the GUI in earlier runs and for now only works for a segment if it has actually been run.
 
 - **Auto-Add Default Segments**: Automatically add default segments when loading a new measurement optics directory, if applicable.
 
-- **Suggest Correctors**: When creating a new correction file in the [corrections dialog](corrections.md#applying-corrections), suggest correctors for the default segments that have been added.
+- **Suggest Correctors**: When creating a new correction file in the [corrections dialogue](corrections.md#applying-corrections), suggest correctors for the default segments that have been added.
 
 ### Plot Settings
 

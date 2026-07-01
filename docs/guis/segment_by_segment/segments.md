@@ -30,10 +30,10 @@ If the corresponding option is activated in the [settings][sbs_main_settings], t
 
 ??? info "Editing Optics"
 
-    The `edit` dialog can be opened by clicking the ++"Edit"++ button or by double-clicking the optics name in the side panel.
+    The `edit` dialogue can be opened by clicking the ++"Edit"++ button or by double-clicking the optics name in the side panel.
     It allows one to modify the paths and accelerator parameters associated with the loaded optics.
 
-    Note that the measurement path itself cannot be changed from this dialog.
+    Note that the measurement path itself cannot be changed from this dialogue.
     To use a different measurement directory, load a new measurement folder instead.
 
     The edit window will look like so.
@@ -41,7 +41,7 @@ If the corresponding option is activated in the [settings][sbs_main_settings], t
     <figure>
       <center>
       <img class="clickImg" src="../../assets/images/sbs_gui/edit_optics_dialog.png" width="100%" alt="Edit Optics Measurement"/>
-      <figcaption>The edit optics measurement dialog.</figcaption>
+      <figcaption>The edit optics measurement dialogue.</figcaption>
       </center>
     </figure>
 
@@ -81,16 +81,16 @@ They are therefore of particular interest for the LHC analysis.
 ### Custom Segments
 
 It is possible to create an arbitrary custom segment by clicking the ++"New"++ button.
-This opens the segment editor dialog, as shown below.
+This opens the segment editor dialogue, as shown below.
 
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/sbs_gui/segment_editor.png" width="100%" alt="New Segment"/>
-  <figcaption>The new segment dialog.</figcaption>
+  <figcaption>The new segment dialogue.</figcaption>
   </center>
 </figure>
 
-In the dialog, enter the segment name along with the start element and end element.
+In the dialogue, enter the segment name along with the start element and end element.
 The SbS GUI will automatically find the closest BPMs before and after the named element to use as the propagation boundaries.
 
 !!! warning "Start and End Elements vs. Actual BPMs"
