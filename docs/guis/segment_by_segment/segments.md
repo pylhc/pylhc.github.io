@@ -40,7 +40,7 @@ If the corresponding option is activated in the [settings][sbs_main_settings], t
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/sbs_gui/optics_measurement.png" width="100%" alt="Edit Optics Measurement"/>
+      <img class="clickImg" src="../../assets/images/sbs_gui/edit_optics_dialog.png" width="100%" alt="Edit Optics Measurement"/>
       <figcaption>The edit optics measurement dialog.</figcaption>
       </center>
     </figure>
