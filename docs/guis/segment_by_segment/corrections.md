@@ -10,6 +10,7 @@ This page covers how to apply corrections in the GUI, test different correction 
 ## Applying Corrections
 
 Clicking the ++"Corrections"++ button in the side panel opens the corrections dialog, where you can load or create a correction file to apply to the model.
+To create a file, simply type a name (e.g. `corrections.madx`) in the `File Name` field (see the screenshot below) and press the ++"Open"++ button to the right.
 
 <figure>
   <center>
