@@ -5,11 +5,8 @@
     Information here is outdated and needs to be revised for the `omc3` version of the Beta-Beat GUI.
 
 The `Optics Panel` provides graphical interface to compare the computed optics to the nominal model.
-There are in total three main tabs for the optics panel:
 
-- The [Optics](#optics-tab) tab, where a tree menu (on the left) provides many physical properties to be displayed.
-
-## Optics Tab
+a tree menu (on the left) provides many physical properties to be displayed.
 
 A wide variety of computed physical properties can be visualised across the entire machine.
 
@@ -41,7 +38,7 @@ The following methods implement different correction algorithms:
 - `Iterative correction`: Two-beams version of the global correction.
 - `Chromatic coupling`: Single beam correction of chromatic coupling using skew sextupoles at dispersive locations.
 
-??? note
+??? warning
     The `Iterative correction` method is currently not compatible and thus disabled.
 
 The results are output in the `changeparameters` files.
