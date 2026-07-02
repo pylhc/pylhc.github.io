@@ -112,6 +112,15 @@
         <loc>https://pylhc.github.io/guis/segment_by_segment/gui.html</loc>
       </url>
       <url>
+        <loc>https://pylhc.github.io/guis/segment_by_segment/segments.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/segment_by_segment/corrections.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/segment_by_segment/settings.html</loc>
+      </url>
+      <url>
         <loc>https://pylhc.github.io/guis/kmod/gui.html</loc>
       </url>
       <url>
@@ -176,6 +185,9 @@
       </url>
       <url>
         <loc>https://pylhc.github.io/measurements/physics/kmod.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/sbs.html</loc>
       </url>
       <url>
         <loc>https://pylhc.github.io/measurements/procedures/about.html</loc>

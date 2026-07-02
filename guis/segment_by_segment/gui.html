@@ -19,7 +19,7 @@
         <link rel="prev" href="../betabeat/betabeatsource.html">
       
       
-        <link rel="next" href="../kmod/gui.html">
+        <link rel="next" href="./segments.html">
       
       
         
@@ -2339,6 +2339,87 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./segments.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Loading Data and Running Segments
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./corrections.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Determining Corrections
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./settings.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Menus and Settings
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3324,6 +3405,33 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../measurements/physics/sbs.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Segment-by-Segment
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3360,7 +3468,7 @@
   <span class="md-ellipsis">
     
   
-  Procedures
+  Measurement Procedures
 
     
   </span>
@@ -3375,7 +3483,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-  Procedures
+  Measurement Procedures
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -5165,6 +5273,94 @@
 
 
 <h1 id="the-segment-by-segment-gui">The Segment-by-Segment GUI<a class="headerlink" href="#the-segment-by-segment-gui" title="Permanent link">&para;</a></h1>
+<p>The Segment-by-Segment GUI provides a graphical interface to run the <a href="../../measurements/physics/sbs.html">segment-by-segment method</a> on various parts of the machine.
+It allows users to input data, configure settings, run segments, determine corrections and visualise results for various observables.
+This section will guide you through the GUI's layout and functionality.</p>
+<p>The GUI is a Python application built on <code>accwidgets</code>.
+It can be run either from the Beta-Beat GUI's <a href="../betabeat/optics_panel.html">Optics Panel</a> after running a full optics analysis, or the command line:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">From the Beta-Beat GUI</label><label for="__tabbed_1_2">From the Command Line</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>After performing an optics analysis, navigate to the optics panel.
+With one or more analysis selected, click the <span class="keys"><kbd>Open Segment-by-Segment GUI</kbd></span> button in the bottom left to start the GUI.</p>
+</div>
+<div class="tabbed-block">
+<p>The <abbr title="Segment-by-Segment">SbS</abbr> GUI is a Python program and part of the <code>omc3_gui</code> package.
+It can be started from the command line by providing desired arguments to the following call:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>omc3_gui.sbs_gui<span class="w"> </span><span class="c1"># args here</span>
+</code></pre></div>
+<p>Note that this GUI requires the <code>omc3</code> package, recent Qt bindings (<code>PyQt</code> / <code>PySide</code>) and the <code>accwidgets</code> package which is quite CERN specific.
+It is recommended to run it from the Beta-Beat GUI.</p>
+</div>
+</div>
+</div>
+<p>After opening, the GUI displays the main window:</p>
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/blank_window.png" width="100%" alt="Blank Window"/>
+  <figcaption>Blank window of SbS-GUI as seen when starting the GUI.</figcaption>
+  </center>
+</figure>
+
+<p>The GUI window is made up of the following main components.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Optics Panel</label><label for="__tabbed_2_2">Segments Panel</label><label for="__tabbed_2_3">Main Plot Area</label><label for="__tabbed_2_4">Log Console</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The top left panel displays the loaded measurement data as well as various actions related to data.
+If started from the Beta-Beat GUI, all optics analyses selected will be loaded.</p>
+<p><figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/optics_panel.png" width="100%" alt="Optics Panel"/>
+  <figcaption>The optics panel and associated buttons.</figcaption>
+  </center>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p>The lower left panel displays the defined segments and buttons to perform actions with those segments.</p>
+<p><figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/segments_panel.png" width="100%" alt="Segments Panel"/>
+  <figcaption>The segments panel and associated buttons.</figcaption>
+  </center>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p>The main part of the window, to the right of the previous two panels, displays the quantities propagated through the selected segment.</p>
+<p><figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/plot_panel.png" width="100%" alt="Plot Panel"/>
+  <figcaption>The main plot panel.</figcaption>
+  </center>
+</figure></p>
+<p>The various tabs in the top part allow the user to select which quantity to plot.</p>
+</div>
+<div class="tabbed-block">
+<p>At the very bottom of the window is the log console, which displays logging output from both GUI actions and the underlying Python modules called during the analysis.</p>
+<p><figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/sbs_gui/log_console.png" width="100%" alt="Log Console"/>
+  <figcaption>The log console, expanded.</figcaption>
+  </center>
+</figure></p>
+<p>It can be expanded or collapsed using the arrow control and closed entirely with the <span class="keys"><kbd>X</kbd></span> button on its right side.
+If closed, it can be re-enabled through the <a href="settings.html#view-menu">View menu</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Debug Logging</p>
+<p>By default, the log console is initialized with log level <code>INFO</code>.
+To enable more detailed output for debugging purposes, launch the GUI with the <code>-d</code> flag (e.g. <code>python -m omc3_gui.sbs_gui -d</code>), which sets the log level to <code>DEBUG</code>.</p>
+</div>
+<p>The console panel is also movable and resizable within the GUI window.
+Right-clicking inside the console opens a context menu that provides access to additional preferences.</p>
+</div>
+</div>
+</div>
+<hr />
+<p>The following pages are available:</p>
+<ul>
+<li><a href="segments.html">Loading Data and Running Segments</a> for how to load measurement data, define and run segments, and interpret the plots.</li>
+<li><a href="corrections.html">Determining Corrections</a> for how to attempt determining corrections and testing their effect through the segments.</li>
+<li><a href="settings.html">Menus &amp; Settings</a> for the available menus and the meaning of various options.</li>
+</ul>
 
 
 
