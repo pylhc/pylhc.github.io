@@ -181,6 +181,9 @@ nav:
       - BetaBeat.src: guis/betabeat/betabeatsource.md
     - Segment-by-Segment GUI:
       - About: guis/segment_by_segment/gui.md
+      - Loading Data and Running Segments: guis/segment_by_segment/segments.md
+      - Determining Corrections: guis/segment_by_segment/corrections.md
+      - Menus and Settings: guis/segment_by_segment/settings.md
     - K-Modulation GUI:
       - About: guis/kmod/gui.md
       - Performing a Modulation: guis/kmod/modulating.md
@@ -210,10 +213,11 @@ nav:
       - Optics Analysis: measurements/physics/optics.md
       - Coupling: measurements/physics/coupling.md
       - K-Modulation: measurements/physics/kmod.md
+      - Segment-by-Segment: measurements/physics/sbs.md
       # - Linear IR Optics: measurements/physics/ir_linear_optics.md
       # - Nonlinear IR Optics: measurements/physics/ir_nonlinear_optics.md
       # - 3D-Kicks: measurements/physics/threedkicks.md
-    - Procedures:
+    - Measurement Procedures:
         - Introduction: measurements/procedures/about.md
         - General Checks: measurements/procedures/general_checks.md
         - K Modulation: measurements/procedures/kmod.md
