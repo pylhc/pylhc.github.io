@@ -26,7 +26,7 @@ Buttons below this table provide functionality to manually load files and remove
     Beware that loading an analysis **also loads its associated model**, which then becomes the active model in the GUI.
     Any new analysis performed afterwards will use this model unless it is changed: remember to switch back to the appropriate model before running further analyses.
 
-- ++"Remove entries"++{.red-gui-button}: Removes the selected entries from the table. A dialogue will prompt to choose between removing only the entry from the table (recommended) or also deleting the associated files and folder from disk.
+- ++"Remove entries"++{.red-gui-button}: Removes the selected entries from the table. A dialogue will prompt to choose between removing only the entry from the table (recommended) or also deleting the associated files and folder from disk (which has its uses in case of incorrect analysis settings etc.).
 
 ??? tip "Loading Legacy Files"
     It is possible to load the older `Beta-Beat.src` output directories to compare results from the old analysis codes.
