@@ -1,47 +1,39 @@
 # The Optics Panel
 
-!!! warning "Incomplete"
-    This page is a placeholder and is not yet complete.
-    Information here is outdated and needs to be revised for the `omc3` version of the Beta-Beat GUI.
+The `Optics` panel is where the computed optics are visualised and compared against the nominal model, but also against one another.
+It is also the launch point for follow-up actions such as calculating [corrections](#computing-corrections), loading k-modulation data, starting the [Segment-by-Segment GUI][sbs_gui] and creating eLogbook entries.
 
-The `Optics Panel` provides graphical interface to compare the computed optics to the nominal model.
+Once an optics analysis has produced results (via [Get Optics][bbgui_do_optics] in the analysis panel), a new entry will appear in the list box in the top left part of the panel.
+Selecting the entry for an optics analysis allows one to inspect all computed optics properties across the machine.
 
-a tree menu (on the left) provides many physical properties to be displayed.
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel.png" width="100%" alt="Optics Panel"/>
+  <figcaption>The Optics panel, here showing the horizontal and vertical beta-beating for two loaded results.</figcaption>
+  </center>
+</figure>
 
-A wide variety of computed physical properties can be visualised across the entire machine.
+The panel is split into two sub-tabs, **Optics** and **Action/Tune**, described below.
+<!-- Shared elements — the [top bar][cc_top], the [plot area and its shortcuts][cc_plotting], the [console][cc_console] and the [running tasks][cc_running_tasks] indicator — are documented in [Common Components][cc]. -->
 
-!!! todo
-    Include a screenshot with the main optics tab.
+*[SbS]: Segment-by-Segment
+*[RDT]: Resonance Driving Term
+*[RDTs]: Resonance Driving Terms
+*[CRDT]: Combined Resonance Driving Term
+*[CRDTs]: Combined Resonance Driving Terms
+*[GUI]: Graphical User Interface
+*[IP]: Interaction Point
+*[SVD]: Singular Value Decomposition
 
-### Open Files
-
-- TODO: Open files (also takes BBS files! [outputfiles](betabeatsource.md#meaning-of-the-beta-beatsrc-output-files))
-
-### Optics Plotting
-
-- RDT and CRDT plots are added dynamically depending on the files present in the respective folders.
-- Nicer names and more structure in the tree.
-- Backend was rewritten, so it is now more modular and easier to add new plot-types.
-
-## Computing Corrections
-
-The `Correction` button at the bottom left of the optics panel can be used to calculate the optics corrections for the beam process.
-
-The settings dialogue offers a wide range of different options for corrections.
-This will call different external python scripts again.
-
-These scripts calculate corrections for beta-beat, coupling and horizontal and vertical dispersion using the computed response matrices.
-The following methods implement different correction algorithms:
-
-- `Coupling`: Single beam correction of coupling resonances and vertical dispersion.
-- `Global correction`: Single beam correction of phase, beta and horizontal dispersion.
-- `Iterative correction`: Two-beams version of the global correction.
-- `Chromatic coupling`: Single beam correction of chromatic coupling using skew sextupoles at dispersive locations.
-
-??? warning
-    The `Iterative correction` method is currently not compatible and thus disabled.
-
-The results are output in the `changeparameters` files.
-These files store the magnet names and corresponding correction strengths.
-
-They are also displayed in the [Correction Panel](correction_panel.md).
+[sbs_gui]: ../segment_by_segment/gui.md
+[cc]: common_components.md
+[cc_top]: common_components.md#top-of-the-gui
+[cc_plotting]: common_components.md#plotting
+[cc_console]: common_components.md#console
+[cc_running_tasks]: common_components.md#running-tasks
+[cc_file_dialogues]: common_components.md#file-opening-dialogues
+[bbgui_do_optics]: analysis_panel.md#do-optics-dialogue
+[betabeatsource]: betabeatsource.md#meaning-of-the-beta-beatsrc-output-files
+[ampdet]: ampdet.md
+[correction_panel]: correction_panel.md
+[correction_checks]: correction_panel.md#correction-checks
