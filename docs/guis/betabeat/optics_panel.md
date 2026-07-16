@@ -1,20 +1,13 @@
 # The Optics Panel
 
 The `Optics` panel is where the computed optics are visualised and compared against the nominal model, but also against one another.
-It is also the launch point for follow-up actions such as calculating [corrections](#computing-corrections), starting the [Segment-by-Segment GUI][sbs_gui] etc.
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel.png" width="100%" alt="Optics Panel"/>
-  <figcaption>The Optics panel, here showing the horizontal and vertical beta-beating for two loaded results.</figcaption>
-  </center>
-</figure>
+It serves as the launch point for follow-up actions such as calculating corrections, starting the Segment-by-Segment GUI, etc.
 
 The panel is split into two sub-tabs: `Optics` and `Action/Tune`.
 
 ## The Optics Tab
 
-The default view of the `Optics` panel is the `Optics` tab, which allows visualising computed optics properties.
+The default view of the `Optics` panel is the `Optics` tab, which lists analyses and displays computed properties.
 
 ### Loading Data
 
@@ -33,21 +26,23 @@ Each loaded analysis then appears as a new row in the `Name` table.
     See the [meaning of the Beta-Beat.src output files][betabeatsource] for details.
     The loaded analysis name should be unchanged.
 
+Similarly, it is possible to get rid of entries from the table.
+To do so select and entry and click the ++"Remove entries"++{.red-gui-button} button.
+A dialogue will prompt to choose between removing only the entry from the table (recommended) or also deleting the associated files and folder from disk.
+
+### Viewing Results
+
 Selecting a row in the `Name` table loads the associated data.
-
-
-
 
 Selecting several rows overlays them on the same plot, which allows comparing several measurements or analyses of the same measurements with different settings.
 Each result is assigned a consistent colour, shown in the plot legend to identify the corresponding curve.
 
-??? info "Removing Entries"
-    To unload a result, select it in the table and click the red ++"Remove entries"++ button.
-    A dialogue will prompt you to choose between removing only the entry from the table (recommended) or also deleting the associated files and folder from disk.
-
-### Viewing Results
-
-
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel.png" width="100%" alt="Optics Panel"/>
+  <figcaption>The Optics panel, here showing the horizontal and vertical beta-beating for two loaded results.</figcaption>
+  </center>
+</figure>
 
 The tree on the lower left selects which quantity to plot for the selected result(s).
 The available quantities are grouped as follows:
