@@ -11,14 +11,22 @@ The default view of the `Optics` panel is the `Optics` tab, which lists analyses
 
 ### Loading Data
 
-Once an analysis has produced results (via [Get Optics][bbgui_do_optics] in the analysis panel), a new entry will appear in the `Name` table at the top left of the tab.
+Once an optics analysis has finished, its results are automatically loaded and a new entry will appear in the `Name` table at the top left of the tab.
+Buttons below this table provide functionality to manually load files and remove entries.
 
-It is also possible to load older analyses by clicking the ++"Open Files"++{.green-gui-button} button, which opens a [file dialogue][cc_file_dialogues] in which to select one or more optics analysis output folders.
-Each loaded analysis then appears as a new row in the `Name` table.
+- ++"Open Files"++{.green-gui-button}: Opens a dialogue to select one or more optics analysis output folders to be loaded. The files will be copied into the `Results` folder and opened from there. A popup will ask what to do about the associated model, see the admonition below.
 
-<!-- TODO: HAVE AN EXAMPLE SCREENSHOT OF THE DIALOGUE? -->
+???+ warning "Associated Models"
+    A popup will ask for the action to perform regarding the loaded analysis' associated model.
+    One can either:
 
-<!-- TODO: MENTION THAT THERE IS THE POPUP ABOUT THE MODEL. RECOMMEND COPY. WARN THAT IT LOADS THE MODEL!!!!! -->
+    - ++"Link"++: creates a symlink to the original model folder. This is fragile, as the link breaks if the original folder is moved or deleted.
+    - ++"Copy"++: copies all the model's files alongside the loaded analysis. This is the recommended option.
+
+    Beware that loading an analysis **also loads its associated model**, which then becomes the active model in the GUI.
+    Any new analysis performed afterwards will use this model unless it is changed: remember to switch back to the appropriate model before running further analyses.
+
+- ++"Remove entries"++{.red-gui-button}: Removes the selected entries from the table. A dialogue will prompt to choose between removing only the entry from the table (recommended) or also deleting the associated files and folder from disk.
 
 ??? tip "Loading Legacy Files"
     It is possible to load the older `Beta-Beat.src` output directories to compare results from the old analysis codes.
@@ -26,9 +34,6 @@ Each loaded analysis then appears as a new row in the `Name` table.
     See the [meaning of the Beta-Beat.src output files][betabeatsource] for details.
     The loaded analysis name should be unchanged.
 
-Similarly, it is possible to get rid of entries from the table.
-To do so select and entry and click the ++"Remove entries"++{.red-gui-button} button.
-A dialogue will prompt to choose between removing only the entry from the table (recommended) or also deleting the associated files and folder from disk.
 
 ### Viewing Results
 
@@ -173,7 +178,6 @@ These corrections can then be inspected and tested in the [Correction Panel][cor
 *[SVD]: Singular Value Decomposition
 
 [sbs_gui]: ../segment_by_segment/gui.md
-[bbgui_do_optics]: analysis_panel.md#do-optics-dialogue
 [betabeatsource]: betabeatsource.md#meaning-of-the-beta-beatsrc-output-files
 [cc_file_dialogues]: common_components.md#file-opening-dialogues
 [cc_plotting]: common_components.md#plotting
