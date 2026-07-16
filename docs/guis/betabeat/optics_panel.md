@@ -34,7 +34,6 @@ Buttons below this table provide functionality to manually load files and remove
     See the [meaning of the Beta-Beat.src output files][betabeatsource] for details.
     The loaded analysis name should be unchanged.
 
-
 ### Viewing Results
 
 Selecting a row in the `Name` table loads the associated data.
