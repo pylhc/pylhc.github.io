@@ -14,17 +14,17 @@ The panel is split into two sub-tabs: `Optics` and `Action/Tune`.
 
 ## The Optics Tab
 
-Once an optics analysis has produced results (via [Get Optics][bbgui_do_optics] in the analysis panel), a new entry will appear in the list box in the top left part of the panel.
+Once an optics analysis has produced results (via [Get Optics][bbgui_do_optics] in the analysis panel), a new entry will appear in the `Name` table at the top left of the panel.
 Selecting the entry for an optics analysis allows one to inspect all computed optics properties across the machine.
 
-### Open Files
+It is possible to load older analyses by clicking the ++"Open Files"++{.green-gui-button} button, which opens a [file dialogue][cc_file_dialogues] in which to select one or more optics analysis output folders.
+Each loaded analysis then appears as a new row in the `Name` table.
 
-The ++"Open Files"++{.green-gui-button} button opens a [file dialogue][cc_file_dialogues] in which to select one or more optics-analysis output folders.
-Each loaded analysis then appears as a row in the `Name` table at the top left of the panel.
-
-!!! info "Legacy Files"
-    The panel also accepts the older Beta-Beat.src output files, so results from previous analyses can be loaded and compared.
-    See the [meaning of the Beta-Beat.src output files][betabeatsource] for details on those.
+!!! tip "Loading Legacy Files"
+    It is possible to load the older `Beta-Beat.src` output directories to compare results from the old analysis codes.
+    Since `Beta-Beat.src` had different file naming conventions, the GUI should automatically call the dedicated [betabeatsrc_output_converter](../../packages/omc3/getting_started.md#other-scripts) script before loading data.
+    See the [meaning of the Beta-Beat.src output files][betabeatsource] for details.
+    The loaded analysis name should be unchanged.
 
 ### The Results Table
 
@@ -36,11 +36,6 @@ Each result is assigned a consistent colour, shown in the plot legend to identif
 
 To unload a result, select it in the table and click the red ++"Remove entries"++ button.
 This only removes the entry from the GUI and does not delete any files from disk.
-
-## Visualising Optics
-
-The **Optics** sub-tab is the default view.
-It combines the property tree, from which the quantity to display is selected, with the plot area on the right.
 
 ### The Property Tree
 
@@ -88,7 +83,7 @@ The imported k-modulation results are then made available so that they can be di
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/load_kmodulation_data.png" width="80%" alt="Load k-Modulation Data Dialog"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_load_kmod.png" width="80%" alt="Load k-Modulation Data Dialog"/>
   <figcaption>Selecting a k-modulation summary directory to load.</figcaption>
   </center>
 </figure>
