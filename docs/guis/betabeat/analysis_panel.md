@@ -1,6 +1,6 @@
 # The Analysis Panel
 
-The analysis panel provides graphical interface to visualise results from harmonic analysis performed on the given data.
+The analysis panel provides graphical interface to visualise results from [harmonic analysis][harpy_analysis] performed on the given data.
 
 <figure>
   <center>
@@ -403,8 +403,8 @@ one can change the [settings](settings.md) of the _[Optics tab](settings.md#opti
     not just for the current one!
     You need to click the ++"Apply"++ button to actually apply these settings before the run.
 
-[additional_defaults]: defaults.md#additional-gui-defaults
 [harpy_analysis]: ../../measurements/physics/harpy.md
+[additional_defaults]: defaults.md#additional-gui-defaults
 [bad_bpms]: ../../measurements/physics/bpm_filtering.md
 [amplitude_detuning_analysis]: ../../measurements/procedures/ampdet.md
 [optics_analysis]: ../../measurements/physics/optics.md
