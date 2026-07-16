@@ -14,30 +14,40 @@ The panel is split into two sub-tabs: `Optics` and `Action/Tune`.
 
 ## The Optics Tab
 
-Once an optics analysis has produced results (via [Get Optics][bbgui_do_optics] in the analysis panel), a new entry will appear in the `Name` table at the top left of the panel.
-Selecting the entry for an optics analysis allows one to inspect all computed optics properties across the machine.
+The default view of the `Optics` panel is the `Optics` tab, which allows visualising computed optics properties.
 
-It is possible to load older analyses by clicking the ++"Open Files"++{.green-gui-button} button, which opens a [file dialogue][cc_file_dialogues] in which to select one or more optics analysis output folders.
+### Loading Data
+
+Once an analysis has produced results (via [Get Optics][bbgui_do_optics] in the analysis panel), a new entry will appear in the `Name` table at the top left of the tab.
+
+It is also possible to load older analyses by clicking the ++"Open Files"++{.green-gui-button} button, which opens a [file dialogue][cc_file_dialogues] in which to select one or more optics analysis output folders.
 Each loaded analysis then appears as a new row in the `Name` table.
 
-!!! tip "Loading Legacy Files"
+<!-- TODO: HAVE AN EXAMPLE SCREENSHOT OF THE DIALOGUE? -->
+
+<!-- TODO: MENTION THAT THERE IS THE POPUP ABOUT THE MODEL. RECOMMEND COPY. WARN THAT IT LOADS THE MODEL!!!!! -->
+
+??? tip "Loading Legacy Files"
     It is possible to load the older `Beta-Beat.src` output directories to compare results from the old analysis codes.
     Since `Beta-Beat.src` had different file naming conventions, the GUI should automatically call the dedicated [betabeatsrc_output_converter](../../packages/omc3/getting_started.md#other-scripts) script before loading data.
     See the [meaning of the Beta-Beat.src output files][betabeatsource] for details.
     The loaded analysis name should be unchanged.
 
-### The Results Table
+Selecting a row in the `Name` table loads the associated data.
 
-The `Name` table lists all loaded results.
-Selecting a row displays its data in the plot area, and selecting several rows overlays them on the same plot, which is the basis for comparing measurements or correction schemes.
+
+
+
+Selecting several rows overlays them on the same plot, which allows comparing several measurements or analyses of the same measurements with different settings.
 Each result is assigned a consistent colour, shown in the plot legend to identify the corresponding curve.
 
-### Removing Entries
+??? info "Removing Entries"
+    To unload a result, select it in the table and click the red ++"Remove entries"++ button.
+    A dialogue will prompt you to choose between removing only the entry from the table (recommended) or also deleting the associated files and folder from disk.
 
-To unload a result, select it in the table and click the red ++"Remove entries"++ button.
-This only removes the entry from the GUI and does not delete any files from disk.
+### Viewing Results
 
-### The Property Tree
+
 
 The tree on the lower left selects which quantity to plot for the selected result(s).
 The available quantities are grouped as follows:
@@ -64,8 +74,6 @@ The available quantities are grouped as follows:
     The `RDTs` and `CRDTs` branches are added dynamically, depending on which files are present in the results folders.
     A quantity that was not computed during the analysis will therefore not appear in the tree.
 
-### The Plot Area
-
 Selecting a quantity plots it for the selected result(s) across the longitudinal location in the machine, with the interaction points marked along the top and a legend identifying each result.
 The plot supports the usual [navigation and inspection shortcuts][cc_plotting] common to all panels.
 
@@ -76,7 +84,7 @@ The ++"Gui"++ button saves them in the native GUI format, while the ++"PDF"++ bu
 <!-- TODO: confirm exactly what the "Gui" export format is / where files are written. -->
 
 
-### Load k-Modulation Data
+### Loading K-Modulation Data
 
 The ++"Load k-Modulation Data"++ button opens a [file dialogue][cc_file_dialogues] to select a k-modulation summary directory (for instance a `kmod_summary` folder).
 The imported k-modulation results are then made available so that they can be displayed alongside the computed optics.
