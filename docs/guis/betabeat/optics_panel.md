@@ -108,8 +108,8 @@ Choose the target logbook from the dropdown, edit the entry text if needed, atta
 
 ### Loading K-Modulation Data
 
-The ++"Load k-Modulation Data"++ button opens a [file dialogue][cc_file_dialogues] to select a k-modulation summary directory (for instance a `kmod_summary` folder).
-The imported k-modulation results are then made available so that they can be displayed alongside the computed optics.
+The ++"Load k-Modulation Data"++ button opens a [file dialogue][cc_file_dialogues] to select a k-modulation results directory.
+The chosen directory should contain subdirectories named `IP*` with k-modulation results for said IPs.
 
 <figure>
   <center>
@@ -117,6 +117,10 @@ The imported k-modulation results are then made available so that they can be di
   <figcaption>Selecting a k-modulation summary directory to load.</figcaption>
   </center>
 </figure>
+
+The imported [k-modulation][kmod_method] results will be imported and superseed the optics functions at the inner triplet BPMs and add a data point at IP locations.
+This is advantageous considering the k-modulation results are more accurate than optics measurements in these areas.
+See the [K-Modulation GUI][kmod_gui] pages to run a k-modulation.
 
 ### Opening the Segment-by-Segment GUI
 
@@ -174,6 +178,8 @@ These corrections can then be inspected and tested in the [Correction Panel][cor
 [betabeatsource]: betabeatsource.md#meaning-of-the-beta-beatsrc-output-files
 [cc_plotting]: common_components.md#plotting
 [cc_file_dialogues]: common_components.md#file-opening-dialogues
+[kmod_method]: ../../measurements/physics/kmod.md
+[kmod_gui]: ../kmod/gui.md
 [sbs_gui]: ../segment_by_segment/gui.md
 
 [ampdet]: ampdet.md
