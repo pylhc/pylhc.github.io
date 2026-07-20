@@ -141,7 +141,7 @@ The two tabs below show the same dialog with two different presets applied.
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/betabeat_gui/global_correction_default.png" width="100%" alt="Global Correction Dialog, Beta Preset"/>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_default.png" width="100%" alt="Global Correction Dialog, Beta Preset"/>
       <figcaption>The Global Correction dialog with the <code>Beta</code> preset.</figcaption>
       </center>
     </figure>
@@ -150,7 +150,7 @@ The two tabs below show the same dialog with two different presets applied.
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/betabeat_gui/global_correction_preset.png" width="100%" alt="Global Correction Dialog, Coupling Preset"/>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_preset.png" width="100%" alt="Global Correction Dialog, Coupling Preset"/>
       <figcaption>The Global Correction dialog with the <code>Coupling</code> preset, targeting the <code>F1001</code> real and imaginary parts.</figcaption>
       </center>
     </figure>
