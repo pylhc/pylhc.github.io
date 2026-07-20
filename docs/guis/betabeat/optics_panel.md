@@ -93,8 +93,8 @@ In both cases a dialogue will pop up prompting the user to choose where on disk 
 
 ### Creating an eLogbook Entry
 
-The ++"Create eLogBook entry"++ button opens the `New Logbook Entry` dialogue, pre-filled with the analysis title as well as the model and measurement paths of the selected result(s).
-Choose the target logbook from the dropdown, edit the entry text if needed, attach files with ++"Add Files"++ (or drop unwanted ones with ++"Remove"++), then click ++"Create"++ to push the entry.
+The ++"Create eLogBook entry"++ button is a shotcut to generate an optics analysis entry in the logbook.
+It opens the `New Logbook Entry` dialogue, pre-filled with the analysis title as well as the model and measurement paths of the selected result(s).
 
 <figure>
   <center>
@@ -102,6 +102,10 @@ Choose the target logbook from the dropdown, edit the entry text if needed, atta
   <figcaption>The new eLogbook entry dialogue, pre-filled from the selected results.</figcaption>
   </center>
 </figure>
+
+Choose the target logbook from the dropdown (defaults to the `LHC_OMC` logbook), edit the entry text if needed, and attach files with ++"Add Files"++ (or drop unwanted ones with ++"Remove"++).
+This would typically be [plots exported](#saving-plots) from the optics analysis.
+When done, click ++"Create"++ to publish the entry.
 
 !!! tip "PDF Attachments"
     The `Convert pdf2png` checkbox converts attached `PDF` files to `PNG` images, so that they display inline in the logbook entry rather than as attachments.
