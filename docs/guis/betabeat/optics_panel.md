@@ -72,28 +72,15 @@ Each result is assigned a consistent colour, shown in the plot legend to identif
 
 ## Additional Actions
 
+Below the property tree are several buttons for additional actions.
+
+### Saving Plots
+
 The ++"Save Plots"++ row at the bottom left exports the currently displayed plots.
 The ++"Gui"++ button saves them in the native GUI format, while the ++"PDF"++ button exports them to a `PDF` file.
 <!-- TODO: confirm exactly what the "Gui" export format is / where files are written. -->
 
-### Loading K-Modulation Data
-
-The ++"Load k-Modulation Data"++ button opens a [file dialogue][cc_file_dialogues] to select a k-modulation summary directory (for instance a `kmod_summary` folder).
-The imported k-modulation results are then made available so that they can be displayed alongside the computed optics.
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_load_kmod.png" width="80%" alt="Load k-Modulation Data Dialog"/>
-  <figcaption>Selecting a k-modulation summary directory to load.</figcaption>
-  </center>
-</figure>
-
-### Open the Segment-by-Segment GUI
-
-The ++"Open Segment-by-Segment GUI"++ button launches the [Segment-by-Segment GUI][sbs_gui] for the selected result(s), pre-loaded with their optics and associated model.
-This is the recommended way to start the SbS GUI, as covered in its own [documentation][sbs_gui].
-
-### Create an eLogbook Entry
+### Creating an eLogbook Entry
 
 The ++"Create eLogBook entry"++ button opens the `New Logbook Entry` dialog, pre-filled with the analysis title as well as the model and measurement paths of the selected result(s).
 Choose the target logbook from the dropdown, edit the entry text if needed, attach files with ++"Add Files"++ (or drop unwanted ones with ++"Remove"++), then click ++"Create"++ to push the entry.
@@ -107,6 +94,24 @@ Choose the target logbook from the dropdown, edit the entry text if needed, atta
 
 !!! tip "PDF Attachments"
     The `Convert pdf2png` checkbox converts attached `PDF` files to `PNG` images, so that they display inline in the logbook entry rather than as attachments.
+
+### Loading K-Modulation Data
+
+The ++"Load k-Modulation Data"++ button opens a [file dialogue][cc_file_dialogues] to select a k-modulation summary directory (for instance a `kmod_summary` folder).
+The imported k-modulation results are then made available so that they can be displayed alongside the computed optics.
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_load_kmod.png" width="80%" alt="Load k-Modulation Data Dialog"/>
+  <figcaption>Selecting a k-modulation summary directory to load.</figcaption>
+  </center>
+</figure>
+
+### Opening the Segment-by-Segment GUI
+
+The ++"Open Segment-by-Segment GUI"++ button launches the [Segment-by-Segment GUI][sbs_gui] for the selected result(s), pre-loaded with their optics and associated model.
+This is the recommended way to start the SbS GUI.
+Refer to the [Segment-by-Segment GUI pages][sbs_gui] .
 
 ## Computing Corrections
 
@@ -153,10 +158,11 @@ These corrections can then be inspected and tested in the [Correction Panel][cor
 *[GUI]: Graphical User Interface
 *[SVD]: Singular Value Decomposition
 
-[sbs_gui]: ../segment_by_segment/gui.md
 [betabeatsource]: betabeatsource.md#meaning-of-the-beta-beatsrc-output-files
-[cc_file_dialogues]: common_components.md#file-opening-dialogues
 [cc_plotting]: common_components.md#plotting
+[cc_file_dialogues]: common_components.md#file-opening-dialogues
+[sbs_gui]: ../segment_by_segment/gui.md
+
 [ampdet]: ampdet.md
 [correction_panel]: correction_panel.md
 [correction_checks]: correction_panel.md#correction-checks
