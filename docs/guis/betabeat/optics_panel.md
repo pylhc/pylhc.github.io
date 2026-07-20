@@ -134,9 +134,8 @@ Refer to the [Segment-by-Segment GUI pages][sbs_gui] .
 
 ## Computing Corrections
 
-<!-- TODO: MAKE SURE TO MENTION THAT FULLRESPONSE IS NEEDED FOR THIS -->
-
 The green ++"Correction"++ button opens the `Global Correction` dialogue, used to compute optics corrections from the loaded measurement and a response matrix.
+<!-- TODO: MAKE SURE TO MENTION THAT FULLRESPONSE IS NEEDED FOR THIS -->
 The dialogue is organised in three parts:
 
 - **Presets**: the dropdown at the top offers presets (such as `Beta` or `Coupling`) that pre-fill the whole dialogue — the response variables, the targeted observables and their weights and cuts — for a given correction type.
