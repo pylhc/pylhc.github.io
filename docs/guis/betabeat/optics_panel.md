@@ -93,7 +93,7 @@ Choose the target logbook from the dropdown, edit the entry text if needed, atta
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/create_elogbook_entry.png" width="90%" alt="New Logbook Entry Dialog"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_create_elogbook_entry.png" width="90%" alt="New Logbook Entry Dialog"/>
   <figcaption>The new eLogbook entry dialog, pre-filled from the selected results.</figcaption>
   </center>
 </figure>
