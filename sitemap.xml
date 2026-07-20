@@ -298,6 +298,9 @@
         <loc>https://pylhc.github.io/logbook/PSB/2025_psb.html</loc>
       </url>
       <url>
+        <loc>https://pylhc.github.io/logbook/PSB/2026_psb.html</loc>
+      </url>
+      <url>
         <loc>https://pylhc.github.io/logbook/SPS/2023_sps.html</loc>
       </url>
       <url>
@@ -305,5 +308,8 @@
       </url>
       <url>
         <loc>https://pylhc.github.io/logbook/SPS/2025_sps.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/logbook/SPS/2026_sps.html</loc>
       </url>
 </urlset>
