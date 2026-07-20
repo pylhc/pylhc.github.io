@@ -125,7 +125,7 @@ You can select multiple measurements at once to compare them, but only one BPM p
 
     <figure>
     <center>
-    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_data_phase_space.png" width="100%" alt="Phase space view of BPM data"/>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel_phase_space.png" width="100%" alt="Phase space view of BPM data"/>
     <figcaption>Phase space view of BPM data.</figcaption>
     </center>
     </figure>
