@@ -116,7 +116,7 @@ You can select multiple measurements at once to compare them, but only one BPM p
 
     <figure>
     <center>
-    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_turn_by_turn_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel_tbt_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
     <figcaption>Turn-by-Turn view of BPM data with two measurements selected.</figcaption>
     </center>
     </figure>
