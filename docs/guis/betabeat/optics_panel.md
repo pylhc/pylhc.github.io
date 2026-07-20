@@ -4,7 +4,6 @@ The `Optics` panel is where the computed optics are visualised and compared agai
 It serves as the launch point for follow-up actions such as calculating corrections, starting the Segment-by-Segment GUI, etc.
 
 The panel is split into two sub-tabs: `Optics` and `Action/Tune`.
-
 The default view of the `Optics` panel is the `Optics` tab, covered by this page, which lists analyses and displays computed properties.
 See the [Amplitude Detuning page](./ampdet.md) for the `Action/Tune` tab.
 
