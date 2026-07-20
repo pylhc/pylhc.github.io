@@ -108,7 +108,7 @@ The imported k-modulation results are then made available so that they can be di
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_load_kmod.png" width="80%" alt="Load k-Modulation Data Dialog"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_load_kmod.png" width="80%" alt="Load k-Modulation Data Dialog"/>
   <figcaption>Selecting a k-modulation summary directory to load.</figcaption>
   </center>
 </figure>
