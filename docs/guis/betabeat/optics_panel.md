@@ -37,30 +37,7 @@ Buttons below this table provide functionality to manually load files and remove
 ### Viewing Results
 
 Selecting a row in the `Name` table loads the associated data.
-
-Selecting several rows overlays them on the same plot, which allows comparing several measurements or analyses of the same measurements with different settings.
-Each result is assigned a consistent colour, shown in the plot legend to identify the corresponding curve.
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel.png" width="100%" alt="Optics Panel"/>
-  <figcaption>The Optics panel, here showing the horizontal and vertical beta-beating for two loaded results.</figcaption>
-  </center>
-</figure>
-
-The tree on the lower left selects which quantity to plot for the selected result(s).
-The available quantities are grouped as follows:
-
-- **Linear**
-    - **Phase** — `Phaseadvance`, `ΔPhaseadvance`
-    - **Total Phase** — `Phaseadvance`, `ΔPhaseadvance`
-    - **Beta from Phase** — `Beta-Function`, `Beta-Beating`
-    - **Beta from Amplitude** — `Beta-Function`, `Beta-Beating`
-    - **Coupling F1001** — `Amplitude - Phase`, `Real - Imaginary`
-    - **Coupling F1010** — `Amplitude - Phase`, `Real - Imaginary`
-- **Off-Momentum**
-- **Closed Orbit** — `Closed Orbit`
-- **RDTs** — `Normal Quadrupole`, `Skew Quadrupole`, `Normal Sextupole`, `Skew Sextupole`, `Normal Octupole`, `Skew Octupole`
+On the lower left a tree allows to choose which quantity to plot for the selected result(s).
 
 <figure>
   <center>
@@ -69,8 +46,19 @@ The available quantities are grouped as follows:
   </center>
 </figure>
 
-!!! tip "Dynamic Entries"
-    The `RDTs` and `CRDTs` branches are added dynamically, depending on which files are present in the results folders.
+Selecting several rows overlays them on the same plot, which allows comparing several measurements or analyses of the same measurements with different settings.
+Each result is assigned a consistent colour, shown in the plot legend to identify the corresponding curve.
+The available quantities can be seen in below.
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel.png" width="100%" alt="Optics Panel"/>
+  <figcaption>The Optics panel, here showing the horizontal and vertical beta-beating for two loaded results.</figcaption>
+  </center>
+</figure>
+
+!!! tip "Dynamic RDT Entries"
+    While linear optics are always computed and present, the `RDTs` and `CRDTs` branches are added dynamically, depending on which files are present in the results folders.
     A quantity that was not computed during the analysis will therefore not appear in the tree.
 
 Selecting a quantity plots it for the selected result(s) across the longitudinal location in the machine, with the interaction points marked along the top and a legend identifying each result.
@@ -81,7 +69,6 @@ The plot supports the usual [navigation and inspection shortcuts][cc_plotting] c
 The `Save Plots` row at the bottom left exports the currently displayed plots.
 The ++"Gui"++ button saves them in the native GUI format, while the ++"PDF"++ button exports them to a `PDF` file.
 <!-- TODO: confirm exactly what the "Gui" export format is / where files are written. -->
-
 
 ### Loading K-Modulation Data
 
@@ -173,7 +160,6 @@ These corrections can then be inspected and tested in the [Correction Panel][cor
 *[CRDT]: Combined Resonance Driving Term
 *[CRDTs]: Combined Resonance Driving Terms
 *[GUI]: Graphical User Interface
-*[IP]: Interaction Point
 *[SVD]: Singular Value Decomposition
 
 [sbs_gui]: ../segment_by_segment/gui.md
