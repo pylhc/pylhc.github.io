@@ -46,6 +46,10 @@ On the lower left a tree allows to choose which quantity to plot for the selecte
   </center>
 </figure>
 
+!!! tip "Dynamic RDT Entries"
+    While linear optics are always computed and present, the `RDTs` and `CRDTs` branches are added dynamically, depending on which files are present in the results folders.
+    A quantity that was not computed during the analysis will therefore not appear in the tree.
+
 Selecting several rows overlays them on the same plot, which allows comparing several measurements or analyses of the same measurements with different settings.
 Each result is assigned a consistent colour, shown in the plot legend to identify the corresponding curve.
 The available quantities can be seen in below.
@@ -56,10 +60,6 @@ The available quantities can be seen in below.
   <figcaption>The Optics panel, here showing the horizontal and vertical beta-beating for two loaded results.</figcaption>
   </center>
 </figure>
-
-!!! tip "Dynamic RDT Entries"
-    While linear optics are always computed and present, the `RDTs` and `CRDTs` branches are added dynamically, depending on which files are present in the results folders.
-    A quantity that was not computed during the analysis will therefore not appear in the tree.
 
 Selecting a quantity plots it for the selected result(s) across the longitudinal location in the machine, with the interaction points marked along the top and a legend identifying each result.
 The plot supports the usual [navigation and inspection shortcuts][cc_plotting] common to all panels.
