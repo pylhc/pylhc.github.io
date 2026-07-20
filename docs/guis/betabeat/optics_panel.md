@@ -79,12 +79,17 @@ Below the property tree are several buttons for additional actions.
 The `Save Plots` row at the bottom left allows exporting the currently displayed plots, in one of two ways:
 
 - The ++"Gui"++ button saves them in the native GUI format, a.k.a. similarly to taking a screenshot of the plots.
-- The ++"PDF"++ button exports starts a Python program to load the data, plots it via `matplotlib` with our custom styles, and export it as a `PDF` file.
+- The ++"PDF"++ button exports starts a Python program to load the data, plots it via `matplotlib` with our custom styles, and export it as a `PDF` file. In this mode it is possible to set axes limits and assign custom labels to plotted measurements.
 
-In both cases a dialogue will pop up prompting the user to choose
+In both cases a dialogue will pop up prompting the user to choose where on disk to create the file.
 <!-- TODO: confirm exactly what the "Gui" export format is / where files are written. -->
-<!-- TODO: figure out what options appear for the PDF plot -->
-<!-- TODO: get a screenshot of these? -->
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_plot_export.png" width="85%" alt="Optics Panel"/>
+  <figcaption>Dialogue window with options for the PDF plot export.</figcaption>
+  </center>
+</figure>
 
 ### Creating an eLogbook Entry
 
