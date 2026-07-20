@@ -7,7 +7,8 @@ The panel is split into two sub-tabs: `Optics` and `Action/Tune`.
 
 ## The Optics Tab
 
-The default view of the `Optics` panel is the `Optics` tab, which lists analyses and displays computed properties.
+The default view of the `Optics` panel is the `Optics` tab, covered by this page, which lists analyses and displays computed properties.
+See the [Amplitude Detuning page](./ampdet.md) for the `Action/Tune` tab.
 
 ### Loading Data
 
@@ -72,9 +73,7 @@ Each result is assigned a consistent colour, shown in the plot legend to identif
     When choosing the latter, a line is added to the plot corresponding to the model values, with an associated legend.
     When selecting several measurements a line will be added for each of the measurements *and* each of the models.
 
-### Saving Plots
-
-The `Save Plots` row at the bottom left exports the currently displayed plots.
+The ++"Save Plots"++ row at the bottom left exports the currently displayed plots.
 The ++"Gui"++ button saves them in the native GUI format, while the ++"PDF"++ button exports them to a `PDF` file.
 <!-- TODO: confirm exactly what the "Gui" export format is / where files are written. -->
 
