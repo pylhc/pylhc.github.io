@@ -39,7 +39,7 @@ On the lower left a tree allows to choose which quantity to plot for the selecte
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_parameters.png" width="50%" alt="Optics Property Tree"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_plot_parameters.png" width="50%" alt="Optics Property Tree"/>
   <figcaption>The property tree, here with the dynamically added RDTs branch.</figcaption>
   </center>
 </figure>
