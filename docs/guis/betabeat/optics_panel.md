@@ -5,12 +5,10 @@ It serves as the launch point for follow-up actions such as calculating correcti
 
 The panel is split into two sub-tabs: `Optics` and `Action/Tune`.
 
-## The Optics Tab
-
 The default view of the `Optics` panel is the `Optics` tab, covered by this page, which lists analyses and displays computed properties.
 See the [Amplitude Detuning page](./ampdet.md) for the `Action/Tune` tab.
 
-### Loading Data
+## Loading Data
 
 Once an optics analysis has finished, its results are automatically loaded and a new entry will appear in the `Name` table at the top left of the tab.
 Buttons below this table provide functionality to manually load files and remove entries.
@@ -35,7 +33,7 @@ Buttons below this table provide functionality to manually load files and remove
     See the [meaning of the Beta-Beat.src output files][betabeatsource] for details.
     The loaded analysis name should be unchanged.
 
-### Viewing Results
+## Viewing Results
 
 Selecting a row in the `Name` table loads the associated data.
 On the lower left a tree allows to choose which quantity to plot for the selected result(s).
@@ -73,6 +71,8 @@ Each result is assigned a consistent colour, shown in the plot legend to identif
     When choosing the latter, a line is added to the plot corresponding to the model values, with an associated legend.
     When selecting several measurements a line will be added for each of the measurements *and* each of the models.
 
+## Additional Actions
+
 The ++"Save Plots"++ row at the bottom left exports the currently displayed plots.
 The ++"Gui"++ button saves them in the native GUI format, while the ++"PDF"++ button exports them to a `PDF` file.
 <!-- TODO: confirm exactly what the "Gui" export format is / where files are written. -->
@@ -108,21 +108,6 @@ Choose the target logbook from the dropdown, edit the entry text if needed, atta
 
 !!! tip "PDF Attachments"
     The `Convert pdf2png` checkbox converts attached `PDF` files to `PNG` images, so that they display inline in the logbook entry rather than as attachments.
-
-## The Action/Tune Tab
-
-The **Action/Tune** sub-tab is used for amplitude detuning studies: it plots the measured tune against the action for the selected result(s).
-The controls on the left select the action (e.g. `2Jx`) and tune (e.g. `NATTUNE X`) to use, a linear fit can be drawn with ++"Plot linear regression"++, and the full analysis is launched with the ++"Python Detuning Analysis"++ button.
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/action_tune.png" width="100%" alt="Optics Action/Tune Tab"/>
-  <figcaption>The Action/Tune sub-tab, plotting tune versus action.</figcaption>
-  </center>
-</figure>
-
-As it is a topic of its own, the amplitude detuning analysis is not covered here.
-Please refer to the dedicated [Amplitude Detuning Analysis][ampdet] page, which itself points to the full procedure.
 
 ## Computing Corrections
 
