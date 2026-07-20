@@ -7,7 +7,7 @@ The controls on the left select the action (e.g. `2Jx`) and tune (e.g. `NATTUNE 
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/action_tune.png" width="100%" alt="Optics Action/Tune Tab"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_action_tune.png" width="100%" alt="Optics Action/Tune Tab"/>
   <figcaption>The Action/Tune sub-tab, plotting tune versus action.</figcaption>
   </center>
 </figure>
