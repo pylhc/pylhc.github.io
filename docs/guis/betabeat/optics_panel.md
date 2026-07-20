@@ -93,13 +93,13 @@ In both cases a dialogue will pop up prompting the user to choose where on disk 
 
 ### Creating an eLogbook Entry
 
-The ++"Create eLogBook entry"++ button opens the `New Logbook Entry` dialog, pre-filled with the analysis title as well as the model and measurement paths of the selected result(s).
+The ++"Create eLogBook entry"++ button opens the `New Logbook Entry` dialogue, pre-filled with the analysis title as well as the model and measurement paths of the selected result(s).
 Choose the target logbook from the dropdown, edit the entry text if needed, attach files with ++"Add Files"++ (or drop unwanted ones with ++"Remove"++), then click ++"Create"++ to push the entry.
 
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_create_elogbook_entry.png" width="90%" alt="New Logbook Entry Dialog"/>
-  <figcaption>The new eLogbook entry dialog, pre-filled from the selected results.</figcaption>
+  <figcaption>The new eLogbook entry dialogue, pre-filled from the selected results.</figcaption>
   </center>
 </figure>
 
@@ -128,11 +128,11 @@ Refer to the [Segment-by-Segment GUI pages][sbs_gui] .
 
 <!-- TODO: MAKE SURE TO MENTION THAT FULLRESPONSE IS NEEDED FOR THIS -->
 
-The green ++"Correction"++ button opens the `Global Correction` dialog, used to compute optics corrections from the loaded measurement and a response matrix.
-The dialog is organised in three parts:
+The green ++"Correction"++ button opens the `Global Correction` dialogue, used to compute optics corrections from the loaded measurement and a response matrix.
+The dialogue is organised in three parts:
 
-- **Presets**: the dropdown at the top offers presets (such as `Beta` or `Coupling`) that pre-fill the whole dialog — the response variables, the targeted observables and their weights and cuts — for a given correction type.
-  A preset is applied with ++"Apply"++, and a configured dialog can be stored with ++"Save to File"++ and recalled later with ++"Load from File"++.
+- **Presets**: the dropdown at the top offers presets (such as `Beta` or `Coupling`) that pre-fill the whole dialogue — the response variables, the targeted observables and their weights and cuts — for a given correction type.
+  A preset is applied with ++"Apply"++, and a configured dialogue can be stored with ++"Save to File"++ and recalled later with ++"Load from File"++.
 - **Full Response**: the response matrix (a `FullResponse.hd5` file) and the correction `Variables` (knobs) to use.
   A response matrix can be created from the current model, either numerically via ++"MAD-X"++ or via the ++"Analytical"++ method.
 - **Options**: the measurement and output directories, the correction name (e.g. `changeparameters`), and the table of `Targets` with, for each observable, a `Weights`, `ErrorCut` and `ModelCut` value.
@@ -140,14 +140,14 @@ The dialog is organised in three parts:
 
 <!-- TODO: enumerate the full list of available presets if it is worth it. -->
 
-The two tabs below show the same dialog with two different presets applied.
+The two tabs below show the same dialogue with two different presets applied.
 
 === "Beta preset"
 
     <figure>
       <center>
       <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_default.png" width="100%" alt="Global Correction Dialog, Beta Preset"/>
-      <figcaption>The Global Correction dialog with the <code>Beta</code> preset.</figcaption>
+      <figcaption>The Global Correction dialogue with the <code>Beta</code> preset.</figcaption>
       </center>
     </figure>
 
@@ -156,7 +156,7 @@ The two tabs below show the same dialog with two different presets applied.
     <figure>
       <center>
       <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_preset.png" width="100%" alt="Global Correction Dialog, Coupling Preset"/>
-      <figcaption>The Global Correction dialog with the <code>Coupling</code> preset, targeting the <code>F1001</code> real and imaginary parts.</figcaption>
+      <figcaption>The Global Correction dialogue with the <code>Coupling</code> preset, targeting the <code>F1001</code> real and imaginary parts.</figcaption>
       </center>
     </figure>
 
