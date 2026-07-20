@@ -128,9 +128,9 @@ See the [K-Modulation GUI][kmod_gui] pages to run a k-modulation.
 
 ### Opening the Segment-by-Segment GUI
 
-The ++"Open Segment-by-Segment GUI"++ button launches the [Segment-by-Segment GUI][sbs_gui] for the selected result(s), pre-loaded with their optics and associated model.
-This is the recommended way to start the SbS GUI.
-Refer to the [Segment-by-Segment GUI pages][sbs_gui] .
+The ++"Open Segment-by-Segment GUI"++ button launches the [segment-by-segment][sbs_method] GUI for the selected result(s), pre-loaded with their optics and associated model.
+This is the recommended way to start this GUI.
+Refer to the [Segment-by-Segment GUI pages][sbs_gui] for how to use the method.
 
 ## Computing Corrections
 
@@ -183,6 +183,7 @@ These corrections can then be inspected and tested in the [Correction Panel][cor
 [cc_file_dialogues]: common_components.md#file-opening-dialogues
 [kmod_method]: ../../measurements/physics/kmod.md
 [kmod_gui]: ../kmod/gui.md
+[sbs_method]: ../../measurements/physics/sbs.md
 [sbs_gui]: ../segment_by_segment/gui.md
 
 [ampdet]: ampdet.md
