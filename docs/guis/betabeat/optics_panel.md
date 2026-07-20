@@ -50,9 +50,9 @@ On the lower left a tree allows to choose which quantity to plot for the selecte
     While linear optics are always computed and present, the `RDTs` and `CRDTs` branches are added dynamically, depending on which files are present in the results folders.
     A quantity that was not computed during the analysis will therefore not appear in the tree.
 
-Selecting several rows overlays them on the same plot, which allows comparing several measurements or analyses of the same measurements with different settings.
-Each result is assigned a consistent colour, shown in the plot legend to identify the corresponding curve.
-The available quantities can be seen in below.
+Selecting a quantity plots it in the right part of the window for the selected result(s) across the longitudinal location in the machine.
+Interaction Points are marked along the top and a collapsible legend identifying each result is added.
+The plot supports the usual [navigation and inspection shortcuts][cc_plotting] common to all panels.
 
 <figure>
   <center>
@@ -61,8 +61,16 @@ The available quantities can be seen in below.
   </center>
 </figure>
 
-Selecting a quantity plots it for the selected result(s) across the longitudinal location in the machine, with the interaction points marked along the top and a legend identifying each result.
-The plot supports the usual [navigation and inspection shortcuts][cc_plotting] common to all panels.
+Most shown quantities are computed for both transverse planes and display two plots, one for each of horizontal and vertical.
+Some quantities such as the RDTs offer either a plot for each plane or an alternative layout, e.g. amplitude and phase.
+
+Selecting several rows overlays them on the same plot, which allows comparing several measurements or analyses of the same measurements with different settings.
+Each result is assigned a consistent colour, shown in the plot legend to identify the corresponding curve.
+
+!!! info "Shown Models"
+    Most linear quantities can be shown either by themselves (e.g. beta-beating) or against the model values (e.g. beta-function itself).
+    When choosing the latter, a line is added to the plot corresponding to the model values, with an associated legend.
+    When selecting several measurements a line will be added for each of the measurements *and* each of the models.
 
 ### Saving Plots
 
