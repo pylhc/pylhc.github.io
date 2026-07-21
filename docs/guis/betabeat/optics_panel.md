@@ -150,10 +150,12 @@ It is organised in three parts.
 
 ### Presets
 
+<!-- TODO: enumerate the full list of available presets if it is worth it? -->
 A the top of the dialogue, a dropdown at offers presets (such as `Beta`, `Coupling`, etc.) that pre-fill the whole dialogue with default values for a given correction type.
-
 After choosing from the list, click the ++"Apply"++ button for the selected preset to take effect.
-At any point it is possible to export the current options as a personnal preset with the ++"Save to File"++ button, and apply previously saved ones with ++"Load from File"++.
+
+It is possible at any point to export the current option choices for the full dialogue as a personnal preset with the ++"Save to File"++ button.
+Similarly, it is possible to apply previously saved ones with ++"Load from File"++ which will open a .
 
 ### Full Response
 
@@ -164,8 +166,6 @@ offers to choose where to load the response matrices (a `FullResponse.hd5` file)
 
 allows to set the measurement and output directories (by defaults a creates and uses `Corrections` subdirectory in the results folder), the correction name (e.g. `changeparameters`). Below, choose parameters to correct in a table of `Targets` with, for each observable, a `Weights`, `ErrorCut` and `ModelCut` value to be used in the correction calculation.
 Further options control the solver (e.g. `pinv`), the SVD cut, the number of iterations and similar parameters.
-
-<!-- TODO: enumerate the full list of available presets if it is worth it. -->
 
 The two tabs below show the same dialogue with two different presets applied.
 
