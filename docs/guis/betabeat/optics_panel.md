@@ -201,6 +201,8 @@ Secondly, choose parameters to correct in a table of `Targets` with, for each ob
 Finally, are the following options to control the solver process.
 <!-- TODO: make a list.(e.g. `pinv`), the SVD cut, the number of iterations and similar parameters. -->
 
+!!! error "No Iterative Correction"
+    Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented.
 
 Clicking ++"Run Correction"++ computes the corrections and writes them to the `changeparameters` files, which store the magnet names and their correction strengths.
 These corrections can then be inspected and tested in the [Correction Panel][correction_panel]: see [checking corrections][correction_checks] on the next page.
