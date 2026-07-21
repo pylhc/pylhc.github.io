@@ -157,16 +157,6 @@ After choosing from the list, click the ++"Apply"++ button for the selected pres
 It is possible at any point to export the current option choices for the full dialogue as a personnal preset with the ++"Save to File"++ button.
 Similarly, it is possible to apply previously saved ones with ++"Load from File"++ which will open a .
 
-### Full Response
-
-offers to choose where to load the response matrices (a `FullResponse.hd5` file) and the correction `Variables` (knobs) to use. This is set by default to the ones of the model associated to the corrected measurement.
-  A response matrix can be created from the current model, either numerically via ++"MAD-X"++ or via the ++"Analytical"++ method. Any valid response matrix can be loaded and used.
-
-### Options
-
-allows to set the measurement and output directories (by defaults a creates and uses `Corrections` subdirectory in the results folder), the correction name (e.g. `changeparameters`). Below, choose parameters to correct in a table of `Targets` with, for each observable, a `Weights`, `ErrorCut` and `ModelCut` value to be used in the correction calculation.
-Further options control the solver (e.g. `pinv`), the SVD cut, the number of iterations and similar parameters.
-
 The two tabs below show the same dialogue with two different presets applied.
 
 === "Beta preset"
@@ -186,6 +176,16 @@ The two tabs below show the same dialogue with two different presets applied.
       <figcaption>The Global Correction dialogue with the <code>Coupling</code> preset, targeting the <code>F1001</code> real and imaginary parts.</figcaption>
       </center>
     </figure>
+
+### Full Response
+
+offers to choose where to load the response matrices (a `FullResponse.hd5` file) and the correction `Variables` (knobs) to use. This is set by default to the ones of the model associated to the corrected measurement.
+  A response matrix can be created from the current model, either numerically via ++"MAD-X"++ or via the ++"Analytical"++ method. Any valid response matrix can be loaded and used.
+
+### Options
+
+allows to set the measurement and output directories (by defaults a creates and uses `Corrections` subdirectory in the results folder), the correction name (e.g. `changeparameters`). Below, choose parameters to correct in a table of `Targets` with, for each observable, a `Weights`, `ErrorCut` and `ModelCut` value to be used in the correction calculation.
+Further options control the solver (e.g. `pinv`), the SVD cut, the number of iterations and similar parameters.
 
 Clicking ++"Run Correction"++ computes the corrections and writes them to the `changeparameters` files, which store the magnet names and their correction strengths.
 These corrections can then be inspected and tested in the [Correction Panel][correction_panel]: see [checking corrections][correction_checks] on the next page.
