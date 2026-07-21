@@ -138,7 +138,7 @@ Once the optics have been measured, one can compute a global correction to try a
 The ++"Correction"++{.green-gui-button} button opens the `Global Correction` dialogue, used to compute optics corrections from the loaded measurement and a response matrix.
 
 !!! warning "Full Response Needed"
-    Please note that corrections require the creation of the response matrix (`Full Response` option) during [model creation][model_creation].
+    Please note that corrections require the creation of the response matrices (`Full Response` option) during [model creation][model_creation].
 
 The dialogue is organised in three parts:
 
