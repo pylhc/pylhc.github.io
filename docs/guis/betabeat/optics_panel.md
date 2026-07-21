@@ -181,8 +181,11 @@ The two tabs below show the same dialogue with two different presets applied.
 
 ### Full Response
 
-offers to choose where to load the response matrices (a `FullResponse.hd5` file) and the correction `Variables` (knobs) to use. This is set by default to the ones of the model associated to the corrected measurement.
-  A response matrix can be created from the current model, either numerically via ++"MAD-X"++ or via the ++"Analytical"++ method. Any valid response matrix can be loaded and used.
+The second section offers to choose where to load the response matrices (a `FullResponse.hd5` file) and which correction `Variables` (knobs) to use.
+This is set by default to the options selected in the model creation.
+
+A different set of response matrices can be created on the side from the current model.
+Any valid response file can be loaded and used.
 
 ### Options
 
