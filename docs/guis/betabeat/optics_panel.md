@@ -132,10 +132,14 @@ The ++"Open Segment-by-Segment GUI"++ button launches the [segment-by-segment][s
 This is the recommended way to start this GUI.
 Refer to the [Segment-by-Segment GUI pages][sbs_gui] for how to use the method.
 
-## Computing Corrections
+## Computing Global Corrections
 
-The green ++"Correction"++ button opens the `Global Correction` dialogue, used to compute optics corrections from the loaded measurement and a response matrix.
-<!-- TODO: MAKE SURE TO MENTION THAT FULLRESPONSE IS NEEDED FOR THIS -->
+Once the optics have been measured, one can compute a global correction to try and compensate the observed optics deviation throughout the whole machine.
+The ++"Correction"++{.green-gui-button} button opens the `Global Correction` dialogue, used to compute optics corrections from the loaded measurement and a response matrix.
+
+!!! warning "Full Response Needed"
+    Please note that corrections require the creation of the response matrix (`Full Response` option) during [model creation][model_creation].
+
 The dialogue is organised in three parts:
 
 - **Presets**: the dropdown at the top offers presets (such as `Beta` or `Coupling`) that pre-fill the whole dialogue — the response variables, the targeted observables and their weights and cuts — for a given correction type.
@@ -185,7 +189,6 @@ These corrections can then be inspected and tested in the [Correction Panel][cor
 [kmod_gui]: ../kmod/gui.md
 [sbs_method]: ../../measurements/physics/sbs.md
 [sbs_gui]: ../segment_by_segment/gui.md
-
-[ampdet]: ampdet.md
+[model_creation]: ./model_creation.md
 [correction_panel]: correction_panel.md
 [correction_checks]: correction_panel.md#correction-checks
