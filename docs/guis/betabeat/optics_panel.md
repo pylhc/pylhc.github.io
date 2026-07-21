@@ -189,8 +189,18 @@ Any valid response file can be loaded and used.
 
 ### Options
 
-allows to set the measurement and output directories (by defaults a creates and uses `Corrections` subdirectory in the results folder), the correction name (e.g. `changeparameters`). Below, choose parameters to correct in a table of `Targets` with, for each observable, a `Weights`, `ErrorCut` and `ModelCut` value to be used in the correction calculation.
-Further options control the solver (e.g. `pinv`), the SVD cut, the number of iterations and similar parameters.
+<!-- TODO: hover check in the GUI to make sure about the options -->
+
+The last section is also split in three parts.
+
+First, it allows set the measurement and output directories (by default uses a `Corrections` subdirectory in the results folder) as well as the correction name (e.g. `changeparameters`).
+
+Secondly, choose parameters to correct in a table of `Targets` with, for each observable, a `Weights`, `ErrorCut` and `ModelCut` value to be used in the correction calculation.
+<!-- TODO: detail this prose -->
+
+Finally, are the following options to control the solver process.
+<!-- TODO: make a list.(e.g. `pinv`), the SVD cut, the number of iterations and similar parameters. -->
+
 
 Clicking ++"Run Correction"++ computes the corrections and writes them to the `changeparameters` files, which store the magnet names and their correction strengths.
 These corrections can then be inspected and tested in the [Correction Panel][correction_panel]: see [checking corrections][correction_checks] on the next page.
