@@ -152,7 +152,7 @@ The dialogue is organised in three parts:
 - **Presets**: the dropdown at the top offers presets (such as `Beta` or `Coupling`) that pre-fill the whole dialogue for a given correction type: the response variables and the targeted observables with default weights and cuts.
   After choosing from the list, click the ++"Apply"++ button for the selected preset to take effect.
   At any point it is possible to export the current options as a personnal preset with the ++"Save to File"++ button, and apply previously saved ones with ++"Load from File"++.
-- **Full Response**: the response matrix (a `FullResponse.hd5` file) and the correction `Variables` (knobs) to use.
+- **Full Response**: where to load the response matrices (a `FullResponse.hd5` file) and the correction `Variables` (knobs) to use. This is set by default to the ones of the model associated to the corrected measurement.
   A response matrix can be created from the current model, either numerically via ++"MAD-X"++ or via the ++"Analytical"++ method.
 - **Options**: the measurement and output directories, the correction name (e.g. `changeparameters`), and the table of `Targets` with, for each observable, a `Weights`, `ErrorCut` and `ModelCut` value.
   Further options control the solver (e.g. `pinv`), the SVD cut, the number of iterations and similar parameters.
