@@ -140,10 +140,18 @@ The ++"Correction"++{.green-gui-button} button opens the `Global Correction` dia
 !!! warning "Full Response Needed"
     Please note that corrections require the creation of the response matrices (`Full Response` option) during [model creation][model_creation].
 
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_default.png" width="80%" alt="Load k-Modulation Data Dialog"/>
+  <figcaption>Selecting a k-modulation summary directory to load.</figcaption>
+  </center>
+</figure>
+
 The dialogue is organised in three parts:
 
-- **Presets**: the dropdown at the top offers presets (such as `Beta` or `Coupling`) that pre-fill the whole dialogue — the response variables, the targeted observables and their weights and cuts — for a given correction type.
-  A preset is applied with ++"Apply"++, and a configured dialogue can be stored with ++"Save to File"++ and recalled later with ++"Load from File"++.
+- **Presets**: the dropdown at the top offers presets (such as `Beta` or `Coupling`) that pre-fill the whole dialogue for a given correction type: the response variables and the targeted observables with default weights and cuts.
+  After choosing from the list, click the ++"Apply"++ button for the selected preset to take effect.
+  At any point it is possible to export the current options as a personnal preset with the ++"Save to File"++ button, and apply previously saved ones with ++"Load from File"++.
 - **Full Response**: the response matrix (a `FullResponse.hd5` file) and the correction `Variables` (knobs) to use.
   A response matrix can be created from the current model, either numerically via ++"MAD-X"++ or via the ++"Analytical"++ method.
 - **Options**: the measurement and output directories, the correction name (e.g. `changeparameters`), and the table of `Targets` with, for each observable, a `Weights`, `ErrorCut` and `ModelCut` value.
@@ -157,7 +165,7 @@ The two tabs below show the same dialogue with two different presets applied.
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_default.png" width="100%" alt="Global Correction Dialog, Beta Preset"/>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_beta_preset.png" width="100%" alt="Global Correction Dialog, Beta Preset"/>
       <figcaption>The Global Correction dialogue with the <code>Beta</code> preset.</figcaption>
       </center>
     </figure>
@@ -166,7 +174,7 @@ The two tabs below show the same dialogue with two different presets applied.
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_preset.png" width="100%" alt="Global Correction Dialog, Coupling Preset"/>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_coupling_preset.png" width="100%" alt="Global Correction Dialog, Coupling Preset"/>
       <figcaption>The Global Correction dialogue with the <code>Coupling</code> preset, targeting the <code>F1001</code> real and imaginary parts.</figcaption>
       </center>
     </figure>
