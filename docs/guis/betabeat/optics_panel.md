@@ -136,6 +136,7 @@ Refer to the [Segment-by-Segment GUI pages][sbs_gui] for how to use the method.
 
 Once the optics have been measured, one can compute a global correction to try and compensate the observed optics deviation throughout the whole machine.
 The ++"Correction"++{.green-gui-button} button opens the `Global Correction` dialogue, used to compute optics corrections from the loaded measurement and a response matrix.
+It is organised in three parts.
 
 !!! warning "Full Response Needed"
     Please note that corrections require the creation of the response matrices (`Full Response` option) during [model creation][model_creation].
@@ -147,15 +148,22 @@ The ++"Correction"++{.green-gui-button} button opens the `Global Correction` dia
   </center>
 </figure>
 
-The dialogue is organised in three parts:
+### Presets
 
-- **Presets**: the dropdown at the top offers presets (such as `Beta` or `Coupling`) that pre-fill the whole dialogue for a given correction type: the response variables and the targeted observables with default weights and cuts.
-  After choosing from the list, click the ++"Apply"++ button for the selected preset to take effect.
-  At any point it is possible to export the current options as a personnal preset with the ++"Save to File"++ button, and apply previously saved ones with ++"Load from File"++.
-- **Full Response**: offers to choose where to load the response matrices (a `FullResponse.hd5` file) and the correction `Variables` (knobs) to use. This is set by default to the ones of the model associated to the corrected measurement.
+A the top of the dialogue, a dropdown at offers presets (such as `Beta`, `Coupling`, etc.) that pre-fill the whole dialogue with default values for a given correction type.
+
+After choosing from the list, click the ++"Apply"++ button for the selected preset to take effect.
+At any point it is possible to export the current options as a personnal preset with the ++"Save to File"++ button, and apply previously saved ones with ++"Load from File"++.
+
+### Full Response
+
+offers to choose where to load the response matrices (a `FullResponse.hd5` file) and the correction `Variables` (knobs) to use. This is set by default to the ones of the model associated to the corrected measurement.
   A response matrix can be created from the current model, either numerically via ++"MAD-X"++ or via the ++"Analytical"++ method. Any valid response matrix can be loaded and used.
-- **Options**: allows to set the measurement and output directories (by defaults a creates and uses `Corrections` subdirectory in the results folder), the correction name (e.g. `changeparameters`). Below, choose parameters to correct in a table of `Targets` with, for each observable, a `Weights`, `ErrorCut` and `ModelCut` value to be used in the correction calculation.
-  Further options control the solver (e.g. `pinv`), the SVD cut, the number of iterations and similar parameters.
+
+### Options
+
+allows to set the measurement and output directories (by defaults a creates and uses `Corrections` subdirectory in the results folder), the correction name (e.g. `changeparameters`). Below, choose parameters to correct in a table of `Targets` with, for each observable, a `Weights`, `ErrorCut` and `ModelCut` value to be used in the correction calculation.
+Further options control the solver (e.g. `pinv`), the SVD cut, the number of iterations and similar parameters.
 
 <!-- TODO: enumerate the full list of available presets if it is worth it. -->
 
