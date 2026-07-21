@@ -161,6 +161,8 @@ The two tabs below show the same dialogue with two different presets applied.
 
 === "Beta preset"
 
+    <!-- TODO: new screenshot with similar form factor of the coupling one -->
+
     <figure>
       <center>
       <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_beta_preset.png" width="100%" alt="Global Correction Dialog, Beta Preset"/>
