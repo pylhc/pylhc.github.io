@@ -19,6 +19,7 @@ Buttons below this table provide functionality to manually load files and remove
 
         - ++"Link Model"++: creates a symlink to the original model folder. This is fragile, as the link breaks if the original folder is moved or deleted.
         - ++"Copy Model"++: copies all the model's files alongside the loaded analysis. This is the recommended option.
+        - ++"Close"++: closes the popup and drops the matter about the associated model. Can lead to out of sync models as well.
 
         Beware that loading an analysis **also loads its associated model**, which then becomes the active model in the GUI.
         Any new analysis performed afterwards will use this model unless it is changed: remember to switch back to the appropriate model before running further analyses.
