@@ -22,6 +22,7 @@ Buttons below this table provide functionality to manually load files and remove
 
         Beware that loading an analysis **also loads its associated model**, which then becomes the active model in the GUI.
         Any new analysis performed afterwards will use this model unless it is changed: remember to switch back to the appropriate model before running further analyses.
+        The currently active model (now the loaded one) is displayed in the [top bar of the GUI][cc_top], which is the quickest way to check the intended one is selected.
 
 - ++"Remove entries"++{.red-gui-button}: Removes the selected entries from the table. A dialogue will prompt to choose between removing only the entry from the table (recommended) or also deleting the associated files and folder from disk (which has its uses in case of incorrect analysis settings etc.).
 
