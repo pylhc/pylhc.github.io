@@ -82,7 +82,6 @@ The `Save Plots` row at the bottom left allows exporting the currently displayed
 - The ++"PDF"++ button exports starts a Python program to load the data, plots it via `matplotlib` with our custom styles, and export it as a `PDF` file. In this mode it is possible to set axes limits and assign custom labels to plotted measurements.
 
 In both cases a dialogue will pop up prompting the user to choose where on disk to create the file.
-<!-- TODO: confirm exactly what the "Gui" export format is / where files are written. -->
 
 <figure>
   <center>
