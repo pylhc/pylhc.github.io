@@ -251,8 +251,8 @@ Their meanings are:
 - **Iterations**: the maximum number of correction iterations to perform. At each re-iteration the model is recomputed.
 
 <!-- TODO: make sure this works, but it works fine in the omc3 global correction tests -->
-    <!-- !!! failure "No Iterative Correction"
-        Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented. -->
+<!-- !!! failure "No Iterative Correction"
+    Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented. -->
 
 - **Update Response**: only accessible if `Iterations>1`. If ticked (off by default), at each iteration recompute the response matrices analytically.
 - **Beta Filename**: the filename prefix of the disk files to use for the measured beta-function values. This defaults to using the beta from phase values rather than beta from amplitude.
