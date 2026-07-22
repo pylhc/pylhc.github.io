@@ -220,6 +220,13 @@ The last section is itself split in three parts.
 For each observable, a `Weights`, `ErrorCut` and `ModelCut` column can be ticket as well and values to be used can be manually entered in the relevant boxes.
 These values are directly passed on to the correction calculation process.
 
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_options_parameters_table.png" width="85%" alt="The Table Part of Options Section for Global Correction Dialogue"/>
+  <figcaption>The Table Part of Options Section for Global Correction Dialogue.</figcaption>
+  </center>
+</figure>
+
 **Finally** is a list of options to be selected or specified in order to control the solver process.
 They are:
 
