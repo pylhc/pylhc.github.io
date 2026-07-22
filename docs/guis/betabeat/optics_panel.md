@@ -256,7 +256,8 @@ Their meanings are:
 - **Beta Filename**: the filename prefix of the disk files to use for the measured beta-function values. This defaults to using the beta from phase values.
 - **Min Corrector Strength**: the minimum (absolute) strength of correctors to be used in the correction.
 - **Solver**: which optimisation method to use in the calculation. This defaults to `pinv` for pseudo-inverse matrix use, and can otherwise be `omp` for orthogonal matching pursuit, which is the basis of the `MICADO` algorithm.
-- **SVD-Cut**: the cutoff for small singular values of the pseudo inverse matrix (only available if choosing `pinv` solver). Any singular value smaller than $r_{\text{cond}} \times max(\text{singular values})$ will be set to 0 (where $r_{\text{cond}}$ is the provided SVD-Cut).
+- **SVD-Cut**: the cutoff for small singular values of the pseudo inverse matrix (only available when choosing `pinv` solver). Any singular value smaller than $r_{\text{cond}} \times max(\text{singular values})$ will be set to 0 (where $r_{\text{cond}}$ is the provided SVD-Cut).
+- **# Correctors**: the maximum number of correctors to use, only available when choosing the orthogonal matching pursuit solver.
 
 Clicking ++"Run Correction"++ computes the corrections and writes them to the `changeparameters` files, which store the magnet names and their correction strengths.
 These corrections can then be inspected and tested in the [Correction Panel][correction_panel]: see [checking corrections][correction_checks] on the next page.
