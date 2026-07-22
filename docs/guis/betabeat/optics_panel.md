@@ -150,7 +150,7 @@ It is organised in three parts.
 
 ### The Presets
 
-A the top of the dialogue, a dropdown offers presets (such as `Beta`, `Coupling`, etc.) that pre-fill the whole dialogue with default values for a given correction type.
+At the top of the dialogue, a dropdown offers presets (such as `Beta`, `Coupling`, etc.) that pre-fill the whole dialogue with default values for a given correction type.
 After choosing from the list, click the ++"Apply"++ button for the selected preset to take effect.
 
 <figure>
@@ -203,7 +203,7 @@ This is set by default to the options selected in the model creation.
 !!! tip "Full Response on the Fly"
     It is possible to create response matrices from the selected model by clicking the ++"MAD-X"++ button to the right of `Create from current model`.
     Please note that this will start the full response process but **will not give the option to choose the step size**.
-    To have this control, one need to generate response matrices during [model creation][model_creation].
+    To have this control, one needs to generate response matrices during [model creation][model_creation].
     The ++"Analytical"++ option is currently not implemented.
 
 Alternatively, any valid response file (in the expected `.hd5` format) can be loaded and used.
@@ -245,7 +245,7 @@ Their meanings are:
 
 - **Include errorbars as weights**: whether to take into account the measured error bars in the correction calculation. This is active by default.
 - **Arc-by-Arc Phase**: if this option (off by default) is selected, the solver will aim to correct the total phase advance per arc instead of correcting the phase advance between consecutive BPMs.
-- **Include IPs**: a dropdown list which lets one include IPs in the arc-by-arc phase correction. Providing`left` includes the IP left of the arc, and `right` includes the IP right of the arc. This has no selection by default.
+- **Include IPs**: a dropdown list which lets one include IPs in the arc-by-arc phase correction. Providing `left` includes the IP left of the arc, and `right` includes the IP right of the arc. This has no selection by default.
 - **Iterations**: the maximum number of correction iterations to perform. At each re-iteration the model is recomputed.
 
 !!! failure "No Iterative Correction"
@@ -258,7 +258,7 @@ Their meanings are:
 - **SVD-Cut**: the cutoff for small singular values of the pseudo inverse matrix (only available when choosing `pinv` solver). Any singular value smaller than $r_{\text{cond}} \times max(\text{singular values})$ will be set to 0 (where $r_{\text{cond}}$ is the provided SVD-Cut).
 - **# Correctors**: the maximum number of correctors to use, only available when choosing the orthogonal matching pursuit solver.
 
-Clicking ++"Run Correction"++{.green-gui-button} starts the python process which will write determined corrections to the `changeparameters` files in the correction directory.
+Clicking ++"Run Correction"++{.green-gui-button} starts the Python process which will write determined corrections to the `changeparameters` files in the correction directory.
 These files contain the magnet names and their correction strengths (powering changes).
 
 These corrections can then be inspected and tested in the [Correction Panel][correction_panel]: see [checking corrections][correction_checks] on the next page.
