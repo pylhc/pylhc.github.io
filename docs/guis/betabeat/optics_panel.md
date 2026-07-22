@@ -259,7 +259,9 @@ Their meanings are:
 - **SVD-Cut**: the cutoff for small singular values of the pseudo inverse matrix (only available when choosing `pinv` solver). Any singular value smaller than $r_{\text{cond}} \times max(\text{singular values})$ will be set to 0 (where $r_{\text{cond}}$ is the provided SVD-Cut).
 - **# Correctors**: the maximum number of correctors to use, only available when choosing the orthogonal matching pursuit solver.
 
-Clicking ++"Run Correction"++{.green-gui-button} computes the corrections and writes them to the `changeparameters` files, which store the magnet names and their correction strengths.
+Clicking ++"Run Correction"++{.green-gui-button} starts the python process which will write determined corrections to the `changeparameters` files in the correction directory.
+These files contain the magnet names and their correction strengths (powering changes).
+
 These corrections can then be inspected and tested in the [Correction Panel][correction_panel]: see [checking corrections][correction_checks] on the next page.
 
 *[SbS]: Segment-by-Segment
