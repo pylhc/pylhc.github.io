@@ -184,10 +184,8 @@ on the currently selected files in the BPM-Panel.
 Click the ++"Run"++ button to start the analysis.
 
 !!! warning "Parallelization"
-    Parallelization of the analysis is only implemented on the GUI side,
-    possibly starting multiple python processes.
-    Check the caveats of the _"Run Per-File Tasks in Parallel"_
-    setting in the _[GUI-Settings Tab](settings.md#gui-tab)_.
+    Parallelization of the analysis is only implemented on the GUI side, and on `harpy`'s side.
+    Check the caveats of the _"Run Per-File Tasks in Parallel"_ setting in the _[GUI-Settings Tab](settings.md#gui-tab)_.
 
 ### Harmonic Analysis
 
