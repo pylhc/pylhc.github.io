@@ -207,15 +207,16 @@ They are:
 - **Arc-by-Arc Phase**:
 - **Include IPs**:
 - **Iterations**:
+
+!!! failure "No Iterative Correction"
+    Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented.
+
 - **Update Response**:
 - **Beta Filename**:
 - **Mib Corrector Strength**:
 - **Solver**:
 - **SVD-Cut**:
 
-
-!!! failure "No Iterative Correction"
-    Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented.
 
 Clicking ++"Run Correction"++ computes the corrections and writes them to the `changeparameters` files, which store the magnet names and their correction strengths.
 These corrections can then be inspected and tested in the [Correction Panel][correction_panel]: see [checking corrections][correction_checks] on the next page.
