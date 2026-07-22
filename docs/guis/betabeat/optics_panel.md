@@ -134,7 +134,7 @@ Refer to the [Segment-by-Segment GUI pages][sbs_gui] for how to use the method.
 ## Computing Global Corrections
 
 Once the optics have been measured, one can compute a global correction to try and compensate the observed optics deviation throughout the whole machine.
-The ++"Correction"++{.green-gui-button} button opens the `Global Correction` dialogue, used to compute optics corrections from the loaded measurement and a response matrix.
+The ++"Correction"++{.green-gui-button} button, found with the loading buttons above the property tree, opens the `Global Correction` dialogue, used to compute optics corrections from the loaded measurement and a response matrix.
 It is organised into three parts.
 
 !!! warning "Full Response Needed"
