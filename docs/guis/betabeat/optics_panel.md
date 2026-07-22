@@ -262,11 +262,8 @@ These files contain the magnet names and their correction strengths (powering ch
 
 These corrections can then be inspected and tested in the [Correction Panel][correction_panel]: see [checking corrections][correction_checks] on the next page.
 
-*[SbS]: Segment-by-Segment
 *[RDT]: Resonance Driving Term
 *[RDTs]: Resonance Driving Terms
-*[CRDT]: Combined Resonance Driving Term
-*[CRDTs]: Combined Resonance Driving Terms
 *[GUI]: Graphical User Interface
 *[SVD]: Singular Value Decomposition
 
