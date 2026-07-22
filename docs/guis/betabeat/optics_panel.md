@@ -262,9 +262,11 @@ These files contain the magnet names and their correction strengths (powering ch
 
 These corrections can then be inspected and tested in the [Correction Panel][correction_panel]: see [checking corrections][correction_checks] on the next page.
 
+*[GUI]: Graphical User Interface
 *[RDT]: Resonance Driving Term
 *[RDTs]: Resonance Driving Terms
-*[GUI]: Graphical User Interface
+*[IP]: Interaction Point
+*[IPs]: Interaction Points
 *[SVD]: Singular Value Decomposition
 
 [betabeatsource]: betabeatsource.md#meaning-of-the-beta-beatsrc-output-files
