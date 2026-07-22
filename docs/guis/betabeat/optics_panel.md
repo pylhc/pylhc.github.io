@@ -138,7 +138,8 @@ The ++"Correction"++{.green-gui-button} button opens the `Global Correction` dia
 It is organised in three parts.
 
 !!! warning "Full Response Needed"
-    Please note that corrections require the creation of the response matrices (`Full Response` option) during [model creation][model_creation].
+    Please note that corrections require the existence of the response matrices (`Full Response` option during [model creation][model_creation]).
+    Should that have been forgotten or omitted, it can be done at this step as well, see the [full response](#full-response) section below.
 
 <figure>
   <center>
