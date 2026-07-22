@@ -191,8 +191,6 @@ Alternatively, any valid response file (in the expected `.hd5` format) can be lo
 
 ### Options
 
-<!-- TODO: hover check in the GUI to make sure about the options -->
-
 The last section is also split in three parts.
 
 1. First, it allows set the measurement and output directories (by default uses a `Corrections` subdirectory in the results folder) as well as the correction name (e.g. `changeparameters`).
