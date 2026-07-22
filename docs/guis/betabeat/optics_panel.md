@@ -220,7 +220,7 @@ The last section is itself split into three parts.
   </center>
 </figure>
 
-**Secondly**, an editable table lets the user choose which parameters to correct by ticking a box next to their name in the `Targets` column.
+**Second**, an editable table lets the user choose which parameters to correct by ticking a box next to their name in the `Targets` column.
 For each observable, a `Weights`, `ErrorCut` and `ModelCut` column can be ticked as well and values to be used can be manually entered in the relevant boxes.
 These values are directly passed on to the correction calculation process.
 
