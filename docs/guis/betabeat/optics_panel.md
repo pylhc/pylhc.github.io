@@ -187,8 +187,7 @@ This is set by default to the options selected in the model creation.
     To have this control, one need to generate response matrices during [model creation][model_creation].
     The ++"Analytical"++ option is currently not implemented.
 
-A different set of response matrices can be created on the side from the current model.
-Any valid response file can be loaded and used.
+Alternatively, any valid response file (in the expected `.hd5` format) can be loaded and used.
 
 ### Options
 
