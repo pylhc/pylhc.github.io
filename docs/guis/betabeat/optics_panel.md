@@ -54,7 +54,7 @@ The plot supports the usual [navigation and inspection shortcuts][cc_plotting] c
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel.png" width="100%" alt="Optics Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/panel.png" width="100%" alt="Optics Panel"/>
   <figcaption>The Optics panel, here showing the horizontal and vertical beta-beating for two loaded results.</figcaption>
   </center>
 </figure>
@@ -242,7 +242,7 @@ Their meanings are:
 - **Include errorbars as weights**: whether to take into account the measured error bars in the correction calculation. This is active by default.
 - **Arc-by-Arc Phase**: if this option (off by default) is selected, the solver will aim to correct the total phase advance per arc instead of correcting the phase advance between consecutive BPMs.
 - **Include IPs**: a dropdown list which lets one include IPs in the arc-by-arc phase correction. Providing`left` includes the IP left of the arc, and `right` includes the IP right of the arc. This has no selection by default.
-- **Iterations**:
+- **Iterations**: the maximum number of correction iterations to perform. At each re-iteration the model is recomputed.
 
 !!! failure "No Iterative Correction"
     Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented.
