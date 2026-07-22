@@ -2,7 +2,7 @@
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel.png" width="100%" alt="The BPM Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/panel.png" width="100%" alt="The BPM Panel"/>
   <figcaption>The BPM Panel.</figcaption>
   </center>
 </figure>
@@ -70,7 +70,7 @@ If you choose the **"DO NOT CONVERT"** option, the files are simply copied into 
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel_table.png" width="100%" alt="Table of loaded files"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/table.png" width="100%" alt="Table of loaded files"/>
   <figcaption>The Table of loaded files in the BPM Panel.</figcaption>
   </center>
 </figure>
@@ -116,7 +116,7 @@ You can select multiple measurements at once to compare them, but only one BPM p
 
     <figure>
     <center>
-    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel_tbt_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/tbt_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
     <figcaption>Turn-by-Turn view of BPM data with two measurements selected.</figcaption>
     </center>
     </figure>
@@ -125,7 +125,7 @@ You can select multiple measurements at once to compare them, but only one BPM p
 
     <figure>
     <center>
-    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel_phase_space.png" width="100%" alt="Phase space view of BPM data"/>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/phase_space.png" width="100%" alt="Phase space view of BPM data"/>
     <figcaption>Phase space view of BPM data.</figcaption>
     </center>
     </figure>
