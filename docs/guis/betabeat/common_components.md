@@ -36,7 +36,7 @@ All plots are running with the same back-end classes, which allows additional co
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/gui_top.png" width="100%" alt="The top of the GUI." />
+  <img src="../../assets/images/betabeat_gui/common_components/gui_top.png" width="100%" alt="The top of the GUI." />
   <figcaption>The top of the GUI.</figcaption>
   </center>
 </figure>
@@ -86,7 +86,7 @@ The most recent of these messages is also printed below, in the status bar.
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/log_viewer.png" width="100%" alt="Log Viewer." />
+  <img src="../../assets/images/betabeat_gui/common_components/log_viewer.png" width="100%" alt="Log Viewer." />
   <figcaption>Log viewer.</figcaption>
   </center>
 </figure>
@@ -139,7 +139,7 @@ They can be found at the top right of the dialogue, and hovering them will show 
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/open_files_folders.png" width="30%" alt="Special links in the file opening dialogues." />
+  <img src="../../assets/images/betabeat_gui/common_components/open_files_folders.png" width="30%" alt="Special links in the file opening dialogues." />
   <figcaption>Special links in the file opening dialogues.</figcaption>
   </center>
 </figure>
