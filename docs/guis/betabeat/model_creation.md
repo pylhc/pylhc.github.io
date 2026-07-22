@@ -7,7 +7,7 @@ This window can be opened at any time by clicking the **left-most button at the 
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/top_buttons.png" width="100%" alt="Icons at the top of the GUI." />
+  <img src="../../assets/images/betabeat_gui/settings/top_buttons.png" width="100%" alt="Icons at the top of the GUI." />
   <figcaption>Open the model creation window with the left-most button at the top, depicting a model.</figcaption>
   </center>
 </figure>
