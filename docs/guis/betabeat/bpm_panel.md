@@ -25,7 +25,7 @@ Use the ++"Open Files"++{.green-gui-button} button to open turn-by-turn data.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/open_files.png" width="95%" alt="Open Files Dialogue"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/open_files.png" width="95%" alt="Open Files Dialogue"/>
   <figcaption>The Open Files Dialogue.</figcaption>
   </center>
 </figure>
