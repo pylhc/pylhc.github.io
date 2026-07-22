@@ -14,14 +14,14 @@ Buttons below this table provide functionality to manually load files and remove
 
 - ++"Open Files"++{.green-gui-button}: Opens a dialogue to select one or more optics analysis output folders to be loaded. The files will be copied into the `Results` folder and opened from there. A popup will ask what to do about the associated model, see the admonition below.
 
-???+ warning "Associated Models"
-    As the import is done and the new popup asks for the action to perform regarding the loaded analysis' associated model, one can:
+    ???+ warning "Associated Models"
+        As the import is done and the new popup asks for the action to perform regarding the loaded analysis' associated model, one can:
 
-    - ++"Link Model"++: creates a symlink to the original model folder. This is fragile, as the link breaks if the original folder is moved or deleted.
-    - ++"Copy Model"++: copies all the model's files alongside the loaded analysis. This is the recommended option.
+        - ++"Link Model"++: creates a symlink to the original model folder. This is fragile, as the link breaks if the original folder is moved or deleted.
+        - ++"Copy Model"++: copies all the model's files alongside the loaded analysis. This is the recommended option.
 
-    Beware that loading an analysis **also loads its associated model**, which then becomes the active model in the GUI.
-    Any new analysis performed afterwards will use this model unless it is changed: remember to switch back to the appropriate model before running further analyses.
+        Beware that loading an analysis **also loads its associated model**, which then becomes the active model in the GUI.
+        Any new analysis performed afterwards will use this model unless it is changed: remember to switch back to the appropriate model before running further analyses.
 
 - ++"Remove entries"++{.red-gui-button}: Removes the selected entries from the table. A dialogue will prompt to choose between removing only the entry from the table (recommended) or also deleting the associated files and folder from disk (which has its uses in case of incorrect analysis settings etc.).
 
