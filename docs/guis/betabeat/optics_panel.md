@@ -228,7 +228,15 @@ These values are directly passed on to the correction calculation process.
 </figure>
 
 **Finally** is a list of options to be selected or specified in order to control the solver process.
-They are:
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_options_options.png" width="85%" alt="The Options Part of Options Section for Global Correction Dialogue"/>
+  <figcaption>The Options Part of Options Section for Global Correction Dialogue.</figcaption>
+  </center>
+</figure>
+
+Their meanings are:
 
 <!-- TODO: make a list.(e.g. `pinv`), the SVD cut, the number of iterations and similar parameters. -->
 - **Include errorbars as weights**: whether to take into account the measured error bars in the correction calculation. This is active by default.
