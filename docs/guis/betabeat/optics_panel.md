@@ -147,7 +147,7 @@ It is organised into three parts.
   </center>
 </figure>
 
-### The Presets
+### Presets
 
 At the top of the dialogue, a dropdown offers presets (such as `Beta`, `Coupling`, etc.) that pre-fill the whole dialogue with default values for a given correction type.
 After choosing from the list, click the ++"Apply"++ button for the selected preset to take effect.
