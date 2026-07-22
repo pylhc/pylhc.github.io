@@ -224,7 +224,7 @@ This will result in additional `*_best_knowledge.dat` twiss-output files, which 
 !!! warning "Java Issues and RBAC token"
     Due to Java misconfiguration in the CCC terminals there can be access-issues with the _online model extraction_,
     additional steps might need to be taken **before starting the GUI**.
-    For now, follow the [running in the CCC in 2025 instructions][running_in_the_ccc] and create a valid
+    For now, follow the [running in the CCC in 2026 instructions][running_in_the_ccc] and create a valid
     RBAC token via the button at the top of the GUI:
 
     <figure>
