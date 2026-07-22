@@ -207,13 +207,20 @@ Alternatively, any valid response file (in the expected `.hd5` format) can be lo
 
 The last section is itself split in three parts.
 
-1. First, it allows set the measurement and output directories (by default uses a `Corrections` subdirectory in the results folder) as well as the correction name (e.g. `changeparameters`).
+**First**, it allows set the measurement and output directories (by default uses a `Corrections` subdirectory in the results folder) as well as the correction name (e.g. `changeparameters`).
 
-2. Secondly, an editable table lets the user choose which parameters to correct by ticking a box next to their name in the `Targets` column.
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_options_measurements.png" width="85%" alt="The Measurements Part of Options Section for Global Correction Dialogue"/>
+  <figcaption>The Measurements Part of Options Section for Global Correction Dialogue.</figcaption>
+  </center>
+</figure>
+
+**Secondly**, an editable table lets the user choose which parameters to correct by ticking a box next to their name in the `Targets` column.
 For each observable, a `Weights`, `ErrorCut` and `ModelCut` column can be ticket as well and values to be used can be manually entered in the relevant boxes.
 These values are directly passed on to the correction calculation process.
 
-3. Finally is a list of options to be selected or specified in order to control the solver process.
+**Finally** is a list of options to be selected or specified in order to control the solver process.
 They are:
 
 <!-- TODO: make a list.(e.g. `pinv`), the SVD cut, the number of iterations and similar parameters. -->
