@@ -1,11 +1,9 @@
 # Settings Window
 
-<!-- TODO: figure out why this does not show in the build -->
-
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_guis/settings/top_buttons.png" width="100%" alt="Icons at the top of the GUI." />
-  <figcaption>Open the settings window with the white-on-blue gear icon <span class="settings-icon">&#9881;</span>.</figcaption>
+  <img src="../../assets/images/betabeat_gui/settings/top_buttons.png" width="100%" alt="Icons at the top of the GUI." />
+  <figcaption>Open the model creation window with the left-most button at the top, depicting a model.</figcaption>
   </center>
 </figure>
 
