@@ -191,7 +191,7 @@ Alternatively, any valid response file (in the expected `.hd5` format) can be lo
 
 ### Options
 
-The last section is also split in three parts.
+The last section is itself split in three parts.
 
 1. First, it allows set the measurement and output directories (by default uses a `Corrections` subdirectory in the results folder) as well as the correction name (e.g. `changeparameters`).
 
@@ -199,8 +199,15 @@ The last section is also split in three parts.
 For each observable, a `Weights`, `ErrorCut` and `ModelCut` column can be ticket as well and values to be used can be manually entered in the relevant boxes.
 These values are directly passed on to the correction calculation process.
 
-3. Finally, are the following options to control the solver process.
+3. Finally is a list of options to be selected or specified in order to control the solver process.
+They are:
+
 <!-- TODO: make a list.(e.g. `pinv`), the SVD cut, the number of iterations and similar parameters. -->
+- ew
+- dew
+- wef
+- wef
+- wef
 
 !!! failure "No Iterative Correction"
     Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented.
