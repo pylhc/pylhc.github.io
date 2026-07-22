@@ -183,6 +183,11 @@ The two tabs below show the same dialogue with two different presets applied.
       </center>
     </figure>
 
+!!! info "Tweak to Your Needs"
+    Note that there isn't a preset for every type of correction and one might need to tweak things to their needs.
+    For instance, one cannot select a preset to perform a chromatic coupling correction, but it can be done by providing the variable group of skew sextupole correctors.
+    Then tweaking the parameter table might be needed to obtain a satisfying correction.
+
 ### Full Response
 
 The second section offers to choose where to load the response matrices (a `FullResponse.hd5` file) and which correction `Variables` (knobs) to use.
