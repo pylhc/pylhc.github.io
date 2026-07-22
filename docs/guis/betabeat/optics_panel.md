@@ -97,7 +97,7 @@ It opens the `New Logbook Entry` dialogue, pre-filled with the analysis title as
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/create_elogbook_entry.png" width="90%" alt="New Logbook Entry Dialog"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/create_elogbook_entry.png" width="90%" alt="New Logbook Entry Dialogue"/>
   <figcaption>The new eLogbook entry dialogue, pre-filled from the selected results.</figcaption>
   </center>
 </figure>
@@ -116,8 +116,8 @@ The chosen directory should contain subdirectories named `IP*` with k-modulation
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/load_kmod.png" width="80%" alt="Load k-Modulation Data Dialog"/>
-  <figcaption>Selecting a k-modulation summary directory to load.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/load_kmod.png" width="80%" alt="Load k-Modulation Data Dialogue"/>
+  <figcaption>Selecting a k-modulation result directory to load.</figcaption>
   </center>
 </figure>
 
@@ -169,7 +169,7 @@ The two tabs below show the same dialogue with two different presets applied.
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_beta_preset.png" width="100%" alt="Global Correction Dialog, Beta Preset"/>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_beta_preset.png" width="100%" alt="Global Correction Dialogue, Beta Preset"/>
       <figcaption>The Global Correction dialogue with the <code>Beta</code> preset.</figcaption>
       </center>
     </figure>
@@ -178,7 +178,7 @@ The two tabs below show the same dialogue with two different presets applied.
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_coupling_preset.png" width="100%" alt="Global Correction Dialog, Coupling Preset"/>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_coupling_preset.png" width="100%" alt="Global Correction Dialogue, Coupling Preset"/>
       <figcaption>The Global Correction dialogue with the <code>Coupling</code> preset, targeting the <code>F1001</code> real and imaginary parts.</figcaption>
       </center>
     </figure>
