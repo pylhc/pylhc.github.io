@@ -383,7 +383,7 @@ which will calculate the optics parameters based on the spectra of the [currentl
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/do_optics_dialog_settings.png" width="100%" alt="The 'Do Optics' Dialogue with open settings"/>
+    <img src="../../assets/images/betabeat_gui/analysis_panel/do_optics_dialog_settings.png" width="100%" alt="The 'Do Optics' Dialogue with open settings"/>
     <figcaption>The "Do Optics" Dialogue with open settings.</figcaption>
     </center>
     </figure>
