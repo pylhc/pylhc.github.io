@@ -85,7 +85,7 @@ In both cases a dialogue will pop up prompting the user to choose where on disk 
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/plot_export.png" width="85%" alt="Optics Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/plot_export.png" width="85%" alt="PDF Plot Export Dialogue"/>
   <figcaption>Dialogue window with options for the PDF plot export.</figcaption>
   </center>
 </figure>
@@ -143,8 +143,8 @@ It is organised in three parts.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_default.png" width="80%" alt="Load k-Modulation Data Dialog"/>
-  <figcaption>Selecting a k-modulation summary directory to load.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_default.png" width="80%" alt="The Global Correction Dialogue"/>
+  <figcaption>The Global Correction dialogue as it opens, with its presets, full response and options sections.</figcaption>
   </center>
 </figure>
 
@@ -155,8 +155,8 @@ After choosing from the list, click the ++"Apply"++ button for the selected pres
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_preset_section.png" width="85%" alt="The Full Response Section for Global Correction Dialogue"/>
-  <figcaption>The Full Response Section for Global Correction Dialogue.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_preset_section.png" width="85%" alt="The Presets Section for Global Correction Dialogue"/>
+  <figcaption>The Presets Section for Global Correction Dialogue.</figcaption>
   </center>
 </figure>
 
@@ -195,8 +195,8 @@ This is set by default to the options selected in the model creation.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_fullresponse_section.png" width="85%" alt="The Presets Section for Global Correction Dialogue"/>
-  <figcaption>The Presets Section for Global Correction Dialogue.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_fullresponse_section.png" width="85%" alt="The Full Response Section for Global Correction Dialogue"/>
+  <figcaption>The Full Response Section for Global Correction Dialogue.</figcaption>
   </center>
 </figure>
 
