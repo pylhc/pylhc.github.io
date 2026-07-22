@@ -62,7 +62,7 @@ The plot supports the usual [navigation and inspection shortcuts][cc_plotting] c
 </figure>
 
 Most shown quantities are computed for both transverse planes and display two plots, one for each of horizontal and vertical.
-Some quantities such as the RDTs offer either a plot for each plane or an alternative layout, e.g. amplitude and phase.
+Some quantities offer alternative layouts, for instance RDTs can be plotted as either amplitude and phase or real and imaginary parts.
 
 Selecting several rows overlays them on the same plot, which allows comparing several measurements or analyses of the same measurements with different settings.
 Each result is assigned a consistent colour, shown in the plot legend to identify the corresponding curve.
