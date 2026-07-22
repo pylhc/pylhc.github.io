@@ -260,6 +260,7 @@ Their meanings are:
 
 Clicking ++"Run Correction"++{.green-gui-button} starts the Python process which will write determined corrections to the `changeparameters` files in the correction directory.
 These files contain the magnet names and their correction strengths (powering changes).
+Its progress can be followed in the [running tasks][cc_running_tasks], and any logs or errors will be reported in the [console][cc_console].
 
 These corrections can then be inspected and tested in the [Correction Panel][correction_panel]: see [checking corrections][correction_checks] on the next page.
 
@@ -271,7 +272,10 @@ These corrections can then be inspected and tested in the [Correction Panel][cor
 *[SVD]: Singular Value Decomposition
 
 [betabeatsource]: betabeatsource.md#meaning-of-the-beta-beatsrc-output-files
+[cc_top]: common_components.md#top-of-the-gui
 [cc_plotting]: common_components.md#plotting
+[cc_console]: common_components.md#console
+[cc_running_tasks]: common_components.md#running-tasks
 [cc_file_dialogues]: common_components.md#file-opening-dialogues
 [kmod_method]: ../../measurements/physics/kmod.md
 [kmod_gui]: ../kmod/gui.md
