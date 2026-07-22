@@ -248,7 +248,7 @@ Their meanings are:
     Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented.
 
 - **Update Response**: only accessible if `Iterations>1`. If ticked (off by default), at each iteration recompute the response matrices analytically. Also not implemented at the moment, since iteration is not implemented.
-- **Beta Filename**:
+- **Beta Filename**: the filename prefix of the disk files to use for the measured beta-function values. This defaults to using the beta from phase values.
 - **Mib Corrector Strength**:
 - **Solver**:
 - **SVD-Cut**:
