@@ -39,7 +39,7 @@ On the lower left a tree allows to choose which quantity to plot for the selecte
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_plot_parameters.png" width="50%" alt="Optics Property Tree"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/plot_parameters.png" width="50%" alt="Optics Property Tree"/>
   <figcaption>The property tree, here with the dynamically added RDTs branch.</figcaption>
   </center>
 </figure>
@@ -85,7 +85,7 @@ In both cases a dialogue will pop up prompting the user to choose where on disk 
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_plot_export.png" width="85%" alt="Optics Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/plot_export.png" width="85%" alt="Optics Panel"/>
   <figcaption>Dialogue window with options for the PDF plot export.</figcaption>
   </center>
 </figure>
@@ -97,7 +97,7 @@ It opens the `New Logbook Entry` dialogue, pre-filled with the analysis title as
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_create_elogbook_entry.png" width="90%" alt="New Logbook Entry Dialog"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/create_elogbook_entry.png" width="90%" alt="New Logbook Entry Dialog"/>
   <figcaption>The new eLogbook entry dialogue, pre-filled from the selected results.</figcaption>
   </center>
 </figure>
@@ -116,7 +116,7 @@ The chosen directory should contain subdirectories named `IP*` with k-modulation
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_load_kmod.png" width="80%" alt="Load k-Modulation Data Dialog"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/load_kmod.png" width="80%" alt="Load k-Modulation Data Dialog"/>
   <figcaption>Selecting a k-modulation summary directory to load.</figcaption>
   </center>
 </figure>
@@ -143,7 +143,7 @@ It is organised in three parts.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_default.png" width="80%" alt="Load k-Modulation Data Dialog"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_default.png" width="80%" alt="Load k-Modulation Data Dialog"/>
   <figcaption>Selecting a k-modulation summary directory to load.</figcaption>
   </center>
 </figure>
@@ -162,7 +162,7 @@ The two tabs below show the same dialogue with two different presets applied.
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_beta_preset.png" width="100%" alt="Global Correction Dialog, Beta Preset"/>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_beta_preset.png" width="100%" alt="Global Correction Dialog, Beta Preset"/>
       <figcaption>The Global Correction dialogue with the <code>Beta</code> preset.</figcaption>
       </center>
     </figure>
@@ -171,7 +171,7 @@ The two tabs below show the same dialogue with two different presets applied.
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel_global_correction_coupling_preset.png" width="100%" alt="Global Correction Dialog, Coupling Preset"/>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_coupling_preset.png" width="100%" alt="Global Correction Dialog, Coupling Preset"/>
       <figcaption>The Global Correction dialogue with the <code>Coupling</code> preset, targeting the <code>F1001</code> real and imaginary parts.</figcaption>
       </center>
     </figure>
