@@ -121,7 +121,7 @@ The chosen directory should contain subdirectories named `IP*` with k-modulation
   </center>
 </figure>
 
-The imported [k-modulation][kmod_method] results will be imported and superseed the optics functions at the inner triplet BPMs and add a data point at IP locations.
+The imported [k-modulation][kmod_method] results will supersede the optics functions at the inner triplet BPMs and add a data point at IP locations.
 This is advantageous considering the k-modulation results are more accurate than optics measurements in these areas.
 See the [K-Modulation GUI][kmod_gui] pages to run a k-modulation.
 
@@ -222,7 +222,7 @@ The last section is itself split in three parts.
 </figure>
 
 **Secondly**, an editable table lets the user choose which parameters to correct by ticking a box next to their name in the `Targets` column.
-For each observable, a `Weights`, `ErrorCut` and `ModelCut` column can be ticket as well and values to be used can be manually entered in the relevant boxes.
+For each observable, a `Weights`, `ErrorCut` and `ModelCut` column can be ticked as well and values to be used can be manually entered in the relevant boxes.
 These values are directly passed on to the correction calculation process.
 
 <figure>
