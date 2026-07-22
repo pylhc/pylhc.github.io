@@ -247,8 +247,8 @@ Their meanings are:
 - **Include IPs**: a dropdown list which lets one include IPs in the arc-by-arc phase correction. Providing `left` includes the IP left of the arc, and `right` includes the IP right of the arc. This has no selection by default.
 - **Iterations**: the maximum number of correction iterations to perform. At each re-iteration the model is recomputed.
 
-!!! failure "No Iterative Correction"
-    Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented.
+    !!! failure "No Iterative Correction"
+        Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented.
 
 - **Update Response**: only accessible if `Iterations>1`. If ticked (off by default), at each iteration recompute the response matrices analytically. Also not implemented at the moment, since iteration is not implemented.
 - **Beta Filename**: the filename prefix of the disk files to use for the measured beta-function values. This defaults to using the beta from phase values.
