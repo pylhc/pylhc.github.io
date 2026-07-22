@@ -40,7 +40,7 @@ On the lower left a tree allows to choose which quantity to plot for the selecte
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/plot_parameters.png" width="50%" alt="Optics Property Tree"/>
-  <figcaption>The property tree, here with the dynamically added RDTs branch.</figcaption>
+  <figcaption>The property tree, here with the dynamically added <code>RDTs</code> branch.</figcaption>
   </center>
 </figure>
 
@@ -55,7 +55,7 @@ The plot supports the usual [navigation and inspection shortcuts][cc_plotting] c
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/optics_panel.png" width="100%" alt="Optics Panel"/>
-  <figcaption>The Optics panel, here showing the horizontal and vertical beta-beating for two loaded results.</figcaption>
+  <figcaption>The <code>Optics</code> panel, here showing the horizontal and vertical beta-beating for two loaded results.</figcaption>
   </center>
 </figure>
 
@@ -86,7 +86,7 @@ In both cases a dialogue will pop up prompting the user to choose where on disk 
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/plot_export.png" width="85%" alt="PDF Plot Export Dialogue"/>
-  <figcaption>Dialogue window with options for the PDF plot export.</figcaption>
+  <figcaption>Dialogue window with options for the <code>PDF</code> plot export.</figcaption>
   </center>
 </figure>
 
@@ -98,7 +98,7 @@ It opens the `New Logbook Entry` dialogue, pre-filled with the analysis title as
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/create_elogbook_entry.png" width="90%" alt="New Logbook Entry Dialogue"/>
-  <figcaption>The new eLogbook entry dialogue, pre-filled from the selected results.</figcaption>
+  <figcaption>The <code>New Logbook Entry</code> dialogue, pre-filled from the selected results.</figcaption>
   </center>
 </figure>
 
@@ -144,7 +144,7 @@ It is organised in three parts.
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_default.png" width="80%" alt="The Global Correction Dialogue"/>
-  <figcaption>The Global Correction dialogue as it opens, with its presets, full response and options sections.</figcaption>
+  <figcaption>The <code>Global Correction</code> dialogue as it opens, with its presets, full response and options sections.</figcaption>
   </center>
 </figure>
 
@@ -156,7 +156,7 @@ After choosing from the list, click the ++"Apply"++ button for the selected pres
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_preset_section.png" width="85%" alt="The Presets Section of the Global Correction Dialogue"/>
-  <figcaption>The presets section, with the dropdown of available presets and the Apply button.</figcaption>
+  <figcaption>The presets section, with the dropdown of available presets and the <code>Apply</code> button.</figcaption>
   </center>
 </figure>
 
@@ -196,7 +196,7 @@ This is set by default to the options selected in the model creation.
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_fullresponse_section.png" width="85%" alt="The Full Response Section of the Global Correction Dialogue"/>
-  <figcaption>The full response section, where the response matrices file and the correction variables are chosen.</figcaption>
+  <figcaption>The full response section, where the response matrices file and the correction <code>Variables</code> are chosen.</figcaption>
   </center>
 </figure>
 
@@ -228,7 +228,7 @@ These values are directly passed on to the correction calculation process.
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_options_parameters_table.png" width="85%" alt="The Parameters Table of the Options Section"/>
-  <figcaption>The second part of the options section, where the parameters to correct are ticked and their weights and cuts set.</figcaption>
+  <figcaption>The second part of the options section, where the parameters to correct are ticked in the <code>Targets</code> column and their <code>Weights</code>, <code>ErrorCut</code> and <code>ModelCut</code> values set.</figcaption>
   </center>
 </figure>
 
