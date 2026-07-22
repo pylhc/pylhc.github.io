@@ -50,7 +50,7 @@ On the lower left a tree allows to choose which quantity to plot for the selecte
     Similarly, normalised dispersion results are only available after on-off momentum analysis.
     Any of these quantities that was not computed during the analysis will therefore not appear in the tree.
 
-Selecting a quantity plots it in the right part of the window for the selected result(s) across the longitudinal location in the machine.
+When selecting a quantity, its values appear in the plot area in the right part of the window, across the longitudinal location in the machine.
 Interaction Points are marked along the top and a collapsible legend identifying each result is added.
 The plot supports the usual [navigation and inspection shortcuts][cc_plotting] common to all panels.
 
