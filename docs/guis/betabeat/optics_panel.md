@@ -249,7 +249,7 @@ Their meanings are:
 
 - **Update Response**: only accessible if `Iterations>1`. If ticked (off by default), at each iteration recompute the response matrices analytically. Also not implemented at the moment, since iteration is not implemented.
 - **Beta Filename**: the filename prefix of the disk files to use for the measured beta-function values. This defaults to using the beta from phase values.
-- **Min Corrector Strength**:
+- **Min Corrector Strength**: the minimum (absolute) strength of correctors to be used in the correction.
 - **Solver**:
 - **SVD-Cut**:
 
