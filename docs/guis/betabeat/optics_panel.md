@@ -155,8 +155,8 @@ After choosing from the list, click the ++"Apply"++ button for the selected pres
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_preset_section.png" width="85%" alt="The Presets Section for Global Correction Dialogue"/>
-  <figcaption>The Presets Section for Global Correction Dialogue.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_preset_section.png" width="85%" alt="The Presets Section of the Global Correction Dialogue"/>
+  <figcaption>The presets section, with the dropdown of available presets and the Apply button.</figcaption>
   </center>
 </figure>
 
@@ -195,8 +195,8 @@ This is set by default to the options selected in the model creation.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_fullresponse_section.png" width="85%" alt="The Full Response Section for Global Correction Dialogue"/>
-  <figcaption>The Full Response Section for Global Correction Dialogue.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_fullresponse_section.png" width="85%" alt="The Full Response Section of the Global Correction Dialogue"/>
+  <figcaption>The full response section, where the response matrices file and the correction variables are chosen.</figcaption>
   </center>
 </figure>
 
@@ -216,8 +216,8 @@ The last section is itself split in three parts.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_options_measurements.png" width="85%" alt="The Measurements Part of Options Section for Global Correction Dialogue"/>
-  <figcaption>The Measurements Part of Options Section for Global Correction Dialogue.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_options_measurements.png" width="85%" alt="The Measurements Part of the Options Section"/>
+  <figcaption>The first part of the options section, setting the measurement and output directories and the correction name.</figcaption>
   </center>
 </figure>
 
@@ -227,8 +227,8 @@ These values are directly passed on to the correction calculation process.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_options_parameters_table.png" width="85%" alt="The Table Part of Options Section for Global Correction Dialogue"/>
-  <figcaption>The Table Part of Options Section for Global Correction Dialogue.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_options_parameters_table.png" width="85%" alt="The Parameters Table of the Options Section"/>
+  <figcaption>The second part of the options section, where the parameters to correct are ticked and their weights and cuts set.</figcaption>
   </center>
 </figure>
 
@@ -236,8 +236,8 @@ These values are directly passed on to the correction calculation process.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_options_options.png" width="85%" alt="The Options Part of Options Section for Global Correction Dialogue"/>
-  <figcaption>The Options Part of Options Section for Global Correction Dialogue.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_options_options.png" width="85%" alt="The Solver Options of the Options Section"/>
+  <figcaption>The last part of the options section, controlling the solver process.</figcaption>
   </center>
 </figure>
 
@@ -259,7 +259,7 @@ Their meanings are:
 - **SVD-Cut**: the cutoff for small singular values of the pseudo inverse matrix (only available when choosing `pinv` solver). Any singular value smaller than $r_{\text{cond}} \times max(\text{singular values})$ will be set to 0 (where $r_{\text{cond}}$ is the provided SVD-Cut).
 - **# Correctors**: the maximum number of correctors to use, only available when choosing the orthogonal matching pursuit solver.
 
-Clicking ++"Run Correction"++ computes the corrections and writes them to the `changeparameters` files, which store the magnet names and their correction strengths.
+Clicking ++"Run Correction"++{.green-gui-button} computes the corrections and writes them to the `changeparameters` files, which store the magnet names and their correction strengths.
 These corrections can then be inspected and tested in the [Correction Panel][correction_panel]: see [checking corrections][correction_checks] on the next page.
 
 *[SbS]: Segment-by-Segment
