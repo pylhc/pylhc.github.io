@@ -2,7 +2,7 @@
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/panel.png" width="100%" alt="The BPM Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/bpm_panel.png" width="100%" alt="The BPM Panel"/>
   <figcaption>The BPM Panel.</figcaption>
   </center>
 </figure>

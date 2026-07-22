@@ -54,7 +54,7 @@ The plot supports the usual [navigation and inspection shortcuts][cc_plotting] c
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/panel.png" width="100%" alt="Optics Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/optics_panel.png" width="100%" alt="Optics Panel"/>
   <figcaption>The Optics panel, here showing the horizontal and vertical beta-beating for two loaded results.</figcaption>
   </center>
 </figure>

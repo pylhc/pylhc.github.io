@@ -4,7 +4,7 @@ The analysis panel provides graphical interface to visualise results from [harmo
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel/panel.png" width="100%" alt="The Analysis Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel/analysis_panel.png" width="100%" alt="The Analysis Panel"/>
   <figcaption>The Analysis Panel.</figcaption>
   </center>
 </figure>
