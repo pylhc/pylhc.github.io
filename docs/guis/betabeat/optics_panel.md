@@ -15,8 +15,7 @@ Buttons below this table provide functionality to manually load files and remove
 - ++"Open Files"++{.green-gui-button}: Opens a dialogue to select one or more optics analysis output folders to be loaded. The files will be copied into the `Results` folder and opened from there. A popup will ask what to do about the associated model, see the admonition below.
 
 ???+ warning "Associated Models"
-    A popup will ask for the action to perform regarding the loaded analysis' associated model.
-    One can either:
+    As the import is done and the new popup asks for the action to perform regarding the loaded analysis' associated model, one can:
 
     - ++"Link Model"++: creates a symlink to the original model folder. This is fragile, as the link breaks if the original folder is moved or deleted.
     - ++"Copy Model"++: copies all the model's files alongside the loaded analysis. This is the recommended option.
