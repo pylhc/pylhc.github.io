@@ -198,7 +198,8 @@ The last section is also split in three parts.
 1. First, it allows set the measurement and output directories (by default uses a `Corrections` subdirectory in the results folder) as well as the correction name (e.g. `changeparameters`).
 
 2. Secondly, an editable table lets the user choose which parameters to correct by ticking a box next to their name in the `Targets` column.
-for each observable, a `Weights`, `ErrorCut` and `ModelCut` value to be used in the correction calculation.
+For each observable, a `Weights`, `ErrorCut` and `ModelCut` column can be ticket as well and values to be used can be manually entered in the relevant boxes.
+These values are directly passed on to the correction calculation process.
 
 3. Finally, are the following options to control the solver process.
 <!-- TODO: make a list.(e.g. `pinv`), the SVD cut, the number of iterations and similar parameters. -->
