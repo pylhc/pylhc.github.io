@@ -155,8 +155,8 @@ After choosing from the list, click the ++"Apply"++ button for the selected pres
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_preset_section.png" width="80%" alt="The Presets Section for Global Correction Dialogue"/>
-  <figcaption>The Presets Section for Global Correction Dialogue.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_preset_section.png" width="85%" alt="The Full Response Section for Global Correction Dialogue"/>
+  <figcaption>The Full Response Section for Global Correction Dialogue.</figcaption>
   </center>
 </figure>
 
@@ -187,6 +187,13 @@ The two tabs below show the same dialogue with two different presets applied.
 
 The second section offers to choose where to load the response matrices (a `FullResponse.hd5` file) and which correction `Variables` (knobs) to use.
 This is set by default to the options selected in the model creation.
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_fullresponse_section.png" width="85%" alt="The Presets Section for Global Correction Dialogue"/>
+  <figcaption>The Presets Section for Global Correction Dialogue.</figcaption>
+  </center>
+</figure>
 
 !!! tip "Full Response on the Fly"
     It is possible to create response matrices from the selected model by clicking the ++"MAD-X"++ button to the right of `Create from current model`.
