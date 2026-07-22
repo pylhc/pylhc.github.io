@@ -203,8 +203,8 @@ These values are directly passed on to the correction calculation process.
 They are:
 
 <!-- TODO: make a list.(e.g. `pinv`), the SVD cut, the number of iterations and similar parameters. -->
-- **Include errorbars as weights**:
-- **Arc-by-Arc Phase**:
+- **Include errorbars as weights**: whether to take into account the measured error bars in the correction calculation. This is active by default.
+- **Arc-by-Arc Phase**: if this option (off by default) is selected, the solver will aim to correct the total phase advance per arc instead of correcting the phase advance between consecutive BPMs.
 - **Include IPs**:
 - **Iterations**:
 
