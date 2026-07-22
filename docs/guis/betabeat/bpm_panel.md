@@ -174,7 +174,7 @@ The **"Run optics as well"** checkbox will define whether the [_"Optics Analysis
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialogue with open settings"/>
+    <img src="../../assets/images/betabeat_gui/bpm_panel/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialogue with open settings"/>
     <figcaption>The Do-Analysis Dialogue with open settings.</figcaption>
     </center>
     </figure>
