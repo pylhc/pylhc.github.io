@@ -45,9 +45,10 @@ On the lower left a tree allows to choose which quantity to plot for the selecte
   </center>
 </figure>
 
-!!! tip "Dynamic RDT Entries"
+!!! tip "Dynamic Entries"
     While linear optics are always computed and present, the `RDTs` and `CRDTs` branches are added dynamically, depending on which files are present in the results folders.
-    A quantity that was not computed during the analysis will therefore not appear in the tree.
+    Similarly, normalised dispersion results are only available after on-off momentum analysis.
+    Any of these quantities that was not computed during the analysis will therefore not appear in the tree.
 
 Selecting a quantity plots it in the right part of the window for the selected result(s) across the longitudinal location in the machine.
 Interaction Points are marked along the top and a collapsible legend identifying each result is added.
