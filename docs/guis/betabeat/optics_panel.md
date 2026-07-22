@@ -254,7 +254,7 @@ Their meanings are:
         Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented.
 
 - **Update Response**: only accessible if `Iterations>1`. If ticked (off by default), at each iteration recompute the response matrices analytically. Also not implemented at the moment, since iteration is not implemented.
-- **Beta Filename**: the filename prefix of the disk files to use for the measured beta-function values. This defaults to using the beta from phase values.
+- **Beta Filename**: the filename prefix of the disk files to use for the measured beta-function values. This defaults to using the beta from phase values rather than beta from amplitude.
 - **Min Corrector Strength**: the minimum (absolute) strength of correctors to be used in the correction.
 - **Solver**: which optimisation method to use in the calculation. This defaults to `pinv` for pseudo-inverse matrix use, and can otherwise be `omp` for orthogonal matching pursuit, which is the basis of the `MICADO` algorithm.
 - **SVD-Cut**: the cutoff for small singular values of the pseudo inverse matrix (only available when choosing `pinv` solver). Any singular value smaller than $r_{\text{cond}} \times max(\text{singular values})$ will be set to 0 (where $r_{\text{cond}}$ is the provided SVD-Cut).
