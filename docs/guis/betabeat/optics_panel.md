@@ -247,7 +247,7 @@ Their meanings are:
 !!! failure "No Iterative Correction"
     Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented.
 
-- **Update Response**:
+- **Update Response**: only accessible if `Iterations>1`. If ticked (off by default), at each iteration recompute the response matrices analytically. Also not implemented at the moment, since iteration is not implemented.
 - **Beta Filename**:
 - **Mib Corrector Strength**:
 - **Solver**:
