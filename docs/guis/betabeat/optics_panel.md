@@ -203,11 +203,16 @@ These values are directly passed on to the correction calculation process.
 They are:
 
 <!-- TODO: make a list.(e.g. `pinv`), the SVD cut, the number of iterations and similar parameters. -->
-- ew
-- dew
-- wef
-- wef
-- wef
+- **Include errorbars as weights**:
+- **Arc-by-Arc Phase**:
+- **Include IPs**:
+- **Iterations**:
+- **Update Response**:
+- **Beta Filename**:
+- **Mib Corrector Strength**:
+- **Solver**:
+- **SVD-Cut**:
+
 
 !!! failure "No Iterative Correction"
     Currently the `Iterative Correction` method (triggered by providing `n > 1` for the `Iterations` parameter) is not implemented.
