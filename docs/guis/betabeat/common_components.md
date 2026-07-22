@@ -13,7 +13,7 @@ All plots are running with the same back-end classes, which allows additional co
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/plot_with_hover.png" width="100%" alt="Beta-Beating Plot with BPM hover info." />
+  <img src="../../assets/images/betabeat_gui/common_components/plot_with_hover.png" width="100%" alt="Beta-Beating Plot with BPM hover info." />
   <figcaption>Hover info on a Beta-Beating Plot.</figcaption>
   </center>
 </figure>
@@ -108,7 +108,7 @@ additional logging information will be printed to the terminal.
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/running_tasks.png" width="100%" alt="Running tasks." />
+  <img src="../../assets/images/betabeat_gui/common_components/running_tasks.png" width="100%" alt="Running tasks." />
   <figcaption>Running Tasks.</figcaption>
   </center>
 </figure>
