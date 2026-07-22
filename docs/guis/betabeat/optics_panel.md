@@ -134,7 +134,7 @@ Refer to the [Segment-by-Segment GUI pages][sbs_gui] for how to use the method.
 
 Once the optics have been measured, one can compute a global correction to try and compensate the observed optics deviation throughout the whole machine.
 The ++"Correction"++{.green-gui-button} button opens the `Global Correction` dialogue, used to compute optics corrections from the loaded measurement and a response matrix.
-It is organised in three parts.
+It is organised into three parts.
 
 !!! warning "Full Response Needed"
     Please note that corrections require the existence of the response matrices (`Full Response` option during [model creation][model_creation]).
@@ -209,7 +209,7 @@ Alternatively, any valid response file (in the expected `.hd5` format) can be lo
 
 ### Options
 
-The last section is itself split in three parts.
+The last section is itself split into three parts.
 
 **First**, it allows setting the measurement and output directories (by default uses a `Corrections` subdirectory in the results folder) as well as the correction name (e.g. `changeparameters`).
 
