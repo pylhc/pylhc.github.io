@@ -153,6 +153,13 @@ It is organised in three parts.
 A the top of the dialogue, a dropdown at offers presets (such as `Beta`, `Coupling`, etc.) that pre-fill the whole dialogue with default values for a given correction type.
 After choosing from the list, click the ++"Apply"++ button for the selected preset to take effect.
 
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/global_correction_preset_section.png" width="80%" alt="The Presets Section for Global Correction Dialogue"/>
+  <figcaption>The Presets Section for Global Correction Dialogue.</figcaption>
+  </center>
+</figure>
+
 It is possible at any point to export the current option choices for the full dialogue as a personnal preset with the ++"Save to File"++ button.
 Similarly, it is possible to apply previously saved ones with ++"Load from File"++ which will open a .
 
