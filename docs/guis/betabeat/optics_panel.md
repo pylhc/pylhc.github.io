@@ -79,7 +79,7 @@ Below the property tree are several buttons for additional actions.
 The `Save Plots` row at the bottom left allows exporting the currently displayed plots, in one of two ways:
 
 - The ++"Gui"++ button saves them in the native GUI format, a.k.a. a `PNG` image similar to taking a screenshot of the plots area.
-- The ++"PDF"++ button exports starts a Python program to load the data, plots it via `matplotlib` with our custom styles, and export it as a `PDF` file. In this mode it is possible to set axes limits and assign custom labels to plotted measurements.
+- The ++"PDF"++ button starts a Python program to load the data, plots it via `matplotlib` with our custom styles, and export it as a `PDF` file. In this mode it is possible to set axes limits and assign custom labels to plotted measurements.
 
 In both cases a dialogue will pop up prompting the user to choose where on disk to create the file.
 
@@ -92,7 +92,7 @@ In both cases a dialogue will pop up prompting the user to choose where on disk 
 
 ### Creating an eLogbook Entry
 
-The ++"Create eLogBook entry"++ button is a shotcut to generate an optics analysis entry in the logbook.
+The ++"Create eLogBook entry"++ button is a shortcut to generate an optics analysis entry in the logbook.
 It opens the `New Logbook Entry` dialogue, pre-filled with the analysis title as well as the model and measurement paths of the selected result(s).
 
 <figure>
@@ -150,7 +150,7 @@ It is organised in three parts.
 
 ### The Presets
 
-A the top of the dialogue, a dropdown at offers presets (such as `Beta`, `Coupling`, etc.) that pre-fill the whole dialogue with default values for a given correction type.
+A the top of the dialogue, a dropdown offers presets (such as `Beta`, `Coupling`, etc.) that pre-fill the whole dialogue with default values for a given correction type.
 After choosing from the list, click the ++"Apply"++ button for the selected preset to take effect.
 
 <figure>
@@ -160,8 +160,8 @@ After choosing from the list, click the ++"Apply"++ button for the selected pres
   </center>
 </figure>
 
-It is possible at any point to export the current option choices for the full dialogue as a personnal preset with the ++"Save to File"++ button.
-Similarly, it is possible to apply previously saved ones with ++"Load from File"++ which will open a .
+It is possible at any point to export the current option choices for the full dialogue as a personal preset with the ++"Save to File"++ button.
+Similarly, it is possible to apply previously saved ones with ++"Load from File"++ which will open a file selection dialogue.
 
 The two tabs below show the same dialogue with two different presets applied.
 
@@ -202,7 +202,7 @@ This is set by default to the options selected in the model creation.
 
 !!! tip "Full Response on the Fly"
     It is possible to create response matrices from the selected model by clicking the ++"MAD-X"++ button to the right of `Create from current model`.
-    Please not that this will start the full response process but **will not give the option to choose the step size**.
+    Please note that this will start the full response process but **will not give the option to choose the step size**.
     To have this control, one need to generate response matrices during [model creation][model_creation].
     The ++"Analytical"++ option is currently not implemented.
 
@@ -212,7 +212,7 @@ Alternatively, any valid response file (in the expected `.hd5` format) can be lo
 
 The last section is itself split in three parts.
 
-**First**, it allows set the measurement and output directories (by default uses a `Corrections` subdirectory in the results folder) as well as the correction name (e.g. `changeparameters`).
+**First**, it allows setting the measurement and output directories (by default uses a `Corrections` subdirectory in the results folder) as well as the correction name (e.g. `changeparameters`).
 
 <figure>
   <center>
