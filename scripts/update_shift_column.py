@@ -13,8 +13,8 @@ source of truth. Update the constants or ``CERN_HOLIDAYS`` there and re-run this
 
 Usage
 -----
-    python -m scripts.update_shift_column docs/logbook/LHC/2025_lhc.md ...
-    python -m scripts.update_shift_column --check docs/logbook/LHC/*.md   # dry-run
+    uv run scripts/update_shift_column.py docs/logbook/LHC/2025_lhc.md ...
+    uv run scripts/update_shift_column.py --check docs/logbook/LHC/*.md   # dry-run
 """
 
 from __future__ import annotations
@@ -22,9 +22,9 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-# Reuse the canonical shift model + holidays (single source of truth). Run this
-# as a module from the repo root, e.g. `python -m scripts.update_shift_column`.
-from scripts.shift_model import (
+# Reuse the canonical shift model + holidays (single source of truth). This is a
+# sibling module: `uv run` puts this file's directory on sys.path automatically.
+from shift_model import (
     ALL_SHIFTS,
     COLUMN_END,
     COLUMN_SHIFTS,

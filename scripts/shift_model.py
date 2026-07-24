@@ -12,7 +12,7 @@ dependencies so it can be imported by both the plotting layer
 
 Run it directly to execute the unit tests::
 
-    python -m scripts.shift_model
+    uv run scripts/shift_model.py
 """
 
 from __future__ import annotations

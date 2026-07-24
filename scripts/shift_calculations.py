@@ -24,10 +24,10 @@ import matplotlib as mpl
 from matplotlib import pyplot as plt
 from matplotlib.figure import Figure
 
-# Reuse the core shift model + table parser (single source of truth). Run these
-# scripts as a module from the repo root, e.g. `python -m scripts.shift_calculations`.
-from scripts.parse_md_table import parse_file
-from scripts.shift_model import (
+# Reuse the core shift model + table parser (single source of truth). These are
+# sibling modules: `uv run` puts this file's directory on sys.path automatically.
+from parse_md_table import parse_file
+from shift_model import (
     ALL_SHIFTS,
     COLUMN_END,
     COLUMN_SHIFTS,
