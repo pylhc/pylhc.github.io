@@ -7,7 +7,7 @@ This window can be opened at any time by clicking the **left-most button at the 
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/top_buttons.png" width="100%" alt="Icons at the top of the GUI." />
+  <img src="../../assets/images/betabeat_gui/settings/top_buttons.png" width="100%" alt="Icons at the top of the GUI." />
   <figcaption>Open the model creation window with the left-most button at the top, depicting a model.</figcaption>
   </center>
 </figure>
@@ -20,7 +20,7 @@ accelerator sub-folder selected in the [beam selection window](beam_selection.md
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/model_creation_window.png" width="100%" alt="Model selection window." />
+    <img src="../../assets/images/betabeat_gui/model_creation/model_creation_window.png" width="100%" alt="Model selection window." />
     <figcaption>Blank Model selection window.</figcaption>
     </center>
     </figure>
@@ -29,7 +29,7 @@ accelerator sub-folder selected in the [beam selection window](beam_selection.md
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/model_creation_with_model.png" width="100%" alt="Model selection window with created model." />
+    <img src="../../assets/images/betabeat_gui/model_creation/model_creation_with_model.png" width="100%" alt="Model selection window with created model." />
     <figcaption>Model selection window with a created model</figcaption>
     </center>
     </figure>
@@ -167,7 +167,7 @@ If any [extraction](#extraction-lhc) is selected, these tasks will run first and
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/model_creation_lhc.png" width="500px" alt="Model creation window for LHC Beam1." />
+  <img src="../../assets/images/betabeat_gui/model_creation/model_creation_lhc.png" width="500px" alt="Model creation window for LHC Beam1." />
   <figcaption>Model creation window for the LHC.</figcaption>
   </center>
 </figure>
@@ -224,12 +224,12 @@ This will result in additional `*_best_knowledge.dat` twiss-output files, which 
 !!! warning "Java Issues and RBAC token"
     Due to Java misconfiguration in the CCC terminals there can be access-issues with the _online model extraction_,
     additional steps might need to be taken **before starting the GUI**.
-    For now, follow the [running in the CCC in 2025 instructions][running_in_the_ccc] and create a valid
+    For now, follow the [running in the CCC in 2026 instructions][running_in_the_ccc] and create a valid
     RBAC token via the button at the top of the GUI:
 
     <figure>
       <center>
-      <img src="../../assets/images/betabeat_gui/rbac.png" alt="RBAC GUI elements" width="50%"/>
+      <img src="../../assets/images/betabeat_gui/model_creation/rbac.png" alt="RBAC GUI elements" width="50%"/>
       <figcaption>RBAC GUI-Element (No Token).</figcaption>
       </center>
     </figure>
@@ -238,7 +238,7 @@ This will result in additional `*_best_knowledge.dat` twiss-output files, which 
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/model_creation_sps.png" width="500px" alt="Model creation window for the SPS." />
+  <img src="../../assets/images/betabeat_gui/model_creation/model_creation_sps.png" width="500px" alt="Model creation window for the SPS." />
   <figcaption>Model creation window for the SPS.</figcaption>
   </center>
 </figure>
@@ -266,7 +266,7 @@ This field is automatically filled by fetcher with the files in the `strengths` 
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/model_creation_ps.png" width="500px" alt="Model creation window for the PS." />
+  <img src="../../assets/images/betabeat_gui/model_creation/model_creation_ps.png" width="500px" alt="Model creation window for the PS." />
   <figcaption>Model creation window for the PS.</figcaption>
   </center>
 </figure>
@@ -305,7 +305,7 @@ Can be
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/model_creation_psb.png" width="500px" alt="Model creation window for the PSBooster." />
+  <img src="../../assets/images/betabeat_gui/model_creation/model_creation_psb.png" width="500px" alt="Model creation window for the PSBooster." />
   <figcaption>Model creation window for the PSBooster.</figcaption>
   </center>
 </figure>

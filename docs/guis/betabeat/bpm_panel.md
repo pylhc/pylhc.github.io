@@ -2,7 +2,7 @@
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel.png" width="100%" alt="The BPM Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/bpm_panel.png" width="100%" alt="The BPM Panel"/>
   <figcaption>The BPM Panel.</figcaption>
   </center>
 </figure>
@@ -25,7 +25,7 @@ Use the ++"Open Files"++{.green-gui-button} button to open turn-by-turn data.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/open_files.png" width="95%" alt="Open Files Dialogue"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/open_files.png" width="95%" alt="Open Files Dialogue"/>
   <figcaption>The Open Files Dialogue.</figcaption>
   </center>
 </figure>
@@ -70,7 +70,7 @@ If you choose the **"DO NOT CONVERT"** option, the files are simply copied into 
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel_table.png" width="100%" alt="Table of loaded files"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/table.png" width="100%" alt="Table of loaded files"/>
   <figcaption>The Table of loaded files in the BPM Panel.</figcaption>
   </center>
 </figure>
@@ -116,7 +116,7 @@ You can select multiple measurements at once to compare them, but only one BPM p
 
     <figure>
     <center>
-    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_turn_by_turn_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/tbt_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
     <figcaption>Turn-by-Turn view of BPM data with two measurements selected.</figcaption>
     </center>
     </figure>
@@ -125,7 +125,7 @@ You can select multiple measurements at once to compare them, but only one BPM p
 
     <figure>
     <center>
-    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_data_phase_space.png" width="100%" alt="Phase space view of BPM data"/>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/phase_space.png" width="100%" alt="Phase space view of BPM data"/>
     <figcaption>Phase space view of BPM data.</figcaption>
     </center>
     </figure>
@@ -165,7 +165,7 @@ The **"Run optics as well"** checkbox will define whether the [_"Optics Analysis
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/do_analysis_dialog.png" width="100%" alt="The Do-Analysis Dialogue"/>
+    <img src="../../assets/images/betabeat_gui/bpm_panel/do_analysis_dialog.png" width="100%" alt="The Do-Analysis Dialogue"/>
     <figcaption>The Do-Analysis Dialogue.</figcaption>
     </center>
     </figure>
@@ -174,7 +174,7 @@ The **"Run optics as well"** checkbox will define whether the [_"Optics Analysis
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialogue with open settings"/>
+    <img src="../../assets/images/betabeat_gui/bpm_panel/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialogue with open settings"/>
     <figcaption>The Do-Analysis Dialogue with open settings.</figcaption>
     </center>
     </figure>
@@ -183,11 +183,9 @@ This dialogue allows you to specify the settings and output for the analysis run
 on the currently selected files in the BPM-Panel.
 Click the ++"Run"++ button to start the analysis.
 
-!!! warning "Parallelization"
-    Parallelization of the analysis is only implemented on the GUI side,
-    possibly starting multiple python processes.
-    Check the caveats of the _"Run Per-File Tasks in Parallel"_
-    setting in the _[GUI-Settings Tab](settings.md#gui-tab)_.
+!!! warning "Parallelisation"
+    Parallelisation of the analysis is only implemented on the GUI side, and on `harpy`'s side.
+    Check the caveats of the _"Run Per-File Tasks in Parallel"_ setting in the _[GUI-Settings Tab](settings.md#gui-tab)_.
 
 ### Harmonic Analysis
 

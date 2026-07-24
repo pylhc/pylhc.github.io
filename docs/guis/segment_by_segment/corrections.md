@@ -15,7 +15,7 @@ See the screenshot below.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/sbs_gui/correction_file_dialog.png" width="60%" alt="Correction File Dialog"/>
+  <img class="clickImg" src="../../assets/images/sbs_gui/correction_file_dialog.png" width="60%" alt="Correction File Dialogue"/>
   <figcaption>The correction file dialogue, prompting to load or create a correction file. Creating a new file works by entering a name.</figcaption>
   </center>
 </figure>
