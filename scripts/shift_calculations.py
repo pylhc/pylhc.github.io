@@ -28,21 +28,21 @@ from matplotlib.figure import Figure
 # sibling modules: `uv run` puts this file's directory on sys.path automatically.
 from parse_md_table import parse_file
 from shift_model import (
-    ALL_SHIFTS,
     COLUMN_END,
     COLUMN_SHIFTS,
     COLUMN_START,
     COLUMN_TYPE,
+    SHIFT_LENGTH,
     SHIFT_NAMING,
-    WORK,
+    Shift,
     calculate_shift_parts,
     str_to_dt,
-    time_delta_to_hours,
-    time_delta_to_shifts,
 )
 
 
-def calculate_shifts(file_path: str | Path, shift_type: str | None = None) -> dict[str, timedelta]:
+def calculate_shifts(
+    file_path: str | Path, shift_type: str | None = None
+) -> dict[Shift, timedelta]:
     """Calculate the shifts from Start/End Date columns of the first markdown table in a given file.
 
     Args:
@@ -50,7 +50,7 @@ def calculate_shifts(file_path: str | Path, shift_type: str | None = None) -> di
         shift_type (str, optional): Regex to filter shift type.
 
     Returns:
-        Dict[str, timedelta]: Dictionary of the total time deltas separated by
+        dict[Shift, timedelta]: Dictionary of the total time deltas separated by
         the type of hours (working hours, night hours, holidays or weekends).
     """
     file_path = Path(file_path)
@@ -59,32 +59,29 @@ def calculate_shifts(file_path: str | Path, shift_type: str | None = None) -> di
     if shift_type is not None:
         df = df.loc[df[COLUMN_TYPE].str.match(shift_type), :]
 
-    parts = {shift: timedelta() for shift in ALL_SHIFTS}
+    parts = {shift: timedelta() for shift in Shift}
 
-    if not all(c in df.columns for c in [COLUMN_START, COLUMN_END]):
+    if not {COLUMN_START, COLUMN_END} <= set(df.columns):
         raise ValueError(f"No start or end time column found in {file_path.name}")
 
-    for _, entry in df.iterrows():
-        if not entry[COLUMN_START] or not entry[COLUMN_END]:
+    for start, end in df[[COLUMN_START, COLUMN_END]].itertuples(index=False, name=None):
+        if not start or not end:
             continue
 
-        shift_split = calculate_shift_parts(
-            start_time=str_to_dt(entry[COLUMN_START]),
-            end_time=str_to_dt(entry[COLUMN_END]),
-        )
-        for key, value in shift_split.items():
-            parts[key] += value
+        for shift, duration in calculate_shift_parts(str_to_dt(start), str_to_dt(end)).items():
+            parts[shift] += duration
 
     print(f"\nShifts from '{COLUMN_START}'/'{COLUMN_END}' columns in File {file_path.name}")
     for shift, name in SHIFT_NAMING.items():
         print(
-            f"{name}: {time_delta_to_shifts(parts[shift]):.1f} ({time_delta_to_hours(parts[shift]):.1f}h)"
+            f"{name}: {parts[shift] / SHIFT_LENGTH:.1f} "
+            f"({parts[shift] / timedelta(hours=1):.1f}h)"
         )
 
     return parts
 
 
-def manual_shifts(file_path: str | Path, shift_type: str | None = None) -> dict[str, float]:
+def manual_shifts(file_path: str | Path, shift_type: str | None = None) -> dict[Shift, float]:
     """Calculate the shifts from Shifts column of the first markdown table in a given file.
 
     Args:
@@ -92,7 +89,7 @@ def manual_shifts(file_path: str | Path, shift_type: str | None = None) -> dict[
         shift_type (str): Regex to filter shift-type.
 
     Returns:
-        Dict[str, timedelta]: Dictionary of the total time deltas separated by
+        dict[Shift, float]: Dictionary of the total shifts separated by
         the type of hours (working hours, night hours, holidays or weekends).
     """
     file_path = Path(file_path)
@@ -101,18 +98,19 @@ def manual_shifts(file_path: str | Path, shift_type: str | None = None) -> dict[
     if shift_type is not None:
         df = df.loc[df[COLUMN_TYPE].str.match(shift_type), :]
 
-    parts = {shift: 0.0 for shift in ALL_SHIFTS}
-
     if COLUMN_SHIFTS not in df.columns:
         raise ValueError(f"No shift column found in {file_path.name}")
 
-    for _, entry in df.iterrows():
-        if not entry[COLUMN_SHIFTS]:
-            continue
-
-        shift_split = re.findall(r"([\d.]+)([WH]N?)", entry[COLUMN_SHIFTS])
-        for value, key in shift_split:
-            parts[key] += float(value)
+    parts = {
+        shift: sum(
+            float(amount)
+            for value in df[COLUMN_SHIFTS]
+            if value
+            for amount, key in re.findall(r"([\d.]+)([WH]N?)", value)
+            if key == shift
+        )
+        for shift in Shift
+    }
 
     print(f"\nShifts from '{COLUMN_SHIFTS}' column in File {file_path.name}")
     for shift, name in SHIFT_NAMING.items():
@@ -125,28 +123,20 @@ def plot_results(parts, title: str = "", output_path: str | Path | None = None) 
     """Plot the results of a calculation.
 
     Args:
-        parts (Dict[str, timedelta]): Dictionary of the total time deltas separated by
-        the type of hours (working hours, outside working hours, holidays or weekends).
+        parts: Shift totals by category, either as timedeltas or shift counts.
         output_path (str | Path): Path to the output file.
     """
     fig, ax = plt.subplots()
 
-    data = [
-        time_delta_to_shifts(value) if isinstance(value, timedelta) else value
-        for value in parts.values()
+    entries = [
+        (index, shift, value / SHIFT_LENGTH if isinstance(value, timedelta) else value)
+        for index, (shift, value) in enumerate(parts.items())
+        if value
     ]
-    labels = [f"{SHIFT_NAMING[k]}: {v:.1f}" for k, v in zip(parts.keys(), data)]
-    colors = [f"C{i}" for i, k in enumerate(parts.keys())]  # fix colors
-    explode = [0.1 * (s == WORK) for s in parts.keys()]  # explode working hours
-
-    # filter shift-entries that were not present
-    def filter_by_data(array):
-        return [a for a, d in zip(array, data) if d]
-
-    labels = filter_by_data(labels)
-    colors = filter_by_data(colors)
-    explode = filter_by_data(explode)
-    data = filter_by_data(data)  # filter data last!
+    data = [value for _, _, value in entries]
+    labels = [f"{SHIFT_NAMING[shift]}: {value:.1f}" for _, shift, value in entries]
+    colors = [f"C{index}" for index, _, _ in entries]
+    explode = [0.1 * (shift == Shift.WORK) for _, shift, _ in entries]
 
     # plot
     ax.pie(
@@ -196,7 +186,7 @@ def plot_all_machines_in_year(
         machine = file_path.stem.split("_")[1]
         shift = calculate_shifts(file_path) if calculate else manual_shifts(file_path)
         times = [
-            time_delta_to_shifts(value) if isinstance(value, timedelta) else value
+            value / SHIFT_LENGTH if isinstance(value, timedelta) else value
             for value in shift.values()
         ]
         data_map[machine] = sum(times)
