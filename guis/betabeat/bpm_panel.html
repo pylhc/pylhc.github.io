@@ -284,7 +284,7 @@
         <a href="../about.html" class="md-tabs__link">
           
   
-  GUIs
+  OMC GUIs
 
         </a>
       </li>
@@ -1825,7 +1825,7 @@
   <span class="md-ellipsis">
     
   
-  GUIs
+  OMC GUIs
 
     
   </span>
@@ -1840,7 +1840,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-  GUIs
+  OMC GUIs
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
@@ -5747,7 +5747,7 @@
 <h1 id="the-bpm-panel">The <abbr title="Beam Position Monitor">BPM</abbr> Panel<a class="headerlink" href="#the-bpm-panel" title="Permanent link">&para;</a></h1>
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel.png" width="100%" alt="The BPM Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/bpm_panel.png" width="100%" alt="The BPM Panel"/>
   <figcaption>The BPM Panel.</figcaption>
   </center>
 </figure>
@@ -5766,7 +5766,7 @@ or monitor a currently active kick-group and load the files as they are created.
 <p>Use the <span class="keys green-gui-button"><kbd>Open Files</kbd></span> button to open turn-by-turn data.</p>
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/open_files.png" width="95%" alt="Open Files Dialogue"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/open_files.png" width="95%" alt="Open Files Dialogue"/>
   <figcaption>The Open Files Dialogue.</figcaption>
   </center>
 </figure>
@@ -5812,7 +5812,7 @@ The <code>ascii</code> input format can also be chosen directly.</p>
 <h2 id="table-of-loaded-files">Table of Loaded Files<a class="headerlink" href="#table-of-loaded-files" title="Permanent link">&para;</a></h2>
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel_table.png" width="100%" alt="Table of loaded files"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/table.png" width="100%" alt="Table of loaded files"/>
   <figcaption>The Table of loaded files in the BPM Panel.</figcaption>
   </center>
 </figure>
@@ -5856,7 +5856,7 @@ You can select multiple measurements at once to compare them, but only one <abbr
 <div class="tabbed-block">
 <p><figure>
 <center>
-<img class="clickImg" src="../../assets/images/betabeat_gui/bpm_turn_by_turn_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
+<img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/tbt_data.png" width="100%" alt="Turn-by-Turn view of BPM data"/>
 <figcaption>Turn-by-Turn view of <abbr title="Beam Position Monitor">BPM</abbr> data with two measurements selected.</figcaption>
 </center>
 </figure></p>
@@ -5864,7 +5864,7 @@ You can select multiple measurements at once to compare them, but only one <abbr
 <div class="tabbed-block">
 <p><figure>
 <center>
-<img class="clickImg" src="../../assets/images/betabeat_gui/bpm_data_phase_space.png" width="100%" alt="Phase space view of BPM data"/>
+<img class="clickImg" src="../../assets/images/betabeat_gui/bpm_panel/phase_space.png" width="100%" alt="Phase space view of BPM data"/>
 <figcaption>Phase space view of <abbr title="Beam Position Monitor">BPM</abbr> data.</figcaption>
 </center>
 </figure></p>
@@ -5903,7 +5903,7 @@ The <strong>"Run optics as well"</strong> checkbox will define whether the <a hr
 <div class="tabbed-block">
 <p><figure>
 <center>
-<img src="../../assets/images/betabeat_gui/do_analysis_dialog.png" width="100%" alt="The Do-Analysis Dialogue"/>
+<img src="../../assets/images/betabeat_gui/bpm_panel/do_analysis_dialog.png" width="100%" alt="The Do-Analysis Dialogue"/>
 <figcaption>The Do-Analysis Dialogue.</figcaption>
 </center>
 </figure></p>
@@ -5911,7 +5911,7 @@ The <strong>"Run optics as well"</strong> checkbox will define whether the <a hr
 <div class="tabbed-block">
 <p><figure>
 <center>
-<img src="../../assets/images/betabeat_gui/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialogue with open settings"/>
+<img src="../../assets/images/betabeat_gui/bpm_panel/do_analysis_dialog_open_settings.png" width="100%" alt="The Do-Analysis Dialogue with open settings"/>
 <figcaption>The Do-Analysis Dialogue with open settings.</figcaption>
 </center>
 </figure></p>
@@ -5922,11 +5922,9 @@ The <strong>"Run optics as well"</strong> checkbox will define whether the <a hr
 on the currently selected files in the <abbr title="Beam Position Monitor">BPM</abbr>-Panel.
 Click the <span class="keys"><kbd>Run</kbd></span> button to start the analysis.</p>
 <div class="admonition warning">
-<p class="admonition-title">Parallelization</p>
-<p>Parallelization of the analysis is only implemented on the GUI side,
-possibly starting multiple python processes.
-Check the caveats of the <em>"Run Per-File Tasks in Parallel"</em>
-setting in the <em><a href="settings.html#gui-tab">GUI-Settings Tab</a></em>.</p>
+<p class="admonition-title">Parallelisation</p>
+<p>Parallelisation of the analysis is only implemented on the GUI side, and on <code>harpy</code>'s side.
+Check the caveats of the <em>"Run Per-File Tasks in Parallel"</em> setting in the <em><a href="settings.html#gui-tab">GUI-Settings Tab</a></em>.</p>
 </div>
 <h3 id="harmonic-analysis">Harmonic Analysis<a class="headerlink" href="#harmonic-analysis" title="Permanent link">&para;</a></h3>
 <p>Keeping the <em>Optics Analysis</em> checkbox unchecked will only perform the <a href="../../measurements/physics/harpy.html">harmonic analysis</a>.</p>
