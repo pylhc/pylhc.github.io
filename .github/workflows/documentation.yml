@@ -1,14 +1,19 @@
 # Build documentation and upload to gh-pages
+# This new workflow uses zensical for the build
 name: Build and upload documentation
-
 defaults:
   run:
     shell: bash
 
+permissions:
+  contents: write
+
 env:
   UV_COMPILE_BYTECODE: 1
 
-on:  # Runs on any push event to master
+# Runs on the following conditions:
+# - Any push to master branch (which requires merging a PR)
+on:
   push:
     branches:
       - master
@@ -17,14 +22,16 @@ jobs:
   documentation:
     name: Build and Publish Static Documentation
     runs-on: ubuntu-latest
+    env:
+        python-version: "3.14"
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Install uv and Python
-        uses: astral-sh/setup-uv@v6
+        uses: astral-sh/setup-uv@v8.1.0
         with:
-          python-version: 3.13
+          python-version: ${{ env.python-version }}
           enable-cache: true
           activate-environment: true
           cache-dependency-glob: "requirements.txt"
@@ -33,12 +40,15 @@ jobs:
         run: uv pip install -r requirements.txt
 
       - name: Build documentation
-        run: python -m mkdocs build -d ./doc_build
+        # Note: when it's stable we will want to use --strict on
+        # the lintrack builds as they're for internet-less view
+        # from the CCC. Just needs to --strict flag to this command
+        run: zensical build
 
       - name: Upload documentation to gh-pages
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@v4.8.0
         if: success()
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
-          folder: doc_build
+          folder: site  # zensical does not allow customizing the dir yet

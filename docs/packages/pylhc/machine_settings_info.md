@@ -1,5 +1,9 @@
 # Machine Settings Info
 
+!!! warning "Deprecated"
+    This functionality has been transferred to the `omc3` package.
+    Please use the `omc3.scripts.machine_settings_info` entrypoint instead.
+
 [See the docs][documentation] for a detailed code description.
 
 Prints an overview over the machine settings at a provided given time, or the current settings if no time is given.

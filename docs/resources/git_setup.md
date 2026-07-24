@@ -1,12 +1,11 @@
 # Git
 
-How to's concerning  `git` in general,  [`gitlab`][cern_gitlab], [`GitHub`][github] and CI.
+How to's concerning  `git` in general,  [`GitLab`][cern_gitlab]{target=_blank .cern_login}, [`GitHub`][github]{target=_blank} and CI/CD.
 
 ## Github Commandline Access Quickstart
 
 This section explains the basic steps to get started with GitHub.
 Since HTTP access via password only has been disabled by GitHub for security reasons, it is necessary to activate a secure method.
-
 This aims to be as short and concise as possible, for more extensive information, [see the GitHub security documentation][github_security]{target=_blank}.
 
 ### Setup SSH Access
@@ -48,7 +47,7 @@ After creating the key, you need to add it to your GitHub account.
 Log into your GitHub account, click on your avatar and go to `Settings` &rarr; `SSH and GPG keys`.
 Then click on [++"New SSH key"++{.green-gui-button}][github_new_ssh_key]{target=_blank} and paste the contents of the `.pub` file into the `Key` field.
 
-Give it a resonable name in the `Title` field (which it will appear as in the GitHub interface) and leave the `Key type` as `Authentication key`.
+Give it a reasonable name in the `Title` field (which it will appear as in the GitHub interface) and leave the `Key type` as `Authentication key`.
 Then click on `Add SSH key` and you are done.
 
 #### Configure SSH to use the key
@@ -93,7 +92,6 @@ git clone git@github.com:pylhc/omc3.git
 
 which you can find from the ++"Clone"++{.green-gui-button} button of the repository page on GitHub.
 
-
 !!! tip "Changing a Repository URL"
     In case you already have a repository cloned with the wrong URL, you can change it with `git remote set-url`, e.g.:
 
@@ -114,7 +112,6 @@ You can setup https access by creating and using a personal access token or a pa
 !!! note "Not yet documented"
     As we use SSH access, this section not yet written.
     Refer to the [GitHub documentation][github_https] for more information and maybe write up a quick howto.
-
 
 ## Configuring Gitlab CI to Automatically Pull into AFS
 
@@ -158,7 +155,7 @@ _Steps to be done on AFS:_
 
     A possible other way would be to create an empty folder and give writing rights to that one to the service account and then login to lxplus with the service account and clone the repository directly with that account.
     The latter is a good test to see if everything worked correctly anyway.
-    Do not forget, if you have set up the repository with Kerberos authentification, to adapt your `.ssh/config` to delegate the credentials.
+    Do not forget, if you have set up the repository with Kerberos authentication, to adapt your `.ssh/config` to delegate the credentials.
     <br>Repeated for easy copying:
     ```bash
     find . -type d -exec fs sa {} ACCOUNTNAME rlidw \;
@@ -209,17 +206,17 @@ _Steps to be done on your [Gitlab][cern_gitlab]{target=_blank} repository:_
 
 
     ??? note "More Info on the YAML"
-        The `.yml` was copied and adapted from the [acc-models-lhc repository][acc_models_repo]{target=_blank} with some changes.
+        The `.yml` was copied and adapted from the [acc-models-lhc repository][acc_models_lhc]{target=_blank} with some changes.
         In general, a Docker image is loaded, `openssh` is installed and a Kerberos token is created.
         With this token it is now possible to `ssh` to lxplus as the service account, go into the desired directory and checkout the repository.
         `git checkout master` is only performed in case someone changed the branch on AFS (which should not happen, do not touch).
 
-        - **Image**: The image `gitlab-registry.cern.ch/linuxsupport/cc7-base` used is the default Cern Centos 7 docker image, provided by [Linux @ CERN][cern_linux]{target=_blank}.
+        - **Image**: The image `gitlab-registry.cern.ch/linuxsupport/cc7-base` used is the default Cern Centos 7 docker image, maintained for acc-models CIs.
         This is used, because it has Kerberos already set up and configured.
-        The [acc-models yaml][acc_models_yml]{target=_blank} was using [their own docker image][acc_models_docker], of which the only additional functionality we need is `openssh`, hence it is installed manually instead.
+        The acc-models yaml was using their own docker image, of which the only additional functionality we need is `openssh`, hence it is installed manually instead.
         - **echo lxplus ssh-rsa** line: This line adds the public key of the lxplus server to the ssh `known_hosts` file, so it connects to lxplus without user interaction about this topic (do not touch).
-        - **echo -e Host** line: Here the ssh `config` is adapted to use Kerberos as authetication method to any server (do not touch).
-        - **only master**: Only the commits to `master` trigger the CI. Omit this part if you want the repo to be pulled on every commit, or change it to limit upon which commits this happens (as is done in the [acc-models yml][acc_models_yml]{target=_blank}).
+        - **echo -e Host** line: Here the ssh `config` is adapted to use Kerberos as authentication method to any server (do not touch).
+        - **only master**: Only the commits to `master` trigger the CI. Omit this part if you want the repo to be pulled on every commit, or change it to limit upon which commits this happens (as is done in the acc-models-lhc yml.
 
 ### Done
 
@@ -235,6 +232,7 @@ Whenever you are pushing now any commits to the `master` branch, the CI/CD will 
 *[lxplus]: Linux Public Login User Service
 
 [new_account]: https://account.cern.ch/account/Management/NewAccount.aspx
+[acc_models_lhc]: https://gitlab.cern.ch/acc-models/acc-models-lhc
 [afs_services]: https://resources.web.cern.ch/resources/Manage/AFS/Default.aspx
 [github]: https://github.com/
 [cern_gitlab]: https://gitlab.cern.ch/

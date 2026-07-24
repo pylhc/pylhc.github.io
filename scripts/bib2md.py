@@ -1,3 +1,9 @@
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#   "titlecase >= 2.0",
+# ]
+# ///
 """
 Prints markdown for the Publications.md from .bib files.
 

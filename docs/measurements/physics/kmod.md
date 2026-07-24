@@ -12,13 +12,13 @@ K-Modulation is a complementary optics measurement method which consists in chan
 The average $\beta$-function in the modulated quadrupole is linked to the gradient change $\Delta K$ and tune change $\Delta Q_{x,y}$ via[^MintyZimmermann]:
 
 $$
-\beta_{x,y} = \pm 2 \Delta K^{-1}\Big[ cot(2 \pi Q_{x,y}) [ 1 - cos(2 \pi \Delta Q_{x,y}) ] + sin(2 \pi \Delta Q_{x,y}) \Big]
+\beta_{x,y} = \pm 2 \Delta K^{-1}\Big( cot(2 \pi Q_{x,y}) ( 1 - cos(2 \pi \Delta Q_{x,y}) ) + sin(2 \pi \Delta Q_{x,y}) \Big)
 $$
 
 If these measurements are conducted for two adjacent quadrupoles, the evolution of the $\beta$-function in-between the modulated quadrupoles can also be inferred[^FelixCarlierKmodPaper].
 Here, the average $\beta$-function in the quadrupole is expressed in terms of the optics functions $\beta_0$, $\alpha_0$, and $\gamma_0$ at the end of the quadrupole.
 
-Assuming a drift space between the quadrupoles, these coordinates can then be expressed in terms of the distance of the quadrupole end to the middle of the drift-section $L^*$, the minimum $\beta$-function $\beta^*$, and $w$, the offset of this minimum with respect to the center of the drift.
+Assuming a drift space between the quadrupoles, these coordinates can then be expressed in terms of the distance of the quadrupole end to the middle of the drift-section $L^*$, the minimum $\beta$-function $\beta^*$, and $w$, the offset of this minimum with respect to the centre of the drift.
 The length $L^*$ is usually obtained from the machine layout.
 Using the two average $\beta$-functions in the quadrupoles, the other two variables $\beta^*$ and $w$ can then be calculated.
 The $\beta$-function at other elements in the drift space can then be determined by propagation.

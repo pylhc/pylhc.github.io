@@ -1,7 +1,7 @@
 # The Non-Linear Chromaticity GUI
 
-The non-linear chromaticity GUI provides functionality to analyze [chromaticity scans](#performing-scans) in the LHC.
-The GUI itself has no functionality for making these measurements and only serves to extract and analyze data from `NXCALS`.
+The non-linear chromaticity GUI provides functionality to analyse [chromaticity scans](#performing-scans) in the LHC.
+The GUI itself has no functionality for making these measurements and only serves to extract and analyse data from `NXCALS`.
 
 !!! info "Kerberos"
     Note that using the GUI requires a valid Kerberos token.
@@ -34,9 +34,9 @@ Typically, the scans are performed with ±300Hz in steps of 20Hz.
 !!! tip "Max Modulation Amplitude"
     Scans have been performed safely in the past with ±400Hz, in cases where specific high orders were investigated.
 
-## Analyzing Scans
+## Analysing Scans
 
-To analyze data from a scan, start by launching the GUI as instructed above.
+To analyse data from a scan, start by launching the GUI as instructed above.
 It should open to this default view:
 
 <figure>
@@ -74,7 +74,7 @@ Next, go to the `Timber` tab and select `start` and `end` dates to extract data 
     Note that the times are expected in UTC. One can check the online [Timber][timber_web]{target=_blank .cern_internal} interface for the correct time range of the scan data to extract.
 
 !!! info "Data Extraction Process"
-    There is no need to click `Extract raw BBQ` unless to re-analyze the raw data. There are specific UCAP nodes which have done this analysis already.
+    There is no need to click `Extract raw BBQ` unless to re-analyse the raw data. There are specific UCAP nodes which have done this analysis already.
 
     There is no loading bar, the panel will just say "Extracting data from Timber..." on the right (and show some things in the terminal). Be patient.
 
@@ -98,7 +98,7 @@ Move on to the `Cleaning` tab.
         Please note that the `Refine Start` and `Refine End` entries refer to times in the Dataframes themselves, and it is possible that there are timezone issues from the extracted data times.
         One can check the times on the plotted data itself.
 
-- Click the `Create Plateaus` button. This will extract the correct tune values from dp/p and create steps that can be analyzed. These will then be displayed, for the selected beam, both the RF frequency and the raw tune data.
+- Click the `Create Plateaus` button. This will extract the correct tune values from dp/p and create steps that can be analysed. These will then be displayed, for the selected beam, both the RF frequency and the raw tune data.
 
 <figure>
   <center>

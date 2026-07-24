@@ -141,7 +141,7 @@ Keep in mind that this does Beam1 and Beam2 at the same time, but different IPs 
 
 - [ ] <details class="nodeco"><summary>Determine the Correction</summary>
       <p> Plot the evolution of the $|C^{-}|$ against the setting of the colinearity knob, and pick the setting that minimizes it.
-      For best accuracy, one should substract the reference measurements (rematched optics without colinearity knob applied) for each measurement in the scans, eventually point by point.
+      For best accuracy, one should subtract the reference measurements (rematched optics without colinearity knob applied) for each measurement in the scans, eventually point by point.
       The curves for each beam might not be minimized exactly around the same point, and a compromise may be needed.
       Eventually do a fit of the data to get a better estimate of the correction.
       </p></details>

@@ -14,14 +14,14 @@ There are in total three main tabs for the optics panel:
 ## Optics Tab
 
 By default, the user is taken to the `Optics` tab.
-A wide variety of computed physical properties can be visualized across the entire machine.
+A wide variety of computed physical properties can be visualised across the entire machine.
 
 !!! todo
     Include a screenshot with the main optics tab.
 
 ### Open Files
 
-- TODO: Open and convert BBS files! [outputfiles](betabeatsource.md#meaning-of-the-output-files)
+- TODO: Open and convert BBS files! [outputfiles](betabeatsource.md#meaning-of-the-beta-beatsrc-output-files)
 
 ## Segment-by-Segment: Segment Tab
 
@@ -30,7 +30,7 @@ A list of pre-defined segments of the machine can be selected to view properties
 !!! todo
     Include a screenshot of segment selection.
 
-In the event that one wants to visualize a specific, non pre-defined segment, it is possible to create a new one.
+In the event that one wants to visualise a specific, non pre-defined segment, it is possible to create a new one.
 To do so:
 
 - In the `Optics` tab, pick the start BPM by clicking on a BPM point on the optics chart.
@@ -68,7 +68,7 @@ The following methods implement different correction algorithms:
 ??? note
     The `Iterative correction` method is currently not compatible and thus disabled.
 
-The results are outputted in the `changeparameters` files.
+The results are output in the `changeparameters` files.
 These files store the magnet names and corresponding correction strengths.
 
 They are also displayed in the [Correction Panel](correction_panel.md).

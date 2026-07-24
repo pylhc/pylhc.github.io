@@ -21,12 +21,12 @@ To reset this template table, select the button ++"Reload from Template"++ below
 ### Manual Creation
 
 To create a kick schedule from scratch, select the ++"Create Table"++ button below the table.
-This will open the following dialog:
+This will open the following dialogue:
 
 <figure>
     <center>
-    <img src="../../assets/images/multiturn_gui/create_schedule_table.png" width="85%" alt="Create Kick Schedule Dialog" />
-    <figcaption>Create Kick Schedule Dialog</figcaption>
+    <img src="../../assets/images/multiturn_gui/create_schedule_table.png" width="85%" alt="Create Kick Schedule Dialogue" />
+    <figcaption>Create Kick Schedule Dialogue</figcaption>
     </center>
 </figure>
 
@@ -42,7 +42,7 @@ For instance the scenario from the screenshot above will create a table with 4 r
 ### Prewritten Schedules
 
 To load a prewritten kick schedule, select the ++"Import .csv"++ button below the table.
-This will open a file dialog to navigate and select the `.csv` file containing the kick schedule.
+This will open a file dialogue to navigate and select the `.csv` file containing the kick schedule.
 
 There exists a small repository of prewritten kick schedules to be imported, which can be found in the `/user/slops/data/LHC_DATA/OP_DATA/Betabeat/MULTITURN_KICK_SCHEDULES/` directory
 

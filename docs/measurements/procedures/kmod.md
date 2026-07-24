@@ -41,7 +41,7 @@ Please keep in mind the [general checks](general_checks.md) for measurements, an
 
 - [ ] <details class="nodeco"><summary>Start the Analysis</summary>
       <p> Analysis is now launched directly from the `Pykmod` app.
-      See [this page][kmod_analysis] for details on how to analyze and export the data.
+      See [this page][kmod_analysis] for details on how to analyse and export the data.
       </p></details>
 
 - [ ] <details class="nodeco"><summary>Import Results Into the Beta-Beat GUI</summary>

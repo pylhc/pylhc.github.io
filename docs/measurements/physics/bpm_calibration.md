@@ -34,6 +34,7 @@ It is important to note that the $\beta$-function is proportional to the square 
 
 Dispersion from phase refers to the reconstruction of dispersion measurements based on the normalised dispersion and $\beta^{\phi}$ function.
 The normalised dispersion is used here as it is a calibration-independent observable.
+It is important to note that calibration factors from dispersion are only computed in the horizontal plane.
 It is defined as:
 
 $$
@@ -52,8 +53,8 @@ $$
 C_{x}^{A} = \frac{D^A_{N,x}\sqrt{\beta^{\phi}_x}}{D^A_x}
 $$
 
-!!! info "Horizontal Plane Only"
-    It is important to note that calibration factors from dispersion are only computed in the horizontal plane.
+!!! info "Complete Table"
+    See the relevant [pylhc script page](../../packages/pylhc/bpm_calibration.md) for the complete tables of various calibration factors and their error estimates.
 
 [^RamaDispersionCalibration]:
     ??? abstract "BPM Calibration Independent LHC Optics Correction, `R. Calaga, and R. Tomás, and F. Zimmermann`, [IEEE Particle Accelerator Conference, 2007](https://ieeexplore.ieee.org/document/4440536){target=_blank}"
