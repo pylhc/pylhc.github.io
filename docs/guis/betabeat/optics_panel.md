@@ -3,6 +3,13 @@
 The `Optics` panel is where the computed optics are visualised and compared against the nominal model, but also against one another.
 It serves as the launch point for follow-up actions such as calculating corrections, starting the Segment-by-Segment GUI, etc.
 
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/optics_panel_default.png" width="95%" alt="Optics Panel Default Look"/>
+  <figcaption>The <code>Optics</code> panel's default appearance.</figcaption>
+  </center>
+</figure>
+
 The panel is split into two sub-tabs: `Optics` and `Action/Tune`.
 The default view of the `Optics` panel is the `Optics` tab, covered by this page, which lists analyses and displays computed properties.
 See the [Amplitude Detuning page](./ampdet.md) for the `Action/Tune` tab.
@@ -56,7 +63,7 @@ The plot supports the usual [navigation and inspection shortcuts][cc_plotting] c
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/optics_panel.png" width="100%" alt="Optics Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/optics_panel/optics_panel.png" width="95%" alt="Optics Panel"/>
   <figcaption>The <code>Optics</code> panel, here showing the horizontal and vertical beta-beating for two loaded results.</figcaption>
   </center>
 </figure>
