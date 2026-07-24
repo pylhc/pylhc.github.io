@@ -21,6 +21,7 @@ Usage
 from __future__ import annotations
 
 import argparse
+import re
 from pathlib import Path
 from typing import TYPE_CHECKING
 
@@ -38,6 +39,10 @@ from shift_model import (
 
 if TYPE_CHECKING:
     from datetime import timedelta
+
+_ZERO_SHIFT = re.compile(
+    r"(?:0+(?:\.0+)?(?:W|WN|H|HN))(?:\s+0+(?:\.0+)?(?:W|WN|H|HN))*"
+)
 
 
 def format_shift_string(parts: dict[Shift, timedelta], ndigits: int = 2) -> str:
@@ -101,7 +106,11 @@ def update_file(path: Path, *, check: bool = False) -> bool:
         raise ValueError(f"Missing expected column in {path.name}: {exc}") from exc
 
     for row in data:
-        if row[c_start] and row[c_end]:
+        if (
+            row[c_start]
+            and row[c_end]
+            and not _ZERO_SHIFT.fullmatch(row[c_shift])
+        ):
             row[c_shift] = format_shift_string(
                 calculate_shift_parts(str_to_dt(row[c_start]), str_to_dt(row[c_end]))
             )
@@ -172,6 +181,14 @@ def test_missing_start_or_end_left_alone():
     assert "UNTOUCHED" in out
 
 
+def test_explicit_zero_shift_left_alone():
+    for zero in ("0W", "0.0W", "0WN", "0H", "0HN"):
+        row = _ROW.replace("?", zero)
+        out = _run(f"{_HEADER}\n{_SEP}\n{row}\n")
+        assert zero in out.splitlines()[2]
+        assert _EXPECTED_SHIFT not in out
+
+
 def test_non_table_content_and_trailing_newline_preserved():
     prefix = "# Title\n\nIntro paragraph.\n\n"
     suffix = "\n\nFooter note.\n"
@@ -195,6 +212,7 @@ def _selftest() -> int:
     test_recomputes_shift_column()
     test_only_first_table_touched()
     test_missing_start_or_end_left_alone()
+    test_explicit_zero_shift_left_alone()
     test_non_table_content_and_trailing_newline_preserved()
     test_malformed_row_rejected()
     print("All update_shift_column tests passed.")
