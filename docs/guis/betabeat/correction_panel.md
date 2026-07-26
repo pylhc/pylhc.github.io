@@ -1,12 +1,29 @@
 # The Correction Panel
 
-!!! warning "Incomplete"
-    This page is a placeholder and is not yet complete.
-    Information here is outdated and needs to be revised for the `omc3` version of the Beta-Beat GUI.
-
 The `Correction` panel displays the corrections computed from the `Optics` panel to bring back the measured machine to nominal model conditions.
 
 It provides an `Open Knob Panel` button to access the LHC beam process list.
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_strengths.png" width="95%" alt="Q"/>
+  <figcaption>Q.</figcaption>
+  </center>
+</figure>
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_correction_test.png" width="95%" alt="QQ"/>
+  <figcaption>QQ.</figcaption>
+  </center>
+</figure>
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_knob_panel.png" width="95%" alt="QQQ"/>
+  <figcaption>QQQ.</figcaption>
+  </center>
+</figure>
 
 ## Knob Creation
 
