@@ -1,19 +1,24 @@
 # CERN Help and Contacts
 
-On this page, you can find the contact information for various services and support related to accelerator operations, hardware, and software outside of the OMC-Team.
-For privacy reasons, only their names are listed here, but you can find their contact details in the [CERN phonebook][phonebook]{target=_blank .cern_login}.
-Most of them are also very active on [Mattermost][mattermost]{target=_blank .cern_login} and you can contact them there as well.
+Find on this page information for various services and support related to accelerator operations, hardware, and software outside of the OMC-Team.
 
-Depending on the urgency of your issue, you can also search the [Knowledge Base][knowledge_base]{target=_blank}, open a [ServiceNow ticket][service_tickets]{target=_blank}, contact the [helpdesk][helpdesk]{target=_blank} or reach out in one of the dedicated [Mattermost][mattermost]{target=_blank .cern_login} channels, which are also listed below.
 
-Maybe also check the [Service Status Board][status_board]{target=_blank} to see if there are any ongoing issues with the service you are interested in.
+!!! danger "No Identifying Information"
+    For CERN privacy policy reasons, no names can be listed here.
+    A complete list of relevant contacts can be found in the instructions of the OMC logbook, and will display automatically on opening.
+    Note that logbook access requires a login.
+
+    The OMC logbook can be found at the following links:
+
+    - [Insider logbook][omc_logbook_insider]{target=_blank .cern_login .cern_internal} (requires to be in the GPN and can make edits),
+    - [Outsider logbook][omc_logbook_outsider]{target=_blank .cern_login} (read only).
 
 ## Services
 
 This section lists general services that are not specific to a certain hardware or software component.
 
 Normally, each service has a specific [ServiceNow form][service_tickets]{target=_blank}, that you should use to open a ticket, but sometimes it is not obvious which one to use.
-Remember to that you can always open a [general SNOW ticket][snow_general]{target=_blank .cern_login} for any issue, which will be routed to the appropriate service - but this can take longer than opening a specific form.
+Remember to that you can always open a [general SNOW ticket][snow_general] for any issue, which will be routed to the appropriate service - but this can take longer than opening a specific form.
 
 ### HTCondor
 
@@ -170,6 +175,11 @@ While not directly involved in the development of NXCals, Michi Hostettler is ta
 - Giovanni Iadarola
 - Szymon Lopaciuk
 - [GitHub][xsuite_github]{target=_blank} / [Issues][xsuite_github_issues]{target=_blank}
+
+*[GPN]: General Purpose Network, the main CERN network
+
+[omc_logbook_insider]: https://logbook.cern.ch/elogbook-server#/logbook?logbookId=1081
+[omc_logbook_outsider]:https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081
 
 [acc-py]: https://confluence.cern.ch/pages/viewpage.action?spaceKey=ACCPY&title=Getting+started+with+Acc-Py
 [cern_htcondor_docs]: https://batchdocs.web.cern.ch/index.html
