@@ -28,9 +28,7 @@ For questions/issues regarding LxBatch/HTCondor the following help is available:
 - [LXBatch SNOW ticket][snow_htcondor]{target=_blank .cern_login}
 - [Mattermost: Batchers][mm_htcondor]{target=_blank .cern_login}
 
-**Contact(s):**
-
-- Ben Jones
+**Contact(s):** See logbook instruction.
 
 ### LxPlus/AFS/EOS
 
@@ -44,12 +42,7 @@ In particular, when running out of AFS quota, you might need to [adjust your set
 - [LXPlus SNOW ticket][snow_lxplus]{target=_blank .cern_login}
 - [Mattermost: lxplus][mm_lxplus]{target=_blank .cern_login}
 
-**Contact(s):**
-
-- Steve Traylen
-- Vincent Brillault
-- Jan Iven
-- Ben Jones
+**Contact(s):** See logbook instruction.
 
 ## Hardware
 
@@ -63,56 +56,33 @@ That being said, **Matteo** has always been a close contact for optics related t
 
 As OP is lead by **Jörg** he is of course also a good contact for general OP questions.
 
-**Contact(s):**
-
-- Matteo Solfaroli
-- Michi Hostettler
-- Jörg Wenninger
+**Contact(s):** See logbook instruction.
 
 #### AC-Dipole
 
-**Contact(s):**
-
-- Nicolas Magnin
+**Contact(s):** See logbook instruction.
 
 ### SPS
 
 #### General
 
-**Contact(s):**
-
-- Stephane Cettur Cave
+**Contact(s):** See logbook instruction.
 
 #### RF
 
-**Contact(s):**
-
-- Giulia Papotti
+**Contact(s):** See logbook instruction.
 
 #### Optics
 
-**Contact(s):**
-
-- Panos Zisopoulos
+**Contact(s):** See logbook instruction.
 
 ### BPMs (LHC, SPS)
 
 In recent years, cooperation between the BI BPM teams and OMC has increased significantly, as they can profit for our measurements and [statistical analysis of BPM data quality][bad_bpms], and we can use their expertise for BPM related issues and shortcomings, improving the quality of measurements.
 
-**Contact(s):**
-
-- Manuel Gonzalez Berges
-- Michal Krupa
+**Contact(s):** See logbook instruction.
 
 ## Software
-
-!!! info "A Special Thanks to Michi Hostettler :heart:"
-    While not the official support for software *Michi Hostettler* is incredibly knowledgeable and can very often help with questions or issues regarding various software packages used in accelerator operations.
-    Should you run into an issue, it is likely he has already encountered it before, and most likely that he has a solution.
-
-    That is to say, if you are reading this, **thank you Michi for all your help** in the past, it has been invaluable!
-
-    - Joschua & Felix
 
 ### Acc-Py
 
@@ -121,10 +91,7 @@ This distribution system is maintained by the Acc-Py team at CERN, who can be co
 
 - [Mattermost: acc-py][mm_acc_py]
 
-**Contact(s):**
-
-- Ivan Sinkarenko
-- Philip Elson
+**Contact(s):** See logbook instruction.
 
 ### Java
 
@@ -132,9 +99,7 @@ Questions regarding the Java infrastructure we are using, like deployment of app
 
 - [Mattermost: acc-java][mm_acc_java]
 
-**Contact(s):**
-
-- Felix Ehm
+**Contact(s):** See logbook instruction.
 
 ### NXCals
 
@@ -146,35 +111,27 @@ While not directly involved in the development of NXCals, Michi Hostettler is ta
 
 - [Mattermost: NXCals][mm_nxcals]
 
-**Contact(s):**
-
-- Jakub Wozniak
-- Piotr Sowinski
-- Vito Baggiolini
-- (Michi Hostettler)
+**Contact(s):** See logbook instruction.
 
 ### Acc-Models
 
-- Riccardo de Maria
 - [Gitlab][acc_models_gitlab]{target=_blank} / [Issues][acc_models_gitlab_issues]{target=_blank}
+**Contact(s):** See logbook instruction.
 
 ### MAD-X
 
-- Riccardo de Maria
 - [Website][madx_web]{target=_blank} / [GitHub][madx_github]{target=_blank} / [Issues][madx_github_issues]{target=_blank}
+**Contact(s):** See logbook instruction.
 
 ### MAD-NG
 
-- Laurent Deniau
-- Joshua Gray (python interface)
-- Bernardo Abreu Figueiredo (Xsuite interface)
 - [GitHub][madng_github]{target=_blank} / [Issues][madng_github_issues]{target=_blank}
+**Contact(s):** See logbook instruction.
 
 ### Xsuite
 
-- Giovanni Iadarola
-- Szymon Lopaciuk
 - [GitHub][xsuite_github]{target=_blank} / [Issues][xsuite_github_issues]{target=_blank}
+**Contact(s):** See logbook instruction.
 
 *[GPN]: General Purpose Network, the main CERN network
 
