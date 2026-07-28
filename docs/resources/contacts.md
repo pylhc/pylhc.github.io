@@ -19,7 +19,7 @@ Depending on the urgency of your issue, you can also search the [Knowledge Base]
 This section lists general services that are not specific to a certain hardware or software component.
 
 Normally, each service has a specific [ServiceNow form][service_tickets]{target=_blank}, that you should use to open a ticket, but sometimes it is not obvious which one to use.
-Remember to that you can always open a [general SNOW ticket][snow_general] for any issue, which will be routed to the appropriate service, but this can take longer than opening a specific form.
+Remember that you can always open a [general SNOW ticket][snow_general]{target=_blank} for any issue, which will be routed to the appropriate service, but this can take longer than opening a specific form.
 
 ### HTCondor
 
@@ -71,14 +71,14 @@ It has helped sharing expertise for BPM related issues and shortcomings, improvi
 As described in the sections on [our python environments][python_prod_env]  and [virtual environments][python_venvs], we use the [Acc-Py][acc-py]{target=_blank .cern_internal} distribution as basis for our production Python environments.
 This distribution system is maintained by the Acc-Py team at CERN, who can be contacted for questions regarding its usage, installation or development.
 
-- [Mattermost: acc-py][mm_acc_py]
+- [Mattermost: acc-py][mm_acc_py]{target=_blank .cern_login}
 - **Contact(s):** See logbook instruction.
 
 ### Java
 
 Questions regarding the Java infrastructure we are using, such as the deployment of applications, the CBNG build system or the Acc-Java libraries our software depends on, can be directed to:
 
-- [Mattermost: acc-java][mm_acc_java]
+- [Mattermost: acc-java][mm_acc_java]{target=_blank .cern_login}
 - **Contact(s):** See logbook instruction.
 
 ### NXCals
@@ -86,7 +86,7 @@ Questions regarding the Java infrastructure we are using, such as the deployment
 The NXCals team is always interested in feedback regarding the user experience and use-cases of NXCals, at CERN in general but also for each individual sections.
 They regularly organise meetings to gather feedback and discuss new features, so feel free to reach out to the contacts below to be added to their mailing list.
 
-- [Mattermost: NXCals][mm_nxcals]
+- [Mattermost: NXCals][mm_nxcals]{target=_blank .cern_login}
 - **Contact(s):** See logbook instruction.
 
 ### Acc-Models
