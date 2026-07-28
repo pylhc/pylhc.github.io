@@ -42,46 +42,27 @@ In particular, when running out of AFS quota, you might need to [adjust your set
 - [AFS Settings][afs_settings]{target=_blank .cern_login}
 - [LXPlus SNOW ticket][snow_lxplus]{target=_blank .cern_login}
 - [Mattermost: lxplus][mm_lxplus]{target=_blank .cern_login}
+- **Contact(s):** See logbook instruction.
 
-**Contact(s):** See logbook instruction.
+## LHC
 
-## Hardware
+When planning an MD session or you have operational questions regarding commissioning, the first person to contact is the *EIC during your shift*.
 
-### LHC
+- **General Contact(s):** See logbook instruction.
+- **AC-Dipole Contact(s):** See logbook instruction.
 
-#### OP
+## SPS
 
-If you are planning an MD session or you have operational questions regarding commissioning, the first person to contact is the **EIC during your shift**.
+- **General Contact(s):** See logbook instruction.
+- **RF Contact(s):** See logbook instruction.
+- **Optics Contact(s):** See logbook instruction.
 
-That being said, **Matteo** has always been a close contact for optics related topics in OP, and **Michi** is also very knowledgeable and involved in this area (see also [Software](#software)).
+## BPMs (LHC, SPS)
 
-As OP is lead by **Jörg** he is of course also a good contact for general OP questions.
+In recent years, cooperation between the BI BPM teams and OMC has increased significantly, as they can profit for our measurements and [statistical analysis of BPM data quality][bad_bpms].
+It has helped sharing expertise for BPM related issues and shortcomings, improving the quality of measurements.
 
-**Contact(s):** See logbook instruction.
-
-#### AC-Dipole
-
-**Contact(s):** See logbook instruction.
-
-### SPS
-
-#### General
-
-**Contact(s):** See logbook instruction.
-
-#### RF
-
-**Contact(s):** See logbook instruction.
-
-#### Optics
-
-**Contact(s):** See logbook instruction.
-
-### BPMs (LHC, SPS)
-
-In recent years, cooperation between the BI BPM teams and OMC has increased significantly, as they can profit for our measurements and [statistical analysis of BPM data quality][bad_bpms], and we can use their expertise for BPM related issues and shortcomings, improving the quality of measurements.
-
-**Contact(s):** See logbook instruction.
+- **Contact(s):** See logbook instruction.
 
 ## Software
 
