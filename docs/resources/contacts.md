@@ -1,19 +1,25 @@
 # CERN Help and Contacts
 
-On this page, you can find the contact information for various services and support related to accelerator operations, hardware, and software outside of the OMC-Team.
-For privacy reasons, only their names are listed here, but you can find their contact details in the [CERN phonebook][phonebook]{target=_blank .cern_login}.
-Most of them are also very active on [Mattermost][mattermost]{target=_blank .cern_login} and you can contact them there as well.
+Find on this page information for various services and support related to accelerator operations, hardware, and software outside of the OMC-Team.
+
+!!! danger "No Identifying Information"
+    For CERN privacy policy reasons, no names can be listed here.
+    A complete list of relevant contacts can be found in the instructions of the OMC logbook, and will display automatically on opening.
+    Note that logbook access requires a login.
+
+    The OMC logbook can be found at the following links:
+
+    - [Insider logbook][omc_logbook_insider]{target=_blank .cern_login .cern_internal} (requires to be in the GPN and can make edits),
+    - [Outsider logbook][omc_logbook_outsider]{target=_blank .cern_login} (read only).
 
 Depending on the urgency of your issue, you can also search the [Knowledge Base][knowledge_base]{target=_blank}, open a [ServiceNow ticket][service_tickets]{target=_blank}, contact the [helpdesk][helpdesk]{target=_blank} or reach out in one of the dedicated [Mattermost][mattermost]{target=_blank .cern_login} channels, which are also listed below.
-
-Maybe also check the [Service Status Board][status_board]{target=_blank} to see if there are any ongoing issues with the service you are interested in.
 
 ## Services
 
 This section lists general services that are not specific to a certain hardware or software component.
 
 Normally, each service has a specific [ServiceNow form][service_tickets]{target=_blank}, that you should use to open a ticket, but sometimes it is not obvious which one to use.
-Remember to that you can always open a [general SNOW ticket][snow_general]{target=_blank .cern_login} for any issue, which will be routed to the appropriate service - but this can take longer than opening a specific form.
+Remember that you can always open a [general SNOW ticket][snow_general]{target=_blank} for any issue, which will be routed to the appropriate service, but this can take longer than opening a specific form.
 
 ### HTCondor
 
@@ -23,9 +29,7 @@ For questions/issues regarding LxBatch/HTCondor the following help is available:
 - [LXBatch SNOW ticket][snow_htcondor]{target=_blank .cern_login}
 - [Mattermost: Batchers][mm_htcondor]{target=_blank .cern_login}
 
-**Contact(s):**
-
-- Ben Jones
+**Contact(s):** See logbook instruction.
 
 ### LxPlus/AFS/EOS
 
@@ -38,138 +42,78 @@ In particular, when running out of AFS quota, you might need to [adjust your set
 - [AFS Settings][afs_settings]{target=_blank .cern_login}
 - [LXPlus SNOW ticket][snow_lxplus]{target=_blank .cern_login}
 - [Mattermost: lxplus][mm_lxplus]{target=_blank .cern_login}
+- **Contact(s):** See logbook instruction.
 
-**Contact(s):**
+## LHC
 
-- Steve Traylen
-- Vincent Brillault
-- Jan Iven
-- Ben Jones
+When planning an MD session or you have operational questions regarding commissioning, the first person to contact is the *EIC during your shift*.
 
-## Hardware
+- **General Contact(s):** See logbook instruction.
+- **AC-Dipole Contact(s):** See logbook instruction.
 
-### LHC
+## SPS
 
-#### OP
+- **General Contact(s):** See logbook instruction.
+- **RF Contact(s):** See logbook instruction.
+- **Optics Contact(s):** See logbook instruction.
 
-If you are planning an MD session or you have operational questions regarding commissioning, the first person to contact is the **EIC during your shift**.
+## BPMs (LHC, SPS)
 
-That being said, **Matteo** has always been a close contact for optics related topics in OP, and **Michi** is also very knowledgeable and involved in this area (see also [Software](#software)).
+In recent years, cooperation between the BI BPM teams and OMC has increased significantly, as they can profit for our measurements and [statistical analysis of BPM data quality][bad_bpms].
+It has helped sharing expertise for BPM related issues and shortcomings, improving the quality of measurements.
 
-As OP is lead by **Jörg** he is of course also a good contact for general OP questions.
-
-**Contact(s):**
-
-- Matteo Solfaroli
-- Michi Hostettler
-- Jörg Wenninger
-
-#### AC-Dipole
-
-**Contact(s):**
-
-- Nicolas Magnin
-
-### SPS
-
-#### General
-
-**Contact(s):**
-
-- Stephane Cettur Cave
-
-#### RF
-
-**Contact(s):**
-
-- Giulia Papotti
-
-#### Optics
-
-**Contact(s):**
-
-- Panos Zisopoulos
-
-### BPMs (LHC, SPS)
-
-In recent years, cooperation between the BI BPM teams and OMC has increased significantly, as they can profit for our measurements and [statistical analysis of BPM data quality][bad_bpms], and we can use their expertise for BPM related issues and shortcomings, improving the quality of measurements.
-
-**Contact(s):**
-
-- Manuel Gonzalez Berges
-- Michal Krupa
+- **Contact(s):** See logbook instruction.
 
 ## Software
 
-!!! info "A Special Thanks to Michi Hostettler :heart:"
-    While not the official support for software *Michi Hostettler* is incredibly knowledgeable and can very often help with questions or issues regarding various software packages used in accelerator operations.
-    Should you run into an issue, it is likely he has already encountered it before, and most likely that he has a solution.
-
-    That is to say, if you are reading this, **thank you Michi for all your help** in the past, it has been invaluable!
-
-    - Joschua & Felix
-
 ### Acc-Py
 
-As described in the sections on [our python environments][python_prod_env]  and [virtual environments][python_venvs], we use the [Acc-Py][acc-py]{target=_blank} distribution as our main Python environment.
+As described in the sections on [our python environments][python_prod_env]  and [virtual environments][python_venvs], we use the [Acc-Py][acc-py]{target=_blank .cern_internal} distribution as basis for our production Python environments.
 This distribution system is maintained by the Acc-Py team at CERN, who can be contacted for questions regarding its usage, installation or development.
 
-- [Mattermost: acc-py][mm_acc_py]
-
-**Contact(s):**
-
-- Ivan Sinkarenko
-- Philip Elson
+- [Mattermost: acc-py][mm_acc_py]{target=_blank .cern_login}
+- **Contact(s):** See logbook instruction.
 
 ### Java
 
-Questions regarding the Java infrastructure we are using, like deployment of applications, the CBNG build system or the Acc-Java libraries our software depends on, can be directed to:
+Questions regarding the Java infrastructure we are using, such as the deployment of applications, the CBNG build system or the Acc-Java libraries our software depends on, can be directed to:
 
-- [Mattermost: acc-java][mm_acc_java]
-
-**Contact(s):**
-
-- Felix Ehm
+- [Mattermost: acc-java][mm_acc_java]{target=_blank .cern_login}
+- **Contact(s):** See logbook instruction.
 
 ### NXCals
 
-The NXCals team is always interested in feedback regarding the user experience and use-cases of NXCals, at CERN in general, but also for each individual section - as they might have very different needs.
+The NXCals team is always interested in feedback regarding the user experience and use-cases of NXCals, at CERN in general but also for each individual sections.
+They regularly organise meetings to gather feedback and discuss new features, so feel free to reach out to the contacts below to be added to their mailing list.
 
-They regularly organise meetings to gather feedback and discuss new features, so feel free to reach out to the contacts below to be added to the mailing list.
-
-While not directly involved in the development of NXCals, Michi Hostettler is taking care of data collection and organisation for the LHC, which is stored using the NXCals framework and is therefore a good contact for questions with regards to that topic.
-
-- [Mattermost: NXCals][mm_nxcals]
-
-**Contact(s):**
-
-- Jakub Wozniak
-- Piotr Sowinski
-- Vito Baggiolini
-- (Michi Hostettler)
+- [Mattermost: NXCals][mm_nxcals]{target=_blank .cern_login}
+- **Contact(s):** See logbook instruction.
 
 ### Acc-Models
 
-- Riccardo de Maria
 - [Gitlab][acc_models_gitlab]{target=_blank} / [Issues][acc_models_gitlab_issues]{target=_blank}
+- **Contact(s):** See logbook instruction.
 
 ### MAD-X
 
-- Riccardo de Maria
 - [Website][madx_web]{target=_blank} / [GitHub][madx_github]{target=_blank} / [Issues][madx_github_issues]{target=_blank}
+- **Contact(s):** See logbook instruction.
 
 ### MAD-NG
 
-- Laurent Deniau
-- Joshua Gray (python interface)
-- Bernardo Abreu Figueiredo (Xsuite interface)
 - [GitHub][madng_github]{target=_blank} / [Issues][madng_github_issues]{target=_blank}
+- **Contact(s):** See logbook instruction.
 
 ### Xsuite
 
-- Giovanni Iadarola
-- Szymon Lopaciuk
 - [GitHub][xsuite_github]{target=_blank} / [Issues][xsuite_github_issues]{target=_blank}
+- **Contact(s):** See logbook instruction.
+
+*[GPN]: General Purpose Network, the main CERN network
+*[CBNG]: Common Build Next Generation
+
+[omc_logbook_insider]: https://logbook.cern.ch/elogbook-server#/logbook?logbookId=1081
+[omc_logbook_outsider]:https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081
 
 [acc-py]: https://confluence.cern.ch/pages/viewpage.action?spaceKey=ACCPY&title=Getting+started+with+Acc-Py
 [cern_htcondor_docs]: https://batchdocs.web.cern.ch/index.html
@@ -179,8 +123,6 @@ While not directly involved in the development of NXCals, Michi Hostettler is ta
 [status_board]: https://cern.service-now.com/service-portal?id=service_status_board
 [snow_general]: https://cern.service-now.com/service-portal?id=get_help
 [helpdesk]: https://cern.service-now.com/service-portal?id=service_desk
-
-[phonebook]: https://phonebook.cern.ch/
 
 [services]: https://resources.web.cern.ch/resources/Manage/ListServices.aspx
 [afs_settings]: https://resources.web.cern.ch/resources/Manage/AFS/Settings.aspx
