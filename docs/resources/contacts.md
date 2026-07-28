@@ -2,7 +2,6 @@
 
 Find on this page information for various services and support related to accelerator operations, hardware, and software outside of the OMC-Team.
 
-
 !!! danger "No Identifying Information"
     For CERN privacy policy reasons, no names can be listed here.
     A complete list of relevant contacts can be found in the instructions of the OMC logbook, and will display automatically on opening.
@@ -13,12 +12,14 @@ Find on this page information for various services and support related to accele
     - [Insider logbook][omc_logbook_insider]{target=_blank .cern_login .cern_internal} (requires to be in the GPN and can make edits),
     - [Outsider logbook][omc_logbook_outsider]{target=_blank .cern_login} (read only).
 
+Depending on the urgency of your issue, you can also search the [Knowledge Base][knowledge_base]{target=_blank}, open a [ServiceNow ticket][service_tickets]{target=_blank}, contact the [helpdesk][helpdesk]{target=_blank} or reach out in one of the dedicated [Mattermost][mattermost]{target=_blank .cern_login} channels, which are also listed below.
+
 ## Services
 
 This section lists general services that are not specific to a certain hardware or software component.
 
 Normally, each service has a specific [ServiceNow form][service_tickets]{target=_blank}, that you should use to open a ticket, but sometimes it is not obvious which one to use.
-Remember to that you can always open a [general SNOW ticket][snow_general] for any issue, which will be routed to the appropriate service - but this can take longer than opening a specific form.
+Remember to that you can always open a [general SNOW ticket][snow_general] for any issue, which will be routed to the appropriate service, but this can take longer than opening a specific form.
 
 ### HTCondor
 
