@@ -68,54 +68,49 @@ It has helped sharing expertise for BPM related issues and shortcomings, improvi
 
 ### Acc-Py
 
-As described in the sections on [our python environments][python_prod_env]  and [virtual environments][python_venvs], we use the [Acc-Py][acc-py]{target=_blank} distribution as our main Python environment.
+As described in the sections on [our python environments][python_prod_env]  and [virtual environments][python_venvs], we use the [Acc-Py][acc-py]{target=_blank .cern_internal} distribution as basis for our production Python environments.
 This distribution system is maintained by the Acc-Py team at CERN, who can be contacted for questions regarding its usage, installation or development.
 
 - [Mattermost: acc-py][mm_acc_py]
-
-**Contact(s):** See logbook instruction.
+- **Contact(s):** See logbook instruction.
 
 ### Java
 
-Questions regarding the Java infrastructure we are using, like deployment of applications, the CBNG build system or the Acc-Java libraries our software depends on, can be directed to:
+Questions regarding the Java infrastructure we are using, such as the deployment of applications, the CBNG build system or the Acc-Java libraries our software depends on, can be directed to:
 
 - [Mattermost: acc-java][mm_acc_java]
-
-**Contact(s):** See logbook instruction.
+- **Contact(s):** See logbook instruction.
 
 ### NXCals
 
-The NXCals team is always interested in feedback regarding the user experience and use-cases of NXCals, at CERN in general, but also for each individual section - as they might have very different needs.
-
-They regularly organise meetings to gather feedback and discuss new features, so feel free to reach out to the contacts below to be added to the mailing list.
-
-While not directly involved in the development of NXCals, Michi Hostettler is taking care of data collection and organisation for the LHC, which is stored using the NXCals framework and is therefore a good contact for questions with regards to that topic.
+The NXCals team is always interested in feedback regarding the user experience and use-cases of NXCals, at CERN in general but also for each individual sections.
+They regularly organise meetings to gather feedback and discuss new features, so feel free to reach out to the contacts below to be added to their mailing list.
 
 - [Mattermost: NXCals][mm_nxcals]
-
-**Contact(s):** See logbook instruction.
+- **Contact(s):** See logbook instruction.
 
 ### Acc-Models
 
 - [Gitlab][acc_models_gitlab]{target=_blank} / [Issues][acc_models_gitlab_issues]{target=_blank}
-**Contact(s):** See logbook instruction.
+- **Contact(s):** See logbook instruction.
 
 ### MAD-X
 
 - [Website][madx_web]{target=_blank} / [GitHub][madx_github]{target=_blank} / [Issues][madx_github_issues]{target=_blank}
-**Contact(s):** See logbook instruction.
+- **Contact(s):** See logbook instruction.
 
 ### MAD-NG
 
 - [GitHub][madng_github]{target=_blank} / [Issues][madng_github_issues]{target=_blank}
-**Contact(s):** See logbook instruction.
+- **Contact(s):** See logbook instruction.
 
 ### Xsuite
 
 - [GitHub][xsuite_github]{target=_blank} / [Issues][xsuite_github_issues]{target=_blank}
-**Contact(s):** See logbook instruction.
+- **Contact(s):** See logbook instruction.
 
 *[GPN]: General Purpose Network, the main CERN network
+*[CBNG]: Common Build Next Generation
 
 [omc_logbook_insider]: https://logbook.cern.ch/elogbook-server#/logbook?logbookId=1081
 [omc_logbook_outsider]:https://be-op-logbook.web.cern.ch/elogbook-server/#/logbook?logbookId=1081
@@ -128,8 +123,6 @@ While not directly involved in the development of NXCals, Michi Hostettler is ta
 [status_board]: https://cern.service-now.com/service-portal?id=service_status_board
 [snow_general]: https://cern.service-now.com/service-portal?id=get_help
 [helpdesk]: https://cern.service-now.com/service-portal?id=service_desk
-
-[phonebook]: https://phonebook.cern.ch/
 
 [services]: https://resources.web.cern.ch/resources/Manage/ListServices.aspx
 [afs_settings]: https://resources.web.cern.ch/resources/Manage/AFS/Settings.aspx
