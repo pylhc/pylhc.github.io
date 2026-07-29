@@ -43,6 +43,9 @@ Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows expor
 
 ## Checking Corrections
 
+The `Correction test` tab lets one apply a correction to the model and inspect its effect before committing to it in the machine.
+
+
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_correction_test.png" width="95%" alt="Correction Test Sub-tab"/>
