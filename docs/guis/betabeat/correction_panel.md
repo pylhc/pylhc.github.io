@@ -25,7 +25,6 @@ Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows expor
 ## Viewing Corrections
 
 Clicking an entry in the correction table on the left displays the corresponding powering changes in the `Strengths` plot on the right, with one bar per affected magnet or knob.
-Hovering over a specific bar reveals the name of that magnet or knob together with the exact correction value assigned to it.
 
 <figure>
   <center>
@@ -33,6 +32,14 @@ Hovering over a specific bar reveals the name of that magnet or knob together wi
   <figcaption>The <code>Correction</code> tab with correction files loaded; the <code>Strengths</code> plot on the right shows the powering change assigned to each corrector for the selected correction.</figcaption>
   </center>
 </figure>
+
+Hovering over a specific bar reveals the name of that magnet or knob it corresponds to along with the exact correction value assigned to it.
+Remember that this correction is a powering change and not its final
+
+!!! info "No Multi Selection"
+    Note that unlike in the `Optics` panel, selecting multiple correction entries from the table will not lead to a comparison.
+    This is due to the often different set of correctors modified by different corrections.
+    Instead, only one of the correction will have its strengths displayed.
 
 !!! tip "Global Coupling Corrections Trims"
     In the special case of global coupling corrections computed with the [coupling preset](optics_panel.md#presets), and to facilitate the user's work, double clicking on the correction file name in the table will spawn a popup detailing the exact trim to apply in the accelerator cockpit app.
