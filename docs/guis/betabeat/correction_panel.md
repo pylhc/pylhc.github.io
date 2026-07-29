@@ -111,7 +111,7 @@ Note that running a correction applies all corrections files inside the `Correct
 By combining the options above one can assemble several correction scenarios.
 The tabs below show a few typical setups of the corrections tree:
 
-=== "Single correction"
+=== "Single Correction"
 
     <figure>
       <center>
@@ -120,7 +120,7 @@ The tabs below show a few typical setups of the corrections tree:
       </center>
     </figure>
 
-=== "Combined correction"
+=== "Combined Correction"
 
     <figure>
       <center>
@@ -129,12 +129,12 @@ The tabs below show a few typical setups of the corrections tree:
       </center>
     </figure>
 
-=== "Comparing schemes"
+=== "Comparing Schemes"
 
     <figure>
       <center>
-      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_comparison.png" width="90%" alt="Correction test tree with two correction folders"/>
-      <figcaption>Two folders, each holding a different correction, are tested and plotted side by side for comparison.</figcaption>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_combinations_comparison.png" width="90%" alt="Correction test tree with two correction folders"/>
+      <figcaption>Two folders, each holding a different correction from different weights, to be compared.</figcaption>
       </center>
     </figure>
 
