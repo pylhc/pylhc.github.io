@@ -11,6 +11,13 @@ The `Correction` panel displays the corrections computed from the `Optics` panel
 
 ## Viewing Corrections
 
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_strengths.png" width="95%" alt="Q"/>
+  <figcaption>Q.</figcaption>
+  </center>
+</figure>
+
 DEFAULT VIEW
 
 !!! tip "Global Coupling Corrections Trims"
@@ -23,15 +30,7 @@ DEFAULT VIEW
       </center>
     </figure>
 
-
 ## Checking Corrections
-
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_strengths.png" width="95%" alt="Q"/>
-  <figcaption>Q.</figcaption>
-  </center>
-</figure>
 
 <figure>
   <center>
@@ -40,12 +39,7 @@ DEFAULT VIEW
   </center>
 </figure>
 
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_knob_panel.png" width="95%" alt="QQQ"/>
-  <figcaption>QQQ.</figcaption>
-  </center>
-</figure>
+<!-- TODO: show the correction test in python -->
 
 ## Knob Creation
 
@@ -54,6 +48,13 @@ It provides an `Open Knob Panel` button to access the LHC beam process list.
 ### The Knob Panel
 
 Through the `Knob Panel`, corrections can be provided directly inside the LHC beam system.
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_knob_panel.png" width="95%" alt="QQQ"/>
+  <figcaption>QQQ.</figcaption>
+  </center>
+</figure>
 
 !!! info
     Being inside of the Technical Network is required for the KnobPanel.
