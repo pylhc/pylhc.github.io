@@ -157,6 +157,8 @@ Two checkboxes next to the ++"Run Corrections"++{.green-gui-button} button contr
 - `Plot in Python`: should always be left ticked (its default) as the Java-side plotting has been removed. When checked, a `Qt`-based window opened by the Python process will display the results.
 - `Sorted`: if checked (the default), the per-correction plot files are saved into their correction subfolders; otherwise they all go into the measurement directory.
 
+<!-- TODO: mention everything at the lower left is old Java-side plotting optics etc and is basically taken out since Java side plotting has been removed. -->
+
 ## Knob Creation
 
 It provides an `Open Knob Panel` button to access the LHC beam process list.
