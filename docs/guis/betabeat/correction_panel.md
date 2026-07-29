@@ -50,6 +50,7 @@ Hovering over a specific bar reveals the name of the magnet it corresponds to al
 One can inspect these values to check that constraints are respected, e.g. no magnet would end up outside of its powering limits.
 
 !!! failure "No Multi Selection"
+
     Note that unlike in the `Optics` panel, selecting multiple correction entries from the table will not lead to a comparison.
     This is due to the often different set of correctors modified by different corrections.
     Instead, only one of the correction will have its strengths displayed.
@@ -80,6 +81,7 @@ Running a correction then plots, for each correctable parameter, both the effect
 </figure>
 
 !!! info "One Measurement at a Time"
+
     Unlike the `Correction` tab, which can list corrections for several measurements at once, the `Correction test` tab operates on a single measurement at a time.
     It is possible however to hold and test several different corrections (individually or together) for this measurement.
 
@@ -102,7 +104,10 @@ Different combinations of corrections can also be tested and compared against on
 
 The buttons below this table provide options to do so:
 
-- ++"Folder"++{.green-gui-button}: TO WRITE
+- ++"Folder"++{.green-gui-button}: Write.
+- ++"File"++{.green-gui-button}: Write.
+- ++"Knob"++{.green-gui-button}: Write.
+- ++"Remove"++{.red-gui-button}: Write.
 
 !!! info "Running a Correction"
 
