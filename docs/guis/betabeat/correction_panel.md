@@ -31,6 +31,7 @@ Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows expor
     - A `changeparameters_*.tfs` file: the correction as a knob table, holding one powering *delta* per corrector — the change to apply to correct the machine (see [viewing corrections](#viewing-corrections)).
     - A `changeparameters_*_correct.madx` file: the same correction (deltas) expressed as `MAD-X` assignments, to apply in order to correct the machine.
     - A `changeparameters_*.madx` file: the counterpart that instead makes the *model reproduce the measurement*; this is the file the [correction test](#checking-corrections) calls.
+    - A `changeparameters_*_gui.ini` file: a record of the settings used for the run, written by the Python side process.
 
 ## Viewing Corrections
 
