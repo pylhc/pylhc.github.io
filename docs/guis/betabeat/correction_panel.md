@@ -85,8 +85,7 @@ After running a correction, one can view the effect of the correction itself and
 At the top of the tab, two dropdown menus define what the correction test runs on:
 
 - `Measurement`: the measurement to test. The dropdown lists entries known to the GUI (e.g. any measurement for which a correction was loaded in the previous tab), and an `Other...` entry that when selected opens a file dialogue to select any measurement folder from disk.
-- `Model`: the model to apply the corrections to. It likewise lists known models (e.g. available in the `Models` menu) and also  provides an `Other...` option with the behaviour stated above.
-           Note that the model should naturally be one that matches the selected measurement.
+- `Model`: the model to apply the corrections to. It likewise lists known models (e.g. available in the `Models` menu) and also  provides an `Other...` option with the behaviour stated above. Note that the model should naturally be one that matches the selected measurement.
 
 The selected measurement then appears in the tree on the left, with its `Corrections` folder beneath it listing the available correction files.
 
@@ -103,7 +102,7 @@ It is also possible to test several different combinations of corrections to com
 
 The buttons below this table provide options to do so:
 
-- ++"Folder"++{.green-gui-button}
+- ++"Folder"++{.green-gui-button}: TO WRITE
 
 !!! info "Running a Correction"
 
