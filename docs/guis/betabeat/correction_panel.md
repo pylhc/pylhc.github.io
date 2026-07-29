@@ -22,6 +22,15 @@ Clicking the ++"Load Correction Files"++{.green-gui-button} button above the tab
 To the right, the `Strengths` plot displays the resulting powering of each affected magnet or knob after the selected correction is applied.
 Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows exporting a correction as a knob, see [knob creation](#knob-creation).
 
+!!! info "About Correction Files"
+
+    Now is a good time to recap what results from clicking ++"Run Correction"++{.green-gui-button} in the [`Optics` panel](optics_panel.md#computing-global-corrections).
+
+    Each computed correction for a given parameter (e.g. phase) creates the following files in the `Correction` folder:
+
+    - A `changeparameters_*.tfs` file holding the resulting magnet powering deltas (see [viewing Corrections](#viewing-corrections)),
+    - A `changeparameters_*_correct.madx` file which translates those into `MAD-X` commands to apply onto the model.
+
 ## Viewing Corrections
 
 Clicking an entry in the correction table on the left displays the resulting powering in the `Strengths` plot on the right, with one bar per affected magnet or knob.
@@ -88,8 +97,6 @@ The selected measurement then appears in the tree on the left, with its `Correct
   </center>
 </figure>
 
-Each computed correction creates a `changeparameters_*.tfs` holding the magnet powering deltas (see [viewing Corrections](#viewing-corrections)) and a corresponding `changeparameters_*_correct.madx` file that translates them into `MAD-X` commands to apply onto the model.
-Along comes a`job.create_twiss_matched.madx` file which will call the above to do the correction run.
 
 It is possible to test various individual corrections as well as combinations of corrections.
 It is also possible to test several different combinations of corrections to compare to one another.
@@ -98,6 +105,12 @@ The buttons below this table provide options to do so:
 
 - ++"Folder"++{.green-gui-button}
 
+!!! info "Running a Correction"
+
+    <!-- TODO: Write this better. -->
+    What it does:
+    Creates a `job.create_twiss_matched.madx` file in the `Correction` folder which calls the relevant model and `changeparameters_*_correct.madx` files and calls `MAD-X` on it.
+    Uses the data from the effect on the model and the measurement to determine the expected end result.
 
 <!-- TODO: show the correction test in python -->
 
