@@ -333,7 +333,7 @@ This field is automatically filled by the fetcher with available `.str` files in
 - **Kinetic Energy**:
 Activate and set the energy at which the accelerator is running in GeV, if needed for your model.
 
-[global_correction_checks]: correction_panel.md#correction-checks
+[global_correction_checks]: correction_panel.md#checking-corrections
 [bbgui_issue_202]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/202
 [acc-models]: https://acc-models.web.cern.ch/acc-models/
 [multiturn_tune_deltas]: ../multiturn/excitation.md#tune-deltas
