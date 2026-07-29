@@ -147,12 +147,15 @@ Clicking ++"Run Corrections"++{.green-gui-button} then launches the test: each f
 
     Under the hood, the GUI launches the `omc3.check_corrections` module, handing it the selected model and correction files, which:
 
-    - Writes a `job.create_twiss_matched.madx` file in the `Corrections` folder, which calls the provided model and all `changeparameters_*.madx` files (by default, but actually all files matching the regex),
+    - Writes a `job.create_twiss_matched.madx` file in the `Corrections` folder, which calls the provided model and the correction files matching the filter,
     - Runs `MAD-X` to build the corrected ("matched") model,
     - Compares this matched model to the nominal one to determine the correction effect,
     - Uses data from the measurement to determine the expected result from applying this correction.
 
-<!-- TODO: show the correction test in python -->
+Two checkboxes next to the ++"Run Corrections"++{.green-gui-button} button control how the run behaves and where its plots go:
+
+- `Plot in Python`: should always be left ticked (its default) — the Java-side plotting has been removed, so a `Qt`-based window opened by the Python process is what displays the results.
+- `Sorted`: if checked (the default), the per-correction plot files are saved into their correction subfolders; if unchecked, they all go into the measurement directory.
 
 ## Knob Creation
 
