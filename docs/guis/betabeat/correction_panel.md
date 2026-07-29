@@ -6,9 +6,15 @@ The `Correction` panel displays the corrections computed from the `Optics` panel
 
 DEFAULT VIEW
 
-!!! tip "Coupling Corrections Trims"
-    Special case: double click the correction file name and you will see what corrections and trims this leads to.
-    <!-- TODO: include screenshot -->
+!!! tip "Global Coupling Corrections Trims"
+    In the special case of global coupling corrections computed with the [coupling preset](optics_panel.md#presets), and to facilitate the user's work, double clicking on the correction file name in the table will spawn a popup detailing the exact trim to apply in the accelerator cockpit app.
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/coupling_corrections_trim.png" width="65%" alt="Global coupling trim details"/>
+      <figcaption>The global coupling trim popup, highlighting the exact determined corrections and corresponding trims to apply on each knob.</figcaption>
+      </center>
+    </figure>
 
 
 ## Checking Corrections
