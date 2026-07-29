@@ -237,6 +237,7 @@ Notice that an active BP will be in green, inactive in blue. Makes it easier to 
 
 <!-- TODO: Include a screenshot of the Knob Panel view knobs table? -->
 <!-- TODO: Include a screenshot of the Knob Panel view knobs chart? -->
+<!-- TODO: This loads settings only if a BP AND AN OPTICS ARE SELECTED IN THE CREATION TAB!!! -->
 <!-- TODO: mention we can delete! (use carefully) -->
 
 To create a knob:
