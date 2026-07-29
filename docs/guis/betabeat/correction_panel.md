@@ -236,6 +236,8 @@ By selecting one, the user can examine or visualise the values attributed to eac
 
 <!-- TODO: Include a screenshot of the Knob Panel view knobs table? -->
 <!-- TODO: Include a screenshot of the Knob Panel view knobs chart? -->
+<!-- TODO: mention we can delete! (use carefully) -->
+
 
 *[LSA]: LHC Software Architecture
 *[EIC]: Engineer in Charge
