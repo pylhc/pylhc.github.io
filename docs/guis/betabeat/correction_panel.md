@@ -24,10 +24,13 @@ Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows expor
 
 ## Viewing Corrections
 
+Clicking an entry in the correction table on the left displays the corresponding powering changes in the `Strengths` plot on the right, with one bar per affected magnet or knob.
+Hovering over a specific bar reveals the name of that magnet or knob together with the exact correction value assigned to it.
+
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_strengths.png" width="95%" alt="Correction Panel with Loaded Corrections and Strengths Plot"/>
-  <figcaption>The <code>Correction</code> tab with correction files loaded; the <code>Strengths</code> plot on the right shows the powering change assigned to each corrector.</figcaption>
+  <figcaption>The <code>Correction</code> tab with correction files loaded; the <code>Strengths</code> plot on the right shows the powering change assigned to each corrector for the selected correction.</figcaption>
   </center>
 </figure>
 
