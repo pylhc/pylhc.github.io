@@ -111,10 +111,9 @@ The buttons below this table provide options to do so:
 
 !!! info "Running a Correction"
 
-    <!-- TODO: Write this better. -->
-    What it does:
-    Creates a `job.create_twiss_matched.madx` file in the `Corrections` folder which calls the relevant model and `changeparameters_*.madx` files, then runs `MAD-X` on it.
-    Uses the data from the effect on the model and the measurement to determine the expected end result.
+    Clicking ++"Run Corrections"++{.green-gui-button} does not itself perform the computation: the GUI only launches the `omc3.check_corrections` module, handing it the selected model and correction files.
+    On the Python side, `omc3` then writes a `job.create_twiss_matched.madx` file in the correction's output folder, which calls the model and the `changeparameters_*.madx` files and runs `MAD-X` to build the corrected ("matched") model.
+    This matched model is compared to the nominal model and to the measurement to determine both the effect of the correction and its expected result.
 
 <!-- TODO: show the correction test in python -->
 
