@@ -138,11 +138,16 @@ The tabs below show a few typical setups of the corrections tree:
       </center>
     </figure>
 
-!!! info "Running a Correction"
+Clicking ++"Run Corrections"++{.green-gui-button} then launches the test, applying all correction files within the given folder.
 
-    When clicking ++"Run Corrections"++{.green-gui-button} the GUI launches the `omc3.check_corrections` module, handing it the selected model and correction files.
-    This will write a `job.create_twiss_matched.madx` file in the `Corrections` folder, which calls the provided model and the `changeparameters_*.madx` file then run `MAD-X` to build the corrected ("matched") model.
-    This matched model is compared to the nominal model and to the measurement to determine both the effect of the correction and its expected result.
+!!! info "What Happens When Running a Correction"
+
+    Under the hood, the GUI launches the `omc3.check_corrections` module, handing it the selected model and correction files, which:
+
+    - Writes a `job.create_twiss_matched.madx` file in the `Corrections` folder, which calls the provided model and all `changeparameters_*.madx` files (by default, but actually all files matching the regex),
+    - Runs `MAD-X` to build the corrected ("matched") model,
+    - Compares this matched model to the nominal one to determine the correction effect,
+    - Uses data from the measurement to determine the expected result from applying this correction.
 
 <!-- TODO: show the correction test in python -->
 
