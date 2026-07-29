@@ -138,7 +138,7 @@ The tabs below show a few typical setups of the corrections tree:
       </center>
     </figure>
 
-Clicking ++"Run Corrections"++{.green-gui-button} then launches the test and plots the results when done.
+Clicking ++"Run Corrections"++{.green-gui-button} then launches the test: each folder in the tree is run as a separate scenario, and the results are plotted together when done.
 
 !!! info "What Happens When Running a Correction"
 
