@@ -80,14 +80,16 @@ At the top of the tab, two dropdown menus define what the correction test runs o
            Note that the model should naturally be one that matches the selected measurement.
 
 The selected measurement then appears in the tree on the left, with its `Corrections` folder beneath it listing the available correction files.
-Each correction actually comes as a pair: a `changeparameters_*.tfs` holding the deltas — the powering changes described under [Viewing Corrections](#viewing-corrections) — alongside a `changeparameters_*.madx` that translates them into `MAD-X` commands to apply onto the model.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_correction_test.png" width="95%" alt="Correction Test Sub-tab"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_table_loaded.png" width="90%" alt="Correction Test Sub-tab"/>
   <figcaption>The <code>Correction test</code> tab, where a correction is applied to the model to inspect its effect before use.</figcaption>
   </center>
 </figure>
+
+Each computed correction creates a `changeparameters_*.tfs` holding the magnet powering deltas (see [viewing Corrections](#viewing-corrections)) and a corresponding `changeparameters_*_correct.madx` file that translates them into `MAD-X` commands to apply onto the model.
+Along comes a`job.create_twiss_matched.madx` file which will call the above to do the correction run.
 
 <!-- TODO: show the correction test in python -->
 
