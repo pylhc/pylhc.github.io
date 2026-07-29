@@ -2,6 +2,13 @@
 
 The `Correction` panel displays the corrections computed from the `Optics` panel to bring back the measured machine to nominal model conditions.
 
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_panel_default.png" width="95%" alt="Correction Panel Default Look"/>
+  <figcaption>The <code>Correction</code> panel's default appearance.</figcaption>
+  </center>
+</figure>
+
 ## Viewing Corrections
 
 DEFAULT VIEW
