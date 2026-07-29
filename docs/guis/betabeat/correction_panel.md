@@ -134,11 +134,11 @@ The tabs below show a few typical setups of the corrections tree:
     <figure>
       <center>
       <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_combinations_comparison.png" width="90%" alt="Correction test tree with two correction folders"/>
-      <figcaption>Two folders, each holding a different correction from different weights, to be compared.</figcaption>
+      <figcaption>Two folders holding the same correction computed with different weights, to be compared.</figcaption>
       </center>
     </figure>
 
-Clicking ++"Run Corrections"++{.green-gui-button} then launches the test, applying all correction files within the given folder.
+Clicking ++"Run Corrections"++{.green-gui-button} then launches the test and plots the results when done.
 
 !!! info "What Happens When Running a Correction"
 
