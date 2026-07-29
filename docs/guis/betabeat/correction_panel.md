@@ -15,7 +15,7 @@ The `Correction test` tab will be covered further down, see [checking correction
 </figure>
 
 The `Correction` tab is organised into three areas.
-On the left is a table listing the loaded correction files, named as the relative path to the corresponding `changeparameters` file.
+On the left is a table listing the loaded correction files, named as the relative path to the corresponding `changeparameters_*.tfs` file.
 Any correction computed in the [`Optics` panel](optics_panel.md#computing-global-corrections) will appear here automatically
 Clicking the ++"Load Correction Files"++{.green-gui-button} button above the table opens a dialogue to select and load previously determined corrections from disk.
 
@@ -28,8 +28,9 @@ Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows expor
 
     Each computed correction for a given parameter (e.g. phase) creates the following files in the `Corrections` folder:
 
-    - A `changeparameters_*.tfs` file holding the resulting magnet powering deltas (see [viewing corrections](#viewing-corrections)),
-    - A `changeparameters_*_correct.madx` file which translates those into `MAD-X` commands to apply onto the model.
+    - A `changeparameters_*.tfs` file: the correction as a knob table, holding one powering *delta* per corrector — the change to apply to correct the machine (see [viewing corrections](#viewing-corrections)).
+    - A `changeparameters_*_correct.madx` file: the same correction (deltas) expressed as `MAD-X` assignments, to apply in order to correct the machine.
+    - A `changeparameters_*.madx` file: the counterpart that instead makes the *model reproduce the measurement*; this is the file the [correction test](#checking-corrections) calls.
 
 ## Viewing Corrections
 
@@ -43,7 +44,7 @@ Clicking an entry in the correction table on the left displays the resulting pow
 </figure>
 
 These values are the absolute powering of each element once the correction is applied.
-They must not be confused with the loaded `changeparameters_*.tfs` file, which instead lists the *delta* to apply to each element: the change in powering, not the resulting absolute value shown in the plot.
+They must not be confused with the `changeparameters_*.tfs` file, which instead lists the *delta* to apply to each element: the change in powering, not the resulting absolute value shown in the plot.
 
 Hovering over a specific bar reveals the name of the magnet it corresponds to along with its exact value.
 One can inspect these values to check that constraints are respected, e.g. no magnet would end up outside of its powering limits.
@@ -87,7 +88,7 @@ At the top of the tab, two dropdown menus define what the correction test runs o
 - `Measurement`: the measurement to test. The dropdown lists entries known to the GUI (e.g. any measurement for which a correction was loaded in the previous tab), and an `Other...` entry that, when selected, opens a file dialogue to pick any measurement folder from disk.
 - `Model`: the model to apply the corrections to. It likewise lists known models (e.g. available in the `Models` menu) and also provides an `Other...` option with the behaviour stated above. Note that the model should naturally be one that matches the selected measurement.
 
-The selected measurement then appears in the tree on the left, with its `Corrections` folder beneath it listing the available correction files.
+The selected measurement then appears in the tree on the left, with its `Corrections` folder beneath it listing the available `changeparameters_*.madx` correction files.
 
 <figure>
   <center>
@@ -107,7 +108,7 @@ The buttons below this table provide options to do so:
 
     <!-- TODO: Write this better. -->
     What it does:
-    Creates a `job.create_twiss_matched.madx` file in the `Corrections` folder which calls the relevant model and `changeparameters_*_correct.madx` files and calls `MAD-X` on it.
+    Creates a `job.create_twiss_matched.madx` file in the `Corrections` folder which calls the relevant model and `changeparameters_*.madx` files, then runs `MAD-X` on it.
     Uses the data from the effect on the model and the measurement to determine the expected end result.
 
 <!-- TODO: show the correction test in python -->
