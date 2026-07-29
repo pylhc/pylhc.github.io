@@ -4,6 +4,9 @@ The `Correction` panel is where global corrections [computed in the `Optics` pan
 It also gives access to the `Knob Panel`, used to turn a correction into a knob in the LSA database for use in operations.
 The panel is split into two sub-tabs: `Correction` and `Correction test`.
 
+The default view is the `Correction` tab, which loads correction files and displays the strengths (powering changes) of affected magnets or knobs.
+The `Correction test` tab will be covered further down, see [checking corrections](#checking-corrections).
+
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_panel_default.png" width="95%" alt="Correction Panel Default Look"/>
