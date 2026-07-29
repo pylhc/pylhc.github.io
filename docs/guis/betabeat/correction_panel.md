@@ -24,11 +24,11 @@ Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows expor
 
 !!! info "About Correction Files"
 
-    Now is a good time to recap what results from clicking ++"Run Correction"++{.green-gui-button} in the [`Optics` panel](optics_panel.md#computing-global-corrections).
+    Now is a good time to recap what results from determining a correction in the [`Optics` panel](optics_panel.md#computing-global-corrections).
 
-    Each computed correction for a given parameter (e.g. phase) creates the following files in the `Correction` folder:
+    Each computed correction for a given parameter (e.g. phase) creates the following files in the `Corrections` folder:
 
-    - A `changeparameters_*.tfs` file holding the resulting magnet powering deltas (see [viewing Corrections](#viewing-corrections)),
+    - A `changeparameters_*.tfs` file holding the resulting magnet powering deltas (see [viewing corrections](#viewing-corrections)),
     - A `changeparameters_*_correct.madx` file which translates those into `MAD-X` commands to apply onto the model.
 
 ## Viewing Corrections
@@ -85,14 +85,14 @@ After running a correction, one can view the effect of the correction itself and
 At the top of the tab, two dropdown menus define what the correction test runs on:
 
 - `Measurement`: the measurement to test. The dropdown lists entries known to the GUI (e.g. any measurement for which a correction was loaded in the previous tab), and an `Other...` entry that when selected opens a file dialogue to select any measurement folder from disk.
-- `Model`: the model to apply the corrections to. It likewise lists known models (e.g. available in the `Models` menu) and also  provides an `Other...` option with the behaviour stated above. Note that the model should naturally be one that matches the selected measurement.
+- `Model`: the model to apply the corrections to. It likewise lists known models (e.g. available in the `Models` menu) and also provides an `Other...` option with the behaviour stated above. Note that the model should naturally be one that matches the selected measurement.
 
 The selected measurement then appears in the tree on the left, with its `Corrections` folder beneath it listing the available correction files.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_table_loaded.png" width="90%" alt="Correction Test Sub-tab"/>
-  <figcaption>The <code>Correction test</code> tab, where a correction is applied to the model to inspect its effect before use.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_table_loaded.png" width="90%" alt="Correction Test Tab with a Loaded Measurement"/>
+  <figcaption>The <code>Correction test</code> tab with a measurement selected; its <code>Corrections</code> folder and correction file appear in the tree on the left.</figcaption>
   </center>
 </figure>
 
@@ -108,7 +108,7 @@ The buttons below this table provide options to do so:
 
     <!-- TODO: Write this better. -->
     What it does:
-    Creates a `job.create_twiss_matched.madx` file in the `Correction` folder which calls the relevant model and `changeparameters_*_correct.madx` files and calls `MAD-X` on it.
+    Creates a `job.create_twiss_matched.madx` file in the `Corrections` folder which calls the relevant model and `changeparameters_*_correct.madx` files and calls `MAD-X` on it.
     Uses the data from the effect on the model and the measurement to determine the expected end result.
 
 <!-- TODO: show the correction test in python -->
