@@ -69,6 +69,16 @@ After running a correction, one can view the effect of the correction itself and
   </center>
 </figure>
 
+!!! info "One at a time please"
+    Unlike the `Correction` tab, which can hold corrections for several measurements at once, the `Correction test` tab operates on a single measurement at a time.
+
+At the top of the tab, two dropdown menus let the user make a selection.
+The measurement is picked from the `Measurement` dropdown, which lists entries known to the GUI (e.g. any measurement for which a correction was loaded in the previous tab), along with an `Other...` entry that opens a file dialogue to select any other folder from disk.
+Just below, a `Model` dropdown lets the user choose which model to apply the corrections to, also listing known models and providing an `Other...` option.
+Note that the chosen model should naturally be one that matches the selected measurement, or the correction test would be pointless.
+
+The selected measurement then appears in the tree on the left, with its `Corrections` folder beneath it listing the available correction files.
+Each correction actually comes as a pair: a `changeparameters_*.tfs` holding the deltas — the powering changes described under [Viewing Corrections](#viewing-corrections) — alongside a `changeparameters_*.madx` that translates them into `MAD-X` commands to apply onto the model.
 
 <figure>
   <center>
