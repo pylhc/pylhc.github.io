@@ -235,9 +235,8 @@ By selecting one, the user can examine or visualise the values attributed to eac
 
 
 <!-- TODO: Include a screenshot of the Knob Panel view knobs table? -->
-
 <!-- TODO: Include a screenshot of the Knob Panel view knobs chart? -->
-
+<!-- TODO: The "View Knobs" part of the panel does not seem to work? Shows the knobs for the selected BP but clicking on one does not display anything in the Table or Chart view on the right -->
 
 *[LSA]: LHC Software Architecture
 *[EIC]: Engineer in Charge
