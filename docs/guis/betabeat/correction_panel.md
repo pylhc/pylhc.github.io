@@ -69,12 +69,15 @@ After running a correction, one can view the effect of the correction itself and
   </center>
 </figure>
 
-!!! info "One at a time please"
-    Unlike the `Correction` tab, which can hold corrections for several measurements at once, the `Correction test` tab operates on a single measurement at a time.
+!!! info "One Measurement at a Time"
+    Unlike the `Correction` tab, which can list corrections for several measurements at once, the `Correction test` tab operates on a single measurement at a time.
+    It is possible however to hold and test several different corrections (individually or together) for this measurement.
 
-At the top of the tab, two dropdown menus let the user make a selection.
-The measurement is picked from the `Measurement` dropdown, which lists entries known to the GUI (e.g. any measurement for which a correction was loaded in the previous tab), along with an `Other...` entry that opens a file dialogue to select any other folder from disk.
-Just below, a `Model` dropdown lets the user choose which model to apply the corrections to, also listing known models and providing an `Other...` option.
+At the top of the tab, two dropdown menus define what the correction test runs on:
+
+- `Measurement`: the measurement to test. The dropdown lists entries known to the GUI (e.g. any measurement for which a correction was loaded in the previous tab), and an `Other...` entry that when selected opens a file dialogue to select any measurement folder from disk.
+- `Model`: the model to apply the corrections to. It likewise lists known models (e.g. available in the `Models` menu) and also  provides an `Other...` option with the behaviour stated above.
+
 Note that the chosen model should naturally be one that matches the selected measurement, or the correction test would be pointless.
 
 The selected measurement then appears in the tree on the left, with its `Corrections` folder beneath it listing the available correction files.
