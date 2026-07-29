@@ -171,7 +171,7 @@ It shows one curve per scheme, labelled by its folder name, which allows all def
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_results_all_corrections.png" width="100%" alt="All Corrections results tab comparing schemes against the measurement"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_results_all_corrections.png" width="95%" alt="All Corrections results tab comparing schemes against the measurement"/>
   <figcaption>The <code>All Corrections</code> tab compares the expected end result of every tested correction against the measurement, here on the dispersion.</figcaption>
   </center>
 </figure>
@@ -182,23 +182,12 @@ Each of the remaining left-hand tabs corresponds to one correction scheme (one f
 - `Correction`: the effect of the correction on the model, which aims to reproduce the measurement. A good correction lies on top of the `Measurement` curve.
 - `Expected`: the residual that would remain if the correction were applied to the machine. A good correction brings this close to zero.
 
-=== "Corrections"
-
-    <figure>
-      <center>
-      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_results_correction1.png" width="100%" alt="Per-scheme correction check results for the Corrections folder"/>
-      <figcaption>The per-scheme view for the <code>Corrections</code> folder, showing the <code>Measurement</code>, the <code>Correction</code>, and the <code>Expected</code> residual — here on the <code>f1001</code> coupling term.</figcaption>
-      </center>
-    </figure>
-
-=== "Different Weights"
-
-    <figure>
-      <center>
-      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_results_correction2.png" width="100%" alt="Per-scheme correction check results for the Different Weights folder"/>
-      <figcaption>The same view for the <code>Different_Weights</code> folder, letting the two schemes be compared quantity by quantity.</figcaption>
-      </center>
-    </figure>
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_results_correction1.png" width="95%" alt="Per-scheme correction check results for a single scheme"/>
+  <figcaption>A per-scheme view, showing the <code>Measurement</code>, the <code>Correction</code>, and the <code>Expected</code> residual, here on the <code>f1001</code> amplitude and phase.</figcaption>
+  </center>
+</figure>
 
 <!-- TODO: mention everything at the lower left is old Java-side plotting optics etc and is basically taken out since Java side plotting has been removed. -->
 
