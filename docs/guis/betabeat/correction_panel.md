@@ -93,13 +93,6 @@ At the top of the tab, two dropdown menus define what the correction test runs o
 
 The selected measurement then appears in the tree on the left, with its `Corrections` folder beneath it listing the available `changeparameters_*.madx` correction files.
 
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_table_loaded.png" width="90%" alt="Correction Test Tab with a Loaded Measurement"/>
-  <figcaption>The <code>Correction test</code> tab with a measurement selected; its <code>Corrections</code> folder and correction file appear in the tree on the left.</figcaption>
-  </center>
-</figure>
-
 Different individual corrections can be tested and compared against one another.
 Different combinations of corrections can also be tested and compared against one another.
 The buttons below this table provide options to do so:
@@ -113,6 +106,35 @@ The buttons below this table provide options to do so:
         When functional, the panel is intended to let one search `LSA` for knobs, inspect their components, and import a selected knob as a correction file.
 
 - ++"Remove"++{.red-gui-button}: removes the selected entry, file or folder, after a yes/no confirmation popup.
+
+The tabs below show a few typical setups of the corrections tree:
+
+=== "Single correction"
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_table_loaded.png" width="90%" alt="Correction test tree with a single correction"/>
+      <figcaption>A single correction in the <code>Corrections</code> folder: the test runs and plots just this one.</figcaption>
+      </center>
+    </figure>
+
+=== "Combined correction"
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_combination.png" width="90%" alt="Correction test tree with several files in one folder"/>
+      <figcaption>Several correction files placed in the same folder are applied <em>together</em> as one combined scheme.</figcaption>
+      </center>
+    </figure>
+
+=== "Comparing schemes"
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_comparison.png" width="90%" alt="Correction test tree with two correction folders"/>
+      <figcaption>Two folders, each holding a different correction, are tested and plotted side by side for comparison.</figcaption>
+      </center>
+    </figure>
 
 !!! info "Running a Correction"
 
