@@ -1,6 +1,8 @@
 # The Correction Panel
 
-The `Correction` panel displays the corrections computed from the `Optics` panel to bring back the measured machine to nominal model conditions.
+The `Correction` panel is where global corrections [computed in the `Optics` panel](optics_panel.md#computing-global-corrections) are loaded, reviewed and tested, with the aim of bringing the measured machine as close as possible to nominal model conditions.
+It also gives access to the `Knob Panel`, used to turn a correction into a knob in the LSA database for use in operations.
+The panel is split into two sub-tabs: `Correction` and `Correction test`.
 
 <figure>
   <center>
@@ -9,16 +11,17 @@ The `Correction` panel displays the corrections computed from the `Optics` panel
   </center>
 </figure>
 
+The default view is the `Correction` tab, which loads correction files and displays the strengths (powering changes) of affected magnets or knobs.
+The `Correction test` tab, covered further down, lets one apply a correction to the model and inspect its effect before committing to it in the machine.
+
 ## Viewing Corrections
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_strengths.png" width="95%" alt="Q"/>
-  <figcaption>Q.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_strengths.png" width="95%" alt="Correction Panel with Loaded Corrections and Strengths Plot"/>
+  <figcaption>The <code>Correction</code> tab with correction files loaded; the <code>Strengths</code> plot on the right shows the powering change assigned to each corrector.</figcaption>
   </center>
 </figure>
-
-DEFAULT VIEW
 
 !!! tip "Global Coupling Corrections Trims"
     In the special case of global coupling corrections computed with the [coupling preset](optics_panel.md#presets), and to facilitate the user's work, double clicking on the correction file name in the table will spawn a popup detailing the exact trim to apply in the accelerator cockpit app.
