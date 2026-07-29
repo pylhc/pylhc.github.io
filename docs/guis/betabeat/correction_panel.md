@@ -61,6 +61,13 @@ This is the case for e.g. the global coupling correction.
 
 The `Correction test` tab lets one apply a correction to the model and inspect its effect before committing to it in the machine.
 
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_default.png" width="95%" alt="Correction Test Tab Default Look"/>
+  <figcaption>The <code>Correction test</code> tab's default appearance.</figcaption>
+  </center>
+</figure>
+
 
 <figure>
   <center>
