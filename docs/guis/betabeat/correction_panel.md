@@ -107,7 +107,7 @@ The buttons below this table provide options to do so:
 
 - ++"Remove"++{.red-gui-button}: removes the selected entry, file or folder, after a yes/no confirmation popup.
 
-Note that running a correction applies all corrections files inside the `Corrections` folder matching the provided regex.
+Note that a corrections folder can hold several files; and the correction test applies every file in it that matches the file filter (the regex at the bottom of the tab).
 By combining the options above one can assemble several correction scenarios.
 The tabs below show a few typical setups of the corrections tree:
 
