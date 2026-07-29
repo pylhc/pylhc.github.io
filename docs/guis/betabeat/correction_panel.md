@@ -4,7 +4,7 @@ The `Correction` panel is where global corrections [computed in the `Optics` pan
 It also gives access to the `Knob Panel`, used to turn a correction into a knob in the LSA database for use in operations.
 The panel is split into two sub-tabs: `Correction` and `Correction test`.
 
-The default view is the `Correction` tab, which loads correction files and displays the strengths (powering changes) of affected magnets or knobs.
+The default view is the `Correction` tab, which loads correction files and displays the resulting powering of the affected magnets or knobs once a correction is applied.
 The `Correction test` tab will be covered further down, see [checking corrections](#checking-corrections).
 
 <figure>
@@ -19,22 +19,22 @@ On the left is a table listing the loaded correction files, named as the relativ
 Any correction computed in the [`Optics` panel](optics_panel.md#computing-global-corrections) will appear here automatically
 Clicking the ++"Load Correction Files"++{.green-gui-button} button above the table opens a dialogue to select and load previously determined corrections from disk.
 
-To the right, the `Strengths` plot displays the powering changes assigned by the selected correction to each affected magnet or knob.
+To the right, the `Strengths` plot displays the resulting powering of each affected magnet or knob after the selected correction is applied.
 Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows exporting a correction as a knob, see [knob creation](#knob-creation).
 
 ## Viewing Corrections
 
-Clicking an entry in the correction table on the left displays the corresponding powering changes in the `Strengths` plot on the right, with one bar per affected magnet or knob.
+Clicking an entry in the correction table on the left displays the resulting powering in the `Strengths` plot on the right, with one bar per affected magnet or knob.
 
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_strengths.png" width="95%" alt="Correction Panel with Loaded Corrections and Strengths Plot"/>
-  <figcaption>The <code>Correction</code> tab with correction files loaded; the <code>Strengths</code> plot on the right shows the powering change assigned to each corrector for the selected correction.</figcaption>
+  <figcaption>The <code>Correction</code> tab with correction files loaded; the <code>Strengths</code> plot on the right shows the resulting powering of each corrector for the selected correction.</figcaption>
   </center>
 </figure>
 
-Hovering over a specific bar reveals the name of that magnet or knob it corresponds to along with the exact correction value assigned to it.
-Remember that this correction is a powering change and not its final
+Hovering over a specific bar reveals the name of the magnet it corresponds to along with its exact value.
+These values are the final powering of each element once the correction is applied, whereas the loaded `changeparameters_*.tfs` file itself holds the powering changes that produce them.
 
 !!! info "No Multi Selection"
     Note that unlike in the `Optics` panel, selecting multiple correction entries from the table will not lead to a comparison.
