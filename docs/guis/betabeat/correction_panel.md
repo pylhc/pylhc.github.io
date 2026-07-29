@@ -233,11 +233,20 @@ After providing a `Knob name`, the `Create Knob` button will create a new Knob i
 The `View Knobs` tab displays a list of all BETA-BEATING Knobs.
 By selecting one, the user can examine or visualise the values attributed to each component.
 
+Notice that an active BP will be in green, inactive in blue. Makes it easier to see the currently active if preparing a knob in operation / measurement.
 
 <!-- TODO: Include a screenshot of the Knob Panel view knobs table? -->
 <!-- TODO: Include a screenshot of the Knob Panel view knobs chart? -->
 <!-- TODO: mention we can delete! (use carefully) -->
 
+To create a knob:
+
+- Select the correction in the table on the left.
+- Open the Knob Panel.
+- Search for and select the beam process.
+- On the right "Optics" table, select all the optics (use ctrl + click to add/remove one to selection and shift + click for multiselect) the knob should be applied on.
+- Give the knob a name.
+- Click ++"Create knob"++{.green-gui-button} button, remember you need to be logged in with permissions (EIC or LHCOP user).
 
 *[LSA]: LHC Software Architecture
 *[EIC]: Engineer in Charge
