@@ -203,7 +203,8 @@ Each of the remaining left-hand tabs corresponds to one correction scheme (one f
 
 ## Knob Creation
 
-It provides an `Open Knob Panel` button to access the LHC beam process list.
+<!-- TODO: If a correction is good we want to make a knob including the determined settings and upload it to LSA so we can run it in the machine -->
+<!-- TODO: to do so go back to the `Correction` tab and click the ++"Open Knob Panel"++{.blue-gui-button} to access the LHC beam process list. -->
 
 ### The Knob Panel
 
@@ -231,9 +232,9 @@ The `View Knobs` tab displays a list of all BETA-BEATING Knobs.
 By selecting one, the user can examine or visualise the values attributed to each component.
 
 
-<!-- TODO: Include a screenshot of the Knob Panel view knobs table -->
+<!-- TODO: Include a screenshot of the Knob Panel view knobs table? -->
 
-<!-- TODO: Include a screenshot of the Knob Panel view knobs chart -->
+<!-- TODO: Include a screenshot of the Knob Panel view knobs chart? -->
 
 
 *[LSA]: LHC Software Architecture
