@@ -154,8 +154,8 @@ Clicking ++"Run Corrections"++{.green-gui-button} then launches the test: each f
 
 Two checkboxes next to the ++"Run Corrections"++{.green-gui-button} button control how the run behaves and where its plots go:
 
-- `Plot in Python`: should always be left ticked (its default) — the Java-side plotting has been removed, so a `Qt`-based window opened by the Python process is what displays the results.
-- `Sorted`: if checked (the default), the per-correction plot files are saved into their correction subfolders; if unchecked, they all go into the measurement directory.
+- `Plot in Python`: should always be left ticked (its default) as the Java-side plotting has been removed. When checked, a `Qt`-based window opened by the Python process will display the results.
+- `Sorted`: if checked (the default), the per-correction plot files are saved into their correction subfolders; otherwise they all go into the measurement directory.
 
 ## Knob Creation
 
