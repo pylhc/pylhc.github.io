@@ -91,6 +91,14 @@ The selected measurement then appears in the tree on the left, with its `Correct
 Each computed correction creates a `changeparameters_*.tfs` holding the magnet powering deltas (see [viewing Corrections](#viewing-corrections)) and a corresponding `changeparameters_*_correct.madx` file that translates them into `MAD-X` commands to apply onto the model.
 Along comes a`job.create_twiss_matched.madx` file which will call the above to do the correction run.
 
+It is possible to test various individual corrections as well as combinations of corrections.
+It is also possible to test several different combinations of corrections to compare to one another.
+
+The buttons below this table provide options to do so:
+
+- ++"Folder"++{.green-gui-button}
+
+
 <!-- TODO: show the correction test in python -->
 
 ## Knob Creation
