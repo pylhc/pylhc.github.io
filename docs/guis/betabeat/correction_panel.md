@@ -220,6 +220,10 @@ Through the `Knob Panel`, corrections can be provided directly inside the LHC be
 !!! warning "Technical Network Access Needed"
     Being inside of the Technical Network is required for the `Knob panel` functionality.
 
+!!! warning "EIC Needed"
+    Creating an uploading a knob to LSA requires elevated rights which only the EIC will have.
+    A popup will ask for a login, let them enter their ID and password for the knob creation to proceed
+
 In the `Knob Panel`, one can create Knobs (in the `Creation` tab) by using the previously computed corrections.
 
 To create a knob, one or several beam processes have to be selected.
@@ -238,3 +242,4 @@ By selecting one, the user can examine or visualise the values attributed to eac
 
 
 *[LSA]: LHC Software Architecture
+*[EIC]: Engineer in Charge
