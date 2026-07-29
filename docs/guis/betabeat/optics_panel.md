@@ -288,4 +288,4 @@ These corrections can then be inspected and tested in the [Correction Panel][cor
 [sbs_gui]: ../segment_by_segment/gui.md
 [model_creation]: ./model_creation.md
 [correction_panel]: correction_panel.md
-[correction_checks]: correction_panel.md#correction-checks
+[correction_checks]: correction_panel.md#checking-corrections
