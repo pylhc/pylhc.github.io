@@ -206,8 +206,6 @@ Each of the remaining left-hand tabs corresponds to one correction scheme (one f
 <!-- TODO: If a correction is good we want to make a knob including the determined settings and upload it to LSA so we can run it in the machine -->
 <!-- TODO: to do so go back to the `Correction` tab and click the ++"Open Knob Panel"++{.blue-gui-button} to access the LHC beam process list. -->
 
-### The Knob Panel
-
 Through the `Knob Panel`, corrections can be provided directly inside the LHC beam system.
 
 <figure>
