@@ -77,8 +77,7 @@ At the top of the tab, two dropdown menus define what the correction test runs o
 
 - `Measurement`: the measurement to test. The dropdown lists entries known to the GUI (e.g. any measurement for which a correction was loaded in the previous tab), and an `Other...` entry that when selected opens a file dialogue to select any measurement folder from disk.
 - `Model`: the model to apply the corrections to. It likewise lists known models (e.g. available in the `Models` menu) and also  provides an `Other...` option with the behaviour stated above.
-
-Note that the chosen model should naturally be one that matches the selected measurement, or the correction test would be pointless.
+           Note that the model should naturally be one that matches the selected measurement.
 
 The selected measurement then appears in the tree on the left, with its `Corrections` folder beneath it listing the available correction files.
 Each correction actually comes as a pair: a `changeparameters_*.tfs` holding the deltas — the powering changes described under [Viewing Corrections](#viewing-corrections) — alongside a `changeparameters_*.madx` that translates them into `MAD-X` commands to apply onto the model.
