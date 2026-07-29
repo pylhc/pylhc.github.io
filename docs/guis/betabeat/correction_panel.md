@@ -39,10 +39,13 @@ They must not be confused with the loaded `changeparameters_*.tfs` file, which i
 Hovering over a specific bar reveals the name of the magnet it corresponds to along with its exact value.
 One can inspect these values to check that constraints are respected, e.g. no magnet would end up outside of its powering limits.
 
-!!! info "No Multi Selection"
+!!! failure "No Multi Selection"
     Note that unlike in the `Optics` panel, selecting multiple correction entries from the table will not lead to a comparison.
     This is due to the often different set of correctors modified by different corrections.
     Instead, only one of the correction will have its strengths displayed.
+
+In the case of some corrections which instead of individual magnets use knobs, one bar will be shown for each knob.
+This is the case for e.g. the global coupling correction.
 
 !!! tip "Global Coupling Corrections Trims"
     In the special case of global coupling corrections computed with the [coupling preset](optics_panel.md#presets), and to facilitate the user's work, double clicking on the correction file name in the table will spawn a popup detailing the exact trim to apply in the accelerator cockpit app.
