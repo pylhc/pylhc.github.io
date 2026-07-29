@@ -193,7 +193,9 @@ Each of the remaining left-hand tabs corresponds to one correction scheme (one f
   </center>
 </figure>
 
-<!-- TODO: mention everything at the lower left is old Java-side plotting optics etc and is basically taken out since Java side plotting has been removed. -->
+!!! note "Legacy Plotting Controls"
+    The controls in the lower-left corner of the tab (the `Details Beta*` button as well as the `Measured`, `Correction` and `Expected` checkboxes) are remnants of the old Java-side plotting, which has been removed.
+    They no longer have any effect and can be ignored.
 
 ## Knob Creation
 
