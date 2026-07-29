@@ -107,6 +107,8 @@ The buttons below this table provide options to do so:
 
 - ++"Remove"++{.red-gui-button}: removes the selected entry, file or folder, after a yes/no confirmation popup.
 
+Note that running a correction applies all corrections files inside the `Corrections` folder matching the provided regex.
+By combining the options above one can assemble several correction scenarios.
 The tabs below show a few typical setups of the corrections tree:
 
 === "Single correction"
