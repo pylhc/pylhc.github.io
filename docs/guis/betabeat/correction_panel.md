@@ -81,6 +81,8 @@ Running a correction then plots, for each correctable parameter, both the effect
   </center>
 </figure>
 
+### Preparing a Test
+
 !!! info "One Measurement at a Time"
 
     Unlike the `Correction` tab, which can list corrections for several measurements at once, the `Correction test` tab operates on a single measurement at a time.
@@ -144,6 +146,8 @@ The tabs below show a few typical setups of the corrections tree:
       <figcaption>Two folders holding the same correction computed with different weights, to be compared.</figcaption>
       </center>
     </figure>
+
+### Running the Test
 
 Clicking ++"Run Corrections"++{.green-gui-button} then launches the test: each folder in the tree is run as a separate scenario, and the results are plotted together when done.
 
