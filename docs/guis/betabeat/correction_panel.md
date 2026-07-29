@@ -59,9 +59,8 @@ Through the `Knob Panel`, corrections can be provided directly inside the LHC be
   </center>
 </figure>
 
-!!! info
-    Being inside of the Technical Network is required for the KnobPanel.
-    To do so, `ssh` into one of the hosts, for instance `cs-ccr-dev<number>.cern.ch`.
+!!! warning "Technical Network Access Needed"
+    Being inside of the Technical Network is required for the `Knob panel` functionality.
 
 In the `Knob Panel`, one can create Knobs (in the `Creation` tab) by using the previously computed corrections.
 
@@ -71,17 +70,13 @@ At least one optic has to be selected.
 
 After providing a `Knob name`, the `Create Knob` button will create a new Knob in the LSA database.
 
-!!! todo
-    Include a screenshot of the Knob Panel on creation tab
-
 The `View Knobs` tab displays a list of all BETA-BEATING Knobs.
 By selecting one, the user can examine or visualise the values attributed to each component.
 
-!!! todo
-    Include a screenshot of the Knob Panel view knobs table
 
-!!! todo
-    Include a screenshot of the Knob Panel view knobs chart
+<!-- TODO: Include a screenshot of the Knob Panel view knobs table -->
+
+<!-- TODO: Include a screenshot of the Knob Panel view knobs chart -->
 
 
 *[LSA]: LHC Software Architecture
