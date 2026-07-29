@@ -59,7 +59,8 @@ This is the case for e.g. the global coupling correction.
 
 ## Checking Corrections
 
-The `Correction test` tab lets one apply a correction to the model and inspect its effect before committing to it in the machine.
+The `Correction test` tab lets one apply a determined correction to the measurement's associated model and inspect its effect.
+After running a correction, one can view the effect of the correction itself and the expected result from applying it as a plot for various correctable parameters.
 
 <figure>
   <center>
