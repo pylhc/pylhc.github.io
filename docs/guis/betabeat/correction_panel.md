@@ -93,6 +93,10 @@ At the top of the tab, two dropdown menus define what the correction test runs o
 
 The selected measurement then appears in the tree on the left, with its `Corrections` folder beneath it listing the available `changeparameters_*.madx` correction files.
 
+!!! tip "Deactivating a File"
+    Right-clicking a file in the tree deactivates it, excluding it from the correction run without removing it from the tree.
+    This makes it easy to toggle a correction in or out of a scenario without having to delete and re-add it.
+
 Different individual corrections can be tested and compared against one another.
 Different combinations of corrections can also be tested and compared against one another.
 The buttons below this table provide options to do so:
