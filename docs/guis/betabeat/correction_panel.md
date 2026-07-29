@@ -37,8 +37,8 @@ The `Correction test` tab, covered further down, lets one apply a correction to 
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_correction_test.png" width="95%" alt="QQ"/>
-  <figcaption>QQ.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_correction_test.png" width="95%" alt="Correction Test Sub-tab"/>
+  <figcaption>The <code>Correction test</code> tab, where a correction is applied to the model to inspect its effect before use.</figcaption>
   </center>
 </figure>
 
@@ -54,8 +54,8 @@ Through the `Knob Panel`, corrections can be provided directly inside the LHC be
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_knob_panel.png" width="95%" alt="QQQ"/>
-  <figcaption>QQQ.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_knob_panel.png" width="95%" alt="Knob Panel Creation Tab"/>
+  <figcaption>The <code>Knob Panel</code> on its <code>Creation</code> tab, listing the beam processes from which a knob is built.</figcaption>
   </center>
 </figure>
 
@@ -82,3 +82,6 @@ By selecting one, the user can examine or visualise the values attributed to eac
 
 !!! todo
     Include a screenshot of the Knob Panel view knobs chart
+
+
+*[LSA]: LHC Software Architecture
