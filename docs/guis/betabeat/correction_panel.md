@@ -14,8 +14,13 @@ The `Correction test` tab will be covered further down, see [checking correction
   </center>
 </figure>
 
-The default view is the `Correction` tab, which loads correction files and displays the strengths (powering changes) of affected magnets or knobs.
-The `Correction test` tab, covered further down, lets one apply a correction to the model and inspect its effect before committing to it in the machine.
+The `Correction` tab is organised into three areas.
+On the left is a table listing the loaded correction files, named as the relative path to the corresponding `changeparameters` file.
+Any correction computed in the [`Optics` panel](optics_panel.md#computing-global-corrections) will appear here automatically
+Clicking the ++"Load Correction Files"++{.green-gui-button} button above the table opens a dialogue to select and load previously determined corrections from disk.
+
+To the right, the `Strengths` plot displays the powering changes assigned by the selected correction to each affected magnet or knob.
+Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows exporting a correction as a knob, see [knob creation](#knob-creation).
 
 ## Viewing Corrections
 
