@@ -157,6 +157,25 @@ Two checkboxes next to the ++"Run Corrections"++{.green-gui-button} button contr
 - `Plot in Python`: should always be left ticked (its default) as the Java-side plotting has been removed. When checked, a `Qt`-based window opened by the Python process will display the results.
 - `Sorted`: if checked (the default), the per-correction plot files are saved into their correction subfolders; otherwise they all go into the measurement directory.
 
+### Reading the Results
+
+A `Correction Check` window opens once the run finishes.
+It carries two sets of tabs:
+
+- Those along the top select the optics quantity to display (`beta amplitude`, `beta phase`, `dispersion`, `f1001`, `f1010`, `orbit`, `phase`, `total phase`)
+- Those to the left of the window select which correction to look at.
+
+The first left-hand tab is always `All Corrections`, and is a comparison overview.
+For the selected quantity it shows the `Measurement` values together with the expected end result of each tested correction.
+It shows one curve per scheme, labelled by its folder name, which allows all defined schemes to be judged against one another at a glance.
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_results_all_corrections.png" width="100%" alt="All Corrections results tab comparing schemes against the measurement"/>
+  <figcaption>The <code>All Corrections</code> tab compares the expected end result of every tested correction against the measurement, here on the dispersion.</figcaption>
+  </center>
+</figure>
+
 <!-- TODO: mention everything at the lower left is old Java-side plotting optics etc and is basically taken out since Java side plotting has been removed. -->
 
 ## Knob Creation
