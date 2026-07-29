@@ -33,8 +33,10 @@ Clicking an entry in the correction table on the left displays the resulting pow
   </center>
 </figure>
 
+These values are the absolute powering of each element once the correction is applied.
+They must not be confused with the loaded `changeparameters_*.tfs` file, which instead lists the *delta* to apply to each element: the change in powering, not the resulting absolute value shown in the plot.
+
 Hovering over a specific bar reveals the name of the magnet it corresponds to along with its exact value.
-These values are the final powering of each element once the correction is applied, whereas the loaded `changeparameters_*.tfs` file itself holds the powering changes that produce them.
 One can inspect these values to check that constraints are respected, e.g. no magnet would end up outside of its powering limits.
 
 !!! info "No Multi Selection"
