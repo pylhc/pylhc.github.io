@@ -102,20 +102,17 @@ The selected measurement then appears in the tree on the left, with its `Correct
 
 Different individual corrections can be tested and compared against one another.
 Different combinations of corrections can also be tested and compared against one another.
-
 The buttons below this table provide options to do so:
 
 - ++"Folder"++{.green-gui-button}: prompts for a name and creates a new corrections folder with that name. This button is always available, and the new folder is created as a sibling of the original `Corrections` folder in the tree (i.e. at the same level).
 - ++"File"++{.green-gui-button}: opens a file dialogue to pick a correction file — which should follow the `changeparameters_*.madx` naming and copies it into the selected folder. It is only available when a corrections folder is selected: the original `Corrections` or one created with ++"Folder"++.
 - ++"Knob"++{.green-gui-button}: opens the `Knob selection panel` to search `LSA` for knobs, inspect their content, and import a chosen one as a file to include in the correction. Like ++"File"++, it is only available when a corrections folder is selected.
-- ++"Remove"++{.red-gui-button}: removes the selected entry, file or folder, after a yes/no confirmation popup.
 
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/correction_test_knob_panel.png" width="70%" alt="Knob Selection Panel"/>
-  <figcaption>The <code>Knob selection panel</code>, used to search LSA for knobs, inspect their components in the <code>Table</code> or <code>Chart</code> tabs, and import a selected knob into the correction with <code>Select knob</code>.</figcaption>
-  </center>
-</figure>
+    !!! warning "Knob Import — Currently Not Working"
+        The ++"Knob"++ button opens a `Knob selection panel`, but none of its controls currently have any effect.
+        When functional, the panel is intended to let one search `LSA` for knobs, inspect their components, and import a selected knob as a correction file.
+
+- ++"Remove"++{.red-gui-button}: removes the selected entry, file or folder, after a yes/no confirmation popup.
 
 !!! info "Running a Correction"
 
