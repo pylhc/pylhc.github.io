@@ -202,7 +202,7 @@ Each of the remaining left-hand tabs corresponds to one correction scheme (one f
 
 ## Knob Creation
 
-Once a correction has been validated with the [correction test](#checking-corrections), it can be turned into a knob in the `LSA` database, ready to be trimmed into the machine during operation.
+Once a correction has been validated with the [correction test](#checking-corrections), it can be turned into a knob in the LSA database, ready to be trimmed into the machine during operation.
 This is done through the `Knob Panel`: back in the `Correction` tab, select the chosen correction in the table and click the ++"Open Knob Panel"++{.blue-gui-button} button below it.
 
 <figure>
@@ -213,9 +213,9 @@ This is done through the `Knob Panel`: back in the `Correction` tab, select the 
 </figure>
 
 !!! warning "Technical Network and Elevated Rights Needed"
-    The `Knob Panel` communicates with `LSA` and therefore requires being inside the CERN Technical Network.
+    The `Knob Panel` communicates with LSA and therefore requires being inside the CERN Technical Network.
 
-    Furthermore, creating (and later deleting) a knob in `LSA` requires elevated rights, available through an EIC or the `LHCOP` account.
+    Furthermore, creating (and later deleting) a knob in LSA requires elevated rights, available through an EIC or the `LHCOP` account.
     Make sure a valid RBAC token has been acquired beforehand, via the log-in button at the [top of the GUI](common_components.md#top-of-the-gui).
 
 ### Creating a Knob
@@ -234,7 +234,7 @@ The workflow is as follows:
 - With a beam process selected, the optics defined for it populate the `Optics` table on the right.
   Select every optic the knob should be defined for (use ++ctrl+lbutton++ to add or remove entries to the selection, ++shift+lbutton++ to select a range).
 - Enter a `Knob name` at the bottom.
-- Click ++"Create knob"++{.green-gui-button} to send its definition to `LSA`.
+- Click ++"Create knob"++{.green-gui-button} to send its definition to LSA.
 
 === "Selecting a beam process"
 
