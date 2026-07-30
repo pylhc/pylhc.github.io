@@ -203,51 +203,12 @@ Each of the remaining left-hand tabs corresponds to one correction scheme (one f
 
 ## Knob Creation
 
-<!-- TODO: If a correction is good we want to make a knob including the determined settings and upload it to LSA so we can run it in the machine -->
-<!-- TODO: to do so go back to the `Correction` tab and click the ++"Open Knob Panel"++{.blue-gui-button} to access the LHC beam process list. -->
-
-Through the `Knob Panel`, corrections can be provided directly inside the LHC beam system.
+Once a correction has been validated with the [correction test](#checking-corrections), it can be turned into a knob in the `LSA` database, ready to be trimmed into the machine during operation.
+This is done through the `Knob Panel`: back in the `Correction` tab, select the chosen correction in the table and click the ++"Open Knob Panel"++{.blue-gui-button} button below it.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_knob_panel.png" width="95%" alt="Knob Panel Creation Tab"/>
-  <figcaption>The <code>Knob Panel</code> on its <code>Creation</code> tab, listing the beam processes from which a knob is built.</figcaption>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/knob_panel_default.png" width="90%" alt="Knob Panel Creation tab default look"/>
+  <figcaption>The <code>Knob Panel</code> on its <code>Creation</code> tab, opened for a selected correction.</figcaption>
   </center>
 </figure>
-
-!!! warning "Technical Network Access Needed"
-    Being inside of the Technical Network is required for the `Knob panel` functionality.
-
-!!! warning "EIC Needed"
-    Creating an uploading a knob to LSA requires elevated rights which only the EIC will have.
-    A popup will ask for a login, let them enter their ID and password for the knob creation to proceed
-
-In the `Knob Panel`, one can create Knobs (in the `Creation` tab) by using the previously computed corrections.
-
-To create a knob, one or several beam processes have to be selected.
-Once selected, the corresponding optics will appear.
-At least one optic has to be selected.
-
-After providing a `Knob name`, the `Create Knob` button will create a new Knob in the LSA database.
-
-The `View Knobs` tab displays a list of all BETA-BEATING Knobs.
-By selecting one, the user can examine or visualise the values attributed to each component.
-
-Notice that an active BP will be in green, inactive in blue. Makes it easier to see the currently active if preparing a knob in operation / measurement.
-
-<!-- TODO: Include a screenshot of the Knob Panel view knobs table? -->
-<!-- TODO: Include a screenshot of the Knob Panel view knobs chart? -->
-<!-- TODO: This loads settings only if a BP AND AN OPTICS ARE SELECTED IN THE CREATION TAB!!! -->
-<!-- TODO: mention we can delete! (use carefully) -->
-
-To create a knob:
-
-- Select the correction in the table on the left.
-- Open the Knob Panel.
-- Search for and select the beam process.
-- On the right "Optics" table, select all the optics (use ctrl + click to add/remove one to selection and shift + click for multiselect) the knob should be applied on.
-- Give the knob a name.
-- Click ++"Create knob"++{.green-gui-button} button, remember you need to be logged in with permissions (EIC or LHCOP user).
-
-*[LSA]: LHC Software Architecture
-*[EIC]: Engineer in Charge
