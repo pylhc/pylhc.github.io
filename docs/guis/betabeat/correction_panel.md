@@ -281,9 +281,8 @@ Selecting a knob displays its components (in LSA terms, a.k.a. powering circuits
       </center>
     </figure>
 
-Note that a knob is only displayed here if a beam process **and** at least one optic are selected on the `Creation` tab.
-<!-- Within a beam process, a knob can be defined across several optics with a different trim (scaling factor) each — for instance scaled to zero at 60 cm &beta;\* and ramped up to full strength by 30 cm &beta;\*. -->
-<!-- The panel therefore needs to know which beam process and optic to read the values from, so selecting a knob in `View Knobs` with nothing selected on `Creation` simply shows nothing. -->
+Note that a knob is only displayed here if a beam process **and** at least one optics are selected on the `Creation` tab.
+<!-- This is because a knob can hold a different value (trim) for each optic of a beam process, so the panel needs both selected to know which set to display. -->
 
 !!! danger "Deleting Knobs"
     This tab provides a ++"Delete knob"++{.yellow-gui-button} button which will send a command to remove the selected knob from LSA.
