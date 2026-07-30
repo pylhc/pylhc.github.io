@@ -212,3 +212,9 @@ This is done through the `Knob Panel`: back in the `Correction` tab, select the 
   <figcaption>The <code>Knob Panel</code> on its <code>Creation</code> tab, opened for a selected correction.</figcaption>
   </center>
 </figure>
+
+!!! warning "Technical Network and Elevated Rights Needed"
+    The `Knob Panel` communicates with `LSA` and therefore requires being inside the CERN Technical Network.
+
+    Furthermore, creating (and later deleting) a knob in `LSA` requires elevated rights, available through an `EIC`'s or the `LHCOP` account.
+    Make sure a valid `RBAC` token has been acquired beforehand, via the log-in button at the [top of the GUI](common_components.md#top-of-the-gui).
