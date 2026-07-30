@@ -281,6 +281,11 @@ Selecting a knob displays its components (in `LSA` terms, a.k.a. powering circui
     </figure>
 
 
+Note that a knob is only displayed here if a beam process **and** at least one optic are selected on the `Creation` tab.
+<!-- Within a beam process, a knob can be defined across several optics with a different trim (scaling factor) each — for instance scaled to zero at 60 cm &beta;\* and ramped up to full strength by 30 cm &beta;\*. -->
+<!-- The panel therefore needs to know which beam process and optic to read the values from, so selecting a knob in `View Knobs` with nothing selected on `Creation` simply shows nothing. -->
+
+
 
 *[LSA]: LHC Software Architecture
 *[EIC]: Engineer in Charge
