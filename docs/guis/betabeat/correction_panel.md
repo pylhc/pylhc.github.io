@@ -257,6 +257,11 @@ The workflow is as follows:
 
 <!-- TODO: check the behaviour of Create knob when no beam process / no optic / no name is provided -->
 
+### Viewing and Managing Knobs
+
+The `View Knobs` tab lists the `BETA-BEATING` knobs created by the OMC team, again filterable through a `Search` field at the top.
+Selecting a knob displays its components (in `LSA` terms, a.k.a. powering circuits) either as a `Table` (components and their powering value) or as a `Chart` (as the `Strengths` plot in the `Correction` tab).
+
 *[LSA]: LHC Software Architecture
 *[EIC]: Engineer in Charge
 *[RBAC]: Role Based Access Control
