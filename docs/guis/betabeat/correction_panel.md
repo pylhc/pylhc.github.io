@@ -221,7 +221,7 @@ This is done through the `Knob Panel`: back in the `Correction` tab, select the 
 
 ### Creating a Knob
 
-Knobs selected when opening the panel are created from the `Creation` tab, which opens by default.
+A knob is created from the `Creation` tab, which opens by default, for the correction selected before opening the panel.
 The workflow is as follows:
 
 - Locate the target beam process in the `Beam Processes` list on the left and select it.
@@ -260,7 +260,7 @@ The workflow is as follows:
 ### Viewing and Managing Knobs
 
 The `View Knobs` tab lists the `BETA-BEATING` knobs created by the OMC team, again filterable through a `Search` field at the top.
-Selecting a knob displays its components (in `LSA` terms, a.k.a. powering circuits) either as a `Table` (components and their powering value) or as a `Chart` (as the `Strengths` plot in the `Correction` tab).
+Selecting a knob displays its components (in `LSA` terms, a.k.a. powering circuits) either as a `Table` (components and their powering value) or as a `Chart` (like the `Strengths` plot in the `Correction` tab).
 
 === "Table View"
 
