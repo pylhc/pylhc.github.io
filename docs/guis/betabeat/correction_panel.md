@@ -262,6 +262,26 @@ The workflow is as follows:
 The `View Knobs` tab lists the `BETA-BEATING` knobs created by the OMC team, again filterable through a `Search` field at the top.
 Selecting a knob displays its components (in `LSA` terms, a.k.a. powering circuits) either as a `Table` (components and their powering value) or as a `Chart` (as the `Strengths` plot in the `Correction` tab).
 
+=== "Table View"
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/knob_panel_view_knob_table.png" width="90%" alt="View Knobs tab showing a knob's components as a table"/>
+      <figcaption>The <code>Table</code> view lists each component of the selected knob with its value.</figcaption>
+      </center>
+    </figure>
+
+=== "Chart View"
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/knob_panel_view_knob_chart.png" width="90%" alt="View Knobs tab showing a knob's components as a bar chart"/>
+      <figcaption>The <code>Chart</code> view shows the same components as a bar plot, like the <code>Strengths</code> plot.</figcaption>
+      </center>
+    </figure>
+
+
+
 *[LSA]: LHC Software Architecture
 *[EIC]: Engineer in Charge
 *[RBAC]: Role Based Access Control
