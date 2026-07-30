@@ -254,12 +254,14 @@ The workflow is as follows:
       </center>
     </figure>
 
+The ++"Refresh"++ button re-queries LSA to update the displayed lists, including the beam processes here and the knobs in the `View Knobs` tab; while ++"Cancel"++ closes the panel.
+
 <!-- TODO: check the behaviour of Create knob when no beam process / no optic / no name is provided -->
 
 ### Viewing and Managing Knobs
 
 The `View Knobs` tab lists the `BETA-BEATING` knobs created by the OMC team, again filterable through a `Search` field at the top.
-Selecting a knob displays its components (in `LSA` terms, a.k.a. powering circuits) either as a `Table` (components and their powering value) or as a `Chart` (like the `Strengths` plot in the `Correction` tab).
+Selecting a knob displays its components (in LSA terms, a.k.a. powering circuits) either as a `Table` (components and their powering value) or as a `Chart` (like the `Strengths` plot in the `Correction` tab).
 
 === "Table View"
 
@@ -284,7 +286,7 @@ Note that a knob is only displayed here if a beam process **and** at least one o
 <!-- The panel therefore needs to know which beam process and optic to read the values from, so selecting a knob in `View Knobs` with nothing selected on `Creation` simply shows nothing. -->
 
 !!! danger "Deleting Knobs"
-    This tab provides a ++"Delete knob"++{.yellow-gui-button} button which will send a command to remove the selected knob from `LSA`.
+    This tab provides a ++"Delete knob"++{.yellow-gui-button} button which will send a command to remove the selected knob from LSA.
     **Use it with care!**
     The effect is immediate.
 
