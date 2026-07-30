@@ -218,3 +218,26 @@ This is done through the `Knob Panel`: back in the `Correction` tab, select the 
 
     Furthermore, creating (and later deleting) a knob in `LSA` requires elevated rights, available through an EIC's or the `LHCOP` account.
     Make sure a valid RBAC token has been acquired beforehand, via the log-in button at the [top of the GUI](common_components.md#top-of-the-gui).
+
+### Creating a Knob
+
+Knobs selected when opening the panel are created from the `Creation` tab, which opens by default.
+The workflow is as follows:
+
+- Locate the target beam process in the `Beam Processes` list on the left and select it.
+  At the top of the tab, a `Search` field helps filter the list.
+
+    !!! tip "Finding the Current Beam Process"
+        The beam process currently used in the machine, a.k.a active, is shown in green
+        The others are displayed in blue.
+        This helps quickly finding the most likely relevant BP.
+
+- With a beam process selected, the optics defined for it populate the `Optics` table on the right.
+  Select every optic the knob should be defined for (use ++ctrl+lbutton++ to add or remove entries to the selection, ++shift+lbutton++ to select a range).
+- Enter a `Knob name` at the bottom.
+- Click ++"Create knob"++{.green-gui-button} to send its definition to `LSA`.
+
+*[LSA]: LHC Software Architecture
+*[EIC]: Engineer in Charge
+*[RBAC]: Role Based Access Control
+*[BP]: Beam Process
