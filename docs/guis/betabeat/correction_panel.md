@@ -16,7 +16,7 @@ The `Correction test` tab will be covered further down, see [checking correction
 
 The `Correction` tab is organised into three areas.
 On the left is a table listing the loaded correction files, named as the relative path to the corresponding `changeparameters_*.tfs` file.
-Any correction computed in the [`Optics` panel](optics_panel.md#computing-global-corrections) will appear here automatically
+Any correction computed in the [`Optics` panel](optics_panel.md#computing-global-corrections) will appear here automatically.
 Clicking the ++"Load Correction Files"++{.green-gui-button} button above the table opens a dialogue to select and load previously determined corrections from disk.
 
 To the right, the `Strengths` plot displays the resulting powering of each affected magnet or knob after the selected correction is applied.
@@ -54,7 +54,7 @@ One can inspect these values to check that constraints are respected, e.g. no ma
 
     Note that unlike in the `Optics` panel, selecting multiple correction entries from the table will not lead to a comparison.
     This is due to the often different set of correctors modified by different corrections.
-    Instead, only one of the correction will have its strengths displayed.
+    Instead, only one of the corrections will have its strengths displayed.
 
 In the case of some corrections which instead of individual magnets use knobs, one bar will be shown for each knob.
 This is the case for e.g. the global coupling correction.
@@ -216,7 +216,7 @@ This is done through the `Knob Panel`: back in the `Correction` tab, select the 
 !!! warning "Technical Network and Elevated Rights Needed"
     The `Knob Panel` communicates with `LSA` and therefore requires being inside the CERN Technical Network.
 
-    Furthermore, creating (and later deleting) a knob in `LSA` requires elevated rights, available through an EIC's or the `LHCOP` account.
+    Furthermore, creating (and later deleting) a knob in `LSA` requires elevated rights, available through an EIC or the `LHCOP` account.
     Make sure a valid RBAC token has been acquired beforehand, via the log-in button at the [top of the GUI](common_components.md#top-of-the-gui).
 
 ### Creating a Knob
@@ -228,9 +228,9 @@ The workflow is as follows:
   At the top of the tab, a `Search` field helps filter the list.
 
     !!! tip "Finding the Current Beam Process"
-        The beam process currently used in the machine, a.k.a active, is shown in green
+        The beam process currently used in the machine, a.k.a. active, is shown in green.
         The others are displayed in blue.
-        This helps quickly finding the most likely relevant BP.
+        This makes the relevant BP quicker to find.
 
 - With a beam process selected, the optics defined for it populate the `Optics` table on the right.
   Select every optic the knob should be defined for (use ++ctrl+lbutton++ to add or remove entries to the selection, ++shift+lbutton++ to select a range).
@@ -285,7 +285,7 @@ Note that a knob is only displayed here if a beam process **and** at least one o
 <!-- The panel therefore needs to know which beam process and optic to read the values from, so selecting a knob in `View Knobs` with nothing selected on `Creation` simply shows nothing. -->
 
 !!! danger "Deleting Knobs"
-    This tab probides a ++"Delete knob"++{.yellow-gui-button} button which will send a command to remove the selected knob from `LSA`.
+    This tab provides a ++"Delete knob"++{.yellow-gui-button} button which will send a command to remove the selected knob from `LSA`.
     **Use it with care!**
     The effect is immediate.
 
