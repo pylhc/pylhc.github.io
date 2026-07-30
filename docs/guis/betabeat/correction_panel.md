@@ -289,6 +289,12 @@ Note that a knob is only displayed here if a beam process **and** at least one o
     **Use it with care!**
     The effect is immediate.
 
+!!! question "What to do Now?"
+
+    Your correction knob is defined and should already be available in LSA.
+    It is time to trim it in the machine (ask the EIC on shift) and perform new measurements.
+    Compare the corrected optics to the ones used to determine the correction to assess its effectiveness.
+
 *[LSA]: LHC Software Architecture
 *[EIC]: Engineer in Charge
 *[RBAC]: Role Based Access Control
