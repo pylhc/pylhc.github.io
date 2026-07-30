@@ -237,6 +237,26 @@ The workflow is as follows:
 - Enter a `Knob name` at the bottom.
 - Click ++"Create knob"++{.green-gui-button} to send its definition to `LSA`.
 
+=== "Selecting a beam process"
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/knob_panel_bp_search_and_select.png" width="90%" alt="Knob Panel with a beam process searched and selected, optics populated"/>
+      <figcaption>A beam process filtered via <code>Search</code> and selected; its available optics now populate the <code>Optics</code> table on the right.</figcaption>
+      </center>
+    </figure>
+
+=== "Selecting optics and naming the knob"
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/knob_panel_selected_bp_and_optics.png" width="90%" alt="Knob Panel with optics selected and a knob name entered"/>
+      <figcaption>The optics selected and a <code>Knob name</code> entered, ready to create the knob.</figcaption>
+      </center>
+    </figure>
+
+<!-- TODO: check the behaviour of Create knob when no beam process / no optic / no name is provided -->
+
 *[LSA]: LHC Software Architecture
 *[EIC]: Engineer in Charge
 *[RBAC]: Role Based Access Control
