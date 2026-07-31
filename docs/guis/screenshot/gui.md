@@ -7,10 +7,13 @@ It is handy during operations, when one constantly wants to log settings, quick 
     The tool needs to run inside the GPN and be logged in to write to the logbook.
     When started from the CCM under an operational account (e.g. `LHCOP` during LHC shifts), this is already taken care of.
 
+This page provides a quick walkthrough of how to set it up to screenshot directly to the OMC logbook.
+
 ## Opening the Client
 
-The GUI is only started from the CCM.
-In the search bar, type `screenshot` and launch the **Screenshot LIDB Client**.
+The GUI is started from the CCM.
+In the search bar, type *screenshot* and launch the `Screenshot LIDB Client`.
+<!-- TODO: check this is indeed screenshot lidb client -->
 
 <!-- TODO (screenshots Monday): default view of the client after launch.
 <figure>
@@ -23,7 +26,7 @@ In the search bar, type `screenshot` and launch the **Screenshot LIDB Client**.
 
 ## Selecting the Logbook
 
-Before capturing anything, the target logbook has to be set, and this must be done at **each start** of the tool.
+Before capturing anything, the target logbook has to be set.
 
 - Click the `Config` button to open the configuration popup.
 - Search for `OMC` and select `LHC_OMC` (or `OMC Injectors`) so that the screenshots are sent to the right place.
