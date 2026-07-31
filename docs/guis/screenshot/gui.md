@@ -1,32 +1,69 @@
 # The Screenshot GUI
 
-It's super useful because we constantly want to add screenshots (settings, quick plot etc) to the logbook.
-It's made exactly for this.
+The Screenshot GUI is a small utility to capture a screenshot and upload it straight to the logbook.
+It is handy during operations, when one constantly wants to log settings, quick plots or the state of another GUI.
 
-Include:
+!!! info "Requirements"
+    The tool needs to run inside the GPN and be logged in to write to the logbook.
+    When started from the CCM under an operational account (e.g. `LHCOP` during LHC shifts), this is already taken care of.
 
-1. How to open the client (CCM, search bar, type screenshot and go for "Screenshot LIDB Client")
-2. Explain default view
-3. Straight to "Config" button -> popup
-4. Search "OMC" and select "LHC_OMC" (or "OMC Injectors") so that the screenshots go there
-5. Now the screenshot client, in the right part, will show logbook entries with their number.
+## Opening the Client
 
+The GUI is only started from the CCM.
+In the search bar, type `screenshot` and launch the **Screenshot LIDB Client**.
 
-For a screenshot two options:
+<!-- TODO (screenshots Monday): default view of the client after launch.
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/screenshot_gui/default_view.png" width="85%" alt="Screenshot client landing page" />
+  <figcaption>The Screenshot Client on launch.</figcaption>
+  </center>
+</figure>
+-->
 
-- To make a new logbook entries along with uploading the screenshot, click the "New" button in the top left.
-- To add a screenshot to an existing logbook entry click on the corresponding entry on the right.
+## Selecting the Logbook
+
+Before capturing anything, the target logbook has to be set, and this must be done at **each start** of the tool.
+
+- Click the `Config` button to open the configuration popup.
+- Search for `OMC` and select `LHC_OMC` (or `OMC Injectors`) so that the screenshots are sent to the right place.
+
+Once configured, the right part of the window lists the recent logbook entries, each with its number.
+
+<!-- TODO (screenshots Monday): Config popup with "OMC" searched and LHC_OMC selected.
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/screenshot_gui/config_popup.png" width="85%" alt="Configuration popup with the OMC logbook selected" />
+  <figcaption>Selecting the target logbook in the configuration popup.</figcaption>
+  </center>
+</figure>
+-->
+
+## Taking a Screenshot
+
+There are two ways to capture a screenshot, depending on where it should go:
+
+- To create a **new** logbook entry along with the screenshot, click the `New` button in the top left.
+- To add the screenshot to an **existing** entry, click the corresponding entry in the list on the right.
 
 !!! tip "Clarifying the Entry"
-    If you hover the mouse onto an entry in the right part, after a little time it will show a preview of the corresponding logbook entry.
+    Hovering the mouse over an entry in the list, after a short moment, shows a preview of the corresponding logbook entry.
 
-After having chosen either option, the screenshot client window itself will disappear to avoid being on a screenshot.
-Then you can:
+<!-- TODO (screenshots Monday): main view with the numbered entry list on the right (ideally a hover preview visible).
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/screenshot_gui/entry_list.png" width="85%" alt="Client with the logbook entry list on the right" />
+  <figcaption>The list of logbook entries, with the hover preview.</figcaption>
+  </center>
+</figure>
+-->
 
-- Drag select a part of the screen to screenshot
-- Right click a window to screenshot that entire window
+After choosing either option, the client window hides itself to stay out of the capture.
+From there, one can:
 
-At any moment in "screenshot mode" pressing "Esc" will exit the mode and bring back the client window.
+- Drag-select a region of the screen to capture it.
+- Right-click a window to capture that entire window.
 
+At any moment in this capture mode, pressing ++esc++ exits it and brings the client window back.
 
-<!-- TODO: see if there are any details to add -->
+*[GPN]: General Purpose Network
