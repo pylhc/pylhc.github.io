@@ -34,7 +34,8 @@ Before capturing anything, the target logbook has to be set.
 !!! tip "OMC Logbooks"
     Searching for "OMC" will bring up the only two OMC logbooks, `LHC_OMC` and `OMC Injectors`.
 
-Once configured, the right part of the window lists the recent logbook entries, each with its number.
+Once configured, the right part of the window lists the recent logbook entries.
+Each entry is displayed with a three-digits number, corresponding to the last three digits of the actual logbook entry.
 
 <!-- TODO (screenshots Monday): Config popup with "OMC" searched and LHC_OMC selected.
 <figure>
