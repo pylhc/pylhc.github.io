@@ -73,5 +73,8 @@ From there, one can:
 
 At any moment in this capture mode, pressing ++esc++ exits it and brings the client window back.
 
+If the logbook is opened, it will spawn the popup to attach a file to an entry.
+Confirm it and you're set.
+
 *[GPN]: General Purpose Network
 *[OMC]: Optics Measurements and Corrections
