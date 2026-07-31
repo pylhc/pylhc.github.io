@@ -51,10 +51,10 @@ Each entry is displayed with a three-digits number, corresponding to the last th
 There are two ways to capture a screenshot, depending on where it should go:
 
 - To create a **new** logbook entry along with the screenshot, click the `New` button in the top left.
-- To add the screenshot to an **existing** entry, click the corresponding entry in the list on the right.
+- To add the screenshot to an **existing entry**, click the corresponding entry in the list on the right.
 
 !!! tip "Clarifying the Entry"
-    Hovering the mouse over an entry in the list, after a short moment, shows a preview of the corresponding logbook entry.
+    Hovering the mouse over a list item shows a preview of the corresponding logbook entry.
 
 <!-- TODO (screenshots Monday): main view with the numbered entry list on the right (ideally a hover preview visible).
 <figure>
