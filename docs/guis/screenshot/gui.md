@@ -29,7 +29,10 @@ In the search bar, type *screenshot* and launch the `Screenshot LIDB Client`.
 Before capturing anything, the target logbook has to be set.
 
 - Click the `Config` button to open the configuration popup.
-- Search for `OMC` and select `LHC_OMC` (or `OMC Injectors`) so that the screenshots are sent to the right place.
+- Select the specific logbook to send the screenshots to.
+
+!!! tip "OMC Logbooks"
+    Searching for "OMC" will bring up the only two OMC logbooks, `LHC_OMC` and `OMC Injectors`.
 
 Once configured, the right part of the window lists the recent logbook entries, each with its number.
 
@@ -70,3 +73,4 @@ From there, one can:
 At any moment in this capture mode, pressing ++esc++ exits it and brings the client window back.
 
 *[GPN]: General Purpose Network
+*[OMC]: Optics Measurements and Corrections
