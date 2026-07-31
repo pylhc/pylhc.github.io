@@ -72,9 +72,10 @@ From there, one can:
 - Right-click a window to capture that entire window.
 
 At any moment in this capture mode, pressing ++esc++ exits it and brings the client window back.
+What happens next depends on whether the logbook is currently open in a browser:
 
-If the logbook is opened, it will spawn the popup to attach a file to an entry.
-Confirm it and you're set.
+- If it is not open, the screenshot is simply uploaded in the background.
+- If the logbook is open somewhere, a popup appears in it to attach the file to the entry, exactly as when adding an attachment manually. Confirm it and the upload is done.
 
 *[GPN]: General Purpose Network
 *[OMC]: Optics Measurements and Corrections
