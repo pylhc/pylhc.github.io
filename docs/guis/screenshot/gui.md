@@ -32,7 +32,7 @@ Before capturing anything, the target logbook has to be set.
 - Select the specific logbook to send the screenshots to.
 
 !!! tip "OMC Logbooks"
-    Searching for `OMC` will bring up the only two OMC logbooks, `LHC_OMC` and `OMC Injectors`.
+    Searching for `OMC` will bring up the only two OMC logbooks, `LHC_OMC` and `OMC_Injectors`.
 
 Once configured, the right part of the window lists the recent logbook entries.
 Each entry is displayed with a three-digit number, corresponding to the last three digits of the actual logbook entry.
