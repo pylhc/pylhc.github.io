@@ -83,16 +83,16 @@ Go to [CERN Openstack][cern_openstack]{target=_blank}: `Project -> Compute -> In
 
 - On **Details** choose a CERN-unique name for your instance.
 It will be available under `your-machine-name@cern.ch`
-![launch details](../assets/images/openstack_vm/LaunchDetails.png)
+![launch details](../assets/images/resources/openstack_vm/LaunchDetails.png)
 
 - On **Source** select your desired image, e.g. `rhel9` or `alma9` etc. (if unsure which one is currently best supported, ask around in OMC).
-![launch source](../assets/images/openstack_vm/LaunchSource.png)
+![launch source](../assets/images/resources/openstack_vm/LaunchSource.png)
 
 - On **Flavour** select the Volume and RAM size that you think you will need.
-![launch favour](../assets/images/openstack_vm/LaunchFlavour.png)
+![launch favour](../assets/images/resources/openstack_vm/LaunchFlavour.png)
 
 - On **Key Pair** select _Import Key Pair_ and choose as `ssh-key` the [previously created **Public Key**](#create-ssh-key-pair), e.g. `openstackkey.pub`.
-![launch key-pair](../assets/images/openstack_vm/LaunchKeyPair.png)
+![launch key-pair](../assets/images/resources/openstack_vm/LaunchKeyPair.png)
 
 Now wait until the instance is created. The progress can be seen in
 
