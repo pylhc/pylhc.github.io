@@ -7,6 +7,28 @@ A collection of useful templates.
     Even though they might look like official CERN resources, **they are not**.
     Please use responsibly.
 
+## QR Codes
+
+When making presentations or posters, here are two QR codes to include that link to the OMC website, in light and dark versions.
+
+=== "Light Themed"
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/resources/omc_qrcode_light.png" width="65%" alt="QR code linking to the OMC website, with the OMC logo at its center, drawn in blue and orange dots on a white background"/>
+      <figcaption>QR code to the OMC website, for use on <em>light</em> backgrounds.</figcaption>
+      </center>
+    </figure>
+
+=== "Dark Themed"
+
+    <figure>
+      <center>
+      <img class="clickImg" src="../../assets/images/resources/omc_qrcode_dark.png" width="65%" alt="QR code linking to the OMC website, with the OMC logo at its center, drawn in orange and white blocks on a dark blue background"/>
+      <figcaption>QR code to the OMC website, for use on <em>dark</em> backgrounds.</figcaption>
+      </center>
+    </figure>
+
 ## Presentations
 
 ### CERN Beamer (Semi-Official)

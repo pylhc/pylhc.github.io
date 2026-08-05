@@ -2,8 +2,8 @@
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/top_buttons.png" width="100%" alt="Icons at the top of the GUI." />
-  <figcaption>Open the settings window with the white-on-blue gear icon <span class="settings-icon">&#9881;</span>.</figcaption>
+  <img src="../../assets/images/betabeat_gui/settings/top_buttons.png" width="100%" alt="Icons at the top of the GUI." />
+  <figcaption>Open the model creation window with the left-most button at the top, depicting a model.</figcaption>
   </center>
 </figure>
 
@@ -42,7 +42,7 @@ There is some general behaviour, that is true for all settings-tabs:
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/settings_gui.png" width="100%" alt="GUI settings tab." />
+  <img src="../../assets/images/betabeat_gui/settings/settings_gui.png" width="100%" alt="GUI settings tab." />
   <figcaption>The Gui tab of the settings window.</figcaption>
   </center>
 </figure>
@@ -97,7 +97,7 @@ This is in contrast to the other settings tabs, which control the settings passe
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/settings_tunes.png" width="100%" alt="Tunes settings tab." />
+  <img src="../../assets/images/betabeat_gui/settings/settings_tunes.png" width="100%" alt="Tunes settings tab." />
   <figcaption>The Tunes tab of the settings window.</figcaption>
   </center>
 </figure>
@@ -151,7 +151,7 @@ The fields are non-editable when it does not make sense in the current settings 
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/settings_harpy.png" width="100%" alt="Harpy settings tab." />
+  <img src="../../assets/images/betabeat_gui/settings/settings_harpy.png" width="100%" alt="Harpy settings tab." />
   <figcaption>The Harpy tab of the settings window.</figcaption>
   </center>
 </figure>
@@ -239,7 +239,7 @@ The `python` default is `""`, i.e. no suffix.
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/settings_cleaning.png" width="100%" alt="Cleaning settings tab." />
+  <img src="../../assets/images/betabeat_gui/settings/settings_cleaning.png" width="100%" alt="Cleaning settings tab." />
   <figcaption>The Cleaning-tab of the settings window.</figcaption>
   </center>
 </figure>
@@ -336,7 +336,7 @@ introduced by the AC-Dipole and if they are not found in the data, the optics an
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/settings_optics.png" width="100%" alt="Optics settings tab." />
+  <img src="../../assets/images/betabeat_gui/settings/settings_optics.png" width="100%" alt="Optics settings tab." />
   <figcaption>The Optics-tab of the settings window.</figcaption>
   </center>
 </figure>
@@ -417,7 +417,7 @@ introduced by the AC-Dipole and if they are not found in the data, the optics an
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/settings_accelerator.png" width="100%" alt="Accelerator settings tab." />
+  <img src="../../assets/images/betabeat_gui/settings/settings_accelerator.png" width="100%" alt="Accelerator settings tab." />
   <figcaption>The Accelerator-tab of the settings window.</figcaption>
   </center>
 </figure>

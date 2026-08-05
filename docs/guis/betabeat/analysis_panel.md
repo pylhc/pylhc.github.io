@@ -1,10 +1,10 @@
 # The Analysis Panel
 
-The analysis panel provides graphical interface to visualise results from harmonic analysis performed on the given data.
+The analysis panel provides graphical interface to visualise results from [harmonic analysis][harpy_analysis] performed on the given data.
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel.png" width="100%" alt="The Analysis Panel"/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel/analysis_panel.png" width="100%" alt="The Analysis Panel"/>
   <figcaption>The Analysis Panel.</figcaption>
   </center>
 </figure>
@@ -24,7 +24,7 @@ as well as to start the [optics analysis](#do-optics-dialogue).
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_table.png" width="100%" alt="Table of loaded files."/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel/table.png" width="100%" alt="Table of loaded files."/>
   <figcaption>The table of currently loaded files.</figcaption>
   </center>
 </figure>
@@ -39,7 +39,7 @@ In the `Time / Space` tab one can examine the phases and amplitudes of different
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_time_space.png" width="100%" alt="Time and Space tab."/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel/time_space.png" width="100%" alt="Time and Space tab."/>
   <figcaption>The Time / Space tab.</figcaption>
   </center>
 </figure>
@@ -75,7 +75,7 @@ which trigger the python [`linfile_clean` script][omc3_linfile_clean]{target=_bl
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/analysis_panel_time_space_clean.png" width="80%" alt="Cleaning before optics analysis" />
+  <img src="../../assets/images/betabeat_gui/analysis_panel/time_space_clean.png" width="80%" alt="Cleaning before optics analysis" />
   <figcaption> Cleaning controls to clean data before optics analysis </figcaption>
   </center>
 </figure>
@@ -95,7 +95,7 @@ which trigger the python [`linfile_clean` script][omc3_linfile_clean]{target=_bl
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/analysis_panel_time_space_manual_clean_before.png" width="100%" alt="Natural Tune before cleaning." />
+    <img src="../../assets/images/betabeat_gui/analysis_panel/time_space_manual_clean_before.png" width="100%" alt="Natural Tune before cleaning." />
     <figcaption>Identified natural tunes per BPM with outliers. </figcaption>
     </center>
     </figure>
@@ -104,7 +104,7 @@ which trigger the python [`linfile_clean` script][omc3_linfile_clean]{target=_bl
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/analysis_panel_time_space_manual_clean_after.png" width="100%" alt="Natural Tune after cleaning." />
+    <img src="../../assets/images/betabeat_gui/analysis_panel/time_space_manual_clean_after.png" width="100%" alt="Natural Tune after cleaning." />
     <figcaption>Identified natural tunes per BPM after cleaning outliers.</figcaption>
     </center>
     </figure>
@@ -152,7 +152,7 @@ Use ++"X"++ to restore the latest backup for the X-plane and ++"Y"++ for the Y-p
 
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_frequency.png" width="100%" alt="Frequency tab."/>
+  <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel/frequency.png" width="100%" alt="Frequency tab."/>
   <figcaption>The Frequency tab.</figcaption>
   </center>
 </figure>
@@ -180,7 +180,7 @@ Use the controls at the bottom left of the panel for the additional functionalit
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_controls_resonance_lines.png" width="70%" alt="Frequency tab resonance lines controls."/>
+  <img src="../../assets/images/betabeat_gui/analysis_panel/frequency_controls_resonance_lines.png" width="70%" alt="Frequency tab resonance lines controls."/>
   <figcaption>Resonance lines controls at the bottom of the Frequency tab.</figcaption>
   </center>
 </figure>
@@ -205,7 +205,7 @@ Clicking the ++"Custom"++ button will open a dialogue to manually enter frequenc
 
 <figure>
 <center>
-<img src="../../assets/images/betabeat_gui/analysis_panel_frequency_manual_line.png" width="60%"alt="Custom lines dialogue." />
+<img src="../../assets/images/betabeat_gui/analysis_panel/frequency_manual_line.png" width="60%"alt="Custom lines dialogue." />
 <figcaption>The custom lines dialogue to manually add lines.</figcaption>
 </center>
 </figure>
@@ -217,7 +217,7 @@ The lines in the charts will only update after clicking ++"Approve"++.
 
     <figure>
     <center>
-    <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_frequency_nattune.png" alt="Natural tune line." style="height: 650px" />
+    <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel/frequency_nattune.png" alt="Natural tune line." style="height: 650px" />
     <figcaption>The spectrum showing a tooltip at the natural tune line.</figcaption>
     </center>
     </figure>
@@ -226,7 +226,7 @@ The lines in the charts will only update after clicking ++"Approve"++.
 
     <figure>
     <center>
-    <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_frequency_m1Qx_p2Qy_line.png" alt="2Qy - Qx line." style="height: 650px" />
+    <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel/frequency_m1Qx_p2Qy_line.png" alt="2Qy - Qx line." style="height: 650px" />
     <figcaption>The spectrum showing a tooltip at the 2Qy - Qx line.</figcaption>
     </center>
     </figure>
@@ -235,7 +235,7 @@ The lines in the charts will only update after clicking ++"Approve"++.
 
     <figure>
     <center>
-    <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_frequency_manual_line_show.png" alt="Manual line." style="height: 650px"/>
+    <img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel/frequency_manual_line_show.png" alt="Manual line." style="height: 650px"/>
     <figcaption>The spectrum showing a tooltip at a manually added marker at 0.265.</figcaption>
     </center>
     </figure>
@@ -258,7 +258,7 @@ and might be misidentified as the natural tune line when their amplitude is high
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_controls_nattune.png" width="65%" alt="Frequency tab natural tune window controls."/>
+  <img src="../../assets/images/betabeat_gui/analysis_panel/frequency_controls_nattune.png" width="65%" alt="Frequency tab natural tune window controls."/>
   <figcaption>Natural tune window controls at the bottom of the Frequency tab.</figcaption>
   </center>
 </figure>
@@ -276,7 +276,7 @@ both of which are taken from the [`Tune Settings`](settings.md#tunes-tab).
 
 <figure>
 <center>
-<img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel_frequency_nattune.png" alt="Natural tune line." style="height: 650px" />
+<img class="clickImg" src="../../assets/images/betabeat_gui/analysis_panel/frequency_nattune.png" alt="Natural tune line." style="height: 650px" />
 <figcaption>The spectrum showing a tooltip at the natural tune line.</figcaption>
 </center>
 </figure>
@@ -314,7 +314,7 @@ Click ++"Update Lin-Files"++{.green-gui-button} to update the `NATTUNE`-column i
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_controls_chart_options.png" width="70%" alt="Frequency tab chart controls."/>
+  <img src="../../assets/images/betabeat_gui/analysis_panel/frequency_controls_chart_options.png" width="70%" alt="Frequency tab chart controls."/>
   <figcaption>Chart options controls at the bottom of the Frequency tab.</figcaption>
   </center>
 </figure>
@@ -350,7 +350,7 @@ As the spectrum is completely rendered by the `python` script, the output will l
 
         <figure>
         <center>
-        <img src="../../assets/images/betabeat_gui/analysis_panel_frequency_export.png" width="60%" alt="Export Spectrum Dialogue."/>
+        <img src="../../assets/images/betabeat_gui/analysis_panel/frequency_export.png" width="60%" alt="Export Spectrum Dialogue."/>
         <figcaption>The export spectrum dialogue.</figcaption>
         </center>
         </figure>
@@ -374,7 +374,7 @@ which will calculate the optics parameters based on the spectra of the [currentl
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/do_optics_dialog.png" width="100%" alt="The 'Do Optics' Dialogue"/>
+    <img src="../../assets/images/betabeat_gui/analysis_panel/do_optics_dialog.png" width="100%" alt="The 'Do Optics' Dialogue"/>
     <figcaption>The "Do Optics" Dialogue.</figcaption>
     </center>
     </figure>
@@ -383,7 +383,7 @@ which will calculate the optics parameters based on the spectra of the [currentl
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/do_optics_dialog_settings.png" width="100%" alt="The 'Do Optics' Dialogue with open settings"/>
+    <img src="../../assets/images/betabeat_gui/analysis_panel/do_optics_dialog_settings.png" width="100%" alt="The 'Do Optics' Dialogue with open settings"/>
     <figcaption>The "Do Optics" Dialogue with open settings.</figcaption>
     </center>
     </figure>
@@ -403,8 +403,8 @@ one can change the [settings](settings.md) of the _[Optics tab](settings.md#opti
     not just for the current one!
     You need to click the ++"Apply"++ button to actually apply these settings before the run.
 
-[additional_defaults]: defaults.md#additional-gui-defaults
 [harpy_analysis]: ../../measurements/physics/harpy.md
+[additional_defaults]: defaults.md#additional-gui-defaults
 [bad_bpms]: ../../measurements/physics/bpm_filtering.md
 [amplitude_detuning_analysis]: ../../measurements/procedures/ampdet.md
 [optics_analysis]: ../../measurements/physics/optics.md
