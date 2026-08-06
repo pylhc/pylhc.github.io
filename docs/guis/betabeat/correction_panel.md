@@ -181,8 +181,7 @@ It carries two sets of tabs:
 - Horizontal tabs are the top allow selecting the optics quantity to display (`beta amplitude`, `beta phase`, `dispersion`, `f1001`, `f1010`, `orbit`, `phase`, `total phase`)
 
 The first left-hand tab is always `All Corrections`, and is a comparison overview.
-For the selected quantity it shows the `Measurement` values together with the expected end result of each tested correction.
-It shows one curve per scheme, labelled by its folder name, which allows all defined schemes to be judged against one another at a glance.
+For the selected quantity it shows the `Measurement` values together with the expected end result of each tested correction, labelled by its folder name.
 
 <figure>
   <center>
