@@ -177,8 +177,8 @@ Two checkboxes next to the ++"Run Corrections"++{.green-gui-button} button contr
 If Python plotting was enabled (which it is by default), a `Correction Check` window opens once the run finishes.
 It carries two sets of tabs:
 
-- Those along the top select the optics quantity to display (`beta amplitude`, `beta phase`, `dispersion`, `f1001`, `f1010`, `orbit`, `phase`, `total phase`)
-- Those to the left of the window select which correction to look at.
+- Vertical tabs left of the window allow selecting one of the tested corrections.
+- Horizontal tabs are the top allow selecting the optics quantity to display (`beta amplitude`, `beta phase`, `dispersion`, `f1001`, `f1010`, `orbit`, `phase`, `total phase`)
 
 The first left-hand tab is always `All Corrections`, and is a comparison overview.
 For the selected quantity it shows the `Measurement` values together with the expected end result of each tested correction.
