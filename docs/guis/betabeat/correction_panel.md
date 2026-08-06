@@ -1,6 +1,6 @@
 # The Correction Panel
 
-The `Correction` panel is where global corrections [computed in the `Optics` panel](optics_panel.md#computing-global-corrections) are loaded, reviewed and tested, with the aim of bringing the measured machine as close as possible to nominal model conditions.
+In the `Correction` panel previously computed global corrections, e.g. from the [`Optics` panel](optics_panel.md#computing-global-corrections), can be visualised, reviewed and tested, with the goal to bring the measured machine as close as possible to nominal model conditions.
 It also gives access to the `Knob Panel`, used to turn a correction into a knob in the LSA database for use in operations.
 The panel is split into two sub-tabs: `Correction` and `Correction test`.
 
