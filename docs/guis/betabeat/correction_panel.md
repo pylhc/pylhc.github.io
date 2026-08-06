@@ -174,7 +174,7 @@ Two checkboxes next to the ++"Run Corrections"++{.green-gui-button} button contr
 
 ### Reading the Results
 
-A `Correction Check` window opens once the run finishes.
+If Python plotting was enabled (which it is by default), a `Correction Check` window opens once the run finishes.
 It carries two sets of tabs:
 
 - Those along the top select the optics quantity to display (`beta amplitude`, `beta phase`, `dispersion`, `f1001`, `f1010`, `orbit`, `phase`, `total phase`)
