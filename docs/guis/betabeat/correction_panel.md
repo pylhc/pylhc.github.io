@@ -22,9 +22,7 @@ Clicking the ++"Load Correction Files"++{.green-gui-button} button above the tab
 To the right, the `Strengths` plot displays the resulting powering of each affected magnet or knob after the selected correction is applied.
 Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows exporting a correction as a knob, see [knob creation](#knob-creation).
 
-!!! info "About Correction Files"
-
-    Now is a good time to recap what results from determining a correction in the [`Optics` panel](optics_panel.md#computing-global-corrections).
+!!! info "Recap: Correction Files"
 
     Each computed correction for a given parameter (e.g. phase) creates the following files in the `Corrections` folder:
 
