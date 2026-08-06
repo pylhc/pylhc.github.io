@@ -117,6 +117,13 @@ Note that a corrections folder can hold several files; the correction test appli
 By default this filter picks up the `changeparameters_*.madx` files.
 It can be edited to select a different set.
 
+!!! warning "Filter Field Known Issue"
+
+    To pass the filter string correctly to Python, the expression string **needs to be enclosed in double quotes**.
+    Most of the time Java does this automatically, but the quotes are sometimes lost after manual editing.
+    As Java seems to be very inconsistent in this, a reliable fix has not been found yet.
+    The best way to be sure is to check the Python command line printed in the log window after clicking ++"Run Corrections"++ and add the quotes manually if they are missing.
+
 By combining the options above one can assemble several correction scenarios.
 The tabs below show a few typical setups of the corrections tree:
 
