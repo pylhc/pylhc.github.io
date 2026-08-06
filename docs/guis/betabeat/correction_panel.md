@@ -113,7 +113,7 @@ The buttons below this table provide options to do so:
 
 - ++"Remove"++{.red-gui-button}: removes the selected entry, file or folder, after a yes/no confirmation popup.
 
-Note that a corrections folder can hold several files; the correction test applies every file in it that matches the file filter, the regular expression shown at the bottom of the tab.
+Note that a corrections folder can hold several files; the correction test applies every file in it that matches the file filter, the regular expression shown at the bottom of the tab. Beware this deletes it from disk.
 By default this filter picks up the `changeparameters_*.madx` files.
 It can be edited to select a different set.
 
