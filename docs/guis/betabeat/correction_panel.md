@@ -165,7 +165,7 @@ Clicking ++"Run Corrections"++{.green-gui-button} then launches the test: *each 
     - Writes a `job.create_twiss_matched.madx` file in the `Corrections` folder, which calls the provided model and the correction files matching the filter,
     - Runs `MAD-X` to build the corrected ("matched") model,
     - Compares this matched model to the nominal one to determine the correction effect,
-    - Uses data from the measurement to determine the expected result from applying this correction.
+    - Uses data from the measurement to determine the expected result from applying this correction in the machine. This is done by sybtracting the change between the nominal and matched models from the measurement data.
 
 Two checkboxes next to the ++"Run Corrections"++{.green-gui-button} button control how the run behaves and where its plots go:
 
