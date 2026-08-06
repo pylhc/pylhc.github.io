@@ -54,8 +54,11 @@ One can inspect these values to check that constraints are respected, e.g. no ma
     This is due to the often different set of correctors modified by different corrections.
     Instead, only one of the corrections will have its strengths displayed.
 
-In the case of some corrections which instead of individual magnets use knobs, one bar will be shown for each knob.
-This is the case for e.g. the global coupling correction.
+The order of the plotted correctors is as given in the corresponding `changeparameters_*.tfs` file.
+As "correctors" in this case can be individual magnets, commonly powered magnet families or a specific set combined into a knob, the order might be arbitrary.
+
+In the case of LHC corrections, the order is first by S location for known correctors, then alphabetically for unknown correctors.
+Check the `get_variables()` functions in the accelerator classes to figure out known correctors.
 
 !!! tip "Global Coupling Corrections Trims"
     In the special case of global coupling corrections computed with the [coupling preset](optics_panel.md#presets), and to facilitate the user's work, double clicking on the correction file name in the table will spawn a popup detailing the exact trim to apply in the accelerator cockpit app.
