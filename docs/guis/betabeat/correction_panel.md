@@ -104,7 +104,7 @@ Different individual corrections can be tested and compared against one another.
 Different combinations of corrections can also be tested and compared against one another.
 The buttons below this table provide options to do so:
 
-- ++"Folder"++{.green-gui-button}: prompts for a name and creates a new corrections folder with that name. This button is always available, and the new folder is created as a sibling of the original `Corrections` folder in the tree (i.e. at the same level).
+- ++"Folder"++{.green-gui-button}: prompts for a name and creates a new corrections folder with that name. This button is always available, and the new folder is created as a sibling of the original `Corrections` folder in the tree (i.e. at the same level) within the selected measurement folder.
 - ++"File"++{.green-gui-button}: opens a file dialogue to pick a correction file — which should follow the `changeparameters_*.madx` naming and copies it into the selected folder. It is only available when a corrections folder is selected: the original `Corrections` or one created with ++"Folder"++.
 - ++"Knob"++{.green-gui-button}: opens the `Knob selection panel` to search LSA for knobs, inspect their content, and import a chosen one as a file to include in the correction. Like ++"File"++, it is only available when a corrections folder is selected.
 
