@@ -89,7 +89,7 @@ Running a correction then plots, for each correctable parameter, both the effect
     Unlike the `Correction` tab, which can list corrections for several measurements at once, the `Correction test` tab operates on a single measurement at a time.
     It is possible however to hold and test several different corrections (individually or together) for this measurement.
 
-At the top of the tab, two dropdown menus define what the correction test runs on:
+At the top of the tab, two dropdown menus define the base data the correction test will use:
 
 - `Measurement`: the measurement to test. The dropdown lists entries known to the GUI (e.g. any measurement for which a correction was loaded in the previous tab), and an `Other...` entry that, when selected, opens a file dialogue to pick any measurement folder from disk.
 - `Model`: the model to apply the corrections to. It likewise lists known models (e.g. available in the `Models` menu) and also provides an `Other...` option with the behaviour stated above. Note that the model should naturally be one that matches the selected measurement.
