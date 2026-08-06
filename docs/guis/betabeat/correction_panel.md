@@ -88,8 +88,8 @@ Multiple corrections can be applied on top of one another (e.g. first a global c
 
 !!! info "One Measurement at a Time"
 
-    Unlike the `Correction` tab, which can list corrections for several measurements at once, the `Correction test` tab operates on a single measurement at a time.
-    It is possible however to hold and test several different corrections (individually or together) for this measurement.
+    The correction test only evaluates the effectiveness of one or more corrections on a single measurement at a time, and naturally the `Correction test` tab only allows managing corrections for one measurement at a time.
+    To compare the impact of a correction on several measurements, you must run the indidivual correction tests manually on each.
 
 At the top of the tab, two dropdown menus define the base data the correction test will use:
 
