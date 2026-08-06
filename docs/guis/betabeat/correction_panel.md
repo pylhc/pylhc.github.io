@@ -72,7 +72,7 @@ Check the `get_variables()` functions in the accelerator classes to figure out k
 
 ## Checking Corrections
 
-The `Correction test` tab lets one apply a determined correction to the measurement's associated model and inspect its effect.
+The `Correction test` tab lets one determine the effectiveness of a determined correction by showing its expected effect on the measurement's data.
 Running a correction then plots, for each correctable parameter, both the effect of the correction itself and the expected result of applying it.
 
 <figure>
@@ -81,6 +81,8 @@ Running a correction then plots, for each correctable parameter, both the effect
   <figcaption>The <code>Correction test</code> tab's default appearance.</figcaption>
   </center>
 </figure>
+
+Multiple corrections can be applied on top of one another (e.g. first a global correction followed by a local correction or an iteration) or in parallel, to be compared side by side.
 
 ### Preparing a Test
 
