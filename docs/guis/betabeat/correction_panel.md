@@ -242,6 +242,8 @@ The workflow is as follows:
   Select every optic the knob should be defined for (use ++ctrl+lbutton++ to add or remove entries to the selection, ++shift+lbutton++ to select a range).
 - Enter a `Knob name` at the bottom.
 - Click ++"Create knob"++{.green-gui-button} to send its definition to LSA.
+  Please follow the agreed upon naming conventions.
+  If unsure, check previously created knobs and ask a senior team member.
 
 === "Selecting a beam process"
 
