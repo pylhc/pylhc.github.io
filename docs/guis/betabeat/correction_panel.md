@@ -270,7 +270,7 @@ The ++"Refresh"++ button re-queries LSA to update the displayed lists, including
 ### Viewing and Managing Knobs
 
 The `View Knobs` tab lists the `BETA-BEATING` knobs created by the OMC team, again filterable through a `Search` field at the top.
-Selecting a knob displays its components (in LSA terms, a.k.a. powering circuits) either as a `Table` (components and their powering value) or as a `Chart` (like the `Strengths` plot in the `Correction` tab).
+Selecting a knob displays its components (in LSA terms, a.k.a. powering circuits) either as a `Table` (components and their powering change) or as a `Chart` (like the `Strengths` plot in the `Correction` tab).
 
 === "Table View"
 
