@@ -31,17 +31,15 @@ Before capturing anything, the target logbook has to be set.
 !!! tip "OMC Logbooks"
     Searching for `OMC` will bring up the only two OMC logbooks, `LHC_OMC` and `OMC_Injectors`.
 
-Once configured, the right part of the window lists the recent logbook entries.
-Each entry is displayed with a three-digit number, corresponding to the last three digits of the actual logbook entry.
+It is possible at that time, in the right part of the popup window, to select a tag that will be assigned to entries made via the screenshot tool.
 
-<!-- TODO (screenshots Monday): Config popup with "OMC" searched and LHC_OMC selected.
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/screenshot_gui/config_popup.png" width="85%" alt="Configuration popup with the OMC logbook selected" />
+  <img class="clickImg" src="../../assets/images/screenshot_gui/config_window.png" width="85%" alt="Configuration popup with the OMC logbook selected" />
   <figcaption>Selecting the target logbook in the configuration popup.</figcaption>
   </center>
 </figure>
--->
+
 
 ## Taking a Screenshot
 
