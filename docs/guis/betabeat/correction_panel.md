@@ -33,7 +33,7 @@ Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows expor
 
 ## Viewing Corrections
 
-Clicking an entry in the correction table on the left displays the resulting powering in the `Strengths` plot on the right, with one bar per affected magnet or knob.
+Clicking an entry in the correction table on the left displays the corresponding powering changes in the `Strengths` plot on the right, with one bar per affected magnet or knob.
 
 <figure>
   <center>
