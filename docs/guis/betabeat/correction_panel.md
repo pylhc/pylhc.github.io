@@ -19,7 +19,7 @@ On the left is a table listing the loaded correction files, named as the relativ
 Any correction computed in the [`Optics` panel](optics_panel.md#computing-global-corrections) will appear here automatically.
 Clicking the ++"Load Correction Files"++{.green-gui-button} button above the table opens a dialogue to select and load previously determined corrections from disk.
 
-To the right, the `Strengths` plot displays the resulting powering of each affected magnet or knob after the selected correction is applied.
+To the right, the `Strengths` plot displays the powering change of each affected magnet or knob from the selected correction.
 Below the table, the ++"Open Knob Panel"++{.blue-gui-button} button allows exporting a correction as a knob, see [knob creation](#knob-creation).
 
 !!! info "Recap: Correction Files"
