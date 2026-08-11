@@ -42,9 +42,7 @@ Clicking an entry in the correction table on the left displays the corresponding
   </center>
 </figure>
 
-These values are the change in powering of each element determined by the correction.
-They must not be confused with the `changeparameters_*.tfs` file, which instead lists the *delta* to apply to each element: the change in powering, not the resulting absolute value shown in the plot.
-
+These values are the change in powering of each element determined by the correction, a.k.a. the `DELTA` column of the corresponding `changeparameters_*.tfs` file.
 Hovering over a specific bar reveals the name of the magnet it corresponds to along with its exact value.
 
 !!! failure "No Multi Selection"
