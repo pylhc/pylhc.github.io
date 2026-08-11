@@ -12,8 +12,7 @@ This page provides a quick walkthrough of how to set it up to send screenshots d
 ## Opening the Client
 
 The GUI is started from the CCM.
-In the search bar, type `screenshot` and launch the `Screenshot LIDB Client`.
-<!-- TODO: check this is indeed screenshot lidb client -->
+In the search bar, type `screenshot` and launch the `Screenshot LIBD logbook`.
 
 <!-- TODO (screenshots Monday): default view of the client after launch.
 <figure>
