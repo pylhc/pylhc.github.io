@@ -71,6 +71,7 @@ What happens next depends on whether the logbook is currently open in a browser:
 
 - If it is not open, the screenshot is simply uploaded in the background.
 - If the logbook is open somewhere, a popup appears in it to attach the file to the entry, exactly as when adding an attachment manually. Confirm it and the upload is done.
+    - Note that if the confirmation dialogue for a previous screenshot is still open, then confirmation is skipped for this one.
 
 *[GPN]: General Purpose Network
 *[OMC]: Optics Measurements and Corrections
