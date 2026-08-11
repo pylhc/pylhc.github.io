@@ -40,6 +40,15 @@ It is possible at that time, in the right part of the popup window, to select a 
   </center>
 </figure>
 
+Once configured, the right part of the window lists the recent logbook entries.
+Each entry is displayed with a three-digit number, corresponding to the last three digits of the actual logbook entry.
+
+<figure>
+  <center>
+  <img class="clickImg" src="../../assets/images/screenshot_gui/gui_with_entries.png" width="100%" alt="Screenshot client landing page" />
+  <figcaption>The Screenshot Client displaying existing entries in the selected logbook.</figcaption>
+  </center>
+</figure>
 
 ## Taking a Screenshot
 
