@@ -64,7 +64,7 @@ After choosing either option, the client window hides itself to stay out of the 
 From there, one can:
 
 - Drag-select a region of the screen to capture it.
-- Right-click a window to capture that entire window.
+- Right or left-click a window to capture that entire window.
 
 At any moment in this capture mode, pressing ++esc++ exits it and brings the client window back.
 What happens next depends on whether the logbook is currently open in a browser:
