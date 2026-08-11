@@ -4,7 +4,7 @@ In the `Correction` panel previously computed global corrections, e.g. from the 
 It also gives access to the `Knob Panel`, used to turn a correction into a knob in the LSA database for use in operations.
 The panel is split into two sub-tabs: `Correction` and `Correction test`.
 
-The default view is the `Correction` tab, which loads correction files and displays the resulting powering of the affected magnets or knobs once a correction is applied.
+The default view is the `Correction` tab, which loads correction files and displays the powering change of the affected magnets or knobs from the selected correction.
 The `Correction test` tab will be covered further down, see [checking corrections](#checking-corrections).
 
 <figure>
