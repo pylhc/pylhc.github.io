@@ -46,7 +46,6 @@ These values are the absolute powering of each element once the correction is ap
 They must not be confused with the `changeparameters_*.tfs` file, which instead lists the *delta* to apply to each element: the change in powering, not the resulting absolute value shown in the plot.
 
 Hovering over a specific bar reveals the name of the magnet it corresponds to along with its exact value.
-One can inspect these values to check that constraints are respected, e.g. no magnet would end up outside of its powering limits.
 
 !!! failure "No Multi Selection"
 
