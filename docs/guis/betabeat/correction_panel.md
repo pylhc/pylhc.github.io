@@ -265,8 +265,6 @@ The workflow is as follows:
 
 The ++"Refresh"++ button re-queries LSA to update the displayed lists, including the beam processes here and the knobs in the `View Knobs` tab; while ++"Cancel"++ closes the panel.
 
-<!-- TODO: check the behaviour of Create knob when no beam process / no optic / no name is provided -->
-
 ### Viewing and Managing Knobs
 
 The `View Knobs` tab lists the `BETA-BEATING` knobs created by the OMC team, again filterable through a `Search` field at the top.
