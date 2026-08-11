@@ -36,7 +36,7 @@ It is possible at that time, in the right part of the popup window, to select a 
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/screenshot_gui/config_window.png" width="85%" alt="Configuration popup with the OMC logbook selected" />
-  <figcaption>Selecting the target logbook in the configuration popup.</figcaption>
+  <figcaption>Selecting the target logbook in the configuration popup, and potentially a tag.</figcaption>
   </center>
 </figure>
 
