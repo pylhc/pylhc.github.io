@@ -73,5 +73,11 @@ What happens next depends on whether the logbook is currently open in a browser:
 - If the logbook is open somewhere, a popup appears in it to attach the file to the entry, exactly as when adding an attachment manually. Confirm it and the upload is done.
     - Note that if the confirmation dialogue for a previous screenshot is still open, then confirmation is skipped for this one.
 
+!!! tip "Organising Screenshots"
+    To help keep entries clean in the logbook, it is very much recommended to write a caption for each screenshot in any entry with several screenshots.
+
+    It is possible to reorganise screenshots for an entry by clicking the menu in its top left, then selecting `Attachments Editor`.
+    There, various elements can be deleted, reordered, or have their caption altered.
+
 *[GPN]: General Purpose Network
 *[OMC]: Optics Measurements and Corrections
