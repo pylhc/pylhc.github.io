@@ -193,10 +193,12 @@ nav:
     - RDT Feeddown GUI:
       - About: guis/rdt_feeddown/gui.md
     - Multiturn GUI:
-        - About: guis/multiturn/gui.md
-        - Safety Checks: guis/multiturn/safety.md
-        - Beam Excitation: guis/multiturn/excitation.md
-        - Scheduled Excitations: guis/multiturn/scheduler.md
+      - About: guis/multiturn/gui.md
+      - Safety Checks: guis/multiturn/safety.md
+      - Beam Excitation: guis/multiturn/excitation.md
+      - Scheduled Excitations: guis/multiturn/scheduler.md
+    - Screenshot GUI:
+      - About: guis/screenshot/gui.md
     - Usage and Development:
       - Guidelines: guis/usage/guidelines.md
       - IDE Setup: guis/usage/ide_install.md
