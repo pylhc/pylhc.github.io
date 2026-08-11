@@ -14,14 +14,12 @@ This page provides a quick walkthrough of how to set it up to send screenshots d
 The GUI is started from the CCM.
 In the search bar, type `screenshot` and launch the `Screenshot LIBD logbook`.
 
-<!-- TODO (screenshots Monday): default view of the client after launch.
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/screenshot_gui/default_view.png" width="85%" alt="Screenshot client landing page" />
+  <img class="clickImg" src="../../assets/images/screenshot_gui/default_view.png" width="100%" alt="Screenshot client landing page" />
   <figcaption>The Screenshot Client on launch.</figcaption>
   </center>
 </figure>
--->
 
 ## Selecting the Logbook
 
