@@ -38,7 +38,7 @@ Clicking an entry in the correction table on the left displays the resulting pow
 <figure>
   <center>
   <img class="clickImg" src="../../assets/images/betabeat_gui/correction_panel/corrections_strengths.png" width="95%" alt="Correction Panel with Loaded Corrections and Strengths Plot"/>
-  <figcaption>The <code>Correction</code> tab with correction files loaded; the <code>Strengths</code> plot on the right shows the resulting powering of each corrector for the selected correction.</figcaption>
+  <figcaption>The <code>Correction</code> tab with correction files loaded; the <code>Strengths</code> plot on the right shows the powering change of each corrector for the selected correction.</figcaption>
   </center>
 </figure>
 
