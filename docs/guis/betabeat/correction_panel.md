@@ -183,6 +183,7 @@ It carries two sets of tabs:
 
 The first left-hand tab is always `All Corrections`, and is a comparison overview.
 For the selected quantity it shows the `Measurement` values together with the expected end result of each tested correction, labelled by its folder name.
+As all curves are plotted as a deviation from the nominal model, a good correction is one that trends towards zero.
 
 <figure>
   <center>
