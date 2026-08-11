@@ -111,9 +111,10 @@ The buttons below this table provide options to do so:
         The ++"Knob"++ button opens a `Knob selection panel`, but none of its controls currently have any effect.
 
 - ++"Remove"++{.red-gui-button}: removes the selected entry, file or folder, after a yes/no confirmation popup.
+Beware this button deletes the folder from disk, and a corrections folder can hold several files.
 
-Note that a corrections folder can hold several files; the correction test applies every file in it that matches the file filter, the regular expression shown at the bottom of the tab. Beware this deletes it from disk.
-By default this filter picks up the `changeparameters_*.madx` files.
+The correction test applies every file in it that matches the file filter, the regular expression shown at the bottom of the tab.
+By default this filter picks up the `changeparameters_*.madx` files output by the global correction process.
 It can be edited to select a different set.
 
 !!! warning "Filter Field Known Issue"
