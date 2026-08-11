@@ -43,13 +43,6 @@ It is possible at that time, in the right part of the popup window, to select a 
 Once configured, the right part of the window lists the recent logbook entries.
 Each entry is displayed with a three-digit number, corresponding to the last three digits of the actual logbook entry.
 
-<figure>
-  <center>
-  <img class="clickImg" src="../../assets/images/screenshot_gui/gui_with_entries.png" width="100%" alt="Screenshot client landing page" />
-  <figcaption>The Screenshot Client displaying existing entries in the selected logbook.</figcaption>
-  </center>
-</figure>
-
 ## Taking a Screenshot
 
 There are two ways to capture a screenshot, depending on where it should go:
@@ -60,14 +53,12 @@ There are two ways to capture a screenshot, depending on where it should go:
 !!! tip "Clarifying the Entry"
     Hovering the mouse over a list item shows a preview of the corresponding logbook entry.
 
-<!-- TODO (screenshots Monday): main view with the numbered entry list on the right (ideally a hover preview visible).
 <figure>
   <center>
-  <img class="clickImg" src="../../assets/images/screenshot_gui/entry_list.png" width="85%" alt="Client with the logbook entry list on the right" />
-  <figcaption>The list of logbook entries, with the hover preview.</figcaption>
+  <img class="clickImg" src="../../assets/images/screenshot_gui/gui_with_entries.png" width="80%" alt="Client with the logbook entry list on the right" />
+  <figcaption>The list of logbook entries. Hovering an element will preview the corresponding entry.</figcaption>
   </center>
 </figure>
--->
 
 After choosing either option, the client window hides itself to stay out of the capture.
 From there, one can:
