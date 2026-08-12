@@ -141,12 +141,10 @@ Path to a MAD-X file, which will be called in MAD-X **after** the above selected
 This can be used to install your own optics modifications.
 
 ??? info "Modifiers in `omc3`"
-    Any change to the accelerator sequence is called a "modifier" in the [model creation in `omc3`][model_creation_omc3]{target=_blank}
-    and modifiers are given as a list to the model creator.
+    Any change to the accelerator sequence is called a "modifier" in the [model creation in `omc3`][model_creation_omc3]{target=_blank} and modifiers are given as a list to the model creator.
     The option here simply appends another entry to this list, which already contains the path to the above selected optics file and possibly the `knobs.madx`, if the online-model was used (see below).
     If you need to call multiple files, you need to add `call, file=...` MAD-X commands into the modifier-file you are providing here.
-    When the model is later built, e.g. for the [global correction checks][global_correction_checks], these modifiers
-    will be identified from tags in the `job.nominal.madx` file.
+    When the model is later built, e.g. for the [global correction checks][global_correction_checks], these modifiers will be identified from tags in the `job.nominal.madx` file.
 
 ??? warning "Deprecated `modifiers.madx`"
     In the past, the modifiers were given as a separate `modifiers.madx` in the model folder.
@@ -335,7 +333,7 @@ This field is automatically filled by the fetcher with available `.str` files in
 - **Kinetic Energy**:
 Activate and set the energy at which the accelerator is running in GeV, if needed for your model.
 
-[global_correction_checks]: correction_panel.md#correction-checks
+[global_correction_checks]: correction_panel.md#checking-corrections
 [bbgui_issue_202]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/202
 [acc-models]: https://acc-models.web.cern.ch/acc-models/
 [multiturn_tune_deltas]: ../multiturn/excitation.md#tune-deltas
