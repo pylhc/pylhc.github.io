@@ -6146,12 +6146,10 @@ This can be used to install your own optics modifications.</li>
 </ul>
 <details class="info">
 <summary>Modifiers in <code>omc3</code></summary>
-<p>Any change to the accelerator sequence is called a "modifier" in the <a href="https://pylhc.github.io/omc3/entrypoints/other.html#model-creator" target="_blank">model creation in <code>omc3</code></a>
-and modifiers are given as a list to the model creator.
+<p>Any change to the accelerator sequence is called a "modifier" in the <a href="https://pylhc.github.io/omc3/entrypoints/other.html#model-creator" target="_blank">model creation in <code>omc3</code></a> and modifiers are given as a list to the model creator.
 The option here simply appends another entry to this list, which already contains the path to the above selected optics file and possibly the <code>knobs.madx</code>, if the online-model was used (see below).
 If you need to call multiple files, you need to add <code>call, file=...</code> MAD-X commands into the modifier-file you are providing here.
-When the model is later built, e.g. for the <a href="correction_panel.html#correction-checks">global correction checks</a>, these modifiers
-will be identified from tags in the <code>job.nominal.madx</code> file.</p>
+When the model is later built, e.g. for the <a href="correction_panel.html#checking-corrections">global correction checks</a>, these modifiers will be identified from tags in the <code>job.nominal.madx</code> file.</p>
 </details>
 <details class="warning">
 <summary>Deprecated <code>modifiers.madx</code></summary>
