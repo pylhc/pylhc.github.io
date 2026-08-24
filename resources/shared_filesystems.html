@@ -26,7 +26,7 @@
       
       
       <link rel="icon" href="../assets/logos/OMC_logo_inverse.svg">
-      <meta name="generator" content="zensical-0.0.54">
+      <meta name="generator" content="zensical-0.0.57">
     
     
       
@@ -37,12 +37,12 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.20815dad.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.5da3a30f.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.812a03bb.min.css">
       
       
 
@@ -5629,8 +5629,8 @@ This is not needed when mounting to <code>/nfs</code> or <code>/user</code> as t
 but that comes with its own problems, as the mount needs to be done as <strong>root</strong> in these cases and might not be valid for other users.</p>
 </details>
 <h3 id="if-outside-of-the-gpn-jump-through-lxplus-to-mount-dev3-folders">If outside of the GPN, jump through <code>lxplus</code> to mount <code>dev3</code>-folders<a class="headerlink" href="#if-outside-of-the-gpn-jump-through-lxplus-to-mount-dev3-folders" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>sshfs<span class="w"> </span>username@cs-ccr-dev3.cern.ch:/user/<span class="w"> </span>~/mnt/user<span class="w"> </span>-o<span class="w"> </span><span class="nv">ssh_command</span><span class="o">=</span><span class="s1">&#39;ssh -t username@lxplus.cern.ch ssh&#39;</span>
-sshfs<span class="w"> </span>username@cs-ccr-dev3.cern.ch:/nfs/<span class="w"> </span>~/mnt/nfs<span class="w"> </span>-o<span class="w"> </span><span class="nv">ssh_command</span><span class="o">=</span><span class="s1">&#39;ssh -t username@lxplus.cern.ch ssh&#39;</span>
+<div class="highlight"><pre><span></span><code>sshfs<span class="w"> </span>username@cs-ccr-dev3.cern.ch:/user/<span class="w"> </span>~/mnt/user<span class="w"> </span>-o<span class="w"> </span><span class="nv">ssh_command</span><span class="o">=</span><span class="s1">'ssh -t username@lxplus.cern.ch ssh'</span>
+sshfs<span class="w"> </span>username@cs-ccr-dev3.cern.ch:/nfs/<span class="w"> </span>~/mnt/nfs<span class="w"> </span>-o<span class="w"> </span><span class="nv">ssh_command</span><span class="o">=</span><span class="s1">'ssh -t username@lxplus.cern.ch ssh'</span>
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -5717,7 +5717,7 @@ sudo fusermount -u ~/mnt/eos
       <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.tabs","navigation.instant","content.action.edit","content.code.copy","search.highlight"],"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.e886cdf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.49251538.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       

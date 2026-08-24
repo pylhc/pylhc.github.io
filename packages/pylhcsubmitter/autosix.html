@@ -26,7 +26,7 @@
       
       
       <link rel="icon" href="../../assets/logos/OMC_logo_inverse.svg">
-      <meta name="generator" content="zensical-0.0.54">
+      <meta name="generator" content="zensical-0.0.57">
     
     
       
@@ -37,12 +37,12 @@
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.20815dad.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.5da3a30f.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.812a03bb.min.css">
       
       
 
@@ -5524,12 +5524,12 @@ To have access to this data, you will need to specify different output directori
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pylhc_submitter</span><span class="w"> </span><span class="kn">import</span> <span class="n">autosix</span>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
     <span class="n">autosix</span><span class="o">.</span><span class="n">main</span><span class="p">(</span>
-        <span class="n">working_directory</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;/afs/cern.ch/work/u/user/sixdeskbase&quot;</span><span class="p">),</span>
-        <span class="n">mask</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;my_madx.mask&quot;</span><span class="p">),</span>  <span class="c1"># contains parameters used in replace_dict</span>
-        <span class="n">python</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;/afs/cern.ch/work/u/user/my_venv/bin/python&quot;</span><span class="p">),</span>
-        <span class="n">ignore_twissfail_check</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>  <span class="c1"># if script prints &#39;check if twiss failed&#39; or so</span>
+        <span class="n">working_directory</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">"/afs/cern.ch/work/u/user/sixdeskbase"</span><span class="p">),</span>
+        <span class="n">mask</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">"my_madx.mask"</span><span class="p">),</span>  <span class="c1"># contains parameters used in replace_dict</span>
+        <span class="n">python</span><span class="o">=</span><span class="n">Path</span><span class="p">(</span><span class="s2">"/afs/cern.ch/work/u/user/my_venv/bin/python"</span><span class="p">),</span>
+        <span class="n">ignore_twissfail_check</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>  <span class="c1"># if script prints 'check if twiss failed' or so</span>
         <span class="n">replace_dict</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
             <span class="c1"># Part of the sixdesk-environment:</span>
             <span class="n">TURNS</span><span class="o">=</span><span class="mi">100_000</span><span class="p">,</span>
@@ -5540,13 +5540,13 @@ To have access to this data, you will need to specify different output directori
             <span class="c1"># Examples for mask:</span>
             <span class="n">BEAM</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
             <span class="n">TUNE</span><span class="o">=</span><span class="p">[</span><span class="mf">62.29</span><span class="p">,</span> <span class="mf">62.30</span><span class="p">,</span> <span class="mf">62.31</span><span class="p">,</span> <span class="mf">62.31</span><span class="p">],</span>
-            <span class="n">OUTPUT</span><span class="o">=</span><span class="s2">&quot;/afs/cern.ch/work/u/user/study_output/&quot;</span><span class="p">,</span>
-            <span class="n">SEED</span><span class="o">=</span><span class="s2">&quot;%SEEDRAN&quot;</span><span class="p">,</span>  <span class="c1"># put &#39;%SEEDRAN&#39; in the mask &amp; let sixdesk handle this loop</span>
+            <span class="n">OUTPUT</span><span class="o">=</span><span class="s2">"/afs/cern.ch/work/u/user/study_output/"</span><span class="p">,</span>
+            <span class="n">SEED</span><span class="o">=</span><span class="s2">"%SEEDRAN"</span><span class="p">,</span>  <span class="c1"># put '%SEEDRAN' in the mask &amp; let sixdesk handle this loop</span>
         <span class="p">),</span>
-        <span class="n">jobid_mask</span><span class="o">=</span><span class="s2">&quot;B</span><span class="si">%(BEAM)d</span><span class="s2">-QX</span><span class="si">%(TUNE)s</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="n">jobid_mask</span><span class="o">=</span><span class="s2">"B</span><span class="si">%(BEAM)d</span><span class="s2">-QX</span><span class="si">%(TUNE)s</span><span class="s2">"</span><span class="p">,</span>
         <span class="c1"># unlock=True,</span>
         <span class="c1"># resubmit=True,</span>
-        <span class="c1"># ssh=&#39;lxplus.cern.ch&#39;,</span>
+        <span class="c1"># ssh='lxplus.cern.ch',</span>
     <span class="p">)</span>
 </code></pre></div>
 <p>AutoSix is not only able to run MAD-X masks, but also Python scripts using <code>cpymad</code>.
@@ -5565,9 +5565,9 @@ In theory, any kind of mask is possible, given the correct <code>executable</cod
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">cpymad.madx</span><span class="w"> </span><span class="kn">import</span> <span class="n">Madx</span>
 <span class="n">madx</span> <span class="o">=</span> <span class="n">Madx</span><span class="p">()</span>
 <span class="c1"># setup your study</span>
-<span class="n">madx</span><span class="o">.</span><span class="n">globals</span><span class="p">[</span><span class="s2">&quot;VRF400&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span> <span class="k">if</span> <span class="n">madx</span><span class="o">.</span><span class="n">globals</span><span class="p">[</span><span class="s2">&quot;NRJ&quot;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">5000</span> <span class="k">else</span> <span class="mi">16</span>
-<span class="n">madx</span><span class="o">.</span><span class="n">globals</span><span class="p">[</span><span class="s2">&quot;LAGRF400.B1&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">madx</span><span class="o">.</span><span class="n">globals</span><span class="p">[</span><span class="s2">&quot;LAGRF400.B2&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.</span>
+<span class="n">madx</span><span class="o">.</span><span class="n">globals</span><span class="p">[</span><span class="s2">"VRF400"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span> <span class="k">if</span> <span class="n">madx</span><span class="o">.</span><span class="n">globals</span><span class="p">[</span><span class="s2">"NRJ"</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">5000</span> <span class="k">else</span> <span class="mi">16</span>
+<span class="n">madx</span><span class="o">.</span><span class="n">globals</span><span class="p">[</span><span class="s2">"LAGRF400.B1"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">madx</span><span class="o">.</span><span class="n">globals</span><span class="p">[</span><span class="s2">"LAGRF400.B2"</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.</span>
 <span class="n">madx</span><span class="o">.</span><span class="n">twiss</span><span class="p">()</span>  <span class="c1"># used by sixtrack</span>
 <span class="n">madx</span><span class="o">.</span><span class="n">command</span><span class="o">.</span><span class="n">sixtrack</span><span class="p">(</span><span class="n">cavall</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">0.017</span><span class="p">)</span>
 </code></pre></div></p>
@@ -5682,7 +5682,7 @@ Details on its use can be found at the <code>PyLHC Submitter</code> API document
       <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.instant","content.action.edit","content.code.copy","search.highlight"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e886cdf1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.49251538.min.js"></script>
       
         <script src="../../javascripts/config.js"></script>
       

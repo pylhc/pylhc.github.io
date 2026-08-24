@@ -26,7 +26,7 @@
       
       
       <link rel="icon" href="../assets/logos/OMC_logo_inverse.svg">
-      <meta name="generator" content="zensical-0.0.54">
+      <meta name="generator" content="zensical-0.0.57">
     
     
       
@@ -37,12 +37,12 @@
       
         
       
-      <link rel="stylesheet" href="../assets/stylesheets/modern/main.20815dad.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.5da3a30f.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.812a03bb.min.css">
       
       
 
@@ -5792,7 +5792,7 @@ This aims to be as short and concise as possible, for more extensive information
 This guides you through the basic steps, but <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh">details can be found in the GitHub documentation</a>.</p>
 <h4 id="create-ssh-key">Create SSH Key<a class="headerlink" href="#create-ssh-key" title="Permanent link">&para;</a></h4>
 <p>For this, create an SSH key pair locally using the email address associated with your GitHub account:</p>
-<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;your_email@example.com&quot;</span>
+<div class="highlight"><pre><span></span><code>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">"your_email@example.com"</span>
 </code></pre></div>
 <p>When asked for a location, it makes sense to give it an easily identifiable name, to remember what the key is for.
 The file should be placed in <code>~/.ssh/</code>, unless you are on <code>afs</code>, in which case the <code>~/private/</code> directory should be used.</p>
@@ -5837,7 +5837,7 @@ GitHub will identify you automatically based on the email address you used to cr
 <div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>-T<span class="w"> </span>github.com
 </code></pre></div>
 <p>which should then display</p>
-<div class="highlight"><pre><span></span><code>Hi &lt;Username&gt;! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+<div class="highlight"><pre><span></span><code>Hi &lt;Username&gt;! You've successfully authenticated, but GitHub does not provide shell access.
 </code></pre></div>
 <h4 id="clone-repository">Clone Repository<a class="headerlink" href="#clone-repository" title="Permanent link">&para;</a></h4>
 <p>When you clone a new repository, always use the SSH url</p>
@@ -5933,12 +5933,12 @@ For obvious reasons, <strong>DO NOT WRITE THE PASSWORD IN CLEAR TEXT INTO THE YA
 <span class="w">  </span><span class="nt">before_script</span><span class="p">:</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yum install -y openssh-clients</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdir -p ~/.ssh</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;echo</span><span class="nv"> </span><span class="s">&quot;lxplus</span><span class="nv"> </span><span class="s">ssh-rsa</span><span class="nv"> </span><span class="s">AAAAB3NzaC1yc2EAAAADAQABAAABAQDTA/5AzXgbkSapknIPDoEePTM1PzIBSiyDnpZihdDXKzm8UdXxCDJLUVjBwc1JfBjnaXPEeBKZDuozDss/m98m5qQu+s2Dks000V8cUFTU+BFotzRWX0jWSBpmzse0477b40X2XCPqX0Cqfx9yHdkuMlyF0kJRxXgsGTcwzwbmvqNHJdHHYJJz93hGpBhYMREcDN5VOxXz6Ack3X7xfF29xaC91oOAqq75O11LXF5Y4kAeN9kDG8o6Zsqk4c5at5aqWqzZfnnVtGjhkgU2Mt5aKwptaFMe0Z3ys/zZM4SnsE9NfompnnWsiKk2y09UvrbzuYPWLt43Fp3+IFqRJvBX&quot;</span><span class="nv"> </span><span class="s">&gt;</span><span class="nv"> </span><span class="s">~/.ssh/known_hosts&#39;</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&#39;echo</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">&quot;Host</span><span class="nv"> </span><span class="s">*\n\tGSSAPIDelegateCredentials</span><span class="nv"> </span><span class="s">yes\n\tGSSAPITrustDNS</span><span class="nv"> </span><span class="s">yes\n\n&quot;</span><span class="nv"> </span><span class="s">&gt;</span><span class="nv"> </span><span class="s">~/.ssh/config&#39;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">'echo</span><span class="nv"> </span><span class="s">"lxplus</span><span class="nv"> </span><span class="s">ssh-rsa</span><span class="nv"> </span><span class="s">AAAAB3NzaC1yc2EAAAADAQABAAABAQDTA/5AzXgbkSapknIPDoEePTM1PzIBSiyDnpZihdDXKzm8UdXxCDJLUVjBwc1JfBjnaXPEeBKZDuozDss/m98m5qQu+s2Dks000V8cUFTU+BFotzRWX0jWSBpmzse0477b40X2XCPqX0Cqfx9yHdkuMlyF0kJRxXgsGTcwzwbmvqNHJdHHYJJz93hGpBhYMREcDN5VOxXz6Ack3X7xfF29xaC91oOAqq75O11LXF5Y4kAeN9kDG8o6Zsqk4c5at5aqWqzZfnnVtGjhkgU2Mt5aKwptaFMe0Z3ys/zZM4SnsE9NfompnnWsiKk2y09UvrbzuYPWLt43Fp3+IFqRJvBX"</span><span class="nv"> </span><span class="s">&gt;</span><span class="nv"> </span><span class="s">~/.ssh/known_hosts'</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">'echo</span><span class="nv"> </span><span class="s">-e</span><span class="nv"> </span><span class="s">"Host</span><span class="nv"> </span><span class="s">*\n\tGSSAPIDelegateCredentials</span><span class="nv"> </span><span class="s">yes\n\tGSSAPITrustDNS</span><span class="nv"> </span><span class="s">yes\n\n"</span><span class="nv"> </span><span class="s">&gt;</span><span class="nv"> </span><span class="s">~/.ssh/config'</span>
 <span class="w">  </span><span class="nt">script</span><span class="p">:</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &quot;${SERVICE_ACCOUNT_PASSWORD}&quot; | kinit -f ${SERVICE_ACCOUNT_USERNAME}@CERN.CH</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo "${SERVICE_ACCOUNT_PASSWORD}" | kinit -f ${SERVICE_ACCOUNT_USERNAME}@CERN.CH</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">klist</span>
-<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssh ${SERVICE_ACCOUNT_USERNAME}@lxplus &quot;cd PATH_TO_YOUR_AFS &amp;&amp; git checkout master &amp;&amp; git pull&quot;</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssh ${SERVICE_ACCOUNT_USERNAME}@lxplus "cd PATH_TO_YOUR_AFS &amp;&amp; git checkout master &amp;&amp; git pull"</span>
 <span class="w">  </span><span class="nt">only</span><span class="p">:</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span>
 </code></pre></div>
@@ -6040,7 +6040,7 @@ The acc-models yaml was using their own docker image, of which the only addition
       <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.tabs","navigation.instant","content.action.edit","content.code.copy","search.highlight"],"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.e886cdf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.49251538.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       

@@ -26,7 +26,7 @@
       
       
       <link rel="icon" href="../../assets/logos/OMC_logo_inverse.svg">
-      <meta name="generator" content="zensical-0.0.54">
+      <meta name="generator" content="zensical-0.0.57">
     
     
       
@@ -37,12 +37,12 @@
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.20815dad.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.5da3a30f.min.css">
       
         
           
         
-        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.812a03bb.min.css">
       
       
 
@@ -5790,15 +5790,15 @@ For illustration purposes, <em>simplistic plotting</em> of the horizontal spectr
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">tfs</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
-<span class="n">ampsx</span> <span class="o">=</span> <span class="n">tfs</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;harpy_output/trackone.sdds.ampsx&quot;</span><span class="p">)</span>
-<span class="n">freqsx</span> <span class="o">=</span> <span class="n">tfs</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">&quot;harpy_output/trackone.sdds.freqsx&quot;</span><span class="p">)</span>
+<span class="n">ampsx</span> <span class="o">=</span> <span class="n">tfs</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">"harpy_output/trackone.sdds.ampsx"</span><span class="p">)</span>
+<span class="n">freqsx</span> <span class="o">=</span> <span class="n">tfs</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="s2">"harpy_output/trackone.sdds.freqsx"</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">bpm</span> <span class="ow">in</span> <span class="n">ampsx</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">bpm</span> <span class="ow">in</span> <span class="n">freqsx</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>  <span class="c1"># safety check but no reason it wouldn&#39;t be there</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">freqsx</span><span class="p">[</span><span class="n">bpm</span><span class="p">],</span> <span class="n">ampsx</span><span class="p">[</span><span class="n">bpm</span><span class="p">],</span> <span class="s2">&quot;.-&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">bpm</span> <span class="ow">in</span> <span class="n">freqsx</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>  <span class="c1"># safety check but no reason it wouldn't be there</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">freqsx</span><span class="p">[</span><span class="n">bpm</span><span class="p">],</span> <span class="n">ampsx</span><span class="p">[</span><span class="n">bpm</span><span class="p">],</span> <span class="s2">".-"</span><span class="p">)</span>
         <span class="c1"># plt.stem(freqsx[bpm], ampsx[bpm])  # would be more accurate but might stress your system!</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">setp</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">(),</span> <span class="n">xlabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;$Q_x$&quot;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s2">&quot;Amplitude&quot;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Horizontal Spectrum&quot;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">setp</span><span class="p">(</span><span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">(),</span> <span class="n">xlabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$Q_x$"</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s2">"Amplitude"</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">"Horizontal Spectrum"</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div></p>
 <p>The <code>*.lin[xy]</code> files contain various data (in columns) computed for each BPM (in rows) as some summary information.
@@ -5954,7 +5954,7 @@ However, due to the complexity of this workflow we will not provide a CLI walkth
       <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.tabs","navigation.instant","content.action.edit","content.code.copy","search.highlight"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e886cdf1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.49251538.min.js"></script>
       
         <script src="../../javascripts/config.js"></script>
       
