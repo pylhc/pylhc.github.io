@@ -7,7 +7,7 @@ This window can be opened at any time by clicking the **left-most button at the 
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/top_buttons.png" width="100%" alt="Icons at the top of the GUI." />
+  <img src="../../assets/images/betabeat_gui/settings/top_buttons.png" width="100%" alt="Icons at the top of the GUI." />
   <figcaption>Open the model creation window with the left-most button at the top, depicting a model.</figcaption>
   </center>
 </figure>
@@ -20,7 +20,7 @@ accelerator sub-folder selected in the [beam selection window](beam_selection.md
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/model_creation_window.png" width="100%" alt="Model selection window." />
+    <img src="../../assets/images/betabeat_gui/model_creation/model_creation_window.png" width="100%" alt="Model selection window." />
     <figcaption>Blank Model selection window.</figcaption>
     </center>
     </figure>
@@ -29,7 +29,7 @@ accelerator sub-folder selected in the [beam selection window](beam_selection.md
 
     <figure>
     <center>
-    <img src="../../assets/images/betabeat_gui/model_creation_with_model.png" width="100%" alt="Model selection window with created model." />
+    <img src="../../assets/images/betabeat_gui/model_creation/model_creation_with_model.png" width="100%" alt="Model selection window with created model." />
     <figcaption>Model selection window with a created model</figcaption>
     </center>
     </figure>
@@ -47,7 +47,7 @@ Sets the currently chosen model as "selected model" in the GUI and closes this w
 - ++"Delete"++{.red-gui-button} _(If a model is selected)_:
 Deletes the selected model folder **from disk** :fontawesome-solid-triangle-exclamation:{.warning-colored}.
 - ++"Import External"++{.yellow-gui-button} :
-Opens a file-dialog
+Opens a file dialogue
 to select a folder with a previously created model at a location outside the current accelerator's _Models_ folder and copies it there.
 - ++"Update MQTs"++{.blue-gui-button} _(If a model is selected)_:
 Updates the values of the MQTs (which are saved in a separate file) in the currently selected model via extraction from `NXCals`.
@@ -58,9 +58,9 @@ A window will open to select a time to extract the MQTs from, which default to t
         It checks in the model folder if the `extracted_mqts.str` file is present, which it updates,
         and if `job.create_model_best_knowledge.madx` exists, which is then reused to re-run.
 
-    !!! warning "Updating MQTs to re-use model"
-        It is **heavily discouraged** to update the MQTs to re-use a model later during a shift,
-        as it will lead to confusion if optics have already been analyzed with this model and someone tries to reproduce the results later.
+    !!! warning "Updating MQTs to reuse model"
+        It is **heavily discouraged** to update the MQTs to reuse a model later during a shift,
+        as it will lead to confusion if optics have already been analysed with this model and someone tries to reproduce the results later.
         It is therefore usually better to create a new model from scratch and **only use this functionality before doing any analysis**,
         e.g. if you extracted the MQTs too early, or if you created a copy of an older model.
 
@@ -131,7 +131,7 @@ The value by which each variable will be changed to check the response.
 !!! note "FullResponse Task"
     The full-response creation will only start after the model is fully created and you have closed the popup-window
     asking you to load the model or not (see below).
-    By that time you can **already use the model** as if it was fully created and you **do not need to wait for this taks to finish** for the _standard_ analysis, until you want to calculate [global corrections](correction_panel.md).<br>
+    By that time you can **already use the model** as if it was fully created and you **do not need to wait for this tasks to finish** for the _standard_ analysis, until you want to calculate [global corrections](correction_panel.md).<br>
     The full-response creation is also heavily parallelized where possible, so expect a few processes to run at the same time.
 
 #### User
@@ -141,17 +141,15 @@ Path to a MAD-X file, which will be called in MAD-X **after** the above selected
 This can be used to install your own optics modifications.
 
 ??? info "Modifiers in `omc3`"
-    Any change to the accelerator sequence is called a "modifier" in the [model creation in `omc3`][model_creation_omc3]{target=_blank}
-    and modifiers are given as a list to the model creator.
+    Any change to the accelerator sequence is called a "modifier" in the [model creation in `omc3`][model_creation_omc3]{target=_blank} and modifiers are given as a list to the model creator.
     The option here simply appends another entry to this list, which already contains the path to the above selected optics file and possibly the `knobs.madx`, if the online-model was used (see below).
     If you need to call multiple files, you need to add `call, file=...` MAD-X commands into the modifier-file you are providing here.
-    When the model is later built, e.g. for the [global correction checks][global_correction_checks], these modifiers
-    will be identified from tags in the `job.nominal.madx` file.
+    When the model is later built, e.g. for the [global correction checks][global_correction_checks], these modifiers will be identified from tags in the `job.nominal.madx` file.
 
 ??? warning "Deprecated `modifiers.madx`"
     In the past, the modifiers were given as a separate `modifiers.madx` in the model folder.
     Due to backwards compatibility, the `modifiers.madx` file is still somewhat supported, but not encouraged.
-    So **giving here a file called `modifiers.madx` within the model folder might lead to unexpected behavior**.
+    So **giving here a file called `modifiers.madx` within the model folder might lead to unexpected behaviour**.
 
 #### Create
 
@@ -167,7 +165,7 @@ If any [extraction](#extraction-lhc) is selected, these tasks will run first and
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/model_creation_lhc.png" width="500px" alt="Model creation window for LHC Beam1." />
+  <img src="../../assets/images/betabeat_gui/model_creation/model_creation_lhc.png" width="500px" alt="Model creation window for LHC Beam1." />
   <figcaption>Model creation window for the LHC.</figcaption>
   </center>
 </figure>
@@ -180,14 +178,14 @@ which are our default tunes for LHC measurements.
 #### Accelerator (LHC)
 
 - **Beam**:
-The beam is pre-defined by the accelerator choosen in the [beam selection window](beam_selection.md).
+The beam is pre-defined by the accelerator chosen in the [beam selection window](beam_selection.md).
 - **Year/Tag**:
 This field is automatically filled by the fetcher with the first layer of subfolders in the `acc-models/lhc` repository by the fetcher.
 - **Energy**:
 The energy at which the accelerator is running in GeV.
 - **Optics File**:
 The optics used for the model, which has the same name as the one used in the machine.
-The **File** dropdown is automatically filled by the fetcher with the files in the `operation/optics` folder within the choosen _year/tag_
+The **File** dropdown is automatically filled by the fetcher with the files in the `operation/optics` folder within the chosen _year/tag_
 of the `acc-models/lhc` repository.
 You can search through the list via regular expression in the **Filter** field.
 - **dpp**: The momentum deviation for the model.
@@ -217,19 +215,19 @@ In addition, this model contains also the $b_2$ errors of the main dipoles from 
 This will result in additional `*_best_knowledge.dat` twiss-output files, which are used in the N-BPM method of the beta-from-phase analysis
 (see _[Langner et al. - Utilizing the N beam position monitor method for turn-by-turn optics measurements][langner2016]{target=_blank}_).
     - **$b_2$ error table**:
-      As these errors are dependend on the powering of the dipoles, you need to choose the table with the closest energy to the one you are creating the model for.
+      As these errors are dependent on the powering of the dipoles, you need to choose the table with the closest energy to the one you are creating the model for.
     - **:fontawesome-solid-triangle-exclamation:{.warning-colored} Extract MQTs**:
       As the $b_2$ errors change the tunes, you should **always also extract the MQTs** when creating the best knowledge model.
 
 !!! warning "Java Issues and RBAC token"
     Due to Java misconfiguration in the CCC terminals there can be access-issues with the _online model extraction_,
     additional steps might need to be taken **before starting the GUI**.
-    For now, follow the [running in the CCC in 2025 instructions][running_in_the_ccc] and create a valid
+    For now, follow the [running in the CCC in 2026 instructions][running_in_the_ccc] and create a valid
     RBAC token via the button at the top of the GUI:
 
     <figure>
       <center>
-      <img src="../../assets/images/betabeat_gui/rbac.png" alt="RBAC GUI elements" width="50%"/>
+      <img src="../../assets/images/betabeat_gui/model_creation/rbac.png" alt="RBAC GUI elements" width="50%"/>
       <figcaption>RBAC GUI-Element (No Token).</figcaption>
       </center>
     </figure>
@@ -238,7 +236,7 @@ This will result in additional `*_best_knowledge.dat` twiss-output files, which 
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/model_creation_sps.png" width="500px" alt="Model creation window for the SPS." />
+  <img src="../../assets/images/betabeat_gui/model_creation/model_creation_sps.png" width="500px" alt="Model creation window for the SPS." />
   <figcaption>Model creation window for the SPS.</figcaption>
   </center>
 </figure>
@@ -249,7 +247,7 @@ The **fractional tunes** are set by default to some values, that have suited us 
 but as the settings of the SPS can differ quite drastically, you need to check the currently used values in the SPS multiturn application.
 
 !!! warning "Integer Tunes"
-    The **integer part of the tunes** is set from the filename of the choosen _Strength File_ (below).
+    The **integer part of the tunes** is set from the filename of the chosen _Strength File_ (below).
     To set them manually, make sure to **first select a strength file and then change the integer tunes**.
 
 #### Accelerator (SPS)
@@ -259,14 +257,14 @@ Which year to create the model for.
 This field is automatically filled by the fetcher with the first layer of subfolders in the `acc-models/sps` repository.
 - **Strength File**:
 Strength file to use.
-This field is automatically filled by fetcher with the files in the `strengths` folder within the choosen _year_ of the `acc-models/sps` repository.
+This field is automatically filled by fetcher with the files in the `strengths` folder within the chosen _year_ of the `acc-models/sps` repository.
 - **Kinetic Energy**: Activate and set the energy at which the accelerator is running in GeV, if needed for your model.
 
 ### PS Model Creation
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/model_creation_ps.png" width="500px" alt="Model creation window for the PS." />
+  <img src="../../assets/images/betabeat_gui/model_creation/model_creation_ps.png" width="500px" alt="Model creation window for the PS." />
   <figcaption>Model creation window for the PS.</figcaption>
   </center>
 </figure>
@@ -284,7 +282,7 @@ Which year to create the model for.
 This field is automatically filled by the fetcher with the first layer of subfolders in the `acc-models/ps` repository.
 - **Scenario**:
 Operational scenario of the PS accelerator.
-This field is automatically filled by the fetcher with the content of the `scenarios` folder within the choosen _year_ of the `acc-models/ps` repository.
+This field is automatically filled by the fetcher with the content of the `scenarios` folder within the chosen _year_ of the `acc-models/ps` repository.
 - **Cycle Point**:
 Desired point in the cycle.
 This field is automatically filled by the fetcher with the content of the chosen _scenario_ folder above.
@@ -305,7 +303,7 @@ Can be
 
 <figure>
   <center>
-  <img src="../../assets/images/betabeat_gui/model_creation_psb.png" width="500px" alt="Model creation window for the PSBooster." />
+  <img src="../../assets/images/betabeat_gui/model_creation/model_creation_psb.png" width="500px" alt="Model creation window for the PSBooster." />
   <figcaption>Model creation window for the PSBooster.</figcaption>
   </center>
 </figure>
@@ -325,7 +323,7 @@ Which year to create the model for.
 This field is automatically filled by the fetcher with the first layer of subfolders in the `acc-models/psb` repository.
 - **Scenario**:
 Operational scenario of the PSBooster.
-This field is automatically filled by the fetcher with the content of the `scenarios` folder within the choosen _year_ of the `acc-models/psb` repository.
+This field is automatically filled by the fetcher with the content of the `scenarios` folder within the chosen _year_ of the `acc-models/psb` repository.
 - **Cycle Point**:
 Desired point in the cycle.
 This field is automatically filled by the fetcher with the content of the chosen _scenario_ folder above.
@@ -335,7 +333,7 @@ This field is automatically filled by the fetcher with available `.str` files in
 - **Kinetic Energy**:
 Activate and set the energy at which the accelerator is running in GeV, if needed for your model.
 
-[global_correction_checks]: correction_panel.md#correction-checks
+[global_correction_checks]: correction_panel.md#checking-corrections
 [bbgui_issue_202]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues/202
 [acc-models]: https://acc-models.web.cern.ch/acc-models/
 [multiturn_tune_deltas]: ../multiturn/excitation.md#tune-deltas
@@ -344,9 +342,9 @@ Activate and set the energy at which the accelerator is running in GeV, if neede
 [global_correction_omc3]: https://pylhc.github.io/omc3/entrypoints/correction.html#global-correction
 [fidel_webpage]: https://lhc-div-mms.web.cern.ch/tests/MAG/Fidel
 [langner2016]: https://link.aps.org/doi/10.1103/PhysRevAccelBeams.19.092803
-[running_in_the_ccc]: ../about.md#running-in-the-ccc-in-2025
+[running_in_the_ccc]: ../about.md#running-in-the-ccc-in-2026
 
-*[CCC]: Cern Control Center
+*[CCC]: Cern Control Centre
 *[MQTs]: Tuning Trim Quadrupole Magnets of the LHC
 *[RBAC]: Role Based Access Control
 *[LHC]: Large Hadron Collider

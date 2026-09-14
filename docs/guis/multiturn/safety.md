@@ -5,7 +5,7 @@ A first check to perform is that specific systems of the machine themselves are 
 Some general checks are [available on this page](../../measurements/procedures/general_checks.md), and below are the specific checks to perform in the Multiturn GUI.
 
 !!! info "Good Red, Bad Red"
-    As one will see below, an indicator colored in red is not always a bad thing in the Multiturn GUI, due to conventions.
+    As one will see below, an indicator coloured in red is not always a bad thing in the Multiturn GUI, due to conventions.
     Check thoroughly the meaning of each indicator (also called flag) from the instructions below and make sure they are in a correct state.
 
 ??? tip "Quick Recap"
@@ -61,7 +61,7 @@ The `Measurement Environment` section just below provides a quick overview of th
 
 ??? info "What are those?"
     The orbit feedback acts on correctors to keep the measured closed orbit to the reference one.
-    The radial loop feedback acts on the RF cavities to keep the beam's bunched in the center of their respective RF buckets.
+    The radial loop feedback acts on the RF cavities to keep the beam's bunched in the centre of their respective RF buckets.
 
 Both these feedback systems should be off during measurements, but on between kicks.
 They will automatically be turned off when you start a measurement, and will be turned back on as soon as the acquisition is complete.

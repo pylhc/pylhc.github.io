@@ -12,7 +12,7 @@ window.MathJax = {
 };
 
 /* Make all "clickImg" images a hyperref to themselves.
-   Do not use too many (i.e. hundreds) of them, as each of them get's a listener, which might slow down the page. */
+   Do not use too many (i.e. hundreds) of them, as each of them gets a listener, which might slow down the page. */
 document$.subscribe(function () {
     var elements = document.getElementsByClassName("clickImg");
     for (var i = 0; i < elements.length; i++) {

@@ -13,7 +13,7 @@ The content of this page has been converted from the presentation given as ["OMC
 ## OMC-Analysis
 
 * To get <span class="omc-emph">reliable</span> and <span class="omc-emph">reproducible</span> optics measurements, we cannot trust all BPM data that we are getting.
-* At <span class="omc-emph">different stages</span> of the code, we try to determine the "trustworthyness".
+* At <span class="omc-emph">different stages</span> of the code, we try to determine the "trustworthiness".
 * Some BPMs are fully <span class="omc-emph">excluded</span>, others are getting <span class="omc-emph">errorbars</span> based on their <span class="omc-emph">noise-level</span> (which are often used as *weights*, e.g. for correction calculations).
 
 ## Automatic
@@ -50,11 +50,11 @@ The content of this page has been converted from the presentation given as ["OMC
 
 ## Isolation Forest
 
+!!! warning "Under Re-evaluation"
+    This functionality is currently under re-evaluation and has only been used on a small amount of data in 2021-2024.
+
 * Using <span class="iforest-related">machine learning techniques</span> to identify Bad-BPMs.
     * <span class="iforest-related">IFOREST</span>: Identified BPM, due to being an <span class="iforest-related">outlier in Tune, Noise and/or Amplitude</span>
-
-!!! warning "Under Re-evaluation"
-    This functionality is currently under re-evaluation and has only been used on a small amount of data in 2021-2024!
 
 <figure>
   <center>
@@ -69,7 +69,7 @@ The content of this page has been converted from the presentation given as ["OMC
 ## Bad BPMs Summary Script
 
 * Bad-BPMs are written out in files <span class="omc-emph">per analysed TbT-Data</span>.
-* Script available to <span class="omc-emph">gather, summarize and make statistics</span>.
+* Script available to <span class="omc-emph">gather, summarise and make statistics</span>.
 
 ```bash
 usage: bad_bpms_summary.py [-h] --dates DATES [DATES ...] [--root ROOT] [--outfile OUTFILE]

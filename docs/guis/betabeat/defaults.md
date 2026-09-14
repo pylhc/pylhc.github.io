@@ -49,7 +49,7 @@ clean.bounds=0.7     # this ratio of points needs to remain otherwise cleaning a
 ampdet.tunecut=0.05  # limit around the given tune to exclude from the BBQ tune
 ampdet.window=100    # length of the moving average window for the BBQ tune
 ampdet.outlierLimit=0.0002   # Cut on outliers around the mean
-ampdet.usePreviousBBQ=False  # Use previously extraced BBQ data if present
+ampdet.usePreviousBBQ=False  # Use previously extracted BBQ data if present
 ```
 
 For more details about these functions see the [BPM-Panel](bpm_panel.md), [Analysis-Panel](analysis_panel.md) and [Amplitude-Detuning](ampdet.md) pages.

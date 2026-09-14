@@ -27,7 +27,6 @@
 === "Kmod"
 
     * [Kmod Gitlab][kmod_gui_gitlab]{target=_blank .cern_login}
-    * [Artifactory][kmod_artifactory]{target=_blank .cern_internal}
 
 === "Multiturn"
 
@@ -45,30 +44,12 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 
     _PRO_
     ```bash
-    jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
-    ```
-
-    _DEV_
-    ```bash
-    jws https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-beta-beating/PRO/BetaBeating-Control-3t.jnlp
-    ```
-
-=== "Beta-Beat-OMC3"
-
-    _PRO_
-    ```bash
     jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-beta-beating-omc3/PRO/BetaBeatingOMC3-Control-3t.jnlp
     ```
 
     _DEV_
     ```bash
     jws https://bewww.cern.ch/ap/deployments-dev/applications/cern/lhc/lhc-app-beta-beating-omc3/PRO/BetaBeatingOMC3-Control-3t.jnlp
-    ```
-
-=== "Kmod"
-
-    ```bash
-    jws https://bewww.cern.ch/ap/deployments/applications/cern/lhc/lhc-app-kmod/PRO/lhc-app-kmod-lhc-app-kmod.jnlp
     ```
 
 === "Multiturn"
@@ -86,12 +67,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
     _LHC Panel open_
     ```bash
     jws 'http://bewww.cern.ch/ap/deployments/applications/cern/lsa/lsa-app-suite/PRO/lsa-app-suite-lhc.jnlpx?accelerator=LHC&lsa.server=lhc&lsa.contextfamily=BP&arg0=lsa-app-settings-management'
-    ```
-
-=== "Timber"
-
-    ```bash
-    jws http://bewww.cern.ch/ap/deployments/applications/cern/accsoft/cals/accsoft-cals-extr-app/PRO/timber.jnlpx
     ```
 
 ## Computer Setup at CERN
@@ -114,7 +89,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 * [LHC Data Sources][lhc_data_sources]{target=_blank}
 * [HTCondor Batch Docs][batch_docs]{target=_blank}
 * [Setup HTCondor for local use][htcondor_local]{target=_blank}
-* [More HTCondor hints in the Python wrapper][htcondor_python]{target=_blank}
 
 ## CERN
 
@@ -125,7 +99,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 * [OP Webtools Page][op_webtools]{target=_blank}
 * [Timber][timber_cern]{target=_blank .cern_internal}
 * [INCA and LSA Applications][inca_lsa_apps]{target=_blank .cern_internal}
-* [LHC MD webpage][lhc_md_page]{target=_blank}
 * [Beam Performance Tracking Site][bpt_site]{target=_blank}
 * [SWAN][swan]{target=_blank .cern_login} (Jupyter Notebooks in CERN Cloud)
 * [CERN OpenStack][cern_openstack]{target=_blank .cern_login} (Virtual Machines in Cloud)
@@ -147,8 +120,9 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 
 ## Development Guidelines and How-To's
 
+### Markdown
+
 * [Markdown Cheatsheet][markdown_cheatsheet]{target=_blank}
-* [Jira Text Formatting Notation][jira_formatting]{target=_blank}
 
 ### Git
 
@@ -176,10 +150,10 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 [betabeat_gui_gitlab_issues]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-beta-beating/-/issues
 [betabeat_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-app-beta-beating
 
-[kmod_gui_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-app-kmod
-[kmod_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-app-kmod
+[kmod_gui_gitlab]: https://gitlab.cern.ch/gtrad/pyKmodLHC
 
-[multiturn_gitlab]: https://gitlab.cern.ch/acc-co/lhc/lhc-multiturn
+<!-- Yes the multiturn gitlab says "sps" but this is the app for all machines -->
+[multiturn_gitlab]: https://gitlab.cern.ch/acc-co/sps/instrumentation/sps-multiturn/
 [multiturn_artifactory]: http://artifactory.cern.ch/webapp/#/artifacts/browse/tree/General/beco-release-local/cern/lhc/lhc-multiturn
 
 [vscode_lxplus]: https://cern.service-now.com/service-portal?id=kb_article&n=KB0008901
@@ -191,7 +165,6 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 [lhc_data_sources]: https://twiki.cern.ch/twiki/bin/view/ABPComputing/LhcDataStorage
 [batch_docs]: https://batchdocs.web.cern.ch/index.html
 [htcondor_local]: https://twiki.cern.ch/twiki/bin/view/ABPComputing/LxbatchHTCondor
-[htcondor_python]: http://pylhc.github.io/Beta-Beat.src/utils/index.html#module-utils.htcondor_wrapper
 
 [codimd_teleworking]: https://codimd.web.cern.ch/vjC8BHbTS7etHwJve-K2Uw
 [cern_computing_blog]: https://computing-blog.web.cern.ch/2020/03/useful-tools-for-teleworking/
@@ -217,11 +190,8 @@ The releases can also be explored on the [CAS][cas_main]{target=_blank .cern_int
 [cbng_manual]: https://wikis.cern.ch/display/DVTLS/CBNG
 [lsa_wiki]: https://wikis.cern.ch/display/LSA/Home
 
-[lhc_md_page]: https://espace.cern.ch/lhc-md/default.aspx
-
 [github_markdown]: https://help.github.com/articles/github-flavored-markdown
 [markdown_cheatsheet]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-[jira_formatting]: https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all
 [git_configs]: http://stackoverflow.com/questions/954560/what-does-git-do-to-files-that-are-a-symbolic-link
 [python_docs]: http://docs.python.org/
 

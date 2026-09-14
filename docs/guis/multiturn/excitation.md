@@ -26,24 +26,24 @@ A kick group collects measurements under a single name, gathers them in the logb
     Each kick group also has a corresponding `.json` file in `/user/slops/data/LHC_DATA/OP_DATA/Betabeat/KickGroups/MULTITURN_ACQ_GROUPS`, in which the paths to the acquired turn-by-turn data and their individual `.json` files containing information about the excitation parameter is stored.
     See also the [PyLHC tool for KickGroups][pylhc_kickgroups]{target=_blank}.
 
-Creating a new group is done by clicking the ++"Select Active group"++ button in the top left corner of the GUI, which will open the following dialog:
+Creating a new group is done by clicking the ++"Select Active group"++ button in the top left corner of the GUI, which will open the following dialogue:
 
 <figure>
     <center>
-    <img src="../../assets/images/multiturn_gui/select_kick_group.png" width="85%" alt="Select Active Group Dialog" />
-    <figcaption> Select Active Group Dialog </figcaption>
+    <img src="../../assets/images/multiturn_gui/select_kick_group.png" width="85%" alt="Select Active Group Dialogue" />
+    <figcaption> Select Active Group Dialogue </figcaption>
     </center>
 </figure>
 
 Typically one wants to create a new kick group.
 To do so:
 
-- Click the ++"Create new Group"++ button at the bottom in the centre, which will open the following dialog, with a default naming scheme:
+- Click the ++"Create new Group"++ button at the bottom in the centre, which will open the following dialogue, with a default naming scheme:
 
 <figure>
     <center>
-    <img src="../../assets/images/multiturn_gui/create_kick_group.png" width="85%" alt="Create New Group Dialog" />
-    <figcaption> Create New Group Dialog </figcaption>
+    <img src="../../assets/images/multiturn_gui/create_kick_group.png" width="85%" alt="Create New Group Dialogue" />
+    <figcaption> Create New Group Dialogue </figcaption>
     </center>
 </figure>
 
@@ -91,7 +91,7 @@ The excitation device needs to know which bunches to excite and how long the exc
 
 #### Bunches
 
-- To select the bunches, click the ++"Select ..."++ button under the `Bunches` section, which opens the following dialog:
+- To select the bunches, click the ++"Select ..."++ button under the `Bunches` section, which opens the following dialogue:
 
 <figure>
     <center>
@@ -169,20 +169,24 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
     As the beam energy increases, so does the beam rigidity and hence larger kick amplitudes can be used.
     Nevertheless, careful monitoring of losses during acquisitions and adjusting the kick amplitudes accordingly is crucial.
 
-    Typically, we prepare a table various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
-    These should follow the various match points for the given energy ramp program, and the kick strengths should scale approximately linearly with the beam energy, starting from safe strength at injection.
+    Typically, we prepare a table of various kicks to be performed, indicating the time in the ramp, corresponding energy, phase knob setting, ATS factor, kick amplitude and optics file.
+    These should follow the various match points for the given energy ramp programme, and the kick strengths should scale approximately linearly with the beam energy, starting from safe strength at injection.
 
-    Most of these information can be found by opening a `CCM` then navigating to `LHC Control` -> `LHC Beam Control` -> `Settings` -> `Generation`.
-    Once the app has opened, select the `Edit types` tab then the `Beam Process Type` sub-tab.
-    Search & select the relevant beam process using the `Filter` field on the left, then click the big black ++"Show/Hide optic Table"++.
+    Most of this information can be found by opening a `CCM` then navigating to `LHC Control` -> `LHC Beam Control` -> `Settings` -> `LSA App Suite` (or via the search).
+    Once the app has opened, click the `Applications` menu in the top left, then `contexts` and tick `Edit types`, which will open a new corresponding tab.
+    Search & select the relevant beam process using the `Filter` field on the left, then click the big ++"Show optic table"++ button on the right.
     This will create a popup window displaying the match points during the ramp (if the BP is for a ramp) with their time, energy and optics file.
 
     <figure>
         <center>
-        <img src="../../assets/images/multiturn_gui/lsa_generation_bp_optics_table.png" width="80%" alt="Beam Process Optics Table from LSA Generation App" />
-        <figcaption>Beam Process Optics Table from LSA Generation App</figcaption>
+        <img src="../../assets/images/multiturn_gui/lsa_app_suite_bp_optics_table.png" width="85%" alt="Beam Process Optics Table from LSA App Suite" />
+        <figcaption>Beam Process Optics Table from LSA App Suite</figcaption>
         </center>
     </figure>
+
+    ??? tip "Missing Energy?"
+        Should the `Energy` information be missing from the table, switch to the `Settings Management` tab (the default one), select your Beam Process, select `MOMENTUM` in the properties list, then the `LHC/MOMENTUM` variable in the rightmost list.
+        The graph in the lower panel will show the energy through the Beam Process, allowing to infer it at the time points from the ramp table.
 
     An __example table__ is shown below, generated for the proton-proton `RAMP-SQUEEZE-6.8TeV-ATS-2m-2025` beam process as in the picture above.
     It is okay to copy-paste a previous table and update it.
@@ -211,17 +215,28 @@ Always ask the experts on shift if unsure about the kick amplitudes to set.
 
 Trigger an acquisition by clicking the yellow ++"Acquire with ACDipole excitation"++ button at the bottom left of the GUI.
 The AC Dipole will arm, then kick the beam.
-Make sure to have a `BLM Display` application open and to monitor the losses during that time.
 
-Afterwards, a new tab will open at the very top of the GUI to display the BPM measurements, which can be checked: a menu list lets one select any BPM from each beam, and view the recorded bunch centroid turn-by-turn data through the acquisition.
+!!! tip "Watch for Losses on Kicks"
+    Make sure to have a `BLM Fixed Display` application open and to monitor the losses right after clicking to acquire, and watch out for large losses and spikes close to thresholds.
+    This is especially important to do when increasing the kick amplitude between kicks.
 
-??? info "Losses on Kicks"
-    Sometimes when increasing the kick amplitude, one will notice large losses.
-    In this case it is recommended to kick a couple times at this amplitude or just below to see if the losses reduce or are consistent.
+    <figure>
+        <center>
+        <img src="../../assets/images/multiturn_gui/blm_fixed_display.png" width="80%" alt="BLM Fixed Display GUI" />
+        <figcaption>BLM Fixed Display GUI</figcaption>
+        </center>
+    </figure>
 
-    Should they reduce the beam might have just needed cleaning and one can increase the kick amplitude further.
-    Otherwise, stop increasing unless a beam dump is affordable.
+    Note the log scale of the registered losses in the default view.
+    In that GUI, the red point indicate the losses thresholds that would trigger a dump in this location.
+    In case large losses are observed, it is recommended to kick a couple times at the current amplitude or just below to see if the losses reduce or are consistent.
+    While doing so, also keep an eye on the beam intensity as can be seen on the vistars.
+
+    Should losses reduce, the beam might have just needed cleaning and one can increase the kick amplitude further.
+    Otherwise stop increasing unless a beam dump is affordable (hint: it **rarely** is).
     Refer to the experts on shift if unsure about the losses, and whether the kick amplitude can be increased further.
+
+After the kick is done, a new tab will open at the very top of the GUI to display the BPM measurements, which can be checked: a menu list lets one select any BPM from each beam, and view the recorded bunch centroid turn-by-turn data through the acquisition.
 
 !!! danger "Do not Kick Both Beams Simultaneously"
 
@@ -249,7 +264,13 @@ Currently ADT AC-dipole measurements are almost identical to the AC Dipole measu
 This deficit can be overcome in improving the signal-to-noise ratio through increased measurement lengths, i.e. up to __40,000 turns__.
 Refer to the [AC Dipole Excitation](#ac-dipole-excitation) section above for the settings and steps.
 
+!!! info "Kick Amplitudes"
+    When used in coupling mode, a maximum kick amplitude of 30% can be used, although this depends on the working point and tune deltas used.
+    It is recommended to start around 10% and go up in small steps while watching the losses.
+    In any other configuration, please refer to the EIC on shift.
+
 Trigger an acquisition by clicking the yellow ++"Acquire with ADT/AC excitation"++ button at the bottom left of the GUI.
+Just as with the AC Dipole, make sure to keep an eye on the losses (via the `BLM Fixed Display` and beam intensities) during the acquisition.
 
 *[AC Dipole]: Alternating Current Dipole
 *[ADT]: LHC Transverse Damper

@@ -12,19 +12,19 @@ Arguments:
 *--Required--*
 
 - **beam** *(int)*: Beam to use.
-  Flags: **['-b', '--beam']**
+  Flags: **'-b', '--beam'**
   Choices: ``[1, 2]``
 - **energy** *(MultiClass)*: Beam energy in GeV.
-  Flags: **['-e', '--energy']**
+  Flags: **'-e', '--energy'**
 - **kick_directory** *(MultiClass)*: Analysis kick_directory containing kick files.
-  Flags: **['-k', '--kickdir']**
+  Flags: **'-k', '--kickdir'**
 - **plane** *(str)*: Plane of the kicks.
-  Flags: **['-p', '--plane']**
+  Flags: **'-p', '--plane'**
   Choices: ``['X', 'Y']``
 
 *--Optional--*
 
-- **emittance_outlier_limit** *(float)*: Limit, i.e. cut from mean, on emittance outliers in meter.
+- **emittance_outlier_limit** *(float)*: Limit, i.e. cut from mean, on emittance outliers in metre.
   Default: ``5e-07``
 - **emittance_tfs** *(MultiClass)*: Dataframe or Path of pre-saved emittance tfs.
 - **emittance_type** *(str)*: Which BSRT data to use (from database).
@@ -33,7 +33,7 @@ Arguments:
 - **emittance_window_length** *(int)*: Length of the moving average window. (# data points).
   Default: ``100``
 - **fill** *(int)*: Fill that was used. If not given, check out time_around_kicks.
-  Flags: **['-f', '--fill']**
+  Flags: **'-f', '--fill'**
 - **fit** *(str)*: Fitting function to use (rearranges parameters to make sense).
   Choices: ``['exponential', 'linear']``
   Default: ``exponential``
@@ -42,10 +42,10 @@ Arguments:
   Default: ``[5, 30]``
 - **intensity_time_before_kick** *(int)*: Defines the times before the kicks (in seconds) which is used for intensity averaging to calculate the losses.
   Default: ``[30, 5]``
-- **normalized_emittance** *(float)*: Assumed NORMALIZED nominal emittance for the machine.
+- **normalized_emittance** *(float)*: Assumed NORMALISED nominal emittance for the machine.
   Default: ``3.7499999999999997e-06``
 - **output_directory** *(MultiClass)*: Output kick_directory, if not given subfolder in kick kick_directory
-  Flags: **['-o', '--outdir']**
+  Flags: **'-o', '--outdir'**
 - **pagestore_db** *(MultiClass)*: (Path to-) presaved timber database
 - **show**: Show plots.
   Action: ``store_true``

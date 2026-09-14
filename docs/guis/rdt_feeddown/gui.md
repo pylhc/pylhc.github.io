@@ -1,4 +1,4 @@
-# The RDTfeeddown GUI
+# The RDT Feeddown GUI
 The purpose of this GUI is to calculate corrections for the RDT feeddown effect introduced by applying crossing angles at either of interaction points. This allows for the correction of high-order errors where direct RDT measurements are challenging.
 
 To launch and use the RDTfeeddown GUI, use the following command:
@@ -30,4 +30,3 @@ The following pages are available detailing the tabs and how to use them:
 - [Input](input.md) tab: for how to input files to produce an analysable format.
 - [Validation](validation.md) tab: for how to use that analysable format to plot the RDT response as a function of crossing angle amongst another analyses.
 - [Correction](correction.md) tab: for how to quantify the response of RDT for a constant corrector powering, between two crossing angles (i.e. assuming linearity) and use that to match to the analysable format measurement.
-
