@@ -1,4 +1,13 @@
 # The RDTfeeddown GUI
+The purpose of this GUI is to calculate corrections for the RDT feeddown effect introduced by applying crossing angles at either of interaction points. This allows for the correction of high-order errors where direct RDT measurements are challenging.
+
+To launch and use the RDTfeeddown GUI, use the following command:
+
+```bash
+python -m rdtfeeddown
+```
+
+The GUI will launch and the page will look as follows:
 
 <figure>
   <center>
@@ -7,11 +16,7 @@
   </center>
 </figure>
 
-To launch and use the RDTfeeddown GUI, use the following command:
-
-```bash
-python -m pip install omc3
-```
+The functions of the top left buttons are listed below:
 
 <img src="../../assets/images/rdtfeeddown_gui/help.png" alt="Help Icon" width="20"> or <img src="../../assets/images/rdtfeeddown_gui/help2.png" alt="Help Icon" width="20"> : shows some quick tips for using the GUI.
 
@@ -22,7 +27,7 @@ python -m pip install omc3
 
 The following pages are available detailing the tabs and how to use them:
 
-- [Input](input.md){.rdtfeeddown_tab-link} tab: for how to input files to produce an analysable format.
-- [Validation](validation.md){.rdtfeeddown_tab-link} tab: for how to use that analysable format to plot the RDT response as a function of crossing angle amongst another analyses.
-- [Correction](correction.md){.rdtfeeddown_tab-link} tab: for how to quantify the response of RDT for a constant corrector powering, between two crossing angles (i.e. assuming linearity) and use that to match to the analysable format measurement.
+- [Input](input.md) tab: for how to input files to produce an analysable format.
+- [Validation](validation.md) tab: for how to use that analysable format to plot the RDT response as a function of crossing angle amongst another analyses.
+- [Correction](correction.md) tab: for how to quantify the response of RDT for a constant corrector powering, between two crossing angles (i.e. assuming linearity) and use that to match to the analysable format measurement.
 

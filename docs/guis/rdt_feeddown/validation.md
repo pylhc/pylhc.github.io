@@ -11,7 +11,7 @@ The [Validation](validation.md){.rdtfeeddown_tab-link} tab of the GUI provides a
 
 ## Input Fields Explained
 
-- <span class="rdtfeeddown_guilabel">Add Files</span>: Add the generated files from the [Input](input.md){.rdtfeeddown_tab-link} tab of the GUI containing the RDT data you want to plot (this simply adds the filenames to a list for easy access).
+- <span class="rdtfeeddown_guilabel">Add Files</span>: Add the generated files from the [Input](input.md){.rdtfeeddown_tab-link} tab of the GUI containing the RDT data you want to plot (this simply adds the filenames to a list for easy access). These will be automatically added when the analysis is run from the Input tab.
 - <span class="rdtfeeddown_guilabel">Load Selected Files for Plotting</span>: Load the selected files to display their data in the plotting tabs (this then checks that the files are compatible to be plotted together). The loaded files will be displayed in the box below the button.
 
 ## Plotting Tabs Explained
@@ -35,8 +35,8 @@ The [Validation](validation.md){.rdtfeeddown_tab-link} tab of the GUI provides a
 
     This tab displays the RDT as a function of crossing angle for a BPM of your choice.
 
-    !!! tip "Searching for BPMs Tip"
-        You can search for a BPM by typing its name in the search box and pressing the <span class="rdtfeeddown_guilabel">Search BPM</span> button. This just checks if the BPM exists in the list of BPMs. 
+    !!! tip "Searching for BPMs"
+        You can search for a BPM by typing its name in the search box and pressing the <span class="rdtfeeddown_guilabel">Search BPM</span> button. This just checks if the BPM exists in the list of BPMs. If the BPM is not found then there will be a message saying so.
         
     Either pressing <kbd>Enter</kbd> or <span class="rdtfeeddown_guilabel" style="--rdtfeeddown_guilabel-bg: #5C62D6;">Plot BPM</span> will plot the RDT at that BPM as a function of crossing angle.
 
@@ -60,6 +60,6 @@ The [Validation](validation.md){.rdtfeeddown_tab-link} tab of the GUI provides a
     </center>
     </figure>
 
-    This tab displays the average RDT shift as a function of crossing angle when <span class="rdtfeeddown_guilabel" style="--rdtfeeddown_guilabel-bg: #5C62D6;">Plot RDT shifts</span> is pressed.
+    This tab displays the average RDT shift compared to the reference measurement in the Input tab as a function of crossing angle when <span class="rdtfeeddown_guilabel" style="--rdtfeeddown_guilabel-bg: #5C62D6;">Plot RDT shifts</span> is pressed. The next step in the workflow is to then move to the Correction tab.
 
 
