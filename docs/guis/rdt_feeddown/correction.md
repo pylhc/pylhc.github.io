@@ -6,7 +6,7 @@ This part of the GUI allows you to quantify the RDT correction predicted from a 
 
 - [Graph](#__tabbed_1_1){.rdtfeeddown_tab-link} tab: Displays the RDT feeddown data and the correction prediction graphically.
 
-- [Response](#__tabbed_1_2){.rdtfeeddown_tab-link} tab (_optional_): Allows you to quantify the RDT shift predicted from a specific corrector.
+- [Response](#__tabbed_1_2){.rdtfeeddown_tab-link} tab (_optional_ during online analysis if carried out offline beforehand): Allows you to quantify the RDT shift predicted from a specific corrector.
 
 === "Graph Tab"
 
@@ -41,12 +41,12 @@ This part of the GUI allows you to quantify the RDT correction predicted from a 
 
     **Main Features:**
 
-    - ``Reference Folder``: Select the reference measurement folder containing the measurement data with the corrector strength applied and the reference crossing angle.
+    - ``Reference Folder``: Select the reference simulated measurement folder containing the measurement data with the corrector strength applied and the reference crossing angle.
 
-    - ``Response Folder``: Select the measurement folder containing the data with the <span class="warning-colored">same corrector strength</span> as the <span class="warning-colored">reference measurement</span> applied, and a <span class="warning-colored">different crossing angle</span> to the <span class="warning-colored">reference measurement</span> 
+    - ``Response Folder``: Select the simulated measurement folder containing the data with the <span class="warning-colored">same corrector strength</span> as the <span class="warning-colored">reference measurement</span> applied, and a <span class="warning-colored">different crossing angle</span> to the <span class="warning-colored">reference measurement</span> 
 
     - ``LHCB1 same as LHCB2 mode``: If this option is selected, the response will be calculated assuming that the corrector name is the same for both LHC beams. This is useful when the corrector name is not beam-specific.
 
-    - <span class="rdtfeeddown_guilabel" style="--rdtfeeddown_guilabel-bg: green;">Find Response</span>: This button will calculate the response of the RDT to the crossing angle with the specified corrector strength applied. The output will be in the format that can be used in the [Graph](#__tabbed_1_1){.rdtfeeddown_tab-link} tab.
+    - <span class="rdtfeeddown_guilabel" style="--rdtfeeddown_guilabel-bg: green;">Find Response</span>: This button will calculate the response of the RDT to the crossing angle with the specified corrector strength applied. The output will be in the format that can be used in the [Graph](#__tabbed_1_1){.rdtfeeddown_tab-link} tab. The recommended naming convention for the output file (.json) is to include the corrector name and which beam(s).
 
         [omc_homepage]: https://pylhc.github.io/packages/omc3/about.html
