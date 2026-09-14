@@ -60,6 +60,6 @@ The [Validation](validation.md){.rdtfeeddown_tab-link} tab of the GUI provides a
     </center>
     </figure>
 
-    This tab displays the average RDT shift compared to the reference measurement in the Input tab as a function of crossing angle when <span class="rdtfeeddown_guilabel" style="--rdtfeeddown_guilabel-bg: #5C62D6;">Plot RDT shifts</span> is pressed. The next step in the workflow is to then move to the Correction tab.
+    This tab displays the average RDT shift compared to the reference measurement in the [Input](input.md) tab as a function of crossing angle when <span class="rdtfeeddown_guilabel" style="--rdtfeeddown_guilabel-bg: #5C62D6;">Plot RDT shifts</span> is pressed. The next step in the workflow is to then move to the [Correction](correction.md) tab.
 
 
