@@ -34,7 +34,7 @@ This part of the GUI allows you to quantify the RDT correction predicted from a 
     </center>
     </figure>
 
-    Similar to the [Input](input.md){.rdtfeeddown_tab-link} tab, this tab allows you to load measurement folders and reference data in the format outputted by the [OMC analysis tools](omc_homepage) to quantify the RDT response for a constant corrector strength between 2 different crossing angles.
+    Similar to the [Input](input.md){.rdtfeeddown_tab-link} tab, this tab allows you to load measurement folders and reference data in the format outputted by the [OMC analysis tools][omc_homepage] to quantify the RDT response for a constant corrector strength between 2 different crossing angles.
 
     !!! warning "Response Behaviour Assumption Warning"
         This assumes a linear response!
