@@ -1,124 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://pylhc.github.io/index.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/omc_team/about.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/omc_team/publications.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/omc_team/ls3.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/omc_team/ideas.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/about.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/omc3/about.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/omc3/getting_started.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/omc3/analysis.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/pylhc/about.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/pylhc/forced_da.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/pylhc/machine_settings_info.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/pylhc/bsrt.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/pylhc/bpm_calibration.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/pylhc/kickgroups.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/pylhcsubmitter/about.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/pylhcsubmitter/job_submitter.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/pylhcsubmitter/autosix.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/development/contributing.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/development/howto_release.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/development/ide_setup.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/development/howto_venv.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/packages/development/managing.html</loc>
-      </url>
-      <url>
         <loc>https://pylhc.github.io/guis/about.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/betabeat/gui.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/betabeat/defaults.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/betabeat/beam_selection.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/betabeat/common_components.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/betabeat/settings.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/betabeat/model_creation.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/betabeat/bpm_panel.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/betabeat/analysis_panel.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/betabeat/optics_panel.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/betabeat/correction_panel.html</loc>
       </url>
       <url>
         <loc>https://pylhc.github.io/guis/betabeat/ampdet.html</loc>
       </url>
       <url>
+        <loc>https://pylhc.github.io/guis/betabeat/analysis_panel.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/betabeat/beam_selection.html</loc>
+      </url>
+      <url>
         <loc>https://pylhc.github.io/guis/betabeat/betabeatsource.html</loc>
       </url>
       <url>
-        <loc>https://pylhc.github.io/guis/segment_by_segment/gui.html</loc>
+        <loc>https://pylhc.github.io/guis/betabeat/bpm_panel.html</loc>
       </url>
       <url>
-        <loc>https://pylhc.github.io/guis/segment_by_segment/segments.html</loc>
+        <loc>https://pylhc.github.io/guis/betabeat/common_components.html</loc>
       </url>
       <url>
-        <loc>https://pylhc.github.io/guis/segment_by_segment/corrections.html</loc>
+        <loc>https://pylhc.github.io/guis/betabeat/correction_panel.html</loc>
       </url>
       <url>
-        <loc>https://pylhc.github.io/guis/segment_by_segment/settings.html</loc>
+        <loc>https://pylhc.github.io/guis/betabeat/defaults.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/betabeat/gui.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/betabeat/model_creation.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/betabeat/optics_panel.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/betabeat/settings.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/chroma/gui.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/kmod/analyzing.html</loc>
       </url>
       <url>
         <loc>https://pylhc.github.io/guis/kmod/gui.html</loc>
@@ -127,13 +52,7 @@
         <loc>https://pylhc.github.io/guis/kmod/modulating.html</loc>
       </url>
       <url>
-        <loc>https://pylhc.github.io/guis/kmod/analyzing.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/chroma/gui.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/guis/rdt_feeddown/gui.html</loc>
+        <loc>https://pylhc.github.io/guis/multiturn/excitation.html</loc>
       </url>
       <url>
         <loc>https://pylhc.github.io/guis/multiturn/gui.html</loc>
@@ -142,13 +61,25 @@
         <loc>https://pylhc.github.io/guis/multiturn/safety.html</loc>
       </url>
       <url>
-        <loc>https://pylhc.github.io/guis/multiturn/excitation.html</loc>
-      </url>
-      <url>
         <loc>https://pylhc.github.io/guis/multiturn/scheduler.html</loc>
       </url>
       <url>
+        <loc>https://pylhc.github.io/guis/rdt_feeddown/gui.html</loc>
+      </url>
+      <url>
         <loc>https://pylhc.github.io/guis/screenshot/gui.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/segment_by_segment/corrections.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/segment_by_segment/gui.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/segment_by_segment/segments.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/guis/segment_by_segment/settings.html</loc>
       </url>
       <url>
         <loc>https://pylhc.github.io/guis/usage/guidelines.html</loc>
@@ -157,100 +88,13 @@
         <loc>https://pylhc.github.io/guis/usage/ide_install.html</loc>
       </url>
       <url>
-        <loc>https://pylhc.github.io/guis/usage/remote.html</loc>
-      </url>
-      <url>
         <loc>https://pylhc.github.io/guis/usage/releases.html</loc>
       </url>
       <url>
-        <loc>https://pylhc.github.io/measurements/about.html</loc>
+        <loc>https://pylhc.github.io/guis/usage/remote.html</loc>
       </url>
       <url>
-        <loc>https://pylhc.github.io/measurements/physics/about.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/physics/error_propagation.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/physics/bpm_calibration.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/physics/bpm_filtering.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/physics/harpy.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/physics/optics.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/physics/coupling.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/physics/kmod.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/physics/sbs.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/procedures/about.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/procedures/general_checks.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/procedures/kmod.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/procedures/rigid_waist_shift.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/procedures/ampdet.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/measurements/procedures/xing_scan.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/links.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/contacts.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/git_setup.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/computing.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/openstack_vm.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/remote_access.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/shared_filesystems.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/wiki.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/accelerator_timeline.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/publications.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/presentations.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/templates.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/resources/faqs.html</loc>
-      </url>
-      <url>
-        <loc>https://pylhc.github.io/logbook/about.html</loc>
+        <loc>https://pylhc.github.io/index.html</loc>
       </url>
       <url>
         <loc>https://pylhc.github.io/logbook/AD/2023_ad.html</loc>
@@ -314,5 +158,170 @@
       </url>
       <url>
         <loc>https://pylhc.github.io/logbook/SPS/2026_sps.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/logbook/about.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/about.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/about.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/bpm_calibration.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/bpm_filtering.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/coupling.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/error_propagation.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/harpy.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/ir_linear_optics.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/ir_nonlinear_optics.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/kmod.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/optics.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/sbs.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/physics/threedkicks.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/procedures/about.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/procedures/ampdet.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/procedures/general_checks.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/procedures/kmod.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/procedures/rigid_waist_shift.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/measurements/procedures/xing_scan.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/omc_team/about.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/omc_team/ideas.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/omc_team/ls3.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/omc_team/publications.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/about.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/development/contributing.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/development/howto_release.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/development/howto_venv.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/development/ide_setup.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/development/managing.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/omc3/about.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/omc3/analysis.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/omc3/getting_started.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/pylhc/about.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/pylhc/bpm_calibration.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/pylhc/bsrt.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/pylhc/forced_da.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/pylhc/kickgroups.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/pylhc/machine_settings_info.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/pylhcsubmitter/about.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/pylhcsubmitter/autosix.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/packages/pylhcsubmitter/job_submitter.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/accelerator_timeline.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/computing.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/contacts.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/faqs.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/git_setup.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/links.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/openstack_vm.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/presentations.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/publications.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/remote_access.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/shared_filesystems.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/templates.html</loc>
+      </url>
+      <url>
+        <loc>https://pylhc.github.io/resources/wiki.html</loc>
       </url>
 </urlset>
