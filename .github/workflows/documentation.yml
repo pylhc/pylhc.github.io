@@ -6,7 +6,7 @@ defaults:
     shell: bash
 
 permissions:
-  contents: write
+  contents: read
 
 env:
   UV_COMPILE_BYTECODE: 1
@@ -22,6 +22,8 @@ jobs:
   documentation:
     name: Build and Publish Static Documentation
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     env:
         python-version: "3.14"
 
@@ -46,7 +48,7 @@ jobs:
         run: zensical build
 
       - name: Upload documentation to gh-pages
-        uses: JamesIves/github-pages-deploy-action@v4.8.0
+        uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f
         if: success()
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
