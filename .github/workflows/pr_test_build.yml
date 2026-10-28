@@ -6,7 +6,7 @@ defaults:
     shell: bash
 
 permissions:
-  contents: write
+  contents: read
 
 env:
   UV_COMPILE_BYTECODE: 1
