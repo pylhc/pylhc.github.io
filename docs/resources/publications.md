@@ -20,6 +20,24 @@ This page compiles various published papers, reports, and MD notes from OMC team
 
 ### 2026 Papers
 
+??? abstract "Measurement, Modeling, and Correction of Decapolar Hamiltonian Terms in the LHC, `M. Le Garrec, E. H. Maclean, F. S. Carlier and R. Tomás`, [Phys. Rev. Accel. Beams 29, 113501, 2026](https://journals.aps.org/prab/abstract/10.1103/v1pv-svvx){target=_blank}"
+    ```
+    @article{LeGarrecDecapolarHamiltonianTerms,
+      title        = {Measurement, Modeling, and Correction of Decapolar Hamiltonian Terms in the LHC},
+      author       = {Le Garrec, M. and Maclean, E. H. and Carlier, F. S. and Tom\'as, R.},
+      year         = {2026},
+      month        = {Nov},
+      journaltitle = {Physical Review Accelerators and Beams},
+      shortjournal = {Phys. Rev. Accel. Beams},
+      volume       = {29},
+      number       = {11},
+      pages        = {113501},
+      publisher    = {American Physical Society},
+      doi          = {10.1103/v1pv-svvx},
+      url          = {https://link.aps.org/doi/10.1103/v1pv-svvx}
+    }
+    ```
+
 ### 2025 Papers
 
 ??? abstract "Resonance Gaps, Discrepancies, and Lines, `R. Tomás`, [Phys. Rev. Accel. Beams 28, 114001, 2025](https://journals.aps.org/prab/abstract/10.1103/2gfw-xckn){target=_blank}"
